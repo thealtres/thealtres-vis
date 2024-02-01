@@ -1,0 +1,11 @@
+image: ruby
+
+pages:
+  script:
+  - ./publish.sh
+  artifacts:
+    paths:
+    - public
+  only:
+  - main
+

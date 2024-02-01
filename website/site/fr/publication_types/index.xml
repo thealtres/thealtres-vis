@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publication_types | Thealtres</title>
+    <link>https://thealtres.pages.unistra.fr/fr/publication_types/</link>
+      <atom:link href="https://thealtres.pages.unistra.fr/fr/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publication_types</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr</language>
+    <image>
+      <url>https://thealtres.pages.unistra.fr/media/logo_huadc22f77e32657c8541a8bd15cd135f1_3162_300x300_fit_lanczos_3.png</url>
+      <title>Publication_types</title>
+      <link>https://thealtres.pages.unistra.fr/fr/publication_types/</link>
+    </image>
+    
+  </channel>
+</rss>

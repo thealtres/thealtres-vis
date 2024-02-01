@@ -1,0 +1,23 @@
+{{ define "main" }}
+<main>
+  <!-- Got classes by inspecting the built News section index page -->
+  <!-- Earlier classes were article-container (has a max-width of 760 px)
+       and article-style (in the inner div)
+       Could also create a wider article container in the custom.scss -->
+  <div class="universal-wrapper pt-3">
+    <div class="universal-wrapper">
+
+      <h1>{{ .Title }}</h1>
+      {{ partial "table.html" . }}
+      {{ .Content }}
+<!--      <ul class="contents">-->
+<!--      </ul>-->
+    </div>
+  </div>
+  {{ partial "pagination.html" . }}
+</main>
+<head>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script defer type="module" src="{{ "js/vis.js" | urlize | relURL }}"></script>
+</head>
+{{ end }}

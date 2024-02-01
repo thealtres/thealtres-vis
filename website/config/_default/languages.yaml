@@ -1,0 +1,67 @@
+# Languages
+#   Create a section for each of your site's languages.
+#   Documentation: https://wowchemy.com/docs/guide/language/
+
+# Default language
+en:
+  languageCode: en-us
+  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
+  contentDir: content/en
+
+fr:
+  languageCode: fr
+  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
+  contentDir: content/fr
+  menu:
+    main:
+      - name: Projet
+        url: '#project'
+        weight: 10
+      - name: Équipe
+        url: '#team'
+        weight: 20
+      - name: Productions
+        url: '#outputs'
+        weight: 30
+      - name: Actualités
+        url: 'post'
+        weight: 40
+      - name: Événements
+        url: 'evenements'
+        weight: 50
+      - name: Visualisation
+        url: 'vis'
+        weight: 60
+      - name: À propos
+        url: '#about'
+        weight: 70
+      - name: Contact
+        url: '#contact'
+        weight: 80
+
+  footer:
+    copyright:
+      notice: |-
+        Projet soutenu par la [MISHA](https://www.misha.fr/recherche/programmes-scientifiques-misha) (*Maison Interuniversitaire des Sciences de l'Homme d'Alsace*)
+
+        © Théaltres — {year}. Le site est publié sous la licence {license}
+      license:
+        enable: true
+        allow_derivatives: true
+        share_alike: true
+        allow_commercial: true
+
+
+
+# Uncomment the lines below to configure your website in a second language.
+#zh:
+#  languageCode: zh-Hans
+#  contentDir: content/zh
+#  title: Chinese website title...
+#  params:
+#    description: Site description in Chinese...
+#  menu:
+#    main:
+#      - name: 传
+#        url: '#about'
+#        weight: 1

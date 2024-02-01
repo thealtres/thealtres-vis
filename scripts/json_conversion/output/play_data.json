@@ -1,0 +1,4532 @@
+{
+    "data": {
+        "plays": [
+            {
+                "workId": "1",
+                "anOrd": "1",
+                "wikidataId": null,
+                "titleMain": "Le Tour du Cadran",
+                "titleSub": "Folie-vaudeville en cinq actes et six tableaux",
+                "authorId": [
+                    "66",
+                    "67"
+                ],
+                "publisherId": "6",
+                "url": "https://www.google.fr/books/edition/Le_tour_du_cadran/HhRWAAAAcAAJ?hl=fr&gbpv=0",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1872",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1872",
+                "nbActs": "5",
+                "nbScenes": [
+                    "7",
+                    "11",
+                    "9",
+                    "9",
+                    "5"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "2",
+                "anOrd": "121",
+                "wikidataId": null,
+                "titleMain": "Le Homard",
+                "titleSub": "com\u00e9die en un acte",
+                "authorId": [
+                    "20"
+                ],
+                "publisherId": "6",
+                "url": "https://books.google.fr/books?id=Y0uC46z30QEC&printsec=frontcover&hl=fr&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1874",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1874",
+                "nbActs": "1",
+                "nbScenes": [
+                    "10"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "3",
+                "anOrd": "52",
+                "wikidataId": "Q107266236",
+                "titleMain": "Le D\u00e9put\u00e9 de Bombignac",
+                "titleSub": "Com\u00e9die en trois actes",
+                "authorId": [
+                    "37"
+                ],
+                "publisherId": "11",
+                "url": "https://www.google.fr/books/edition/Le_d%C3%A9put%C3%A9_de_Bombignac/OQxJAQAAIAAJ?hl=fr&gbpv=0",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1887",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1884",
+                "nbActs": "3",
+                "nbScenes": [
+                    "14",
+                    "15",
+                    "11"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "4",
+                "anOrd": "55",
+                "wikidataId": "Q19210904",
+                "titleMain": "Les Fianc\u00e9s de Loches",
+                "titleSub": "Vaudeville en trois actes",
+                "authorId": [
+                    "38",
+                    "36"
+                ],
+                "publisherId": "2",
+                "url": "https://www.google.fr/books/edition/Les_fianc%C3%A9s_de_loches/J5E7AQAAMAAJ?hl=fr&gbpv=0",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1888",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1888",
+                "nbActs": "3",
+                "nbScenes": [
+                    "12",
+                    "18",
+                    "22"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "5",
+                "anOrd": "2",
+                "wikidataId": "Q65659179",
+                "titleMain": "Niniche",
+                "titleSub": "Vaudeville en trois actes",
+                "authorId": [
+                    "1",
+                    "2"
+                ],
+                "publisherId": "1",
+                "url": "https://books.google.fr/books?id=RWp3nQEACAAJ",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1878",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1878",
+                "nbActs": "3",
+                "nbScenes": [
+                    "20",
+                    "17",
+                    "11"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "6",
+                "anOrd": "141",
+                "wikidataId": null,
+                "titleMain": "Le cabinet Piperlin",
+                "titleSub": "op\u00e9ra-bouffe en trois actes",
+                "authorId": [
+                    "71",
+                    "72"
+                ],
+                "publisherId": "28",
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k1281066x/f7.item",
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1897",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1897",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "7",
+                "anOrd": "69",
+                "wikidataId": null,
+                "titleMain": "L\u2019h\u00e9ro\u00efque Le Cardunois",
+                "titleSub": "Com\u00e9die en trois actes",
+                "authorId": [
+                    "37"
+                ],
+                "publisherId": "11",
+                "url": "https://www.google.fr/books/edition/L_h%C3%A9ro%C3%AFque_Le_Cardunois/M3U6AQAAMAAJ?hl=fr&gbpv=0",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1894",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1894",
+                "nbActs": "3",
+                "nbScenes": [
+                    "22",
+                    "18",
+                    "11"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "8",
+                "anOrd": "65",
+                "wikidataId": null,
+                "titleMain": "La Famille Pont-Bicquet",
+                "titleSub": "Com\u00e9die en trois actes",
+                "authorId": [
+                    "37"
+                ],
+                "publisherId": "5",
+                "url": "https://books.google.fr/books?id=6nY5AQAAMAAJ&printsec=frontcover&hl=fr&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1913",
+                "firstPrinted": "1892",
+                "firstPublisher": "11",
+                "premiere": "1892",
+                "nbActs": "3",
+                "nbScenes": [
+                    "13",
+                    "13",
+                    "14"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "9",
+                "anOrd": "50",
+                "wikidataId": null,
+                "titleMain": "Une matin\u00e9e de contrat",
+                "titleSub": "Com\u00e9die en un acte",
+                "authorId": [
+                    "36"
+                ],
+                "publisherId": "2",
+                "url": "https://www.google.fr/books/edition/Une_matin%C3%A9e_de_contrat/uithXllT3SIC?hl=fr&gbpv=1&dq=vaudeville+inauthor:desvalli%C3%A8res&pg=PA50&printsec=frontcover",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1883",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1883",
+                "nbActs": "1",
+                "nbScenes": [
+                    "12"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "10",
+                "anOrd": "58",
+                "wikidataId": "Q2553475",
+                "titleMain": "Le mariage de Barillon",
+                "titleSub": "Vaudeville en trois actes",
+                "authorId": [
+                    "38",
+                    "36"
+                ],
+                "publisherId": null,
+                "url": "https://libretheatre.fr/le-mariage-de-barillon-de-georges-feydeau/",
+                "sourceType": null,
+                "sourcePlatform": null,
+                "printed": null,
+                "firstPrinted": "1890",
+                "firstPublisher": "2",
+                "premiere": "1890",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "11",
+                "anOrd": "66",
+                "wikidataId": "Q3227495",
+                "titleMain": "Le syst\u00e8me Ribadier",
+                "titleSub": "Com\u00e9die en trois actes et en prose",
+                "authorId": [
+                    "38",
+                    "4"
+                ],
+                "publisherId": null,
+                "url": "https://libretheatre.fr/le-systeme-ribadier-de-georges-feydeau/",
+                "sourceType": null,
+                "sourcePlatform": null,
+                "printed": null,
+                "firstPrinted": "unknown",
+                "firstPublisher": null,
+                "premiere": "1892",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "12",
+                "anOrd": "57",
+                "wikidataId": "Q19176633",
+                "titleMain": "L\u2019affaire Edouard",
+                "titleSub": "Com\u00e9die-vaudeville en trois actes",
+                "authorId": [
+                    "38",
+                    "36"
+                ],
+                "publisherId": null,
+                "url": "https://libretheatre.fr/laffaire-edouard-de-georges-feydeau/",
+                "sourceType": null,
+                "sourcePlatform": null,
+                "printed": null,
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1889",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "13",
+                "anOrd": "70",
+                "wikidataId": "Q3203961",
+                "titleMain": "L\u2019h\u00f4tel du libre-\u00e9change",
+                "titleSub": "Pi\u00e8ce en trois actes",
+                "authorId": [
+                    "38",
+                    "36"
+                ],
+                "publisherId": null,
+                "url": "https://libretheatre.fr/hotel-du-libre-echange-feydeau/",
+                "sourceType": null,
+                "sourcePlatform": null,
+                "printed": null,
+                "firstPrinted": "unknown",
+                "firstPublisher": null,
+                "premiere": "1894",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "14",
+                "anOrd": "71",
+                "wikidataId": "Q3226710",
+                "titleMain": "Le Ruban",
+                "titleSub": "Com\u00e9die en trois actes",
+                "authorId": [
+                    "38",
+                    "36"
+                ],
+                "publisherId": null,
+                "url": "https://libretheatre.fr/le-ruban-de-georges-feydeau/",
+                "sourceType": null,
+                "sourcePlatform": null,
+                "printed": null,
+                "firstPrinted": "unknown",
+                "firstPublisher": null,
+                "premiere": "1894",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "15",
+                "anOrd": "18",
+                "wikidataId": null,
+                "titleMain": "Gavaut, Minard et Cie",
+                "titleSub": "Com\u00e9die en trois actes",
+                "authorId": [
+                    "20"
+                ],
+                "publisherId": "6",
+                "url": "https://www.google.fr/books/edition/Gavaut_Minard_Cie/JWc6AAAAcAAJ?hl=fr&gbpv=1&dq=edmond+gondinet&printsec=frontcover",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1869",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1869",
+                "nbActs": "3",
+                "nbScenes": [
+                    "15",
+                    "16",
+                    "11"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "16",
+                "anOrd": "42",
+                "wikidataId": null,
+                "titleMain": "Le Panache",
+                "titleSub": "Com\u00e9die en trois actes",
+                "authorId": [
+                    "20"
+                ],
+                "publisherId": "6",
+                "url": "https://www.google.fr/books/edition/Le_panache/o4r1rCmcseYC?hl=fr&gbpv=0",
+                "sourceType": null,
+                "sourcePlatform": null,
+                "printed": "1876",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1875",
+                "nbActs": "3",
+                "nbScenes": [
+                    "13",
+                    "18",
+                    "20"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "17",
+                "anOrd": "49",
+                "wikidataId": null,
+                "titleMain": "T\u00eate de Linotte",
+                "titleSub": "Com\u00e9die en trois actes",
+                "authorId": [
+                    "20"
+                ],
+                "publisherId": "5",
+                "url": "https://www.google.fr/books/edition/Gavaut_Minard_et_cie_Christiane_La_crava/CRFJAQAAIAAJ?hl=fr&gbpv=0",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1892",
+                "firstPrinted": "1886",
+                "firstPublisher": "5",
+                "premiere": "1882",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": "maybe not 1st ed. "
+            },
+            {
+                "workId": "18",
+                "anOrd": "45",
+                "wikidataId": null,
+                "titleMain": "Le Tunnel",
+                "titleSub": "Com\u00e9die en un acte",
+                "authorId": [
+                    "20"
+                ],
+                "publisherId": "5",
+                "url": "https://www.google.fr/books/edition/Le_panache_Les_grandes_demoiselles_Jonat/rglJAQAAIAAJ?hl=fr&gbpv=0",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1877",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1877",
+                "nbActs": "1",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "19",
+                "anOrd": "19",
+                "wikidataId": "Q3225705",
+                "titleMain": "Le plus heureux des Trois",
+                "titleSub": "Com\u00e9die en trois actes",
+                "authorId": [
+                    "20",
+                    "5"
+                ],
+                "publisherId": "5",
+                "url": "https://www.google.fr/books/edition/Th%C3%A9%C3%A2tre_complet_Le_plus_heureux_des_tr/CyYtAAAAYAAJ?hl=fr&gbpv=0",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1894",
+                "firstPrinted": "1870",
+                "firstPublisher": "8",
+                "premiere": "1870",
+                "nbActs": "3",
+                "nbScenes": [
+                    "16",
+                    "17",
+                    "11"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "20",
+                "anOrd": "46",
+                "wikidataId": null,
+                "titleMain": "Les Convictions de papa",
+                "titleSub": "Com\u00e9die en un acte",
+                "authorId": [
+                    "20"
+                ],
+                "publisherId": "5",
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k241252q",
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1894",
+                "firstPrinted": "1877",
+                "firstPublisher": "2",
+                "premiere": "1877",
+                "nbActs": "1",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "21",
+                "anOrd": "38",
+                "wikidataId": null,
+                "titleMain": "Panazol",
+                "titleSub": "Com\u00e9die en un acte, en vers",
+                "authorId": [
+                    "20"
+                ],
+                "publisherId": "6",
+                "url": "https://www.google.fr/books/edition/Panazol_Com%C3%A9die_en_un_acte_en_vers/RHACK_J8zCYC?hl=fr&gbpv=0",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1873",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1873",
+                "nbActs": "1",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "22",
+                "anOrd": "17",
+                "wikidataId": null,
+                "titleMain": "L\u2019Amour qui dort",
+                "titleSub": "Com\u00e9die en un acte",
+                "authorId": [
+                    "19"
+                ],
+                "publisherId": "8",
+                "url": "https://www.google.fr/books/edition/L_Amour_qui_dort_Com%C3%A9die_en_un_acte_and/7hNdAAAAcAAJ?hl=fr&gbpv=0",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1864",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1864",
+                "nbActs": "1",
+                "nbScenes": [
+                    "19"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "23",
+                "anOrd": "76",
+                "wikidataId": "Q3208097",
+                "titleMain": "La Dame de chez Maxim",
+                "titleSub": "Pi\u00e8ce en trois actes",
+                "authorId": [
+                    "38"
+                ],
+                "publisherId": null,
+                "url": "https://libretheatre.fr/la-dame-de-chez-maxim-de-feydeau/",
+                "sourceType": null,
+                "sourcePlatform": null,
+                "printed": null,
+                "firstPrinted": "unknown",
+                "firstPublisher": null,
+                "premiere": "1899",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "24",
+                "anOrd": "122",
+                "wikidataId": null,
+                "titleMain": "La Poudre d\u2019escampette",
+                "titleSub": "folie-vaudeville en trois actes",
+                "authorId": [
+                    "1",
+                    "66"
+                ],
+                "publisherId": "1",
+                "url": "https://www.google.fr/books/edition/La_poudre_d_escampette/DlVGAAAAYAAJ?hl=fr&gbpv=0",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1877",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1877",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "25",
+                "anOrd": "44",
+                "wikidataId": "Q104850798",
+                "titleMain": "Les Dominos roses",
+                "titleSub": "Com\u00e9die en trois actes",
+                "authorId": [
+                    "1",
+                    "29"
+                ],
+                "publisherId": "1",
+                "url": "https://www.amazon.fr/Dominos-Com%C3%A9die-Alfred-Delacour-Hennequin/dp/1115046632?asin=1115046632&revisionId=&format=4&depth=1",
+                "sourceType": null,
+                "sourcePlatform": null,
+                "printed": "1884",
+                "firstPrinted": "1876",
+                "firstPublisher": "26",
+                "premiere": "1876",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "26",
+                "anOrd": "74",
+                "wikidataId": "Q107154738",
+                "titleMain": "Le Contr\u00f4leur des Wagons-lits",
+                "titleSub": "Com\u00e9die en trois actes",
+                "authorId": [
+                    "37"
+                ],
+                "publisherId": "13",
+                "url": "https://archive.org/details/lecontroleurdesw00bissuoft/page/6/mode/2up",
+                "sourceType": null,
+                "sourcePlatform": "Internet Archive",
+                "printed": "1908",
+                "firstPrinted": "1898",
+                "firstPublisher": "13",
+                "premiere": "1898",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "27",
+                "anOrd": "59",
+                "wikidataId": null,
+                "titleMain": "Feu Toupinel",
+                "titleSub": "Com\u00e9die en trois actes",
+                "authorId": [
+                    "37"
+                ],
+                "publisherId": "5",
+                "url": "https://archive.org/details/feutoupinelcom00bissuoft",
+                "sourceType": null,
+                "sourcePlatform": "Internet Archive",
+                "printed": "1907",
+                "firstPrinted": "1890",
+                "firstPublisher": "11",
+                "premiere": "1890",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "28",
+                "anOrd": "60",
+                "wikidataId": null,
+                "titleMain": "Les Surprises du Divorce",
+                "titleSub": "Com\u00e9die en trois actes",
+                "authorId": [
+                    "37",
+                    "39"
+                ],
+                "publisherId": "5",
+                "url": "https://archive.org/details/lessurprisesdudi00bissuoft/page/n7/mode/2up",
+                "sourceType": null,
+                "sourcePlatform": "Internet Archive",
+                "printed": "1914",
+                "firstPrinted": "1889",
+                "firstPublisher": "11",
+                "premiere": "1888",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "29",
+                "anOrd": "142",
+                "wikidataId": "Q105748095",
+                "titleMain": "Pastilles Hercules",
+                "titleSub": "vaudeville en trois actes",
+                "authorId": [
+                    "4",
+                    "45"
+                ],
+                "publisherId": "29",
+                "url": "https://archive.org/details/pastilleshrcules2593henn/page/n7/mode/2up",
+                "sourceType": null,
+                "sourcePlatform": "Internet Archive",
+                "printed": "1910",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1910",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "30",
+                "anOrd": "53",
+                "wikidataId": null,
+                "titleMain": "Les vacances du mariage",
+                "titleSub": "Com\u00e9die-vaudeville en trois actes",
+                "authorId": [
+                    "3",
+                    "4"
+                ],
+                "publisherId": "3",
+                "url": "https://archive.org/details/lesvacancesdumar00valauoft/page/4/mode/2up",
+                "sourceType": null,
+                "sourcePlatform": "Internet Archive",
+                "printed": null,
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1887",
+                "nbActs": "3",
+                "nbScenes": [
+                    "16",
+                    "18",
+                    "16"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "31",
+                "anOrd": "75",
+                "wikidataId": null,
+                "titleMain": "Inviolable\u00a0! ",
+                "titleSub": "Com\u00e9die-vaudeville en trois actes",
+                "authorId": [
+                    "4"
+                ],
+                "publisherId": "13",
+                "url": "https://archive.org/details/inviolablecomd00hennuoft/page/14/mode/2up",
+                "sourceType": null,
+                "sourcePlatform": "Internet Archive",
+                "printed": "1898",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1897",
+                "nbActs": "3",
+                "nbScenes": [
+                    "14",
+                    "22",
+                    "12"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "32",
+                "anOrd": "79",
+                "wikidataId": null,
+                "titleMain": "Vous n\u2019avez rien \u00e0 d\u00e9clarer\u00a0?",
+                "titleSub": "Pi\u00e8ce en trois actes",
+                "authorId": [
+                    "4",
+                    "43"
+                ],
+                "publisherId": "13",
+                "url": "https://archive.org/details/vousnavezriendec00hennuoft",
+                "sourceType": null,
+                "sourcePlatform": "Internet Archive",
+                "printed": "1906",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1906",
+                "nbActs": "3",
+                "nbScenes": [
+                    "20",
+                    "25",
+                    "26"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "33",
+                "anOrd": "84",
+                "wikidataId": "Q30742511",
+                "titleMain": "La Pr\u00e9sidente",
+                "titleSub": "Pi\u00e8ce en trois actes",
+                "authorId": [
+                    "4",
+                    "43"
+                ],
+                "publisherId": "13",
+                "url": "https://archive.org/details/laprsidentepi00hennuoft",
+                "sourceType": null,
+                "sourcePlatform": "Internet Archive",
+                "printed": "1913",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1913",
+                "nbActs": "3",
+                "nbScenes": [
+                    "22",
+                    "28",
+                    "24"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "34",
+                "anOrd": "83",
+                "wikidataId": null,
+                "titleMain": "Monsieur Gavroche\u00a0",
+                "titleSub": "Com\u00e9die-vaudeville en 2 actes, avec choeurs et couplets",
+                "authorId": [
+                    "39"
+                ],
+                "publisherId": "14",
+                "url": "https://archive.org/details/monsieurgavroche00mars",
+                "sourceType": null,
+                "sourcePlatform": "Internet Archive",
+                "printed": "1912",
+                "firstPrinted": "1889",
+                "firstPublisher": "14",
+                "premiere": "unknown",
+                "nbActs": "2",
+                "nbScenes": [
+                    "15",
+                    "18"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "35",
+                "anOrd": "63",
+                "wikidataId": null,
+                "titleMain": "La demoiselle du t\u00e9l\u00e9phone\u00a0",
+                "titleSub": "com\u00e9die-op\u00e9rette en 3 actes",
+                "authorId": [
+                    "36",
+                    "39"
+                ],
+                "publisherId": "12",
+                "url": "https://archive.org/details/lademoiselledut00serp/page/n7/mode/2up",
+                "sourceType": null,
+                "sourcePlatform": "Internet Archive",
+                "printed": null,
+                "firstPrinted": "1891",
+                "firstPublisher": "3",
+                "premiere": "1891",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "36",
+                "anOrd": "64",
+                "wikidataId": null,
+                "titleMain": "Les Petites Godin",
+                "titleSub": "Com\u00e9die-vaudeville en trois actes",
+                "authorId": [
+                    "40",
+                    "41"
+                ],
+                "publisherId": "11",
+                "url": "https://www.google.fr/books/edition/Les_Petites_Godin/49yT8S_tnTkC?hl=fr&gbpv=0",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1891",
+                "firstPrinted": "1885",
+                "firstPublisher": "25",
+                "premiere": "1884",
+                "nbActs": "3",
+                "nbScenes": [
+                    "16",
+                    "17",
+                    "11"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "37",
+                "anOrd": "77",
+                "wikidataId": null,
+                "titleMain": "Les Boulinard",
+                "titleSub": "com\u00e9die-vaudeville en trois actes",
+                "authorId": [
+                    "40",
+                    "3",
+                    "42"
+                ],
+                "publisherId": "13",
+                "url": "https://archive.org/details/lesboulinardcomd00ordo/page/n9/mode/2up",
+                "sourceType": null,
+                "sourcePlatform": "Internet Archive",
+                "printed": "1901",
+                "firstPrinted": "1891",
+                "firstPublisher": "11",
+                "premiere": "1890",
+                "nbActs": "3",
+                "nbScenes": [
+                    "15",
+                    "18",
+                    "14"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "38",
+                "anOrd": "61",
+                "wikidataId": null,
+                "titleMain": "Durand et Durand\u00a0",
+                "titleSub": "com\u00e9die-vaudeville en trois actes",
+                "authorId": [
+                    "3",
+                    "40"
+                ],
+                "publisherId": "3",
+                "url": "https://archive.org/details/duranddurandcom00ordouoft",
+                "sourceType": null,
+                "sourcePlatform": null,
+                "printed": "1890",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1887",
+                "nbActs": "3",
+                "nbScenes": [
+                    "12",
+                    "16",
+                    "11"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "39",
+                "anOrd": "3",
+                "wikidataId": null,
+                "titleMain": "Les ricochets de l'amour",
+                "titleSub": "Com\u00e9die en trois actes",
+                "authorId": [
+                    "3",
+                    "4"
+                ],
+                "publisherId": "2",
+                "url": "https://archive.org/details/lesricochetsdela00valauoft/page/4/mode/2up",
+                "sourceType": null,
+                "sourcePlatform": "Internet Archive",
+                "printed": "1895",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1894",
+                "nbActs": "3",
+                "nbScenes": [
+                    "14",
+                    "22",
+                    "15"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "40",
+                "anOrd": "80",
+                "wikidataId": null,
+                "titleMain": "Que Suzanne n\u2019en sache rien",
+                "titleSub": "com\u00e9die en trois actes",
+                "authorId": [
+                    "43"
+                ],
+                "publisherId": "13",
+                "url": "https://archive.org/details/quesuzannenensac00vebeuoft/page/4/mode/2up",
+                "sourceType": null,
+                "sourcePlatform": "Internet Archive",
+                "printed": "1907",
+                "firstPrinted": "1900",
+                "firstPublisher": "27",
+                "premiere": "1899",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "41",
+                "anOrd": "85",
+                "wikidataId": null,
+                "titleMain": "Madame et son filleul",
+                "titleSub": "pi\u00e8ce en trois actes",
+                "authorId": [
+                    "4",
+                    "43",
+                    "44"
+                ],
+                "publisherId": "3",
+                "url": "https://archive.org/details/madameetsonfille00henn/page/n7/mode/2up",
+                "sourceType": null,
+                "sourcePlatform": "Internet Archive",
+                "printed": "1921",
+                "firstPrinted": "1917",
+                "firstPublisher": null,
+                "premiere": "1916",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "42",
+                "anOrd": "54",
+                "wikidataId": null,
+                "titleMain": "Les trois Chapeaux",
+                "titleSub": "Com\u00e9die en trois actes",
+                "authorId": [
+                    "1"
+                ],
+                "publisherId": "5",
+                "url": "https://archive.org/details/lestroischapeaux00henn",
+                "sourceType": null,
+                "sourcePlatform": "Internet Archive",
+                "printed": "1887",
+                "firstPrinted": "1871",
+                "firstPublisher": "6",
+                "premiere": "1871",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "43",
+                "anOrd": "68",
+                "wikidataId": null,
+                "titleMain": "B\u00e9b\u00e9\u00a0",
+                "titleSub": "com\u00e9die en trois actes",
+                "authorId": [
+                    "1",
+                    "35"
+                ],
+                "publisherId": "3",
+                "url": "https://archive.org/details/bbcomdieen00najauoft",
+                "sourceType": null,
+                "sourcePlatform": "Internet Archive",
+                "printed": "1893",
+                "firstPrinted": "1877",
+                "firstPublisher": "1",
+                "premiere": "1877",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "44",
+                "anOrd": "121",
+                "wikidataId": null,
+                "titleMain": "Le Bal du Sauvage",
+                "titleSub": "folie-vaudeville en trois actes",
+                "authorId": [
+                    "64",
+                    "65"
+                ],
+                "publisherId": "3",
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k5713197j.texteImage",
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": null,
+                "firstPrinted": "1855",
+                "firstPublisher": "3",
+                "premiere": "1854",
+                "nbActs": "3",
+                "nbScenes": [
+                    "16",
+                    "11",
+                    "10"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "45",
+                "anOrd": "39",
+                "wikidataId": null,
+                "titleMain": "La Consigne est de ronfler",
+                "titleSub": "Com\u00e9die-vaudeville en un acte",
+                "authorId": [
+                    "18",
+                    "15"
+                ],
+                "publisherId": "6",
+                "url": "https://www.google.fr/books/edition/La_consigne_est_de_ronfler/n_RbAAAAcAAJ?hl=fr&gbpv=0",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1873",
+                "firstPrinted": "1866",
+                "firstPublisher": "6",
+                "premiere": "1866",
+                "nbActs": "1",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "46",
+                "anOrd": "47",
+                "wikidataId": null,
+                "titleMain": "La Veuve Chapuzot",
+                "titleSub": "Com\u00e9die en trois actes",
+                "authorId": [
+                    "3"
+                ],
+                "publisherId": "8",
+                "url": "https://www.google.fr/books/edition/La_veuve_Chapuzot_Comedie_en_3_actes/Wuvh2qZ4yd4C?hl=fr&gbpv=1&dq=la+veuve+chapuzot&printsec=frontcover",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1879",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1879",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "47",
+                "anOrd": "78",
+                "wikidataId": "Q3214090",
+                "titleMain": "La Main passe",
+                "titleSub": "Com\u00e9die",
+                "authorId": [
+                    "38"
+                ],
+                "publisherId": null,
+                "url": "https://libretheatre.fr/la-main-passe-de-georges-feydeau/",
+                "sourceType": null,
+                "sourcePlatform": null,
+                "printed": null,
+                "firstPrinted": "unknown",
+                "firstPublisher": null,
+                "premiere": "1904",
+                "nbActs": "4",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "48",
+                "anOrd": "67",
+                "wikidataId": "Q104846695",
+                "titleMain": "Monsieur Chasse",
+                "titleSub": "Com\u00e9die en trois actes",
+                "authorId": [
+                    "38"
+                ],
+                "publisherId": null,
+                "url": "https://libretheatre.fr/monsieur-chasse-de-georges-feydeau/",
+                "sourceType": null,
+                "sourcePlatform": null,
+                "printed": null,
+                "firstPrinted": "1897",
+                "firstPublisher": "2",
+                "premiere": "1892",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "49",
+                "anOrd": "72",
+                "wikidataId": "Q3548595",
+                "titleMain": "Un fil \u00e0 la patte",
+                "titleSub": "Com\u00e9die en trois actes",
+                "authorId": [
+                    "38"
+                ],
+                "publisherId": null,
+                "url": "https://libretheatre.fr/un-fil-a-la-patte-de-georges-feydeau/",
+                "sourceType": null,
+                "sourcePlatform": null,
+                "printed": null,
+                "firstPrinted": "unknown",
+                "firstPublisher": null,
+                "premiere": "1894",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "50",
+                "anOrd": "73",
+                "wikidataId": "Q3222323",
+                "titleMain": "Le Dindon",
+                "titleSub": "Pi\u00e8ce en trois actes",
+                "authorId": [
+                    "38"
+                ],
+                "publisherId": null,
+                "url": "https://libretheatre.fr/le-dindon-de-georges-feydeau/",
+                "sourceType": null,
+                "sourcePlatform": null,
+                "printed": null,
+                "firstPrinted": "unknown",
+                "firstPublisher": null,
+                "premiere": "1896",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "51",
+                "anOrd": "81",
+                "wikidataId": "Q3212044",
+                "titleMain": "La Puce \u00e0 l\u2019oreille",
+                "titleSub": "Com\u00e9die en trois actes",
+                "authorId": [
+                    "38"
+                ],
+                "publisherId": null,
+                "url": "https://libretheatre.fr/la-puce-a-loreille-de-georges-feydeau/",
+                "sourceType": null,
+                "sourcePlatform": null,
+                "printed": null,
+                "firstPrinted": "unknown",
+                "firstPublisher": null,
+                "premiere": "1907",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "52",
+                "anOrd": "4",
+                "wikidataId": "Q3220311",
+                "titleMain": "Le Baron de Fourchevif",
+                "titleSub": "Com\u00e9die en un acte",
+                "authorId": [
+                    "5",
+                    "6"
+                ],
+                "publisherId": "3",
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k61293336#",
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1859",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1859",
+                "nbActs": "1",
+                "nbScenes": [
+                    "20"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "53",
+                "anOrd": "32",
+                "wikidataId": "Q3231420",
+                "titleMain": "Les Chemins de Fer",
+                "titleSub": "Com\u00e9die-Vaudeville en cinq actes",
+                "authorId": [
+                    "5",
+                    "29",
+                    "30"
+                ],
+                "publisherId": null,
+                "url": "https://libretheatre.fr/chemin-de-fer-labiche/",
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": null,
+                "firstPrinted": "1867",
+                "firstPublisher": "24",
+                "premiere": "1867",
+                "nbActs": "5",
+                "nbScenes": [
+                    "9",
+                    "7",
+                    "8",
+                    "9",
+                    "8"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "54",
+                "anOrd": "5",
+                "wikidataId": "Q2827376",
+                "titleMain": "Ag\u00e9nor le dangereux",
+                "titleSub": "Vaudeville en un acte",
+                "authorId": [
+                    "5",
+                    "7",
+                    "8"
+                ],
+                "publisherId": "4",
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k6209552x.texteImage#",
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1848",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1848",
+                "nbActs": "1",
+                "nbScenes": [
+                    "16"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "55",
+                "anOrd": "24",
+                "wikidataId": "Q3319790",
+                "titleMain": "Mon Ism\u00e9nie",
+                "titleSub": "Com\u00e9die en un acte, m\u00eal\u00e9e de couplets",
+                "authorId": [
+                    "5",
+                    "24"
+                ],
+                "publisherId": "5",
+                "url": null,
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1893",
+                "firstPrinted": "1853",
+                "firstPublisher": "6",
+                "premiere": "1852",
+                "nbActs": "1",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "56",
+                "anOrd": "29",
+                "wikidataId": "Q3232056",
+                "titleMain": "Les Deux Timides",
+                "titleSub": "Com\u00e9die-Vaudeville en un acte",
+                "authorId": [
+                    "5",
+                    "24"
+                ],
+                "publisherId": "5",
+                "url": null,
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1893",
+                "firstPrinted": "unknown",
+                "firstPublisher": null,
+                "premiere": "1860",
+                "nbActs": "1",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "57",
+                "anOrd": "21",
+                "wikidataId": "Q3052094",
+                "titleMain": "Embrassons-nous, Folleville !",
+                "titleSub": "Com\u00e9die-vaudeville en un acte",
+                "authorId": [
+                    "5",
+                    "21"
+                ],
+                "publisherId": "5",
+                "url": null,
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1892",
+                "firstPrinted": "1850",
+                "firstPublisher": "6",
+                "premiere": "1850",
+                "nbActs": "1",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "58",
+                "anOrd": "26",
+                "wikidataId": "Q3548635",
+                "titleMain": "Un Gar\u00e7on de chez V\u00e9ry",
+                "titleSub": "Com\u00e9die en un acte m\u00eal\u00e9e de couplets",
+                "authorId": [
+                    "5"
+                ],
+                "publisherId": "5",
+                "url": null,
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1893",
+                "firstPrinted": "1850",
+                "firstPublisher": "6",
+                "premiere": "1850",
+                "nbActs": "1",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "59",
+                "anOrd": "30",
+                "wikidataId": "Q3230324",
+                "titleMain": "Les Trente-sept sous de M. Montaudoin",
+                "titleSub": "Com\u00e9die-Vaudeville en un acte",
+                "authorId": [
+                    "5",
+                    "28"
+                ],
+                "publisherId": "5",
+                "url": null,
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1892",
+                "firstPrinted": "1863",
+                "firstPublisher": "8",
+                "premiere": "1862",
+                "nbActs": "1",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "60",
+                "anOrd": "28",
+                "wikidataId": "Q19176618",
+                "titleMain": "L\u2019Affaire de la rue de Lourcine",
+                "titleSub": "Com\u00e9die en un acte m\u00eal\u00e9e de couplets",
+                "authorId": [
+                    "5",
+                    "27",
+                    "28"
+                ],
+                "publisherId": "5",
+                "url": null,
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1893",
+                "firstPrinted": "1857",
+                "firstPublisher": "6",
+                "premiere": "1857",
+                "nbActs": "1",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "61",
+                "anOrd": "6",
+                "wikidataId": "Q3548736",
+                "titleMain": "Un Jeune Homme press\u00e9",
+                "titleSub": "Vaudeville en un acte",
+                "authorId": [
+                    "5"
+                ],
+                "publisherId": "5",
+                "url": null,
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1893",
+                "firstPrinted": "1848",
+                "firstPublisher": "6",
+                "premiere": "1848",
+                "nbActs": "1",
+                "nbScenes": [
+                    "11"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "62",
+                "anOrd": "23",
+                "wikidataId": "Q19236233",
+                "titleMain": "Un Chapeau de paille d\u2019Italie",
+                "titleSub": "Com\u00e9die en cinq actes, m\u00eal\u00e9e de couplets",
+                "authorId": [
+                    "5",
+                    "24"
+                ],
+                "publisherId": "5",
+                "url": null,
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1893",
+                "firstPrinted": "1851",
+                "firstPublisher": "6",
+                "premiere": "1851",
+                "nbActs": "5",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "63",
+                "anOrd": "25",
+                "wikidataId": "Q3224615",
+                "titleMain": "Le Misanthrope et l\u2019Auvergnat",
+                "titleSub": "Com\u00e9die en un acte m\u00eal\u00e9e de couplets",
+                "authorId": [
+                    "5",
+                    "25",
+                    "26"
+                ],
+                "publisherId": "5",
+                "url": null,
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1893",
+                "firstPrinted": "1852",
+                "firstPublisher": "25",
+                "premiere": "1852",
+                "nbActs": "1",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "64",
+                "anOrd": "27",
+                "wikidataId": "Q3482836",
+                "titleMain": "Si jamais je te pince",
+                "titleSub": "Com\u00e9die en trois actes m\u00eal\u00e9e de chant",
+                "authorId": [
+                    "5",
+                    "24"
+                ],
+                "publisherId": "5",
+                "url": null,
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1892",
+                "firstPrinted": "1856",
+                "firstPublisher": "6",
+                "premiere": "1856",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "65",
+                "anOrd": "31",
+                "wikidataId": "Q3212958",
+                "titleMain": "La Station Champbaudet",
+                "titleSub": "Com\u00e9die-Vaudeville en trois actes",
+                "authorId": [
+                    "5",
+                    "24"
+                ],
+                "publisherId": "5",
+                "url": null,
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1892",
+                "firstPrinted": "1862",
+                "firstPublisher": "3",
+                "premiere": "1862",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "66",
+                "anOrd": "33",
+                "wikidataId": "Q3209442",
+                "titleMain": "La Grammaire",
+                "titleSub": "Com\u00e9die-Vaudeville en un acte",
+                "authorId": [
+                    "5",
+                    "6"
+                ],
+                "publisherId": "5",
+                "url": null,
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1892",
+                "firstPrinted": "1867",
+                "firstPublisher": "24",
+                "premiere": "1867",
+                "nbActs": "1",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "67",
+                "anOrd": "40",
+                "wikidataId": "Q2815721",
+                "titleMain": "29 Degr\u00e9s \u00e0 l\u2019Ombre",
+                "titleSub": "Com\u00e9die en un acte",
+                "authorId": [
+                    "5"
+                ],
+                "publisherId": "5",
+                "url": null,
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1892",
+                "firstPrinted": "1873",
+                "firstPublisher": "8",
+                "premiere": "1873",
+                "nbActs": "1",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "68",
+                "anOrd": "43",
+                "wikidataId": "Q3235817",
+                "titleMain": "Les Trente millions de Gladiator",
+                "titleSub": "Com\u00e9die-vaudeville en quatre actes",
+                "authorId": [
+                    "5",
+                    "34"
+                ],
+                "publisherId": "5",
+                "url": null,
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1892",
+                "firstPrinted": "1875",
+                "firstPublisher": "8",
+                "premiere": "1875",
+                "nbActs": "4",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "69",
+                "anOrd": "36",
+                "wikidataId": null,
+                "titleMain": "Major Cravachon",
+                "titleSub": "Com\u00e9die-Vaudeville en un acte",
+                "authorId": [
+                    "5",
+                    "21",
+                    "33"
+                ],
+                "publisherId": "5",
+                "url": null,
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1892",
+                "firstPrinted": "1844",
+                "firstPublisher": "4",
+                "premiere": "1844",
+                "nbActs": "1",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "70",
+                "anOrd": "8",
+                "wikidataId": null,
+                "titleMain": "Les Avocats",
+                "titleSub": "com\u00e9die-vaudeville en 3 actes",
+                "authorId": [
+                    "10",
+                    "11"
+                ],
+                "publisherId": "7",
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k6115572g",
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1852",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1852",
+                "nbActs": "3",
+                "nbScenes": [
+                    "9",
+                    "14",
+                    "10"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "71",
+                "anOrd": "7",
+                "wikidataId": null,
+                "titleMain": "Le bourgeois de Paris, ou Les le\u00e7ons au pouvoir ",
+                "titleSub": "Com\u00e9die-vaudeville en trois actes et six tableaux",
+                "authorId": [
+                    "9",
+                    "10",
+                    "11"
+                ],
+                "publisherId": "6",
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k6181216h",
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1853",
+                "firstPrinted": "1850",
+                "firstPublisher": null,
+                "premiere": "1850",
+                "nbActs": "3",
+                "nbScenes": [
+                    "7",
+                    "5",
+                    "7",
+                    "7",
+                    "7",
+                    "5"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "72",
+                "anOrd": "22",
+                "wikidataId": null,
+                "titleMain": "\u00c0 la Bastille",
+                "titleSub": "Vaudeville en un acte",
+                "authorId": [
+                    "22",
+                    "13",
+                    "23"
+                ],
+                "publisherId": "9",
+                "url": "https://books.google.fr/books?id=fFJSAAAAcAAJ",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1850",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1850",
+                "nbActs": "1",
+                "nbScenes": [
+                    "11"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "73",
+                "anOrd": "15",
+                "wikidataId": null,
+                "titleMain": "Brouill\u00e9s depuis Wagram",
+                "titleSub": "Com\u00e9die-vaudeville en un acte",
+                "authorId": [
+                    "15",
+                    "18"
+                ],
+                "publisherId": "6",
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k9745630c.texteImage",
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1861",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1861",
+                "nbActs": "1",
+                "nbScenes": [
+                    "12"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "74",
+                "anOrd": "12",
+                "wikidataId": null,
+                "titleMain": "Le Pass\u00e9 de Nichette",
+                "titleSub": "Com\u00e9die-vaudeville",
+                "authorId": [
+                    "15"
+                ],
+                "publisherId": "6",
+                "url": "https://www.google.fr/books/edition/Le_pass%C3%A9_de_nichette/okQ6AAAAcAAJ?hl=fr&gbpv=0",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1865",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1860",
+                "nbActs": "1",
+                "nbScenes": [
+                    "17"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "75",
+                "anOrd": "34",
+                "wikidataId": null,
+                "titleMain": "Le Secr\u00e9taire et le Cuisinier",
+                "titleSub": "Com\u00e9die-Vaudeville en un acte",
+                "authorId": [
+                    "31",
+                    "12"
+                ],
+                "publisherId": "10",
+                "url": "https://books.google.fr/books?id=cpWJ-nxz1J8C",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1823",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1821",
+                "nbActs": "1",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "76",
+                "anOrd": "35",
+                "wikidataId": null,
+                "titleMain": "La Lune de Miel",
+                "titleSub": "Com\u00e9die-Vaudeville en deux actes",
+                "authorId": [
+                    "31",
+                    "12",
+                    "32"
+                ],
+                "publisherId": null,
+                "url": "https://xn--thtre-documentation-cvb0m.com/content/la-lune-de-miel-eug%C3%A8ne-scribe-pierre-carmouche-m%C3%A9lesville ; https://books.google.com/books/about/La_lune_de_miel_com%C3%A9die_vaudeville_en_d.html?id=tk8NFl3N8oUC",
+                "sourceType": null,
+                "sourcePlatform": "Th\u00e9\u00e2tre Documentation",
+                "printed": null,
+                "firstPrinted": "1826",
+                "firstPublisher": "SECONDE ED. Impr. de David, \u00e0 Paris. - A Paris, chez les auteurs",
+                "premiere": "1826",
+                "nbActs": "2",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "77",
+                "anOrd": "122",
+                "wikidataId": null,
+                "titleMain": "La Permission de dix heures",
+                "titleSub": "Com\u00e9die-vaudeville en un acte",
+                "authorId": [
+                    "12",
+                    "32"
+                ],
+                "publisherId": "9",
+                "url": "https://archive.org/details/lapermissiondedi00mluoft ; https://th\u00e9\u00e2tre-documentation.com/content/la-permission-de-dix-heures-pierre-carmouche-m%C3%A9lesville",
+                "sourceType": null,
+                "sourcePlatform": "Internet Archive",
+                "printed": "1841",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1841",
+                "nbActs": "1",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "78",
+                "anOrd": "9",
+                "wikidataId": null,
+                "titleMain": "M. Beauminet",
+                "titleSub": "Vaudeville en un acte",
+                "authorId": [
+                    "12",
+                    "13"
+                ],
+                "publisherId": "4",
+                "url": "https://books.google.fr/books?id=nj5o-XdAfgUC&pg=PA4&lpg=PA4&dq=m%C3%A9lesville+beauminet&source=bl&ots=GB8bpdXnGt&sig=ACfU3U1xRAMH4yfGvkPRcftt-tqLrzWeYw&hl=fr&sa=X&ved=2ahUKEwim4tLb3qj-AhVVVKQEHTKqAoQQ6AF6BAgYEAM",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1855",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1855",
+                "nbActs": "1",
+                "nbScenes": [
+                    "17"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "79",
+                "anOrd": "10",
+                "wikidataId": null,
+                "titleMain": "Garde-toi, je me garde",
+                "titleSub": "Com\u00e9die en un acte, m\u00eal\u00e9e de chant",
+                "authorId": [
+                    "14"
+                ],
+                "publisherId": "6",
+                "url": "https://books.google.fr/books/about/Garde_toi_je_me_garde.html?id=iYQGAAAAQAAJ&redir_esc=y ; https://www.xn--thtre-documentation-cvb0m.com/content/garde-toi-je-me-garde-henri-meilhac",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1868",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1868",
+                "nbActs": "1",
+                "nbScenes": [
+                    "21"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "80",
+                "anOrd": "16",
+                "wikidataId": null,
+                "titleMain": "Le Br\u00e9silien",
+                "titleSub": "Com\u00e9die en un acte m\u00eal\u00e9e de chant",
+                "authorId": [
+                    "14",
+                    "16"
+                ],
+                "publisherId": "6",
+                "url": "https://books.google.fr/books?id=uZFUAAAAcAAJ\u00a0; https://xn--thtre-documentation-cvb0m.com/content/le-br%C3%A9silien-henri-meilhac-ludovic-hal%C3%A9vy",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1863",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1863",
+                "nbActs": "1",
+                "nbScenes": [
+                    "20"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "81",
+                "anOrd": "11",
+                "wikidataId": null,
+                "titleMain": "Satania",
+                "titleSub": "Com\u00e9die en deux actes, m\u00eal\u00e9e de couplets",
+                "authorId": [
+                    "14"
+                ],
+                "publisherId": "4",
+                "url": "https://books.google.fr/books?id=P8-EOBhAT9gC ; http://www.xn--thtre-documentation-cvb0m.com/content/satania-henri-meilhac",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1856",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1856",
+                "nbActs": "2",
+                "nbScenes": [
+                    "7",
+                    "17"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "82",
+                "anOrd": "13",
+                "wikidataId": null,
+                "titleMain": "Ce qui pla\u00eet aux Hommes",
+                "titleSub": "M\u00eal\u00e9e de prose, de vers et de couplets",
+                "authorId": [
+                    "14",
+                    "16"
+                ],
+                "publisherId": "4",
+                "url": "https://books.google.fr/books/about/Ce_qui_pla%C3%AEt_aux_Hommes_pi%C3%A8ce_en_un_ac.html?id=YsNHAQAAMAAJ&hl=en&output=html_text&redir_esc=y ; https://www.th\u00e9\u00e2tre-documentation.com/content/ce-qui-pla%C3%Aet-aux-hommes-henri-meilhac",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1860",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1860",
+                "nbActs": "1",
+                "nbScenes": [
+                    "13"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "83",
+                "anOrd": "20",
+                "wikidataId": "Q107170059",
+                "titleMain": "Tricoche et Cacolet",
+                "titleSub": "Vaudeville en cinq actes",
+                "authorId": [
+                    "14",
+                    "16"
+                ],
+                "publisherId": "6",
+                "url": "https://www.th\u00e9\u00e2tre-documentation.com/content/tricoche-et-cacolet-henri-meilhac-ludovic-hal%C3%A9vy ; https://books.google.fr/books/about/Tricoche_et_Cacolet.html?id=vhVWAAAAcAAJ&redir_esc=y",
+                "sourceType": null,
+                "sourcePlatform": "Th\u00e9\u00e2tre Documentation",
+                "printed": "1872",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1871",
+                "nbActs": "5",
+                "nbScenes": [
+                    "14",
+                    "13",
+                    "12",
+                    "5",
+                    "8"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "84",
+                "anOrd": "37",
+                "wikidataId": null,
+                "titleMain": "Le R\u00e9veillon",
+                "titleSub": "Com\u00e9die en trois actes",
+                "authorId": [
+                    "14",
+                    "16"
+                ],
+                "publisherId": "5",
+                "url": "https://books.google.fr/books?id=MiA-AAAAIAAJ",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1880",
+                "firstPrinted": "1872",
+                "firstPublisher": "6",
+                "premiere": "1872",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "85",
+                "anOrd": "41",
+                "wikidataId": null,
+                "titleMain": "La Boule",
+                "titleSub": "Com\u00e9die",
+                "authorId": [
+                    "14",
+                    "16"
+                ],
+                "publisherId": "6",
+                "url": "https://books.google.fr/books?id=eQo_AAAAIAAJ",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1874",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1874",
+                "nbActs": null,
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "86",
+                "anOrd": "51",
+                "wikidataId": null,
+                "titleMain": "Ma Camarade",
+                "titleSub": "Pi\u00e8ce en cinq actes",
+                "authorId": [
+                    "14",
+                    "34"
+                ],
+                "publisherId": "5",
+                "url": "https://books.google.fr/books?id=WdM-AQAAMAAJ",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1894",
+                "firstPrinted": "unknown",
+                "firstPublisher": null,
+                "premiere": "1883",
+                "nbActs": "5",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "87",
+                "anOrd": "56",
+                "wikidataId": null,
+                "titleMain": "D\u00e9cor\u00e9",
+                "titleSub": "Com\u00e9die en trois actes",
+                "authorId": [
+                    "14"
+                ],
+                "publisherId": "5",
+                "url": "https://books.google.fr/books/about/D%C3%A9cor%C3%A9.html?id=uAlJAQAAIAAJ",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1899",
+                "firstPrinted": "1894",
+                "firstPublisher": "5",
+                "premiere": "1888",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "88",
+                "anOrd": "62",
+                "wikidataId": null,
+                "titleMain": "Ma Cousine",
+                "titleSub": "Com\u00e9die en trois actes",
+                "authorId": [
+                    "14"
+                ],
+                "publisherId": "5",
+                "url": "https://books.google.fr/books/about/Ma_cousine.html?id=L_9TAAAAYAAJ",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1897",
+                "firstPrinted": "1890",
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "89",
+                "anOrd": "14",
+                "wikidataId": null,
+                "titleMain": "Pattes de Mouche",
+                "titleSub": "Com\u00e9die en trois actes en prose",
+                "authorId": [
+                    "17"
+                ],
+                "publisherId": "6",
+                "url": "https://www.google.fr/books/edition/Les_Pattes_de_mouche/pTOyEtKq37YC?hl\u00a0; http://www.xn--thtre-documentation-cvb0m.com/content/les-pattes-de-mouche-victorien-sardou",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1860",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1860",
+                "nbActs": "3",
+                "nbScenes": [
+                    "13",
+                    "12",
+                    "16"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "90",
+                "anOrd": "48",
+                "wikidataId": null,
+                "titleMain": "Divor\u00e7ons\u00a0!",
+                "titleSub": "Com\u00e9die en trois actes",
+                "authorId": [
+                    "17",
+                    "35"
+                ],
+                "publisherId": "5",
+                "url": "https://www.google.fr/books/edition/Divor%C3%A7ons/iJbvAAAAMAAJ",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1896",
+                "firstPrinted": "1883",
+                "firstPublisher": "5",
+                "premiere": "1880",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "91",
+                "anOrd": "86",
+                "wikidataId": null,
+                "titleMain": "Les deux amoureux de la grand-m\u00e8re",
+                "titleSub": "Com\u00e9die-vaudeville en un acte ",
+                "authorId": [
+                    "46"
+                ],
+                "publisherId": "3",
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k3078859c.texteImage",
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1850",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1850",
+                "nbActs": "1",
+                "nbScenes": [
+                    "21"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "92",
+                "anOrd": "87",
+                "wikidataId": null,
+                "titleMain": "Mon voisin de campagne",
+                "titleSub": "Com\u00e9die-vaudeville en deux actes",
+                "authorId": [
+                    "47"
+                ],
+                "publisherId": "15",
+                "url": "https://www.google.fr/books/edition/Un_voisin_de_campagne/C-b-zzNMVygC",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": null,
+                "firstPrinted": "1852",
+                "firstPublisher": "15",
+                "premiere": "1852",
+                "nbActs": "2",
+                "nbScenes": [
+                    "14",
+                    "15"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "93",
+                "anOrd": "88",
+                "wikidataId": null,
+                "titleMain": "Chien et chat",
+                "titleSub": "Com\u00e9die-vaudeville en un acte ",
+                "authorId": [
+                    "48"
+                ],
+                "publisherId": "15",
+                "url": "https://www.google.fr/books/edition/Chien_et_chat/OmmbRxUlyscC?hl=fr&gbpv=1&pg=PP1&printsec=frontcover",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": null,
+                "firstPrinted": "1853",
+                "firstPublisher": "15",
+                "premiere": "1852",
+                "nbActs": "1",
+                "nbScenes": [
+                    "12"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "94",
+                "anOrd": "89",
+                "wikidataId": null,
+                "titleMain": "Apr\u00e8s l'orage, le beau temps",
+                "titleSub": "Vaudeville-proverbe en un acte",
+                "authorId": [
+                    "47"
+                ],
+                "publisherId": "16",
+                "url": "https://www.google.fr/books/edition/Apr%C3%A8s_l_orage_vient_le_beau_temps/kcF9Tl8vk-gC?hl=fr&gbpv=1&pg=PA1&printsec=frontcover",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1853",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1853",
+                "nbActs": "1",
+                "nbScenes": [
+                    "13"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "95",
+                "anOrd": "90",
+                "wikidataId": null,
+                "titleMain": "Les Inconv\u00e9nients de la sympathie",
+                "titleSub": "Vaudeville en un acte",
+                "authorId": [
+                    "46"
+                ],
+                "publisherId": "3",
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k3046140d.texteImage",
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1854",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1854",
+                "nbActs": "1",
+                "nbScenes": [
+                    "17"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "96",
+                "anOrd": "91",
+                "wikidataId": null,
+                "titleMain": "Drelin ! Drelin!",
+                "titleSub": "Vaudeville en un acte",
+                "authorId": [
+                    "49"
+                ],
+                "publisherId": "6",
+                "url": "https://www.google.fr/books/edition/Drelin_Drelin_vaudeville_en_un_acte_par/RbSLcm4Ri7kC?hl=fr&gbpv=1&pg=PA1&printsec=frontcover",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1858",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1858",
+                "nbActs": "1",
+                "nbScenes": [
+                    "14"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "97",
+                "anOrd": "92",
+                "wikidataId": null,
+                "titleMain": "La Tirelire de Jeannette",
+                "titleSub": "Com\u00e9die-vaudeville en un acte",
+                "authorId": [
+                    "50"
+                ],
+                "publisherId": "3",
+                "url": "https://www.google.fr/books/edition/La_tirelire_de_Jeannette_comedie_vaudevi/Xwfx-pDOh6cC?hl=fr&gbpv=1&pg=PA1&printsec=frontcover",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1859",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1859",
+                "nbActs": "1",
+                "nbScenes": [
+                    "10"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "98",
+                "anOrd": "93",
+                "wikidataId": null,
+                "titleMain": "Un Bon petit diable",
+                "titleSub": "Vaudeville en un acte",
+                "authorId": [
+                    "51"
+                ],
+                "publisherId": "3",
+                "url": "https://www.google.fr/books/edition/Un_bon_petit_diable_vaudeville_en_un_act/_O_C1G_YJ0wC?hl=fr&gbpv=1&pg=PA1&printsec=frontcover",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1859",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1859",
+                "nbActs": "1",
+                "nbScenes": [
+                    "15"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "99",
+                "anOrd": "94",
+                "wikidataId": null,
+                "titleMain": "La M\u00e8re Grippetout",
+                "titleSub": "Vaudeville en un acte",
+                "authorId": [
+                    "50"
+                ],
+                "publisherId": "3",
+                "url": "https://www.google.fr/books/edition/La_M%C3%A8re_Grippetout_vaudeville_en_un_act/uRNdAAAAcAAJ?hl=fr&gbpv=1&pg=PP1&printsec=frontcover",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1861",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1861",
+                "nbActs": "1",
+                "nbScenes": [
+                    "15"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "100",
+                "anOrd": "95",
+                "wikidataId": null,
+                "titleMain": "L' Amour de l'art",
+                "titleSub": "Vaudeville en un acte",
+                "authorId": [
+                    "52"
+                ],
+                "publisherId": "17",
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k5849542w",
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1865",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1865",
+                "nbActs": "1",
+                "nbScenes": [
+                    "6"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "101",
+                "anOrd": "96",
+                "wikidataId": null,
+                "titleMain": "Cl\u00e9mence",
+                "titleSub": "Com\u00e9die en deux actes m\u00eal\u00e9e de couplets",
+                "authorId": [
+                    "53"
+                ],
+                "publisherId": "18",
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k98011272",
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1839",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1839",
+                "nbActs": "2",
+                "nbScenes": [
+                    "11",
+                    "20"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "102",
+                "anOrd": "97",
+                "wikidataId": null,
+                "titleMain": "Une Femme charmante",
+                "titleSub": "Com\u00e9die en un acte, m\u00eal\u00e9e de chant",
+                "authorId": [
+                    "48",
+                    "54"
+                ],
+                "publisherId": "19",
+                "url": "https://www.google.fr/books/edition/Une_Femme_charmante_com%C3%A9die_en_un_acte/8g_60CAnYv4C?hl=fr&gbpv=1&pg=PA1&printsec=frontcover",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": null,
+                "firstPrinted": "1840",
+                "firstPublisher": "21",
+                "premiere": "1840",
+                "nbActs": "1",
+                "nbScenes": [
+                    "22"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "103",
+                "anOrd": "98",
+                "wikidataId": null,
+                "titleMain": "Les Honneurs et les moeurs ou Le m\u00eame homme",
+                "titleSub": "Com\u00e9die-vaudeville en deux actes, m\u00eal\u00e9e de chant",
+                "authorId": [
+                    "53"
+                ],
+                "publisherId": "18",
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k4224580t#",
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1840",
+                "firstPrinted": "1840",
+                "firstPublisher": "18",
+                "premiere": "1840",
+                "nbActs": "2",
+                "nbScenes": [
+                    "11",
+                    "14"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "104",
+                "anOrd": "99",
+                "wikidataId": null,
+                "titleMain": "Georges ou Le m\u00eame homme",
+                "titleSub": "Com\u00e9die en deux actes",
+                "authorId": [
+                    "53"
+                ],
+                "publisherId": "20",
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k3040768p",
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1841",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1840",
+                "nbActs": "2",
+                "nbScenes": [
+                    "11",
+                    "14"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "105",
+                "anOrd": "100",
+                "wikidataId": null,
+                "titleMain": "Marguerite",
+                "titleSub": "Com\u00e9die en trois actes et en prose",
+                "authorId": [
+                    "53"
+                ],
+                "publisherId": "20",
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k3040768p",
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1841",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1840",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "106",
+                "anOrd": "101",
+                "wikidataId": null,
+                "titleMain": "Le P\u00e8re Marcel",
+                "titleSub": "Com\u00e9die en deux actes m\u00eal\u00e9e de chant",
+                "authorId": [
+                    "53"
+                ],
+                "publisherId": "18",
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k9601540t",
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1841",
+                "firstPrinted": "1841",
+                "firstPublisher": "18",
+                "premiere": "1841",
+                "nbActs": "2",
+                "nbScenes": [
+                    "11",
+                    "14"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "107",
+                "anOrd": "102",
+                "wikidataId": null,
+                "titleMain": "Une Femme \u00e0 la mode",
+                "titleSub": "Com\u00e9die en un acte",
+                "authorId": [
+                    "53"
+                ],
+                "publisherId": "4",
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k9614704v",
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1843",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1843",
+                "nbActs": "1",
+                "nbScenes": [
+                    "17"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "108",
+                "anOrd": "103",
+                "wikidataId": null,
+                "titleMain": "Hermance ou Un an trop tard",
+                "titleSub": "Com\u00e9die en trois actes, m\u00eal\u00e9e de chant",
+                "authorId": [
+                    "53"
+                ],
+                "publisherId": "4",
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k3043553g#",
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1843",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1843",
+                "nbActs": "3",
+                "nbScenes": [
+                    "14",
+                    "14",
+                    "11"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "109",
+                "anOrd": "104",
+                "wikidataId": null,
+                "titleMain": "Lo\u00efsa",
+                "titleSub": "Com\u00e9die en deux actes, m\u00eal\u00e9e de chant",
+                "authorId": [
+                    "53"
+                ],
+                "publisherId": "4",
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k9614380v",
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1843",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1843",
+                "nbActs": "2",
+                "nbScenes": [
+                    "15",
+                    "12"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "110",
+                "anOrd": "105",
+                "wikidataId": null,
+                "titleMain": "Follette",
+                "titleSub": "Com\u00e9die-vaudeville en un acte",
+                "authorId": [
+                    "53"
+                ],
+                "publisherId": "4",
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k96035977",
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1844",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1844",
+                "nbActs": "1",
+                "nbScenes": [
+                    "14"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "111",
+                "anOrd": "82",
+                "wikidataId": "Q19221114",
+                "titleMain": "Occupe-toi d\u2019Am\u00e9lie",
+                "titleSub": "Pi\u00e8ce en trois actes et quatre tableaux",
+                "authorId": [
+                    "38"
+                ],
+                "publisherId": null,
+                "url": "https://libretheatre.fr/occupe-toi-damelie-de-georges-feydeau/",
+                "sourceType": null,
+                "sourcePlatform": null,
+                "printed": null,
+                "firstPrinted": "unknown",
+                "firstPublisher": null,
+                "premiere": "1908",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "112",
+                "anOrd": "106",
+                "wikidataId": null,
+                "titleMain": "Suzette",
+                "titleSub": "Com\u00e9die-vaudeville en deux actes",
+                "authorId": [
+                    "55",
+                    "10",
+                    "56"
+                ],
+                "publisherId": "10",
+                "url": "https://fr.wikisource.org/wiki/Suzette",
+                "sourceType": null,
+                "sourcePlatform": null,
+                "printed": "1837",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1837",
+                "nbActs": "2",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "113",
+                "anOrd": "107",
+                "wikidataId": null,
+                "titleMain": "Les Fils Gavet",
+                "titleSub": "Vaudeville en un acte",
+                "authorId": [
+                    "57",
+                    "58"
+                ],
+                "publisherId": "3",
+                "url": "https://archive.org/details/bub_gb_3A1anEvnAvoC",
+                "sourceType": null,
+                "sourcePlatform": null,
+                "printed": null,
+                "firstPrinted": "1853",
+                "firstPublisher": null,
+                "premiere": "1853",
+                "nbActs": "1",
+                "nbScenes": [
+                    "17"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "114",
+                "anOrd": "112",
+                "wikidataId": null,
+                "titleMain": "Histoire d'un ch\u00e2le",
+                "titleSub": "vaudeville en deux actes",
+                "authorId": [
+                    "58",
+                    "62"
+                ],
+                "publisherId": "21",
+                "url": "http://digital.bib-bvb.de/view/bvb_single/single.jsp?dvs=1686124267773~118&locale=en_US&VIEWER_URL=/view/bvb_single/single.jsp?&DELIVERY_RULE_ID=39&bfe=view/action/singleViewer.do?dvs=&frameId=1&usePid1=true&usePid2=true",
+                "sourceType": null,
+                "sourcePlatform": null,
+                "printed": null,
+                "firstPrinted": "1855",
+                "firstPublisher": "21",
+                "premiere": "1855",
+                "nbActs": "2",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "115",
+                "anOrd": "108",
+                "wikidataId": null,
+                "titleMain": "Sous le paillasson",
+                "titleSub": "Vaudeville en un acte",
+                "authorId": [
+                    "58",
+                    "59"
+                ],
+                "publisherId": "21",
+                "url": "https://books.google.fr/books?id=IoQ_AAAAcAAJ",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1856",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1858",
+                "nbActs": "1",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "116",
+                "anOrd": "109",
+                "wikidataId": null,
+                "titleMain": "D\u00e9tournement de majeure",
+                "titleSub": "Vaudeville en un acte",
+                "authorId": [
+                    "26",
+                    "60",
+                    "61"
+                ],
+                "publisherId": "6",
+                "url": "https://www.google.fr/books/edition/Detournement_de_majeure_vaudeville_en_un/GdosMnBkKLEC",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1857",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1857",
+                "nbActs": "1",
+                "nbScenes": [
+                    "17"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "117",
+                "anOrd": "110",
+                "wikidataId": null,
+                "titleMain": "Fleur du Tyrol",
+                "titleSub": "Vaudeville en un acte",
+                "authorId": [
+                    "18",
+                    "61"
+                ],
+                "publisherId": "6",
+                "url": "https://www.google.fr/books/edition/Fleur_du_Tyrol_vaudeville_en_un_acte_par/M2JKt__Ann4C",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1872",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1872",
+                "nbActs": "1",
+                "nbScenes": [
+                    "15"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "118",
+                "anOrd": "111",
+                "wikidataId": null,
+                "titleMain": "Le bapt\u00eame du petit Oscar",
+                "titleSub": "Com\u00e9die-vaudeville en cinq actes",
+                "authorId": [
+                    "18",
+                    "61"
+                ],
+                "publisherId": "6",
+                "url": "https://www.google.fr/books/edition/Le_bapteme_du_petit_Oscar_comedie_vaudev/5RVvJELGEkEC",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1873",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1873",
+                "nbActs": null,
+                "nbScenes": [
+                    "11",
+                    "5",
+                    "11",
+                    "8",
+                    "5"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "119",
+                "anOrd": "113",
+                "wikidataId": null,
+                "titleMain": "Le luxe de ma femme",
+                "titleSub": "Com\u00e9die-vaudeville en un acte",
+                "authorId": [
+                    "63",
+                    "41"
+                ],
+                "publisherId": "8",
+                "url": "https://www.google.fr/books/edition/Le_luxe_de_ma_femme_comedie_vaudeville_e/AWDy-wg47EoC",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1868",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1868",
+                "nbActs": "1",
+                "nbScenes": [
+                    "23"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "120",
+                "anOrd": "114",
+                "wikidataId": null,
+                "titleMain": "Un homme de bronze",
+                "titleSub": "Com\u00e9die-vaudeville en un acte",
+                "authorId": [
+                    "63",
+                    "41"
+                ],
+                "publisherId": "8",
+                "url": "https://www.google.fr/books/edition/Un_homme_de_bronze_comedie_vaudeville_en/35bQgAawjAIC",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1865",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1865",
+                "nbActs": "1",
+                "nbScenes": [
+                    "21"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "121",
+                "anOrd": "115",
+                "wikidataId": null,
+                "titleMain": "Pifferaro",
+                "titleSub": "Com\u00e9die-vaudeville en un acte",
+                "authorId": [
+                    "26",
+                    "63",
+                    "42"
+                ],
+                "publisherId": "8",
+                "url": "https://www.google.fr/books/edition/Le_pifferaro_com%C3%A9die_vaudeville_en_un_a/QuDhTJnUJT0C",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1863",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1863",
+                "nbActs": "1",
+                "nbScenes": [
+                    "15"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "122",
+                "anOrd": "116",
+                "wikidataId": null,
+                "titleMain": "Les filles de Barazin",
+                "titleSub": "Com\u00e9die-vaudeville en un acte",
+                "authorId": [
+                    "63",
+                    "41"
+                ],
+                "publisherId": "8",
+                "url": "https://www.google.fr/books/edition/Les_filles_de_Barazin_comedie_vaudeville/ANxEBv4Q2R4C",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1872",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1872",
+                "nbActs": "1",
+                "nbScenes": [
+                    "16"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "123",
+                "anOrd": "117",
+                "wikidataId": null,
+                "titleMain": "Bloqu\u00e9!",
+                "titleSub": "vaudeville en un acte",
+                "authorId": [
+                    "63",
+                    "41"
+                ],
+                "publisherId": "22",
+                "url": "https://www.google.fr/books/edition/Bloque/vfo-AAAAIAAJ",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1859",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1858",
+                "nbActs": "1",
+                "nbScenes": [
+                    "19"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "124",
+                "anOrd": "118",
+                "wikidataId": null,
+                "titleMain": "La po\u00e9sie des amours et...",
+                "titleSub": "com\u00e9die-vaudeville en deux actes",
+                "authorId": [
+                    "22",
+                    "23"
+                ],
+                "publisherId": "4",
+                "url": "https://www.google.fr/books/edition/La_po%C3%A9sie_des_amours_et_Com%C3%A9die_vaudev/j3j0NM928zYC",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1849",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1849",
+                "nbActs": "2",
+                "nbScenes": [
+                    "16",
+                    "15"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "125",
+                "anOrd": "119",
+                "wikidataId": null,
+                "titleMain": "Riche de c\u0153ur",
+                "titleSub": "Com\u00e9die-vaudeville en un acte",
+                "authorId": [
+                    "22",
+                    "23"
+                ],
+                "publisherId": "4",
+                "url": "https://www.google.fr/books/edition/Riche_de_coeur_Com%C3%A9die_vaudeville_en_un/6VWEfFk3k5IC",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1856",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1856",
+                "nbActs": "1",
+                "nbScenes": [
+                    "17"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "126",
+                "anOrd": "120",
+                "wikidataId": null,
+                "titleMain": "Ce que femme veut...",
+                "titleSub": "com\u00e9die-vaudeville en deux actes",
+                "authorId": [
+                    "22",
+                    "23"
+                ],
+                "publisherId": "9",
+                "url": "https://www.google.fr/books/edition/Ce_que_femme_veut/oDMUAAAAQAAJ",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1847",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1847",
+                "nbActs": "2",
+                "nbScenes": [
+                    "16",
+                    "18"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "127",
+                "anOrd": "123",
+                "wikidataId": null,
+                "titleMain": "La clef dans le dos",
+                "titleSub": "Com\u00e9die-vaudeville en un acte",
+                "authorId": [
+                    "22",
+                    "23"
+                ],
+                "publisherId": null,
+                "url": "https://www.google.fr/books/edition/La_clef_dans_le_dos/tjhMAAAAcAAJ",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": null,
+                "firstPrinted": "1848",
+                "firstPublisher": "6",
+                "premiere": "1848",
+                "nbActs": "1",
+                "nbScenes": [
+                    "28"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "128",
+                "anOrd": "124",
+                "wikidataId": null,
+                "titleMain": "Le pont cass\u00e9",
+                "titleSub": "Com\u00e9die-vaudeville en un acte",
+                "authorId": [
+                    "22",
+                    "23"
+                ],
+                "publisherId": "23",
+                "url": "https://www.google.fr/books/edition/Le_pont_cass%C3%A9/sUVSAAAAcAAJ",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1850",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1850",
+                "nbActs": "1",
+                "nbScenes": [
+                    "16"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "129",
+                "anOrd": "125",
+                "wikidataId": null,
+                "titleMain": "Riche d'amour",
+                "titleSub": "Com\u00e9die-vaudeville en un acte",
+                "authorId": [
+                    "22",
+                    "23",
+                    "13"
+                ],
+                "publisherId": "15",
+                "url": "https://www.google.fr/books/edition/Riche_d_amour/Ye84ZzxJNwAC?gbpv=1",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": null,
+                "firstPrinted": "1846",
+                "firstPublisher": "4, 25",
+                "premiere": "1845",
+                "nbActs": "1",
+                "nbScenes": [
+                    "20"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "130",
+                "anOrd": "126",
+                "wikidataId": null,
+                "titleMain": "Macaroni d'Italie",
+                "titleSub": "vaudeville en un acte",
+                "authorId": [
+                    "22",
+                    "23",
+                    "68"
+                ],
+                "publisherId": "4",
+                "url": "https://www.google.fr/books/edition/Macaroni_d_Italie_Vaudeville_en_un_acte/YivKFpEEXSoC",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1858",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1858",
+                "nbActs": "1",
+                "nbScenes": [
+                    "17"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "131",
+                "anOrd": "127",
+                "wikidataId": null,
+                "titleMain": "Le hanneton du Japon",
+                "titleSub": "Com\u00e9die-vaudeville en un acte",
+                "authorId": [
+                    "22",
+                    "23"
+                ],
+                "publisherId": "4",
+                "url": "https://www.google.fr/books/edition/Le_hanneton_du_Japon/L7lbAAAAQAAJ",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1858",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1858",
+                "nbActs": "1",
+                "nbScenes": [
+                    "23"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "132",
+                "anOrd": "128",
+                "wikidataId": null,
+                "titleMain": "Les femmes s\u00e9rieuses",
+                "titleSub": "Com\u00e9die-vaudeville en trois actes",
+                "authorId": [
+                    "26",
+                    "29",
+                    "69"
+                ],
+                "publisherId": "8",
+                "url": "https://books.google.fr/books?id=9_irBIIjelcC&printsec=frontcover&dq=inauthor:siraudin&hl=fr&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwiq98b-k6P_AhW-VqQEHQWZCNQQ6AF6BAgJEAI",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1864",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1864",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "133",
+                "anOrd": "129",
+                "wikidataId": null,
+                "titleMain": "L'argent fait peur",
+                "titleSub": "com\u00e9die-vaudeville en un acte",
+                "authorId": [
+                    "26",
+                    "61"
+                ],
+                "publisherId": "6",
+                "url": "https://www.google.fr/books/edition/L_argent_fait_peur/da0ZeFr6Ft0C",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1861",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1861",
+                "nbActs": "1",
+                "nbScenes": [
+                    "20"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "134",
+                "anOrd": "130",
+                "wikidataId": null,
+                "titleMain": "Le propri\u00e9taire \u00e0 la porte",
+                "titleSub": "vaudeville en un acte",
+                "authorId": [
+                    "26"
+                ],
+                "publisherId": "8",
+                "url": "https://www.google.fr/books/edition/Le_propri%C3%A9taire_a_la_porte/5NRpPgwxmbgC",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1863",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1863",
+                "nbActs": "1",
+                "nbScenes": [
+                    "20"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "135",
+                "anOrd": "131",
+                "wikidataId": null,
+                "titleMain": "Un avocat du beau sexe",
+                "titleSub": "com\u00e9die-vaudeville en un acte",
+                "authorId": [
+                    "26",
+                    "30"
+                ],
+                "publisherId": "8",
+                "url": "https://books.google.fr/books?id=XRRdAAAAcAAJ&printsec=frontcover&dq=inauthor:siraudin&hl=fr&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwiq98b-k6P_AhW-VqQEHQWZCNQQ6AF6BAgCEAI",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1862",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1862",
+                "nbActs": "1",
+                "nbScenes": [
+                    "18"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "136",
+                "anOrd": "132",
+                "wikidataId": null,
+                "titleMain": "Le passage Radziwill ou La journ\u00e9e aux parapluies",
+                "titleSub": "Vaudeville en trois actes",
+                "authorId": [
+                    "18",
+                    "26",
+                    "15"
+                ],
+                "publisherId": "6",
+                "url": "https://www.google.fr/books/edition/Le_passage_Radzivill_ou_la_journee_aux_p/ASOxZFuuPJcC",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1860",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1860",
+                "nbActs": "3",
+                "nbScenes": [
+                    "14",
+                    "16",
+                    "10"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "137",
+                "anOrd": "133",
+                "wikidataId": null,
+                "titleMain": "L'ami des femmes",
+                "titleSub": "com\u00e9die en un acte m\u00eal\u00e9e de couplets",
+                "authorId": [
+                    "26"
+                ],
+                "publisherId": "22",
+                "url": "https://books.google.fr/books?id=AxVdAAAAcAAJ&pg=PA50&dq=inauthor:siraudin&hl=fr&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwj-qf_olKP_AhUyUKQEHWMsDcY4ChDoAXoECAcQAg",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1861",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1861",
+                "nbActs": "1",
+                "nbScenes": [
+                    "22"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "138",
+                "anOrd": "134",
+                "wikidataId": null,
+                "titleMain": "Le monsieur de la Rue de Vend\u00f4me",
+                "titleSub": "vaudeville en un acte pr\u00e9c\u00e9d\u00e9 d'un prologue",
+                "authorId": [
+                    "26",
+                    "70"
+                ],
+                "publisherId": "6",
+                "url": "https://www.google.fr/books/edition/Le_monsieur_de_la_rue_de_vendome_vaudevi/e8mfsjpJF8wC",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1862",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1861",
+                "nbActs": "1",
+                "nbScenes": [
+                    "22"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "139",
+                "anOrd": "135",
+                "wikidataId": null,
+                "titleMain": "Les id\u00e9es de Beaucornet",
+                "titleSub": "com\u00e9die en un acte",
+                "authorId": [
+                    "26"
+                ],
+                "publisherId": "24",
+                "url": "https://www.google.fr/books/edition/Les_id%C3%A9es_de_Beaucornet/gZYGAAAAQAAJ",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1867",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1867",
+                "nbActs": "1",
+                "nbScenes": [
+                    "13"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "140",
+                "anOrd": "136",
+                "wikidataId": null,
+                "titleMain": "B\u00e9b\u00e9-actrice",
+                "titleSub": "vaudeville en un acte",
+                "authorId": [
+                    "26",
+                    "30"
+                ],
+                "publisherId": "22",
+                "url": "https://www.google.fr/books/edition/Bebe_actrice_parodie_vaudeville_en_un_ac/v026VJyVeloC",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1861",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1861",
+                "nbActs": "1",
+                "nbScenes": [
+                    "12"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "141",
+                "anOrd": "137",
+                "wikidataId": null,
+                "titleMain": "Une femme aux cornichons",
+                "titleSub": "vaudeville en un acte",
+                "authorId": [
+                    "26",
+                    "29"
+                ],
+                "publisherId": "22",
+                "url": "https://www.google.fr/books/edition/Une_femme_aux_cornichons_Vaudeville_en_1/o8hce-O5IwIC",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1860",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1860",
+                "nbActs": "1",
+                "nbScenes": [
+                    "19"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "142",
+                "anOrd": "138",
+                "wikidataId": null,
+                "titleMain": "Les danses nationales de la France",
+                "titleSub": "vaudeville en trois actes et cinq tableaux",
+                "authorId": [
+                    "11",
+                    "29",
+                    "15"
+                ],
+                "publisherId": "6",
+                "url": "https://www.google.fr/books/edition/Les_danses_nationales_de_la_France_vaude/SzJPsDBm67wC",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1861",
+                "firstPrinted": "1861",
+                "firstPublisher": "6",
+                "premiere": "1861",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": "the characters are dances, so of course it is difficult to assign social variables"
+            },
+            {
+                "workId": "143",
+                "anOrd": "139",
+                "wikidataId": null,
+                "titleMain": "La puce \u00e0 l'oreille",
+                "titleSub": "com\u00e9die-vaudeville en un acte",
+                "authorId": [
+                    "15",
+                    "26"
+                ],
+                "publisherId": "6",
+                "url": "https://books.google.com/books?id=T7YXkyRpPRAC&printsec=frontcover&dq=inauthor:%22lambert-thiboust%22+vaudeville&hl=fr&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwi5npLrlqP_AhVSUqQEHY2xBKI4ChDoAXoECAcQAg",
+                "sourceType": null,
+                "sourcePlatform": "Google Books",
+                "printed": "1867",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1867",
+                "nbActs": "1",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "144",
+                "anOrd": "140",
+                "wikidataId": null,
+                "titleMain": "Le guide de l'\u00e9tranger dans Paris",
+                "titleSub": "com\u00e9die-vaudeville en trois actes",
+                "authorId": [
+                    "18",
+                    "15"
+                ],
+                "publisherId": "6",
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k97497492/f4.item.texteImage",
+                "sourceType": null,
+                "sourcePlatform": "Gallica",
+                "printed": "1860",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1860",
+                "nbActs": "3",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "145",
+                "anOrd": "1",
+                "wikidataId": null,
+                "titleMain": "Die Frau Pfarrerin",
+                "titleSub": "Lustspiel in einem Aufzug bey Gelegenheit der lutherischen Jubelfeyer",
+                "authorId": [
+                    "34"
+                ],
+                "publisherId": "82",
+                "url": "https://biblio.bnu.fr/opac/resource/die-frau-pfarrerin-lustspiel-in-einem-aufzug-bey-gelegenheit-der-lutherischen-jubelfeyer-1817/BUS3893785",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1817",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "1",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "146",
+                "anOrd": "2",
+                "wikidataId": null,
+                "titleMain": "Daniel oder der Strassburger auf der Probe",
+                "titleSub": "Lustspiel mit Ges\u00e4ngen in zwey Aufz\u00fcgen. Zum Theil in els\u00e4ssischer Mundart",
+                "authorId": [
+                    "37"
+                ],
+                "publisherId": "81",
+                "url": "https://biblio.bnu.fr/opac/resource/daniel-oder-der-strassburger-auf-der-probe-lustspiel-mit-gesaengen-in-zwey-aufzuegen-zum-theil-in-el/BUS3909219",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1823",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "2",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "147",
+                "anOrd": "3",
+                "wikidataId": null,
+                "titleMain": "Die Meisenlocker",
+                "titleSub": "Eine h\u00e4usliche Scene aus unseren Tagen",
+                "authorId": [
+                    "38"
+                ],
+                "publisherId": "83",
+                "url": "https://biblio.bnu.fr/opac/resource/die-meisenlocker-eine-haeusliche-scene-aus-unseren-tagen/BUS3876197",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1839",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": null,
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "148",
+                "anOrd": "4",
+                "wikidataId": null,
+                "titleMain": "D'Husmittel",
+                "titleSub": "E Kom\u00f6die wo au ebbs vun de Hexenmeister unn de respektable Schlofer vorkummt",
+                "authorId": [
+                    "39"
+                ],
+                "publisherId": "85",
+                "url": "https://biblio.bnu.fr/opac/resource/dhusmittel-e-komdie-wo-au-ebbs-vun-de-hexenmeister-unn-de-respektable-schlofer-vorkummt/BUS3874284",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1842",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": null,
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "149",
+                "anOrd": "5",
+                "wikidataId": null,
+                "titleMain": "s'Lob vom ledig\u00e4 Schtand",
+                "titleSub": "Dialog in Colmarer Mundart",
+                "authorId": [
+                    "15"
+                ],
+                "publisherId": "84",
+                "url": "https://biblio.bnu.fr/opac/resource/s-lob-vom-lediga-schtand-par-j-mangold-airs-duos-couplets-et-valse-pour-tenor-et-basse-avec-accompag/BUS3875216",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1860",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "1",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "151",
+                "anOrd": "6",
+                "wikidataId": null,
+                "titleMain": "Die dreyfach Hochzitt em B\u00e4s\u00e4thal",
+                "titleSub": "Op\u00e9ra comique en 3 actes et en dialecte Colmarien",
+                "authorId": [
+                    "15"
+                ],
+                "publisherId": "84",
+                "url": "https://biblio.bnu.fr/opac/resource/die-dreyfach-hochzitt-im-basathal-les-trois-noces-dans-la-vallee-des-balais-opera-comique-en-3-actes/BUS4655404",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1863",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "3",
+                "nbScenes": [
+                    "4",
+                    "3",
+                    "4"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "153",
+                "anOrd": "7",
+                "wikidataId": null,
+                "titleMain": "E. Firobe im \u00ea Sundgauer Wirthshus",
+                "titleSub": "Volks-Scenen in zwei Abtheilungen",
+                "authorId": [
+                    "41"
+                ],
+                "publisherId": "88",
+                "url": "https://biblio.bnu.fr/opac/resource/e-firobe-im-e-sundgauer-wirtshus-volksscenen-in-zwei-abtheilungen/BUS3875031",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1868",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "2",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "154",
+                "anOrd": "8",
+                "wikidataId": null,
+                "titleMain": "Im Hirtejerri sin verborjener Schatz",
+                "titleSub": "Komedie in 1 Act in nidderels\u00e4sser Spr\u00f4ch",
+                "authorId": [
+                    "42"
+                ],
+                "publisherId": "89",
+                "url": "https://biblio.bnu.fr/opac/resource/im-hirtejerri-sin-verborjener-schatz-komedie-in-1-act-in-nidderelsaesser-sproch-noch-ere-verzaehlung/BUS3910999",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1865",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "1",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "155",
+                "anOrd": "9",
+                "wikidataId": null,
+                "titleMain": "D'r Hans on's Greht\u00e4l\u00e4 \u00e9m Ehstand",
+                "titleSub": "Loscht's-Operettl\u00e4 \u00e9n 1 Act\u00e4",
+                "authorId": [
+                    "15"
+                ],
+                "publisherId": "90",
+                "url": "https://biblio.bnu.fr/opac/resource/dr-hans-ons-grehtaelae-em-ehschtand-loschtsoperettlae-en-1-actae/BUS3893839",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1869",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "1",
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "156",
+                "anOrd": "10",
+                "wikidataId": null,
+                "titleMain": "Die vierte Kunkelstub bei der Frau Velten",
+                "titleSub": "Ein kleines Lustspiel zum Theil in els\u00e4ssischer Mundart",
+                "authorId": [
+                    "43"
+                ],
+                "publisherId": "91",
+                "url": "https://biblio.bnu.fr/opac/resource/die-vierte-kunkelstub-bei-der-frau-velten-ein-kleines-lustspiel-zum-theil-in-elsassischer-mundart-vo/BUS3874763",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1879",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": null,
+                "nbScenes": null,
+                "comments": null
+            },
+            {
+                "workId": "157",
+                "anOrd": "11",
+                "wikidataId": null,
+                "titleMain": "Der Steckelburger",
+                "titleSub": "Lustspiel in 4 Auz\u00fcgen, mit Ges\u00e4ngen. Theils in deutscher Schriftsprache, theils in Stra\u00dfburger Mundart",
+                "authorId": [
+                    "44"
+                ],
+                "publisherId": "92",
+                "url": "https://biblio.bnu.fr/opac/resource/der-steckelburger-lustspiel-in-4-auzuegen-mit-gesaengen-theils-in-deutscher-schriftsprache-theils-in/BUS3893734",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1871",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "4",
+                "nbScenes": [
+                    "9",
+                    "8",
+                    "4",
+                    "4"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "158",
+                "anOrd": "12",
+                "wikidataId": null,
+                "titleMain": "Der Ordnungsstifter oder Der neue Wirrwarr",
+                "titleSub": "Lustspiel mit Gesang in drei Aufz\u00fcgen",
+                "authorId": [
+                    "45"
+                ],
+                "publisherId": "12",
+                "url": "https://biblio.bnu.fr/opac/resource/der-ordnungsstifter-oder-der-neue-wirrwarr-lustspiel-mit-gesang-in-drei-aufzuegen/BUS3874303",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1872",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "3",
+                "nbScenes": [
+                    "15",
+                    "24",
+                    "18"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "159",
+                "anOrd": "13",
+                "wikidataId": null,
+                "titleMain": "Hans Dampf oder Wer heirathet Sie? ",
+                "titleSub": "Komische Oper in zwei Acten",
+                "authorId": [
+                    "45"
+                ],
+                "publisherId": "12",
+                "url": "https://biblio.bnu.fr/opac/resource/hans-dampf-oder-wer-heirathet-sie-komische-oper-in-zwei-acten/BUS3909166",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1872",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "2",
+                "nbScenes": [
+                    "13.16"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "161",
+                "anOrd": "14",
+                "wikidataId": null,
+                "titleMain": "D'Schnurante",
+                "titleSub": "Introduction au sextuor comique",
+                "authorId": [
+                    "47"
+                ],
+                "publisherId": "93",
+                "url": "https://biblio.bnu.fr/opac/resource/dschnurante-schnurrante/BUS3874872",
+                "sourceType": "FullText",
+                "sourcePlatform": null,
+                "printed": "1875",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "1",
+                "nbScenes": [
+                    "1"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "162",
+                "anOrd": "15",
+                "wikidataId": null,
+                "titleMain": "Der Gaasejopper geht auf die Freierei oder die heiratlustige Zipper",
+                "titleSub": "Schauspiel in 5 Aufz\u00fcgen und 9 Scenen. Vortrag nach dem els\u00e4ssisch-j\u00fcdischen Dialekt",
+                "authorId": [
+                    "48"
+                ],
+                "publisherId": "unknown",
+                "url": "https://biblio.bnu.fr/opac/resource/der-gaasejopper-geht-auf-die-freierei-oder-die-heiratslustige-zipper-schauspiel-in-5-aufzuegen-und-9/BUS3875143",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1876",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "5",
+                "nbScenes": [
+                    "2",
+                    "2",
+                    "2",
+                    "2",
+                    "1"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "163",
+                "anOrd": "16",
+                "wikidataId": null,
+                "titleMain": "D'Maiselocker",
+                "titleSub": "Lustspiel in drei Acten",
+                "authorId": [
+                    "33"
+                ],
+                "publisherId": "91",
+                "url": "https://biblio.bnu.fr/opac/resource/dmaiselocker-lustspiel-in-drei-acten/BUS3874623",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1877",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "3",
+                "nbScenes": [
+                    "12",
+                    "11",
+                    "8"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "164",
+                "anOrd": "17",
+                "wikidataId": null,
+                "titleMain": "Der Gaasejopper macht Chasene",
+                "titleSub": "Lustspiel in sieben Aufz\u00fcgen. In els\u00e4ssisch-j\u00fcdischem Dialekt verfasst",
+                "authorId": [
+                    "48"
+                ],
+                "publisherId": "unknown",
+                "url": "https://biblio.bnu.fr/opac/resource/der-gaasejopper-macht-chasene-lustspiel-in-sieben-aufzuegen-in-elsaessischjuedischem-dialekt-verfass/BUS3868559",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1877",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "7",
+                "nbScenes": [
+                    "2",
+                    "7",
+                    "2",
+                    "5",
+                    "6",
+                    "6",
+                    "3"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "165",
+                "anOrd": "18",
+                "wikidataId": null,
+                "titleMain": "Prologue zue der Theatervorstellung vum 9. f\u00e9vrier 1878",
+                "titleSub": null,
+                "authorId": [
+                    "49"
+                ],
+                "publisherId": "17",
+                "url": "https://biblio.bnu.fr/opac/resource/prologue-zue-der-theatervorstellung-vum-9-fevrier-1878/BUS3893741",
+                "sourceType": "FullText",
+                "sourcePlatform": null,
+                "printed": "1878",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "1",
+                "nbScenes": [
+                    "1"
+                ],
+                "comments": "no dramatis personae"
+            },
+            {
+                "workId": "166",
+                "anOrd": "19",
+                "wikidataId": null,
+                "titleMain": "D'Linsespalter",
+                "titleSub": "Lustspiel in 3 Akten. D\u00e9di\u00e9 \u00e0 l'Union Musicale de Strasbourg",
+                "authorId": [
+                    "33"
+                ],
+                "publisherId": "93",
+                "url": "https://biblio.bnu.fr/opac/resource/d-linsespalter-lustspiel-in-3-akten-von-ch-f-kettner/BUS3887429",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1900",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "3",
+                "nbScenes": [
+                    "12",
+                    "10",
+                    "9"
+                ],
+                "comments": "dramatis personae in Kurrent"
+            },
+            {
+                "workId": "173",
+                "anOrd": "20",
+                "wikidataId": null,
+                "titleMain": "Gasejopper als Almon",
+                "titleSub": "Lustspiel in 4 Akten",
+                "authorId": [
+                    "48"
+                ],
+                "publisherId": "unknown",
+                "url": "https://biblio.bnu.fr/opac/resource/gasejopper-als-almon-lustspiel-in-4-akten-i/BUS3875142",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1883",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "4",
+                "nbScenes": [
+                    "3",
+                    "2",
+                    "6",
+                    "3"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "174",
+                "anOrd": "21",
+                "wikidataId": null,
+                "titleMain": "Zwei Duellante",
+                "titleSub": "Theatrest\u00fcck uf Milh\u00fcserditsch",
+                "authorId": [
+                    "50"
+                ],
+                "publisherId": "96",
+                "url": "https://biblio.bnu.fr/opac/resource/zwei-duellante-theatrestueck-uf-milhueserditsch/BUS3874652",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1884",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "1",
+                "nbScenes": [
+                    "6"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "176",
+                "anOrd": "22",
+                "wikidataId": null,
+                "titleMain": "Der Gersching Narr well ach a Fraa",
+                "titleSub": "Lustspiel in 5 Acten. In els\u00e4ssisch-j\u00fcdischem Dialekt",
+                "authorId": [
+                    "51"
+                ],
+                "publisherId": "26",
+                "url": "https://biblio.bnu.fr/opac/resource/der-gersching-narr-well-ach-a-fraa-lustspiel-in-5-acten-in-elsaessischjuedischem-dialekt-et-fortsetz/BUS3893916",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1885",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "5",
+                "nbScenes": [
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "177",
+                "anOrd": "23",
+                "wikidataId": null,
+                "titleMain": "E Radikal-Kuur",
+                "titleSub": "Lustspiel in zwei Uffz\u00fcg. In els\u00e4sser Mundart un in Vers",
+                "authorId": [
+                    "38"
+                ],
+                "publisherId": "98",
+                "url": "https://biblio.bnu.fr/opac/resource/e-radikalkuur-lustspiel-in-zwei-uffzueg-in-elsaesser-mundart-un-in-vers/BUS3874518",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1886",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "2",
+                "nbScenes": [
+                    "15.9"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "178",
+                "anOrd": "24",
+                "wikidataId": null,
+                "titleMain": "Unverbesserli !",
+                "titleSub": "Sittegem\u00e4ld in zwei Uffz\u00fcgg un in Vers",
+                "authorId": [
+                    "38"
+                ],
+                "publisherId": "98",
+                "url": "https://biblio.bnu.fr/opac/resource/unverbesserli-sittegemaeld-in-zwei-uffzueg-un-in-vers/BUS3874519",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1886",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "2",
+                "nbScenes": [
+                    "8.6"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "179",
+                "anOrd": "25",
+                "wikidataId": null,
+                "titleMain": "Zwei dauwi Meiselocker",
+                "titleSub": null,
+                "authorId": [
+                    "52"
+                ],
+                "publisherId": "27",
+                "url": "https://biblio.bnu.fr/opac/resource/zwei-dauwi-meiselocker/BUS3893855",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1886",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "1",
+                "nbScenes": [
+                    "18"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "180",
+                "anOrd": "26",
+                "wikidataId": null,
+                "titleMain": "Im Finele sini Hochzit",
+                "titleSub": "Lustspiel in vier Akte Schlettstadter Mundart un Schlettstadter Gedichte",
+                "authorId": [
+                    "53"
+                ],
+                "publisherId": "99",
+                "url": "https://biblio.bnu.fr/opac/resource/im-finele-sini-hochzit-lustspiel-in-vier-akte-schlettstadter-mundart-un-schlettstadter-gedichte/BUS3911020",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1886",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "4",
+                "nbScenes": [
+                    "2",
+                    "1",
+                    "1",
+                    "1"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "181",
+                "anOrd": "27",
+                "wikidataId": null,
+                "titleMain": "Drei Narre of am Karre",
+                "titleSub": "Lustspiel in 3 Acten",
+                "authorId": [
+                    "48"
+                ],
+                "publisherId": null,
+                "url": "https://biblio.bnu.fr/opac/resource/drei-narre-of-am-karre-lustspiel/BUS3875141",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1887",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "3",
+                "nbScenes": [
+                    "2",
+                    "4",
+                    "1"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "183",
+                "anOrd": "28",
+                "wikidataId": null,
+                "titleMain": "E ungemietlichi M\u00e9nage",
+                "titleSub": null,
+                "authorId": [
+                    "34"
+                ],
+                "publisherId": "27",
+                "url": "https://biblio.bnu.fr/opac/resource/e-ungemietlichi-menage/BUS3893853",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1889",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "1",
+                "nbScenes": [
+                    "17"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "187",
+                "anOrd": "29",
+                "wikidataId": null,
+                "titleMain": "Die B\u00fcrgschaft",
+                "titleSub": "Genrebild",
+                "authorId": [
+                    "56"
+                ],
+                "publisherId": "100",
+                "url": "https://biblio.bnu.fr/opac/resource/die-burgschaft/BUS4363034",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1892",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "1",
+                "nbScenes": [
+                    "1"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "190",
+                "anOrd": "30",
+                "wikidataId": null,
+                "titleMain": "Marie oder die lustige Almone",
+                "titleSub": "Lustspiel in 4 Akten",
+                "authorId": [
+                    "48"
+                ],
+                "publisherId": null,
+                "url": "https://biblio.bnu.fr/opac/resource/marie-oder-die-lustige-almone-lustspiel-in-4-akten/BUS3875144",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1893",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "4",
+                "nbScenes": [
+                    "3",
+                    "2",
+                    "5",
+                    "3"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "193",
+                "anOrd": "31",
+                "wikidataId": null,
+                "titleMain": "Im Dahomey",
+                "titleSub": "Bouffonerie mit Gesang, Musik und Tanz in 1 Akt und 2 Tableaux",
+                "authorId": [
+                    "58"
+                ],
+                "publisherId": "27",
+                "url": "https://biblio.bnu.fr/opac/resource/im-dahomey-bouffonerie-mit-gesang-musik-und-tanz/BUS3893754",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1894",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "1",
+                "nbScenes": [
+                    "11"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "194",
+                "anOrd": "32",
+                "wikidataId": null,
+                "titleMain": "Vater und Sohn, beide als Heirathskandidaten",
+                "titleSub": "Lustspiel in 3 Akten",
+                "authorId": [
+                    "48"
+                ],
+                "publisherId": null,
+                "url": "https://biblio.bnu.fr/opac/resource/vater-und-sohn-beide-als-heiratskandidaten-lustspiel-in-3-akten/BUS3875145",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1894",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "3",
+                "nbScenes": [
+                    "2",
+                    "4",
+                    "1"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "195",
+                "anOrd": "33",
+                "wikidataId": null,
+                "titleMain": "Dreij Freijer",
+                "titleSub": "Schwank in einem Uffzug in Strossburjer Mundart",
+                "authorId": [
+                    "5"
+                ],
+                "publisherId": "1",
+                "url": "https://biblio.bnu.fr/opac/resource/dreij-freijer-schwank-in-einem-aufzuge-in-strassburger-mundart/BUS3866541",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1925",
+                "firstPrinted": "1895",
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "1",
+                "nbScenes": [
+                    "1"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "197",
+                "anOrd": "34",
+                "wikidataId": null,
+                "titleMain": "S'ich wie mer will",
+                "titleSub": "E Dummheit von Anno 48 in einem Akt un 3 Tableaux, vum e Strossburger sinnere G'sellschaft dediert",
+                "authorId": [
+                    "59"
+                ],
+                "publisherId": null,
+                "url": "https://biblio.bnu.fr/opac/resource/s-isch-wie-mer-will-e-dummheit-von-anno-48-in-einem-akt-un-3-tableaux-wum-e-strossburger-sinnere-gse/BUS3875121",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1900",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "1",
+                "nbScenes": [
+                    "10"
+                ],
+                "comments": "1 acte et 3 tableaux (8 sc\u00e8nes, 1 sc\u00e8ne, 1 sc\u00e8ne)"
+            },
+            {
+                "workId": "198",
+                "anOrd": "35",
+                "wikidataId": null,
+                "titleMain": "Der Schlettstadter Pfingstmontag",
+                "titleSub": "L\u00e4ndliches Sittengem\u00e4lden in 3 Akten",
+                "authorId": [
+                    "46"
+                ],
+                "publisherId": "102",
+                "url": "https://biblio.bnu.fr/opac/resource/der-schlettstadter-pfingstmontag-landliches-sittengemalden-in-3-akten/BUS4654609",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1897",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "3",
+                "nbScenes": [
+                    "5",
+                    "4",
+                    "5"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "160",
+                "anOrd": "36",
+                "wikidataId": null,
+                "titleMain": "Der Dreik\u00f6nigstag oder das alte Schlestadt",
+                "titleSub": "Lustspiel in 2 Akten",
+                "authorId": [
+                    "46"
+                ],
+                "publisherId": "102",
+                "url": "https://biblio.bnu.fr/opac/resource/der-schlettstadter-pfingstmontag-landliches-sittengemalden-in-3-akten/BUS4654609",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1897",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "2",
+                "nbScenes": [
+                    "1",
+                    "1"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "167",
+                "anOrd": "37",
+                "wikidataId": null,
+                "titleMain": "M'r bhaupt' es sey bassirt",
+                "titleSub": "Lustspiel in 1 Akt",
+                "authorId": [
+                    "33"
+                ],
+                "publisherId": "101",
+                "url": "https://biblio.bnu.fr/opac/resource/guet-vun-hie-meiselokeriade/BUS3893805",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1894",
+                "firstPrinted": "1878",
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "1",
+                "nbScenes": [
+                    "13"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "168",
+                "anOrd": "38",
+                "wikidataId": null,
+                "titleMain": "Stocktaub oder 's sin alli Better b'setzt",
+                "titleSub": "Lustspiel in 1 Akt frei nooch em Franz\u00f6sche",
+                "authorId": [
+                    "33"
+                ],
+                "publisherId": "101",
+                "url": "https://biblio.bnu.fr/opac/resource/guet-vun-hie-meiselokeriade/BUS3893805",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1894",
+                "firstPrinted": "1878",
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "1",
+                "nbScenes": [
+                    "16"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "199",
+                "anOrd": "39",
+                "wikidataId": null,
+                "titleMain": "Die Kunkelstube in einem Vogesendorfe",
+                "titleSub": "L\u00e4ndliche Scene mit Gesang und Tanz in einem Aufzug",
+                "authorId": [
+                    "60"
+                ],
+                "publisherId": "1",
+                "url": "https://biblio.bnu.fr/opac/resource/die-kunkelstube-in-einem-vogesendorfe-laendliche-scene-mit-gesang-und-tanz-in-einem-aufzug/BUS3864117",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1902",
+                "firstPrinted": "1897",
+                "firstPublisher": null,
+                "premiere": "1897",
+                "nbActs": "1",
+                "nbScenes": [
+                    "5"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "306",
+                "anOrd": "40",
+                "wikidataId": null,
+                "titleMain": "D'Inspektion vom Gsangverein vo Brielinge",
+                "titleSub": "Grosse komische Sc\u00e8ne uf Milh\u00fcserditsch mit Gsang",
+                "authorId": [
+                    "63"
+                ],
+                "publisherId": "25",
+                "url": "https://biblio.bnu.fr/opac/resource/dinspektion-vom-gsangverein-vo-brielinge-grosse-komische-scene-uf-milhueserditsch-mit-gsang/BUS3875122",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1897",
+                "firstPrinted": "1897",
+                "firstPublisher": null,
+                "premiere": "1897",
+                "nbActs": "1",
+                "nbScenes": [
+                    "1"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "307",
+                "anOrd": "41",
+                "wikidataId": null,
+                "titleMain": "D'r Ernest in Verl\u00e0geheit",
+                "titleSub": "Theaterst\u00fcck uf Milh\u00fcserditsch mit Gsang",
+                "authorId": [
+                    "63"
+                ],
+                "publisherId": "25",
+                "url": "https://biblio.bnu.fr/opac/resource/dr-ernest-in-verlageheit-theaterstueck-uf-milhueserditsch/BUS3874071",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1897",
+                "firstPrinted": "1897",
+                "firstPublisher": null,
+                "premiere": "1897",
+                "nbActs": "1",
+                "nbScenes": [
+                    "10"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "308",
+                "anOrd": "42",
+                "wikidataId": null,
+                "titleMain": "Nitt g'spielt un doch g'spielt",
+                "titleSub": "Theaterst\u00fcck uf Milh\u00fcserditsch mit Gsang",
+                "authorId": [
+                    "63"
+                ],
+                "publisherId": "25",
+                "url": "https://biblio.bnu.fr/opac/resource/dr-ernest-in-verlageheit-theaterstueck-uf-milhueserditsch/BUS3874071",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1897",
+                "firstPrinted": "1897",
+                "firstPublisher": null,
+                "premiere": "1896",
+                "nbActs": "1",
+                "nbScenes": [
+                    "5"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "309",
+                "anOrd": "43",
+                "wikidataId": null,
+                "titleMain": "Im B\u00e0vele si Tr\u00e4um",
+                "titleSub": "Komisch Duo uf Milh\u00fcserditsch mit Gsang",
+                "authorId": [
+                    "63"
+                ],
+                "publisherId": "25",
+                "url": "https://biblio.bnu.fr/opac/resource/dr-ernest-in-verlageheit-theaterstueck-uf-milhueserditsch/BUS3874071",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1897",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1885",
+                "nbActs": "1",
+                "nbScenes": [
+                    "1"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "312",
+                "anOrd": "44",
+                "wikidataId": null,
+                "titleMain": "Dr Onkel Anatol",
+                "titleSub": "Milh\u00fcserditsch Theaterstickle in 1 Akt",
+                "authorId": [
+                    "62"
+                ],
+                "publisherId": "25",
+                "url": "https://biblio.bnu.fr/opac/resource/dr-onkel-anatol-milhueserditsch-theterstickle-in-1-akt/BUS3863168",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1898",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "1",
+                "nbScenes": [
+                    "9"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "318",
+                "anOrd": "45",
+                "wikidataId": null,
+                "titleMain": "D'M\u00fcettersproch",
+                "titleSub": "Prolog mit Inscenierung",
+                "authorId": [
+                    "62"
+                ],
+                "publisherId": "106",
+                "url": "https://biblio.bnu.fr/opac/resource/dmuettersproch-prolog-mit-inscenierung/BUS3874673",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1899",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1899",
+                "nbActs": "1",
+                "nbScenes": [
+                    "1"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "321",
+                "anOrd": "46",
+                "wikidataId": null,
+                "titleMain": "Am Belche",
+                "titleSub": "Lustspiel in 5 Aufz\u00fcgen. Ins Milh\u00fcserditsche iwersetzt vu Ch. Kolmann",
+                "authorId": [
+                    "70"
+                ],
+                "publisherId": "1",
+                "url": "https://biblio.bnu.fr/opac/resource/am-belche-lustspiel-in-5-aufzuegen/BUS3874269",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1900",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1900",
+                "nbActs": "5",
+                "nbScenes": [
+                    "9",
+                    "12",
+                    "12",
+                    "13",
+                    "11"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "322",
+                "anOrd": "47",
+                "wikidataId": null,
+                "titleMain": "Geld un Liewe",
+                "titleSub": "Theaterst\u00fcck in 4 Akte",
+                "authorId": [
+                    "61"
+                ],
+                "publisherId": "25",
+                "url": "https://biblio.bnu.fr/opac/resource/geld-un-liewe-theaterstueck-in-4-akte/BUS3874306",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1900",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "4",
+                "nbScenes": [
+                    "9",
+                    "10",
+                    "9",
+                    "9"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "323",
+                "anOrd": "48",
+                "wikidataId": null,
+                "titleMain": "Uns'r Ferdinand",
+                "titleSub": "Luschtspeel in 2 Akte",
+                "authorId": [
+                    "67"
+                ],
+                "publisherId": "1",
+                "url": "https://biblio.bnu.fr/opac/resource/unsr-ferdinand-luschtspeel-in-zwei-akte-vo-g-hanc-g-cahn/BUS3874214",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1900",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": "1899",
+                "nbActs": "2",
+                "nbScenes": [
+                    "16",
+                    "11"
+                ],
+                "comments": null
+            },
+            {
+                "workId": "182",
+                "anOrd": "49",
+                "wikidataId": null,
+                "titleMain": "Der B\u00e4r un der Sultan",
+                "titleSub": null,
+                "authorId": [
+                    "32"
+                ],
+                "publisherId": "27",
+                "url": "https://biblio.bnu.fr/opac/resource/der-bar-un-der-sultan/BUS5057288",
+                "sourceType": "TextExcerpts",
+                "sourcePlatform": null,
+                "printed": "1888",
+                "firstPrinted": null,
+                "firstPublisher": null,
+                "premiere": null,
+                "nbActs": "1",
+                "nbScenes": [
+                    "16"
+                ],
+                "comments": null
+            }
+        ]
+    }
+}

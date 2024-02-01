@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://thealtres.pages.unistra.fr/sitemap.xml
