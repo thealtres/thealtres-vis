@@ -1,0 +1,1364 @@
+{
+    "locations": [
+        {
+            "placeId": 1,
+            "lang": "fre",
+            "name": "Paris",
+            "wikidataId": "Q90",
+            "OSMRId": "7444",
+            "OSMLatLon": "48.8588897, 2.3200410",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 2,
+            "lang": "fre",
+            "name": "Trouville",
+            "wikidataId": "Q900702",
+            "OSMRId": "135582",
+            "OSMLatLon": "49.3683333, 0.0825000",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 3,
+            "lang": "fre",
+            "name": "Grenoble",
+            "wikidataId": "Q1289",
+            "OSMRId": "80348",
+            "OSMLatLon": "45.1875602, 5.7357819",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 4,
+            "lang": "fre",
+            "name": "Ch\u00e2teau de Fourchevif",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "fictional",
+            "comments": null
+        },
+        {
+            "placeId": 5,
+            "lang": "fre",
+            "name": "Ch\u00e2teau de Vaux-Champs",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "fictional",
+            "comments": null
+        },
+        {
+            "placeId": 6,
+            "lang": "fre",
+            "name": "Poissy",
+            "wikidataId": "Q457",
+            "OSMRId": "911088",
+            "OSMLatLon": "48.9274390, 2.0428293",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 7,
+            "lang": "fre",
+            "name": "Salle des pas perdus (Palais de Justice)",
+            "wikidataId": "Q56319274",
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 8,
+            "lang": "fre",
+            "name": "Vertus",
+            "wikidataId": "Q501906",
+            "OSMRId": "2728542",
+            "OSMLatLon": "48.9021524, 3.9985238",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 9,
+            "lang": "fre",
+            "name": "une auberge",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "fictional",
+            "comments": null
+        },
+        {
+            "placeId": 10,
+            "lang": "fre",
+            "name": "Chinon",
+            "wikidataId": "Q194138",
+            "OSMRId": "105284",
+            "OSMLatLon": "47.1667182, 0.2402095",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 11,
+            "lang": "fre",
+            "name": "\u00c9tampes",
+            "wikidataId": "Q205584",
+            "OSMRId": "1229908",
+            "OSMLatLon": "48.4344621, 2.1614464",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 12,
+            "lang": "fre",
+            "name": "Rouen",
+            "wikidataId": "Q30974",
+            "OSMRId": "75628",
+            "OSMLatLon": "49.4404591, 1.0939658",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 13,
+            "lang": "fre",
+            "name": "Bruxelles",
+            "wikidataId": "Q239",
+            "OSMRId": "58274",
+            "OSMLatLon": "50.8550018, 4.3512334",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 14,
+            "lang": "fre",
+            "name": "Ch\u00e2teauroux",
+            "wikidataId": "Q174251",
+            "OSMRId": "1536593",
+            "OSMLatLon": "46.8203785, 1.6770956",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 15,
+            "lang": "fre",
+            "name": "les Pyr\u00e9n\u00e9es",
+            "wikidataId": "Q12431",
+            "OSMRId": "988703466",
+            "OSMLatLon": "48.0840694, -3.9479408",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 16,
+            "lang": "fre",
+            "name": "Chatou",
+            "wikidataId": "Q240752",
+            "OSMRId": "73610",
+            "OSMLatLon": "48.8897044, 2.1573695",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 17,
+            "lang": "fre",
+            "name": "Arpajon",
+            "wikidataId": "Q646708",
+            "OSMRId": "117214",
+            "OSMLatLon": "44.9034428, 2.4570176",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 18,
+            "lang": "fre",
+            "name": "Pologne",
+            "wikidataId": "Q36",
+            "OSMRId": "8481816822",
+            "OSMLatLon": "49.0626143, 5.0042468",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 19,
+            "lang": "fre",
+            "name": "Saumur",
+            "wikidataId": "Q3474241",
+            "OSMRId": "272368",
+            "OSMLatLon": "47.2596224, -0.0785177",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 20,
+            "lang": "fre",
+            "name": "Pincornet-les-B\u0153ufs",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "fictional",
+            "comments": null
+        },
+        {
+            "placeId": 21,
+            "lang": "fre",
+            "name": "Pomadour",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "fictional",
+            "comments": null
+        },
+        {
+            "placeId": 22,
+            "lang": "fre",
+            "name": "Montbrison",
+            "wikidataId": "Q213288",
+            "OSMRId": "109836",
+            "OSMLatLon": "45.6072875, 4.0627318",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 23,
+            "lang": "fre",
+            "name": "Versailles",
+            "wikidataId": "Q621",
+            "OSMRId": "30295",
+            "OSMLatLon": "48.8035403, 2.1266886",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 24,
+            "lang": "fre",
+            "name": "la campagne ",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 25,
+            "lang": "fre",
+            "name": "Reims",
+            "wikidataId": "Q41876",
+            "OSMRId": "36458",
+            "OSMLatLon": "49.2577886, 4.0319260",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 26,
+            "lang": "fre",
+            "name": "Poitiers",
+            "wikidataId": "Q6616",
+            "OSMRId": "132348",
+            "OSMLatLon": "46.5802596, 0.3401960",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 27,
+            "lang": "fre",
+            "name": "Ch\u00e2teau de Chantelaur",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "fictional",
+            "comments": null
+        },
+        {
+            "placeId": 28,
+            "lang": "fre",
+            "name": "Royat",
+            "wikidataId": "Q650136",
+            "OSMRId": "125914",
+            "OSMLatLon": "45.7643631, 3.0477919",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 29,
+            "lang": "fre",
+            "name": "Valfontaine",
+            "wikidataId": null,
+            "OSMRId": "8607536779",
+            "OSMLatLon": "44.7814276, 0.2330089",
+            "nature": "real",
+            "comments": "maybe a fictional place in the play"
+        },
+        {
+            "placeId": 30,
+            "lang": "fre",
+            "name": "Palais de Justice, Paris",
+            "wikidataId": "Q143080",
+            "OSMRId": "536982",
+            "OSMLatLon": "48.8556574, 2.3450512",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 31,
+            "lang": "fre",
+            "name": "V\u00e9sinet",
+            "wikidataId": "Q641607",
+            "OSMRId": "59958",
+            "OSMLatLon": "48.8942540, 2.1347291",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 32,
+            "lang": "fre",
+            "name": "Villeneuve-Saint-Georges",
+            "wikidataId": "Q244241",
+            "OSMRId": "105014",
+            "OSMLatLon": "48.7305272, 2.4478200",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 33,
+            "lang": "fre",
+            "name": "Passy",
+            "wikidataId": "Q1241308",
+            "OSMRId": "3337530",
+            "OSMLatLon": "46.5412837, 4.5343419",
+            "nature": "real",
+            "comments": "coordinates might be of a town that is not near Paris"
+        },
+        {
+            "placeId": 34,
+            "lang": "fre",
+            "name": "Province",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 35,
+            "lang": "fre",
+            "name": "Auteuil",
+            "wikidataId": "Q274051",
+            "OSMRId": "164789",
+            "OSMLatLon": "49.3417561, 2.0882337",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 36,
+            "lang": "fre",
+            "name": "Nangis",
+            "wikidataId": "Q271599",
+            "OSMRId": "1384426",
+            "OSMLatLon": "48.5549685, 3.0134672",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 37,
+            "lang": "fre",
+            "name": "Les R\u00e9glisottes (sous-pr\u00e9fecture)",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "fictional",
+            "comments": null
+        },
+        {
+            "placeId": 38,
+            "lang": "fre",
+            "name": "Montretout ",
+            "wikidataId": "Q30726858",
+            "OSMRId": "1376737647",
+            "OSMLatLon": "48.9465229, 3.0487540",
+            "nature": "real",
+            "comments": "gated community"
+        },
+        {
+            "placeId": 39,
+            "lang": "fre",
+            "name": "Neuilly-sur-Seine",
+            "wikidataId": "Q48958",
+            "OSMRId": "85802",
+            "OSMLatLon": "48.8846830, 2.2695658",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 40,
+            "lang": "fre",
+            "name": "Bade",
+            "wikidataId": "Q6877935",
+            "OSMRId": "1684261",
+            "OSMLatLon": "47.4736827, 8.3086822",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 41,
+            "lang": "fre",
+            "name": "Lagny",
+            "wikidataId": "Q177902",
+            "OSMRId": "1547278",
+            "OSMLatLon": "49.6138706, 2.9174984",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 42,
+            "lang": "fre",
+            "name": "ch\u00e2teau de Lirac",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "fictional",
+            "comments": null
+        },
+        {
+            "placeId": 43,
+            "lang": "fre",
+            "name": "Meudon",
+            "wikidataId": "Q234735",
+            "OSMRId": "31341",
+            "OSMLatLon": "48.8126688, 2.2385432",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 44,
+            "lang": "fre",
+            "name": "Quimperl\u00e9",
+            "wikidataId": "Q235382",
+            "OSMRId": "75600",
+            "OSMLatLon": "47.8692882, -3.5505644",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 45,
+            "lang": "fre",
+            "name": "Colmar",
+            "wikidataId": "Q130994",
+            "OSMRId": "61423",
+            "OSMLatLon": "48.0777517, 7.3579641",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 46,
+            "lang": "fre",
+            "name": "Cobourg",
+            "wikidataId": "Q14821",
+            "OSMRId": "62717",
+            "OSMLatLon": "50.2581120, 10.9644630",
+            "nature": "real",
+            "comments": "town in germany"
+        },
+        {
+            "placeId": 47,
+            "lang": "fre",
+            "name": "atelier de peintre",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "fictional",
+            "comments": null
+        },
+        {
+            "placeId": 48,
+            "lang": "fre",
+            "name": "Italie",
+            "wikidataId": "Q38",
+            "OSMRId": "365331",
+            "OSMLatLon": "42.6384261, 12.6742970",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 49,
+            "lang": "fre",
+            "name": "ch\u00e2teau du comte Albert de Saint-M\u00e9ry",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "fictional",
+            "comments": null
+        },
+        {
+            "placeId": 50,
+            "lang": "fre",
+            "name": "un village",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "fictional",
+            "comments": null
+        },
+        {
+            "placeId": 51,
+            "lang": "fre",
+            "name": "Draguignan",
+            "wikidataId": "Q194141",
+            "OSMRId": "125329",
+            "OSMLatLon": "43.5374662, 6.4627333",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 52,
+            "lang": "fre",
+            "name": "Saint-Mand\u00e9",
+            "wikidataId": "Q18102",
+            "OSMRId": "108318",
+            "OSMLatLon": "48.8432434, 2.4159739",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 53,
+            "lang": "fre",
+            "name": "Bondy",
+            "wikidataId": "Q237394",
+            "OSMRId": "158667",
+            "OSMLatLon": "48.9031000, 2.4829100",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 54,
+            "lang": "fre",
+            "name": "Choisy-le-Roi",
+            "wikidataId": "Q212987",
+            "OSMRId": "104268",
+            "OSMLatLon": "48.7630238, 2.4093664",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 55,
+            "lang": "fre",
+            "name": "Marly",
+            "wikidataId": "Q937793",
+            "OSMRId": "53417",
+            "OSMLatLon": "50.3500747, 3.5435909",
+            "nature": "real",
+            "comments": "3 villages have this name : here Marly, Nord. "
+        },
+        {
+            "placeId": 56,
+            "lang": "fre",
+            "name": "Pantin",
+            "wikidataId": "Q209086",
+            "OSMRId": "67685",
+            "OSMLatLon": "48.8965023, 2.4019804",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 57,
+            "lang": "fre",
+            "name": "Allemagne",
+            "wikidataId": "Q183",
+            "OSMRId": "172175",
+            "OSMLatLon": "49.1478994, -0.3753212",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 58,
+            "lang": "fre",
+            "name": "ch\u00e2teau du comte de Selcourt",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "fictional",
+            "comments": null
+        },
+        {
+            "placeId": 59,
+            "lang": "fre",
+            "name": "Barcelona",
+            "wikidataId": "Q1492",
+            "OSMRId": "347950",
+            "OSMLatLon": "41.3828939, 2.1774322",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 1,
+            "lang": "ger",
+            "name": "Berlin",
+            "wikidataId": "Q64",
+            "OSMRId": "62422",
+            "OSMLatLon": "52.5170365, 13.3888599",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 2,
+            "lang": "ger",
+            "name": "Weimar",
+            "wikidataId": "Q3955",
+            "OSMRId": "62493",
+            "OSMLatLon": "50.9810486, 11.3296637",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 3,
+            "lang": "ger",
+            "name": "Leipzig",
+            "wikidataId": "Q2079",
+            "OSMRId": "62649",
+            "OSMLatLon": "51.3406321, 12.3747329",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 4,
+            "lang": "ger",
+            "name": "Steyr ",
+            "wikidataId": "Q260320",
+            "OSMRId": "90143",
+            "OSMLatLon": "48.0390046, 14.4191276",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 5,
+            "lang": "ger",
+            "name": "Braunau am Inn",
+            "wikidataId": "Q131128",
+            "OSMRId": "86330",
+            "OSMLatLon": "48.2531360, 13.0395060",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 6,
+            "lang": "ger",
+            "name": "Darmstadt",
+            "wikidataId": "Q2973",
+            "OSMRId": "240074718",
+            "OSMLatLon": "49.8727750, 8.6511770",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 7,
+            "lang": "ger",
+            "name": "London",
+            "wikidataId": "Q84",
+            "OSMRId": "65606",
+            "OSMLatLon": "51.4893335, -0.1440551",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 8,
+            "lang": "ger",
+            "name": "Stuttgart",
+            "wikidataId": "Q1022",
+            "OSMRId": "2793104",
+            "OSMLatLon": "48.7784485, 9.1800132",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 9,
+            "lang": "ger",
+            "name": "Bad Lindeck",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "fictional",
+            "comments": null
+        },
+        {
+            "placeId": 10,
+            "lang": "ger",
+            "name": "Dorf Schusselfingen",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "fictional",
+            "comments": null
+        },
+        {
+            "placeId": 11,
+            "lang": "ger",
+            "name": "Schroffenstein",
+            "wikidataId": "Q1013918",
+            "OSMRId": "406371252",
+            "OSMLatLon": "47.3749109, 13.679047845481955",
+            "nature": "real",
+            "comments": "the author meant the forest around that castle (Austria): https://de.wikipedia.org/wiki/Burg_Schrofenstein"
+        },
+        {
+            "placeId": 12,
+            "lang": "ger",
+            "name": "Ludersdorf",
+            "wikidataId": "Q638501",
+            "OSMRId": "1479258",
+            "OSMLatLon": "53.8324566, 10.8090408",
+            "nature": "real",
+            "comments": "now \"L\u00fcdersdorf\""
+        },
+        {
+            "placeId": 13,
+            "lang": "ger",
+            "name": "Wien",
+            "wikidataId": "Q1741",
+            "OSMRId": "109166",
+            "OSMLatLon": "48.2083537, 16.3725042",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 14,
+            "lang": "ger",
+            "name": "M\u00fcnchen",
+            "wikidataId": "Q1726",
+            "OSMRId": "62428",
+            "OSMLatLon": "48.1371079, 11.5753822",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 15,
+            "lang": "ger",
+            "name": "Budapest",
+            "wikidataId": "Q1781",
+            "OSMRId": "1244004",
+            "OSMLatLon": "47.4813896, 19.1460941",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 16,
+            "lang": "ger",
+            "name": "Paris",
+            "wikidataId": "Q90",
+            "OSMRId": "7444",
+            "OSMLatLon": "48.8588897, 2.3200410",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 17,
+            "lang": "ger",
+            "name": "K\u00f6nigstein im Taunus",
+            "wikidataId": "Q569661",
+            "OSMRId": "418253",
+            "OSMLatLon": "50.1818833, 8.4652710",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 18,
+            "lang": "ger",
+            "name": "Schlo\u00df Wollien",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "fictional",
+            "comments": null
+        },
+        {
+            "placeId": 19,
+            "lang": "ger",
+            "name": "Buchenau",
+            "wikidataId": null,
+            "OSMRId": "6054208",
+            "OSMLatLon": "50.8736222, 8.5982284",
+            "nature": "real",
+            "comments": "there are two Buchenau in Germany: https://de.wikipedia.org/wiki/Buchenau_(Eiterfeld) and https://de.wikipedia.org/wiki/Buchenau_(Lindberg)"
+        },
+        {
+            "placeId": 20,
+            "lang": "ger",
+            "name": "Frankfurt am Main",
+            "wikidataId": "Q1794",
+            "OSMRId": "62400",
+            "OSMLatLon": "50.1106444, 8.6820917",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 21,
+            "lang": "ger",
+            "name": "Unterschwendlingen",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "fictional",
+            "comments": null
+        },
+        {
+            "placeId": 22,
+            "lang": "ger",
+            "name": "Luzern",
+            "wikidataId": "Q4191",
+            "OSMRId": "1682891",
+            "OSMLatLon": "47.0505452, 8.3054682",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 23,
+            "lang": "ger",
+            "name": "Monte Carlo",
+            "wikidataId": "Q45240",
+            "OSMRId": "5986438",
+            "OSMLatLon": "43.7402961, 7.4265590",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 24,
+            "lang": "ger",
+            "name": "Nizza",
+            "wikidataId": "Q33959",
+            "OSMRId": "39473",
+            "OSMLatLon": "37.9926220, 15.4119128",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 25,
+            "lang": "ger",
+            "name": "Thorn",
+            "wikidataId": "Q47554",
+            "OSMRId": "2633746",
+            "OSMLatLon": "53.0145361, 18.5965831",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 26,
+            "lang": "ger",
+            "name": "Hamburg",
+            "wikidataId": "Q1055",
+            "OSMRId": "62782",
+            "OSMLatLon": "53.5503410, 10.0006540",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 27,
+            "lang": "ger",
+            "name": "Plei\u00dfenbach",
+            "wikidataId": "Q32692821",
+            "OSMRId": "827817524",
+            "OSMLatLon": "50.8427506, 12.7774364",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 28,
+            "lang": "ger",
+            "name": "Kyritz",
+            "wikidataId": "Q505160",
+            "OSMRId": "1302369",
+            "OSMLatLon": "52.9430648, 12.3966896",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 29,
+            "lang": "ger",
+            "name": "St. Petersburg",
+            "wikidataId": "Q656",
+            "OSMRId": "118894",
+            "OSMLatLon": "27.7700475, -82.6359078",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 30,
+            "lang": "ger",
+            "name": "eine gro\u00dfe Stadt",
+            "wikidataId": null,
+            "OSMRId": "240038067",
+            "OSMLatLon": "53.1108906, 9.4049292",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 31,
+            "lang": "ger",
+            "name": "eine Landstadt",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 32,
+            "lang": "ger",
+            "name": "eine kleine Stadt",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 33,
+            "lang": "ger",
+            "name": "eine Provinzstadt",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 34,
+            "lang": "ger",
+            "name": "eine Residenzstadt",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 35,
+            "lang": "ger",
+            "name": "Frankreich",
+            "wikidataId": "Q142",
+            "OSMRId": "2202162",
+            "OSMLatLon": "46.6033540, 1.8883335",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 36,
+            "lang": "ger",
+            "name": "die Schweiz",
+            "wikidataId": "Q39",
+            "OSMRId": "746433448",
+            "OSMLatLon": "50.9586571, 14.0068765",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 37,
+            "lang": "ger",
+            "name": "Oberbayern",
+            "wikidataId": "Q10562",
+            "OSMRId": "2145274",
+            "OSMLatLon": "48.2405833, 11.9699152",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 38,
+            "lang": "ger",
+            "name": "Pommern",
+            "wikidataId": "Q104520",
+            "OSMRId": "130975",
+            "OSMLatLon": "54.2455600, 18.1099000",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 39,
+            "lang": "ger",
+            "name": "Stralau",
+            "wikidataId": "Q821148",
+            "OSMRId": "6313592834",
+            "OSMLatLon": "52.4939285, 13.4713729",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 40,
+            "lang": "ger",
+            "name": "Wiener Neustadt",
+            "wikidataId": "Q131612",
+            "OSMRId": "2135956",
+            "OSMLatLon": "47.8070863, 16.2332605",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 41,
+            "lang": "ger",
+            "name": "Br\u00fcnn",
+            "wikidataId": "Q14960",
+            "OSMRId": "438171",
+            "OSMLatLon": "49.1922443, 16.6113382",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 42,
+            "lang": "ger",
+            "name": "eine Hauptstadt",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 43,
+            "lang": "ger",
+            "name": "auf dem Land",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 44,
+            "lang": "ger",
+            "name": "Schlesien",
+            "wikidataId": "Q81720",
+            "OSMRId": "224462",
+            "OSMLatLon": "50.5687422, 19.2343995",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 45,
+            "lang": "ger",
+            "name": "Worms",
+            "wikidataId": "Q3852",
+            "OSMRId": "62453",
+            "OSMLatLon": "49.6302618, 8.3620898",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 46,
+            "lang": "ger",
+            "name": "Hannover",
+            "wikidataId": "Q1715",
+            "OSMRId": "59418",
+            "OSMLatLon": "52.3744779, 9.7385532",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 47,
+            "lang": "ger",
+            "name": "Oranienburg",
+            "wikidataId": "Q14808",
+            "OSMRId": "1310102",
+            "OSMLatLon": "52.7529379, 13.2457591",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 48,
+            "lang": "ger",
+            "name": "Sachsenhausen",
+            "wikidataId": "Q319883",
+            "OSMRId": "10631043",
+            "OSMLatLon": "52.78567038966388, 13.23872859692535",
+            "nature": "real",
+            "comments": "Sachsenhausen could be different places, but according to context it should be that one: https://de.wikipedia.org/wiki/Sachsenhausen_(Oranienburg)"
+        },
+        {
+            "placeId": 49,
+            "lang": "ger",
+            "name": "Nassenheide",
+            "wikidataId": "Q1965977",
+            "OSMRId": "240122508",
+            "OSMLatLon": "52.8140068, 13.2125703",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 50,
+            "lang": "ger",
+            "name": "L\u00f6wenberg",
+            "wikidataId": "Q583171",
+            "OSMRId": "10671277",
+            "OSMLatLon": "49.6254586, 11.5016588",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 51,
+            "lang": "ger",
+            "name": "Newport",
+            "wikidataId": "Q54264",
+            "OSMRId": "191230",
+            "OSMLatLon": "41.4899827, -71.3137707",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 52,
+            "lang": "ger",
+            "name": "Boston",
+            "wikidataId": "Q100",
+            "OSMRId": "2315704",
+            "OSMLatLon": "42.3554334, -71.0605110",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 53,
+            "lang": "ger",
+            "name": "Helgoland",
+            "wikidataId": "Q3038",
+            "OSMRId": "3787052",
+            "OSMLatLon": "54.1800452, 7.8853621",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 54,
+            "lang": "ger",
+            "name": "Vevey",
+            "wikidataId": "Q68160",
+            "OSMRId": "1685178",
+            "OSMLatLon": "46.4602978, 6.8418655",
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 55,
+            "lang": "ger",
+            "name": "eine Universit\u00e4tstadt",
+            "wikidataId": null,
+            "OSMRId": null,
+            "OSMLatLon": null,
+            "nature": "real",
+            "comments": null
+        },
+        {
+            "placeId": 1,
+            "lang": "als",
+            "name": "Schiltigheim",
+            "wikidataId": null,
+            "OSMRId": "69730",
+            "OSMLatLon": "48.6047148, 7.7484488",
+            "nature": null,
+            "comments": null
+        },
+        {
+            "placeId": 2,
+            "lang": "als",
+            "name": "Niederbronn-les-Bains",
+            "wikidataId": null,
+            "OSMRId": "91290",
+            "OSMLatLon": "48.9510314, 7.6421767",
+            "nature": null,
+            "comments": null
+        },
+        {
+            "placeId": 3,
+            "lang": "als",
+            "name": "Rouffach",
+            "wikidataId": null,
+            "OSMRId": "79410",
+            "OSMLatLon": "47.9569146, 7.2994054",
+            "nature": null,
+            "comments": null
+        },
+        {
+            "placeId": 4,
+            "lang": "als",
+            "name": "Colmar",
+            "wikidataId": null,
+            "OSMRId": "61423",
+            "OSMLatLon": "48.0777517, 7.3579641",
+            "nature": null,
+            "comments": null
+        },
+        {
+            "placeId": 6,
+            "lang": "als",
+            "name": "Strasbourg",
+            "wikidataId": null,
+            "OSMRId": "71033",
+            "OSMLatLon": "48.5846140, 7.7507127",
+            "nature": null,
+            "comments": null
+        },
+        {
+            "placeId": 7,
+            "lang": "als",
+            "name": "Rappoltsweiler",
+            "wikidataId": null,
+            "OSMRId": "69618",
+            "OSMLatLon": "48.1924602, 7.3248871",
+            "nature": null,
+            "comments": null
+        },
+        {
+            "placeId": 8,
+            "lang": "als",
+            "name": "Mulhouse",
+            "wikidataId": null,
+            "OSMRId": "38246",
+            "OSMLatLon": "47.7467233, 7.3389937",
+            "nature": null,
+            "comments": null
+        },
+        {
+            "placeId": 9,
+            "lang": "als",
+            "name": "Gundershoffen",
+            "wikidataId": null,
+            "OSMRId": "91334",
+            "OSMLatLon": "48.9052729, 7.6538032",
+            "nature": null,
+            "comments": null
+        },
+        {
+            "placeId": 10,
+            "lang": "als",
+            "name": "Haguenau",
+            "wikidataId": null,
+            "OSMRId": "89859",
+            "OSMLatLon": "48.8172236, 7.7885978",
+            "nature": null,
+            "comments": null
+        },
+        {
+            "placeId": 11,
+            "lang": "als",
+            "name": "Bischwiller",
+            "wikidataId": null,
+            "OSMRId": "571129",
+            "OSMLatLon": "48.7682281, 7.8597466",
+            "nature": null,
+            "comments": null
+        },
+        {
+            "placeId": 12,
+            "lang": "als",
+            "name": "Molsheim",
+            "wikidataId": null,
+            "OSMRId": "75457",
+            "OSMLatLon": "48.5419351, 7.4924679",
+            "nature": null,
+            "comments": null
+        },
+        {
+            "placeId": 13,
+            "lang": "als",
+            "name": "Basel",
+            "wikidataId": null,
+            "OSMRId": "1683619",
+            "OSMLatLon": "47.5581077, 7.5878261",
+            "nature": null,
+            "comments": null
+        },
+        {
+            "placeId": 14,
+            "lang": "als",
+            "name": "Karlsruhe",
+            "wikidataId": null,
+            "OSMRId": "62518",
+            "OSMLatLon": "49.0068705, 8.4034195",
+            "nature": null,
+            "comments": null
+        },
+        {
+            "placeId": 15,
+            "lang": "als",
+            "name": "S\u00e9lestat",
+            "wikidataId": null,
+            "OSMRId": "61449",
+            "OSMLatLon": "48.2594396, 7.4542170",
+            "nature": null,
+            "comments": null
+        },
+        {
+            "placeId": 16,
+            "lang": "als",
+            "name": "Rixheim",
+            "wikidataId": null,
+            "OSMRId": "62518",
+            "OSMLatLon": "47.7441969, 7.3968786",
+            "nature": null,
+            "comments": null
+        },
+        {
+            "placeId": 17,
+            "lang": "als",
+            "name": "Stuttgart",
+            "wikidataId": null,
+            "OSMRId": "2793104",
+            "OSMLatLon": "48.7784485, 9.1800132",
+            "nature": null,
+            "comments": null
+        },
+        {
+            "placeId": 18,
+            "lang": "als",
+            "name": "Guebwiller",
+            "wikidataId": null,
+            "OSMRId": "78931",
+            "OSMLatLon": "47.9094629, 7.2113271",
+            "nature": null,
+            "comments": null
+        },
+        {
+            "placeId": 19,
+            "lang": "als",
+            "name": "Paris",
+            "wikidataId": null,
+            "OSMRId": "7444",
+            "OSMLatLon": "48.8588897, 2.3200410",
+            "nature": null,
+            "comments": null
+        },
+        {
+            "placeId": 20,
+            "lang": "als",
+            "name": "Lille",
+            "wikidataId": null,
+            "OSMRId": "58404",
+            "OSMLatLon": "50.6365654, 3.0635282",
+            "nature": null,
+            "comments": null
+        },
+        {
+            "placeId": 21,
+            "lang": "als",
+            "name": "Bourges",
+            "wikidataId": null,
+            "OSMRId": "50312",
+            "OSMLatLon": "47.0811658, 2.3991250",
+            "nature": null,
+            "comments": null
+        },
+        {
+            "placeId": 22,
+            "lang": "als",
+            "name": "Hartmannswiller",
+            "wikidataId": null,
+            "OSMRId": "78652",
+            "OSMLatLon": "47.8626304, 7.2136696",
+            "nature": null,
+            "comments": null
+        },
+        {
+            "placeId": 23,
+            "lang": "als",
+            "name": "Basse-Alsace",
+            "wikidataId": null,
+            "OSMRId": "8717049825",
+            "OSMLatLon": "48.6287015, 7.0755985",
+            "nature": null,
+            "comments": null
+        }
+    ]
+}
