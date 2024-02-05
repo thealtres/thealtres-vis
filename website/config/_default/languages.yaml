@@ -23,14 +23,14 @@ fr:
       - name: Productions
         url: '#outputs'
         weight: 30
-      - name: Actualités
-        url: 'post'
-        weight: 40
-      - name: Événements
-        url: 'evenements'
-        weight: 50
       - name: Visualisation
         url: 'vis'
+        weight: 40
+      - name: Actualités
+        url: 'post'
+        weight: 50
+      - name: Événements
+        url: 'evenements'
         weight: 60
       - name: À propos
         url: '#about'

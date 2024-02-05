@@ -1,0 +1,89 @@
+.universal-wrapper {
+    width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+#vis-container {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    width: 100%;
+    height: 50rem;
+  }
+
+.filters {
+    grid-column: 1;
+    background: red;
+    width: 100%;
+    height: 100%;
+}
+
+.main-view {
+    grid-column: 2;
+    background: blue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main-view-chars {
+    background: yellow;
+}
+
+.main-view-plays {
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+.main-view-plays-chart {
+    background: pink;
+}
+
+.main-view-plays-table {
+    background: orange;
+}
+
+.main-view-plays-table #play-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.main-view-plays-table #play-list .play-card {
+    background: #eee;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem 0.1rem #000;
+}
+
+.vis-navbar {
+    grid-column: 3;
+    background: green;
+    width: 100%;
+    height: 100%;
+}
+
+/* todo: improved loader styling */
+#loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 7em;
+    height: 7em;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.paginationjs {
+    display: flex;
+    justify-content: center;
+}
+
+.paginationjs-pages li {
+    margin-bottom: 5px;
+    background: #eee;
+    color: #666;
+}

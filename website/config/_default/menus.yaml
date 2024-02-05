@@ -13,14 +13,14 @@ main:
   - name: Outputs
     url: '#outputs'
     weight: 30
-  - name: News
-    url: 'post'
-    weight: 40
-  - name: Events
-    url: 'events'
-    weight: 50
   - name: Visualisation
     url: 'vis'
+    weight: 40
+  - name: News
+    url: 'post'
+    weight: 50
+  - name: Events
+    url: 'events'
     weight: 60
   - name: About
     url: '#about'

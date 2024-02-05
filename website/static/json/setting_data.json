@@ -1,0 +1,3812 @@
+{
+    "settings": [
+        {
+            "workId": 3,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "26",
+                "27"
+            ],
+            "placeRecode": "26",
+            "coord": "#N/A",
+            "settingText": "De nos jours, au ch\u00e2teau de Chantelaur, pr\u00e8s Poitiers",
+            "time": "Around 1884",
+            "comments": "2 PlaceId, 1 for the fictional 1 for Poitiers"
+        },
+        {
+            "workId": 5,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "2"
+            ],
+            "placeRecode": null,
+            "coord": "49.3683333, 0.0825000",
+            "settingText": "De nos jours",
+            "time": "Around 1878",
+            "comments": null
+        },
+        {
+            "workId": 5,
+            "lang": "fre",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "2"
+            ],
+            "placeRecode": null,
+            "coord": "49.3683333, 0.0825000",
+            "settingText": "La plage de Trouville",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 7,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "A Paris, de nos jours.",
+            "time": "Around 1894",
+            "comments": null
+        },
+        {
+            "workId": 8,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "34"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "La sc\u00e8ne se passe en province de nos jours.",
+            "time": "Around 1892",
+            "comments": null
+        },
+        {
+            "workId": 9,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne \u00e0 Paris chez M. Morisset",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 12,
+            "lang": "fre",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "29"
+            ],
+            "placeRecode": null,
+            "coord": "44.7814276, 0.2330089",
+            "settingText": "1er acte, Valfontaine",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 12,
+            "lang": "fre",
+            "actId": 2,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "2e acte \u00e0 Paris, chez \u00c9douard",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 12,
+            "lang": "fre",
+            "actId": 3,
+            "sceneId": 0,
+            "placeId": [
+                "30"
+            ],
+            "placeRecode": null,
+            "coord": "48.8556574, 2.3450512",
+            "settingText": "3e acte, \u00e0 la 4e chambre correctionnelle",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 14,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "A Paris, chez Paginet.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 15,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "12"
+            ],
+            "placeRecode": null,
+            "coord": "49.4404591, 1.0939658",
+            "settingText": "A Saint-Sever, pr\u00e8s Rouen, en 1860",
+            "time": "1860",
+            "comments": null
+        },
+        {
+            "workId": 16,
+            "lang": "fre",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "De nos jours; le premier acte \u00e0 Paris",
+            "time": "1875",
+            "comments": null
+        },
+        {
+            "workId": 16,
+            "lang": "fre",
+            "actId": 2,
+            "sceneId": 0,
+            "placeId": [
+                "22"
+            ],
+            "placeRecode": null,
+            "coord": "45.6072875, 4.0627318",
+            "settingText": "les deux autres \u00e0 Montbrison",
+            "time": "1875",
+            "comments": null
+        },
+        {
+            "workId": 16,
+            "lang": "fre",
+            "actId": 3,
+            "sceneId": 0,
+            "placeId": [
+                "22"
+            ],
+            "placeRecode": null,
+            "coord": "45.6072875, 4.0627318",
+            "settingText": "les deux autres \u00e0 Montbrison",
+            "time": "1875",
+            "comments": null
+        },
+        {
+            "workId": 18,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne se passe de nos jours, \u00e0 Paris.",
+            "time": "Around 1877",
+            "comments": null
+        },
+        {
+            "workId": 20,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "23"
+            ],
+            "placeRecode": null,
+            "coord": "48.8035403, 2.1266886",
+            "settingText": "De nos jours, \u00e0 Versailles",
+            "time": "Around 1877",
+            "comments": null
+        },
+        {
+            "workId": 22,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "11"
+            ],
+            "placeRecode": null,
+            "coord": "48.4344621, 2.1614464",
+            "settingText": "De nos jours, dans le ch\u00e2teau de M. de Br\u00e9mont, pr\u00e8s d'\u00c9tampes",
+            "time": "Around 1864",
+            "comments": null
+        },
+        {
+            "workId": 24,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "DE NOS JOURS.",
+            "time": "Around 1877",
+            "comments": null
+        },
+        {
+            "workId": 24,
+            "lang": "fre",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "Le 1er et le 2e actes \u00e0 Paris;",
+            "time": "Around 1877",
+            "comments": null
+        },
+        {
+            "workId": 24,
+            "lang": "fre",
+            "actId": 2,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "Le 1er et le 2e actes \u00e0 Paris;",
+            "time": "Around 1877",
+            "comments": null
+        },
+        {
+            "workId": 24,
+            "lang": "fre",
+            "actId": 3,
+            "sceneId": 0,
+            "placeId": [
+                "56"
+            ],
+            "placeRecode": null,
+            "coord": "48.8965023, 2.4019804",
+            "settingText": "le 3e \u00e0 Pantin.",
+            "time": "Around 1877",
+            "comments": null
+        },
+        {
+            "workId": 25,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "A Paris, de nos jours. 1e et 3e actes chez Dum\u00e9nil, le 2e dans un Restaurant",
+            "time": "Around 1876",
+            "comments": null
+        },
+        {
+            "workId": 25,
+            "lang": "fre",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "1e et 3e actes chez Dum\u00e9nil",
+            "time": "Around 1876",
+            "comments": null
+        },
+        {
+            "workId": 25,
+            "lang": "fre",
+            "actId": 2,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "le 2e dans un Restaurant",
+            "time": "Around 1876",
+            "comments": null
+        },
+        {
+            "workId": 25,
+            "lang": "fre",
+            "actId": 3,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "1e et 3e actes chez Dum\u00e9nil",
+            "time": "Around 1876",
+            "comments": null
+        },
+        {
+            "workId": 26,
+            "lang": "fre",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "35"
+            ],
+            "placeRecode": null,
+            "coord": "49.3417561, 2.0882337",
+            "settingText": "De nos jours. Les deux premiers actes \u00e0 Auteuil, chez les Montp\u00e9pin.",
+            "time": "Around 1898",
+            "comments": null
+        },
+        {
+            "workId": 26,
+            "lang": "fre",
+            "actId": 2,
+            "sceneId": 0,
+            "placeId": [
+                "35"
+            ],
+            "placeRecode": null,
+            "coord": "49.3417561, 2.0882337",
+            "settingText": "De nos jours. Les deux premiers actes \u00e0 Auteuil, chez les Montp\u00e9pin.",
+            "time": "Around 1898",
+            "comments": null
+        },
+        {
+            "workId": 26,
+            "lang": "fre",
+            "actId": 3,
+            "sceneId": 0,
+            "placeId": [
+                "36"
+            ],
+            "placeRecode": null,
+            "coord": "48.5549685, 3.0134672",
+            "settingText": "Le 3e actes \u00e0 Nangis, chez les Charbonneau. ",
+            "time": "Around 1898",
+            "comments": null
+        },
+        {
+            "workId": 27,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "A Paris. De nos jours.",
+            "time": "Around 1890",
+            "comments": null
+        },
+        {
+            "workId": 28,
+            "lang": "fre",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "31"
+            ],
+            "placeRecode": null,
+            "coord": "48.8942540, 2.1347291",
+            "settingText": "La sc\u00e8ne se passe de nos jours. 1e acte au V\u00e9sinet",
+            "time": "around 1888",
+            "comments": null
+        },
+        {
+            "workId": 28,
+            "lang": "fre",
+            "actId": 2,
+            "sceneId": 0,
+            "placeId": [
+                "32"
+            ],
+            "placeRecode": null,
+            "coord": "48.7305272, 2.4478200",
+            "settingText": "2e et 3e actes \u00e0 Villeneuve-Saint-Georges",
+            "time": "around 1888",
+            "comments": null
+        },
+        {
+            "workId": 28,
+            "lang": "fre",
+            "actId": 3,
+            "sceneId": 0,
+            "placeId": [
+                "32"
+            ],
+            "placeRecode": null,
+            "coord": "48.7305272, 2.4478200",
+            "settingText": "2e et 3e actes \u00e0 Villeneuve-Saint-Georges",
+            "time": "around 1888",
+            "comments": null
+        },
+        {
+            "workId": 29,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": "#N/A",
+            "settingText": "\u00c8POCA ACTUAL",
+            "time": "around 1910",
+            "comments": null
+        },
+        {
+            "workId": 29,
+            "lang": "fre",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "EI primer acte a Par\u00eds, a casa'l Doctor Fronitignan",
+            "time": "around 1910",
+            "comments": null
+        },
+        {
+            "workId": 29,
+            "lang": "fre",
+            "actId": 2,
+            "sceneId": 0,
+            "placeId": [
+                "28"
+            ],
+            "placeRecode": null,
+            "coord": "45.7643631, 3.0477919",
+            "settingText": "Els altres dos, a Royat, al Splendit Hotel.",
+            "time": "around 1910",
+            "comments": null
+        },
+        {
+            "workId": 30,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "28"
+            ],
+            "placeRecode": null,
+            "coord": "45.7643631, 3.0477919",
+            "settingText": "L'action, de nos jours. Les trois actes se passent, \u00e0 Royat, \u00e0 l'H\u00f4tel l'Europe",
+            "time": "Around 1887",
+            "comments": null
+        },
+        {
+            "workId": 31,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "A Paris, de nos jours.",
+            "time": "Around 1898",
+            "comments": null
+        },
+        {
+            "workId": 32,
+            "lang": "fre",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "A Paris de nos jours. Le premier acte et le troisi\u00e8me chez Dupont, le deuxi\u00e8me chez Z\u00e9z\u00e9.",
+            "time": "Around 1906",
+            "comments": null
+        },
+        {
+            "workId": 32,
+            "lang": "fre",
+            "actId": 2,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "le deuxi\u00e8me chez Z\u00e9z\u00e9.",
+            "time": "Around 1906",
+            "comments": null
+        },
+        {
+            "workId": 32,
+            "lang": "fre",
+            "actId": 3,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "Le premier acte et le troisi\u00e8me chez Dupont",
+            "time": "Around 1906",
+            "comments": null
+        },
+        {
+            "workId": 34,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "A Paris, de nos jours.",
+            "time": "Around 1912 ",
+            "comments": "(time inaccurate; probably before bc 14th edition)"
+        },
+        {
+            "workId": 36,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": "#N/A",
+            "settingText": "La sc\u00e8ne se passe de nos jours.",
+            "time": "Around 1884",
+            "comments": null
+        },
+        {
+            "workId": 37,
+            "lang": "fre",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne de nos jours. 1e acte \u00e0 Paris, chez Boulinard.",
+            "time": "Around 1890",
+            "comments": null
+        },
+        {
+            "workId": 37,
+            "lang": "fre",
+            "actId": 2,
+            "sceneId": null,
+            "placeId": [
+                "37"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "2e acte \u00e0 l'h\u00f4tel de la sous-pr\u00e9fecture aux R\u00e9glisottes",
+            "time": "Around 1890",
+            "comments": null
+        },
+        {
+            "workId": 37,
+            "lang": "fre",
+            "actId": 3,
+            "sceneId": 0,
+            "placeId": [
+                "37"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "3e acte \u00e0 la sous-pr\u00e9fecture des R\u00e9glisottes",
+            "time": "Around 1890",
+            "comments": null
+        },
+        {
+            "workId": 38,
+            "lang": "fre",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "33"
+            ],
+            "placeRecode": null,
+            "coord": "46.5412837, 4.5343419",
+            "settingText": "L'action de nos jours. - Le premier acte \u00e0 Passy, chez Albert.",
+            "time": "around 1887",
+            "comments": null
+        },
+        {
+            "workId": 38,
+            "lang": "fre",
+            "actId": 2,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "Le deuxi\u00e8me acte, \u00e0 Paris, dans le cabinet de Durand.",
+            "time": "around 1887",
+            "comments": null
+        },
+        {
+            "workId": 38,
+            "lang": "fre",
+            "actId": 3,
+            "sceneId": 0,
+            "placeId": [
+                "30"
+            ],
+            "placeRecode": null,
+            "coord": "48.8556574, 2.3450512",
+            "settingText": "Le troisi\u00e8me acte, dans une salle d'attente du Palais de Justice ",
+            "time": "around 1887",
+            "comments": null
+        },
+        {
+            "workId": 39,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "A Paris de nos jours",
+            "time": "Around 1853",
+            "comments": null
+        },
+        {
+            "workId": 39,
+            "lang": "fre",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "Le 1er acte se passe chez de Pr\u00e9cardin",
+            "time": "Around 1853",
+            "comments": null
+        },
+        {
+            "workId": 39,
+            "lang": "fre",
+            "actId": 2,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "Le 2e acte se passe chez Langlumier",
+            "time": "Around 1853",
+            "comments": null
+        },
+        {
+            "workId": 39,
+            "lang": "fre",
+            "actId": 3,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "Le 3e acte se passe chez des Eglantiers",
+            "time": "Around 1853",
+            "comments": null
+        },
+        {
+            "workId": 40,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "A Paris, de nos jours",
+            "time": "Around 1899",
+            "comments": null
+        },
+        {
+            "workId": 41,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "39"
+            ],
+            "placeRecode": null,
+            "coord": "48.8846830, 2.2695658",
+            "settingText": "A Neuilly-sur-Seine, de nos jours.",
+            "time": "Around 1916",
+            "comments": null
+        },
+        {
+            "workId": 43,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "De nos jours, \u00e0 Paris.",
+            "time": "Around 1877",
+            "comments": null
+        },
+        {
+            "workId": 45,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "A Paris , quartier de la P\u00e9pini\u00e8re",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 46,
+            "lang": "fre",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "24"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Le 1e et le 3e acte se passent \u00e0 la campagne de Chambollier, pr\u00e8s Paris; ",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 46,
+            "lang": "fre",
+            "actId": 2,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "le 2e acte, \u00e0 Paris chez Chambollier",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 46,
+            "lang": "fre",
+            "actId": 3,
+            "sceneId": 0,
+            "placeId": [
+                "24"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Le 1e et le 3e acte se passent \u00e0 la campagne de Chambollier, pr\u00e8s Paris; ",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 47,
+            "lang": "fre",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne est \u00e0 Paris, de nos jours les trois premiers actes au mois de mars",
+            "time": "march, around 1904",
+            "comments": null
+        },
+        {
+            "workId": 47,
+            "lang": "fre",
+            "actId": 2,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne est \u00e0 Paris, de nos jours les trois premiers actes au mois de mars",
+            "time": "march, around 1904",
+            "comments": null
+        },
+        {
+            "workId": 47,
+            "lang": "fre",
+            "actId": 3,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne est \u00e0 Paris, de nos jours les trois premiers actes au mois de mars",
+            "time": "march, around 1904",
+            "comments": null
+        },
+        {
+            "workId": 47,
+            "lang": "fre",
+            "actId": 4,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "le dernier un an apr\u00e8s, au mois de juin.",
+            "time": "june, around 1905",
+            "comments": null
+        },
+        {
+            "workId": 51,
+            "lang": "fre",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La pi\u00e8ce se passe au mois de juin ; le 1er et le 3e acte \u00e0 Paris",
+            "time": "june",
+            "comments": null
+        },
+        {
+            "workId": 51,
+            "lang": "fre",
+            "actId": 2,
+            "sceneId": 0,
+            "placeId": [
+                "38"
+            ],
+            "placeRecode": null,
+            "coord": "48.9465229, 3.0487540",
+            "settingText": "2e acte \u00e0 Montretout",
+            "time": "june",
+            "comments": null
+        },
+        {
+            "workId": 51,
+            "lang": "fre",
+            "actId": 3,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": " 3e acte \u00e0 Paris",
+            "time": "june",
+            "comments": null
+        },
+        {
+            "workId": 52,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "3.4"
+            ],
+            "placeRecode": null,
+            "coord": "45.1875602, 5.7357819",
+            "settingText": "La sc\u00e8ne se passe aux environs de Grenoble, dans le Ch\u00e2teau de Fourchevif",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 54,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "5"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "La sc\u00e8ne se passe au ch\u00e2teau de Vaux-Champs, en 1815",
+            "time": "1815",
+            "comments": null
+        },
+        {
+            "workId": 55,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "14"
+            ],
+            "placeRecode": null,
+            "coord": "46.8203785, 1.6770956",
+            "settingText": "La sc\u00e8ne est \u00e0 Ch\u00e2teauroux, chez Vancouver",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 56,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "16"
+            ],
+            "placeRecode": null,
+            "coord": "48.8897044, 2.1573695",
+            "settingText": "La sc\u00e8ne est \u00e0 Chatou, chez Thibaudier",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 58,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": "#N/A",
+            "settingText": "La sc\u00e8ne se passe chez Galimard",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 59,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne se passe \u00e0 Paris, chez Montaudoin.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 60,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne est \u00e0 Paris, chez Lenglum\u00e9.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 61,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne se passe \u00e0 Paris, chez Pontbichet",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 62,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne est \u00e0 Paris. ",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 63,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne se passe \u00e0 Paris, chez Chiffonnet",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 64,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne est \u00e0 Paris. ",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 65,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne est \u00e0 Paris. ",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 66,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "17"
+            ],
+            "placeRecode": null,
+            "coord": "44.9034428, 2.4570176",
+            "settingText": "La sc\u00e8ne se passe \u00e0 Arpajon, chez Caboussat",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 67,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "21"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "La sc\u00e8ne se passe \u00e0 la campagne de Pomadour, aux environs de Paris.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 68,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne est \u00e0 Paris, de nos jours.",
+            "time": "Around 1875",
+            "comments": null
+        },
+        {
+            "workId": 69,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "19"
+            ],
+            "placeRecode": null,
+            "coord": "47.2596224, -0.0785177",
+            "settingText": "La sc\u00e8ne se passe \u00e0 Saumur, en 1813",
+            "time": "1813",
+            "comments": null
+        },
+        {
+            "workId": 70,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne est \u00e0 Paris. ",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 70,
+            "lang": "fre",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "Au 1e acte chez Grandier.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 70,
+            "lang": "fre",
+            "actId": 2,
+            "sceneId": 0,
+            "placeId": [
+                "7"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Au 2e acte \u00e0 la salle des Pas-Perdus.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 70,
+            "lang": "fre",
+            "actId": 3,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "Au 3e acte chez Vali\u00e8re.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 72,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne se passe sous le r\u00e8gne de Louis XV",
+            "time": "1715-1774",
+            "comments": "assuming it's taking place in Paris bc of title \"\u00e0 la Bastille !\""
+        },
+        {
+            "workId": 73,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "Paris, de nos jours",
+            "time": "1853",
+            "comments": null
+        },
+        {
+            "workId": 75,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne est \u00e0 Paris. ",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 76,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "18"
+            ],
+            "placeRecode": null,
+            "coord": "49.0626143, 5.0042468",
+            "settingText": "La sc\u00e8ne se passe dans la Pologne russe",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 77,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "8"
+            ],
+            "placeRecode": null,
+            "coord": "48.9021524, 3.9985238",
+            "settingText": "La sc\u00e8ne se passe dans la plaine des Vertus",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 78,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne se passe \u00e0 Paris ",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 80,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "A Paris de nos jours",
+            "time": "Around 1853",
+            "comments": null
+        },
+        {
+            "workId": 81,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "Paris, de nos jours",
+            "time": "Around 1856",
+            "comments": null
+        },
+        {
+            "workId": 84,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "20"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "De nos jours, \u00e0 Pincornet-les-B\u0153ufs",
+            "time": "Around 1872",
+            "comments": null
+        },
+        {
+            "workId": 85,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "De nos jours, \u00e0 Paris",
+            "time": "Around 1874",
+            "comments": null
+        },
+        {
+            "workId": 86,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "A Paris, de nos jours",
+            "time": "Around 1883",
+            "comments": null
+        },
+        {
+            "workId": 88,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "A Paris de nos jours.",
+            "time": "Around 1890",
+            "comments": null
+        },
+        {
+            "workId": 89,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "10"
+            ],
+            "placeRecode": null,
+            "coord": "47.1667182, 0.2402095",
+            "settingText": "La sc\u00e8ne est aux environs de Chinon, de nos jours",
+            "time": "Around 1860",
+            "comments": null
+        },
+        {
+            "workId": 90,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "25"
+            ],
+            "placeRecode": null,
+            "coord": "49.2577886, 4.0319260",
+            "settingText": "De nos jours, \u00e0 Reims.",
+            "time": "Around 1880",
+            "comments": null
+        },
+        {
+            "workId": 91,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "40"
+            ],
+            "placeRecode": null,
+            "coord": "47.4736827, 8.3086822",
+            "settingText": "La sc\u00e8ne se passe aux eaux de Bade en 1850",
+            "time": "1850",
+            "comments": null
+        },
+        {
+            "workId": 92,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "42"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "La sc\u00e8ne se passe au ch\u00e2teau de Lirac, pr\u00e8s Paris.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 95,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "43"
+            ],
+            "placeRecode": null,
+            "coord": "48.8126688, 2.2385432",
+            "settingText": "La sc\u00e8ne se passe \u00e0 Meudon, chez Dolor\u00e8s.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 97,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "44"
+            ],
+            "placeRecode": null,
+            "coord": "47.8692882, -3.5505644",
+            "settingText": "La sc\u00e8ne se passe dans un village pr\u00e8s de Quimperl\u00e8, dans le Finist\u00e8re et dans la maison de Racineux.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 99,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "45"
+            ],
+            "placeRecode": null,
+            "coord": "48.0777517, 7.3579641",
+            "settingText": "La sc\u00e8ne se passe \u00e0 deux lieues de Colmar, en 1857.",
+            "time": "1857",
+            "comments": null
+        },
+        {
+            "workId": 101,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne est \u00e0 Paris, en 1839",
+            "time": "1839",
+            "comments": null
+        },
+        {
+            "workId": 102,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "46"
+            ],
+            "placeRecode": null,
+            "coord": "50.2581120, 10.9644630",
+            "settingText": "La sc\u00e8ne se passe dans la manufacture de Donathan, aux environs de Cobourg",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 103,
+            "lang": "fre",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "47"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "La sc\u00e8ne se passe, au premier acte, dans l'atelier de M\u00e9lo\u00e9, en 1822 ;",
+            "time": "1822",
+            "comments": null
+        },
+        {
+            "workId": 103,
+            "lang": "fre",
+            "actId": 2,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": "#N/A",
+            "settingText": "au deuxi\u00e8me acte, chez le duc Georges de Montigny-Lansac, en 1832",
+            "time": "1832",
+            "comments": null
+        },
+        {
+            "workId": 104,
+            "lang": "fre",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "47"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "La sc\u00e8ne se passe, au premier acte, dans l'atelier de M\u00e9lo\u00e9, en 1822 ;",
+            "time": "1822",
+            "comments": null
+        },
+        {
+            "workId": 104,
+            "lang": "fre",
+            "actId": 2,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": "#N/A",
+            "settingText": "au deuxi\u00e8me acte, chez le duc Georges de Montigny-Lansac, en 1832",
+            "time": "1832",
+            "comments": null
+        },
+        {
+            "workId": 105,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "49"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "L'action se passe au ch\u00e2teau du comte Albert de Saint-M\u00e9ry, en 1840",
+            "time": "1840",
+            "comments": null
+        },
+        {
+            "workId": 106,
+            "lang": "fre",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "50"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "L'action se passe en 1840, dans un village. Le premier acte dans la maison du p\u00e8re Marcel. ",
+            "time": "1840",
+            "comments": null
+        },
+        {
+            "workId": 106,
+            "lang": "fre",
+            "actId": 2,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": "#N/A",
+            "settingText": "Le deuxi\u00e8me acte, au ch\u00e2teau de la baronne d'Ermont.",
+            "time": "1840",
+            "comments": null
+        },
+        {
+            "workId": 107,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne se passe \u00e0 Paris, chez madame de M\u00e9range.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 108,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "58"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "L'action se passe en 1843, au ch\u00e2teau du comte de Selcourt, \u00e0 quelques lieues de Paris.",
+            "time": "1843",
+            "comments": null
+        },
+        {
+            "workId": 109,
+            "lang": "fre",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne se passe \u00e0 Paris, en 1843, le premier acte chez Kerven,",
+            "time": "1843",
+            "comments": null
+        },
+        {
+            "workId": 109,
+            "lang": "fre",
+            "actId": 2,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "le second acte chez Mme de Moranville",
+            "time": "1843",
+            "comments": null
+        },
+        {
+            "workId": 110,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne se passe \u00e0 Paris, chez M. de Saint-Vallier, en 1844.",
+            "time": "1844",
+            "comments": null
+        },
+        {
+            "workId": 113,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "51"
+            ],
+            "placeRecode": null,
+            "coord": "43.5374662, 6.4627333",
+            "settingText": "La sc\u00e8ne est \u00e0 Draguinan",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 114,
+            "lang": "fre",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "53"
+            ],
+            "placeRecode": null,
+            "coord": "48.9031000, 2.4829100",
+            "settingText": "Le premier acte, dans la for\u00eat de Bondy.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 114,
+            "lang": "fre",
+            "actId": 2,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "Le deuxi\u00e8me acte, \u00e0 Paris, chez C\u00e9cile.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 115,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne est \u00e0 Paris, chez Rose.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 116,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "34"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "La sc\u00e8ne se passe dans une petite ville de province",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 117,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "52"
+            ],
+            "placeRecode": null,
+            "coord": "48.8432434, 2.4159739",
+            "settingText": "A Saint-Mand\u00e9, pr\u00e8s Paris. ",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 118,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne se passe \u00e0 Paris.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 119,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne, \u00e0 Paris, chez Duverbois.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 120,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne se passe \u00e0 Paris, chez Durozier.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 121,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "54"
+            ],
+            "placeRecode": null,
+            "coord": "48.7630238, 2.4093664",
+            "settingText": "La sc\u00e8ne se passe \u00e0 Choisy-le-Roi, chez Bonsorbet.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 122,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": "#N/A",
+            "settingText": "La sc\u00e8ne se passe de nos jours, chez Madame Barazin. ",
+            "time": "around 1873",
+            "comments": null
+        },
+        {
+            "workId": 123,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne est \u00e0 Paris, en 1858.",
+            "time": "1858",
+            "comments": null
+        },
+        {
+            "workId": 124,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "55"
+            ],
+            "placeRecode": null,
+            "coord": "50.3500747, 3.5435909",
+            "settingText": "La sc\u00e8ne est \u00e0 Marly, chez Bernard.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 125,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "24"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "La sc\u00e8ne se passe \u00e0 la campagne, pr\u00e8s des rives de la Loire.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 126,
+            "lang": "fre",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne se passe \u00e0 Paris; au premier acte, chez Champignel,",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 126,
+            "lang": "fre",
+            "actId": 2,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "au deuxi\u00e8me acte, chez Mme Delaunay.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 127,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne est \u00e0 Paris",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 128,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "9",
+                "15"
+            ],
+            "placeRecode": null,
+            "coord": "#N/A",
+            "settingText": "La sc\u00e8ne se passe aux Pyr\u00e9n\u00e9es, entre Luz et Argel\u00e8s, dans une auberge. ",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 129,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne se passe \u00e0 Paris chez un restaurateur.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 130,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "48"
+            ],
+            "placeRecode": null,
+            "coord": "42.6384261, 12.6742970",
+            "settingText": "La sc\u00e8ne se passe en Italie",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 131,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne se passe \u00e0 Paris, chez Angibout.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 132,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne se passe \u00e0 Paris.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 133,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "A Paris, chez Champclos",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 134,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne se passe \u00e0 Paris, dans la maison de Camerlin.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 136,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "A Paris, en 1860.",
+            "time": "1860",
+            "comments": null
+        },
+        {
+            "workId": 138,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne se passe \u00e0 Paris : prologue, rue de Vend\u00f4me ;",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 138,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "52"
+            ],
+            "placeRecode": null,
+            "coord": "48.8432434, 2.4159739",
+            "settingText": "l'action, \u00e0 Saint-Mand\u00e9, chez madame Beaujolais",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 139,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne se passe \u00e0 Paris, chez Br\u00e9tigny.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 140,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "57"
+            ],
+            "placeRecode": null,
+            "coord": "49.1478994, -0.3753212",
+            "settingText": "La sc\u00e8ne se passe dans un duch\u00e9 de l'Allemagne, en 1861.",
+            "time": "1861",
+            "comments": null
+        },
+        {
+            "workId": 141,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "La sc\u00e8ne est \u00e0 Paris, de nos jours.",
+            "time": "around 1860",
+            "comments": null
+        },
+        {
+            "workId": 143,
+            "lang": "fre",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": "48.8588897, 2.3200410",
+            "settingText": "A Paris",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 29,
+            "lang": "fre",
+            "actId": 3,
+            "sceneId": 0,
+            "placeId": [
+                "28"
+            ],
+            "placeRecode": null,
+            "coord": "45.7643631, 3.0477919",
+            "settingText": "Els altres dos, a Royat, al Splendit Hotel.",
+            "time": "around 1910",
+            "comments": null
+        },
+        {
+            "workId": 10,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "34"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Eine Residenzstadt.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 3,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "30"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Die Scene ist in einer gro\u00dfen Stadt Deutschlands.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 47,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "30"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Das St\u00fcck spielt in einer gro\u00dfen Stadt.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 83,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "4.5"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Der erster Akt spielt in Stadt Steyr, der zweite und dritte in Braunau.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 52,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Berlin, in der Wohnung Sterbel's.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 50,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Der erste Akt spielt in Scheffler's Wohnung, der zweite und dritte in der Villa des Commerzienraths Bolzau.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 4,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "31"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Des Pfarrers Wohnung in einem Landst\u00e4dtchen unweit Berlin.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 51,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "30"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Die Handlung spielt in einer gro\u00dfen Stadt, in der Wohnung des Kaufmann Lange.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 48,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "7.43"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Der erste Akt spielt in London. Der zweite, dritte und vierte Akt auf dem Landsitz bei Marsland.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 25,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "11"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Der Schroffensteiner Wald und das Hotel Weinm\u00fcller.\nZeit: Gegenwart.",
+            "time": "around 1879",
+            "comments": null
+        },
+        {
+            "workId": 58,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Berlin.\nZeit: Die Gegenwart.",
+            "time": "around 1880",
+            "comments": null
+        },
+        {
+            "workId": 9,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1.9"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Im ersten Aufzuge Berlin, in den folgenden Bad Lindeck.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 14,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "32"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Das St\u00fcck spielt auf dem Gute des Herrn von Folgen und in einer kleinen Stadt in der N\u00e4he.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 16,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "32"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Eine kleine deutsche Stadt.\nZeit: Gegenwart.",
+            "time": "around 1883",
+            "comments": null
+        },
+        {
+            "workId": 112,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: In den ersten zwei Akten auf dem Rittergute Zinkwitz; in den letzten beiden Akten in Berlin.\nZeit: Die Gegenwart.",
+            "time": "around 1883",
+            "comments": null
+        },
+        {
+            "workId": 82,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "10"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Schauplatz: Dorf Schusselfingen in Schwaben.\nZeit: M\u00e4rz 1848.",
+            "time": "March 1848",
+            "comments": null
+        },
+        {
+            "workId": 15,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Berlin.\nZeit: Die Gegenwart.",
+            "time": "around 1885",
+            "comments": null
+        },
+        {
+            "workId": 28,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1.12"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Der erste und vierte Aufzug spielen in Berlin, der zweite und dritte Aufzug in Ludersdorf.\nZeit: Gegenwart.",
+            "time": "around 1885",
+            "comments": null
+        },
+        {
+            "workId": 13,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "13"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Wien, im Hause Wisthalers.\nZeit: Die Gegenwart.",
+            "time": "around 1882",
+            "comments": null
+        },
+        {
+            "workId": 32,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Salon im Hause Steinkopfs in Berlin.\nZwischen dem ersten und zweiten Aufzug, sowie dem zweiten und dritten Aufzug liegt ein Zeitraum von einigen Tagen. Der dritte und vierte Aufzug spielen an einem Tage.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 35,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Berlin.\nZeit: Gegenwart.",
+            "time": "around 1890",
+            "comments": null
+        },
+        {
+            "workId": 20,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Berlin",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 21,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Villenkolonie \"Waldesruh\" bei Berlin",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 36,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "30"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Eine gro\u00dfe Stadt.\nZeit: Gegenwart.\nDer erste Akt spielt Nachmittags, die beiden anderen Akte spielenam Morgen des anderen Tages.",
+            "time": "around 1893",
+            "comments": null
+        },
+        {
+            "workId": 30,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Die Handlung spielt im ersten Akt in einem Badeort, im zweiten Akt in Berlin, im dritten und vierten Akt auf dem Gute Wettingshausen.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 37,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Der \"Fasanenhof\".\nZeit: Die Gegenwart.",
+            "time": "around 1895",
+            "comments": null
+        },
+        {
+            "workId": 29,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Berlin.\nZeit: Gegenwart.",
+            "time": "around 1896",
+            "comments": null
+        },
+        {
+            "workId": 19,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Berlin.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 31,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "16"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Der erste Akt spielt in Paris, der zweite und dritte in einer kleinen Garnisonstadt bei Paris.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 34,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "33"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: eine gr\u00f6\u00dfere Provinzialstadt.\nZeit: Gegenwart.",
+            "time": "around 1899",
+            "comments": null
+        },
+        {
+            "workId": 1,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Der erste Akt spielt in Berlin; der zweite und dritte Akt im Gasthaus zum \"Wei\u00dfen R\u00f6\u00dfl\".",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 24,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Erster und dritter Akt Berlin. Zweiter Akt im Gebirge.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 39,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "30"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: eine gr\u00f6\u00dfere Stadt.\nZeit: Gegenwart.",
+            "time": "around 1902",
+            "comments": null
+        },
+        {
+            "workId": 41,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1.18"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Die beiden ersten Aufz\u00fcge spielen in Berlin, der dritte Aufzug auf Schlo\u00df Wollien.\nZeit: Gegenwart.",
+            "time": "around 1904",
+            "comments": null
+        },
+        {
+            "workId": 95,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "13"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Wien.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 40,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "19"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Buchenau.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 53,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "30.36"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Der erste Akt spielt bei Dr. R\u00fcdiger in einer grossen Stadt. Der zweite in einem Schweizer Berghotel, der dritte auf der Concordiah\u00fctte oberhalb dieses Hotels.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 38,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Das St\u00fcck spielt in Berlin in unseren Tagen.",
+            "time": "around 1909",
+            "comments": null
+        },
+        {
+            "workId": 45,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1.21"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: I. und III. Akt: Berlin, II. Akt: Unterschwendlingen.\nZeit: Gegenwart.",
+            "time": "around 1909",
+            "comments": null
+        },
+        {
+            "workId": 110,
+            "lang": "ger",
+            "actId": 1,
+            "sceneId": 0,
+            "placeId": [
+                "22"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Der erste Akt spielt im Restaurant Luftschiffstation Luzern, der zweite in Monte Carlo, der dritte und vierte im Park des Hotels \"Excelsior\" in Nizza.\nZeit: Gegenwart.",
+            "time": "around 1910",
+            "comments": null
+        },
+        {
+            "workId": 110,
+            "lang": "ger",
+            "actId": 2,
+            "sceneId": 0,
+            "placeId": [
+                "23"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": null,
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 110,
+            "lang": "ger",
+            "actId": 3,
+            "sceneId": 0,
+            "placeId": [
+                "24"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": null,
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 111,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort: Eine kleine Residenz.\nZeit: Die Gegenwart.",
+            "time": "around 1912",
+            "comments": null
+        },
+        {
+            "workId": 43,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Der erste und dritte Akt spielen bei Hagemann, der zweite Akt in einem Hotelzimmer im \"Gr\u00fcnen Krokodil\".",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 26,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "33"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Das St\u00fcck spielt in einer gr\u00f6\u00dferen deutschen Provinzstadt in der Gegenwart.",
+            "time": "around 1913",
+            "comments": null
+        },
+        {
+            "workId": 60,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "33"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: eine gro\u00dfe Provinzstadt.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 57,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "32"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: eine kleine Stadt in der N\u00e4he Berlins.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 63,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "33"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: eine mittlere deutsche Provinzstadt.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 93,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "32.26"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Erster und dritter Akt: Kleine Stadt, im Hause M\u00f6ller. Zweiter Akt: Kontor M\u00f6ller in Hamburg.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 61,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1.27"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Der erste Akt spielt in Berlin bei Yvette, der zweite und dritte bei Struwe in Plei\u00dfenbach.\nZeit: Gegenwart.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 56,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "37"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Oberbayern",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 62,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Der erste und letzte Akt: Berlin, im Ministerium, der zweite Akt im \"Hotel zum Paradies\" am Schnakensee.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 64,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Das St\u00fcck spielt an drei aufeinanderfolgenden Tagen in Berlin, etwa Anfang September.\nDer erste Akt spielt im B\u00fcro der Firma \"Theodor Schillings Nachfolger\", der zweite und dritte Akt bei Pussy.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 42,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "37"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Oberbayern.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 49,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Berlin.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 89,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "35.32"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Scene: Eine alte verfallene Festung, am Ufer des Meeres, eine Viertelstunde von einer kleinen Stadt in Frankreich.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 86,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "28.1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Kyritz und Berlin.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 117,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Spielt in einer Berliner Villa.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 113,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "29"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Das St\u00fcck spielt auf dem Gute des F\u00fcrsten Rogoschin in der N\u00e4he von St. Petersburg",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 114,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Die Scene ist ein Saal mit einer Mittelth\u00fcr und vier Seitenth\u00fcren auf dem Gute des Herrn v. Langsalm. Die Erste links, ist das Zimmer des Fr\u00e4uleins; die Zweyte, das des Herrn von Langsalm: Die Erste Th\u00fcr rechts das Schlafzimmer der Frau von Langsalm, die Zweyte das Gastzimmer. Im Hintergrunde h\u00e4ngt \u00fcber einem Stuhle ein Regenmantel, daneben ein Regenschirm und ein gro\u00dfer Gartenhut.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 115,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "31.38"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Der Schauplatz ist in einer Landstadt.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 84,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "39.1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Erste Abtheilung: Ein Maler-Atelier. Zweite Abtheilung: Die B\u00f6rsenm\u00e4nner. Dritte Abtheilung: Ein Abend in Stralau.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 100,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "13",
+                "40",
+                "41"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Der erste Act spielt in Wien, der zweyte in Neustadt, der dritte in Br\u00fcnn.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 99,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "32.42"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Die Handlung spielt im ersten Aufzug in Zanglers Wohnung in einer kleinen Stadt; dann in der nahe gelegenen Hauptstadt, gegen Schlu\u00df wieder bei Zangler.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 98,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "30.43"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Die Handlung spielt in den beiden ersten Akten in einer gro\u00dfen Stadt, im dritten Akte in Kauz's Landhause.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 103,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Scene: Ein kleines Wirthshauszimmer.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 75,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "13"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Die Handlung spielt im 1. Akte in der Stadt, im 2. Akte in der Vorstadt, und im 3. Akte in Hietzing.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 8,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "32"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Das St\u00fcck spielt in einer kleinen Stadt, im Hause der Madame Brettschneider.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 22,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Berlin.\n1. und 3. Akt bei Treller. 2. Akt Hiller's Atelier.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 7,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "46"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Das St\u00fcck spielt in Hannover, im Gasthofe zum Gold-Fasan.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 6,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "25"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Scene: Ein Gasthof in der Stadt Thorn.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 5,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1",
+                "43",
+                "44"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Die Scene ist in den beiden ersten Akten in Berlin bei Schnables, im dritten auf einem Landhause im Thiergarten, im vierten auf einem Vorwerk bei der Stadt Gr\u00fcneberg in Schlesien.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 119,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Die Handlung spielt zugleich in der Wohnung des Herrn von Goldfuchs im ersten Stocke, und in Schluckers Wohnung zu ebener Erde in einem und demselben Hause.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 87,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "13"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Die Handlung spielt in einer Vorstadt Wiens.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 67,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "20.17"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Die Handlung geht theils in Frankfurt, theils in K\u00f6nigstein und dessen Umgegend vor.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 74,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1",
+                "47",
+                "48",
+                "49",
+                "50"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Der erste Aufzug spielt in Berlin, der zweite in Oranienburg, der dritte in Sachsenhausen, der vierte in Nassenheider Forst, der f\u00fcnfte in L\u00f6wenberg.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 70,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Das Theater stellt den Garten einer B\u00fcrgertabagie im Voigtlande vor, hinten mit einem Gitter geschlossen. Tische, B\u00e4nke, St\u00fchle im Garten. Rechts das Wirthshaus mit einem Schilde, worauf geschrieben steht: \"Tabagie und Garten-Vergn\u00fcgen\". Links an allen Coulissen eine Mauer mit einer Gitterth\u00fcr, die in einen ansto\u00dfenden Garten f\u00fchrt.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 104,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Scene: ein kleiner Garten.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 88,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Das Theater stellt die Arbeitsstube einer Putz- und Kleidermacherin vor. Links im Hintergrunde und rechts an der ersten Coulisse eine Seitenth\u00fcre; an der zweiten ein Fenster. Mittelth\u00fcre als Haupt-Eingang.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 66,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Die Zeit der Handlung d. J. 1814.",
+            "time": "1814",
+            "comments": null
+        },
+        {
+            "workId": 105,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "13"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Das St\u00fcck spielt in der Leopoldstadt und an der Donau unter den Wei\u00dfgerbern in Wien.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 59,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Spielt in einer mittelgro\u00dfen Stadt.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 120,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "32"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Eine kleine Stadt in Mittel-Deutschland.\nZeit: Die Gegenwart.",
+            "time": "around 1901",
+            "comments": null
+        },
+        {
+            "workId": 121,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "51.52"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Im ersten Akt das amerikanische Seebad New-Port, dann Boston.\nZeit: Die Gegenwart.",
+            "time": "around 1897",
+            "comments": null
+        },
+        {
+            "workId": 122,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Der erste Akt spielt in Schlachtensee bei Berlin, der zweite in Berlin in B\u00f6ttcher's Konservatorium, der dritte bei Adolf Mackeldey.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 123,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Bernicke's Villa bei Berlin.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 128,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "53"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Die zwei ersten Akten spielen auf Helgoland, der dritte Akt an Bord eines Panzerschiffes.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 129,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "1"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Berlin.\nAlle 3 Akte: Elegantes Zimmer.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 131,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "34"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Eine Residenzstadt.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 132,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "33"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Eine Provinzialstadt.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 133,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "30"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Eine gro\u00dfe Stadt.\nZeit: Die Gegenwart.",
+            "time": "around 1893",
+            "comments": null
+        },
+        {
+            "workId": 134,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: 1. Akt. Auf der Villa Bachmann. 2. und 3. Akt. Auf dem Gute Eugen v. Rettbergs.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 135,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Im ersten Akt: Gut R\u00fcckendorf; im zweiten u. dritten Akt: Gut Hohenfurt.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 136,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "33"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Eine kleine Provinzstadt.\nZeit: Die Gegenwart.",
+            "time": "around 1896",
+            "comments": null
+        },
+        {
+            "workId": 137,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "33"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Eine Provinzialstadt.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 138,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "33"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Der erste Act spielt am Nachmittag, die beiden anderen Acte am folgenden Tage.\nOrt der Handlung: Eine gr\u00f6\u00dfere Provinzialstadt.\nZeit: Die Gegenwart.",
+            "time": "around 1894",
+            "comments": null
+        },
+        {
+            "workId": 139,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "54.7"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Im ersten Akt das Grand-Hotel und Strand-Restaurant \"Belvedere\" in Vevey; der zweite Akt spielt im Salon Ilona Alissons in London; der dritte Akt spielt auf Pempertons Landhaus bei London.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 140,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "33"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Eine Provinzstadt.\nZeit: Die Gegenwart.",
+            "time": "around 1903",
+            "comments": null
+        },
+        {
+            "workId": 141,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "30"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Zeit: Gegenwart.\nOrt der Handlung: Eine Gro\u00dfstadt.\nDie beiden ersten Akte spielen am Nachmittage eines Tages, der letzte am Vormittag des folgenden.",
+            "time": "around 1889",
+            "comments": null
+        },
+        {
+            "workId": 142,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "32"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Das St\u00fcck spielt in der Gegenwart in einer kleinen deutschen Stadt, der erste und dritte Akt bei B\u00fcrger, der zweite in Atelier Rodes.",
+            "time": "around 1905",
+            "comments": null
+        },
+        {
+            "workId": 143,
+            "lang": "ger",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "55"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Eine mittlere Universit\u00e4tstadt.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 146,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "6"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Das St\u00fcck spielt am Ende der Neunziger Jahre.\nDie Scene ist in einem Gasthofe zu Stra\u00dfburg.",
+            "time": "around 1795",
+            "comments": null
+        },
+        {
+            "workId": 147,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "B\u00fcrgerliche Wohnstube.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 149,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "La sc\u00e8ne se passe dans le salon de Monsieur Bonnar.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 151,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "4"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "La sc\u00e8ne se passe \u00e0 Colmar en 1863.",
+            "time": "1863",
+            "comments": null
+        },
+        {
+            "workId": 154,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Im Jerri sinre Wohnstub.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 157,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "6"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Das St\u00fcck spielt im Jahre 1791, beim Steckelburger oder auf dem M\u00fcnsterplatz.",
+            "time": "1791",
+            "comments": null
+        },
+        {
+            "workId": 158,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "4"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Die Scene spielt in Colmar in der Behausung des Ignatius Ueberall.\nZeit: Die Mitte des neunzehnten Jahrhunderts.",
+            "time": "around 1850",
+            "comments": null
+        },
+        {
+            "workId": 159,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "18"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Das St\u00fcck spielt vor der Stadt Gebweiler zu Ende des siebenzehnten Jahrhunderts.",
+            "time": "aroud 1690",
+            "comments": null
+        },
+        {
+            "workId": 162,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "23"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Unter-Elsa\u00df.\nEin gew\u00f6hnliches Wohnhaus mit zwei Stuben und einer K\u00fcche im Hintergrund.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 163,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "6"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Die Handlung spielt in Stra\u00dfburg.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 164,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "23"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Unter-Elsa\u00df.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 174,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "L'Theatre stellt im Herr Rumpf si gardewirthschaft vor.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 178,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "D'Handlung spielt bym Babillot, im Coiffeurlade.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 179,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "6"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "La sc\u00e8ne aux environs de Strasbourg.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 187,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Eine l\u00e4ndliche Gartenwirtschaft.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 193,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Die Scene spielt bei Abom\u00e9, in den ersten Tagen des Jahres 1894.",
+            "time": "1894",
+            "comments": null
+        },
+        {
+            "workId": 195,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "6"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort d'r Handlung: Stro\u00dfburij, Gerwergrawe, in d'r Wohnung vun Siffritt.\nZitt d'r Handlung: Gejewart.\ns'St\u00fceck d\u00fcrt Drejviertelstund.",
+            "time": "around 1895",
+            "comments": null
+        },
+        {
+            "workId": 167,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "D'Handlung spielt im H\u00fc\u00fcs vum Herr Hirsch.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 168,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "D'Sc\u00e8ne stellt e Wirthstub vor. Hinte e Diehr wo in e Schloofzimmer f\u00fcehrt. D'Fenster vom Schloofzimmer gehn uf d'Stub er\u00fcs. Rechts zwei Zimmerdiehre, links d'H\u00fcsdiehr.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 312,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Wohnung vom Herr Buttem\u00fces.\nZit: Gegewart.",
+            "time": "around 1898",
+            "comments": null
+        },
+        {
+            "workId": 318,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "D'Scene stellt e freier Platz vor; im Hintergrund sin e paar Staffle. Mittle uf dr Scene steht d'Milhusin\u00e0 im e griechische Cost\u00fcm; rechts: d'Poesie, d'Posse, 's Dr\u00e0m\u00e0 un 's Schauspiel, links: d'Pros\u00e0, 's Lustspiel, 's Volksst\u00fcck un dr Schwank.",
+            "time": null,
+            "comments": null
+        },
+        {
+            "workId": 321,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "18"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: G\u00e2willer un d'r Platz vorm Belchewirtshus.\nZeit: Gegenwart.",
+            "time": "around 1900",
+            "comments": null
+        },
+        {
+            "workId": 323,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": [
+                "4"
+            ],
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "Ort der Handlung: Colmar im Elsa\u00df.\nZeit: Gegenwart.",
+            "time": "around 1900",
+            "comments": null
+        },
+        {
+            "workId": 182,
+            "lang": "als",
+            "actId": 0,
+            "sceneId": 0,
+            "placeId": null,
+            "placeRecode": null,
+            "coord": null,
+            "settingText": "La sc\u00e8ne se passe chez le sultan.",
+            "time": null,
+            "comments": null
+        }
+    ]
+}

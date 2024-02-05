@@ -1,5 +1,18 @@
 <div id="vis-container">
-    <div class="item filters"><h2>Filters</h2></div>
+    <div class="item filters">
+        <h2>Filters</h2>
+        <div id="filter-list filter-fixed">
+            <h3 class="filter-label">Gender</h3>
+            <h3 class="filter-label">Profession</h3>
+            <h3 class="filter-label">Social Class</h3>
+            <h3 class="filter-label">Tradition</h3>
+        </div>
+        <div id="filter-list filter-searchable">
+            <input type="text" placeholder="Search..">
+            <h3 class="filter-label">Publisher</h3>
+            <h3 class="filter-label">Author</h3>
+        </div>
+    </div>
     <div class="item main-view">
         <div class="item main-view-chars">
             <h2>Characters</h2>
@@ -8,7 +21,10 @@
         </div>
         <div class="item main-view-plays">
             <div class="item main-view-plays-chart"></div>
-            <div class="item main-view-plays-table"></div>
+            <div class="item main-view-plays-table">
+                <div id="play-list"></div>
+                <div id="play-list-pagination"></div>
+            </div>
         </div>
     </div>
     <div class="item vis-navbar"></div>
