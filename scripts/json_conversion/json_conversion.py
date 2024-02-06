@@ -5,6 +5,7 @@ Data can be: characters, plays, locations, authors, settings, publishers.
 import csv
 import json
 import argparse
+import re
 
 TEMPLATE_MAP = {
   "char_data": {"characters": []},
@@ -90,7 +91,7 @@ def convert_to_json(data: dict, type: str) -> dict:
             for dct in data]
 
         # split values with comma into list
-        play_data = [{k: v.replace(" ", "").split(",")
+        play_data = [{k: re.split("[,.]", v.replace(" ", ""))
                 if k in ["authorId", "nbScenes"]
                 and v is not None
                 else v for k, v in dct.items()}
