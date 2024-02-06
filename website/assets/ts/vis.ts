@@ -1,54 +1,83 @@
 import { get } from "jquery";
 import { Character, Play } from "./IEntity";
 
-function getJSON(path: string, callback: (data: any) => void) : void {
-  $.ajax({
-    url: path,
-    method: "GET",
-    dataType: "json",
-    beforeSend: () => {
-      $('#loader').show();
-    },
-    complete: () => {
-      $('#loader').hide();
-    },
-    success: (data) => {
-      callback(data)
-    },
-    error: (jqXHR, textStatus, errorThrown) => {
-      console.log("Error: " + errorThrown);
-    }
+function getJSON(path: string) : Promise<any> {
+  /* Used to get JSON data from a file */
+  return new Promise((resolve, reject) => {
+    $.ajax({
+      url: path,
+      method: "GET",
+      dataType: "json",
+      beforeSend: () => {
+        $('#loader').show();
+      },
+      complete: () => {
+        $('#loader').hide();
+      },
+      success: (data) => {
+        resolve(data);
+      },
+      error: (jqXHR, textStatus, errorThrown) => {
+        reject(errorThrown);
+      }
+    });
   });
 };
 
-function showJSONData(data: any, type: string) : void {
-  setPagination(data[type], type);
-};
-
-function getTemplate(data: any, type: string) : string {
-  if (type === "characters") {
-    var html = "<ul>";
-    $.each(data, function(index, character) {
-      html += "<li>"+ character.persName +"</li>";
-    });
-    html += "</ul>";
-  }
-
-  else if (type === "plays") {
-    var html = ""
-    $.each(data, function(index, play) {
-      var titleMain = play.titleMain;
-      var titleSub = play.titleSub;
-      var authorId = play.authorId;
-      var authorName = getPlayInfo(authorId, "author");
-      console.log(authorId, authorName)
-      //var publisher = getPlayInfo(play.publisher, "publisher");
-      html += "<div class='play-card'><p>"+ titleMain + "<br>" + authorName +"</p></div>";
-    });
-  };
+function generateCharacterTemplate(data: any): string {
+  var html = "<ul>";
+  $.each(data, function (index, character: Character) {
+    html += `<li>${character.persName}</li>`;
+  });
+  html += "</ul>";
 
   return html;
-};
+}
+
+async function generatePlayTemplate(data: any): Promise<string> {
+  let html = "";
+  try {
+    // We define getPlayInfo() as async so that we can load data
+    // which is not related to characters nor plays (e.g. authors, publishers)
+    // while still doing other work in parallel.
+    // playPromises is an array of promises, each of which resolves to a string
+    // containing the HTML for a single play card.
+    // ? check performance
+    // ----------------
+    // We need to use Object.values() because data is an object, not an array.
+    const playPromises = Object.values(data).map(async (play: Play) => {
+      const titleMain = play.titleMain;
+      const titleSub = play.titleSub;
+      const authorId = play.authorId;
+      //console.log(titleMain, titleSub, authorId)
+      const authorName = await getPlayInfo(authorId, "author");
+      console.log(authorId, authorName);
+      //const publisher = getPlayInfo(play["publisher"], "publisher");
+      return `<div class='play-card'><p>${titleMain}<br>${authorName}</p></div>`;
+    });
+
+    // We need to wait for all promises to resolve before we can return the HTML.
+    // Otherwise, the function will return before the promises resolve,
+    // and [object Promise] will be returned instead.
+    const playHtmlArray = await Promise.all(playPromises);
+    html = playHtmlArray.join(''); // Combine HTML strings into a single string
+
+    return html;
+  } catch (error) {
+    console.error("Error generating play template:", error);
+    return "";
+  }
+}
+
+async function getTemplate(data: any, type: string): Promise<string> {
+  if (type === "characters") {
+    return generateCharacterTemplate(data);
+  } else if (type === "plays") {
+    return generatePlayTemplate(data);
+  }
+
+  return "";
+}
 
 function calcPageSize() {
   const width = $(window).width();
@@ -82,46 +111,70 @@ function setPagination(dataSource: any, type: string) : void {
     pageSize: calcPageSize(),
     showGoInput: true,
     formatGoInput: "go to <%= input %>",
-    callback: (data, pagination) => {
-      var html = getTemplate(data, type);
-      $(listOfEls[1]).html(html);
-    }
+    // The callback needs to be async
+    // because we need to wait for the template to be generated
+    callback: async (data, pagination) => {
+      try {
+        var html = await getTemplate(data, type);
+        $(listOfEls[1]).html(html);
+      } catch (error) {
+        console.error(error);
+      }
+    },
   });
 }
 
-function getPlayInfo(id: any, type: string) : void {
+async function getPlayInfo(id: any, type: string) : Promise<string> {
+  if (id === undefined) {
+    return "Unknown";
+  }
+
   switch (type) {
     case "publisher":
       return id;
-    case "author":
-      $.getJSON("/json/author_data.json", (data) : string => {
-        if (id.length > 1) {
-          var authorNames = [];
-          id.forEach((authorId) => {
-            authorNames.push(data["authors"][authorId]["fullName"]);
-          });
-          console.log(authorNames.join(", "))
-          return authorNames.join(", ");
-        }
 
-        console.log(id)
-        console.log(id[0])
-        return data["authors"][id[0]]["fullName"];
-      });
+    case "author":
+      const data = await getJSON("/json/author_data.json");
+
+      if (id.length > 1) {
+        const authorNames = id.map((authorId: string) =>
+        data["authors"][authorId]["fullName"]);
+
+        return authorNames.join(", ");
+      } else {
+        //todo:
+      }
+
+      console.log(id);
+      console.log(id[0]);
+      return "unk"
+      //return data["authors"][id[0]]["fullName"];
   }
 }
 
-$(function() {
-  const JSONFiles = ["/json/char_data.json", "/json/play_data.json"];
-  const types = ["characters", "plays"];
+async function fetchData(): Promise<void> {
+  try {
+    const JSONFiles = ["/json/char_data.json", "/json/play_data.json"];
+    const types = ["characters", "plays"];
 
-  JSONFiles.forEach((file, index) => {
-    getJSON(file, (data) => { showJSONData(data, types[index]) });
-  });
+    const [charData, playData] = await Promise.all(JSONFiles.map((file: string) => getJSON(file)));
 
-  $(window).on("resize", () => {
-    JSONFiles.forEach((file, index) => {
-      getJSON(file, (data) => { showJSONData(data, types[index]) });
-    });
-  });
+    const charTemplate = await getTemplate(charData, types[0]);
+    const playTemplate = await getTemplate(playData, types[1]);
+
+    $("#char-list").html(charTemplate);
+    $("#play-list").html(playTemplate);
+
+    setPagination(charData[types[0]], types[0]);
+    setPagination(playData[types[1]], types[1]);
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
+}
+
+$(function () {
+  fetchData();
+
+  // this is not a so good idea, we'll think more about that later
+  //$(window).on("resize", fetchData);
 });

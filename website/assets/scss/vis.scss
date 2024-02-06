@@ -13,20 +13,20 @@
 
 .filters {
     grid-column: 1;
-    background: red;
+    background: #f2471a;
     width: 100%;
     height: 100%;
 }
 
 .main-view {
     grid-column: 2;
-    background: blue;
+    background: #dddbff;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
 .main-view-chars {
-    background: yellow;
+    background: #acf54e;
 }
 
 .main-view-plays {
@@ -57,7 +57,7 @@
 
 .vis-navbar {
     grid-column: 3;
-    background: green;
+    background: #c3777f;
     width: 100%;
     height: 100%;
 }

@@ -4,7 +4,10 @@ interface Character {
 }
 
 interface Play {
-    //todo
+    titleMain: string;
+    titleSub: string;
+    authorId: string | string[];
+    nbActs: string;
 }
 
 export {

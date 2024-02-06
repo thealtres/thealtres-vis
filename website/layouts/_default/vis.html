@@ -24,7 +24,7 @@
 
   <script src="http://pagination.js.org/dist/2.6.0/pagination.min.js" defer></script>
 
-  {{ $ts := resources.Get "ts/vis.ts" | js.Build | minify | fingerprint }}
+  {{ $ts := resources.Get "ts/vis.ts" | js.Build | fingerprint }}
   <script src="{{ $ts.Permalink }}" defer></script>
 </head>
 {{ end }}
