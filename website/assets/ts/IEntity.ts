@@ -1,6 +1,10 @@
 interface Character {
     persName: string;
-    //todo
+    sex: string;
+}
+
+interface CharacterData {
+    [key: string]: Character;
 }
 
 interface Play {
@@ -10,7 +14,23 @@ interface Play {
     nbActs: string;
 }
 
+interface PlayData {
+    [key: string]: Play;
+}
+
+interface Author {
+    fullName: string;
+}
+
+interface AuthorData {
+    [key: string]: Author;
+}
+
 export {
     Character,
-    Play
+    CharacterData,
+    Play,
+    PlayData,
+    Author,
+    AuthorData
 }
