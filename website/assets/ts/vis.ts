@@ -2,6 +2,12 @@ import { get } from "jquery";
 import { Character, CharacterData, Play, PlayData, Author, AuthorData } from "./IEntity";
 
 var charData: CharacterData, playData: PlayData, authorData: AuthorData;
+let charFilters = {
+  gender: "any",
+  normalizedProfession: "any",
+  socialClass: "any",
+};
+var filteredData: Character[] = [];
 
 function getJSON(path: string) : Promise<any> {
   /* Used to get JSON data from a file */
@@ -24,7 +30,7 @@ function getJSON(path: string) : Promise<any> {
 
 // is Character[] when data is filtered
 function generateCharacterTemplate(data: CharacterData | Character[]): string {
-  var html = "<ul>";
+  let html = "<ul>";
   $.each(data, function (index, character: Character) {
     html += `<li>${character.persName}</li>`;
   });
@@ -108,7 +114,7 @@ function getGridElements(type: string) : string[] {
 
 function setPagination(dataSource: any, type: string) : void {
   console.time("setPagination")
-  var listOfEls = getGridElements(type);
+  let listOfEls = getGridElements(type);
   // @ts-ignore
   $(listOfEls[0]).pagination({
     dataSource: dataSource,
@@ -161,15 +167,65 @@ async function getPlayInfo(id: string | string[], type: string) : Promise<string
 
 function filterCharacters(charData: CharacterData) : Character[] {
   console.time("filterCharacters");
-  const genderFilter = $("input[name=gender]:checked").val()
+  const genderFilter = charFilters.gender;
+  const professionFilter = charFilters.normalizedProfession;
+  const socialClassFilter = charFilters.socialClass;
+
+  console.log(genderFilter, professionFilter, socialClassFilter)
+
+  console.log("before : ", Object.values(charData).length)
 
   const filteredData = Object.values(charData).filter((char: Character) => {
-    return char.sex === genderFilter;
+    const genderMatches =
+    genderFilter === "any" ||
+      // Map "B", "U" and null to "O" (other) to match HTML filter button values
+      //? B = ??? (both?)
+      //? U = ??? (unknown?) | if unknown, replace nulls w/ script
+      (genderFilter === "O" && ["B", "U", null].includes(char.sex)) ||
+      char.sex === genderFilter;
+
+    const professionMatches =
+      professionFilter === "any" ||
+      char.normalizedProfession === professionFilter;
+
+    const socialClassMatches =
+      socialClassFilter === "any" ||
+      char.socialClass === socialClassFilter;
+
+    return genderMatches && professionMatches && socialClassMatches;
   });
+
+  console.log("after : ", filteredData.length)
 
   console.timeEnd("filterCharacters");
   return filteredData;
 };
+
+
+// function filterCharacters(charData: Character[], filter) : Character[] {
+//   console.time("filterCharacters");
+
+//   const filteredData = charData.filter((char: Character) => {
+//     if (filter === "gender") {
+//       console.log("filtering gender")
+//       return char.sex === charFilters.gender;
+//     } else if (filter === "profession") {
+//       console.log("filtering profession")
+//       return char.profession === charFilters.profession;
+//     }
+//   });
+
+//   console.timeEnd("filterCharacters");
+//   return filteredData;
+// };
+
+//todo: unify w/ plays
+function updateFilters() {
+  const filteredData = filterCharacters(charData);
+  const charTemplate = generateCharacterTemplate(filteredData);
+  $("#char-list").html(charTemplate);
+  setPagination(filteredData, "characters");
+}
 
 function showPlaysByCharacter() {
   //todo
@@ -199,6 +255,8 @@ async function fetchData(): Promise<void> {
 
     setPagination(charData, types[0]);
     setPagination(playData, types[1]);
+
+    filteredData = Object.values(charData);
   } catch (error) {
     console.error("Error fetching data:", error);
   } finally {
@@ -210,12 +268,56 @@ async function fetchData(): Promise<void> {
 $(function () {
   fetchData();
 
+  // todo
+  // @ts-ignore
+  new TomSelect("#select-prof", {
+    create: true,
+    sortField: {
+      field: "text",
+      direction: "asc"
+      }
+    });
+
+  // $("input[name=gender]").on("change", function () {
+  //   charFilters.gender = $(this).val();
+
+  //   console.log("aa", filteredData)
+  //   if (!isGenderFiltered) {
+  //     filteredData = filterCharacters(filteredData, "gender");
+  //     isGenderFiltered = true;
+  //   } else {
+  //     filteredData = filterCharacters(Object.values(charData), "gender");
+  //     isGenderFiltered = false;
+  //   }
+  //   console.log("bb", filteredData)
+  //   const charTemplate = generateCharacterTemplate(filteredData);
+  //   $("#char-list").html(charTemplate);
+  //   setPagination(filteredData, "characters");
+  // });
+
   $("input[name=gender]").on("change", function () {
-    const filteredData = filterCharacters(charData);
-    const charTemplate = generateCharacterTemplate(filteredData);
-    $("#char-list").html(charTemplate);
-    setPagination(filteredData, "characters");
+    charFilters.gender = <string>$(this).val();
+    updateFilters();
   });
+
+  $("input[name=profession]").on("change", function () {
+    charFilters.normalizedProfession = <string>$(this).val();
+    updateFilters();
+  });
+
+  $("input[name=class]").on("change", function () {
+    charFilters.socialClass = <string>$(this).val();
+    updateFilters();
+  });
+
+  // $("input[name=profession]").on("change", function () {
+  //   charFilters.profession = $(this).val();
+
+  //   filteredData = filterCharacters(filteredData, "profession");
+  //   const charTemplate = generateCharacterTemplate(filteredData);
+  //   $("#char-list").html(charTemplate);
+  //   setPagination(filteredData, "characters");
+  // });
 
   // this is not a so good idea, we'll think more about that later
   //$(window).on("resize", fetchData);
