@@ -1,7 +1,7 @@
 {
     "plays": [
         {
-            "workId": "1",
+            "workId": 1,
             "lang": "fre",
             "anOrd": "1",
             "wikidataId": null,
@@ -30,7 +30,7 @@
             "comments": null
         },
         {
-            "workId": "2",
+            "workId": 2,
             "lang": "fre",
             "anOrd": "121",
             "wikidataId": null,
@@ -54,7 +54,7 @@
             "comments": null
         },
         {
-            "workId": "3",
+            "workId": 3,
             "lang": "fre",
             "anOrd": "52",
             "wikidataId": "Q107266236",
@@ -80,7 +80,7 @@
             "comments": null
         },
         {
-            "workId": "4",
+            "workId": 4,
             "lang": "fre",
             "anOrd": "55",
             "wikidataId": "Q19210904",
@@ -107,7 +107,7 @@
             "comments": null
         },
         {
-            "workId": "5",
+            "workId": 5,
             "lang": "fre",
             "anOrd": "2",
             "wikidataId": "Q65659179",
@@ -134,7 +134,7 @@
             "comments": null
         },
         {
-            "workId": "6",
+            "workId": 6,
             "lang": "fre",
             "anOrd": "141",
             "wikidataId": null,
@@ -157,7 +157,7 @@
             "comments": null
         },
         {
-            "workId": "7",
+            "workId": 7,
             "lang": "fre",
             "anOrd": "69",
             "wikidataId": null,
@@ -183,7 +183,7 @@
             "comments": null
         },
         {
-            "workId": "8",
+            "workId": 8,
             "lang": "fre",
             "anOrd": "65",
             "wikidataId": null,
@@ -209,7 +209,7 @@
             "comments": null
         },
         {
-            "workId": "9",
+            "workId": 9,
             "lang": "fre",
             "anOrd": "50",
             "wikidataId": null,
@@ -233,7 +233,7 @@
             "comments": null
         },
         {
-            "workId": "10",
+            "workId": 10,
             "lang": "fre",
             "anOrd": "58",
             "wikidataId": "Q2553475",
@@ -256,7 +256,7 @@
             "comments": null
         },
         {
-            "workId": "11",
+            "workId": 11,
             "lang": "fre",
             "anOrd": "66",
             "wikidataId": "Q3227495",
@@ -279,7 +279,7 @@
             "comments": null
         },
         {
-            "workId": "12",
+            "workId": 12,
             "lang": "fre",
             "anOrd": "57",
             "wikidataId": "Q19176633",
@@ -302,7 +302,7 @@
             "comments": null
         },
         {
-            "workId": "13",
+            "workId": 13,
             "lang": "fre",
             "anOrd": "70",
             "wikidataId": "Q3203961",
@@ -325,7 +325,7 @@
             "comments": null
         },
         {
-            "workId": "14",
+            "workId": 14,
             "lang": "fre",
             "anOrd": "71",
             "wikidataId": "Q3226710",
@@ -348,7 +348,7 @@
             "comments": null
         },
         {
-            "workId": "15",
+            "workId": 15,
             "lang": "fre",
             "anOrd": "18",
             "wikidataId": null,
@@ -374,7 +374,7 @@
             "comments": null
         },
         {
-            "workId": "16",
+            "workId": 16,
             "lang": "fre",
             "anOrd": "42",
             "wikidataId": null,
@@ -400,7 +400,7 @@
             "comments": null
         },
         {
-            "workId": "17",
+            "workId": 17,
             "lang": "fre",
             "anOrd": "49",
             "wikidataId": null,
@@ -422,7 +422,7 @@
             "comments": "maybe not 1st ed. "
         },
         {
-            "workId": "18",
+            "workId": 18,
             "lang": "fre",
             "anOrd": "45",
             "wikidataId": null,
@@ -444,7 +444,7 @@
             "comments": null
         },
         {
-            "workId": "19",
+            "workId": 19,
             "lang": "fre",
             "anOrd": "19",
             "wikidataId": "Q3225705",
@@ -471,7 +471,7 @@
             "comments": null
         },
         {
-            "workId": "20",
+            "workId": 20,
             "lang": "fre",
             "anOrd": "46",
             "wikidataId": null,
@@ -493,7 +493,7 @@
             "comments": null
         },
         {
-            "workId": "21",
+            "workId": 21,
             "lang": "fre",
             "anOrd": "38",
             "wikidataId": null,
@@ -515,7 +515,7 @@
             "comments": null
         },
         {
-            "workId": "22",
+            "workId": 22,
             "lang": "fre",
             "anOrd": "17",
             "wikidataId": null,
@@ -539,7 +539,7 @@
             "comments": null
         },
         {
-            "workId": "23",
+            "workId": 23,
             "lang": "fre",
             "anOrd": "76",
             "wikidataId": "Q3208097",
@@ -561,7 +561,7 @@
             "comments": null
         },
         {
-            "workId": "24",
+            "workId": 24,
             "lang": "fre",
             "anOrd": "122",
             "wikidataId": null,
@@ -584,7 +584,7 @@
             "comments": null
         },
         {
-            "workId": "25",
+            "workId": 25,
             "lang": "fre",
             "anOrd": "44",
             "wikidataId": "Q104850798",
@@ -607,7 +607,7 @@
             "comments": null
         },
         {
-            "workId": "26",
+            "workId": 26,
             "lang": "fre",
             "anOrd": "74",
             "wikidataId": "Q107154738",
@@ -629,7 +629,7 @@
             "comments": null
         },
         {
-            "workId": "27",
+            "workId": 27,
             "lang": "fre",
             "anOrd": "59",
             "wikidataId": null,
@@ -651,7 +651,7 @@
             "comments": null
         },
         {
-            "workId": "28",
+            "workId": 28,
             "lang": "fre",
             "anOrd": "60",
             "wikidataId": null,
@@ -674,7 +674,7 @@
             "comments": null
         },
         {
-            "workId": "29",
+            "workId": 29,
             "lang": "fre",
             "anOrd": "142",
             "wikidataId": "Q105748095",
@@ -697,7 +697,7 @@
             "comments": null
         },
         {
-            "workId": "30",
+            "workId": 30,
             "lang": "fre",
             "anOrd": "53",
             "wikidataId": null,
@@ -724,7 +724,7 @@
             "comments": null
         },
         {
-            "workId": "31",
+            "workId": 31,
             "lang": "fre",
             "anOrd": "75",
             "wikidataId": null,
@@ -750,7 +750,7 @@
             "comments": null
         },
         {
-            "workId": "32",
+            "workId": 32,
             "lang": "fre",
             "anOrd": "79",
             "wikidataId": null,
@@ -777,7 +777,7 @@
             "comments": null
         },
         {
-            "workId": "33",
+            "workId": 33,
             "lang": "fre",
             "anOrd": "84",
             "wikidataId": "Q30742511",
@@ -804,7 +804,7 @@
             "comments": null
         },
         {
-            "workId": "34",
+            "workId": 34,
             "lang": "fre",
             "anOrd": "83",
             "wikidataId": null,
@@ -829,7 +829,7 @@
             "comments": null
         },
         {
-            "workId": "35",
+            "workId": 35,
             "lang": "fre",
             "anOrd": "63",
             "wikidataId": null,
@@ -852,7 +852,7 @@
             "comments": null
         },
         {
-            "workId": "36",
+            "workId": 36,
             "lang": "fre",
             "anOrd": "64",
             "wikidataId": null,
@@ -879,7 +879,7 @@
             "comments": null
         },
         {
-            "workId": "37",
+            "workId": 37,
             "lang": "fre",
             "anOrd": "77",
             "wikidataId": null,
@@ -907,7 +907,7 @@
             "comments": null
         },
         {
-            "workId": "38",
+            "workId": 38,
             "lang": "fre",
             "anOrd": "61",
             "wikidataId": null,
@@ -934,7 +934,7 @@
             "comments": null
         },
         {
-            "workId": "39",
+            "workId": 39,
             "lang": "fre",
             "anOrd": "3",
             "wikidataId": null,
@@ -961,7 +961,7 @@
             "comments": null
         },
         {
-            "workId": "40",
+            "workId": 40,
             "lang": "fre",
             "anOrd": "80",
             "wikidataId": null,
@@ -983,7 +983,7 @@
             "comments": null
         },
         {
-            "workId": "41",
+            "workId": 41,
             "lang": "fre",
             "anOrd": "85",
             "wikidataId": null,
@@ -1007,7 +1007,7 @@
             "comments": null
         },
         {
-            "workId": "42",
+            "workId": 42,
             "lang": "fre",
             "anOrd": "54",
             "wikidataId": null,
@@ -1029,7 +1029,7 @@
             "comments": null
         },
         {
-            "workId": "43",
+            "workId": 43,
             "lang": "fre",
             "anOrd": "68",
             "wikidataId": null,
@@ -1052,7 +1052,7 @@
             "comments": null
         },
         {
-            "workId": "44",
+            "workId": 44,
             "lang": "fre",
             "anOrd": "121",
             "wikidataId": null,
@@ -1079,7 +1079,7 @@
             "comments": null
         },
         {
-            "workId": "45",
+            "workId": 45,
             "lang": "fre",
             "anOrd": "39",
             "wikidataId": null,
@@ -1102,7 +1102,7 @@
             "comments": null
         },
         {
-            "workId": "46",
+            "workId": 46,
             "lang": "fre",
             "anOrd": "47",
             "wikidataId": null,
@@ -1124,7 +1124,7 @@
             "comments": null
         },
         {
-            "workId": "47",
+            "workId": 47,
             "lang": "fre",
             "anOrd": "78",
             "wikidataId": "Q3214090",
@@ -1146,7 +1146,7 @@
             "comments": null
         },
         {
-            "workId": "48",
+            "workId": 48,
             "lang": "fre",
             "anOrd": "67",
             "wikidataId": "Q104846695",
@@ -1168,7 +1168,7 @@
             "comments": null
         },
         {
-            "workId": "49",
+            "workId": 49,
             "lang": "fre",
             "anOrd": "72",
             "wikidataId": "Q3548595",
@@ -1190,7 +1190,7 @@
             "comments": null
         },
         {
-            "workId": "50",
+            "workId": 50,
             "lang": "fre",
             "anOrd": "73",
             "wikidataId": "Q3222323",
@@ -1212,7 +1212,7 @@
             "comments": null
         },
         {
-            "workId": "51",
+            "workId": 51,
             "lang": "fre",
             "anOrd": "81",
             "wikidataId": "Q3212044",
@@ -1234,7 +1234,7 @@
             "comments": null
         },
         {
-            "workId": "52",
+            "workId": 52,
             "lang": "fre",
             "anOrd": "4",
             "wikidataId": "Q3220311",
@@ -1259,7 +1259,7 @@
             "comments": null
         },
         {
-            "workId": "53",
+            "workId": 53,
             "lang": "fre",
             "anOrd": "32",
             "wikidataId": "Q3231420",
@@ -1289,7 +1289,7 @@
             "comments": null
         },
         {
-            "workId": "54",
+            "workId": 54,
             "lang": "fre",
             "anOrd": "5",
             "wikidataId": "Q2827376",
@@ -1315,7 +1315,7 @@
             "comments": null
         },
         {
-            "workId": "55",
+            "workId": 55,
             "lang": "fre",
             "anOrd": "24",
             "wikidataId": "Q3319790",
@@ -1338,7 +1338,7 @@
             "comments": null
         },
         {
-            "workId": "56",
+            "workId": 56,
             "lang": "fre",
             "anOrd": "29",
             "wikidataId": "Q3232056",
@@ -1361,7 +1361,7 @@
             "comments": null
         },
         {
-            "workId": "57",
+            "workId": 57,
             "lang": "fre",
             "anOrd": "21",
             "wikidataId": "Q3052094",
@@ -1384,7 +1384,7 @@
             "comments": null
         },
         {
-            "workId": "58",
+            "workId": 58,
             "lang": "fre",
             "anOrd": "26",
             "wikidataId": "Q3548635",
@@ -1406,7 +1406,7 @@
             "comments": null
         },
         {
-            "workId": "59",
+            "workId": 59,
             "lang": "fre",
             "anOrd": "30",
             "wikidataId": "Q3230324",
@@ -1429,7 +1429,7 @@
             "comments": null
         },
         {
-            "workId": "60",
+            "workId": 60,
             "lang": "fre",
             "anOrd": "28",
             "wikidataId": "Q19176618",
@@ -1453,7 +1453,7 @@
             "comments": null
         },
         {
-            "workId": "61",
+            "workId": 61,
             "lang": "fre",
             "anOrd": "6",
             "wikidataId": "Q3548736",
@@ -1477,7 +1477,7 @@
             "comments": null
         },
         {
-            "workId": "62",
+            "workId": 62,
             "lang": "fre",
             "anOrd": "23",
             "wikidataId": "Q19236233",
@@ -1500,7 +1500,7 @@
             "comments": null
         },
         {
-            "workId": "63",
+            "workId": 63,
             "lang": "fre",
             "anOrd": "25",
             "wikidataId": "Q3224615",
@@ -1524,7 +1524,7 @@
             "comments": null
         },
         {
-            "workId": "64",
+            "workId": 64,
             "lang": "fre",
             "anOrd": "27",
             "wikidataId": "Q3482836",
@@ -1547,7 +1547,7 @@
             "comments": null
         },
         {
-            "workId": "65",
+            "workId": 65,
             "lang": "fre",
             "anOrd": "31",
             "wikidataId": "Q3212958",
@@ -1570,7 +1570,7 @@
             "comments": null
         },
         {
-            "workId": "66",
+            "workId": 66,
             "lang": "fre",
             "anOrd": "33",
             "wikidataId": "Q3209442",
@@ -1593,7 +1593,7 @@
             "comments": null
         },
         {
-            "workId": "67",
+            "workId": 67,
             "lang": "fre",
             "anOrd": "40",
             "wikidataId": "Q2815721",
@@ -1615,7 +1615,7 @@
             "comments": null
         },
         {
-            "workId": "68",
+            "workId": 68,
             "lang": "fre",
             "anOrd": "43",
             "wikidataId": "Q3235817",
@@ -1638,7 +1638,7 @@
             "comments": null
         },
         {
-            "workId": "69",
+            "workId": 69,
             "lang": "fre",
             "anOrd": "36",
             "wikidataId": null,
@@ -1662,7 +1662,7 @@
             "comments": null
         },
         {
-            "workId": "70",
+            "workId": 70,
             "lang": "fre",
             "anOrd": "8",
             "wikidataId": null,
@@ -1689,7 +1689,7 @@
             "comments": null
         },
         {
-            "workId": "71",
+            "workId": 71,
             "lang": "fre",
             "anOrd": "7",
             "wikidataId": null,
@@ -1720,7 +1720,7 @@
             "comments": null
         },
         {
-            "workId": "72",
+            "workId": 72,
             "lang": "fre",
             "anOrd": "22",
             "wikidataId": null,
@@ -1746,7 +1746,7 @@
             "comments": null
         },
         {
-            "workId": "73",
+            "workId": 73,
             "lang": "fre",
             "anOrd": "15",
             "wikidataId": null,
@@ -1771,7 +1771,7 @@
             "comments": null
         },
         {
-            "workId": "74",
+            "workId": 74,
             "lang": "fre",
             "anOrd": "12",
             "wikidataId": null,
@@ -1795,7 +1795,7 @@
             "comments": null
         },
         {
-            "workId": "75",
+            "workId": 75,
             "lang": "fre",
             "anOrd": "34",
             "wikidataId": null,
@@ -1818,7 +1818,7 @@
             "comments": null
         },
         {
-            "workId": "76",
+            "workId": 76,
             "lang": "fre",
             "anOrd": "35",
             "wikidataId": null,
@@ -1842,7 +1842,7 @@
             "comments": null
         },
         {
-            "workId": "77",
+            "workId": 77,
             "lang": "fre",
             "anOrd": "122",
             "wikidataId": null,
@@ -1865,7 +1865,7 @@
             "comments": null
         },
         {
-            "workId": "78",
+            "workId": 78,
             "lang": "fre",
             "anOrd": "9",
             "wikidataId": null,
@@ -1890,7 +1890,7 @@
             "comments": null
         },
         {
-            "workId": "79",
+            "workId": 79,
             "lang": "fre",
             "anOrd": "10",
             "wikidataId": null,
@@ -1914,7 +1914,7 @@
             "comments": null
         },
         {
-            "workId": "80",
+            "workId": 80,
             "lang": "fre",
             "anOrd": "16",
             "wikidataId": null,
@@ -1939,7 +1939,7 @@
             "comments": null
         },
         {
-            "workId": "81",
+            "workId": 81,
             "lang": "fre",
             "anOrd": "11",
             "wikidataId": null,
@@ -1964,7 +1964,7 @@
             "comments": null
         },
         {
-            "workId": "82",
+            "workId": 82,
             "lang": "fre",
             "anOrd": "13",
             "wikidataId": null,
@@ -1989,7 +1989,7 @@
             "comments": null
         },
         {
-            "workId": "83",
+            "workId": 83,
             "lang": "fre",
             "anOrd": "20",
             "wikidataId": "Q107170059",
@@ -2018,7 +2018,7 @@
             "comments": null
         },
         {
-            "workId": "84",
+            "workId": 84,
             "lang": "fre",
             "anOrd": "37",
             "wikidataId": null,
@@ -2041,7 +2041,7 @@
             "comments": null
         },
         {
-            "workId": "85",
+            "workId": 85,
             "lang": "fre",
             "anOrd": "41",
             "wikidataId": null,
@@ -2064,7 +2064,7 @@
             "comments": null
         },
         {
-            "workId": "86",
+            "workId": 86,
             "lang": "fre",
             "anOrd": "51",
             "wikidataId": null,
@@ -2087,7 +2087,7 @@
             "comments": null
         },
         {
-            "workId": "87",
+            "workId": 87,
             "lang": "fre",
             "anOrd": "56",
             "wikidataId": null,
@@ -2109,7 +2109,7 @@
             "comments": null
         },
         {
-            "workId": "88",
+            "workId": 88,
             "lang": "fre",
             "anOrd": "62",
             "wikidataId": null,
@@ -2131,7 +2131,7 @@
             "comments": null
         },
         {
-            "workId": "89",
+            "workId": 89,
             "lang": "fre",
             "anOrd": "14",
             "wikidataId": null,
@@ -2157,7 +2157,7 @@
             "comments": null
         },
         {
-            "workId": "90",
+            "workId": 90,
             "lang": "fre",
             "anOrd": "48",
             "wikidataId": null,
@@ -2180,7 +2180,7 @@
             "comments": null
         },
         {
-            "workId": "91",
+            "workId": 91,
             "lang": "fre",
             "anOrd": "86",
             "wikidataId": null,
@@ -2204,7 +2204,7 @@
             "comments": null
         },
         {
-            "workId": "92",
+            "workId": 92,
             "lang": "fre",
             "anOrd": "87",
             "wikidataId": null,
@@ -2229,7 +2229,7 @@
             "comments": null
         },
         {
-            "workId": "93",
+            "workId": 93,
             "lang": "fre",
             "anOrd": "88",
             "wikidataId": null,
@@ -2253,7 +2253,7 @@
             "comments": null
         },
         {
-            "workId": "94",
+            "workId": 94,
             "lang": "fre",
             "anOrd": "89",
             "wikidataId": null,
@@ -2277,7 +2277,7 @@
             "comments": null
         },
         {
-            "workId": "95",
+            "workId": 95,
             "lang": "fre",
             "anOrd": "90",
             "wikidataId": null,
@@ -2301,7 +2301,7 @@
             "comments": null
         },
         {
-            "workId": "96",
+            "workId": 96,
             "lang": "fre",
             "anOrd": "91",
             "wikidataId": null,
@@ -2325,7 +2325,7 @@
             "comments": null
         },
         {
-            "workId": "97",
+            "workId": 97,
             "lang": "fre",
             "anOrd": "92",
             "wikidataId": null,
@@ -2349,7 +2349,7 @@
             "comments": null
         },
         {
-            "workId": "98",
+            "workId": 98,
             "lang": "fre",
             "anOrd": "93",
             "wikidataId": null,
@@ -2373,7 +2373,7 @@
             "comments": null
         },
         {
-            "workId": "99",
+            "workId": 99,
             "lang": "fre",
             "anOrd": "94",
             "wikidataId": null,
@@ -2397,7 +2397,7 @@
             "comments": null
         },
         {
-            "workId": "100",
+            "workId": 100,
             "lang": "fre",
             "anOrd": "95",
             "wikidataId": null,
@@ -2421,7 +2421,7 @@
             "comments": null
         },
         {
-            "workId": "101",
+            "workId": 101,
             "lang": "fre",
             "anOrd": "96",
             "wikidataId": null,
@@ -2446,7 +2446,7 @@
             "comments": null
         },
         {
-            "workId": "102",
+            "workId": 102,
             "lang": "fre",
             "anOrd": "97",
             "wikidataId": null,
@@ -2471,7 +2471,7 @@
             "comments": null
         },
         {
-            "workId": "103",
+            "workId": 103,
             "lang": "fre",
             "anOrd": "98",
             "wikidataId": null,
@@ -2496,7 +2496,7 @@
             "comments": null
         },
         {
-            "workId": "104",
+            "workId": 104,
             "lang": "fre",
             "anOrd": "99",
             "wikidataId": null,
@@ -2521,7 +2521,7 @@
             "comments": null
         },
         {
-            "workId": "105",
+            "workId": 105,
             "lang": "fre",
             "anOrd": "100",
             "wikidataId": null,
@@ -2543,7 +2543,7 @@
             "comments": null
         },
         {
-            "workId": "106",
+            "workId": 106,
             "lang": "fre",
             "anOrd": "101",
             "wikidataId": null,
@@ -2568,7 +2568,7 @@
             "comments": null
         },
         {
-            "workId": "107",
+            "workId": 107,
             "lang": "fre",
             "anOrd": "102",
             "wikidataId": null,
@@ -2592,7 +2592,7 @@
             "comments": null
         },
         {
-            "workId": "108",
+            "workId": 108,
             "lang": "fre",
             "anOrd": "103",
             "wikidataId": null,
@@ -2618,7 +2618,7 @@
             "comments": null
         },
         {
-            "workId": "109",
+            "workId": 109,
             "lang": "fre",
             "anOrd": "104",
             "wikidataId": null,
@@ -2643,7 +2643,7 @@
             "comments": null
         },
         {
-            "workId": "110",
+            "workId": 110,
             "lang": "fre",
             "anOrd": "105",
             "wikidataId": null,
@@ -2667,7 +2667,7 @@
             "comments": null
         },
         {
-            "workId": "111",
+            "workId": 111,
             "lang": "fre",
             "anOrd": "82",
             "wikidataId": "Q19221114",
@@ -2689,7 +2689,7 @@
             "comments": null
         },
         {
-            "workId": "112",
+            "workId": 112,
             "lang": "fre",
             "anOrd": "106",
             "wikidataId": null,
@@ -2713,7 +2713,7 @@
             "comments": null
         },
         {
-            "workId": "113",
+            "workId": 113,
             "lang": "fre",
             "anOrd": "107",
             "wikidataId": null,
@@ -2738,7 +2738,7 @@
             "comments": null
         },
         {
-            "workId": "114",
+            "workId": 114,
             "lang": "fre",
             "anOrd": "112",
             "wikidataId": null,
@@ -2761,7 +2761,7 @@
             "comments": null
         },
         {
-            "workId": "115",
+            "workId": 115,
             "lang": "fre",
             "anOrd": "108",
             "wikidataId": null,
@@ -2784,7 +2784,7 @@
             "comments": null
         },
         {
-            "workId": "116",
+            "workId": 116,
             "lang": "fre",
             "anOrd": "109",
             "wikidataId": null,
@@ -2810,7 +2810,7 @@
             "comments": null
         },
         {
-            "workId": "117",
+            "workId": 117,
             "lang": "fre",
             "anOrd": "110",
             "wikidataId": null,
@@ -2835,7 +2835,7 @@
             "comments": null
         },
         {
-            "workId": "118",
+            "workId": 118,
             "lang": "fre",
             "anOrd": "111",
             "wikidataId": null,
@@ -2864,7 +2864,7 @@
             "comments": null
         },
         {
-            "workId": "119",
+            "workId": 119,
             "lang": "fre",
             "anOrd": "113",
             "wikidataId": null,
@@ -2889,7 +2889,7 @@
             "comments": null
         },
         {
-            "workId": "120",
+            "workId": 120,
             "lang": "fre",
             "anOrd": "114",
             "wikidataId": null,
@@ -2914,7 +2914,7 @@
             "comments": null
         },
         {
-            "workId": "121",
+            "workId": 121,
             "lang": "fre",
             "anOrd": "115",
             "wikidataId": null,
@@ -2940,7 +2940,7 @@
             "comments": null
         },
         {
-            "workId": "122",
+            "workId": 122,
             "lang": "fre",
             "anOrd": "116",
             "wikidataId": null,
@@ -2965,7 +2965,7 @@
             "comments": null
         },
         {
-            "workId": "123",
+            "workId": 123,
             "lang": "fre",
             "anOrd": "117",
             "wikidataId": null,
@@ -2990,7 +2990,7 @@
             "comments": null
         },
         {
-            "workId": "124",
+            "workId": 124,
             "lang": "fre",
             "anOrd": "118",
             "wikidataId": null,
@@ -3016,7 +3016,7 @@
             "comments": null
         },
         {
-            "workId": "125",
+            "workId": 125,
             "lang": "fre",
             "anOrd": "119",
             "wikidataId": null,
@@ -3041,7 +3041,7 @@
             "comments": null
         },
         {
-            "workId": "126",
+            "workId": 126,
             "lang": "fre",
             "anOrd": "120",
             "wikidataId": null,
@@ -3067,7 +3067,7 @@
             "comments": null
         },
         {
-            "workId": "127",
+            "workId": 127,
             "lang": "fre",
             "anOrd": "123",
             "wikidataId": null,
@@ -3092,7 +3092,7 @@
             "comments": null
         },
         {
-            "workId": "128",
+            "workId": 128,
             "lang": "fre",
             "anOrd": "124",
             "wikidataId": null,
@@ -3117,7 +3117,7 @@
             "comments": null
         },
         {
-            "workId": "129",
+            "workId": 129,
             "lang": "fre",
             "anOrd": "125",
             "wikidataId": null,
@@ -3143,7 +3143,7 @@
             "comments": null
         },
         {
-            "workId": "130",
+            "workId": 130,
             "lang": "fre",
             "anOrd": "126",
             "wikidataId": null,
@@ -3169,7 +3169,7 @@
             "comments": null
         },
         {
-            "workId": "131",
+            "workId": 131,
             "lang": "fre",
             "anOrd": "127",
             "wikidataId": null,
@@ -3194,7 +3194,7 @@
             "comments": null
         },
         {
-            "workId": "132",
+            "workId": 132,
             "lang": "fre",
             "anOrd": "128",
             "wikidataId": null,
@@ -3218,7 +3218,7 @@
             "comments": null
         },
         {
-            "workId": "133",
+            "workId": 133,
             "lang": "fre",
             "anOrd": "129",
             "wikidataId": null,
@@ -3243,7 +3243,7 @@
             "comments": null
         },
         {
-            "workId": "134",
+            "workId": 134,
             "lang": "fre",
             "anOrd": "130",
             "wikidataId": null,
@@ -3267,7 +3267,7 @@
             "comments": null
         },
         {
-            "workId": "135",
+            "workId": 135,
             "lang": "fre",
             "anOrd": "131",
             "wikidataId": null,
@@ -3292,7 +3292,7 @@
             "comments": null
         },
         {
-            "workId": "136",
+            "workId": 136,
             "lang": "fre",
             "anOrd": "132",
             "wikidataId": null,
@@ -3320,7 +3320,7 @@
             "comments": null
         },
         {
-            "workId": "137",
+            "workId": 137,
             "lang": "fre",
             "anOrd": "133",
             "wikidataId": null,
@@ -3344,7 +3344,7 @@
             "comments": null
         },
         {
-            "workId": "138",
+            "workId": 138,
             "lang": "fre",
             "anOrd": "134",
             "wikidataId": null,
@@ -3369,7 +3369,7 @@
             "comments": null
         },
         {
-            "workId": "139",
+            "workId": 139,
             "lang": "fre",
             "anOrd": "135",
             "wikidataId": null,
@@ -3393,7 +3393,7 @@
             "comments": null
         },
         {
-            "workId": "140",
+            "workId": 140,
             "lang": "fre",
             "anOrd": "136",
             "wikidataId": null,
@@ -3418,7 +3418,7 @@
             "comments": null
         },
         {
-            "workId": "141",
+            "workId": 141,
             "lang": "fre",
             "anOrd": "137",
             "wikidataId": null,
@@ -3443,7 +3443,7 @@
             "comments": null
         },
         {
-            "workId": "142",
+            "workId": 142,
             "lang": "fre",
             "anOrd": "138",
             "wikidataId": null,
@@ -3467,7 +3467,7 @@
             "comments": "the characters are dances, so of course it is difficult to assign social variables"
         },
         {
-            "workId": "143",
+            "workId": 143,
             "lang": "fre",
             "anOrd": "139",
             "wikidataId": null,
@@ -3490,7 +3490,7 @@
             "comments": null
         },
         {
-            "workId": "144",
+            "workId": 144,
             "lang": "fre",
             "anOrd": "140",
             "wikidataId": null,
@@ -3513,7 +3513,7 @@
             "comments": null
         },
         {
-            "workId": "1",
+            "workId": 1,
             "lang": "ger",
             "anOrd": "45",
             "wikidataId": null,
@@ -3540,7 +3540,7 @@
             "comments": null
         },
         {
-            "workId": "2",
+            "workId": 2,
             "lang": "ger",
             "anOrd": "5",
             "wikidataId": null,
@@ -3564,7 +3564,7 @@
             "comments": null
         },
         {
-            "workId": "3",
+            "workId": 3,
             "lang": "ger",
             "anOrd": "6",
             "wikidataId": null,
@@ -3588,7 +3588,7 @@
             "comments": "firstPrinted source: https://einakter.dracor.org/angely-list-und-phlegma"
         },
         {
-            "workId": "4",
+            "workId": 4,
             "lang": "ger",
             "anOrd": "14",
             "wikidataId": null,
@@ -3615,7 +3615,7 @@
             "comments": null
         },
         {
-            "workId": "5",
+            "workId": 5,
             "lang": "ger",
             "anOrd": "100",
             "wikidataId": null,
@@ -3642,7 +3642,7 @@
             "comments": null
         },
         {
-            "workId": "6",
+            "workId": 6,
             "lang": "ger",
             "anOrd": "99",
             "wikidataId": null,
@@ -3666,7 +3666,7 @@
             "comments": "dates source: https://einakter.staging.dracor.org/angely-die-erholungs-reise"
         },
         {
-            "workId": "7",
+            "workId": 7,
             "lang": "ger",
             "anOrd": "98",
             "wikidataId": null,
@@ -3690,7 +3690,7 @@
             "comments": "firstPrinted source: https://einakter.staging.dracor.org/angely-punkt-drei-uhr"
         },
         {
-            "workId": "8",
+            "workId": 8,
             "lang": "ger",
             "anOrd": "96",
             "wikidataId": null,
@@ -3714,7 +3714,7 @@
             "comments": "dates source: https://einakter.dracor.org/angely-zephyr-und-flora"
         },
         {
-            "workId": "9",
+            "workId": 9,
             "lang": "ger",
             "anOrd": "19",
             "wikidataId": null,
@@ -3741,7 +3741,7 @@
             "comments": null
         },
         {
-            "workId": "10",
+            "workId": 10,
             "lang": "ger",
             "anOrd": "3",
             "wikidataId": null,
@@ -3767,7 +3767,7 @@
             "comments": null
         },
         {
-            "workId": "11",
+            "workId": 11,
             "lang": "ger",
             "anOrd": "43",
             "wikidataId": null,
@@ -3792,7 +3792,7 @@
             "comments": "fake print value (current edition from 2015)"
         },
         {
-            "workId": "12",
+            "workId": 12,
             "lang": "ger",
             "anOrd": "4",
             "wikidataId": null,
@@ -3814,7 +3814,7 @@
             "comments": null
         },
         {
-            "workId": "13",
+            "workId": 13,
             "lang": "ger",
             "anOrd": "26",
             "wikidataId": null,
@@ -3836,7 +3836,7 @@
             "comments": null
         },
         {
-            "workId": "14",
+            "workId": 14,
             "lang": "ger",
             "anOrd": "20",
             "wikidataId": null,
@@ -3858,7 +3858,7 @@
             "comments": null
         },
         {
-            "workId": "15",
+            "workId": 15,
             "lang": "ger",
             "anOrd": "24",
             "wikidataId": null,
@@ -3885,7 +3885,7 @@
             "comments": null
         },
         {
-            "workId": "16",
+            "workId": 16,
             "lang": "ger",
             "anOrd": "21",
             "wikidataId": null,
@@ -3913,7 +3913,7 @@
             "comments": null
         },
         {
-            "workId": "17",
+            "workId": 17,
             "lang": "ger",
             "anOrd": "81",
             "wikidataId": null,
@@ -3937,7 +3937,7 @@
             "comments": "dates source: https://einakter.dracor.org/voss-die-damenhuete-im-berliner-theater"
         },
         {
-            "workId": "18",
+            "workId": 18,
             "lang": "ger",
             "anOrd": "35",
             "wikidataId": null,
@@ -3959,7 +3959,7 @@
             "comments": null
         },
         {
-            "workId": "19",
+            "workId": 19,
             "lang": "ger",
             "anOrd": "40",
             "wikidataId": null,
@@ -3982,7 +3982,7 @@
             "comments": null
         },
         {
-            "workId": "20",
+            "workId": 20,
             "lang": "ger",
             "anOrd": "32",
             "wikidataId": null,
@@ -4005,7 +4005,7 @@
             "comments": null
         },
         {
-            "workId": "21",
+            "workId": 21,
             "lang": "ger",
             "anOrd": "33",
             "wikidataId": null,
@@ -4033,7 +4033,7 @@
             "comments": "full text available on GoogleDrive"
         },
         {
-            "workId": "22",
+            "workId": 22,
             "lang": "ger",
             "anOrd": "97",
             "wikidataId": null,
@@ -4060,7 +4060,7 @@
             "comments": null
         },
         {
-            "workId": "23",
+            "workId": 23,
             "lang": "ger",
             "anOrd": "39",
             "wikidataId": null,
@@ -4083,7 +4083,7 @@
             "comments": null
         },
         {
-            "workId": "24",
+            "workId": 24,
             "lang": "ger",
             "anOrd": "46",
             "wikidataId": null,
@@ -4106,7 +4106,7 @@
             "comments": null
         },
         {
-            "workId": "25",
+            "workId": 25,
             "lang": "ger",
             "anOrd": "17",
             "wikidataId": null,
@@ -4133,7 +4133,7 @@
             "comments": null
         },
         {
-            "workId": "26",
+            "workId": 26,
             "lang": "ger",
             "anOrd": "58",
             "wikidataId": null,
@@ -4156,7 +4156,7 @@
             "comments": "firstPrinted source: https://en.wikipedia.org/wiki/The_Spanish_Fly_(play)"
         },
         {
-            "workId": "27",
+            "workId": 27,
             "lang": "ger",
             "anOrd": "7",
             "wikidataId": null,
@@ -4182,7 +4182,7 @@
             "comments": null
         },
         {
-            "workId": "28",
+            "workId": 28,
             "lang": "ger",
             "anOrd": "25",
             "wikidataId": null,
@@ -4210,7 +4210,7 @@
             "comments": null
         },
         {
-            "workId": "29",
+            "workId": 29,
             "lang": "ger",
             "anOrd": "38",
             "wikidataId": null,
@@ -4233,7 +4233,7 @@
             "comments": null
         },
         {
-            "workId": "30",
+            "workId": 30,
             "lang": "ger",
             "anOrd": "36",
             "wikidataId": null,
@@ -4261,7 +4261,7 @@
             "comments": null
         },
         {
-            "workId": "31",
+            "workId": 31,
             "lang": "ger",
             "anOrd": "42",
             "wikidataId": null,
@@ -4284,7 +4284,7 @@
             "comments": null
         },
         {
-            "workId": "32",
+            "workId": 32,
             "lang": "ger",
             "anOrd": "27",
             "wikidataId": null,
@@ -4311,7 +4311,7 @@
             "comments": null
         },
         {
-            "workId": "33",
+            "workId": 33,
             "lang": "ger",
             "anOrd": "41",
             "wikidataId": null,
@@ -4333,7 +4333,7 @@
             "comments": null
         },
         {
-            "workId": "34",
+            "workId": 34,
             "lang": "ger",
             "anOrd": "44",
             "wikidataId": null,
@@ -4356,7 +4356,7 @@
             "comments": null
         },
         {
-            "workId": "35",
+            "workId": 35,
             "lang": "ger",
             "anOrd": "29",
             "wikidataId": null,
@@ -4379,7 +4379,7 @@
             "comments": null
         },
         {
-            "workId": "36",
+            "workId": 36,
             "lang": "ger",
             "anOrd": "34",
             "wikidataId": null,
@@ -4402,7 +4402,7 @@
             "comments": null
         },
         {
-            "workId": "37",
+            "workId": 37,
             "lang": "ger",
             "anOrd": "37",
             "wikidataId": null,
@@ -4425,7 +4425,7 @@
             "comments": null
         },
         {
-            "workId": "38",
+            "workId": 38,
             "lang": "ger",
             "anOrd": "52",
             "wikidataId": null,
@@ -4448,7 +4448,7 @@
             "comments": null
         },
         {
-            "workId": "39",
+            "workId": 39,
             "lang": "ger",
             "anOrd": "47",
             "wikidataId": null,
@@ -4471,7 +4471,7 @@
             "comments": null
         },
         {
-            "workId": "40",
+            "workId": 40,
             "lang": "ger",
             "anOrd": "50",
             "wikidataId": null,
@@ -4494,7 +4494,7 @@
             "comments": null
         },
         {
-            "workId": "41",
+            "workId": 41,
             "lang": "ger",
             "anOrd": "48",
             "wikidataId": null,
@@ -4516,7 +4516,7 @@
             "comments": "publisher source: https://www.deutsche-digitale-bibliothek.de/item/F63D6WRPNLS6QARRBVP5P4GU6F73RHKY"
         },
         {
-            "workId": "42",
+            "workId": 42,
             "lang": "ger",
             "anOrd": "70",
             "wikidataId": null,
@@ -4539,7 +4539,7 @@
             "comments": null
         },
         {
-            "workId": "43",
+            "workId": 43,
             "lang": "ger",
             "anOrd": "57",
             "wikidataId": null,
@@ -4562,7 +4562,7 @@
             "comments": null
         },
         {
-            "workId": "44",
+            "workId": 44,
             "lang": "ger",
             "anOrd": "61",
             "wikidataId": null,
@@ -4585,7 +4585,7 @@
             "comments": null
         },
         {
-            "workId": "45",
+            "workId": 45,
             "lang": "ger",
             "anOrd": "53",
             "wikidataId": null,
@@ -4612,7 +4612,7 @@
             "comments": null
         },
         {
-            "workId": "46",
+            "workId": 46,
             "lang": "ger",
             "anOrd": "28",
             "wikidataId": null,
@@ -4636,7 +4636,7 @@
             "comments": null
         },
         {
-            "workId": "47",
+            "workId": 47,
             "lang": "ger",
             "anOrd": "8",
             "wikidataId": null,
@@ -4662,7 +4662,7 @@
             "comments": null
         },
         {
-            "workId": "48",
+            "workId": 48,
             "lang": "ger",
             "anOrd": "16",
             "wikidataId": null,
@@ -4689,7 +4689,7 @@
             "comments": null
         },
         {
-            "workId": "49",
+            "workId": 49,
             "lang": "ger",
             "anOrd": "71",
             "wikidataId": null,
@@ -4718,7 +4718,7 @@
             "comments": "nbActs: 6 Bilder (no acts)"
         },
         {
-            "workId": "50",
+            "workId": 50,
             "lang": "ger",
             "anOrd": "13",
             "wikidataId": null,
@@ -4740,7 +4740,7 @@
             "comments": "firstPrinted source: https://de.wikipedia.org/wiki/Gustav_von_Moser; fake print value (current edition from 2023)"
         },
         {
-            "workId": "51",
+            "workId": 51,
             "lang": "ger",
             "anOrd": "15",
             "wikidataId": null,
@@ -4764,7 +4764,7 @@
             "comments": "fake firstPrinted value"
         },
         {
-            "workId": "52",
+            "workId": 52,
             "lang": "ger",
             "anOrd": "11",
             "wikidataId": null,
@@ -4788,7 +4788,7 @@
             "comments": "fake firstPrinted value"
         },
         {
-            "workId": "53",
+            "workId": 53,
             "lang": "ger",
             "anOrd": "51",
             "wikidataId": null,
@@ -4811,7 +4811,7 @@
             "comments": null
         },
         {
-            "workId": "54",
+            "workId": 54,
             "lang": "ger",
             "anOrd": "30",
             "wikidataId": null,
@@ -4839,7 +4839,7 @@
             "comments": null
         },
         {
-            "workId": "55",
+            "workId": 55,
             "lang": "ger",
             "anOrd": "59",
             "wikidataId": null,
@@ -4862,7 +4862,7 @@
             "comments": null
         },
         {
-            "workId": "56",
+            "workId": 56,
             "lang": "ger",
             "anOrd": "67",
             "wikidataId": null,
@@ -4885,7 +4885,7 @@
             "comments": null
         },
         {
-            "workId": "57",
+            "workId": 57,
             "lang": "ger",
             "anOrd": "63",
             "wikidataId": null,
@@ -4908,7 +4908,7 @@
             "comments": null
         },
         {
-            "workId": "58",
+            "workId": 58,
             "lang": "ger",
             "anOrd": "18",
             "wikidataId": null,
@@ -4931,7 +4931,7 @@
             "comments": null
         },
         {
-            "workId": "59",
+            "workId": 59,
             "lang": "ger",
             "anOrd": "119",
             "wikidataId": null,
@@ -4954,7 +4954,7 @@
             "comments": "fake Printed value"
         },
         {
-            "workId": "60",
+            "workId": 60,
             "lang": "ger",
             "anOrd": "62",
             "wikidataId": null,
@@ -4977,7 +4977,7 @@
             "comments": null
         },
         {
-            "workId": "61",
+            "workId": 61,
             "lang": "ger",
             "anOrd": "66",
             "wikidataId": null,
@@ -5000,7 +5000,7 @@
             "comments": null
         },
         {
-            "workId": "62",
+            "workId": 62,
             "lang": "ger",
             "anOrd": "68",
             "wikidataId": null,
@@ -5023,7 +5023,7 @@
             "comments": null
         },
         {
-            "workId": "63",
+            "workId": 63,
             "lang": "ger",
             "anOrd": "64",
             "wikidataId": null,
@@ -5046,7 +5046,7 @@
             "comments": null
         },
         {
-            "workId": "64",
+            "workId": 64,
             "lang": "ger",
             "anOrd": "69",
             "wikidataId": null,
@@ -5069,7 +5069,7 @@
             "comments": null
         },
         {
-            "workId": "65",
+            "workId": 65,
             "lang": "ger",
             "anOrd": "113",
             "wikidataId": null,
@@ -5094,7 +5094,7 @@
             "comments": "dates source: https://en.wikipedia.org/wiki/Carl_Mal%C3%9F"
         },
         {
-            "workId": "66",
+            "workId": 66,
             "lang": "ger",
             "anOrd": "112",
             "wikidataId": null,
@@ -5119,7 +5119,7 @@
             "comments": "dates source: https://de.wikipedia.org/wiki/Carl_Mal%C3%9F"
         },
         {
-            "workId": "67",
+            "workId": 67,
             "lang": "ger",
             "anOrd": "105",
             "wikidataId": null,
@@ -5146,7 +5146,7 @@
             "comments": "dates source: https://en.wikipedia.org/wiki/Carl_Mal%C3%9F; nbActs: 4 Bilder (no acts)"
         },
         {
-            "workId": "68",
+            "workId": 68,
             "lang": "ger",
             "anOrd": "104",
             "wikidataId": null,
@@ -5175,7 +5175,7 @@
             "comments": "dates source: https://en.wikipedia.org/wiki/Carl_Mal%C3%9F; nbActs: 6 Bilder (no acts)"
         },
         {
-            "workId": "69",
+            "workId": 69,
             "lang": "ger",
             "anOrd": "102",
             "wikidataId": null,
@@ -5203,7 +5203,7 @@
             "comments": "dates source: https://en.wikipedia.org/wiki/Carl_Mal%C3%9F; nbActs: 5 Bilder (no acts)"
         },
         {
-            "workId": "70",
+            "workId": 70,
             "lang": "ger",
             "anOrd": "107",
             "wikidataId": null,
@@ -5227,7 +5227,7 @@
             "comments": "dates source: https://einakter.dracor.org/angely-das-fest-der-handwerker"
         },
         {
-            "workId": "71",
+            "workId": 71,
             "lang": "ger",
             "anOrd": "2",
             "wikidataId": null,
@@ -5252,7 +5252,7 @@
             "comments": null
         },
         {
-            "workId": "72",
+            "workId": 72,
             "lang": "ger",
             "anOrd": "79",
             "wikidataId": null,
@@ -5276,7 +5276,7 @@
             "comments": "date sources: https://de.wikipedia.org/wiki/Ein_gebildeter_Hausknecht"
         },
         {
-            "workId": "73",
+            "workId": 73,
             "lang": "ger",
             "anOrd": "75",
             "wikidataId": null,
@@ -5300,7 +5300,7 @@
             "comments": null
         },
         {
-            "workId": "74",
+            "workId": 74,
             "lang": "ger",
             "anOrd": "106",
             "wikidataId": null,
@@ -5328,7 +5328,7 @@
             "comments": null
         },
         {
-            "workId": "75",
+            "workId": 75,
             "lang": "ger",
             "anOrd": "95",
             "wikidataId": null,
@@ -5354,7 +5354,7 @@
             "comments": "dates source: https://de.wikipedia.org/wiki/Eine_Wohnung_ist_zu_vermiethen_in_der_Stadt"
         },
         {
-            "workId": "76",
+            "workId": 76,
             "lang": "ger",
             "anOrd": "31",
             "wikidataId": null,
@@ -5377,7 +5377,7 @@
             "comments": null
         },
         {
-            "workId": "77",
+            "workId": 77,
             "lang": "ger",
             "anOrd": "82",
             "wikidataId": null,
@@ -5401,7 +5401,7 @@
             "comments": "dates source: https://einakter.dracor.org/vanoni-der-friseur"
         },
         {
-            "workId": "78",
+            "workId": 78,
             "lang": "ger",
             "anOrd": "91",
             "wikidataId": null,
@@ -5430,7 +5430,7 @@
             "comments": "dates source: https://de.wikipedia.org/wiki/Datterich; nbActs: 6 Bilder (no acts)"
         },
         {
-            "workId": "79",
+            "workId": 79,
             "lang": "ger",
             "anOrd": "94",
             "wikidataId": null,
@@ -5457,7 +5457,7 @@
             "comments": null
         },
         {
-            "workId": "80",
+            "workId": 80,
             "lang": "ger",
             "anOrd": "12",
             "wikidataId": null,
@@ -5483,7 +5483,7 @@
             "comments": null
         },
         {
-            "workId": "81",
+            "workId": 81,
             "lang": "ger",
             "anOrd": "9",
             "wikidataId": null,
@@ -5509,7 +5509,7 @@
             "comments": null
         },
         {
-            "workId": "82",
+            "workId": 82,
             "lang": "ger",
             "anOrd": "23",
             "wikidataId": null,
@@ -5533,7 +5533,7 @@
             "comments": null
         },
         {
-            "workId": "83",
+            "workId": 83,
             "lang": "ger",
             "anOrd": "10",
             "wikidataId": null,
@@ -5559,7 +5559,7 @@
             "comments": "dates source: https://de.wikipedia.org/wiki/Umsonst!"
         },
         {
-            "workId": "84",
+            "workId": 84,
             "lang": "ger",
             "anOrd": "87",
             "wikidataId": null,
@@ -5585,7 +5585,7 @@
             "comments": null
         },
         {
-            "workId": "85",
+            "workId": 85,
             "lang": "ger",
             "anOrd": "1",
             "wikidataId": null,
@@ -5611,7 +5611,7 @@
             "comments": null
         },
         {
-            "workId": "86",
+            "workId": 86,
             "lang": "ger",
             "anOrd": "77",
             "wikidataId": null,
@@ -5634,7 +5634,7 @@
             "comments": "fake Printed value; firstPrinted source: https://de.wikipedia.org/wiki/Oskar_Justinus"
         },
         {
-            "workId": "87",
+            "workId": 87,
             "lang": "ger",
             "anOrd": "103",
             "wikidataId": null,
@@ -5656,7 +5656,7 @@
             "comments": "dates source: https://de.wikipedia.org/wiki/Der_Tritschtratsch"
         },
         {
-            "workId": "88",
+            "workId": 88,
             "lang": "ger",
             "anOrd": "111",
             "wikidataId": null,
@@ -5680,7 +5680,7 @@
             "comments": "dates source: https://einakter.dracor.org/angely-die-schneider-mamsells"
         },
         {
-            "workId": "89",
+            "workId": 89,
             "lang": "ger",
             "anOrd": "73",
             "wikidataId": null,
@@ -5704,7 +5704,7 @@
             "comments": "dates source: https://einakter.dracor.org/angely-sieben-maedchen-in-uniform"
         },
         {
-            "workId": "90",
+            "workId": 90,
             "lang": "ger",
             "anOrd": "74",
             "wikidataId": null,
@@ -5726,7 +5726,7 @@
             "comments": null
         },
         {
-            "workId": "91",
+            "workId": 91,
             "lang": "ger",
             "anOrd": "72",
             "wikidataId": null,
@@ -5748,7 +5748,7 @@
             "comments": "fake firstPrinted value"
         },
         {
-            "workId": "92",
+            "workId": 92,
             "lang": "ger",
             "anOrd": "76",
             "wikidataId": null,
@@ -5773,7 +5773,7 @@
             "comments": "firstPrinted source: https://www.deutsche-biographie.de/sfz84107.html"
         },
         {
-            "workId": "93",
+            "workId": 93,
             "lang": "ger",
             "anOrd": "65",
             "wikidataId": null,
@@ -5796,7 +5796,7 @@
             "comments": null
         },
         {
-            "workId": "94",
+            "workId": 94,
             "lang": "ger",
             "anOrd": "60",
             "wikidataId": null,
@@ -5819,7 +5819,7 @@
             "comments": null
         },
         {
-            "workId": "95",
+            "workId": 95,
             "lang": "ger",
             "anOrd": "49",
             "wikidataId": null,
@@ -5841,7 +5841,7 @@
             "comments": null
         },
         {
-            "workId": "96",
+            "workId": 96,
             "lang": "ger",
             "anOrd": "54",
             "wikidataId": null,
@@ -5864,7 +5864,7 @@
             "comments": "premiere source: https://de.wikipedia.org/wiki/Polnische_Wirtschaft_(Operette) "
         },
         {
-            "workId": "97",
+            "workId": 97,
             "lang": "ger",
             "anOrd": "92",
             "wikidataId": null,
@@ -5890,7 +5890,7 @@
             "comments": "dates source: https://de.wikipedia.org/wiki/Die_verh%C3%A4ngnisvolle_Faschingsnacht"
         },
         {
-            "workId": "98",
+            "workId": 98,
             "lang": "ger",
             "anOrd": "90",
             "wikidataId": null,
@@ -5916,7 +5916,7 @@
             "comments": null
         },
         {
-            "workId": "99",
+            "workId": 99,
             "lang": "ger",
             "anOrd": "89",
             "wikidataId": null,
@@ -5943,7 +5943,7 @@
             "comments": "dates source: https://de.wikipedia.org/wiki/Einen_Jux_will_er_sich_machen"
         },
         {
-            "workId": "100",
+            "workId": 100,
             "lang": "ger",
             "anOrd": "88",
             "wikidataId": null,
@@ -5969,7 +5969,7 @@
             "comments": null
         },
         {
-            "workId": "101",
+            "workId": 101,
             "lang": "ger",
             "anOrd": "109",
             "wikidataId": null,
@@ -5993,7 +5993,7 @@
             "comments": null
         },
         {
-            "workId": "102",
+            "workId": 102,
             "lang": "ger",
             "anOrd": "110",
             "wikidataId": null,
@@ -6017,7 +6017,7 @@
             "comments": "firstPrinted source: https://de.wikipedia.org/wiki/Josef_Alois_Gleich"
         },
         {
-            "workId": "103",
+            "workId": 103,
             "lang": "ger",
             "anOrd": "93",
             "wikidataId": null,
@@ -6041,7 +6041,7 @@
             "comments": "dates source: https://einakter.dracor.org/holtei-dreiunddreissig-minuten-in-grueneberg-oder-der-halbe-weg"
         },
         {
-            "workId": "104",
+            "workId": 104,
             "lang": "ger",
             "anOrd": "108",
             "wikidataId": null,
@@ -6065,7 +6065,7 @@
             "comments": "firstPrinted source: https://de.frwiki.wiki/wiki/Karl_Eduard_von_Holtei"
         },
         {
-            "workId": "105",
+            "workId": 105,
             "lang": "ger",
             "anOrd": "118",
             "wikidataId": null,
@@ -6091,7 +6091,7 @@
             "comments": "dates source: https://de.wikipedia.org/wiki/Die_B%C3%BCrger_in_Wien"
         },
         {
-            "workId": "106",
+            "workId": 106,
             "lang": "ger",
             "anOrd": "116",
             "wikidataId": null,
@@ -6117,7 +6117,7 @@
             "comments": null
         },
         {
-            "workId": "107",
+            "workId": 107,
             "lang": "ger",
             "anOrd": "117",
             "wikidataId": null,
@@ -6143,7 +6143,7 @@
             "comments": null
         },
         {
-            "workId": "108",
+            "workId": 108,
             "lang": "ger",
             "anOrd": "115",
             "wikidataId": null,
@@ -6169,7 +6169,7 @@
             "comments": null
         },
         {
-            "workId": "109",
+            "workId": 109,
             "lang": "ger",
             "anOrd": "114",
             "wikidataId": null,
@@ -6194,7 +6194,7 @@
             "comments": null
         },
         {
-            "workId": "110",
+            "workId": 110,
             "lang": "ger",
             "anOrd": "55",
             "wikidataId": null,
@@ -6217,7 +6217,7 @@
             "comments": null
         },
         {
-            "workId": "111",
+            "workId": 111,
             "lang": "ger",
             "anOrd": "56",
             "wikidataId": null,
@@ -6240,7 +6240,7 @@
             "comments": null
         },
         {
-            "workId": "112",
+            "workId": 112,
             "lang": "ger",
             "anOrd": "22",
             "wikidataId": null,
@@ -6267,7 +6267,7 @@
             "comments": null
         },
         {
-            "workId": "113",
+            "workId": 113,
             "lang": "ger",
             "anOrd": "83",
             "wikidataId": null,
@@ -6291,7 +6291,7 @@
             "comments": "firstPrinted source: https://de.wikipedia.org/wiki/Frank_Wedekind"
         },
         {
-            "workId": "114",
+            "workId": 114,
             "lang": "ger",
             "anOrd": "84",
             "wikidataId": null,
@@ -6319,7 +6319,7 @@
             "comments": "firstPrinted source: https://de.wikipedia.org/wiki/August_von_Kotzebue"
         },
         {
-            "workId": "115",
+            "workId": 115,
             "lang": "ger",
             "anOrd": "85",
             "wikidataId": null,
@@ -6347,7 +6347,7 @@
             "comments": "firstPrinted source: https://de.wikipedia.org/wiki/August_von_Kotzebue"
         },
         {
-            "workId": "116",
+            "workId": 116,
             "lang": "ger",
             "anOrd": "86",
             "wikidataId": null,
@@ -6371,7 +6371,7 @@
             "comments": "dates source: https://einakter.dracor.org/herrmann-drei-stunden-vor-der-hochzeit"
         },
         {
-            "workId": "117",
+            "workId": 117,
             "lang": "ger",
             "anOrd": "78",
             "wikidataId": null,
@@ -6394,7 +6394,7 @@
             "comments": "firstPrinted source: https://de.wikipedia.org/wiki/Carl_Mathern"
         },
         {
-            "workId": "118",
+            "workId": 118,
             "lang": "ger",
             "anOrd": "80",
             "wikidataId": null,
@@ -6419,7 +6419,7 @@
             "comments": null
         },
         {
-            "workId": "119",
+            "workId": 119,
             "lang": "ger",
             "anOrd": "101",
             "wikidataId": null,
@@ -6445,7 +6445,7 @@
             "comments": "dates source: https://de.wikipedia.org/wiki/Zu_ebener_Erde_und_erster_Stock "
         },
         {
-            "workId": "120",
+            "workId": 120,
             "lang": "ger",
             "anOrd": "120",
             "wikidataId": null,
@@ -6472,7 +6472,7 @@
             "comments": null
         },
         {
-            "workId": "121",
+            "workId": 121,
             "lang": "ger",
             "anOrd": "121",
             "wikidataId": null,
@@ -6499,7 +6499,7 @@
             "comments": null
         },
         {
-            "workId": "122",
+            "workId": 122,
             "lang": "ger",
             "anOrd": "122",
             "wikidataId": null,
@@ -6526,7 +6526,7 @@
             "comments": null
         },
         {
-            "workId": "123",
+            "workId": 123,
             "lang": "ger",
             "anOrd": "123",
             "wikidataId": null,
@@ -6552,7 +6552,7 @@
             "comments": null
         },
         {
-            "workId": "124",
+            "workId": 124,
             "lang": "ger",
             "anOrd": "124",
             "wikidataId": null,
@@ -6578,7 +6578,7 @@
             "comments": null
         },
         {
-            "workId": "125",
+            "workId": 125,
             "lang": "ger",
             "anOrd": "125",
             "wikidataId": null,
@@ -6602,7 +6602,7 @@
             "comments": null
         },
         {
-            "workId": "126",
+            "workId": 126,
             "lang": "ger",
             "anOrd": "126",
             "wikidataId": null,
@@ -6626,7 +6626,7 @@
             "comments": null
         },
         {
-            "workId": "127",
+            "workId": 127,
             "lang": "ger",
             "anOrd": "127",
             "wikidataId": null,
@@ -6650,7 +6650,7 @@
             "comments": null
         },
         {
-            "workId": "128",
+            "workId": 128,
             "lang": "ger",
             "anOrd": "128",
             "wikidataId": null,
@@ -6677,7 +6677,7 @@
             "comments": null
         },
         {
-            "workId": "129",
+            "workId": 129,
             "lang": "ger",
             "anOrd": "129",
             "wikidataId": null,
@@ -6704,7 +6704,7 @@
             "comments": null
         },
         {
-            "workId": "130",
+            "workId": 130,
             "lang": "ger",
             "anOrd": "130",
             "wikidataId": null,
@@ -6732,7 +6732,7 @@
             "comments": null
         },
         {
-            "workId": "131",
+            "workId": 131,
             "lang": "ger",
             "anOrd": "131",
             "wikidataId": null,
@@ -6759,7 +6759,7 @@
             "comments": null
         },
         {
-            "workId": "132",
+            "workId": 132,
             "lang": "ger",
             "anOrd": "132",
             "wikidataId": null,
@@ -6783,7 +6783,7 @@
             "comments": null
         },
         {
-            "workId": "133",
+            "workId": 133,
             "lang": "ger",
             "anOrd": "133",
             "wikidataId": null,
@@ -6809,7 +6809,7 @@
             "comments": null
         },
         {
-            "workId": "134",
+            "workId": 134,
             "lang": "ger",
             "anOrd": "134",
             "wikidataId": null,
@@ -6833,7 +6833,7 @@
             "comments": null
         },
         {
-            "workId": "135",
+            "workId": 135,
             "lang": "ger",
             "anOrd": "135",
             "wikidataId": null,
@@ -6857,7 +6857,7 @@
             "comments": null
         },
         {
-            "workId": "136",
+            "workId": 136,
             "lang": "ger",
             "anOrd": "136",
             "wikidataId": null,
@@ -6883,7 +6883,7 @@
             "comments": null
         },
         {
-            "workId": "137",
+            "workId": 137,
             "lang": "ger",
             "anOrd": "137",
             "wikidataId": null,
@@ -6910,7 +6910,7 @@
             "comments": null
         },
         {
-            "workId": "138",
+            "workId": 138,
             "lang": "ger",
             "anOrd": "138",
             "wikidataId": null,
@@ -6937,7 +6937,7 @@
             "comments": null
         },
         {
-            "workId": "139",
+            "workId": 139,
             "lang": "ger",
             "anOrd": "139",
             "wikidataId": null,
@@ -6964,7 +6964,7 @@
             "comments": null
         },
         {
-            "workId": "140",
+            "workId": 140,
             "lang": "ger",
             "anOrd": "140",
             "wikidataId": null,
@@ -6991,7 +6991,7 @@
             "comments": null
         },
         {
-            "workId": "141",
+            "workId": 141,
             "lang": "ger",
             "anOrd": "141",
             "wikidataId": null,
@@ -7018,7 +7018,7 @@
             "comments": null
         },
         {
-            "workId": "142",
+            "workId": 142,
             "lang": "ger",
             "anOrd": "142",
             "wikidataId": null,
@@ -7045,7 +7045,7 @@
             "comments": null
         },
         {
-            "workId": "143",
+            "workId": 143,
             "lang": "ger",
             "anOrd": "143",
             "wikidataId": null,
@@ -7073,7 +7073,7 @@
             "comments": null
         },
         {
-            "workId": "1",
+            "workId": 1,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7095,7 +7095,7 @@
             "comments": null
         },
         {
-            "workId": "2",
+            "workId": 2,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7117,7 +7117,7 @@
             "comments": null
         },
         {
-            "workId": "3",
+            "workId": 3,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7139,7 +7139,7 @@
             "comments": null
         },
         {
-            "workId": "4",
+            "workId": 4,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7161,7 +7161,7 @@
             "comments": null
         },
         {
-            "workId": "5",
+            "workId": 5,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7183,7 +7183,7 @@
             "comments": null
         },
         {
-            "workId": "6",
+            "workId": 6,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7205,7 +7205,7 @@
             "comments": null
         },
         {
-            "workId": "7",
+            "workId": 7,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7227,7 +7227,7 @@
             "comments": null
         },
         {
-            "workId": "8",
+            "workId": 8,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7249,7 +7249,7 @@
             "comments": null
         },
         {
-            "workId": "9",
+            "workId": 9,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7271,7 +7271,7 @@
             "comments": null
         },
         {
-            "workId": "10",
+            "workId": 10,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7293,7 +7293,7 @@
             "comments": null
         },
         {
-            "workId": "11",
+            "workId": 11,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7315,7 +7315,7 @@
             "comments": null
         },
         {
-            "workId": "12",
+            "workId": 12,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7337,7 +7337,7 @@
             "comments": null
         },
         {
-            "workId": "13",
+            "workId": 13,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7359,7 +7359,7 @@
             "comments": null
         },
         {
-            "workId": "14",
+            "workId": 14,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7381,7 +7381,7 @@
             "comments": null
         },
         {
-            "workId": "15",
+            "workId": 15,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7403,7 +7403,7 @@
             "comments": null
         },
         {
-            "workId": "16",
+            "workId": 16,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7425,7 +7425,7 @@
             "comments": null
         },
         {
-            "workId": "17",
+            "workId": 17,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7447,7 +7447,7 @@
             "comments": null
         },
         {
-            "workId": "18",
+            "workId": 18,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7469,7 +7469,7 @@
             "comments": null
         },
         {
-            "workId": "19",
+            "workId": 19,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7491,7 +7491,7 @@
             "comments": null
         },
         {
-            "workId": "20",
+            "workId": 20,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7513,7 +7513,7 @@
             "comments": null
         },
         {
-            "workId": "21",
+            "workId": 21,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7535,7 +7535,7 @@
             "comments": null
         },
         {
-            "workId": "22",
+            "workId": 22,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7557,7 +7557,7 @@
             "comments": null
         },
         {
-            "workId": "24",
+            "workId": 24,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7579,7 +7579,7 @@
             "comments": null
         },
         {
-            "workId": "25",
+            "workId": 25,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7601,7 +7601,7 @@
             "comments": null
         },
         {
-            "workId": "26",
+            "workId": 26,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7623,7 +7623,7 @@
             "comments": null
         },
         {
-            "workId": "27",
+            "workId": 27,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7645,7 +7645,7 @@
             "comments": null
         },
         {
-            "workId": "28",
+            "workId": 28,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7667,7 +7667,7 @@
             "comments": null
         },
         {
-            "workId": "29",
+            "workId": 29,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7689,7 +7689,7 @@
             "comments": null
         },
         {
-            "workId": "30",
+            "workId": 30,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7711,7 +7711,7 @@
             "comments": null
         },
         {
-            "workId": "31",
+            "workId": 31,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7733,7 +7733,7 @@
             "comments": null
         },
         {
-            "workId": "32",
+            "workId": 32,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7755,7 +7755,7 @@
             "comments": null
         },
         {
-            "workId": "33",
+            "workId": 33,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7777,7 +7777,7 @@
             "comments": null
         },
         {
-            "workId": "34",
+            "workId": 34,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7799,7 +7799,7 @@
             "comments": null
         },
         {
-            "workId": "35",
+            "workId": 35,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7821,7 +7821,7 @@
             "comments": null
         },
         {
-            "workId": "36",
+            "workId": 36,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7843,7 +7843,7 @@
             "comments": null
         },
         {
-            "workId": "37",
+            "workId": 37,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7865,7 +7865,7 @@
             "comments": null
         },
         {
-            "workId": "38",
+            "workId": 38,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7887,7 +7887,7 @@
             "comments": null
         },
         {
-            "workId": "39",
+            "workId": 39,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7909,7 +7909,7 @@
             "comments": null
         },
         {
-            "workId": "40",
+            "workId": 40,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7931,7 +7931,7 @@
             "comments": null
         },
         {
-            "workId": "41",
+            "workId": 41,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7953,7 +7953,7 @@
             "comments": null
         },
         {
-            "workId": "42",
+            "workId": 42,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7975,7 +7975,7 @@
             "comments": null
         },
         {
-            "workId": "43",
+            "workId": 43,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -7997,7 +7997,7 @@
             "comments": null
         },
         {
-            "workId": "44",
+            "workId": 44,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8020,7 +8020,7 @@
             "comments": null
         },
         {
-            "workId": "45",
+            "workId": 45,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8042,7 +8042,7 @@
             "comments": null
         },
         {
-            "workId": "46",
+            "workId": 46,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8064,7 +8064,7 @@
             "comments": null
         },
         {
-            "workId": "47",
+            "workId": 47,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8086,7 +8086,7 @@
             "comments": null
         },
         {
-            "workId": "48",
+            "workId": 48,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8108,7 +8108,7 @@
             "comments": null
         },
         {
-            "workId": "49",
+            "workId": 49,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8130,7 +8130,7 @@
             "comments": null
         },
         {
-            "workId": "50",
+            "workId": 50,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8152,7 +8152,7 @@
             "comments": null
         },
         {
-            "workId": "51",
+            "workId": 51,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8174,7 +8174,7 @@
             "comments": null
         },
         {
-            "workId": "52",
+            "workId": 52,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8196,7 +8196,7 @@
             "comments": null
         },
         {
-            "workId": "53",
+            "workId": 53,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8218,7 +8218,7 @@
             "comments": null
         },
         {
-            "workId": "54",
+            "workId": 54,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8240,7 +8240,7 @@
             "comments": null
         },
         {
-            "workId": "55",
+            "workId": 55,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8262,7 +8262,7 @@
             "comments": null
         },
         {
-            "workId": "56",
+            "workId": 56,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8284,7 +8284,7 @@
             "comments": null
         },
         {
-            "workId": "57",
+            "workId": 57,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8306,7 +8306,7 @@
             "comments": null
         },
         {
-            "workId": "58",
+            "workId": 58,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8328,7 +8328,7 @@
             "comments": null
         },
         {
-            "workId": "59",
+            "workId": 59,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8350,7 +8350,7 @@
             "comments": null
         },
         {
-            "workId": "60",
+            "workId": 60,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8372,7 +8372,7 @@
             "comments": null
         },
         {
-            "workId": "61",
+            "workId": 61,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8394,7 +8394,7 @@
             "comments": null
         },
         {
-            "workId": "62",
+            "workId": 62,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8416,7 +8416,7 @@
             "comments": null
         },
         {
-            "workId": "63",
+            "workId": 63,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8438,7 +8438,7 @@
             "comments": null
         },
         {
-            "workId": "64",
+            "workId": 64,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8460,7 +8460,7 @@
             "comments": null
         },
         {
-            "workId": "65",
+            "workId": 65,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8482,7 +8482,7 @@
             "comments": null
         },
         {
-            "workId": "66",
+            "workId": 66,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8504,7 +8504,7 @@
             "comments": null
         },
         {
-            "workId": "67",
+            "workId": 67,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8526,7 +8526,7 @@
             "comments": null
         },
         {
-            "workId": "68",
+            "workId": 68,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8548,7 +8548,7 @@
             "comments": null
         },
         {
-            "workId": "69",
+            "workId": 69,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8570,7 +8570,7 @@
             "comments": null
         },
         {
-            "workId": "70",
+            "workId": 70,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8592,7 +8592,7 @@
             "comments": null
         },
         {
-            "workId": "71",
+            "workId": 71,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8614,7 +8614,7 @@
             "comments": null
         },
         {
-            "workId": "72",
+            "workId": 72,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8636,7 +8636,7 @@
             "comments": null
         },
         {
-            "workId": "73",
+            "workId": 73,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8658,7 +8658,7 @@
             "comments": null
         },
         {
-            "workId": "74",
+            "workId": 74,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8680,7 +8680,7 @@
             "comments": null
         },
         {
-            "workId": "75",
+            "workId": 75,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8702,7 +8702,7 @@
             "comments": null
         },
         {
-            "workId": "76",
+            "workId": 76,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8724,7 +8724,7 @@
             "comments": null
         },
         {
-            "workId": "77",
+            "workId": 77,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8746,7 +8746,7 @@
             "comments": null
         },
         {
-            "workId": "78",
+            "workId": 78,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8768,7 +8768,7 @@
             "comments": null
         },
         {
-            "workId": "79",
+            "workId": 79,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8790,7 +8790,7 @@
             "comments": null
         },
         {
-            "workId": "80",
+            "workId": 80,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8812,7 +8812,7 @@
             "comments": null
         },
         {
-            "workId": "81",
+            "workId": 81,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8834,7 +8834,7 @@
             "comments": null
         },
         {
-            "workId": "82",
+            "workId": 82,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8856,7 +8856,7 @@
             "comments": null
         },
         {
-            "workId": "83",
+            "workId": 83,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8878,7 +8878,7 @@
             "comments": null
         },
         {
-            "workId": "84",
+            "workId": 84,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8900,7 +8900,7 @@
             "comments": null
         },
         {
-            "workId": "85",
+            "workId": 85,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8922,7 +8922,7 @@
             "comments": null
         },
         {
-            "workId": "86",
+            "workId": 86,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8944,7 +8944,7 @@
             "comments": null
         },
         {
-            "workId": "87",
+            "workId": 87,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8966,7 +8966,7 @@
             "comments": null
         },
         {
-            "workId": "88",
+            "workId": 88,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -8988,7 +8988,7 @@
             "comments": null
         },
         {
-            "workId": "89",
+            "workId": 89,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9010,7 +9010,7 @@
             "comments": null
         },
         {
-            "workId": "90",
+            "workId": 90,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9032,7 +9032,7 @@
             "comments": null
         },
         {
-            "workId": "91",
+            "workId": 91,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9054,7 +9054,7 @@
             "comments": null
         },
         {
-            "workId": "92",
+            "workId": 92,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9076,7 +9076,7 @@
             "comments": null
         },
         {
-            "workId": "93",
+            "workId": 93,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9098,7 +9098,7 @@
             "comments": null
         },
         {
-            "workId": "94",
+            "workId": 94,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9120,7 +9120,7 @@
             "comments": null
         },
         {
-            "workId": "95",
+            "workId": 95,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9142,7 +9142,7 @@
             "comments": null
         },
         {
-            "workId": "96",
+            "workId": 96,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9164,7 +9164,7 @@
             "comments": null
         },
         {
-            "workId": "97",
+            "workId": 97,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9186,7 +9186,7 @@
             "comments": null
         },
         {
-            "workId": "98",
+            "workId": 98,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9208,7 +9208,7 @@
             "comments": null
         },
         {
-            "workId": "99",
+            "workId": 99,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9230,7 +9230,7 @@
             "comments": null
         },
         {
-            "workId": "100",
+            "workId": 100,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9252,7 +9252,7 @@
             "comments": null
         },
         {
-            "workId": "101",
+            "workId": 101,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9275,7 +9275,7 @@
             "comments": null
         },
         {
-            "workId": "102",
+            "workId": 102,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9297,7 +9297,7 @@
             "comments": null
         },
         {
-            "workId": "103",
+            "workId": 103,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9319,7 +9319,7 @@
             "comments": null
         },
         {
-            "workId": "104",
+            "workId": 104,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9341,7 +9341,7 @@
             "comments": null
         },
         {
-            "workId": "105",
+            "workId": 105,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9363,7 +9363,7 @@
             "comments": null
         },
         {
-            "workId": "106",
+            "workId": 106,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9385,7 +9385,7 @@
             "comments": null
         },
         {
-            "workId": "107",
+            "workId": 107,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9407,7 +9407,7 @@
             "comments": null
         },
         {
-            "workId": "108",
+            "workId": 108,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9429,7 +9429,7 @@
             "comments": null
         },
         {
-            "workId": "109",
+            "workId": 109,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9451,7 +9451,7 @@
             "comments": null
         },
         {
-            "workId": "110",
+            "workId": 110,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9473,7 +9473,7 @@
             "comments": null
         },
         {
-            "workId": "111",
+            "workId": 111,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9495,7 +9495,7 @@
             "comments": null
         },
         {
-            "workId": "112",
+            "workId": 112,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9517,7 +9517,7 @@
             "comments": null
         },
         {
-            "workId": "113",
+            "workId": 113,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9539,7 +9539,7 @@
             "comments": null
         },
         {
-            "workId": "114",
+            "workId": 114,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9561,7 +9561,7 @@
             "comments": null
         },
         {
-            "workId": "115",
+            "workId": 115,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9583,7 +9583,7 @@
             "comments": null
         },
         {
-            "workId": "116",
+            "workId": 116,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9605,7 +9605,7 @@
             "comments": null
         },
         {
-            "workId": "117",
+            "workId": 117,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9627,7 +9627,7 @@
             "comments": null
         },
         {
-            "workId": "118",
+            "workId": 118,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9649,7 +9649,7 @@
             "comments": null
         },
         {
-            "workId": "119",
+            "workId": 119,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9671,7 +9671,7 @@
             "comments": null
         },
         {
-            "workId": "120",
+            "workId": 120,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9693,7 +9693,7 @@
             "comments": null
         },
         {
-            "workId": "121",
+            "workId": 121,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9715,7 +9715,7 @@
             "comments": null
         },
         {
-            "workId": "122",
+            "workId": 122,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9737,7 +9737,7 @@
             "comments": null
         },
         {
-            "workId": "123",
+            "workId": 123,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9759,7 +9759,7 @@
             "comments": null
         },
         {
-            "workId": "124",
+            "workId": 124,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9781,7 +9781,7 @@
             "comments": null
         },
         {
-            "workId": "125",
+            "workId": 125,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9803,7 +9803,7 @@
             "comments": null
         },
         {
-            "workId": "126",
+            "workId": 126,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9825,7 +9825,7 @@
             "comments": null
         },
         {
-            "workId": "127",
+            "workId": 127,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9847,7 +9847,7 @@
             "comments": null
         },
         {
-            "workId": "128",
+            "workId": 128,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9869,7 +9869,7 @@
             "comments": null
         },
         {
-            "workId": "129",
+            "workId": 129,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9891,7 +9891,7 @@
             "comments": null
         },
         {
-            "workId": "130",
+            "workId": 130,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9913,7 +9913,7 @@
             "comments": null
         },
         {
-            "workId": "131",
+            "workId": 131,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9935,7 +9935,7 @@
             "comments": null
         },
         {
-            "workId": "132",
+            "workId": 132,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9957,7 +9957,7 @@
             "comments": null
         },
         {
-            "workId": "133",
+            "workId": 133,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -9979,7 +9979,7 @@
             "comments": null
         },
         {
-            "workId": "134",
+            "workId": 134,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10001,7 +10001,7 @@
             "comments": null
         },
         {
-            "workId": "135",
+            "workId": 135,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10023,7 +10023,7 @@
             "comments": null
         },
         {
-            "workId": "137",
+            "workId": 137,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10045,7 +10045,7 @@
             "comments": null
         },
         {
-            "workId": "138",
+            "workId": 138,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10067,7 +10067,7 @@
             "comments": null
         },
         {
-            "workId": "139",
+            "workId": 139,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10089,7 +10089,7 @@
             "comments": null
         },
         {
-            "workId": "140",
+            "workId": 140,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10109,7 +10109,7 @@
             "comments": null
         },
         {
-            "workId": "141",
+            "workId": 141,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10129,7 +10129,7 @@
             "comments": null
         },
         {
-            "workId": "142",
+            "workId": 142,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10149,7 +10149,7 @@
             "comments": null
         },
         {
-            "workId": "143",
+            "workId": 143,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10169,7 +10169,7 @@
             "comments": null
         },
         {
-            "workId": "144",
+            "workId": 144,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10189,7 +10189,7 @@
             "comments": null
         },
         {
-            "workId": "145",
+            "workId": 145,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10211,7 +10211,7 @@
             "comments": null
         },
         {
-            "workId": "146",
+            "workId": 146,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10233,7 +10233,7 @@
             "comments": null
         },
         {
-            "workId": "147",
+            "workId": 147,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10255,7 +10255,7 @@
             "comments": null
         },
         {
-            "workId": "148",
+            "workId": 148,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10277,7 +10277,7 @@
             "comments": null
         },
         {
-            "workId": "149",
+            "workId": 149,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10299,7 +10299,7 @@
             "comments": null
         },
         {
-            "workId": "150",
+            "workId": 150,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10321,7 +10321,7 @@
             "comments": null
         },
         {
-            "workId": "151",
+            "workId": 151,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10343,7 +10343,7 @@
             "comments": null
         },
         {
-            "workId": "152",
+            "workId": 152,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10365,7 +10365,7 @@
             "comments": null
         },
         {
-            "workId": "153",
+            "workId": 153,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10387,7 +10387,7 @@
             "comments": null
         },
         {
-            "workId": "154",
+            "workId": 154,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10409,7 +10409,7 @@
             "comments": null
         },
         {
-            "workId": "155",
+            "workId": 155,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10431,7 +10431,7 @@
             "comments": null
         },
         {
-            "workId": "156",
+            "workId": 156,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10453,7 +10453,7 @@
             "comments": null
         },
         {
-            "workId": "157",
+            "workId": 157,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10475,7 +10475,7 @@
             "comments": null
         },
         {
-            "workId": "158",
+            "workId": 158,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10497,7 +10497,7 @@
             "comments": null
         },
         {
-            "workId": "159",
+            "workId": 159,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10519,7 +10519,7 @@
             "comments": null
         },
         {
-            "workId": "160",
+            "workId": 160,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10541,7 +10541,7 @@
             "comments": null
         },
         {
-            "workId": "161",
+            "workId": 161,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10563,7 +10563,7 @@
             "comments": null
         },
         {
-            "workId": "162",
+            "workId": 162,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10585,7 +10585,7 @@
             "comments": null
         },
         {
-            "workId": "163",
+            "workId": 163,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10607,7 +10607,7 @@
             "comments": null
         },
         {
-            "workId": "164",
+            "workId": 164,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10629,7 +10629,7 @@
             "comments": null
         },
         {
-            "workId": "165",
+            "workId": 165,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10651,7 +10651,7 @@
             "comments": null
         },
         {
-            "workId": "166",
+            "workId": 166,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10673,7 +10673,7 @@
             "comments": null
         },
         {
-            "workId": "167",
+            "workId": 167,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10695,7 +10695,7 @@
             "comments": null
         },
         {
-            "workId": "168",
+            "workId": 168,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10717,7 +10717,7 @@
             "comments": null
         },
         {
-            "workId": "169",
+            "workId": 169,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10739,7 +10739,7 @@
             "comments": null
         },
         {
-            "workId": "170",
+            "workId": 170,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10761,7 +10761,7 @@
             "comments": null
         },
         {
-            "workId": "171",
+            "workId": 171,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10783,7 +10783,7 @@
             "comments": null
         },
         {
-            "workId": "172",
+            "workId": 172,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10805,7 +10805,7 @@
             "comments": null
         },
         {
-            "workId": "173",
+            "workId": 173,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10827,7 +10827,7 @@
             "comments": null
         },
         {
-            "workId": "174",
+            "workId": 174,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10849,7 +10849,7 @@
             "comments": null
         },
         {
-            "workId": "175",
+            "workId": 175,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10871,7 +10871,7 @@
             "comments": null
         },
         {
-            "workId": "176",
+            "workId": 176,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10893,7 +10893,7 @@
             "comments": null
         },
         {
-            "workId": "177",
+            "workId": 177,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10915,7 +10915,7 @@
             "comments": null
         },
         {
-            "workId": "178",
+            "workId": 178,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10937,7 +10937,7 @@
             "comments": null
         },
         {
-            "workId": "179",
+            "workId": 179,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10959,7 +10959,7 @@
             "comments": null
         },
         {
-            "workId": "180",
+            "workId": 180,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -10981,7 +10981,7 @@
             "comments": null
         },
         {
-            "workId": "181",
+            "workId": 181,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11003,7 +11003,7 @@
             "comments": null
         },
         {
-            "workId": "182",
+            "workId": 182,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11025,7 +11025,7 @@
             "comments": null
         },
         {
-            "workId": "183",
+            "workId": 183,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11047,7 +11047,7 @@
             "comments": null
         },
         {
-            "workId": "184",
+            "workId": 184,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11069,7 +11069,7 @@
             "comments": null
         },
         {
-            "workId": "185",
+            "workId": 185,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11091,7 +11091,7 @@
             "comments": null
         },
         {
-            "workId": "186",
+            "workId": 186,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11113,7 +11113,7 @@
             "comments": null
         },
         {
-            "workId": "187",
+            "workId": 187,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11135,7 +11135,7 @@
             "comments": null
         },
         {
-            "workId": "188",
+            "workId": 188,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11157,7 +11157,7 @@
             "comments": null
         },
         {
-            "workId": "189",
+            "workId": 189,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11179,7 +11179,7 @@
             "comments": null
         },
         {
-            "workId": "190",
+            "workId": 190,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11201,7 +11201,7 @@
             "comments": null
         },
         {
-            "workId": "191",
+            "workId": 191,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11223,7 +11223,7 @@
             "comments": null
         },
         {
-            "workId": "192",
+            "workId": 192,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11245,7 +11245,7 @@
             "comments": null
         },
         {
-            "workId": "193",
+            "workId": 193,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11267,7 +11267,7 @@
             "comments": null
         },
         {
-            "workId": "194",
+            "workId": 194,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11289,7 +11289,7 @@
             "comments": null
         },
         {
-            "workId": "195",
+            "workId": 195,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11311,7 +11311,7 @@
             "comments": null
         },
         {
-            "workId": "196",
+            "workId": 196,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11333,7 +11333,7 @@
             "comments": null
         },
         {
-            "workId": "197",
+            "workId": 197,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11355,7 +11355,7 @@
             "comments": null
         },
         {
-            "workId": "198",
+            "workId": 198,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11377,7 +11377,7 @@
             "comments": null
         },
         {
-            "workId": "199",
+            "workId": 199,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11399,7 +11399,7 @@
             "comments": null
         },
         {
-            "workId": "200",
+            "workId": 200,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11421,7 +11421,7 @@
             "comments": null
         },
         {
-            "workId": "201",
+            "workId": 201,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11443,7 +11443,7 @@
             "comments": null
         },
         {
-            "workId": "202",
+            "workId": 202,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11465,7 +11465,7 @@
             "comments": null
         },
         {
-            "workId": "203",
+            "workId": 203,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11487,7 +11487,7 @@
             "comments": null
         },
         {
-            "workId": "204",
+            "workId": 204,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11509,7 +11509,7 @@
             "comments": null
         },
         {
-            "workId": "205",
+            "workId": 205,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11531,7 +11531,7 @@
             "comments": null
         },
         {
-            "workId": "206",
+            "workId": 206,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11553,7 +11553,7 @@
             "comments": null
         },
         {
-            "workId": "207",
+            "workId": 207,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11575,7 +11575,7 @@
             "comments": null
         },
         {
-            "workId": "208",
+            "workId": 208,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11597,7 +11597,7 @@
             "comments": null
         },
         {
-            "workId": "209",
+            "workId": 209,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11619,7 +11619,7 @@
             "comments": null
         },
         {
-            "workId": "210",
+            "workId": 210,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11641,7 +11641,7 @@
             "comments": null
         },
         {
-            "workId": "300",
+            "workId": 300,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11664,7 +11664,7 @@
             "comments": null
         },
         {
-            "workId": "301",
+            "workId": 301,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11686,7 +11686,7 @@
             "comments": null
         },
         {
-            "workId": "302",
+            "workId": 302,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11708,7 +11708,7 @@
             "comments": null
         },
         {
-            "workId": "303",
+            "workId": 303,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11730,7 +11730,7 @@
             "comments": null
         },
         {
-            "workId": "304",
+            "workId": 304,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11752,7 +11752,7 @@
             "comments": null
         },
         {
-            "workId": "305",
+            "workId": 305,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11774,7 +11774,7 @@
             "comments": null
         },
         {
-            "workId": "306",
+            "workId": 306,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11796,7 +11796,7 @@
             "comments": null
         },
         {
-            "workId": "307",
+            "workId": 307,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11818,7 +11818,7 @@
             "comments": null
         },
         {
-            "workId": "308",
+            "workId": 308,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11840,7 +11840,7 @@
             "comments": null
         },
         {
-            "workId": "309",
+            "workId": 309,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11862,7 +11862,7 @@
             "comments": null
         },
         {
-            "workId": "310",
+            "workId": 310,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11884,7 +11884,7 @@
             "comments": null
         },
         {
-            "workId": "311",
+            "workId": 311,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11907,7 +11907,7 @@
             "comments": null
         },
         {
-            "workId": "312",
+            "workId": 312,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11929,7 +11929,7 @@
             "comments": null
         },
         {
-            "workId": "313",
+            "workId": 313,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11951,7 +11951,7 @@
             "comments": null
         },
         {
-            "workId": "314",
+            "workId": 314,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11974,7 +11974,7 @@
             "comments": null
         },
         {
-            "workId": "315",
+            "workId": 315,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -11996,7 +11996,7 @@
             "comments": null
         },
         {
-            "workId": "316",
+            "workId": 316,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12018,7 +12018,7 @@
             "comments": null
         },
         {
-            "workId": "317",
+            "workId": 317,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12040,7 +12040,7 @@
             "comments": null
         },
         {
-            "workId": "318",
+            "workId": 318,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12062,7 +12062,7 @@
             "comments": null
         },
         {
-            "workId": "319",
+            "workId": 319,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12084,7 +12084,7 @@
             "comments": null
         },
         {
-            "workId": "320",
+            "workId": 320,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12106,7 +12106,7 @@
             "comments": null
         },
         {
-            "workId": "321",
+            "workId": 321,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12128,7 +12128,7 @@
             "comments": null
         },
         {
-            "workId": "322",
+            "workId": 322,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12150,7 +12150,7 @@
             "comments": null
         },
         {
-            "workId": "323",
+            "workId": 323,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12172,7 +12172,7 @@
             "comments": null
         },
         {
-            "workId": "324",
+            "workId": 324,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12195,7 +12195,7 @@
             "comments": null
         },
         {
-            "workId": "325",
+            "workId": 325,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12217,7 +12217,7 @@
             "comments": null
         },
         {
-            "workId": "326",
+            "workId": 326,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12239,7 +12239,7 @@
             "comments": null
         },
         {
-            "workId": "327",
+            "workId": 327,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12261,7 +12261,7 @@
             "comments": null
         },
         {
-            "workId": "328",
+            "workId": 328,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12283,7 +12283,7 @@
             "comments": null
         },
         {
-            "workId": "329",
+            "workId": 329,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12305,7 +12305,7 @@
             "comments": null
         },
         {
-            "workId": "330",
+            "workId": 330,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12327,7 +12327,7 @@
             "comments": null
         },
         {
-            "workId": "331",
+            "workId": 331,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12349,7 +12349,7 @@
             "comments": null
         },
         {
-            "workId": "332",
+            "workId": 332,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12371,7 +12371,7 @@
             "comments": null
         },
         {
-            "workId": "333",
+            "workId": 333,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12393,7 +12393,7 @@
             "comments": null
         },
         {
-            "workId": "334",
+            "workId": 334,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12415,7 +12415,7 @@
             "comments": null
         },
         {
-            "workId": "335",
+            "workId": 335,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12438,7 +12438,7 @@
             "comments": null
         },
         {
-            "workId": "336",
+            "workId": 336,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12460,7 +12460,7 @@
             "comments": null
         },
         {
-            "workId": "337",
+            "workId": 337,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12482,7 +12482,7 @@
             "comments": null
         },
         {
-            "workId": "338",
+            "workId": 338,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12504,7 +12504,7 @@
             "comments": null
         },
         {
-            "workId": "339",
+            "workId": 339,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12526,7 +12526,7 @@
             "comments": null
         },
         {
-            "workId": "340",
+            "workId": 340,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12548,7 +12548,7 @@
             "comments": null
         },
         {
-            "workId": "341",
+            "workId": 341,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12570,7 +12570,7 @@
             "comments": null
         },
         {
-            "workId": "342",
+            "workId": 342,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12592,7 +12592,7 @@
             "comments": null
         },
         {
-            "workId": "343",
+            "workId": 343,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12614,7 +12614,7 @@
             "comments": null
         },
         {
-            "workId": "344",
+            "workId": 344,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12636,7 +12636,7 @@
             "comments": null
         },
         {
-            "workId": "345",
+            "workId": 345,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12658,7 +12658,7 @@
             "comments": null
         },
         {
-            "workId": "346",
+            "workId": 346,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12680,7 +12680,7 @@
             "comments": null
         },
         {
-            "workId": "347",
+            "workId": 347,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12702,7 +12702,7 @@
             "comments": null
         },
         {
-            "workId": "348",
+            "workId": 348,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12724,7 +12724,7 @@
             "comments": null
         },
         {
-            "workId": "349",
+            "workId": 349,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12746,7 +12746,7 @@
             "comments": null
         },
         {
-            "workId": "350",
+            "workId": 350,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12768,7 +12768,7 @@
             "comments": null
         },
         {
-            "workId": "351",
+            "workId": 351,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12790,7 +12790,7 @@
             "comments": null
         },
         {
-            "workId": "352",
+            "workId": 352,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12812,7 +12812,7 @@
             "comments": null
         },
         {
-            "workId": "353",
+            "workId": 353,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12834,7 +12834,7 @@
             "comments": null
         },
         {
-            "workId": "354",
+            "workId": 354,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12856,7 +12856,7 @@
             "comments": null
         },
         {
-            "workId": "355",
+            "workId": 355,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12878,7 +12878,7 @@
             "comments": null
         },
         {
-            "workId": "356",
+            "workId": 356,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12900,7 +12900,7 @@
             "comments": null
         },
         {
-            "workId": "357",
+            "workId": 357,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12922,7 +12922,7 @@
             "comments": null
         },
         {
-            "workId": "358",
+            "workId": 358,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12944,7 +12944,7 @@
             "comments": null
         },
         {
-            "workId": "359",
+            "workId": 359,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12966,7 +12966,7 @@
             "comments": null
         },
         {
-            "workId": "360",
+            "workId": 360,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -12988,7 +12988,7 @@
             "comments": null
         },
         {
-            "workId": "361",
+            "workId": 361,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13010,7 +13010,7 @@
             "comments": null
         },
         {
-            "workId": "362",
+            "workId": 362,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13032,7 +13032,7 @@
             "comments": null
         },
         {
-            "workId": "363",
+            "workId": 363,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13054,7 +13054,7 @@
             "comments": null
         },
         {
-            "workId": "364",
+            "workId": 364,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13076,7 +13076,7 @@
             "comments": null
         },
         {
-            "workId": "365",
+            "workId": 365,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13098,7 +13098,7 @@
             "comments": null
         },
         {
-            "workId": "366",
+            "workId": 366,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13120,7 +13120,7 @@
             "comments": null
         },
         {
-            "workId": "367",
+            "workId": 367,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13142,7 +13142,7 @@
             "comments": null
         },
         {
-            "workId": "368",
+            "workId": 368,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13164,7 +13164,7 @@
             "comments": null
         },
         {
-            "workId": "369",
+            "workId": 369,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13186,7 +13186,7 @@
             "comments": null
         },
         {
-            "workId": "370",
+            "workId": 370,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13208,7 +13208,7 @@
             "comments": null
         },
         {
-            "workId": "371",
+            "workId": 371,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13230,7 +13230,7 @@
             "comments": null
         },
         {
-            "workId": "372",
+            "workId": 372,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13252,7 +13252,7 @@
             "comments": null
         },
         {
-            "workId": "373",
+            "workId": 373,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13274,7 +13274,7 @@
             "comments": null
         },
         {
-            "workId": "374",
+            "workId": 374,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13296,7 +13296,7 @@
             "comments": null
         },
         {
-            "workId": "375",
+            "workId": 375,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13318,7 +13318,7 @@
             "comments": null
         },
         {
-            "workId": "376",
+            "workId": 376,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13340,7 +13340,7 @@
             "comments": null
         },
         {
-            "workId": "377",
+            "workId": 377,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13362,7 +13362,7 @@
             "comments": null
         },
         {
-            "workId": "378",
+            "workId": 378,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13384,7 +13384,7 @@
             "comments": null
         },
         {
-            "workId": "379",
+            "workId": 379,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13406,7 +13406,7 @@
             "comments": null
         },
         {
-            "workId": "380",
+            "workId": 380,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13428,7 +13428,7 @@
             "comments": null
         },
         {
-            "workId": "381",
+            "workId": 381,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13451,7 +13451,7 @@
             "comments": null
         },
         {
-            "workId": "382",
+            "workId": 382,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13473,7 +13473,7 @@
             "comments": null
         },
         {
-            "workId": "383",
+            "workId": 383,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13495,7 +13495,7 @@
             "comments": null
         },
         {
-            "workId": "384",
+            "workId": 384,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13515,7 +13515,7 @@
             "comments": null
         },
         {
-            "workId": "385",
+            "workId": 385,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13537,7 +13537,7 @@
             "comments": null
         },
         {
-            "workId": "386",
+            "workId": 386,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13559,7 +13559,7 @@
             "comments": null
         },
         {
-            "workId": "387",
+            "workId": 387,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13581,7 +13581,7 @@
             "comments": null
         },
         {
-            "workId": "388",
+            "workId": 388,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13603,7 +13603,7 @@
             "comments": null
         },
         {
-            "workId": "389",
+            "workId": 389,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13625,7 +13625,7 @@
             "comments": null
         },
         {
-            "workId": "390",
+            "workId": 390,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13647,7 +13647,7 @@
             "comments": null
         },
         {
-            "workId": "391",
+            "workId": 391,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13669,7 +13669,7 @@
             "comments": null
         },
         {
-            "workId": "392",
+            "workId": 392,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13691,7 +13691,7 @@
             "comments": null
         },
         {
-            "workId": "393",
+            "workId": 393,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13713,7 +13713,7 @@
             "comments": null
         },
         {
-            "workId": "394",
+            "workId": 394,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13735,7 +13735,7 @@
             "comments": null
         },
         {
-            "workId": "395",
+            "workId": 395,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13757,7 +13757,7 @@
             "comments": null
         },
         {
-            "workId": "396",
+            "workId": 396,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13779,7 +13779,7 @@
             "comments": null
         },
         {
-            "workId": "397",
+            "workId": 397,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13801,7 +13801,7 @@
             "comments": null
         },
         {
-            "workId": "398",
+            "workId": 398,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13823,7 +13823,7 @@
             "comments": null
         },
         {
-            "workId": "399",
+            "workId": 399,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13845,7 +13845,7 @@
             "comments": null
         },
         {
-            "workId": "400",
+            "workId": 400,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13867,7 +13867,7 @@
             "comments": null
         },
         {
-            "workId": "401",
+            "workId": 401,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13889,7 +13889,7 @@
             "comments": null
         },
         {
-            "workId": "402",
+            "workId": 402,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13911,7 +13911,7 @@
             "comments": null
         },
         {
-            "workId": "403",
+            "workId": 403,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13933,7 +13933,7 @@
             "comments": null
         },
         {
-            "workId": "404",
+            "workId": 404,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13955,7 +13955,7 @@
             "comments": null
         },
         {
-            "workId": "405",
+            "workId": 405,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13977,7 +13977,7 @@
             "comments": null
         },
         {
-            "workId": "406",
+            "workId": 406,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -13999,7 +13999,7 @@
             "comments": null
         },
         {
-            "workId": "407",
+            "workId": 407,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14021,7 +14021,7 @@
             "comments": null
         },
         {
-            "workId": "408",
+            "workId": 408,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14043,7 +14043,7 @@
             "comments": null
         },
         {
-            "workId": "409",
+            "workId": 409,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14065,7 +14065,7 @@
             "comments": null
         },
         {
-            "workId": "410",
+            "workId": 410,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14087,7 +14087,7 @@
             "comments": null
         },
         {
-            "workId": "411",
+            "workId": 411,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14109,7 +14109,7 @@
             "comments": null
         },
         {
-            "workId": "412",
+            "workId": 412,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14131,7 +14131,7 @@
             "comments": null
         },
         {
-            "workId": "413",
+            "workId": 413,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14153,7 +14153,7 @@
             "comments": null
         },
         {
-            "workId": "414",
+            "workId": 414,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14175,7 +14175,7 @@
             "comments": null
         },
         {
-            "workId": "415",
+            "workId": 415,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14197,7 +14197,7 @@
             "comments": null
         },
         {
-            "workId": "416",
+            "workId": 416,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14219,7 +14219,7 @@
             "comments": null
         },
         {
-            "workId": "417",
+            "workId": 417,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14241,7 +14241,7 @@
             "comments": null
         },
         {
-            "workId": "418",
+            "workId": 418,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14263,7 +14263,7 @@
             "comments": null
         },
         {
-            "workId": "419",
+            "workId": 419,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14285,7 +14285,7 @@
             "comments": null
         },
         {
-            "workId": "420",
+            "workId": 420,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14307,7 +14307,7 @@
             "comments": null
         },
         {
-            "workId": "421",
+            "workId": 421,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14329,7 +14329,7 @@
             "comments": null
         },
         {
-            "workId": "422",
+            "workId": 422,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14351,7 +14351,7 @@
             "comments": null
         },
         {
-            "workId": "423",
+            "workId": 423,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14373,7 +14373,7 @@
             "comments": null
         },
         {
-            "workId": "424",
+            "workId": 424,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14395,7 +14395,7 @@
             "comments": null
         },
         {
-            "workId": "425",
+            "workId": 425,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14417,7 +14417,7 @@
             "comments": null
         },
         {
-            "workId": "426",
+            "workId": 426,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14439,7 +14439,7 @@
             "comments": null
         },
         {
-            "workId": "427",
+            "workId": 427,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14461,7 +14461,7 @@
             "comments": null
         },
         {
-            "workId": "428",
+            "workId": 428,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14483,7 +14483,7 @@
             "comments": null
         },
         {
-            "workId": "429",
+            "workId": 429,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14505,7 +14505,7 @@
             "comments": null
         },
         {
-            "workId": "430",
+            "workId": 430,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14527,7 +14527,7 @@
             "comments": null
         },
         {
-            "workId": "431",
+            "workId": 431,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14549,7 +14549,7 @@
             "comments": null
         },
         {
-            "workId": "432",
+            "workId": 432,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14571,7 +14571,7 @@
             "comments": null
         },
         {
-            "workId": "433",
+            "workId": 433,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14593,7 +14593,7 @@
             "comments": null
         },
         {
-            "workId": "434",
+            "workId": 434,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14616,7 +14616,7 @@
             "comments": null
         },
         {
-            "workId": "435",
+            "workId": 435,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14638,7 +14638,7 @@
             "comments": null
         },
         {
-            "workId": "436",
+            "workId": 436,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14660,7 +14660,7 @@
             "comments": null
         },
         {
-            "workId": "437",
+            "workId": 437,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14682,7 +14682,7 @@
             "comments": null
         },
         {
-            "workId": "438",
+            "workId": 438,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14704,7 +14704,7 @@
             "comments": null
         },
         {
-            "workId": "439",
+            "workId": 439,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14726,7 +14726,7 @@
             "comments": null
         },
         {
-            "workId": "440",
+            "workId": 440,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14748,7 +14748,7 @@
             "comments": null
         },
         {
-            "workId": "441",
+            "workId": 441,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14770,7 +14770,7 @@
             "comments": null
         },
         {
-            "workId": "442",
+            "workId": 442,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14792,7 +14792,7 @@
             "comments": null
         },
         {
-            "workId": "443",
+            "workId": 443,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14814,7 +14814,7 @@
             "comments": null
         },
         {
-            "workId": "444",
+            "workId": 444,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14836,7 +14836,7 @@
             "comments": null
         },
         {
-            "workId": "445",
+            "workId": 445,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14858,7 +14858,7 @@
             "comments": null
         },
         {
-            "workId": "446",
+            "workId": 446,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14880,7 +14880,7 @@
             "comments": null
         },
         {
-            "workId": "447",
+            "workId": 447,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14902,7 +14902,7 @@
             "comments": null
         },
         {
-            "workId": "448",
+            "workId": 448,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14924,7 +14924,7 @@
             "comments": null
         },
         {
-            "workId": "449",
+            "workId": 449,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14944,7 +14944,7 @@
             "comments": null
         },
         {
-            "workId": "450",
+            "workId": 450,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14966,7 +14966,7 @@
             "comments": null
         },
         {
-            "workId": "451",
+            "workId": 451,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -14988,7 +14988,7 @@
             "comments": null
         },
         {
-            "workId": "452",
+            "workId": 452,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15010,7 +15010,7 @@
             "comments": null
         },
         {
-            "workId": "453",
+            "workId": 453,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15032,7 +15032,7 @@
             "comments": null
         },
         {
-            "workId": "454",
+            "workId": 454,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15054,7 +15054,7 @@
             "comments": null
         },
         {
-            "workId": "455",
+            "workId": 455,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15076,7 +15076,7 @@
             "comments": null
         },
         {
-            "workId": "456",
+            "workId": 456,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15098,7 +15098,7 @@
             "comments": null
         },
         {
-            "workId": "457",
+            "workId": 457,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15120,7 +15120,7 @@
             "comments": null
         },
         {
-            "workId": "458",
+            "workId": 458,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15142,7 +15142,7 @@
             "comments": null
         },
         {
-            "workId": "459",
+            "workId": 459,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15164,7 +15164,7 @@
             "comments": null
         },
         {
-            "workId": "460",
+            "workId": 460,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15186,7 +15186,7 @@
             "comments": null
         },
         {
-            "workId": "461",
+            "workId": 461,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15208,7 +15208,7 @@
             "comments": null
         },
         {
-            "workId": "462",
+            "workId": 462,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15230,7 +15230,7 @@
             "comments": null
         },
         {
-            "workId": "463",
+            "workId": 463,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15252,7 +15252,7 @@
             "comments": null
         },
         {
-            "workId": "464",
+            "workId": 464,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15274,7 +15274,7 @@
             "comments": null
         },
         {
-            "workId": "465",
+            "workId": 465,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15297,7 +15297,7 @@
             "comments": null
         },
         {
-            "workId": "466",
+            "workId": 466,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15319,7 +15319,7 @@
             "comments": null
         },
         {
-            "workId": "467",
+            "workId": 467,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15341,7 +15341,7 @@
             "comments": null
         },
         {
-            "workId": "468",
+            "workId": 468,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15363,7 +15363,7 @@
             "comments": null
         },
         {
-            "workId": "469",
+            "workId": 469,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15383,7 +15383,7 @@
             "comments": null
         },
         {
-            "workId": "470",
+            "workId": 470,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15405,7 +15405,7 @@
             "comments": null
         },
         {
-            "workId": "471",
+            "workId": 471,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15427,7 +15427,7 @@
             "comments": null
         },
         {
-            "workId": "472",
+            "workId": 472,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15447,7 +15447,7 @@
             "comments": null
         },
         {
-            "workId": "473",
+            "workId": 473,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15469,7 +15469,7 @@
             "comments": null
         },
         {
-            "workId": "474",
+            "workId": 474,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15489,7 +15489,7 @@
             "comments": null
         },
         {
-            "workId": "475",
+            "workId": 475,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
@@ -15509,7 +15509,7 @@
             "comments": null
         },
         {
-            "workId": "476",
+            "workId": 476,
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,

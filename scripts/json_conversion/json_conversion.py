@@ -101,6 +101,12 @@ def convert_to_json(data: dict, type: str) -> dict:
         play_data = [{k: "unknown" if v == "?" else v for k, v in dct.items()}
                 for dct in play_data]
 
+        # convert ids to integers
+        play_data = [{k: int(float(v)) if k in ["workId"]
+                and v is not None
+                else v for k, v in dct.items()}
+                for dct in play_data]
+
         for play_dict in play_data:
             json_template["plays"].append(play_dict)
 
