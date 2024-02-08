@@ -1,4 +1,5 @@
 interface Character {
+    workId: number;
     lang: string;
     characterId: number;
     persName: string;
@@ -7,28 +8,19 @@ interface Character {
     socialClass: string;
 }
 
-interface CharacterData {
-    [key: string]: Character;
-}
-
 interface Play {
+    workId: number;
+    lang: string;
     titleMain: string;
     titleSub: string;
     authorId: string | string[];
     publisherId: string;
     nbActs: string;
-}
-
-interface PlayData {
-    [key: string]: Play;
+    characters: Character[]; // not part of the JSON; used for showPlaysByCharacters()
 }
 
 interface Author {
     fullName: string;
-}
-
-interface AuthorData {
-    [key: string]: Author;
 }
 
 interface Location {
@@ -39,19 +31,11 @@ interface Location {
     nature: string;
 }
 
-interface LocationData {
-    [key: string]: Location;
-}
-
 interface Publisher {
     publisherId: number;
     lang: string;
     normalizedName: string;
     coord: string;
-}
-
-interface PublisherData {
-    [key: string]: Publisher;
 }
 
 interface Setting {
@@ -63,21 +47,11 @@ interface Setting {
     coord: string;
 }
 
-interface SettingData {
-    [key: string]: Setting;
-}
-
 export {
     Character,
-    CharacterData,
     Play,
-    PlayData,
     Author,
-    AuthorData,
     Location,
-    LocationData,
     Publisher,
-    PublisherData,
-    Setting,
-    SettingData
+    Setting
 }

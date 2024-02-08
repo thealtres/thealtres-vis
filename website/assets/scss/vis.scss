@@ -1,7 +1,20 @@
+hr {
+    background: white;
+}
+
 .universal-wrapper {
     width: 100%;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+}
+
+#timeline {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 5rem;
+    width: 100%;
+    background: #ccc;
 }
 
 #vis-container {
@@ -53,6 +66,10 @@
     padding: 0.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 0 0.5rem 0.1rem #000;
+}
+
+.main-view-plays-table #play-list .play-card .char {
+    color: violet;
 }
 
 .vis-navbar {

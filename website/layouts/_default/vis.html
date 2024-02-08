@@ -27,6 +27,10 @@
   <link href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.min.js"></script>
 
+  {{ $js_genLabel := resources.Get "js-plugins/tcrs-generated-labels.min.js" }}
+  <script src="{{ $js_genLabel.Permalink }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/toolcool-range-slider/dist/toolcool-range-slider.min.js"></script>
+
   {{ $ts := resources.Get "ts/vis.ts" | js.Build | fingerprint }}
   <script src="{{ $ts.Permalink }}" defer></script>
 </head>

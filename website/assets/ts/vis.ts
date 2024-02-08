@@ -1,13 +1,25 @@
 import { get } from "jquery";
-import { Character, CharacterData, Play, PlayData, Author, AuthorData } from "./IEntity";
+import { Character, Play, Author } from "./IEntity";
 
-var charData: CharacterData, playData: PlayData, authorData: AuthorData;
-let charFilters = {
+const filterInputs = $("input[name=gender], input[name=normalizedProfession], input[name=socialClass], input[name=lang]");
+
+var charData: Character[], playData: Play[], authorData: Author[];
+var filteredCharData: Character[] = [], filteredPlayData: Play[] = [];
+
+let defaultCharFilters = {
   gender: "any",
   normalizedProfession: "any",
   socialClass: "any",
+  lang: "any",
 };
-var filteredData: Character[] = [];
+let charFilters = {...defaultCharFilters};
+
+let defaultPlayFilters = {
+  publisher: "any",
+  author: "any",
+  lang: "any",
+};
+let playFilters = {...defaultPlayFilters};
 
 function getJSON(path: string) : Promise<any> {
   /* Used to get JSON data from a file */
@@ -28,18 +40,17 @@ function getJSON(path: string) : Promise<any> {
   });
 };
 
-// is Character[] when data is filtered
-function generateCharacterTemplate(data: CharacterData | Character[]): string {
-  let html = "<ul>";
+function generateCharacterTemplate(data: Character[]): string {
+  let html = "<ul class='char'>";
   $.each(data, function (index, character: Character) {
     html += `<li>${character.persName}</li>`;
   });
   html += "</ul>";
 
   return html;
-}
+};
 
-async function generatePlayTemplate(data: PlayData): Promise<string> {
+async function generatePlayTemplate(data: Play[], showChars = false): Promise<string> {
   console.time("generatePlayTemplate")
   let html = "";
   try {
@@ -49,23 +60,27 @@ async function generatePlayTemplate(data: PlayData): Promise<string> {
     // playPromises is an array of promises, each of which resolves to a string
     // containing the HTML for a single play card.
     // ? check performance
-    // ----------------
-    // We need to use Object.values() because data is an object, not an array.
-    const playPromises = Object.values(data).map(async (play: Play) => {
+    console.log("generatePlayTemplatedata", data)
+    const playPromises = data.map(async (play: Play) => {
       const titleMain = play.titleMain;
       const titleSub = play.titleSub;
       const authorId = play.authorId;
-      //console.log(titleMain, titleSub, authorId)
       const authorName = await getPlayInfo(authorId, "author");
       //const publisher = getPlayInfo(play["publisher"], "publisher");
-      return `<div class='play-card'><p>${titleMain}<br>${authorName}</p></div>`;
+      html = `<p>${titleMain}<br>${authorName}</p>`
+
+      if (showChars) {
+        html += generateCharacterTemplate(play.characters);
+      }
+
+      return `<div class="play-card">${html}</div>`
     });
 
     // We need to wait for all promises to resolve before we can return the HTML.
     // Otherwise, the function will return before the promises resolve,
     // and [object Promise] will be returned instead.
     const playHtmlArray = await Promise.all(playPromises);
-    html = playHtmlArray.join(''); // Combine HTML strings into a single string
+    html = playHtmlArray.join(""); // Combine HTML strings into a single string
     console.timeEnd("generatePlayTemplate");
 
     return html;
@@ -75,18 +90,18 @@ async function generatePlayTemplate(data: PlayData): Promise<string> {
   }
 }
 
-async function getTemplate(data: CharacterData | PlayData, type: string): Promise<string> {
+async function getTemplate(data: Character[] | Play[], type: string): Promise<string> {
   console.time("getTemplate")
   if (type === "characters") {
     console.timeEnd("getTemplate");
-    return generateCharacterTemplate(data as CharacterData);
+    return generateCharacterTemplate(data as Character[]);
   } else if (type === "plays") {
     console.timeEnd("getTemplate");
-    return generatePlayTemplate(data as PlayData);
+    return generatePlayTemplate(data as Play[]);
   }
 
   return "";
-}
+};
 
 function calcPageSize() {
   const width = $(window).width();
@@ -123,7 +138,7 @@ function setPagination(dataSource: any, type: string) : void {
     formatGoInput: "go to <%= input %>",
     // The callback needs to be async
     // because we need to wait for the template to be generated
-    callback: async (data: CharacterData | PlayData, pagination) => {
+    callback: async (data: Character[] | Play[], pagination) => {
       try {
         var html = await getTemplate(data, type);
         $(listOfEls[1]).html(html);
@@ -133,7 +148,7 @@ function setPagination(dataSource: any, type: string) : void {
       }
     },
   });
-}
+};
 
 async function getPlayInfo(id: string | string[], type: string) : Promise<string> {
   console.time("getPlayInfo")
@@ -151,8 +166,10 @@ async function getPlayInfo(id: string | string[], type: string) : Promise<string
       try {
         if (typeof id === "string") {
           console.timeEnd("getPlayInfo");
-          return data.id.fullName;
+          return data["id"].fullName;
         } else if (id instanceof Array) {
+          // authorId can be an array if there are several authors for one play
+          // so we map over it and retrieve the full name of each author
           const authorNames = id.map((authorId: string) =>
           data[authorId].fullName);
 
@@ -161,21 +178,28 @@ async function getPlayInfo(id: string | string[], type: string) : Promise<string
         }
       } catch (error) {
         console.error("Error getting play info:", error);
-      }
-  }
-}
+      };
+  };
+};
 
-function filterCharacters(charData: CharacterData) : Character[] {
+function filterCharacters(charData: Character[]) : Character[] {
   console.time("filterCharacters");
+  //possible values: M, F, B, U
   const genderFilter = charFilters.gender;
+
   const professionFilter = charFilters.normalizedProfession;
+
+  //possible values: UC, MC, UMC, LC, LMC, LMC|UC
+  //? what is LMC|UC?
   const socialClassFilter = charFilters.socialClass;
+  //possible values: fre, ger, als
+  const langFilter = charFilters.lang;
 
-  console.log(genderFilter, professionFilter, socialClassFilter)
+  console.log(genderFilter, professionFilter, socialClassFilter, langFilter)
 
-  console.log("before : ", Object.values(charData).length)
+  console.log("before : ", charData.length)
 
-  const filteredData = Object.values(charData).filter((char: Character) => {
+  filteredCharData = charData.filter((char: Character) => {
     const genderMatches =
     genderFilter === "any" ||
       // Map "B", "U" and null to "O" (other) to match HTML filter button values
@@ -192,32 +216,23 @@ function filterCharacters(charData: CharacterData) : Character[] {
       socialClassFilter === "any" ||
       char.socialClass === socialClassFilter;
 
-    return genderMatches && professionMatches && socialClassMatches;
+      const langMatches =
+      langFilter === "any" ||
+      char.lang === langFilter;
+
+    return genderMatches && professionMatches && socialClassMatches && langMatches;
   });
 
-  console.log("after : ", filteredData.length)
+  console.log("after : ", filteredCharData.length)
+
+  // activate "Show Plays" filter button
+  // we only want to enable the button if the list is filtered
+  // since all plays are shown by default
+  $("#char-list-show-plays-btn").prop("disabled", false);
 
   console.timeEnd("filterCharacters");
-  return filteredData;
+  return filteredCharData;
 };
-
-
-// function filterCharacters(charData: Character[], filter) : Character[] {
-//   console.time("filterCharacters");
-
-//   const filteredData = charData.filter((char: Character) => {
-//     if (filter === "gender") {
-//       console.log("filtering gender")
-//       return char.sex === charFilters.gender;
-//     } else if (filter === "profession") {
-//       console.log("filtering profession")
-//       return char.profession === charFilters.profession;
-//     }
-//   });
-
-//   console.timeEnd("filterCharacters");
-//   return filteredData;
-// };
 
 //todo: unify w/ plays
 function updateFilters() {
@@ -225,14 +240,58 @@ function updateFilters() {
   const charTemplate = generateCharacterTemplate(filteredData);
   $("#char-list").html(charTemplate);
   setPagination(filteredData, "characters");
-}
+};
 
-function showPlaysByCharacter() {
-  //todo
-  const currentChars: Array<Character> =
-  // @ts-ignore
-  $("#char-list-pagination").pagination("getCurrentPageData");
-}
+function resetFilters() {
+  filterInputs.each((index, e) => {
+    if ($(e).val() === "any") {
+      $(e).prop("checked", true);
+    }
+  });
+
+  //todo: make default char template
+  const charTemplate = generateCharacterTemplate(charData);
+  $("#char-list").html(charTemplate);
+
+  charFilters = defaultCharFilters;
+  $("#char-list-show-plays-btn, #filter-reset-btn").prop("disabled", true);
+};
+
+async function showPlaysByCharacters() : Promise<void> {
+  const playsWithChars: Play[] = [];
+
+  filteredCharData.forEach((char: Character) => {
+    playData.filter((play: Play) => play.workId === char.workId && play.lang === char.lang)
+    .forEach((play: Play) => {
+      // check if play already exists in playsWithChars
+      // if so, we only need to update the characters array, not the entire object
+      // otherwise, this creates duplicates and will show one play per character
+      // even though some characters share the same play
+      let playMatch = playsWithChars.find(p =>
+        p.workId === play.workId && p.lang === play.lang
+      );
+
+      if (playMatch) {
+        playMatch.characters.push(char);
+      } else {
+        playsWithChars.push({
+          ...play,
+          characters: [char]
+        });
+      }
+    });
+  });
+
+  console.log("playsWithChars", playsWithChars)
+
+  const playTemplate = await generatePlayTemplate(playsWithChars, true);
+  $("#play-list").html(playTemplate);
+  $(".play-header").text("Plays (filtered by character)");
+  console.log("playTemplate", playTemplate)
+  //?todo: fix bug with pagination
+  //?todo: not updating html template properly probably due to async
+  //setPagination(playsWithChars, "plays");
+};
 
 async function fetchData(): Promise<void> {
   console.time("fetchData");
@@ -242,10 +301,12 @@ async function fetchData(): Promise<void> {
 
     $("#loader").show();
 
-    [charData, playData, authorData] = await Promise.all(JSONFiles.map((file: string) =>
-    // initialization with nested data
-    // not sure if really good that way though
-    getJSON(file).then(data => data.characters || data.plays || data.authors)));
+    [charData, playData, authorData] = await Promise.all(
+      JSONFiles.map(async (file: string) => {
+        const {characters, plays, authors} = await getJSON(file);
+        return characters || plays || authors;
+      })
+    );
 
     const charTemplate = await getTemplate(charData, types[0]);
     const playTemplate = await getTemplate(playData, types[1]);
@@ -255,15 +316,13 @@ async function fetchData(): Promise<void> {
 
     setPagination(charData, types[0]);
     setPagination(playData, types[1]);
-
-    filteredData = Object.values(charData);
   } catch (error) {
     console.error("Error fetching data:", error);
   } finally {
     $("#loader").hide();
   }
   console.timeEnd("fetchData");
-}
+};
 
 $(function () {
   fetchData();
@@ -278,46 +337,22 @@ $(function () {
       }
     });
 
-  // $("input[name=gender]").on("change", function () {
-  //   charFilters.gender = $(this).val();
+  // "this" is an input element, not an HTMLElement
+  // TS fix: https://www.typescriptlang.org/docs/handbook/2/functions.html#declaring-this-in-a-function
+  filterInputs.on("change", function(this: HTMLInputElement) {
+    if ($("#filter-reset-btn").prop("disabled")) {
+      $("#filter-reset-btn").prop("disabled", false);
+    }
 
-  //   console.log("aa", filteredData)
-  //   if (!isGenderFiltered) {
-  //     filteredData = filterCharacters(filteredData, "gender");
-  //     isGenderFiltered = true;
-  //   } else {
-  //     filteredData = filterCharacters(Object.values(charData), "gender");
-  //     isGenderFiltered = false;
-  //   }
-  //   console.log("bb", filteredData)
-  //   const charTemplate = generateCharacterTemplate(filteredData);
-  //   $("#char-list").html(charTemplate);
-  //   setPagination(filteredData, "characters");
-  // });
-
-  $("input[name=gender]").on("change", function () {
-    charFilters.gender = <string>$(this).val();
+    const filterName = this.name;
+    charFilters[filterName] = $(this).val();
     updateFilters();
   });
 
-  $("input[name=profession]").on("change", function () {
-    charFilters.normalizedProfession = <string>$(this).val();
-    updateFilters();
-  });
+  //?only show button if filter applied
+  $("#char-list-show-plays-btn").on("click", showPlaysByCharacters);
 
-  $("input[name=class]").on("change", function () {
-    charFilters.socialClass = <string>$(this).val();
-    updateFilters();
-  });
-
-  // $("input[name=profession]").on("change", function () {
-  //   charFilters.profession = $(this).val();
-
-  //   filteredData = filterCharacters(filteredData, "profession");
-  //   const charTemplate = generateCharacterTemplate(filteredData);
-  //   $("#char-list").html(charTemplate);
-  //   setPagination(filteredData, "characters");
-  // });
+  $("#filter-reset-btn").on("click", resetFilters);
 
   // this is not a so good idea, we'll think more about that later
   //$(window).on("resize", fetchData);

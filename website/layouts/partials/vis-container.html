@@ -1,37 +1,63 @@
+<div id="loader"></div>
+<div id="timeline">
+    <p>this doesn't work yet!</p>
+    <div class="timeline-slider">
+        <tc-range-slider
+        min="1803"
+        max="1941"
+        value1="1803"
+        value2="1941"
+        round="0"
+        step="1"
+        generate-labels="true">
+        </tc-range-slider>
+    </div>
+</div>
 <div id="vis-container">
-    <div id="loader"></div>
     <div class="item filters">
         <h2>Filters</h2>
+        <button id="filter-reset-btn" disabled>Reset</button>
         <div id="filter-list filter-fixed">
             <h3 class="filter-label">Gender</h3>
-            <input id="gender-any" type="radio" name="gender" value="any" checked/>
-            <label for="gender-any">any</label>
-            <input id="gender-male" type="radio" name="gender" value="M"/>
-            <label for="gender-male">M</label>
-            <input id="gender-female" type="radio" name="gender" value="F" />
-            <label for="gender-female">F</label>
-            <input id="gender-other" type="radio" name="gender" value="O" />
-            <label for="gender-other">O</label>
-            <h3 class="filter-label">Profession</h3>
-            <select id="select-prof" placeholder="Select a profession..." autocomplete="off">
-                <option value="">Select a profession...</option>
-                <!-- todo: autofill -->
-            </select>
-            <input id="prof-any" type="radio" name="profession" value="any" checked/>
-            <label for="prof-any">any</label>
-            <input id="prof-agent" type="radio" name="profession" value="agent"/>
-            <label for="prof-agent">Agent</label>
-            <input id="prof-consumer" type="radio" name="profession" value="consumer"/>
-            <label for="prof-consumer">Consumer</label>
-            <h3 class="filter-label">Social Class</h3>
-            <input id="class-any" type="radio" name="class" value="any" checked/>
-            <label for="class-any">any</label>
-            <input id="class-lc" type="radio" name="class" value="LC"/>
-            <label for="class-lc">LC</label>
-            <input id="class-uc" type="radio" name="class" value="UC"/>
-            <label for="class-uc">UC</label>
-            <h3 class="filter-label">Tradition</h3>
+            <form autocomplete="off">
+                <input id="gender-any" type="radio" name="gender" value="any" checked/>
+                <label for="gender-any">any</label>
+                <input id="gender-male" type="radio" name="gender" value="M"/>
+                <label for="gender-male">M</label>
+                <input id="gender-female" type="radio" name="gender" value="F" />
+                <label for="gender-female">F</label>
+                <input id="gender-other" type="radio" name="gender" value="O" />
+                <label for="gender-other">O</label>
+                <h3 class="filter-label">Profession</h3>
+                <select id="select-prof" placeholder="Select a profession..." autocomplete="off">
+                    <option value="">Select a profession...</option>
+                    <!-- todo: autofill -->
+                </select>
+                <input id="prof-any" type="radio" name="normalizedProfession" value="any" checked/>
+                <label for="prof-any">any</label>
+                <input id="prof-agent" type="radio" name="normalizedProfession" value="agent"/>
+                <label for="prof-agent">Agent</label>
+                <input id="prof-consumer" type="radio" name="normalizedProfession" value="consumer"/>
+                <label for="prof-consumer">Consumer</label>
+                <h3 class="filter-label">Social Class</h3>
+                <input id="class-any" type="radio" name="socialClass" value="any" checked/>
+                <label for="class-any">any</label>
+                <input id="class-lc" type="radio" name="socialClass" value="LC"/>
+                <label for="class-lc">LC</label>
+                <input id="class-uc" type="radio" name="socialClass" value="UC"/>
+                <label for="class-uc">UC</label>
+                <h3 class="filter-label">Tradition</h3>
+                <input id="lang-any" type="radio" name="lang" value="any" checked/>
+                <label for="lang-any">any</label>
+                <input id="lang-fre" type="radio" name="lang" value="fre"/>
+                <label for="lang-fre">fre</label>
+                <input id="lang-ger" type="radio" name="lang" value="ger"/>
+                <label for="lang-ger">ger</label>
+                <input id="lang-als" type="radio" name="lang" value="als"/>
+                <label for="lang-als">als</label>
+            </form>
         </div>
+        <hr>
         <div id="filter-list filter-searchable">
             <input type="text" placeholder="Search..">
             <h3 class="filter-label">Publisher</h3>
@@ -42,12 +68,15 @@
         <div class="item main-view-chars">
             <h2>Characters</h2>
             <div id="char-list"></div>
-            <button id="char-list-button">Show Plays</button>
+            <button id="char-list-show-plays-btn" disabled>Show Plays</button>
             <div id="char-list-pagination"></div>
         </div>
         <div class="item main-view-plays">
-            <div class="item main-view-plays-chart"></div>
+            <div class="item main-view-plays-chart">
+                <h2>Diagrams</h2>
+            </div>
             <div class="item main-view-plays-table">
+                <h2 class="play-header">Plays</h2>
                 <div id="play-list"></div>
                 <div id="play-list-pagination"></div>
             </div>
