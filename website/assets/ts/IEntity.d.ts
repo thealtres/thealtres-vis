@@ -13,13 +13,15 @@ interface Play {
     lang: string;
     titleMain: string;
     titleSub: string;
-    authorId: string | string[];
+    authorId: number | number[];
     publisherId: string;
     nbActs: string;
     characters: Character[]; // not part of the JSON; used for showPlaysByCharacters()
 }
 
 interface Author {
+    authorId: number;
+    lang: string;
     fullName: string;
 }
 

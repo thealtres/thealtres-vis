@@ -29,16 +29,9 @@
                 <input id="gender-other" type="radio" name="gender" value="O" />
                 <label for="gender-other">O</label>
                 <h3 class="filter-label">Profession</h3>
-                <select id="select-prof" placeholder="Select a profession..." autocomplete="off">
-                    <option value="">Select a profession...</option>
-                    <!-- todo: autofill -->
+                <select id="select-prof" placeholder="Search professions..." autocomplete="off">
+                    <option value="">Search professions...</option>
                 </select>
-                <input id="prof-any" type="radio" name="normalizedProfession" value="any" checked/>
-                <label for="prof-any">any</label>
-                <input id="prof-agent" type="radio" name="normalizedProfession" value="agent"/>
-                <label for="prof-agent">Agent</label>
-                <input id="prof-consumer" type="radio" name="normalizedProfession" value="consumer"/>
-                <label for="prof-consumer">Consumer</label>
                 <h3 class="filter-label">Social Class</h3>
                 <input id="class-any" type="radio" name="socialClass" value="any" checked/>
                 <label for="class-any">any</label>
@@ -55,13 +48,15 @@
                 <label for="lang-ger">ger</label>
                 <input id="lang-als" type="radio" name="lang" value="als"/>
                 <label for="lang-als">als</label>
+                <h3 class="filter-label">Publisher</h3>
+                <select id="select-pub" placeholder="Search publishers..." autocomplete="off">
+                    <option value="">Search publishers...</option>
+                </select>
+                <h3 class="filter-label">Author</h3>
+                <select id="select-author" placeholder="Search authors..." autocomplete="off">
+                    <option value="">Search authors...</option>
+                </select>
             </form>
-        </div>
-        <hr>
-        <div id="filter-list filter-searchable">
-            <input type="text" placeholder="Search..">
-            <h3 class="filter-label">Publisher</h3>
-            <h3 class="filter-label">Author</h3>
         </div>
     </div>
     <div class="item main-view">
@@ -80,6 +75,7 @@
             <div class="item main-view-plays-table">
                 <h2 class="play-header">Plays</h2>
                 <div id="play-list"></div>
+                <button id="play-list-show-chars-btn" disabled>Show Characters</button>
                 <div id="play-list-pagination"></div>
             </div>
         </div>
