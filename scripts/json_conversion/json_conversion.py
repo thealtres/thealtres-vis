@@ -102,10 +102,19 @@ def convert_to_json(data: dict, type: str) -> dict:
                 for dct in play_data]
 
         # convert ids to integers
-        play_data = [{k: int(float(v)) if k in ["workId"]
+        play_data = [{k: int(float(v)) if k == "workId"
                 and v is not None
                 else v for k, v in dct.items()}
                 for dct in play_data]
+
+        # convert previously split ids in authorId to integers
+        play_data = [{k: [int(float(id)) if k == "authorId"
+                and id is not None
+                else id for id in v]
+                if isinstance(v, list)
+                else v for k, v in dct.items()}
+                for dct in play_data]
+
 
         for play_dict in play_data:
             json_template["plays"].append(play_dict)
