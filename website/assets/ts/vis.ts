@@ -3,8 +3,7 @@ import { Character, Play, Author } from "./IEntity";
 
 const filterInputs = $("input[name=gender], input[name=normalizedProfession], input[name=socialClass], input[name=lang]");
 
-var charData: Character[], playData: Play[], authorData: Author[];
-var filteredCharData: Character[] = [], filteredPlayData: Play[] = [];
+authorData: Author[] = [], publisherData: Publisher[] = [];
 
 let defaultCharFilters = {
   gender: "any",
@@ -20,6 +19,10 @@ let defaultPlayFilters = {
   lang: "any",
 };
 let playFilters = {...defaultPlayFilters};
+let scrollProgressChar = 0;
+let totalShownCharItems = 0;
+
+let preventScrollEvent = false;
 
 function getJSON(path: string) : Promise<any> {
   /* Used to get JSON data from a file */
@@ -229,6 +232,7 @@ function filterCharacters(charData: Character[]) : Character[] {
   // we only want to enable the button if the list is filtered
   // since all plays are shown by default
   $("#char-list-show-plays-btn").prop("disabled", false);
+  totalShownCharItems = filteredCharData.length;
 
   console.timeEnd("filterCharacters");
   return filteredCharData;
@@ -257,7 +261,14 @@ function resetFilters() {
   $("#char-list-show-plays-btn, #filter-reset-btn").prop("disabled", true);
 };
 
-async function showPlaysByCharacters() : Promise<void> {
+function updateProgress() {
+  console.log("scrollProgressChar", scrollProgressChar, "totalShownCharItems", totalShownCharItems)
+  if (scrollProgressChar > 0) {
+    preventScrollEvent = true;
+    $(".main-view-chars").scrollTop(0);
+  }
+  $(".char-progress").text(`${totalShownCharItems}`);
+}
   const playsWithChars: Play[] = [];
 
   filteredCharData.forEach((char: Character) => {
@@ -314,8 +325,8 @@ async function fetchData(): Promise<void> {
     $("#char-list").html(charTemplate);
     $("#play-list").html(playTemplate);
 
-    setPagination(charData, types[0]);
-    setPagination(playData, types[1]);
+    totalShownCharItems = charData.length;
+    $(".char-progress").text(`${totalShownCharItems}`);
   } catch (error) {
     console.error("Error fetching data:", error);
   } finally {
@@ -347,12 +358,25 @@ $(function () {
     const filterName = this.name;
     charFilters[filterName] = $(this).val();
     updateFilters();
+    updateProgress();
   });
 
   //?only show button if filter applied
   $("#char-list-show-plays-btn").on("click", showPlaysByCharacters);
 
-  $("#filter-reset-btn").on("click", resetFilters);
+  $("#filter-reset-btn").on("click" , function() {
+    resetFilters();
+    updateProgress();
+  });
+
+  $(".main-view-chars").on("scroll", function() {
+    let isScrollPrevented = preventScrollEvent;
+    preventScrollEvent = false;
+    if (!isScrollPrevented) {
+      scrollProgressChar = Math.floor($(this).scrollTop() / document.querySelector(".char li").clientHeight);
+      $(".char-progress").text(`${scrollProgressChar}/${totalShownCharItems}`);
+    }
+  });
 
   // this is not a so good idea, we'll think more about that later
   //$(window).on("resize", fetchData);
