@@ -1,4 +1,5 @@
 import { Character, Play, Author, Publisher } from "./IEntity";
+import { setTimeline } from "../js-plugins/d3-timeline";
 
 const filterInputs = $("input[name=gender], input[name=normalizedProfession], input[name=socialClass], input[name=lang]");
 
@@ -27,6 +28,8 @@ let totalShownCharItems = 0;
 
 let preventScrollEvent = false;
 
+var td;
+
 function getJSON(path: string) : Promise<any> {
   /* Used to get JSON data from a file */
   console.time("getJSON")
@@ -45,6 +48,35 @@ function getJSON(path: string) : Promise<any> {
     console.timeEnd("getJSON");
   });
 };
+
+function generateTimelineData(data: Play[]) {
+  const yearsCount = [];
+
+  data.forEach((p: Play) => {
+    // developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus
+    const year = +p.printed;
+
+    if (!isNaN(year) && year !== 0) {
+      const existingYear = yearsCount.find((item) => item.year === year);
+
+      if (existingYear) {
+        existingYear.count++;
+      } else {
+        yearsCount.push({ count: 1, year });
+      }
+    }
+  });
+
+  // convert to string for D3
+  yearsCount.forEach(item => {
+    item.year = item.year.toString();
+  });
+
+  return yearsCount;
+};
+
+    // strings will be converted to 0 by previously-defined unary plus
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus
 
 function fillSelect(dataType: string, selectId: string) {
   // string for profession, number for ids (author, publisher)
@@ -87,11 +119,12 @@ function fillSelect(dataType: string, selectId: string) {
 
 function generateCharacterTemplate(data: Character[]): string {
   let html = "<ul class='char'>";
-  $.each(data, function (index, character: Character) {
+  $.each(data, async function (index, character: Character) {
     let name = character.persName ?? "";
     let sex = character.sex ?? "";
     let socialClass = character.socialClass ?? "";
     let profession = character.normalizedProfession ?? "";
+    //let date = await getPlayInfo(character.workId, character.lang, "premiered") ?? "";
 
     // filter out empty values
     let charText = [name, sex, socialClass, profession].filter(Boolean).join(", ");
@@ -166,7 +199,7 @@ function getGridElements(type: string) : string[] {
   }
 };
 
-async function getPlayInfo(id: number | number[], lang: string, type: string) : Promise<string> {
+async function getPlayInfo(id: number | number[], lang: string, type: string) : Promise<string|number> {
   console.time("getPlayInfo")
   if (id === undefined) {
     return "Unknown";
@@ -287,11 +320,20 @@ function filterPlays(playData: Play[]) : Play[] {
   return filteredPlayData;
 }
 
-//todo: unify w/ plays
-function updateFilters() {
-  const filteredData = filterCharacters(charData);
-  const charTemplate = generateCharacterTemplate(filteredData);
-  $("#char-list").html(charTemplate);
+async function updateFilters(dataType: string) {
+  let filteredData: Character[] | Play[], template: string | Promise<string>;
+  switch (dataType) {
+    case "characters":
+      filteredData = filterCharacters(charData);
+      template = generateCharacterTemplate(filteredData);
+      $("#char-list").html(template);
+    case "plays":
+      filteredData = filterPlays(playData)
+      template = await generatePlayTemplate(filteredData);
+      $("#play-list").html(template);
+  }
+
+
 };
 
 function resetFilters() {
@@ -377,32 +419,42 @@ async function fetchData(): Promise<void> {
         return characters || plays || authors || publishers;
       })
     );
-
-    const charTemplate = await getTemplate(charData, "characters");
-    const playTemplate = await getTemplate(playData, "plays");
-
-    $("#char-list").html(charTemplate);
-    $("#play-list").html(playTemplate);
-
-    fillSelect("profession", "#select-prof");
-    fillSelect("publisher", "#select-pub");
-    fillSelect("author", "#select-author");
-
-    totalShownCharItems = charData.length;
-    $(".char-progress").text(`${totalShownCharItems}`);
   } catch (error) {
     console.error("Error fetching data:", error);
   } finally {
+    drawUI();
     $("#loader").hide();
   }
   console.timeEnd("fetchData");
 };
 
+async function drawUI() {
+  console.log(playData, charData, authorData, publisherData)
+  const charTemplate = await getTemplate(charData, "characters");
+  const playTemplate = await getTemplate(playData, "plays");
+
+  $("#char-list").html(charTemplate);
+  $("#play-list").html(playTemplate);
+
+  fillSelect("profession", "#select-prof");
+  fillSelect("publisher", "#select-pub");
+  fillSelect("author", "#select-author");
+
+  td = generateTimelineData(playData)
+  setTimeline(td)
+
+  totalShownCharItems = charData.length;
+  $(".char-progress").text(`${totalShownCharItems}`);
+}
+
 $(function () {
   fetchData();
 
+  console.log("filteredData", filteredPlayData)
+
   // "this" is an input element, not an HTMLElement
   // TS fix: https://www.typescriptlang.org/docs/handbook/2/functions.html#declaring-this-in-a-function
+  //todo: create filterInputs dict with separate inputs for char and plays
   filterInputs.on("change", function(this: HTMLInputElement) {
     if ($("#filter-reset-btn").prop("disabled")) {
       $("#filter-reset-btn").prop("disabled", false);
@@ -412,7 +464,11 @@ $(function () {
 
     const filterName = this.name;
     charFilters[filterName] = $(this).val();
-    updateFilters();
+    //todo: change this so that it accepts plays as well
+    updateFilters("characters");
+    //todo: remove; testing array only
+    updateFilters("plays")
+    console.log("playData", filteredPlayData)
     updateProgress();
   });
 
@@ -434,10 +490,14 @@ $(function () {
     preventScrollEvent = false;
     if (!isScrollPrevented) {
       scrollProgressChar = Math.floor($(this).scrollTop() / document.querySelector(".char li").clientHeight);
+
+      // if (scrollProgressChar > totalShownCharItems) {
+      //   scrollProgressChar = totalShownCharItems;
+      // }
+
       $(".char-progress").text(`${scrollProgressChar}/${totalShownCharItems}`);
     }
   });
 
-  // this is not a so good idea, we'll think more about that later
-  //$(window).on("resize", fetchData);
+  //setTimeline(filteredPlayData)
 });

@@ -16,6 +16,7 @@ interface Play {
     authorId: number | number[];
     publisherId: string;
     nbActs: string;
+    printed: string; // some values such as: "?1824"
     characters: Character[]; // not part of the JSON; used for showPlaysByCharacters()
 }
 

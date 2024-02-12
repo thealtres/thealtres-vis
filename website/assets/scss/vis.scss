@@ -2,26 +2,45 @@ hr {
     background: white;
 }
 
+/* Remove top header for visualization page to get more space */
+.navbar {
+    display: none;
+}
+
 .universal-wrapper {
     width: 100%;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
 
-#timeline {
+.universal-wrapper > h1 {
+    display: none;
+}
+
+#timeline-header {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    height: 5rem;
+    flex-direction: row;
+    height: 100%;
     width: 100%;
     background: #ccc;
+}
+
+#timeline {
+    margin-left: auto;
+    margin-right: auto;
+    scale: 1;
+}
+
+.logo {
+    display: flex;
 }
 
 #vis-container {
     display: grid;
     grid-template-columns: 10% 80% 10%;
     width: 100%;
-    height: 40rem;
+    height: 60rem;
   }
 
 .filters {
@@ -37,12 +56,11 @@ hr {
     background: #dddbff;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 40rem;
+    height: 60rem; /*Same height as #vis-container*/
 }
 
 .main-view-chars {
     background: #acf54e;
-    //height: 100%;
     overflow-y: scroll;
 }
 
