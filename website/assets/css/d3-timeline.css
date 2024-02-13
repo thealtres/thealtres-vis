@@ -1,5 +1,5 @@
 #timeline .metric-chart text {
-	fill: black;
+	fill: #ccc;
 	font-size: 10px;
 	font-weight: bold;
 	font-family: Helvetica, Arial, "sans serif";
@@ -81,7 +81,7 @@
 }
 
 #timeline .metric-chart .scale_button rect {
-	fill: #eaeaea;
+	fill: rgb(32, 33, 36);
 }
 #timeline .metric-chart .scale_button:hover text {
 	fill: #417DD6;
