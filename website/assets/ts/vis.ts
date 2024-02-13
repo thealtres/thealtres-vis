@@ -23,8 +23,7 @@ const defaultPlayFilters = {
 };
 let playFilters = {...defaultPlayFilters};
 
-let scrollProgressChar = 0;
-let totalShownCharItems = 0;
+let currentCharTemplate, currentPlayTemplate;
 
 let totalShownCharItems, totalShownPlayItems = 0;
 // multiplier for totalShownItems in handleScroll(); used only for play cards
@@ -128,9 +127,6 @@ function generateTimelineData(data: Play[]) {
   return yearsCount;
 };
 
-    // strings will be converted to 0 by previously-defined unary plus
-    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus
-
 function fillSelect(dataType: string, selectId: string) {
   // string for profession, number for ids (author, publisher)
   let data: { value: string | number, text: string }[];
@@ -170,9 +166,12 @@ function fillSelect(dataType: string, selectId: string) {
   });
 };
 
-function generateCharacterTemplate(data: Character[]): string {
+function generateCharacterTemplate(data: Character[], showPlayBtn = true): string {
   let html = "<ul class='char'>";
-  $.each(data, async function (index, character: Character) {
+  $.each(data, function (index, character: Character) {
+    let workId = character.workId;
+    let charId = character.characterId;
+    let lang = character.lang;
     let name = character.persName ?? "";
     let sex = character.sex ?? "";
     let socialClass = character.socialClass ?? "";
@@ -182,14 +181,23 @@ function generateCharacterTemplate(data: Character[]): string {
     // filter out empty values
     let charText = [name, sex, socialClass, profession].filter(Boolean).join(", ");
 
+    if (showPlayBtn) {
+      charText += `<i
+      class="char-list-show-play-unique-btn pointer fa-solid fa-magnifying-glass"
+      data-workid=${workId}
+      data-charid=${charId}
+      data-lang=${lang}></i>`;
+    }
+
     html += `<li>${charText}</li>`;
+
   });
   html += "</ul>";
 
   return html;
 };
 
-async function generatePlayTemplate(data: Play[], showChars = false): Promise<string> {
+async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Promise<string> {
   console.time("generatePlayTemplate")
   let html = "";
   try {
@@ -199,7 +207,6 @@ async function generatePlayTemplate(data: Play[], showChars = false): Promise<st
     // playPromises is an array of promises, each of which resolves to a string
     // containing the HTML for a single play card.
     // ? check performance
-    console.log("generatePlayTemplatedata", data)
     const playPromises = data.map(async (play: Play) => {
       const titleMain = play.titleMain;
       const titleSub = play.titleSub;
@@ -209,8 +216,9 @@ async function generatePlayTemplate(data: Play[], showChars = false): Promise<st
       //const publisher = getPlayInfo(play["publisher"], "publisher");
       html = `<p>${titleMain}<br>${authorName}</p>`
 
-      if (showChars) {
-        html += generateCharacterTemplate(play.characters);
+      if (charsInPlayCard) {
+        // do not include "Show Plays" button when adding chars to play card
+        html += generateCharacterTemplate(play.characters, false);
       }
 
       return `<div class="play-card">${html}</div>`
@@ -222,6 +230,13 @@ async function generatePlayTemplate(data: Play[], showChars = false): Promise<st
     const playHtmlArray = await Promise.all(playPromises);
     html = playHtmlArray.join(""); // Combine HTML strings into a single string
     console.timeEnd("generatePlayTemplate");
+
+    // we want to save the last template only if this function is not called
+    // from showRelations() (i.e. charsInPlayCard is false)
+    // so that we can show all previously shown plays when clicking "Go back"
+    if (!charsInPlayCard) {
+      currentPlayTemplate = html;
+    }
 
     return html;
   } catch (error) {
@@ -243,17 +258,8 @@ async function getTemplate(data: Character[] | Play[], type: string): Promise<st
   return "";
 };
 
-function getGridElements(type: string) : string[] {
-  switch (type) {
-    case "characters":
-      return ["#char-list-pagination", "#char-list"];
-    case "plays":
-      return ["#play-list-pagination", "#play-list"];
-  }
-};
-
 async function getPlayInfo(id: number | number[], lang: string, type: string) : Promise<string|number> {
-  console.time("getPlayInfo")
+  //console.time("getPlayInfo")
   if (id === undefined) {
     return "Unknown";
   }
@@ -267,7 +273,7 @@ async function getPlayInfo(id: number | number[], lang: string, type: string) : 
     case "author":
       try {
         if (typeof id === "number") {
-          console.timeEnd("getPlayInfo");
+          //console.timeEnd("getPlayInfo");
           const authorName = authorData.find((author: Author) =>
           author.authorId === id && author.lang === lang).fullName;
           return authorName;
@@ -279,7 +285,7 @@ async function getPlayInfo(id: number | number[], lang: string, type: string) : 
               author.authorId === authorId && author.lang === lang).fullName
           );
 
-          console.timeEnd("getPlayInfo");
+          //console.timeEnd("getPlayInfo");
           return authorNames.join(", ");
         }
       } catch (error) {
@@ -287,6 +293,12 @@ async function getPlayInfo(id: number | number[], lang: string, type: string) : 
       };
   };
 };
+
+function getCharacter(workId: number, lang: string, charId: number) : Character {
+  return charData.find((char: Character) =>
+    char.workId === workId && char.lang === lang && char.characterId === charId
+  );
+}
 
 function filterCharacters(charData: Character[]) : Character[] {
   console.time("filterCharacters");
@@ -352,16 +364,17 @@ function filterPlays(playData: Play[]) : Play[] {
       publisherFilter === "any" ||
       play.publisherId === publisherFilter;
 
-    const authorMatches =
-      authorFilter === "any" ||
+    //const authorMatches =
+      //authorFilter === "any" ||
       //todo: fix
-      play.authorId === authorFilter;
+      //play.authorId === authorFilter;
 
     const langMatches =
       langFilter === "any" ||
       play.lang === langFilter;
 
-    return publisherMatches && authorMatches && langMatches;
+    //return publisherMatches && authorMatches && langMatches;
+    return langMatches;
   });
 
   // activate "Show Characters" filter button
@@ -384,11 +397,10 @@ async function updateFilters(dataType: string) {
       $("#char-list").html(template);
     case "plays":
       filteredData = filterPlays(playData)
+      console.log("filteredData", filteredData)
       template = await generatePlayTemplate(filteredData);
       $("#play-list").html(template);
   }
-
-
 };
 
 function resetFilters() {
@@ -398,28 +410,39 @@ function resetFilters() {
     }
   });
 
-  //todo: make default char template
-  const charTemplate = generateCharacterTemplate(charData);
-  $("#char-list").html(charTemplate);
+  totalShownCharItems = charData.length;
+  $("#char-list").html(currentCharTemplate);
+
+  $(".play-header-text").text("Plays");
+  $("#play-list").html(currentPlayTemplate);
+  // show play progress again if hidden by showRelations()
+  $(".play-progress").css("display", "inline");
 
   charFilters = defaultCharFilters;
   $("#char-list-show-plays-btn, #play-list-show-chars-btn, #filter-reset-btn")
   .prop("disabled", true);
+  $(".char-list-show-play-unique-btn").removeClass("active");
 };
 
 function updateProgress() {
-  console.log("scrollProgressChar", scrollProgressChar, "totalShownCharItems", totalShownCharItems)
-  if (scrollProgressChar > 0) {
-    preventScrollEvent = true;
-    $(".main-view-chars").scrollTop(0);
-  }
+  preventScrollEvent = true;
+  $(".main-view-chars, .main-view-plays-table").scrollTop(0);
+  preventScrollEvent = false;
+
   $(".char-progress").text(`${totalShownCharItems}`);
+  $(".play-progress").text(`${totalShownPlayItems}`);
 }
 
-async function showRelations(viewMode: string) : Promise<void> {
+async function showRelations(viewMode: string, unique: boolean, char: Character = null) : Promise<void> {
   console.time("showRelations");
   if (viewMode === "playsByChar") {
     const playsWithChars: Play[] = [];
+
+    console.log(unique, char)
+
+    if (unique && char !== null) {
+      filteredCharData = [char];//? verify
+    }
 
     filteredCharData.forEach((char: Character) => {
       playData.filter((play: Play) => play.workId === char.workId && play.lang === char.lang)
@@ -444,7 +467,9 @@ async function showRelations(viewMode: string) : Promise<void> {
     });
     const playTemplate = await generatePlayTemplate(playsWithChars, true);
     $("#play-list").html(playTemplate);
-    $(".play-header").text("Plays (filtered by character)");
+    $(".play-header-text").text("Plays with " + char.persName)
+    .next().css("display", "none"); // hide progress number
+
   } else if (viewMode === "charsByPlay") {
     const charsInPlays: Character[] = [];
 
@@ -474,6 +499,8 @@ async function fetchData(): Promise<void> {
         return characters || plays || authors || publishers;
       })
     );
+
+    filteredCharData = charData;
   } catch (error) {
     console.error("Error fetching data:", error);
   } finally {
@@ -484,9 +511,11 @@ async function fetchData(): Promise<void> {
 };
 
 async function drawUI() {
-  console.log(playData, charData, authorData, publisherData)
   const charTemplate = await getTemplate(charData, "characters");
   const playTemplate = await getTemplate(playData, "plays");
+
+  currentCharTemplate = charTemplate;
+  currentPlayTemplate = playTemplate;
 
   $("#char-list").html(charTemplate);
   $("#play-list").html(playTemplate);
@@ -526,22 +555,42 @@ $(function () {
     //todo: change this so that it accepts plays as well
     updateFilters("characters");
     //todo: remove; testing array only
+    playFilters[filterName] = $(this).val();
     updateFilters("plays")
     console.log("playData", filteredPlayData)
     updateProgress();
   });
 
   $("#char-list-show-plays-btn").on("click", function() {
-    showRelations("playsByChar");
+    showRelations("playsByChar", false);
   });
 
   $("#play-list-show-chars-btn").on("click", function() {
-    showRelations("charsByPlay");
+    showRelations("charsByPlay", false);
   });
 
   $("#filter-reset-btn").on("click" , function() {
     resetFilters();
     updateProgress();
+  });
+
+  $(document).on("click", ".char-list-show-play-unique-btn", function() {
+    if ($(this).hasClass("active")) {
+      $(".char-list-show-play-unique-btn").removeClass("active");
+      $("#play-list").html(currentPlayTemplate);
+      $(".play-header-text").text("Plays");
+      return;
+    }
+
+    const workId = $(this).data("workid");
+    const charId = $(this).data("charid");
+    const lang = $(this).data("lang");
+    const char = getCharacter(workId, lang, charId);
+    showRelations("playsByChar", true, char);
+
+    // update appearance
+    $(".char-list-show-play-unique-btn").removeClass("active");
+    $(this).addClass("active");
   });
 
   $(".main-view-chars, .main-view-plays-table").on("scroll", function() {
