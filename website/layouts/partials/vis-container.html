@@ -53,7 +53,11 @@
     <div class="item main-view">
         <div class="item main-view-chars">
             <div class="char-header">
-                <h2>Characters <span class="char-progress"></span></h2>
+                <h2>
+                    <span class="char-header-text">Characters</span>
+                    <span class="char-progress"></span>
+                    <i class="fa-solid fa-sort sort-btn pointer"></i>
+                </h2>
             </div>
             <div id="char-list"></div>
             <button id="char-list-show-plays-btn" disabled>Show Plays</button>
@@ -64,7 +68,13 @@
                 <h2>Diagrams</h2>
             </div>
             <div class="item main-view-plays-table">
-                <h2 class="play-header">Plays</h2>
+                <div class="play-header">
+                    <h2>
+                        <span class="play-header-text">Plays</span>
+                        <span class="play-progress"></span>
+                        <i class="fa-solid fa-sort sort-btn pointer"></i>
+                    </h2>
+                </div>
                 <div id="play-list"></div>
                 <button id="play-list-show-chars-btn" disabled>Show Characters</button>
                 <div id="play-list-pagination"></div>

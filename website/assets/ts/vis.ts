@@ -26,6 +26,9 @@ let playFilters = {...defaultPlayFilters};
 let scrollProgressChar = 0;
 let totalShownCharItems = 0;
 
+let totalShownCharItems, totalShownPlayItems = 0;
+// multiplier for totalShownItems in handleScroll(); used only for play cards
+let cardsPerRow = 1;
 let preventScrollEvent = false;
 
 var td;
@@ -48,6 +51,56 @@ function getJSON(path: string) : Promise<any> {
     console.timeEnd("getJSON");
   });
 };
+
+function handleScroll(e, isScrollPrevented: boolean) {
+  if (isScrollPrevented) {
+    return;
+  }
+  preventScrollEvent = false;
+
+  const elName = e.className.split(" ")[1];
+  const listHeight = elName === "main-view-chars" ? $("#char-list").height() :
+   getPlayListHeight();
+  const relatedEls = {
+    "main-view-chars": [["#char-list", ".char-progress"], totalShownCharItems],
+    "main-view-plays-table": [["#play-list", ".play-progress"], totalShownPlayItems]
+  }
+
+  const containerHeight = $("#vis-container").height();
+  const totalShownItems = relatedEls[elName][1];
+
+  //todo: fix for play cards; count is not correct
+  let scrollProgress = e.scrollTop / (listHeight - containerHeight) * (totalShownItems * cardsPerRow);
+
+  // fix going beyond the total number of items
+  scrollProgress = Math.round(Math.max(0, Math.min(totalShownItems * cardsPerRow, scrollProgress)));
+
+  const progressEl = relatedEls[elName][0][1];
+
+  if (scrollProgress === 0) {
+    $(progressEl).text(`${totalShownItems}`);
+  } else {
+    $(progressEl).text(`${scrollProgress}/${totalShownItems}`);
+  }
+}
+
+function getPlayListHeight() {
+  let playListHeight = 0;
+
+  $("#play-list").find(".play-card").each((index, el) => {
+    playListHeight += $(el).outerHeight();
+  });
+
+  return playListHeight;
+}
+
+function setCardsPerRow() {
+  const cardWidth = $('.play-card:first-child').width();
+  const containerWidth = $('#play-list').width();
+  const cards = Math.floor(containerWidth / cardWidth);
+
+  cardsPerRow = cards;
+}
 
 function generateTimelineData(data: Play[]) {
   const yearsCount = [];
@@ -316,6 +369,8 @@ function filterPlays(playData: Play[]) : Play[] {
   // since all characters are shown by default
   $("#play-list-show-chars-btn").prop("disabled", false);
 
+  totalShownPlayItems = filteredPlayData.length;
+
   console.timeEnd("filterPlays");
   return filteredPlayData;
 }
@@ -444,7 +499,11 @@ async function drawUI() {
   setTimeline(td)
 
   totalShownCharItems = charData.length;
+  totalShownPlayItems = playData.length;
   $(".char-progress").text(`${totalShownCharItems}`);
+  $(".play-progress").text(`${totalShownPlayItems}`);
+
+  setCardsPerRow();
 }
 
 $(function () {
@@ -485,18 +544,8 @@ $(function () {
     updateProgress();
   });
 
-  $(".main-view-chars").on("scroll", function() {
-    let isScrollPrevented = preventScrollEvent;
-    preventScrollEvent = false;
-    if (!isScrollPrevented) {
-      scrollProgressChar = Math.floor($(this).scrollTop() / document.querySelector(".char li").clientHeight);
-
-      // if (scrollProgressChar > totalShownCharItems) {
-      //   scrollProgressChar = totalShownCharItems;
-      // }
-
-      $(".char-progress").text(`${scrollProgressChar}/${totalShownCharItems}`);
-    }
+  $(".main-view-chars, .main-view-plays-table").on("scroll", function() {
+    handleScroll(this, preventScrollEvent);
   });
 
   //setTimeline(filteredPlayData)
