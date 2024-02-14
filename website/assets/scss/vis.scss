@@ -1,3 +1,8 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
 body {
     background: rgb(32, 33, 36);
     color: #ccc;
@@ -60,7 +65,7 @@ button:hover {
     display: grid;
     grid-template-columns: 10% 80% 10%;
     width: 100%;
-    height: 60rem;
+    height: 50rem; /*shares height with .main-view*/
   }
 
 .filters {
@@ -76,7 +81,7 @@ button:hover {
     //background: #dddbff;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 60rem; /*Same height as #vis-container*/
+    height: 50rem; /*shares height with #vis-container*/
 }
 
 .main-view-chars {
@@ -114,7 +119,8 @@ button:hover {
 .main-view-plays-table #play-list {
     height: 5em;
     display: grid;
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 10em;
 }
 
 .main-view-plays-table #play-list .play-card {
@@ -169,4 +175,9 @@ button:hover {
 
 .char-list-show-play-unique-btn.active {
     color: green;
+}
+
+#char-list-pagination, #play-list-pagination {
+    display: inline;
+    background: red;
 }

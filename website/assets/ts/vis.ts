@@ -23,14 +23,20 @@ const defaultPlayFilters = {
 };
 let playFilters = {...defaultPlayFilters};
 
-let currentCharTemplate, currentPlayTemplate;
+let currentCharTemplate: string, currentPlayTemplate: string;
 
-let totalShownCharItems, totalShownPlayItems = 0;
-// multiplier for totalShownItems in handleScroll(); used only for play cards
-let cardsPerRow = 1;
+let totalShownCharItems = 0, totalShownPlayItems = 0;
+
 let preventScrollEvent = false;
 
-var td;
+let timelineData = [];
+
+/* Pagination */
+let playCurrentPage = 1;
+let charCurrentPage = 1;
+const itemsPerPage = 50;
+let loadedCharData = [];
+let loadedPlayData = [];
 
 function getJSON(path: string) : Promise<any> {
   /* Used to get JSON data from a file */
@@ -51,6 +57,85 @@ function getJSON(path: string) : Promise<any> {
   });
 };
 
+async function renderData(elName, loadedData, currentPage) {
+  if (loadedData.length === 0) {
+    if (elName === "main-view-chars") {
+      $("#char-list").html("<p>No characters found</p>");
+      $("#char-list-show-plays-btn, #char-list-sort-btn").addClass("disabled");
+    } else {
+      $("#play-list").html("<p>No plays found</p>");
+      $("#play-list-show-chars-btn, #play-list-sort-btn").addClass("disabled");
+    }
+    return;
+  }
+
+  const pageData = loadedData.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+  const template = elName === "main-view-chars" ? generateCharacterTemplate(pageData) :
+    await generatePlayTemplate(pageData);
+  const pageLink = createPaginationLink(currentPage, elName.split("-")[2]);
+  let html = elName === "main-view-chars" ? $("#char-list").html() + `<p id="chars-p-${currentPage}">Page ${currentPage}</p>` + template :
+    $("#play-list").html() + template;
+
+  if (elName === "main-view-chars") {
+    $("#char-list-pagination").append(pageLink);
+    $("#char-list").html(html);
+  } else {
+    $("#play-list").html(html);
+    $("#play-list-pagination").append(pageLink);
+    $("#play-list").html(html);
+  }
+}
+
+function handlePagination(e, currentPage, totalItems, filteredData, loadedData) {
+  const elName = e.className.split(" ")[1];
+  const currentScrollPosition = e.scrollTop;
+  const listHeight = elName === "main-view-chars" ? $("#char-list").height() :
+   getPlayListHeight();
+  const viewPortHeight = $(e).height();
+  //console.log(currentScrollPosition+viewPortHeight, listHeight-100)
+  if (currentScrollPosition + viewPortHeight >= listHeight - 100) {
+    if (currentPage * itemsPerPage < totalItems) {
+      currentPage++;
+      const newData = filteredData.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+      loadedData.push(...newData);
+      console.log(`Loading page ${currentPage} of ${elName} with ${newData.length} items`);
+      renderData(elName, loadedData, currentPage);
+    }
+  }
+
+  if (elName === "main-view-chars") {
+    charCurrentPage = currentPage;
+  } else {
+    playCurrentPage = currentPage;
+  }
+}
+
+function createPaginationLink(pageNumber, type) {
+  const pageLink = document.createElement("a");
+  pageLink.href = `#${type}-p-${pageNumber}`;
+  pageLink.innerHTML = pageNumber;
+
+  pageLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    scrollToPageNumber(pageNumber, type);
+  });
+
+  return pageLink;
+}
+
+function scrollToPageNumber(pageNumber, type) {
+  preventScrollEvent = true;
+  const anchor = document.getElementById(`${type}-p-${pageNumber}`);
+
+  if (anchor) {
+    //todo: fix
+    anchor.scrollIntoView({ block: 'nearest', behavior: 'smooth' })
+  } else {
+    console.error(`No anchor found for page ${pageNumber}, type ${type}`);
+  }
+  preventScrollEvent = false;
+}
+
 function handleScroll(e, isScrollPrevented: boolean) {
   if (isScrollPrevented) {
     return;
@@ -58,47 +143,23 @@ function handleScroll(e, isScrollPrevented: boolean) {
   preventScrollEvent = false;
 
   const elName = e.className.split(" ")[1];
-  const listHeight = elName === "main-view-chars" ? $("#char-list").height() :
-   getPlayListHeight();
-  const relatedEls = {
-    "main-view-chars": [["#char-list", ".char-progress"], totalShownCharItems],
-    "main-view-plays-table": [["#play-list", ".play-progress"], totalShownPlayItems]
-  }
-
-  const containerHeight = $("#vis-container").height();
-  const totalShownItems = relatedEls[elName][1];
-
-  //todo: fix for play cards; count is not correct
-  let scrollProgress = e.scrollTop / (listHeight - containerHeight) * (totalShownItems * cardsPerRow);
-
-  // fix going beyond the total number of items
-  scrollProgress = Math.round(Math.max(0, Math.min(totalShownItems * cardsPerRow, scrollProgress)));
-
-  const progressEl = relatedEls[elName][0][1];
-
-  if (scrollProgress === 0) {
-    $(progressEl).text(`${totalShownItems}`);
+  if (elName === "main-view-chars") {
+    handlePagination(e, charCurrentPage, totalShownCharItems, filteredCharData, loadedCharData);
   } else {
-    $(progressEl).text(`${scrollProgress}/${totalShownItems}`);
+    handlePagination(e, playCurrentPage, totalShownPlayItems, filteredPlayData, loadedPlayData);
   }
 }
 
 function getPlayListHeight() {
-  let playListHeight = 0;
+  const playList = document.getElementById("play-list");
+  const gridStyle = getComputedStyle(playList);
+  // remove "px" from the string and convert to int
+  const rowHeight = parseInt(gridStyle.gridAutoRows.slice(0, -2));
+  //todo: calculate automatically
+  // 3 is the number of plays shown per row on large screens
+  const numRows = (playList.children.length)/3;
 
-  $("#play-list").find(".play-card").each((index, el) => {
-    playListHeight += $(el).outerHeight();
-  });
-
-  return playListHeight;
-}
-
-function setCardsPerRow() {
-  const cardWidth = $('.play-card:first-child').width();
-  const containerWidth = $('#play-list').width();
-  const cards = Math.floor(containerWidth / cardWidth);
-
-  cardsPerRow = cards;
+  return rowHeight * numRows;
 }
 
 function generateTimelineData(data: Play[]) {
@@ -393,14 +454,21 @@ async function updateFilters(dataType: string) {
   switch (dataType) {
     case "characters":
       filteredData = filterCharacters(charData);
-      template = generateCharacterTemplate(filteredData);
-      $("#char-list").html(template);
+      charCurrentPage = 1;
+      $("#char-list").html("");
+      $("#char-list-pagination").html("");
+      renderData("main-view-chars", filteredData, charCurrentPage);
     case "plays":
-      filteredData = filterPlays(playData)
-      console.log("filteredData", filteredData)
-      template = await generatePlayTemplate(filteredData);
-      $("#play-list").html(template);
+      playCurrentPage = 1;
+      //todo: uncomment when implementing play filters
+      // filteredData = filterPlays(playData)
+      // $("#play-list").html("");
+      // $("#play-list-pagination").html("");
+      // renderData("main-view-plays-table", filteredData, playCurrentPage);
   }
+
+  $("#filter-reset-btn").removeClass("disabled");
+  console.log("isResetDisabled", $("#filter-reset-btn").hasClass("disabled"))
 };
 
 function resetFilters() {
@@ -501,6 +569,8 @@ async function fetchData(): Promise<void> {
     );
 
     filteredCharData = charData;
+    filteredPlayData = playData;
+
   } catch (error) {
     console.error("Error fetching data:", error);
   } finally {
@@ -524,42 +594,34 @@ async function drawUI() {
   fillSelect("publisher", "#select-pub");
   fillSelect("author", "#select-author");
 
-  td = generateTimelineData(playData)
-  setTimeline(td)
+  timelineData = generateTimelineData(playData)
+  setTimeline(timelineData)
 
   totalShownCharItems = charData.length;
   totalShownPlayItems = playData.length;
   $(".char-progress").text(`${totalShownCharItems}`);
   $(".play-progress").text(`${totalShownPlayItems}`);
 
-  setCardsPerRow();
+  loadedCharData = charData.slice(0, itemsPerPage);
+  loadedPlayData = playData.slice(0, itemsPerPage);
+
+  renderData("main-view-chars", loadedCharData, charCurrentPage);
+  renderData("main-view-plays-table", loadedPlayData, playCurrentPage);
+
+  await fillFilterValues("characters");
+
+  enableCharFilterBtns();
+
+  // @ts-ignore | initialize tooltips
+  $("[rel=tooltip]").tooltip();
+
+  // disable "Show Plays", "Show Characters" and "Reset" buttons by default
+  $("#char-list-show-plays-btn, #play-list-show-chars-btn, #filter-reset-btn")
+  .addClass("disabled");
 }
 
 $(function () {
   fetchData();
-
-  console.log("filteredData", filteredPlayData)
-
-  // "this" is an input element, not an HTMLElement
-  // TS fix: https://www.typescriptlang.org/docs/handbook/2/functions.html#declaring-this-in-a-function
-  //todo: create filterInputs dict with separate inputs for char and plays
-  filterInputs.on("change", function(this: HTMLInputElement) {
-    if ($("#filter-reset-btn").prop("disabled")) {
-      $("#filter-reset-btn").prop("disabled", false);
-    }
-
-    //scrollProgressChar = 0;
-
-    const filterName = this.name;
-    charFilters[filterName] = $(this).val();
-    //todo: change this so that it accepts plays as well
-    updateFilters("characters");
-    //todo: remove; testing array only
-    playFilters[filterName] = $(this).val();
-    updateFilters("plays")
-    console.log("playData", filteredPlayData)
-    updateProgress();
-  });
 
   $("#char-list-show-plays-btn").on("click", function() {
     showRelations("playsByChar", false);
@@ -596,6 +658,4 @@ $(function () {
   $(".main-view-chars, .main-view-plays-table").on("scroll", function() {
     handleScroll(this, preventScrollEvent);
   });
-
-  //setTimeline(filteredPlayData)
 });
