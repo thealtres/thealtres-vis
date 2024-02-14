@@ -181,3 +181,24 @@ button:hover {
     display: inline;
     background: red;
 }
+
+.char-icons, .play-icons {
+    display: inline;
+    float: right;
+    margin-right: 1rem;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+#filter-gender, #filter-social-class, #filter-lang {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-btn.active {
+    background: black;
+    color: white;
+}

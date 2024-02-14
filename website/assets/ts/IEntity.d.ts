@@ -5,6 +5,7 @@ interface Character {
     persName: string;
     sex: string;
     normalizedProfession: string;
+    professionalGroup: string;
     socialClass: string;
 }
 

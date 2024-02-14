@@ -1,7 +1,16 @@
 import { Character, Play, Author, Publisher } from "./IEntity";
 import { setTimeline } from "../js-plugins/d3-timeline";
 
-const filterInputs = $("input[name=gender], input[name=normalizedProfession], input[name=socialClass], input[name=lang]");
+// These are professionalGroup values to be filtered out in fillFilterValues()
+// we may convert them to null in the future
+const invalidProfValues = ["n/a", "ignorer", "vague", "pas couvert", "unknown"]
+
+const charFilterEls = {
+  "lang": $("#filter-lang-values"),
+  "sex": $("#filter-gender-values"),
+  "professionalGroup": $("#filter-profession-values"),
+  "socialClass": $("#filter-social-class-values"),
+}
 
 let charData: Character[] = [], playData: Play[] = [],
 authorData: Author[] = [], publisherData: Publisher[] = [];
@@ -9,17 +18,17 @@ authorData: Author[] = [], publisherData: Publisher[] = [];
 let filteredCharData: Character[] = [], filteredPlayData: Play[] = [];
 
 const defaultCharFilters = {
-  gender: "any",
-  normalizedProfession: "any",
-  socialClass: "any",
-  lang: "any",
+  lang: [],
+  sex: [],
+  professionalGroup: [],
+  socialClass: [],
 };
 let charFilters = {...defaultCharFilters};
 
 const defaultPlayFilters = {
-  publisher: "any",
-  author: "any",
-  lang: "any",
+  publisher: [],
+  author: [],
+  lang: [],
 };
 let playFilters = {...defaultPlayFilters};
 
@@ -188,17 +197,86 @@ function generateTimelineData(data: Play[]) {
   return yearsCount;
 };
 
+async function fillFilterValues(data) {
+  let professionMap = await getJSON("/json/profession_map.json");
+  console.log("professionMap", professionMap)
+
+  switch (data) {
+    case "characters":
+      for (const key in charFilterEls) {
+        // const values = new Set(charData.map((char: Character) => char[key])
+        // .filter(value => value !== null));
+        // const select = charFilterEls[key];
+        const values = new Set();
+
+        if (key === "professionalGroup") {
+          for (const char of charData) {
+            const originalValue = char.professionalGroup;
+
+            // skip invalid values
+            if (invalidProfValues.includes(originalValue)
+            || originalValue === null) continue;
+
+            const mappedValue = professionMap[originalValue];
+
+            if (mappedValue) {
+              values.add(mappedValue);
+            } else {
+              values.add(originalValue);
+            }
+          };
+        } else {
+          const newValues = charData.map((char) => char[key])
+          .filter(value => value !== null);
+
+          newValues.forEach(value => values.add(value));
+        }
+
+        const select = charFilterEls[key];
+        values.forEach((value : string) => {
+          const option = document.createElement("button");
+          option.textContent = value;
+          option.name = key;
+          $(option).addClass("filter-btn");
+          select.append(option);
+        });
+      }
+    case "plays":
+      //todo with selects
+    }
+}
+
+function enableCharFilterBtns() {
+  $(".filter-btn").on("click", function() {
+    const key = $(this).attr("name");
+    let value = null;
+    if (key != "professionalGroup") {
+      value = $(this).text();
+    } else {
+      //todo: get og-value
+      value = $(this).data("og-value");
+    }
+    console.log(key, value)
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      // remove value from array
+      charFilters[key] = charFilters[key].filter(item => item !== value);
+    } else {
+      $(this).addClass("active");
+      if (!charFilters[key].includes(value)) {
+        charFilters[key].push(value);
+      }
+    }
+
+    updateFilters("characters");
+    updateProgress();
+  });
+}
+
 function fillSelect(dataType: string, selectId: string) {
-  // string for profession, number for ids (author, publisher)
-  let data: { value: string | number, text: string }[];
+  let data: { value: number, text: string }[];
 
   switch (dataType) {
-    case "profession":
-      data = charData.map((char: Character) => ({
-        value: char.normalizedProfession,
-        text: char.normalizedProfession,
-      }));
-      break;
     case "publisher":
       data = publisherData.map((publisher: Publisher) => ({
         value: publisher.publisherId,
@@ -221,7 +299,7 @@ function fillSelect(dataType: string, selectId: string) {
       field: "text",
       direction: "asc"
     },
-    maxOptions: 5,
+    maxOptions: null,
     highlight: true,
     maxItems: null,
   });
@@ -236,7 +314,7 @@ function generateCharacterTemplate(data: Character[], showPlayBtn = true): strin
     let name = character.persName ?? "";
     let sex = character.sex ?? "";
     let socialClass = character.socialClass ?? "";
-    let profession = character.normalizedProfession ?? "";
+    let profession = character.professionalGroup ?? "";
     //let date = await getPlayInfo(character.workId, character.lang, "premiered") ?? "";
 
     // filter out empty values
@@ -363,43 +441,33 @@ function getCharacter(workId: number, lang: string, charId: number) : Character 
 
 function filterCharacters(charData: Character[]) : Character[] {
   console.time("filterCharacters");
-  //possible values: M, F, B, U
-  const genderFilter = charFilters.gender;
-
-  const professionFilter = charFilters.normalizedProfession;
-
-  //possible values: UC, MC, UMC, LC, LMC, LMC|UC
-  //? what is LMC|UC?
-  const socialClassFilter = charFilters.socialClass;
   //possible values: fre, ger, als
   const langFilter = charFilters.lang;
-
-  console.log(genderFilter, professionFilter, socialClassFilter, langFilter)
+  //possible values: M, F, B, U
+  // B = both (if several chars); U = unknown
+  const genderFilter = charFilters.sex;
+  //todo: possible values: todo
+  const professionFilter = charFilters.professionalGroup;
+  console.log("professionFilter", professionFilter)
+  //possible values: UC, MC, UMC, LC, LMC, LMC|UC
+  const socialClassFilter = charFilters.socialClass;
 
   console.log("before : ", charData.length)
 
   filteredCharData = charData.filter((char: Character) => {
-    const genderMatches =
-    genderFilter === "any" ||
-      // Map "B", "U" and null to "O" (other) to match HTML filter button values
-      //? B = ??? (both?)
-      //? U = ??? (unknown?) | if unknown, replace nulls w/ script
-      (genderFilter === "O" && ["B", "U", null].includes(char.sex)) ||
-      char.sex === genderFilter;
+    const langMatches = langFilter.length === 0 ||
+      langFilter.some((filter: string) => filter === char.lang);
 
-    const professionMatches =
-      professionFilter === "any" ||
-      char.normalizedProfession === professionFilter;
+    const genderMatches = genderFilter.length === 0 ||
+    genderFilter.some((filter: string) => filter === char.sex);
 
-    const socialClassMatches =
-      socialClassFilter === "any" ||
-      char.socialClass === socialClassFilter;
+    const professionMatches = professionFilter.length === 0 ||
+      professionFilter.some((filter: string) => filter === char.professionalGroup);
 
-      const langMatches =
-      langFilter === "any" ||
-      char.lang === langFilter;
+    const socialClassMatches = socialClassFilter.length === 0 ||
+      socialClassFilter.some((filter: string) => filter === char.socialClass);
 
-    return genderMatches && professionMatches && socialClassMatches && langMatches;
+    return langMatches && genderMatches && professionMatches && socialClassMatches;
   });
 
   console.log("after : ", filteredCharData.length)
@@ -407,7 +475,7 @@ function filterCharacters(charData: Character[]) : Character[] {
   // activate "Show Plays" filter button
   // we only want to enable the button if the list is filtered
   // since all plays are shown by default
-  $("#char-list-show-plays-btn").prop("disabled", false);
+  $("#char-list-show-plays-btn, #char-list-sort-btn").removeClass("disabled");
   totalShownCharItems = filteredCharData.length;
 
   console.timeEnd("filterCharacters");
@@ -441,7 +509,7 @@ function filterPlays(playData: Play[]) : Play[] {
   // activate "Show Characters" filter button
   // we only want to enable the button if the list is filtered
   // since all characters are shown by default
-  $("#play-list-show-chars-btn").prop("disabled", false);
+  $("#play-list-show-chars-btn").removeClass("disabled");
 
   totalShownPlayItems = filteredPlayData.length;
 
@@ -472,11 +540,10 @@ async function updateFilters(dataType: string) {
 };
 
 function resetFilters() {
-  filterInputs.each((index, e) => {
-    if ($(e).val() === "any") {
-      $(e).prop("checked", true);
-    }
-  });
+  // reset filter arrays
+  charFilters = defaultCharFilters;
+  //todo: uncomment when implementing play filters
+  //playFilters = defaultPlayFilters;
 
   totalShownCharItems = charData.length;
   $("#char-list").html(currentCharTemplate);
@@ -486,10 +553,9 @@ function resetFilters() {
   // show play progress again if hidden by showRelations()
   $(".play-progress").css("display", "inline");
 
-  charFilters = defaultCharFilters;
   $("#char-list-show-plays-btn, #play-list-show-chars-btn, #filter-reset-btn")
-  .prop("disabled", true);
-  $(".char-list-show-play-unique-btn").removeClass("active");
+  .addClass("disabled");
+  $(".char-list-show-play-unique-btn, .filter-btn").removeClass("active");
 };
 
 function updateProgress() {
@@ -557,7 +623,8 @@ async function fetchData(): Promise<void> {
   console.time("fetchData");
   try {
     const JSONFiles = ["/json/char_data.json", "/json/play_data.json",
-                      "/json/author_data.json", "/json/publisher_data.json"];
+                      "/json/author_data.json", "/json/publisher_data.json",
+                      "/json/profession_map.json"];
 
     $("#loader").show();
 
@@ -587,10 +654,6 @@ async function drawUI() {
   currentCharTemplate = charTemplate;
   currentPlayTemplate = playTemplate;
 
-  $("#char-list").html(charTemplate);
-  $("#play-list").html(playTemplate);
-
-  fillSelect("profession", "#select-prof");
   fillSelect("publisher", "#select-pub");
   fillSelect("author", "#select-author");
 
@@ -624,14 +687,26 @@ $(function () {
   fetchData();
 
   $("#char-list-show-plays-btn").on("click", function() {
+    if ($(this).hasClass("disabled")) {
+      return;
+    }
+
     showRelations("playsByChar", false);
   });
 
   $("#play-list-show-chars-btn").on("click", function() {
+    if ($(this).hasClass("disabled")) {
+      return;
+    }
+
     showRelations("charsByPlay", false);
   });
 
   $("#filter-reset-btn").on("click" , function() {
+    if ($(this).hasClass("disabled")) {
+      return;
+    }
+
     resetFilters();
     updateProgress();
   });
@@ -641,7 +716,6 @@ $(function () {
       $(".char-list-show-play-unique-btn").removeClass("active");
       $("#play-list").html(currentPlayTemplate);
       $(".play-header-text").text("Plays");
-      return;
     }
 
     const workId = $(this).data("workid");
