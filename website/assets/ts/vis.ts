@@ -198,15 +198,23 @@ function generateTimelineData(data: Play[]) {
 };
 
 async function fillFilterValues(data) {
-  let professionMap = await getJSON("/json/profession_map.json");
-  console.log("professionMap", professionMap)
-
   switch (data) {
     case "characters":
+      // This JSON file has original (long) professionalGroup values as keys
+      // and their mapped (abbreviated) values as values.
+      // Mapping is done because the original values would be too long to display.
+      const professionMap = await getJSON("/json/profession_map.json");
+      // Keep an array of original (long) professionalGroup values
+      // to later set the og-value attribute of the Profession filter buttons.
+      // We set the og-value attribute to the original value
+      // because Character's professionalGroup values
+      // are not the mapped (abbreviated) ones, but the original ones.
+      // Not doing this would make it impossible to filter professions.
+      //todo: check what's the diff btwn "intermediate professions"
+      //todo: and "intermediate professionals"
+      const originalProfValues = [];
+
       for (const key in charFilterEls) {
-        // const values = new Set(charData.map((char: Character) => char[key])
-        // .filter(value => value !== null));
-        // const select = charFilterEls[key];
         const values = new Set();
 
         if (key === "professionalGroup") {
@@ -218,6 +226,7 @@ async function fillFilterValues(data) {
             || originalValue === null) continue;
 
             const mappedValue = professionMap[originalValue];
+            originalProfValues.push(originalValue);
 
             if (mappedValue) {
               values.add(mappedValue);
@@ -232,17 +241,25 @@ async function fillFilterValues(data) {
           newValues.forEach(value => values.add(value));
         }
 
+        //todo: make two separate arrays, one for profession and one for the rest
+        //todo:and either create elements separately or choose the right one (but how?)
         const select = charFilterEls[key];
         values.forEach((value : string) => {
           const option = document.createElement("button");
           option.textContent = value;
           option.name = key;
+          // set og-value attribute for profession filter buttons
+          // to the original (long) value in order to filter correctly
+          if (key === "professionalGroup") {
+            option.dataset.ogValue = originalProfValues.find((val) => professionMap[val] === value);
+          }
           $(option).addClass("filter-btn");
           select.append(option);
         });
       }
     case "plays":
-      //todo with selects
+      fillSelect("publisher", "#select-pub");
+      fillSelect("author", "#select-author");
     }
 }
 
@@ -653,9 +670,6 @@ async function drawUI() {
 
   currentCharTemplate = charTemplate;
   currentPlayTemplate = playTemplate;
-
-  fillSelect("publisher", "#select-pub");
-  fillSelect("author", "#select-author");
 
   timelineData = generateTimelineData(playData)
   setTimeline(timelineData)
