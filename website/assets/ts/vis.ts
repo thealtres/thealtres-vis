@@ -81,30 +81,43 @@ async function renderData(elName, loadedData, currentPage) {
   const pageData = loadedData.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
   const template = elName === "main-view-chars" ? generateCharacterTemplate(pageData) :
     await generatePlayTemplate(pageData);
-  const pageLink = createPaginationLink(currentPage, elName.split("-")[2]);
-  let html = elName === "main-view-chars" ? $("#char-list").html() + `<p id="chars-p-${currentPage}">Page ${currentPage}</p>` + template :
-    $("#play-list").html() + template;
+
+  let html = elName === "main-view-chars" ?
+    $("#char-list").html() + `<p id="chars-p-${currentPage}">Page ${currentPage}</p>` + template :
+    $("#play-list").html() + `<span id="plays-p-${currentPage}">Page ${currentPage}</span>` + template;
 
   if (elName === "main-view-chars") {
-    $("#char-list-pagination").append(pageLink);
     $("#char-list").html(html);
   } else {
     $("#play-list").html(html);
-    $("#play-list-pagination").append(pageLink);
-    $("#play-list").html(html);
   }
+
+  const selectId = elName === "main-view-chars" ?
+  "#char-list-pagination" : "#play-list-pagination";
+  const option = document.createElement("option");
+  option.value = `#${elName.split("-")[2]}-p-${currentPage}`;
+
+  option.innerHTML = `Page ${currentPage}`;
+  // append option and change selected option to last loaded page
+  $(selectId).append(option).val(option.value);
+
+  option.addEventListener("click", (e) => {
+    e.preventDefault();
+    scrollToPageNumber(currentPage, elName.split("-")[2]);
+  });
 }
 
 function handlePagination(e, currentPage, totalItems, filteredData, loadedData) {
   const elName = e.className.split(" ")[1];
-  const currentScrollPosition = e.scrollTop;
+  let currentScrollPosition = e.scrollTop;
   const listHeight = elName === "main-view-chars" ? $("#char-list").height() :
    getPlayListHeight();
   const viewPortHeight = $(e).height();
 
-  if (currentScrollPosition + viewPortHeight >= listHeight - 100) {
+  if (currentScrollPosition + viewPortHeight >= listHeight) {
     if (currentPage * itemsPerPage < totalItems) {
       currentPage++;
+      console.log("filteredD", filteredData, currentPage, itemsPerPage)
       const newData = filteredData.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
       loadedData.push(...newData);
       console.log(`Loading page ${currentPage} of ${elName} with ${newData.length} items`);
@@ -119,25 +132,11 @@ function handlePagination(e, currentPage, totalItems, filteredData, loadedData) 
   }
 };
 
-function createPaginationLink(pageNumber, type) {
-  const pageLink = document.createElement("a");
-  pageLink.href = `#${type}-p-${pageNumber}`;
-  pageLink.innerHTML = pageNumber;
-
-  pageLink.addEventListener("click", (e) => {
-    e.preventDefault();
-    scrollToPageNumber(pageNumber, type);
-  });
-
-  return pageLink;
-}
-
 function scrollToPageNumber(pageNumber, type) {
   preventScrollEvent = true;
   const anchor = document.getElementById(`${type}-p-${pageNumber}`);
 
   if (anchor) {
-    //todo: fix
     anchor.scrollIntoView({ block: 'nearest', behavior: 'smooth' })
   } else {
     console.error(`No anchor found for page ${pageNumber}, type ${type}`);
@@ -166,7 +165,10 @@ function getPlayListHeight() {
   let currentRowHeight = 0;
 
   const containerWidth = playList.offsetWidth;
-  const itemWidth = playList.firstElementChild.clientWidth;
+  // we're using the second child to calculate the width
+  // because the first child is the page anchor
+  const secondChild = playList.children[1] as HTMLElement;
+  const itemWidth = secondChild.offsetWidth;
 
   // calculate how many items fit on a row
   const itemsPerRow = Math.floor(containerWidth / itemWidth);
@@ -387,15 +389,24 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
       const authorId = play.authorId;
       const authorName = await getPlayInfo(authorId, lang, "author");
       //const publisher = getPlayInfo(play["publisher"], "publisher");
-      html = `<p>${titleMain}<br>${authorName}</p>`
+
+      // filter out empty values
+      let playText = [titleMain, authorName].filter(Boolean).join("\n");
 
       if (charsInPlayCard) {
         // do not include char-list-show-play-unique-btn search icon
         // when adding chars to play card
-        html += generateCharacterTemplate(play.characters, false);
+        playText += generateCharacterTemplate(play.characters, false);
       }
 
-      return `<div class="play-card">${html}</div>`
+      playText += `<i
+      class="char-list-show-char-unique-btn pointer fa-solid fa-magnifying-glass"
+      data-workid=${play.workId}
+      data-lang=${play.lang}></i>`;
+
+      html = `<div class="play-card">${playText}</div>`;
+
+      return html;
     });
 
     // We need to wait for all promises to resolve before we can return the HTML.
@@ -608,12 +619,21 @@ async function showRelations(viewMode: string, unique: boolean, char: Character 
   if (viewMode === "playsByChar") {
     const playsWithChars: Play[] = [];
 
-    console.log(unique, char)
-
     if (unique && char !== null) {
-      filteredCharData = [char];//? verify
-    }
-
+      // Logic used when list-show-play-unique-btn is clicked.
+      // The initial idea was to change filteredCharData to [char]
+      // and keep executing the next filteredCharData.forEach() block
+      // (now in the else block),
+      // but this caused the array to be replaced.
+      //
+      // Clicking the button again would stop plays
+      // from being loaded by handlePagination()
+      // because filteredCharData would only contain one character.
+      playsWithChars.push({
+        ...playData.find((play: Play) => play.workId === char.workId && play.lang === char.lang),
+        characters: [char]
+      });
+    } else {
     filteredCharData.forEach((char: Character) => {
       playData.filter((play: Play) => play.workId === char.workId && play.lang === char.lang)
       .forEach((play: Play) => {
@@ -635,10 +655,12 @@ async function showRelations(viewMode: string, unique: boolean, char: Character 
         }
       });
     });
+    }
+
     const playTemplate = await generatePlayTemplate(playsWithChars, true);
     $("#play-list").html(playTemplate);
     $(".play-header-text").text("Plays with " + char.persName)
-    .next().css("display", "none"); // hide progress number
+    .next().css("display", "none"); // hide progress number and icons
 
   } else if (viewMode === "charsByPlay") {
     const charsInPlays: Character[] = [];
@@ -747,9 +769,11 @@ $(function () {
   $(document).on("click", ".char-list-show-play-unique-btn", function() {
     // will reset the "Plays" view if the button is already active
     if ($(this).hasClass("active")) {
-      $(".char-list-show-play-unique-btn").removeClass("active");
+      $(".char-list-show-play-unique-btn").removeClass("active")
+
       $("#play-list").html(currentPlayTemplate);
-      $(".play-header-text").text("Plays");
+      $(".play-header-text").text("Plays")
+      .next().css("display", "flex"); // show progress number and icons again
       return;
     }
 

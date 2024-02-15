@@ -122,6 +122,12 @@ button:hover {
     flex-wrap: wrap;
 }
 
+/* page label */
+.main-view-plays-table #play-list span[id*="plays-p"] {
+    flex-grow: 1;
+    width: 100%;
+}
+
 .main-view-plays-table #play-list .play-card {
     background: #666;
     color: #ccc;
