@@ -219,10 +219,13 @@ function generateTimelineData(data: Play[]) {
 async function fillFilterValues(data) {
   switch (data) {
     case "characters":
-      // This JSON file has original (long) professionalGroup values as keys
-      // and their mapped (abbreviated) values as values.
-      // Mapping is done because the original values would be too long to display.
-      const professionMap = await getJSON("/json/profession_map.json");
+      // This JSON file is used to map values in charData to:
+      // 1) their full names to be shown as tooltips
+      // (applies to lang, gender and socialClass)
+      // 2) their abbreviated values to be shown as buttons
+      // as the original values would be too long to display
+      // (applies to professionalGroup)
+      const filterMappings = await getJSON("/json/misc/filter_map.json");
       // Keep an array of original (long) professionalGroup values
       // to later set the og-value attribute of the Profession filter buttons.
       // We set the og-value attribute to the original value
@@ -244,7 +247,7 @@ async function fillFilterValues(data) {
             if (invalidProfValues.includes(originalValue)
             || originalValue === null) continue;
 
-            const mappedValue = professionMap[originalValue];
+            const mappedValue = filterMappings.professionalGroup[originalValue];
             originalProfValues.push(originalValue);
 
             if (mappedValue) {
@@ -260,18 +263,26 @@ async function fillFilterValues(data) {
           newValues.forEach(value => values.add(value));
         }
 
-        //todo: make two separate arrays, one for profession and one for the rest
-        //todo:and either create elements separately or choose the right one (but how?)
         const select = charFilterEls[key];
         values.forEach((value : string) => {
           const option = document.createElement("button");
-          option.textContent = value;
           option.name = key;
+          option.textContent = value;
+
           // set og-value attribute for profession filter buttons
           // to the original (long) value in order to filter correctly
           if (key === "professionalGroup") {
-            option.dataset.ogValue = originalProfValues.find((val) => professionMap[val] === value);
+            const originalValue =
+            originalProfValues.find((val) =>
+            filterMappings.professionalGroup[val] === value);
+
+            option.dataset.ogValue = originalValue;
+            // set title tooltip
+            option.title = originalValue;
+          } else {
+            option.title = filterMappings[key][value];
           }
+
           $(option).addClass("filter-btn");
           select.append(option);
         });
@@ -289,7 +300,6 @@ function enableCharFilterBtns() {
     if (key != "professionalGroup") {
       value = $(this).text();
     } else {
-      //todo: get og-value
       value = $(this).data("og-value");
     }
     console.log(key, value)
@@ -495,11 +505,8 @@ function filterCharacters(charData: Character[]) : Character[] {
   const genderFilter = charFilters.sex;
   //todo: possible values: todo
   const professionFilter = charFilters.professionalGroup;
-  console.log("professionFilter", professionFilter)
   //possible values: UC, MC, UMC, LC, LMC, LMC|UC
   const socialClassFilter = charFilters.socialClass;
-
-  console.log("before : ", charData.length)
 
   filteredCharData = charData.filter((char: Character) => {
     const langMatches = langFilter.length === 0 ||
@@ -516,8 +523,6 @@ function filterCharacters(charData: Character[]) : Character[] {
 
     return langMatches && genderMatches && professionMatches && socialClassMatches;
   });
-
-  console.log("after : ", filteredCharData.length)
 
   // activate "Show Plays" filter button
   // we only want to enable the button if the list is filtered
@@ -583,7 +588,6 @@ async function updateFilters(dataType: string) {
   }
 
   $("#filter-reset-btn").removeClass("disabled");
-  console.log("isResetDisabled", $("#filter-reset-btn").hasClass("disabled"))
 };
 
 function resetFilters() {
@@ -634,27 +638,27 @@ async function showRelations(viewMode: string, unique: boolean, char: Character 
         characters: [char]
       });
     } else {
-    filteredCharData.forEach((char: Character) => {
-      playData.filter((play: Play) => play.workId === char.workId && play.lang === char.lang)
-      .forEach((play: Play) => {
-        // check if play already exists in playsWithChars
-        // if so, we only need to update the characters array, not the entire object
-        // otherwise, this creates duplicates and will show one play per character
-        // even though some characters share the same play
-        let playMatch = playsWithChars.find(p =>
-          p.workId === play.workId && p.lang === play.lang
-        );
+      filteredCharData.forEach((char: Character) => {
+        playData.filter((play: Play) => play.workId === char.workId && play.lang === char.lang)
+        .forEach((play: Play) => {
+          // check if play already exists in playsWithChars
+          // if so, we only need to update the characters array, not the entire object
+          // otherwise, this creates duplicates and will show one play per character
+          // even though some characters share the same play
+          let playMatch = playsWithChars.find(p =>
+            p.workId === play.workId && p.lang === play.lang
+          );
 
-        if (playMatch) {
-          playMatch.characters.push(char);
-        } else {
-          playsWithChars.push({
-            ...play,
-            characters: [char]
-          });
-        }
+          if (playMatch) {
+            playMatch.characters.push(char);
+          } else {
+            playsWithChars.push({
+              ...play,
+              characters: [char]
+            });
+          }
+        });
       });
-    });
     }
 
     const playTemplate = await generatePlayTemplate(playsWithChars, true);
@@ -681,8 +685,7 @@ async function fetchData(): Promise<void> {
   console.time("fetchData");
   try {
     const JSONFiles = ["/json/char_data.json", "/json/play_data.json",
-                      "/json/author_data.json", "/json/publisher_data.json",
-                      "/json/profession_map.json"];
+                      "/json/author_data.json", "/json/publisher_data.json"];
 
     $("#loader").show();
 
@@ -706,11 +709,12 @@ async function fetchData(): Promise<void> {
 };
 
 async function drawUI() {
-  const charTemplate = await getTemplate(charData, "characters");
-  const playTemplate = await getTemplate(playData, "plays");
+  // unneeded now because renderData()
+  // const charTemplate = await getTemplate(charData, "characters");
+  // const playTemplate = await getTemplate(playData, "plays");
 
-  currentCharTemplate = charTemplate;
-  currentPlayTemplate = playTemplate;
+  // currentCharTemplate = charTemplate;
+  // currentPlayTemplate = playTemplate;
 
   timelineData = generateTimelineData(playData)
   setTimeline(timelineData)
