@@ -101,7 +101,7 @@ function handlePagination(e, currentPage, totalItems, filteredData, loadedData) 
   const listHeight = elName === "main-view-chars" ? $("#char-list").height() :
    getPlayListHeight();
   const viewPortHeight = $(e).height();
-  //console.log(currentScrollPosition+viewPortHeight, listHeight-100)
+
   if (currentScrollPosition + viewPortHeight >= listHeight - 100) {
     if (currentPage * itemsPerPage < totalItems) {
       currentPage++;
@@ -117,7 +117,7 @@ function handlePagination(e, currentPage, totalItems, filteredData, loadedData) 
   } else {
     playCurrentPage = currentPage;
   }
-}
+};
 
 function createPaginationLink(pageNumber, type) {
   const pageLink = document.createElement("a");
@@ -161,14 +161,31 @@ function handleScroll(e, isScrollPrevented: boolean) {
 
 function getPlayListHeight() {
   const playList = document.getElementById("play-list");
-  const gridStyle = getComputedStyle(playList);
-  // remove "px" from the string and convert to int
-  const rowHeight = parseInt(gridStyle.gridAutoRows.slice(0, -2));
-  //todo: calculate automatically
-  // 3 is the number of plays shown per row on large screens
-  const numRows = (playList.children.length)/3;
+  // used to store the height of every row
+  const rowHeights = [];
+  let currentRowHeight = 0;
 
-  return rowHeight * numRows;
+  const containerWidth = playList.offsetWidth;
+  const itemWidth = playList.firstElementChild.clientWidth;
+
+  // calculate how many items fit on a row
+  const itemsPerRow = Math.floor(containerWidth / itemWidth);
+
+  for (const child of <any>playList.children) {
+    currentRowHeight += child.offsetHeight;
+    // if the row is full, store the height and reset the counter
+    if (currentRowHeight > playList.offsetHeight) {
+      rowHeights.push(currentRowHeight);
+      currentRowHeight = 0;
+    }
+  }
+
+  // handle the last row (might not fill the full height)
+  if (currentRowHeight > 0) {
+    rowHeights.push(currentRowHeight);
+  }
+
+  return rowHeights.reduce((acc, height) => acc + height, 0) / itemsPerRow;
 }
 
 function generateTimelineData(data: Play[]) {
