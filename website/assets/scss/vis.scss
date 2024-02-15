@@ -8,6 +8,10 @@ body {
     color: #ccc;
 }
 
+footer {
+    color: #ccc !important;
+}
+
 h1, h2, h3 {
     color: #ccc;
 }
@@ -97,8 +101,21 @@ button:hover {
 }
 
 .char-header h2, .play-header h2 {
-    background: black;
     margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+}
+
+.header-info {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
 }
 
 .main-view-plays {
@@ -186,13 +203,11 @@ button:hover {
 
 #char-list-pagination, #play-list-pagination {
     display: inline;
-    background: red;
 }
 
-.char-icons, .play-icons {
-    display: inline;
-    float: right;
+.header-icons {
     margin-right: 1rem;
+    font-size: 1.5rem;
 }
 
 .disabled {

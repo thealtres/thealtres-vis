@@ -37,16 +37,15 @@
     </div>
     <div class="item main-view">
         <div class="item main-view-chars">
-            <div class="char-header">
-                <h2>
-                    <span class="char-header-text">Characters</span>
-                    <span class="char-progress"></span>
-                    <span id="char-list-pagination"></span>
-                    <div class="char-icons">
+            <div class="char-header header">
+                <h2 class="char-header-text">Characters <span class="char-progress"></span></h2>
+                <span class="header-info">
+                    <select id="char-list-pagination"></select>
+                    <span class="header-icons">
                         <i id="char-list-show-plays-btn" class="fa-solid fa-masks-theater pointer" rel="tooltip" title="Show Plays"></i>
                         <i id="char-list-sort-btn" class="fa-solid fa-sort sort-btn pointer" rel="tooltip" title="Sort by…"></i>
-                    </div>
-                </h2>
+                    </span>
+                </span>
             </div>
             <div id="char-list"></div>
         </div>
@@ -55,16 +54,15 @@
                 <h2>Diagrams</h2>
             </div>
             <div class="item main-view-plays-table">
-                <div class="play-header">
-                    <h2>
-                        <span class="play-header-text">Plays</span>
-                        <span class="play-progress"></span>
-                        <span id="play-list-pagination"></span>
-                        <div class="char-icons">
+                <div class="play-header header">
+                    <h2 class="play-header-text">Plays <span class="play-progress"></span></h2>
+                    <span class="header-info">
+                        <select id="play-list-pagination"></select>
+                        <span class="header-icons">
                             <i id="play-list-show-chars-btn" class="fa-solid fa-people-group pointer" rel="tooltip" title="Show Characters"></i>
                             <i id="play-list-sort-btn" class="fa-solid fa-sort sort-btn pointer" rel="tooltip" title="Sort by…"></i>
-                        </div>
-                    </h2>
+                        </span>
+                    </span>
                 </div>
                 <div id="play-list"></div>
             </div>
