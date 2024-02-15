@@ -118,9 +118,8 @@ button:hover {
 
 .main-view-plays-table #play-list {
     height: 5em;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 10em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .main-view-plays-table #play-list .play-card {
@@ -130,6 +129,8 @@ button:hover {
     padding: 0.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 0 0.5rem 0.1rem #000;
+    flex-grow: 1;
+    width: calc(100% * (1/4) - 10px - 1px);
 }
 
 .main-view-plays-table #play-list .play-card .char {

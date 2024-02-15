@@ -373,7 +373,8 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
       html = `<p>${titleMain}<br>${authorName}</p>`
 
       if (charsInPlayCard) {
-        // do not include "Show Plays" button when adding chars to play card
+        // do not include char-list-show-play-unique-btn search icon
+        // when adding chars to play card
         html += generateCharacterTemplate(play.characters, false);
       }
 
@@ -389,7 +390,8 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
 
     // we want to save the last template only if this function is not called
     // from showRelations() (i.e. charsInPlayCard is false)
-    // so that we can show all previously shown plays when clicking "Go back"
+    // so that we can show all previously shown plays when clicking
+    // the char-list-show-play-unique-btn search icon again
     if (!charsInPlayCard) {
       currentPlayTemplate = html;
     }
@@ -726,10 +728,12 @@ $(function () {
   });
 
   $(document).on("click", ".char-list-show-play-unique-btn", function() {
+    // will reset the "Plays" view if the button is already active
     if ($(this).hasClass("active")) {
       $(".char-list-show-play-unique-btn").removeClass("active");
       $("#play-list").html(currentPlayTemplate);
       $(".play-header-text").text("Plays");
+      return;
     }
 
     const workId = $(this).data("workid");
