@@ -4,6 +4,8 @@ import { setTimeline, highlightGraphPeriod, clearGraphHighlight } from "../js-pl
 // These are professionalGroup values to be filtered out in fillFilterValues()
 // we may convert them to null in the future
 const invalidProfValues = ["n/a", "ignorer", "vague", "pas couvert", "unknown"]
+// same for socialClass values
+const invalidSocialClassValues = ["LMC|UC", "MC"]
 
 const charFilterEls = {
   "lang": $("#filter-lang-values"),
@@ -26,12 +28,13 @@ const defaultCharFilters = {
 let charFilters = {...defaultCharFilters};
 
 const defaultPlayFilters = {
+  lang: [],
   publisher: [],
   author: [],
-  lang: [],
 };
 let playFilters = {...defaultPlayFilters};
 
+let originalCharTemplate: string, originalPlayTemplate: string;
 let currentCharTemplate: string, currentPlayTemplate: string;
 
 let totalShownCharItems = 0, totalShownPlayItems = 0;
@@ -44,12 +47,15 @@ let timelineData = [];
 let playCurrentPage = 1;
 let charCurrentPage = 1;
 const itemsPerPage = 50;
-let loadedCharData = [];
-let loadedPlayData = [];
+let loadedCharData: Character[] = [];
+let loadedPlayData: Play[] = [];
 
+/**
+ * Fetches JSON data from file path and returns it as a Promise
+ * @param path - path to JSON file
+ * @returns - Promise containing JSON data
+ */
 function getJSON(path: string) : Promise<any> {
-  /* Used to get JSON data from a file */
-  console.time("getJSON")
   return new Promise((resolve, reject) => {
     $.ajax({
       url: path,
@@ -62,7 +68,6 @@ function getJSON(path: string) : Promise<any> {
         reject(errorThrown);
       }
     });
-    console.timeEnd("getJSON");
   });
 };
 
@@ -150,12 +155,17 @@ async function renderData(elName, loadedData, currentPage, dateRanges = null) {
   }
 
   const pageData = loadedData.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
-  const template = elName === "main-view-chars" ? generateCharacterTemplate(pageData) :
+  const template = elName === "main-view-chars" ? await generateCharacterTemplate(pageData) :
     await generatePlayTemplate(pageData);
 
+  // console.log("pageData", pageData)
+  // console.log("template", elName, template)
+  // console.log(`function renderData() called with args: ${elName}, ${loadedData}, ${currentPage}`);
+  // console.trace()
+
   let html = elName === "main-view-chars" ?
-    $("#char-list").html() + `<p id="chars-p-${currentPage}">Page ${currentPage}</p>` + template :
-    $("#play-list").html() + `<span id="plays-p-${currentPage}">Page ${currentPage}</span>` + template;
+    $("#char-list").html() + `<p id="char-p-${currentPage}">Page ${currentPage}</p>` + template :
+    $("#play-list").html() + `<span id="play-p-${currentPage}">Page ${currentPage}</span>` + template;
 
   if (elName === "main-view-chars") {
     $("#char-list").html(html);
@@ -163,6 +173,7 @@ async function renderData(elName, loadedData, currentPage, dateRanges = null) {
     $("#play-list").html(html);
   }
 
+  // create option for pagination
   const selectId = elName === "main-view-chars" ?
   "#char-list-pagination" : "#play-list-pagination";
   const option = document.createElement("option");
@@ -188,6 +199,7 @@ function handlePagination(e, currentPage, totalItems, filteredData, loadedData) 
    getPlayListHeight();
   const viewPortHeight = $(e).height();
 
+  //console.log("currentScrollPosition", currentScrollPosition+viewPortHeight, "listHeight", listHeight)
   if (currentScrollPosition + viewPortHeight >= listHeight) {
     if (currentPage * itemsPerPage < totalItems) {
       currentPage++;
@@ -222,6 +234,7 @@ function handleScroll(e, isScrollPrevented: boolean) {
   if (isScrollPrevented) {
     return;
   }
+  // unneeded?
   preventScrollEvent = false;
 
   const elName = e.className.split(" ")[1];
@@ -306,8 +319,6 @@ async function fillFilterValues(data) {
       // because Character's professionalGroup values
       // are not the mapped (abbreviated) ones, but the original ones.
       // Not doing this would make it impossible to filter professions.
-      //todo: check what's the diff btwn "intermediate professions"
-      //todo: and "intermediate professionals"
       const originalProfValues = [];
 
       for (const key in charFilterEls) {
@@ -319,7 +330,9 @@ async function fillFilterValues(data) {
 
             // skip invalid values
             if (invalidProfValues.includes(originalValue)
-            || originalValue === null) continue;
+            || originalValue === null
+            // temporarily skip values with pipe (invalid values)
+            || originalValue.includes("|")) continue;
 
             const mappedValue = filterMappings.professionalGroup[originalValue];
             originalProfValues.push(originalValue);
@@ -332,7 +345,8 @@ async function fillFilterValues(data) {
           };
         } else {
           const newValues = charData.map((char) => char[key])
-          .filter(value => value !== null);
+          // temp fix for socialClass invalid values
+          .filter(value => value !== null && !invalidSocialClassValues.includes(value));
 
           newValues.forEach(value => values.add(value));
         }
@@ -361,34 +375,63 @@ async function fillFilterValues(data) {
           select.append(option);
         });
       }
+      break;
     case "plays":
       fillSelect("publisher", "#select-pub");
       fillSelect("author", "#select-author");
+      break;
     }
 }
 
-function enableCharFilterBtns() {
+function enableFilterBtns() {
   $(".filter-btn").on("click", function() {
     const key = $(this).attr("name");
     let value = null;
-    if (key != "professionalGroup") {
+
+    if (key !== "professionalGroup") {
       value = $(this).text();
     } else {
       value = $(this).data("og-value");
     }
-    console.log(key, value)
-    if ($(this).hasClass("active")) {
+
+    const isActive = $(this).hasClass("active");
+
+    if (isActive) {
       $(this).removeClass("active");
-      // remove value from array
-      charFilters[key] = charFilters[key].filter(item => item !== value);
+
+      if (key === "lang") { // shared property
+        charFilters[key] = charFilters[key].filter(item => item !== value);
+        playFilters[key] = playFilters[key].filter(item => item !== value);
+        updateView("characters");
+        updateView("plays");
+      } else if (key === "sex" || key === "professionalGroup" || key === "socialClass") {
+        charFilters[key] = charFilters[key].filter(item => item !== value);
+        updateView("characters");
+      }
+
     } else {
       $(this).addClass("active");
-      if (!charFilters[key].includes(value)) {
+
+      if (key === "lang") { // shared property
         charFilters[key].push(value);
+        playFilters[key].push(value);
+        updateView("characters");
+        updateView("plays");
+      } else if (key === "sex" || key === "professionalGroup" || key === "socialClass") {
+        charFilters[key].push(value);
+        updateView("characters");
       }
     }
 
-    updateFilters("characters");
+    // activate "Show Plays" filter button
+    // we only want to enable the button if the list is filtered
+    // since all plays are shown by default
+    if ($(".filter-btn.active").length > 0) {
+      $("#char-list-show-plays-btn").removeClass("disabled");
+    } else {
+      $("#char-list-show-plays-btn").addClass("disabled");
+    }
+
     updateProgress();
   });
 }
@@ -422,6 +465,14 @@ function fillSelect(dataType: string, selectId: string) {
     maxOptions: null,
     highlight: true,
     maxItems: null,
+    onItemAdd: (id) => {
+      playFilters[dataType].push(id);
+      updateView("plays");
+    },
+    onItemRemove: (id) => {
+      playFilters[dataType] = playFilters[dataType].filter(item => item !== id);
+      updateView("plays");
+    },
   });
 };
 
@@ -429,25 +480,25 @@ async function generateCharacterTemplate(data: Character[], showPlayBtn = true):
   let html = "";
   try {
     const charPromises = data.map(async (character: Character) => {
-    let workId = character.workId;
-    let charId = character.characterId;
-    let lang = character.lang;
-    let name = character.persName ?? "";
-    let sex = character.sex ?? "";
-    let socialClass = character.socialClass ?? "";
-    let profession = character.professionalGroup ?? "";
+      let workId = character.workId;
+      let charId = character.characterId;
+      let lang = character.lang;
+      let name = character.persName ?? "";
+      let sex = character.sex ?? "";
+      let socialClass = character.socialClass ?? "";
+      let profession = character.professionalGroup ?? "";
 
       let charText = [name, sex, socialClass, profession]
       .map((item: string) => `<td>${item}</td>`).join("");
 
-    if (showPlayBtn) {
+      if (showPlayBtn) {
         // add search icon as table data
         charText += `<td><i
-      class="char-list-show-play-unique-btn pointer fa-solid fa-magnifying-glass"
-      data-workid=${workId}
-      data-charid=${charId}
+        class="char-list-show-play-unique-btn pointer fa-solid fa-magnifying-glass"
+        data-workid=${workId}
+        data-charid=${charId}
         data-lang=${lang}></i></td>`;
-    }
+      }
 
       html = `${charText}</tr>`;
 
@@ -468,15 +519,14 @@ async function generateCharacterTemplate(data: Character[], showPlayBtn = true):
       }
 
       //html += charHtmlArray.join("");
-  return html;
+      return html;
   } catch (error) {
     console.error("Error generating character template:", error);
     return "";
   }
 };
 
-async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Promise<string> {
-  console.time("generatePlayTemplate")
+async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Promise<string> {;
   let html = "";
   try {
     // We define getPlayInfo() as async so that we can load data
@@ -494,12 +544,15 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
       //const publisher = getPlayInfo(play["publisher"], "publisher");
 
       // filter out empty values
-      let playText = [titleMain, authorName].filter(Boolean).join("\n");
+      let playText = [titleMain, authorName].filter(Boolean).join("<br>");
 
       if (charsInPlayCard) {
         // do not include char-list-show-play-unique-btn search icon
         // when adding chars to play card
-        playText += generateCharacterTemplate(play.characters, false);
+        // ?but why not?
+        playText += await generateCharacterTemplate(play.characters, false);
+        html = `<div class="play-card">${playText}</div>`;
+        return html;
       }
 
       playText += `<i
@@ -517,7 +570,6 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
     // and [object Promise] will be returned instead.
     const playHtmlArray = await Promise.all(playPromises);
     html = playHtmlArray.join(""); // Combine HTML strings into a single string
-    console.timeEnd("generatePlayTemplate");
 
     // we want to save the last template only if this function is not called
     // from showRelations() (i.e. charsInPlayCard is false)
@@ -539,18 +591,18 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
   }
 }
 
-async function getTemplate(data: Character[] | Play[], type: string): Promise<string> {
-  console.time("getTemplate")
-  if (type === "characters") {
-    console.timeEnd("getTemplate");
-    return generateCharacterTemplate(data as Character[]);
-  } else if (type === "plays") {
-    console.timeEnd("getTemplate");
-    return generatePlayTemplate(data as Play[]);
-  }
+// async function getTemplate(data: Character[] | Play[], type: string): Promise<string> {
+//   console.time("getTemplate")
+//   if (type === "characters") {
+//     console.timeEnd("getTemplate");
+//     return generateCharacterTemplate(data as Character[]);
+//   } else if (type === "plays") {
+//     console.timeEnd("getTemplate");
+//     return generatePlayTemplate(data as Play[]);
+//   }
 
-  return "";
-};
+//   return "";
+// };
 
 async function getPlayInfo(id: number | number[], lang: string, type: string) : Promise<string|number> {
   //console.time("getPlayInfo")
@@ -585,6 +637,11 @@ async function getPlayInfo(id: number | number[], lang: string, type: string) : 
       } catch (error) {
         console.error("Error getting play info:", error);
       };
+
+    case "premiered":
+      const premiered = playData.find((play: Play) =>
+        play.workId === id && play.lang === lang).printed;
+      return premiered;
   };
 };
 
@@ -595,7 +652,7 @@ function getCharacter(workId: number, lang: string, charId: number) : Character 
 }
 
 function filterCharacters(charData: Character[]) : Character[] {
-  console.time("filterCharacters");
+  //console.time("filterCharacters");
   //possible values: fre, ger, als
   const langFilter = charFilters.lang;
   //possible values: M, F, B, U
@@ -622,38 +679,31 @@ function filterCharacters(charData: Character[]) : Character[] {
     return langMatches && genderMatches && professionMatches && socialClassMatches;
   });
 
-  // activate "Show Plays" filter button
-  // we only want to enable the button if the list is filtered
-  // since all plays are shown by default
-  $("#char-list-show-plays-btn, #char-list-sort-btn").removeClass("disabled");
   totalShownCharItems = filteredCharData.length;
 
-  console.timeEnd("filterCharacters");
+  //console.timeEnd("filterCharacters");
   return filteredCharData;
 };
 
 function filterPlays(playData: Play[]) : Play[] {
-  console.time("filterPlays");
   const publisherFilter = playFilters.publisher;
   const authorFilter = playFilters.author;
   const langFilter = playFilters.lang;
 
+  console.log(playFilters)
+
   filteredPlayData = playData.filter((play: Play) => {
-    const publisherMatches =
-      publisherFilter === "any" ||
-      play.publisherId === publisherFilter;
+    const publisherMatches = publisherFilter.length === 0 ||
+    publisherFilter.some((filter: string) => filter === play.publisherId);
 
-    //const authorMatches =
-      //authorFilter === "any" ||
-      //todo: fix
-      //play.authorId === authorFilter;
+    const authorMatches = authorFilter.length === 0 ||
+    authorFilter.some((filter: string) => play.authorId // some plays have no authorId
+    && filter === play.authorId.toString());
 
-    const langMatches =
-      langFilter === "any" ||
-      play.lang === langFilter;
+    const langMatches = langFilter.length === 0 ||
+    langFilter.some((filter: string) => filter === play.lang);
 
-    //return publisherMatches && authorMatches && langMatches;
-    return langMatches;
+    return publisherMatches && authorMatches && langMatches;
   });
 
   // activate "Show Characters" filter button
@@ -663,7 +713,7 @@ function filterPlays(playData: Play[]) : Play[] {
 
   totalShownPlayItems = filteredPlayData.length;
 
-  console.timeEnd("filterPlays");
+  //console.timeEnd("filterPlays");
   return filteredPlayData;
 }
 
@@ -704,20 +754,33 @@ async function updateView(dataType: string) {
 function resetFilters() {
   // reset filter arrays
   charFilters = defaultCharFilters;
-  //todo: uncomment when implementing play filters
-  //playFilters = defaultPlayFilters;
+  playFilters = defaultPlayFilters;
 
-  totalShownCharItems = charData.length;
-  $("#char-list").html(currentCharTemplate);
+  $("#char-list").html(originalCharTemplate);
+  $("#play-list").html(originalPlayTemplate);
 
-  $(".play-header-text").text("Plays");
-  $("#play-list").html(currentPlayTemplate);
-  // show play progress again if hidden by showRelations()
-  $(".play-progress").css("display", "inline");
+  console.log("currentCharTemplate", originalPlayTemplate)
+
+  // reset play-header-text if in "Plays with" view
+  $(".play-header-text").text("Plays")
+  .next().css("display", "inline") // show progress number again
+  $(".header-info[name='header-info-play']").css("display", "flex"); // show header info again
 
   $("#char-list-show-plays-btn, #play-list-show-chars-btn, #filter-reset-btn")
   .addClass("disabled");
   $(".char-list-show-play-unique-btn, .filter-btn").removeClass("active");
+
+  // reset all pagination values except first page
+  // do not one-line, breaks otherwise
+  $("#char-list-pagination").find("option").not(":first").remove();
+  $("#play-list-pagination").find("option").not(":first").remove();
+
+
+  totalShownCharItems = charData.length;
+  totalShownPlayItems = playData.length;
+  charCurrentPage = 1;
+  playCurrentPage = 1;
+
 };
 
 function updateProgress() {
@@ -730,7 +793,7 @@ function updateProgress() {
 }
 
 async function showRelations(viewMode: string, unique: boolean, char: Character = null) : Promise<void> {
-  console.time("showRelations");
+  //console.time("showRelations");
   if (viewMode === "playsByChar") {
     const playsWithChars: Play[] = [];
 
@@ -748,6 +811,11 @@ async function showRelations(viewMode: string, unique: boolean, char: Character 
         ...playData.find((play: Play) => play.workId === char.workId && play.lang === char.lang),
         characters: [char]
       });
+
+      $(".play-header-text").text("Plays with " + char.persName)
+      .next().css("display", "none") // hide progress number
+       // hide header info
+      $(".header-info[name='header-info-play']").css("display", "none");
     } else {
       filteredCharData.forEach((char: Character) => {
         playData.filter((play: Play) => play.workId === char.workId && play.lang === char.lang)
@@ -774,8 +842,6 @@ async function showRelations(viewMode: string, unique: boolean, char: Character 
 
     const playTemplate = await generatePlayTemplate(playsWithChars, true);
     $("#play-list").html(playTemplate);
-    $(".play-header-text").text("Plays with " + char.persName)
-    .next().css("display", "none"); // hide progress number and icons
 
   } else if (viewMode === "charsByPlay") {
     const charsInPlays: Character[] = [];
@@ -786,14 +852,14 @@ async function showRelations(viewMode: string, unique: boolean, char: Character 
         charsInPlays.push(char);
       });
     });
-    const charTemplate = generateCharacterTemplate(charsInPlays);
+    const charTemplate = await generateCharacterTemplate(charsInPlays);
     $("#char-list").html(charTemplate);
   }
-  console.timeEnd("showRelations");
+  //console.timeEnd("showRelations");
 };
 
 async function fetchData(): Promise<void> {
-  console.time("fetchData");
+  //console.time("fetchData");
   try {
     const JSONFiles = ["/json/char_data.json", "/json/play_data.json",
                       "/json/author_data.json", "/json/publisher_data.json"];
@@ -814,9 +880,10 @@ async function fetchData(): Promise<void> {
     console.error("Error fetching data:", error);
   } finally {
     drawUI();
+
     $("#loader").hide();
   }
-  console.timeEnd("fetchData");
+  //console.timeEnd("fetchData");
 };
 
 async function drawUI() {
@@ -842,8 +909,12 @@ async function drawUI() {
   renderData("main-view-plays-table", loadedPlayData, playCurrentPage);
 
   await fillFilterValues("characters");
+  await fillFilterValues("plays");
 
-  enableCharFilterBtns();
+  enableFilterBtns();
+
+  originalCharTemplate = $("#char-list").html();
+  originalPlayTemplate = $("#play-list").html();
 
   // @ts-ignore | initialize tooltips
   $("[rel=tooltip]").tooltip();
@@ -881,6 +952,15 @@ $(function () {
     updateProgress();
   });
 
+  $("#char-list-pagination, #play-list-pagination").on("change", function(e) {
+    const page = e.target.value.split("-")[2];
+    const elName = e.target.id.split("-")[0];
+    console.log(elName)
+    scrollToPageNumber(page, elName);
+  });
+
+  // needs to be done at document level
+  // because the buttons are dynamically created
   $(document).on("click", ".char-list-show-play-unique-btn", function() {
     // will reset the "Plays" view if the button is already active
     if ($(this).hasClass("active")) {
@@ -888,7 +968,8 @@ $(function () {
 
       $("#play-list").html(currentPlayTemplate);
       $(".play-header-text").text("Plays")
-      .next().css("display", "flex"); // show progress number and icons again
+      .next().css("display", "inline") // show progress number again
+      $(".header-info[name='header-info-play']").css("display", "flex"); // show header info again
       return;
     }
 
