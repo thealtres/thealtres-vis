@@ -47,7 +47,7 @@
                     </span>
                 </span>
             </div>
-            <div id="char-list"></div>
+            <table id="char-list" tabindex="0"></table>
         </div>
         <div class="item main-view-plays">
             <div class="item main-view-plays-chart">
@@ -55,8 +55,10 @@
             </div>
             <div class="item main-view-plays-table">
                 <div class="play-header header">
-                    <h2 class="play-header-text">Plays <span class="play-progress"></span></h2>
-                    <span class="header-info">
+                    <h2 class="play-header-heading">
+                        <span class="play-header-text">Plays</span> <span class="play-progress"></span>
+                    </h2>
+                    <span class="header-info" name="header-info-play">
                         <select id="play-list-pagination"></select>
                         <span class="header-icons">
                             <i id="play-list-show-chars-btn" class="fa-solid fa-people-group pointer" rel="tooltip" title="Show Characters"></i>
@@ -64,9 +66,8 @@
                         </span>
                     </span>
                 </div>
-                <div id="play-list"></div>
+                <div id="play-list" tabindex="0"></div>
             </div>
         </div>
     </div>
-    <div class="item vis-navbar"></div>
 </div>

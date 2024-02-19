@@ -1,6 +1,6 @@
 html {
     height: 100%;
-    overflow: hidden;
+    //Soverflow: hidden;
 }
 
 body {
@@ -28,8 +28,28 @@ button:hover {
     background: #ccc;
 }
 
+svg {
+    vertical-align: baseline;
+}
+
+table {
+    width: 100%;
+}
+
 .pointer {
     cursor: pointer;
+}
+
+/* better scrollbar on browsers using webkit */
+::-webkit-scrollbar {
+    height: 1px;
+    width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
 }
 
 /* Remove top header for visualization page to get more space */
@@ -56,8 +76,7 @@ button:hover {
 }
 
 #timeline {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 18%;
     scale: 1;
 }
 
@@ -67,9 +86,12 @@ button:hover {
 
 #vis-container {
     display: grid;
-    grid-template-columns: 10% 80% 10%;
+    grid-template-columns: 15% 85%;
+    grid-gap: 0.8rem;
     width: 100%;
-    height: 50rem; /*shares height with .main-view*/
+    min-height: 50vh;
+    height: 80vh; /*shares height with .main-view*/
+    padding-right: 1.3rem;
   }
 
 .filters {
@@ -78,6 +100,8 @@ button:hover {
     width: 100%;
     height: 100%;
     overflow-y: scroll;
+    border-right: 1px solid #666;
+    padding-right: 1.7rem;
 }
 
 .main-view {
@@ -85,7 +109,8 @@ button:hover {
     //background: #dddbff;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 50rem; /*shares height with #vis-container*/
+    min-height: 50vh;
+    height: 80vh; /*shares height with #vis-container*/
 }
 
 .main-view-chars {
@@ -118,6 +143,22 @@ button:hover {
     align-items: center;
 }
 
+#char-list p[id*="char-p"] {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* wrap names */
+#char-list td:nth-child(1) {
+    width: 33%;
+}
+
+/* give a bit more space to search icon */
+#char-list td:nth-child(5) {
+    display: inline;
+    margin-right: 0.7rem;
+}
+
 .main-view-plays {
     display: grid;
     grid-template-rows: 20% 80%;
@@ -140,7 +181,7 @@ button:hover {
 }
 
 /* page label */
-.main-view-plays-table #play-list span[id*="plays-p"] {
+.main-view-plays-table #play-list span[id*="play-p"] {
     flex-grow: 1;
     width: 100%;
 }
@@ -158,13 +199,6 @@ button:hover {
 
 .main-view-plays-table #play-list .play-card .char {
     color: violet;
-}
-
-.vis-navbar {
-    grid-column: 3;
-    //background: #c3777f;
-    width: 100%;
-    height: 100%;
 }
 
 /* todo: improved loader styling */

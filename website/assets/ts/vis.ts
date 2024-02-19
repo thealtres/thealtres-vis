@@ -425,9 +425,10 @@ function fillSelect(dataType: string, selectId: string) {
   });
 };
 
-function generateCharacterTemplate(data: Character[], showPlayBtn = true): string {
-  let html = "<ul class='char'>";
-  $.each(data, function (index, character: Character) {
+async function generateCharacterTemplate(data: Character[], showPlayBtn = true): Promise<string> {
+  let html = "";
+  try {
+    const charPromises = data.map(async (character: Character) => {
     let workId = character.workId;
     let charId = character.characterId;
     let lang = character.lang;
@@ -435,25 +436,43 @@ function generateCharacterTemplate(data: Character[], showPlayBtn = true): strin
     let sex = character.sex ?? "";
     let socialClass = character.socialClass ?? "";
     let profession = character.professionalGroup ?? "";
-    //let date = await getPlayInfo(character.workId, character.lang, "premiered") ?? "";
 
-    // filter out empty values
-    let charText = [name, sex, socialClass, profession].filter(Boolean).join(", ");
+      let charText = [name, sex, socialClass, profession]
+      .map((item: string) => `<td>${item}</td>`).join("");
 
     if (showPlayBtn) {
-      charText += `<i
+        // add search icon as table data
+        charText += `<td><i
       class="char-list-show-play-unique-btn pointer fa-solid fa-magnifying-glass"
       data-workid=${workId}
       data-charid=${charId}
-      data-lang=${lang}></i>`;
+        data-lang=${lang}></i></td>`;
     }
 
-    html += `<li>${charText}</li>`;
+      html = `${charText}</tr>`;
 
+      return html;
   });
-  html += "</ul>";
+      const charHtmlArray = await Promise.all(charPromises);
+      html = charHtmlArray.join("");
 
+      if (charCurrentPage === 1) {
+        // leave 5th column empty for search icon
+        html = html + `<thead><tr>
+        <th scope="col">Name</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Social Class</th>
+        <th scope="col">Profession</th>
+        <th scope="col"></th>
+        </tr></thead>`;
+      }
+
+      //html += charHtmlArray.join("");
   return html;
+  } catch (error) {
+    console.error("Error generating character template:", error);
+    return "";
+  }
 };
 
 async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Promise<string> {
@@ -505,7 +524,12 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
     // so that we can show all previously shown plays when clicking
     // the char-list-show-play-unique-btn search icon again
     if (!charsInPlayCard) {
-      currentPlayTemplate = html;
+      // there is a bug that causes "Page 1" not to be saved in the html
+      // when clicking the char-list-show-play-unique-btn search icon again
+      // to deactivate the "Plays with" view
+      // may be caused by the fact that the "Page 1" string
+      // is not part of the html generated for the "Plays with" view
+      currentPlayTemplate = `<span id="play-p-1">Page 1</span>` + html;
     }
 
     return html;
