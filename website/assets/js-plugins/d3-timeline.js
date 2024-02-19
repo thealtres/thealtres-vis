@@ -10,6 +10,10 @@ and show years only
 var optwidth = 900;
 var optheight = 150;
 
+// global variables used for export function highlightGraphPeriod()
+var context = null;
+var height_context = null;
+var x2 = null;
 
 /*
 * ========================================================================
@@ -44,8 +48,8 @@ export function setTimeline(dataset) {
 
     /* === Context chart === */
 
-    var margin_context = {top: 50, right: 30, bottom: 20, left: 20},
-        height_context = optheight - margin_context.top - margin_context.bottom;
+    var margin_context = {top: 50, right: 30, bottom: 20, left: 20}
+    height_context = optheight - margin_context.top - margin_context.bottom;
 
     /*
     * ========================================================================
@@ -76,7 +80,7 @@ export function setTimeline(dataset) {
 
     /* === Context Chart === */
 
-    var x2 = d3.time.scale()
+    x2 = d3.time.scale()
         .range([0, width])
         .domain([mindate, maxdate]);
 
@@ -111,6 +115,15 @@ export function setTimeline(dataset) {
         .y1(function(d) { return y2(d.count); });
 
     var line_context = d3.svg.line()
+        .x(function(d) { return x2(d.year); })
+        .y(function(d) { return y2(d.count); });
+
+    var highlight_area = d3.svg.area()
+        .x(function(d) { return x2(d.year); })
+        .y0((height_context))
+        .y1(function(d) { return y2(d.count); });
+    
+    var highlight_line = d3.svg.line()
         .x(function(d) { return x2(d.year); })
         .y(function(d) { return y2(d.count); });
 
@@ -150,7 +163,7 @@ export function setTimeline(dataset) {
         .attr("height", height);
         // clipPath is used to keep line and area from moving outside of plot area when user zooms/scrolls/brushes
 
-    var context = vis.append("g")
+    context = vis.append("g")
         .attr("class", "context")
         .attr("transform", "translate(" + margin_context.left + "," + margin_context.top + ")");
 
@@ -318,8 +331,8 @@ export function setTimeline(dataset) {
           });
         }
 
-        console.log(times)
-        console.log(times[0])
+        //console.log(times)
+        //console.log(times[0])
       
         return times;
     };
@@ -493,4 +506,30 @@ export function setTimeline(dataset) {
     function getMaxNumberOfPlays() {
         return Math.max(...dataset.map(o => o.count))
     }
+}
+
+export function highlightGraphPeriod(d1, d2) {
+    // check if highlight at same position
+    const existingRect = context.selectAll(".highlight-rect").filter(function() {
+        const x = parseFloat(d3.select(this).attr('x'));
+        const width = parseFloat(d3.select(this).attr('width'));
+        return x === x2(new Date(d1, 0, 1))
+        && width === x2(new Date(d2, 0, 1)) - x2(new Date(d1, 0, 1));
+    });
+    if (existingRect.size() > 0) {
+        return;
+    }
+
+    // add new highlight
+    context.append("rect")
+    .attr("class", "highlight-rect")
+    .attr("x", x2(new Date(d1, 0, 1)))
+    .attr("width", x2(new Date(d2, 0, 1)) - x2(new Date(d1, 0, 1)))
+    .attr("y", 0)
+    .attr("height", height_context)
+    .style("fill", "rgba(255, 255, 0, 0.3)");
+}
+
+export function clearGraphHighlight() {
+    context.selectAll(".highlight-rect").remove();
 }
