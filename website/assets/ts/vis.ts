@@ -402,8 +402,9 @@ function enableFilterBtns() {
       if (key === "lang") { // shared property
         charFilters[key] = charFilters[key].filter(item => item !== value);
         playFilters[key] = playFilters[key].filter(item => item !== value);
-        updateView("characters");
-        updateView("plays");
+
+        updateView("characters", true);
+        updateView("plays", true);
       } else if (key === "sex" || key === "professionalGroup" || key === "socialClass") {
         charFilters[key] = charFilters[key].filter(item => item !== value);
         updateView("characters");
@@ -415,8 +416,9 @@ function enableFilterBtns() {
       if (key === "lang") { // shared property
         charFilters[key].push(value);
         playFilters[key].push(value);
-        updateView("characters");
-        updateView("plays");
+
+        updateView("characters", true);
+        updateView("plays", true);
       } else if (key === "sex" || key === "professionalGroup" || key === "socialClass") {
         charFilters[key].push(value);
         updateView("characters");
@@ -430,6 +432,10 @@ function enableFilterBtns() {
       $("#char-list-show-plays-btn").removeClass("disabled");
     } else {
       $("#char-list-show-plays-btn").addClass("disabled");
+      // fix bug that shows lower than expected number of items when
+      // deactivating a character-related filter
+      // probably because some matches cannot be found in plays
+      totalShownPlayItems = playData.length;
     }
 
     updateProgress();
@@ -477,6 +483,10 @@ function fillSelect(dataType: string, selectId: string) {
 };
 
 async function generateCharacterTemplate(data: Character[], showPlayBtn = true): Promise<string> {
+  if (data.length === 0) {
+    return "<p>No characters found</p>";
+  }
+
   let html = "";
   try {
     const charPromises = data.map(async (character: Character) => {
@@ -500,25 +510,27 @@ async function generateCharacterTemplate(data: Character[], showPlayBtn = true):
         data-lang=${lang}></i></td>`;
       }
 
-      html = `${charText}</tr>`;
+      html = `<tr>${charText}</tr>`;
 
       return html;
   });
       const charHtmlArray = await Promise.all(charPromises);
       html = charHtmlArray.join("");
 
+      // show table header only on first page
       if (charCurrentPage === 1) {
         // leave 5th column empty for search icon
-        html = html + `<thead><tr>
+        html = `<thead><tr>
         <th scope="col">Name</th>
         <th scope="col">Gender</th>
         <th scope="col">Social Class</th>
         <th scope="col">Profession</th>
         <th scope="col"></th>
-        </tr></thead>`;
+        </tr></thead>` + html;
       }
 
-      //html += charHtmlArray.join("");
+      console.log(html)
+
       return html;
   } catch (error) {
     console.error("Error generating character template:", error);
@@ -526,7 +538,11 @@ async function generateCharacterTemplate(data: Character[], showPlayBtn = true):
   }
 };
 
-async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Promise<string> {;
+async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Promise<string> {
+  if (data.length === 0) {
+    return "<p>No plays found</p>";
+  }
+
   let html = "";
   try {
     // We define getPlayInfo() as async so that we can load data
@@ -638,10 +654,11 @@ async function getPlayInfo(id: number | number[], lang: string, type: string) : 
         console.error("Error getting play info:", error);
       };
 
-    case "premiered":
-      const premiered = playData.find((play: Play) =>
-        play.workId === id && play.lang === lang).printed;
-      return premiered;
+    //! doesn't work
+    // case "premiered":
+    //   const premiered = playData.find((play: Play) =>
+    //     play.workId === id && play.lang === lang).printed;
+    //   return premiered;
   };
 };
 
@@ -696,8 +713,9 @@ function filterPlays(playData: Play[]) : Play[] {
     const publisherMatches = publisherFilter.length === 0 ||
     publisherFilter.some((filter: string) => filter === play.publisherId);
 
+    //todo:
     const authorMatches = authorFilter.length === 0 ||
-    authorFilter.some((filter: string) => play.authorId // some plays have no authorId
+    authorFilter.some((filter: string) => play.authorId
     && filter === play.authorId.toString());
 
     const langMatches = langFilter.length === 0 ||
@@ -717,9 +735,10 @@ function filterPlays(playData: Play[]) : Play[] {
   return filteredPlayData;
 }
 
-async function updateView(dataType: string) {
+async function updateView(dataType: string, sharedProp = false) {
   let filteredData: Character[] | Play[];
-  console.log(`function updateView() called with args: ${dataType}`)
+  console.log(`function updateView() called with args: ${dataType}, sharedProp=${sharedProp}`)
+
   switch (dataType) {
     case "characters":
       charCurrentPage = 1;
@@ -727,24 +746,34 @@ async function updateView(dataType: string) {
       $("#char-list").html("");
       $("#char-list-pagination").html("");
       renderData("main-view-chars", filteredData, charCurrentPage);
+
+      if ((!sharedProp) || sharedProp && (charFilters.sex.length > 0 || charFilters.professionalGroup.length > 0 || charFilters.socialClass.length > 0)) {
+        showRelations("playsByChar", false);
+      } else {
+        //!rmv showRelations("playsByChar", true);
+        $("#play-list").html(originalPlayTemplate);
+      }
+
       break;
     case "plays":
+      if ((sharedProp) || sharedProp && (charFilters.sex.length < 0 || charFilters.professionalGroup.length < 0 || charFilters.socialClass.length < 0)) {
+        console.log("returning, sharedProp", sharedProp, charFilters)
+        return;
+      }
+
       playCurrentPage = 1;
       filteredData = filterPlays(playData)
       $("#play-list").html("");
       $("#play-list-pagination").html("");
+      renderData("main-view-plays-table", filteredData, playCurrentPage);
 
-      // highlight graph
-      let dateRanges = null;
-      // only if the list is filtered
-      if (filteredData.length != playData.length) {
-        const years = getDataYears(filteredData);
-        dateRanges = findSuccessiveYears(years);
+      if (playFilters.publisher.length > 0 || playFilters.author.length > 0) {
+        showRelations("charsByPlay", false);
+      } else {
+        //!rmv showRelations("charsByPlay", true);
+        $("#char-list").html(originalCharTemplate);
       }
 
-      console.log("dateRanges", dateRanges)
-
-      renderData("main-view-plays-table", filteredData, playCurrentPage, dateRanges);
       break;
   }
 
@@ -781,6 +810,7 @@ function resetFilters() {
   charCurrentPage = 1;
   playCurrentPage = 1;
 
+  clearGraphHighlight();
 };
 
 function updateProgress() {
@@ -840,8 +870,24 @@ async function showRelations(viewMode: string, unique: boolean, char: Character 
       });
     }
 
-    const playTemplate = await generatePlayTemplate(playsWithChars, true);
+    //!
+    totalShownPlayItems = playsWithChars.length;
+    const playTemplate = await generatePlayTemplate(playsWithChars, false);
     $("#play-list").html(playTemplate);
+
+    // only highlight graph if filtered
+    if (totalShownPlayItems !== playData.length) {
+      let dateRanges = null;
+      const years = getDataYears(playsWithChars);
+      dateRanges = findSuccessiveYears(years);
+      for (const range in dateRanges) {
+        const minYear = dateRanges[range][0];
+        const maxYear = dateRanges[range][dateRanges[range].length - 1];
+        highlightGraphPeriod(minYear, maxYear);
+      }
+    }
+
+    //renderData("main-view-plays-table", playsWithChars, playCurrentPage);
 
   } else if (viewMode === "charsByPlay") {
     const charsInPlays: Character[] = [];
@@ -852,10 +898,15 @@ async function showRelations(viewMode: string, unique: boolean, char: Character 
         charsInPlays.push(char);
       });
     });
+
+    console.log("charsInPlays", charsInPlays)
+
+    //!
+    totalShownCharItems = charsInPlays.length;
     const charTemplate = await generateCharacterTemplate(charsInPlays);
+    console.log("charTemplate", charTemplate)
     $("#char-list").html(charTemplate);
   }
-  //console.timeEnd("showRelations");
 };
 
 async function fetchData(): Promise<void> {
