@@ -316,24 +316,21 @@ export function setTimeline(dataset) {
     function customTickFunction(t0, t1, dt)  {
         var labelSize = 42; 
         var maxTotalLabels = Math.floor(width / labelSize);
-      
+
         var time = d3.time.year.ceil(t0);
         var times = [];
-      
+
         while (time < t1) {
           times.push(new Date(+time));
           time = new Date(time.setFullYear(time.getFullYear() + 1));
         }
-      
+
         if(times.length > maxTotalLabels) {
           times = _.filter(times, function(d, i) {
-            return i % Math.ceil(times.length / maxTotalLabels) === 0; 
+            return i % Math.ceil(times.length / maxTotalLabels) === 0;
           });
         }
 
-        //console.log(times)
-        //console.log(times[0])
-      
         return times;
     };
 
@@ -344,7 +341,6 @@ export function setTimeline(dataset) {
         x.domain(brush.empty() ? x2.domain() : brush.extent());
         // Reset zoom scale's domain
         zoom.x(x);
-        console.log("dataXRangeBrushed", dataXrange)
         updateDisplayDates();
         setYdomain();
 
@@ -357,7 +353,6 @@ export function setTimeline(dataset) {
         brush.extent(x.domain());
         vis.select(".brush").call(brush);
         // and update the text showing range of dates.
-        console.log("dataXRangeDraw", dataXrange)
         updateDisplayDates();
     };
 
@@ -376,7 +371,7 @@ export function setTimeline(dataset) {
         var b = brush.extent();
         // update the text that shows the range of displayed dates
         var localBrushDateStart = (brush.empty()) ? DateFormat(dataXrange[0]) : DateFormat(b[0]),
-            localBrushDateEnd   = (brush.empty()) ? DateFormat(dataXrange[1]) : DateFormat(b[1]);
+        localBrushDateEnd   = (brush.empty()) ? DateFormat(dataXrange[1]) : DateFormat(b[1]);
 
         // Update start and end dates in upper right-hand corner
         d3.select("#displayDates")

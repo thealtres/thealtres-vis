@@ -19,6 +19,11 @@ authorData: Author[] = [], publisherData: Publisher[] = [];
 
 let filteredCharData: Character[] = [], filteredPlayData: Play[] = [];
 
+// used to store characters that are part of plays filtered by date
+// we cannot use filteredCharData as it's already used
+// to go back to the previous view when deactivating a filter
+let charsInPlaysDated: Character[] = [];
+
 const defaultCharFilters = {
   lang: [],
   sex: [],
@@ -31,6 +36,7 @@ const defaultPlayFilters = {
   lang: [],
   publisher: [],
   author: [],
+  dates: [],
 };
 let playFilters = {...defaultPlayFilters};
 
@@ -81,7 +87,8 @@ function getDataYears(data: Play[]) : number[] {
   // because it has the "printed" property
   const years = data.map((item: Play) => +item.printed);
   // filter duplicates
-  return years.filter((year, index) => years.indexOf(year) === index && year !== 0);
+  return years.filter((year, index) =>
+  years.indexOf(year) === index && year !== 0);
 }
 
 function findSuccessiveYears(years: number[]) : object {
@@ -126,22 +133,13 @@ function findSuccessiveYears(years: number[]) : object {
   return ranges;
 }
 
-async function renderData(elName, loadedData, currentPage, dateRanges = null) {
+async function renderData(elName: string, loadedData: Character[] | Play[], currentPage: number) {
   if ($("g.context").find("rect.highlight-rect").length > 0
-      // only clear if there are dateRanges
-      // when rendering the next page, dateRanges is null (because no new data)
-      // this caused the highlight to be cleared when scrolling
-      // to the next page because rect.length > 0
-      && (dateRanges !== null
-      && currentPage !== 1)
-
-      // or, clear if play-specific option is unselected
-      || (dateRanges === null && currentPage === 1)) {
+      // only clear if we're on the first page
+      // otherwise, caused the highlight to be cleared when scrolling
+      && currentPage === 1) {
     clearGraphHighlight();
   }
-
-  console.log(dateRanges)
-  console.log(currentPage)
 
   if (loadedData.length === 0) {
     if (elName === "main-view-chars") {
@@ -155,8 +153,8 @@ async function renderData(elName, loadedData, currentPage, dateRanges = null) {
   }
 
   const pageData = loadedData.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
-  const template = elName === "main-view-chars" ? await generateCharacterTemplate(pageData) :
-    await generatePlayTemplate(pageData);
+  const template = elName === "main-view-chars" ? await generateCharacterTemplate(pageData as Character[]) :
+    await generatePlayTemplate(pageData as Play[]);
 
   // console.log("pageData", pageData)
   // console.log("template", elName, template)
@@ -182,28 +180,18 @@ async function renderData(elName, loadedData, currentPage, dateRanges = null) {
   option.innerHTML = `Page ${currentPage}`;
   // append option and change selected option to last loaded page
   $(selectId).append(option).val(option.value);
-
-  if (dateRanges) {
-    for (const range in dateRanges) {
-      const minYear = dateRanges[range][0];
-      const maxYear = dateRanges[range][dateRanges[range].length - 1];
-      highlightGraphPeriod(minYear, maxYear);
-    }
-  }
 }
 
-function handlePagination(e, currentPage, totalItems, filteredData, loadedData) {
+function handlePagination(e, currentPage: number, totalItems: number, filteredData: Character[] | Play[], loadedData) {
   const elName = e.className.split(" ")[1];
   let currentScrollPosition = e.scrollTop;
   const listHeight = elName === "main-view-chars" ? $("#char-list").height() :
    getPlayListHeight();
   const viewPortHeight = $(e).height();
 
-  //console.log("currentScrollPosition", currentScrollPosition+viewPortHeight, "listHeight", listHeight)
   if (currentScrollPosition + viewPortHeight >= listHeight) {
     if (currentPage * itemsPerPage < totalItems) {
       currentPage++;
-      console.log("filteredD", filteredData, currentPage, itemsPerPage)
       const newData = filteredData.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
       loadedData.push(...newData);
       console.log(`Loading page ${currentPage} of ${elName} with ${newData.length} items`);
@@ -218,7 +206,7 @@ function handlePagination(e, currentPage, totalItems, filteredData, loadedData) 
   }
 };
 
-function scrollToPageNumber(pageNumber, type) {
+function scrollToPageNumber(pageNumber: number, type: string): void {
   preventScrollEvent = true;
   const anchor = document.getElementById(`${type}-p-${pageNumber}`);
 
@@ -230,7 +218,7 @@ function scrollToPageNumber(pageNumber, type) {
   preventScrollEvent = false;
 }
 
-function handleScroll(e, isScrollPrevented: boolean) {
+function handleScroll(e, isScrollPrevented: boolean): void {
   if (isScrollPrevented) {
     return;
   }
@@ -245,7 +233,7 @@ function handleScroll(e, isScrollPrevented: boolean) {
   }
 }
 
-function getPlayListHeight() {
+function getPlayListHeight(): void {
   const playList = document.getElementById("play-list");
   // used to store the height of every row
   const rowHeights = [];
@@ -303,8 +291,8 @@ function generateTimelineData(data: Play[]) {
   return yearsCount;
 };
 
-async function fillFilterValues(data) {
-  switch (data) {
+async function fillFilterValues(dataType: string): Promise<void> {
+  switch (dataType) {
     case "characters":
       // This JSON file is used to map values in charData to:
       // 1) their full names to be shown as tooltips
@@ -474,10 +462,12 @@ function fillSelect(dataType: string, selectId: string) {
     onItemAdd: (id) => {
       playFilters[dataType].push(id);
       updateView("plays");
+      updateProgress();
     },
     onItemRemove: (id) => {
       playFilters[dataType] = playFilters[dataType].filter(item => item !== id);
       updateView("plays");
+      updateProgress();
     },
   });
 };
@@ -529,8 +519,6 @@ async function generateCharacterTemplate(data: Character[], showPlayBtn = true):
         </tr></thead>` + html;
       }
 
-      console.log(html)
-
       return html;
   } catch (error) {
     console.error("Error generating character template:", error);
@@ -553,11 +541,10 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
     // ? check performance
     const playPromises = data.map(async (play: Play) => {
       const titleMain = play.titleMain;
-      const titleSub = play.titleSub;
       const lang = play.lang;
-      const authorId = play.authorId;
-      const authorName = await getPlayInfo(authorId, lang, "author");
-      //const publisher = getPlayInfo(play["publisher"], "publisher");
+
+      const authorName = await getPlayInfo(play.authorId, lang, "author");
+      //const publisher = await getPlayInfo(play.publisherId, lang, "publisher");
 
       // filter out empty values
       let playText = [titleMain, authorName].filter(Boolean).join("<br>");
@@ -588,7 +575,7 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
     html = playHtmlArray.join(""); // Combine HTML strings into a single string
 
     // we want to save the last template only if this function is not called
-    // from showRelations() (i.e. charsInPlayCard is false)
+    // from getRelations() (i.e. charsInPlayCard is false)
     // so that we can show all previously shown plays when clicking
     // the char-list-show-play-unique-btn search icon again
     if (!charsInPlayCard) {
@@ -628,9 +615,15 @@ async function getPlayInfo(id: number | number[], lang: string, type: string) : 
 
   switch (type) {
     case "publisher":
-      console.log("publisherData", publisherData)
-      //console.log("publisherData[id]", publisherData[id as number].nameOnPlay)
-      return "";
+        // const publisherName = publisherData.find((publisher: Publisher) => {
+        //   if (publisher.publisherId === id) {
+        //     if (!publisher.normalizedName) {
+        //       return;
+        //     }
+        //     return publisherName;
+        //   }
+        // });
+        return "";
 
     case "author":
       try {
@@ -685,7 +678,7 @@ function filterCharacters(charData: Character[]) : Character[] {
       langFilter.some((filter: string) => filter === char.lang);
 
     const genderMatches = genderFilter.length === 0 ||
-    genderFilter.some((filter: string) => filter === char.sex);
+      genderFilter.some((filter: string) => filter === char.sex);
 
     const professionMatches = professionFilter.length === 0 ||
       professionFilter.some((filter: string) => filter === char.professionalGroup);
@@ -706,22 +699,42 @@ function filterPlays(playData: Play[]) : Play[] {
   const publisherFilter = playFilters.publisher;
   const authorFilter = playFilters.author;
   const langFilter = playFilters.lang;
-
-  console.log(playFilters)
+  const dateFilter = playFilters.dates;
 
   filteredPlayData = playData.filter((play: Play) => {
     const publisherMatches = publisherFilter.length === 0 ||
     publisherFilter.some((filter: string) => filter === play.publisherId);
 
-    //todo:
     const authorMatches = authorFilter.length === 0 ||
-    authorFilter.some((filter: string) => play.authorId
-    && filter === play.authorId.toString());
+    authorFilter.some((filter: string) => {
+      const author = authorData.find((author: Author) =>
+      author.authorId === parseInt(filter));
+      if (!author) {
+        return false;
+      }
+
+      let matchingAuthor = false;
+      if (play.authorId instanceof Array) {
+        matchingAuthor = play.authorId.some((authorId: number) =>
+        authorId === author.authorId);
+      } else {
+        matchingAuthor = play.authorId === author.authorId;
+      }
+
+      // check if author's language matches play's language
+      return matchingAuthor && author.lang === play.lang;
+    });
 
     const langMatches = langFilter.length === 0 ||
     langFilter.some((filter: string) => filter === play.lang);
 
-    return publisherMatches && authorMatches && langMatches;
+    const dateMatches = dateFilter.length === 0 ||
+    dateFilter.some((filter: Array<number>) => {
+      const printed = +play.printed;
+      return (printed >= filter[0] && printed <= filter[1]);
+    });
+
+    return publisherMatches && authorMatches && langMatches && dateMatches;
   });
 
   // activate "Show Characters" filter button
@@ -735,24 +748,39 @@ function filterPlays(playData: Play[]) : Play[] {
   return filteredPlayData;
 }
 
-async function updateView(dataType: string, sharedProp = false) {
+// function filterByDate(playData: Play[], startDate: number, endDate: number) : Play[] {
+//   return playData.filter((play: Play) => {
+//     const printed = +play.printed;
+//     return (printed >= startDate && printed <= endDate);
+//   });
+// }
+
+async function updateView(dataType: string, sharedProp = false, data?) {
   let filteredData: Character[] | Play[];
   console.log(`function updateView() called with args: ${dataType}, sharedProp=${sharedProp}`)
 
   switch (dataType) {
     case "characters":
       charCurrentPage = 1;
-      filteredData = filterCharacters(charData);
+      console.log("charData", charData)
+      console.log("filteredCharData", filteredCharData)
+
+      if (playFilters.dates.length > 0) {
+        filteredData = filterCharacters(charsInPlaysDated);
+      } else {
+        filteredData = filterCharacters(charData);
+      }
+
       $("#char-list").html("");
       $("#char-list-pagination").html("");
       renderData("main-view-chars", filteredData, charCurrentPage);
 
-      if ((!sharedProp) || sharedProp && (charFilters.sex.length > 0 || charFilters.professionalGroup.length > 0 || charFilters.socialClass.length > 0)) {
-        showRelations("playsByChar", false);
-      } else {
-        //!rmv showRelations("playsByChar", true);
-        $("#play-list").html(originalPlayTemplate);
-      }
+      // if ((!sharedProp) || sharedProp && (charFilters.sex.length > 0 || charFilters.professionalGroup.length > 0 || charFilters.socialClass.length > 0)) {
+      //   getRelations("playsByChar", false);
+      // } else {
+      //   $("#play-list").html(originalPlayTemplate);
+      // }
+      getRelations("playsByChar", false);
 
       break;
     case "plays":
@@ -762,15 +790,20 @@ async function updateView(dataType: string, sharedProp = false) {
       }
 
       playCurrentPage = 1;
-      filteredData = filterPlays(playData)
+      if (!data) {
+        filteredData = filterPlays(playData)
+      } else {
+        filteredData = data;
+      }
+
       $("#play-list").html("");
       $("#play-list-pagination").html("");
       renderData("main-view-plays-table", filteredData, playCurrentPage);
 
-      if (playFilters.publisher.length > 0 || playFilters.author.length > 0) {
-        showRelations("charsByPlay", false);
+      if (playFilters.publisher.length > 0 || playFilters.author.length > 0 || playFilters.dates.length > 0) {
+        getRelations("charsByPlay", false);
       } else {
-        //!rmv showRelations("charsByPlay", true);
+        //!rmv getRelations("charsByPlay", true);
         $("#char-list").html(originalCharTemplate);
       }
 
@@ -788,11 +821,9 @@ function resetFilters() {
   $("#char-list").html(originalCharTemplate);
   $("#play-list").html(originalPlayTemplate);
 
-  console.log("currentCharTemplate", originalPlayTemplate)
-
   // reset play-header-text if in "Plays with" view
   $(".play-header-text").text("Plays")
-  .next().css("display", "inline") // show progress number again
+  .next().css("display", "inline"); // show progress number again
   $(".header-info[name='header-info-play']").css("display", "flex"); // show header info again
 
   $("#char-list-show-plays-btn, #play-list-show-chars-btn, #filter-reset-btn")
@@ -822,8 +853,8 @@ function updateProgress() {
   $(".play-progress").text(`${totalShownPlayItems}`);
 }
 
-async function showRelations(viewMode: string, unique: boolean, char: Character = null) : Promise<void> {
-  //console.time("showRelations");
+async function getRelations(viewMode: string, unique: boolean, char: Character = null) : Promise<void> {
+  //console.time("getRelations");
   if (viewMode === "playsByChar") {
     const playsWithChars: Play[] = [];
 
@@ -899,12 +930,22 @@ async function showRelations(viewMode: string, unique: boolean, char: Character 
       });
     });
 
-    console.log("charsInPlays", charsInPlays)
+    // This creates an explicit, global copy
+    // of the charsInPlays array when data is filtered by date.
+    // We need to have a copy available
+    // to do further char-specific (gender; prof; class) filtering
+    // on already date-filtered characters.
+    //
+    // That copy is subsequently used in updateView().
+    //
+    // Otherwise, applying a date filter would reset the character data.
+    // This is not the best way to do it, but well...
+    if (playFilters.dates.length > 0) {
+      charsInPlaysDated = charsInPlays;
+    }
 
-    //!
     totalShownCharItems = charsInPlays.length;
     const charTemplate = await generateCharacterTemplate(charsInPlays);
-    console.log("charTemplate", charTemplate)
     $("#char-list").html(charTemplate);
   }
 };
@@ -948,6 +989,27 @@ async function drawUI() {
   timelineData = generateTimelineData(playData)
   setTimeline(timelineData);
 
+  //let [graphDateRangeStart, graphDateRangeEnd] = $("#displayDates").text().split(" - ");
+  //console.log("graphDateRangeStart", graphDateRangeStart, "graphDateRangeEnd", graphDateRangeEnd)
+  let debounceTimer;
+  let observer = new MutationObserver(function(mutations) {
+    clearTimeout(debounceTimer);
+
+    debounceTimer = setTimeout(() => {
+      mutations.forEach(function(mutation) {
+        let [graphDateRangeStart, graphDateRangeEnd] = mutation.target.textContent.split(" - ");
+        console.log("filteredPlayData0", filteredPlayData)
+        playFilters.dates = [[+graphDateRangeStart, +graphDateRangeEnd]];
+        console.log("filteredPlayData", filteredPlayData)
+        //totalShownPlayItems = filteredPlayData.length;
+        updateView("plays", false);
+        updateProgress();
+      });
+    }, 300);
+  });
+
+  observer.observe($("#displayDates")[0], { childList: true });
+
   totalShownCharItems = charData.length;
   totalShownPlayItems = playData.length;
   $(".char-progress").text(`${totalShownCharItems}`);
@@ -983,7 +1045,7 @@ $(function () {
       return;
     }
 
-    showRelations("playsByChar", false);
+    getRelations("playsByChar", false);
   });
 
   $("#play-list-show-chars-btn").on("click", function() {
@@ -991,7 +1053,7 @@ $(function () {
       return;
     }
 
-    showRelations("charsByPlay", false);
+    getRelations("charsByPlay", false);
   });
 
   $("#filter-reset-btn").on("click" , function() {
@@ -1028,7 +1090,7 @@ $(function () {
     const charId = $(this).data("charid");
     const lang = $(this).data("lang");
     const char = getCharacter(workId, lang, charId);
-    showRelations("playsByChar", true, char);
+    getRelations("playsByChar", true, char);
 
     // update appearance
     $(".char-list-show-play-unique-btn").removeClass("active");
