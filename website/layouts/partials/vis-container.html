@@ -1,8 +1,24 @@
+{{/* Get site logo. */}}
+{{ $show_logo := site.Params.header.navbar.show_logo | default true }}
+{{ $has_logo := fileExists "assets/media/logo.png" | or (fileExists "assets/media/logo.svg") }}
+{{ $logo := "" }}
+{{ if $has_logo }}
+  {{ $logo = (partial "blox-core/functions/get_logo" (dict "constraint" "max_height" "size" 70)) }}
+{{ end }}
+
 <div id="loader"></div>
+
 <div id="timeline-header">
-    <a class="logo" href="/"><img src="/media/logo_huadc22f77e32657c8541a8bd15cd135f1_3162_0x70_resize_lanczos_3.png" alt="Thealtres"></a>
-    <div id="timeline">
-</div>
+    <div class="logo-container">
+        {{- if $has_logo -}}
+        <img class="logo" src="{{ $logo.RelPermalink }}" alt="{{ site.Title }}"
+        {{with site.Params.header.image.width}}width="{{.}}"{{end}}
+        {{with site.Params.header.image.height}}height="{{.}}"{{end}}>
+        {{- else -}}
+            {{- site.Title -}}
+        {{- end -}}
+    </div>
+    <div id="timeline"></div>
 </div>
 <div id="vis-container">
     <div class="item filters">
