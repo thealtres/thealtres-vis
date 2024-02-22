@@ -9,11 +9,15 @@ and show years only
 
 var optwidth = 900;
 var optheight = 150;
+var defaultHighlightColor = "rgba(255, 255, 255, 0.3)";
 
 // global variables used for export function highlightGraphPeriod()
 var context = null;
 var height_context = null;
 var x2 = null;
+var brush = null;
+var brushg = null;
+var dataXrange = null;
 
 /*
 * ========================================================================
@@ -58,7 +62,7 @@ export function setTimeline(dataset) {
     */
 
     // year
-    var dataXrange = d3.extent(dataset, function(d) { return d.year; });
+    dataXrange = d3.extent(dataset, function(d) { return d.year; });
     // number of plays (by year)
     var dataYrange = [0, d3.max(dataset, function(d) { return d.count; })];
 
@@ -122,7 +126,7 @@ export function setTimeline(dataset) {
         .x(function(d) { return x2(d.year); })
         .y0((height_context))
         .y1(function(d) { return y2(d.count); });
-    
+
     var highlight_line = d3.svg.line()
         .x(function(d) { return x2(d.year); })
         .y(function(d) { return y2(d.count); });
@@ -133,7 +137,7 @@ export function setTimeline(dataset) {
     * ========================================================================
     */
 
-    var brush = d3.svg.brush()
+    brush = d3.svg.brush()
         .x(x2)
         .on("brush", brushed)
         .on("brushend", brushend);
@@ -196,10 +200,10 @@ export function setTimeline(dataset) {
         .attr("transform", "translate(" + 98 + ","+ 10 +")");
 
     //! "Zoom to" section
-    var expl_text = display_range_group.append("text")
-        .text("Zoom to: ")
-        .style("text-anchor", "start")
-        .attr("transform", "translate(" + 180 + ","+ 10 +")");
+    // var expl_text = display_range_group.append("text")
+    //     .text("Zoom to: ")
+    //     .style("text-anchor", "start")
+    //     .attr("transform", "translate(" + 180 + ","+ 10 +")");
 
     // === the zooming/scaling buttons === //
 
@@ -209,7 +213,7 @@ export function setTimeline(dataset) {
     // don't show year button if < 1 year of data
     //! this isn't really interesting for us so let's just replace
     //! data with "reset"
-    var button_data = ["month", "reset"];
+    var button_data = ["reset"];
     // var dateRange  = dataXrange[1] - dataXrange[0],
     //     ms_in_year = 31540000000;
 
@@ -264,7 +268,7 @@ export function setTimeline(dataset) {
 
     /* === brush (part of context chart)  === */
 
-    var brushg = context.append("g")
+    brushg = context.append("g")
         .attr("class", "x brush")
         .call(brush);
 
@@ -503,7 +507,7 @@ export function setTimeline(dataset) {
     }
 }
 
-export function highlightGraphPeriod(d1, d2) {
+export function highlightGraphPeriod(d1, d2, highlightUniqueColor = null) {
     // check if highlight at same position
     const existingRect = context.selectAll(".highlight-rect").filter(function() {
         const x = parseFloat(d3.select(this).attr('x'));
@@ -511,20 +515,103 @@ export function highlightGraphPeriod(d1, d2) {
         return x === x2(new Date(d1, 0, 1))
         && width === x2(new Date(d2, 0, 1)) - x2(new Date(d1, 0, 1));
     });
+
     if (existingRect.size() > 0) {
         return;
+    }
+
+    // only show one unique rectangle at a time (for show-play-unique-btn)
+    const existingUniqueRect = context.selectAll(".highlight-rect").filter(function() {
+        return d3.select(this).style("fill") === highlightUniqueColor;
+    });
+
+    if (existingUniqueRect.size() > 0) {
+        clearLastSingleRectHighlight();
+    }
+
+    var extentStartX = parseFloat(brushg.select(".extent").attr("x"));
+    var extentEndX = extentStartX + parseFloat(brushg.select(".extent").attr("width"));
+
+    var highlightStartX = x2(new Date(d1, 0, 1));
+    var highlightEndX = x2(new Date(d2, 0, 1));
+
+
+    // adjust highlight rectangle if it exceeds extent boundaries
+    if (highlightStartX < extentStartX) {
+        highlightStartX = extentStartX;
+    }
+
+    if (highlightEndX > extentEndX) {
+        highlightEndX = extentEndX;
     }
 
     // add new highlight
     context.append("rect")
     .attr("class", "highlight-rect")
-    .attr("x", x2(new Date(d1, 0, 1)))
-    .attr("width", x2(new Date(d2, 0, 1)) - x2(new Date(d1, 0, 1)))
+    .attr("x", highlightStartX)
+    .attr("width", highlightEndX - highlightStartX)
     .attr("y", 0)
     .attr("height", height_context)
-    .style("fill", "rgba(255, 255, 0, 0.3)");
+    .style("fill", highlightUniqueColor ? highlightUniqueColor : defaultHighlightColor);
 }
 
-export function clearGraphHighlight() {
-    context.selectAll(".highlight-rect").remove();
+function resetBrush() {
+    // remove the brush
+    context.selectAll(".brush").remove();
+
+    // recreate the brush
+    const brushg = context.append("g")
+    .attr("class", "x brush")
+    .call(brush);
+
+    brushg.selectAll(".extent")
+    .attr("y", -6)
+    .attr("height", height_context + 8);
+    // .extent is the actual window/rectangle showing what's in focus
+
+    brushg.selectAll(".resize")
+        .append("rect")
+        .attr("class", "handle")
+        .attr("transform", "translate(0," +  -3 + ")")
+        .attr('rx', 2)
+        .attr('ry', 2)
+        .attr("height", height_context) //!
+        .attr("width", 3);
+
+    brushg.selectAll(".resize")
+        .append("rect")
+        .attr("class", "handle-mini")
+        .attr("transform", "translate(-2,8)")
+        .attr('rx', 3)
+        .attr('ry', 3)
+        .attr("height", (height_context/2))
+        .attr("width", 7);
+        // .resize are the handles on either size
+        // of the 'window' (each is made of a set of rectangles)
+
+    // reset date range
+    brush.extent([dataXrange[0], dataXrange[1]]);
+    brushg.call(brush);
+}
+
+export function clearGraphHighlight(brushReset = false) {
+    context.selectAll(".highlight-rect")
+        .transition()
+        .duration(500)
+        .style("opacity", 0)
+        .each("end", function() {
+            if (brushReset) {
+                resetBrush();
+            }
+
+            d3.select(this).remove();
+        });
+}
+
+export function clearLastSingleRectHighlight() {
+    const existingRect = context.selectAll(".highlight-rect");
+
+    if (existingRect.size() > 0) {
+        existingRect[0][existingRect.size() - 1].remove();
+    }
 }

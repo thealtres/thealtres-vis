@@ -1,5 +1,6 @@
 import { Character, Play, Author, Publisher } from "./IEntity";
-import { setTimeline, highlightGraphPeriod, clearGraphHighlight } from "../js-plugins/d3-timeline";
+import { setTimeline, highlightGraphPeriod,
+  clearGraphHighlight, clearLastSingleRectHighlight } from "../js-plugins/d3-timeline";
 
 // These are professionalGroup values to be filtered out in fillFilterValues()
 // we may convert them to null in the future
@@ -48,6 +49,8 @@ let totalShownCharItems = 0, totalShownPlayItems = 0;
 let preventScrollEvent = false;
 
 let timelineData = [];
+let noDateRange = false;
+let uniqueHighlightColor = "rgba(255, 204, 0, 0.5)"; // orange
 
 /* Pagination */
 let playCurrentPage = 1;
@@ -119,12 +122,14 @@ function findSuccessiveYears(years: number[]) : object {
 
   console.log("currentRange0", currentRange)
 
+  if (currentRange.length === 0) {
+    noDateRange = true;
   // add last range
-  if (currentRange.length > 0) {
+  } else if (currentRange.length > 0) {
+    noDateRange = false;
     // check if range has only one date
     // we need one beginning and one end date to create the highlight rect
     if (currentRange.length === 1) {
-      console.log("currentRange", currentRange)
       currentRange.push(currentRange[0] + 1);
     }
     ranges[`range${Object.keys(ranges).length + 1}`] = currentRange;
@@ -748,14 +753,7 @@ function filterPlays(playData: Play[]) : Play[] {
   return filteredPlayData;
 }
 
-// function filterByDate(playData: Play[], startDate: number, endDate: number) : Play[] {
-//   return playData.filter((play: Play) => {
-//     const printed = +play.printed;
-//     return (printed >= startDate && printed <= endDate);
-//   });
-// }
-
-async function updateView(dataType: string, sharedProp = false, data?) {
+async function updateView(dataType: string, sharedProp = false) {
   let filteredData: Character[] | Play[];
   console.log(`function updateView() called with args: ${dataType}, sharedProp=${sharedProp}`)
 
@@ -807,6 +805,11 @@ async function updateView(dataType: string, sharedProp = false, data?) {
         $("#char-list").html(originalCharTemplate);
       }
 
+      // update highlight graph when using date filter w/o other filters
+      if (playFilters.dates.length > 0 && playFilters.publisher.length === 0 && playFilters.author.length === 0) {
+        setGraphHighlight(filteredData);
+      }
+
       break;
   }
 
@@ -841,7 +844,7 @@ function resetFilters() {
   charCurrentPage = 1;
   playCurrentPage = 1;
 
-  clearGraphHighlight();
+  clearGraphHighlight(true); // reset highlight and brush
 };
 
 function updateProgress() {
@@ -908,14 +911,7 @@ async function getRelations(viewMode: string, unique: boolean, char: Character =
 
     // only highlight graph if filtered
     if (totalShownPlayItems !== playData.length) {
-      let dateRanges = null;
-      const years = getDataYears(playsWithChars);
-      dateRanges = findSuccessiveYears(years);
-      for (const range in dateRanges) {
-        const minYear = dateRanges[range][0];
-        const maxYear = dateRanges[range][dateRanges[range].length - 1];
-        highlightGraphPeriod(minYear, maxYear);
-      }
+      setGraphHighlight(playsWithChars, unique);
     }
 
     //renderData("main-view-plays-table", playsWithChars, playCurrentPage);
@@ -949,6 +945,21 @@ async function getRelations(viewMode: string, unique: boolean, char: Character =
     $("#char-list").html(charTemplate);
   }
 };
+
+function setGraphHighlight(data, highlightUnique = false) {
+  let dateRanges = null;
+  const years = getDataYears(data);
+  dateRanges = findSuccessiveYears(years);
+  for (const range in dateRanges) {
+    const minYear = dateRanges[range][0];
+    const maxYear = dateRanges[range][dateRanges[range].length - 1];
+    if (highlightUnique) {
+      highlightGraphPeriod(minYear, maxYear, uniqueHighlightColor);
+    } else {
+      highlightGraphPeriod(minYear, maxYear);
+    }
+  }
+}
 
 async function fetchData(): Promise<void> {
   //console.time("fetchData");
@@ -1080,6 +1091,11 @@ $(function () {
       $(".char-list-show-play-unique-btn").removeClass("active")
 
       $("#play-list").html(currentPlayTemplate);
+
+      if (totalShownPlayItems === 1 && !noDateRange) {
+        clearLastSingleRectHighlight();
+      }
+
       $(".play-header-text").text("Plays")
       .next().css("display", "inline") // show progress number again
       $(".header-info[name='header-info-play']").css("display", "flex"); // show header info again

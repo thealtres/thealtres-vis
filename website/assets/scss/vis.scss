@@ -76,12 +76,11 @@ table {
 }
 
 #timeline {
-    margin-left: 18%;
-    scale: 1;
-}
-
-.logo {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    scale: 1;
+    width: 100%;
 }
 
 #vis-container {
