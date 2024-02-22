@@ -99,8 +99,6 @@ function findSuccessiveYears(years: number[]) : object {
   const ranges = {}; // { range1: [1824, 1825, 1826], range2: [1830, 1831] }
   let currentRange = [];
 
-  console.log("sortedDates", sortedDates)
-
   for (let i = 0; i < sortedDates.length; i++) {
     const currentDate = sortedDates[i];
 
@@ -109,7 +107,6 @@ function findSuccessiveYears(years: number[]) : object {
         // check if range has only one date
         // we need one beginning and one end date to create the highlight rect
         if (currentRange.length === 1) {
-          console.log("currentRange", currentRange)
           currentRange.push(currentRange[0] + 1);
         }
         ranges[`range${Object.keys(ranges).length + 1}`] = currentRange;
@@ -124,7 +121,7 @@ function findSuccessiveYears(years: number[]) : object {
 
   if (currentRange.length === 0) {
     noDateRange = true;
-  // add last range
+    // add last range
   } else if (currentRange.length > 0) {
     noDateRange = false;
     // check if range has only one date
@@ -211,7 +208,7 @@ function handlePagination(e, currentPage: number, totalItems: number, filteredDa
   }
 };
 
-function scrollToPageNumber(pageNumber: number, type: string): void {
+function scrollToPageNumber(pageNumber: string, type: string): void {
   preventScrollEvent = true;
   const anchor = document.getElementById(`${type}-p-${pageNumber}`);
 
@@ -238,7 +235,7 @@ function handleScroll(e, isScrollPrevented: boolean): void {
   }
 }
 
-function getPlayListHeight(): void {
+function getPlayListHeight(): number {
   const playList = document.getElementById("play-list");
   // used to store the height of every row
   const rowHeights = [];
@@ -425,10 +422,6 @@ function enableFilterBtns() {
       $("#char-list-show-plays-btn").removeClass("disabled");
     } else {
       $("#char-list-show-plays-btn").addClass("disabled");
-      // fix bug that shows lower than expected number of items when
-      // deactivating a character-related filter
-      // probably because some matches cannot be found in plays
-      totalShownPlayItems = playData.length;
     }
 
     updateProgress();
@@ -477,7 +470,7 @@ function fillSelect(dataType: string, selectId: string) {
   });
 };
 
-async function generateCharacterTemplate(data: Character[], showPlayBtn = true): Promise<string> {
+async function generateCharacterTemplate(data: Character[], showPlayBtn = true, minified = false): Promise<string> {
   if (data.length === 0) {
     return "<p>No characters found</p>";
   }
@@ -492,6 +485,10 @@ async function generateCharacterTemplate(data: Character[], showPlayBtn = true):
       let sex = character.sex ?? "";
       let socialClass = character.socialClass ?? "";
       let profession = character.professionalGroup ?? "";
+
+      if (minified) {
+        return `<p class="char-minified">${name}</p>`;
+      }
 
       let charText = [name, sex, socialClass, profession]
       .map((item: string) => `<td>${item}</td>`).join("");
@@ -512,17 +509,30 @@ async function generateCharacterTemplate(data: Character[], showPlayBtn = true):
       const charHtmlArray = await Promise.all(charPromises);
       html = charHtmlArray.join("");
 
+      if (!minified) {
       // show table header only on first page
-      if (charCurrentPage === 1) {
-        // leave 5th column empty for search icon
-        html = `<thead><tr>
-        <th scope="col">Name</th>
-        <th scope="col">Gender</th>
-        <th scope="col">Social Class</th>
-        <th scope="col">Profession</th>
-        <th scope="col"></th>
-        </tr></thead>` + html;
+        if (charCurrentPage === 1) {
+          // leave 5th column empty for search icon
+          html = `<thead><tr>
+          <th scope="col">Name</th>
+          <th scope="col">Gender</th>
+          <th scope="col">Social Class</th>
+          <th scope="col">Profession</th>
+          <th scope="col"></th>
+          </tr></thead>` + html;
+        }
       }
+
+      // highlight unique characters the same color as rect in highlight graph
+      if (charPromises.length === 1
+        // only when clicking show-play-unique-btn
+        // otherwise, triggers when clicking the char-list-show-plays-btn
+        // when only one char is returned for a play
+        && $(".char-list-show-play-unique-btn").filter((i, el) =>
+        $(el).hasClass("active")).length > 0) {
+          html = html.replace("<p class=\"char-minified\">",
+          "<p class=\"char-minified unique\">");
+        }
 
       return html;
   } catch (error) {
@@ -547,9 +557,7 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
     const playPromises = data.map(async (play: Play) => {
       const titleMain = play.titleMain;
       const lang = play.lang;
-
       const authorName = await getPlayInfo(play.authorId, lang, "author");
-      //const publisher = await getPlayInfo(play.publisherId, lang, "publisher");
 
       // filter out empty values
       let playText = [titleMain, authorName].filter(Boolean).join("<br>");
@@ -558,7 +566,7 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
         // do not include char-list-show-play-unique-btn search icon
         // when adding chars to play card
         // ?but why not?
-        playText += await generateCharacterTemplate(play.characters, false);
+        playText += await generateCharacterTemplate(play.characters, false, true);
         html = `<div class="play-card">${playText}</div>`;
         return html;
       }
@@ -580,7 +588,7 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
     html = playHtmlArray.join(""); // Combine HTML strings into a single string
 
     // we want to save the last template only if this function is not called
-    // from getRelations() (i.e. charsInPlayCard is false)
+    // from showRelations() (i.e. charsInPlayCard is false)
     // so that we can show all previously shown plays when clicking
     // the char-list-show-play-unique-btn search icon again
     if (!charsInPlayCard) {
@@ -757,11 +765,29 @@ async function updateView(dataType: string, sharedProp = false) {
   let filteredData: Character[] | Play[];
   console.log(`function updateView() called with args: ${dataType}, sharedProp=${sharedProp}`)
 
+  // as updateView is called every time a filter is deactivated,
+  // do a check to see if all filters are deactivated
+  // if so, we don't need to continue the filtering logic,
+  // just reset the filters and show all data, as by default
+  //
+  // this also fixes an issue where the count of plays/characters
+  // would be off compared to the total number of items,
+  // because charsInPlays and playsWithChars are not necessarily
+  // equal to charData.length and playData.length
+  // (e.g. char_data.json does not contains all characters of
+  // plays in play_data.json, and vice versa)
+  if (Object.values(charFilters).every((filter) => filter.length === 0) &&
+      Object.values(playFilters).every((filter) => filter.length === 0)) {
+    console.log("all filters deactivated")
+    resetFilters();
+    return;
+  }
+
   switch (dataType) {
     case "characters":
       charCurrentPage = 1;
-      console.log("charData", charData)
-      console.log("filteredCharData", filteredCharData)
+      //console.log("charData", charData)
+      //console.log("filteredCharData", filteredCharData)
 
       if (playFilters.dates.length > 0) {
         filteredData = filterCharacters(charsInPlaysDated);
@@ -774,34 +800,31 @@ async function updateView(dataType: string, sharedProp = false) {
       renderData("main-view-chars", filteredData, charCurrentPage);
 
       // if ((!sharedProp) || sharedProp && (charFilters.sex.length > 0 || charFilters.professionalGroup.length > 0 || charFilters.socialClass.length > 0)) {
-      //   getRelations("playsByChar", false);
+      //   showRelations("playsByChar", false);
       // } else {
       //   $("#play-list").html(originalPlayTemplate);
       // }
-      getRelations("playsByChar", false);
+      showRelations("playsByChar", false);
 
       break;
     case "plays":
-      if ((sharedProp) || sharedProp && (charFilters.sex.length < 0 || charFilters.professionalGroup.length < 0 || charFilters.socialClass.length < 0)) {
+      //! not sure about this
+      // if ((sharedProp) || sharedProp && (charFilters.sex.length < 0 || charFilters.professionalGroup.length < 0 || charFilters.socialClass.length < 0)) {
+      if (sharedProp) {
         console.log("returning, sharedProp", sharedProp, charFilters)
         return;
       }
 
       playCurrentPage = 1;
-      if (!data) {
-        filteredData = filterPlays(playData)
-      } else {
-        filteredData = data;
-      }
+      filteredData = filterPlays(playData);
 
       $("#play-list").html("");
       $("#play-list-pagination").html("");
       renderData("main-view-plays-table", filteredData, playCurrentPage);
 
       if (playFilters.publisher.length > 0 || playFilters.author.length > 0 || playFilters.dates.length > 0) {
-        getRelations("charsByPlay", false);
+        showRelations("charsByPlay", false);
       } else {
-        //!rmv getRelations("charsByPlay", true);
         $("#char-list").html(originalCharTemplate);
       }
 
@@ -856,8 +879,8 @@ function updateProgress() {
   $(".play-progress").text(`${totalShownPlayItems}`);
 }
 
-async function getRelations(viewMode: string, unique: boolean, char: Character = null) : Promise<void> {
-  //console.time("getRelations");
+async function showRelations(viewMode: string, unique: boolean, char: Character = null, appendNames = false) : Promise<void> {
+  //console.time("showRelations");
   if (viewMode === "playsByChar") {
     const playsWithChars: Play[] = [];
 
@@ -906,7 +929,21 @@ async function getRelations(viewMode: string, unique: boolean, char: Character =
 
     //!
     totalShownPlayItems = playsWithChars.length;
-    const playTemplate = await generatePlayTemplate(playsWithChars, false);
+
+    let playTemplate: string;
+    // charsInPlayCard of generatePlayTemplate() must be true
+    // when char-list-show-plays-btn
+    // or char-list-show-play-unique-btn are clicked
+    // this way, the previous template is saved
+    // as currentPlayTemplate in generatePlayTemplate()
+    // and the user can go back to the previous view
+    // by clicking on the show-play-btn again
+    if (appendNames || unique) {
+      playTemplate = await generatePlayTemplate(playsWithChars, true);
+    } else {
+      playTemplate = await generatePlayTemplate(playsWithChars, false);
+    }
+
     $("#play-list").html(playTemplate);
 
     // only highlight graph if filtered
@@ -1009,10 +1046,7 @@ async function drawUI() {
     debounceTimer = setTimeout(() => {
       mutations.forEach(function(mutation) {
         let [graphDateRangeStart, graphDateRangeEnd] = mutation.target.textContent.split(" - ");
-        console.log("filteredPlayData0", filteredPlayData)
         playFilters.dates = [[+graphDateRangeStart, +graphDateRangeEnd]];
-        console.log("filteredPlayData", filteredPlayData)
-        //totalShownPlayItems = filteredPlayData.length;
         updateView("plays", false);
         updateProgress();
       });
@@ -1056,15 +1090,23 @@ $(function () {
       return;
     }
 
-    getRelations("playsByChar", false);
-  });
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $("#play-list").html(currentPlayTemplate);
+      $(".play-header-text").text("Plays")
+      return;
+    }
+
+    showRelations("playsByChar", false, null, true);
+    $(this).addClass("active");
+    });
 
   $("#play-list-show-chars-btn").on("click", function() {
     if ($(this).hasClass("disabled")) {
       return;
     }
 
-    getRelations("charsByPlay", false);
+    showRelations("charsByPlay", false);
   });
 
   $("#filter-reset-btn").on("click" , function() {
@@ -1077,14 +1119,14 @@ $(function () {
   });
 
   $("#char-list-pagination, #play-list-pagination").on("change", function(e) {
-    const page = e.target.value.split("-")[2];
-    const elName = e.target.id.split("-")[0];
-    console.log(elName)
+    const target = e.target as HTMLInputElement;
+    const page = target.value.split("-")[2];
+    const elName = target.id.split("-")[0];
     scrollToPageNumber(page, elName);
   });
 
   // needs to be done at document level
-  // because the buttons are dynamically created
+  // because the following elements are dynamically created
   $(document).on("click", ".char-list-show-play-unique-btn", function() {
     // will reset the "Plays" view if the button is already active
     if ($(this).hasClass("active")) {
@@ -1106,11 +1148,19 @@ $(function () {
     const charId = $(this).data("charid");
     const lang = $(this).data("lang");
     const char = getCharacter(workId, lang, charId);
-    getRelations("playsByChar", true, char);
+    showRelations("playsByChar", true, char);
 
     // update appearance
     $(".char-list-show-play-unique-btn").removeClass("active");
     $(this).addClass("active");
+
+    // fix bug where char-list-show-plays-btn
+    // would remain active after having clicked it
+    // and then clicking char-list-show-play-unique-btn
+    if ($("#char-list-show-plays-btn").hasClass("active")) {
+      console.log("test")
+      $("#char-list-show-plays-btn").removeClass("active");
+    }
   });
 
   $(".main-view-chars, .main-view-plays-table").on("scroll", function() {

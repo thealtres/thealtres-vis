@@ -40,6 +40,10 @@ table {
     cursor: pointer;
 }
 
+.active {
+    color: white;
+}
+
 /* better scrollbar on browsers using webkit */
 ::-webkit-scrollbar {
     height: 1px;
@@ -193,11 +197,11 @@ table {
     border-radius: 0.5rem;
     box-shadow: 0 0 0.5rem 0.1rem #000;
     flex-grow: 1;
-    width: calc(100% * (1/4) - 10px - 1px);
+    width: calc(100% * (1/4));
 }
 
-.main-view-plays-table #play-list .play-card .char {
-    color: violet;
+.main-view-plays-table #play-list .play-card .unique {
+    color: rgba(255, 204, 0, 0.8);
 }
 
 /* todo: improved loader styling */
@@ -228,10 +232,6 @@ table {
 
 .ts-control .item, .ts-dropdown [data-selectable].option {
     text-transform: capitalize;
-}
-
-.char-list-show-play-unique-btn.active {
-    color: green;
 }
 
 #char-list-pagination, #play-list-pagination {
