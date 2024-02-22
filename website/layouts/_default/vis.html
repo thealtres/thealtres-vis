@@ -14,30 +14,20 @@
   {{ $scss := resources.Get "scss/vis.scss" | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $scss.Permalink }}"></link>
 
-  {{ $css_d3Timeline := resources.Get "css/d3-timeline.css" | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $css_d3Timeline.Permalink }}"></link>
-
   <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
   crossorigin="anonymous"></script>
 
+  <!-- Tom Select: https://tom-select.js.org/ -->
   <link href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.min.js"></script>
-
-  {{ $js_genLabel := resources.Get "js-plugins/tcrs-generated-labels.min.js" }}
-  <script src="{{ $js_genLabel.Permalink }}"></script>
-  <script src="https://cdn.jsdelivr.net/npm/toolcool-range-slider/dist/toolcool-range-slider.min.js"></script>
 
   {{ $ts := resources.Get "ts/vis.ts" | js.Build | fingerprint }}
   <script src="{{ $ts.Permalink }}" defer></script>
 
+  <!-- D3.js: https://d3js.org/ -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/d3@3"></script>
-  <!--
-  {{ $js_d3Timeline := resources.Get "js-plugins/d3-timeline.js" | js.Build }}
-  {{ $js_d3Timeline := resources.Get "js-plugins/d3-timeline.js" }}
-  <script src="{{ $js_d3Timeline.Permalink }}" type="module" defer></script>
-  -->
 </head>
 {{ end }}
