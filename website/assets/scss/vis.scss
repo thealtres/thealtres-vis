@@ -258,3 +258,102 @@ table {
     background: black;
     color: white;
 }
+
+/* ======================== */
+/* Timeline specific styles */
+/* ======================== */
+
+#timeline .metric-chart text {
+	fill: #ccc;
+	font-size: 10px;
+	font-weight: bold;
+	font-family: Helvetica, Arial, "sans serif";
+}
+
+#timeline .metric-chart rect.plot-background {
+	fill: white;
+}
+
+#timeline .metric-chart path.line {
+	fill: none;
+	stroke: #00AA8D;
+	stroke-width: 1.5px;
+	clip-path: url(#clip);
+}
+
+#timeline .metric-chart path.area {
+	fill: #00AA8D;
+	opacity: 0.6;
+	clip-path: url(#clip);
+}
+
+#timeline .metric-chart .axis {
+	shape-rendering: crispEdges;
+}
+
+#timeline .metric-chart .x.axis .domain {
+	display:none;
+}
+
+#timeline .metric-chart .x.axis line {
+	stroke: white;
+	opacity: 0.4;
+}
+
+#timeline .metric-chart .context .x.axis line {
+	display: none;
+}
+
+#timeline .metric-chart .y.axis .domain {
+	display: none;
+}
+
+#timeline .metric-chart .y.axis.title {
+	font-size: 13px;
+	font-weight: 100;
+}
+
+#timeline .metric-chart .y.axis line {
+	stroke: #565656;
+	stroke-dasharray: 2,2;
+	stroke-opacity: 0.3;
+}
+
+#timeline .metric-chart .brush .extent {
+  fill-opacity: .07;
+  shape-rendering: crispEdges;
+  clip-path: url(#clip);
+}
+
+#timeline .metric-chart rect.pane {
+	cursor: move;
+	fill: none;
+	pointer-events: all;
+}
+
+/* brush handles */
+#timeline .metric-chart .resize .handle {
+	fill: white;
+}
+
+#timeline .metric-chart .resize .handle-mini {
+	fill: #555;
+    stroke-width: 1px;
+    stroke: white;
+}
+
+#timeline .metric-chart .scale_button {
+	cursor: pointer;
+}
+
+#timeline .metric-chart .scale_button rect {
+	fill: rgb(32, 33, 36);
+}
+#timeline .metric-chart .scale_button:hover text {
+	fill: #417DD6;
+	transition: all 0.1s cubic-bezier(.25,.8,.25,1);
+}
+
+#timeline .metric-chart text#displayDates {
+	font-weight: bold;
+}
