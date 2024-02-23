@@ -595,17 +595,21 @@ function resetBrush() {
 }
 
 export function clearGraphHighlight(brushReset = false) {
-    context.selectAll(".highlight-rect")
-        .transition()
-        .duration(500)
-        .style("opacity", 0)
-        .each("end", function() {
-            if (brushReset) {
-                resetBrush();
-            }
+    context.selectAll(".highlight-rect").remove();
 
-            d3.select(this).remove();
-        });
+    if (brushReset) {
+        resetBrush();
+    }
+        // .transition()
+        // .duration(500)
+        // .style("opacity", 0)
+        // .each("end", function() {
+        //     if (brushReset) {
+        //         resetBrush();
+        //     }
+
+        //     d3.select(this).remove();
+        // });
 }
 
 export function clearLastSingleRectHighlight() {
