@@ -8,22 +8,12 @@
 
 <div id="loader"></div>
 
-<div id="timeline-header">
-    <div class="logo-container">
-        {{- if $has_logo -}}
-        <img class="logo" src="{{ $logo.RelPermalink }}" alt="{{ site.Title }}"
-        {{with site.Params.header.image.width}}width="{{.}}"{{end}}
-        {{with site.Params.header.image.height}}height="{{.}}"{{end}}>
-        {{- else -}}
-            {{- site.Title -}}
-        {{- end -}}
-    </div>
-    <div id="timeline"></div>
-</div>
 <div id="vis-container">
     <div class="item filters">
-        <h2>Filters</h2>
-        <button id="filter-reset-btn">Reset</button>
+        <div class="filter-header">
+            <h2>Filters</h2>
+            <i id="filter-reset-btn" class="fa-solid fa-undo pointer" rel="tooltip" title="Reset filters"></i>
+        </div>
         <div id="filter-list filter-fixed">
             <div id="filter-lang">
                 <h3 class="filter-label">Tradition</h3>
@@ -52,37 +42,51 @@
         </div>
     </div>
     <div class="item main-view">
-        <div class="item main-view-chars">
-            <div class="char-header header">
-                <h2 class="char-header-text">Characters <span class="char-progress"></span></h2>
-                <span class="header-info">
-                    <select id="char-list-pagination"></select>
-                    <span class="header-icons">
-                        <i id="char-list-show-plays-btn" class="fa-solid fa-masks-theater pointer" rel="tooltip" title="Show Plays"></i>
-                        <i id="char-list-sort-btn" class="fa-solid fa-sort sort-btn pointer" rel="tooltip" title="Sort by…"></i>
-                    </span>
-                </span>
+        <div class="timeline-header">
+            <div id="timeline"></div>
+            <div class="logo-container">
+                {{- if $has_logo -}}
+                <img class="logo" src="{{ $logo.RelPermalink }}" alt="{{ site.Title }}"
+                {{with site.Params.header.image.width}}width="{{.}}"{{end}}
+                {{with site.Params.header.image.height}}height="{{.}}"{{end}}>
+                {{- else -}}
+                    {{- site.Title -}}
+                {{- end -}}
             </div>
-            <table id="char-list" tabindex="0"></table>
         </div>
-        <div class="item main-view-plays">
-            <div class="item main-view-plays-chart">
-                <h2>Diagrams</h2>
-            </div>
-            <div class="item main-view-plays-table">
-                <div class="play-header header">
-                    <h2 class="play-header-heading">
-                        <span class="play-header-text">Plays</span> <span class="play-progress"></span>
-                    </h2>
-                    <span class="header-info" name="header-info-play">
-                        <select id="play-list-pagination"></select>
+        <div class="results-view">
+            <div class="item main-view-chars">
+                <div class="char-header header">
+                    <h2 class="char-header-text">Characters <span class="char-progress"></span></h2>
+                    <span class="header-info" name="header-info-char">
+                        <select id="char-list-pagination"></select>
                         <span class="header-icons">
-                            <i id="play-list-show-chars-btn" class="fa-solid fa-people-group pointer" rel="tooltip" title="Show Characters"></i>
-                            <i id="play-list-sort-btn" class="fa-solid fa-sort sort-btn pointer" rel="tooltip" title="Sort by…"></i>
+                            <i id="char-list-show-plays-btn" class="fa-solid fa-masks-theater pointer" rel="tooltip" title="Show Plays"></i>
+                            <i id="char-list-sort-btn" class="fa-solid fa-sort sort-btn pointer" rel="tooltip" title="Sort by…"></i>
                         </span>
                     </span>
                 </div>
-                <div id="play-list" tabindex="0"></div>
+                <table id="char-list" tabindex="0"></table>
+            </div>
+            <div class="item main-view-plays">
+                <div class="item main-view-plays-chart">
+                    <h2>Diagrams</h2>
+                </div>
+                <div class="item main-view-plays-table">
+                    <div class="play-header header">
+                        <h2 class="play-header-heading">
+                            <span class="play-header-text">Plays</span> <span class="play-progress"></span>
+                        </h2>
+                        <span class="header-info" name="header-info-play">
+                            <select id="play-list-pagination"></select>
+                            <span class="header-icons">
+                                <i id="play-list-show-chars-btn" class="fa-solid fa-people-group pointer" rel="tooltip" title="Show Characters"></i>
+                                <i id="play-list-sort-btn" class="fa-solid fa-sort sort-btn pointer" rel="tooltip" title="Sort by…"></i>
+                            </span>
+                        </span>
+                    </div>
+                    <div id="play-list" tabindex="0"></div>
+                </div>
             </div>
         </div>
     </div>

@@ -7,6 +7,7 @@ interface Character {
     normalizedProfession: string;
     professionalGroup: string;
     socialClass: string;
+    play: Play; // not part of the JSON; used for showRelations()
 }
 
 interface Play {
@@ -18,7 +19,7 @@ interface Play {
     publisherId: string;
     nbActs: string;
     printed: string; // some values such as: "?1824"
-    characters: Character[]; // not part of the JSON; used for showPlaysByCharacters()
+    characters: Character[]; // not part of the JSON; used for showRelations()
 }
 
 interface Author {

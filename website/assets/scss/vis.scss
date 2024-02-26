@@ -8,6 +8,14 @@ body {
     color: #ccc;
 }
 
+body .fa-caret-down, body .fa-caret-up {
+    visibility: hidden;
+}
+
+body .caret-force-visible {
+    visibility: visible;
+}
+
 footer {
     color: #ccc !important;
 }
@@ -29,6 +37,8 @@ button:hover {
 }
 
 svg {
+    height: auto;
+    width: auto;
     vertical-align: baseline;
 }
 
@@ -47,7 +57,7 @@ table {
 /* better scrollbar on browsers using webkit */
 ::-webkit-scrollbar {
     height: 1px;
-    width: 1px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -73,8 +83,8 @@ table {
 
 #timeline-header {
     display: flex;
-    align-items: center;
     flex-direction: row;
+    align-items: center;
     height: 100%;
     width: 100%;
 }
@@ -83,37 +93,66 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center;
-    scale: 1;
     width: 100%;
+    scale: 1;
+}
+
+//todo: fix
+.logo-container {
+    display: flex;
+    align-items: end;
+    justify-content: end;
 }
 
 #vis-container {
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 10% 90%;
     grid-gap: 0.8rem;
     width: 100%;
     min-height: 50vh;
     height: 80vh; /*shares height with .main-view*/
     padding-right: 1.3rem;
+    border-top: 1px solid #666;
   }
 
 .filters {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     grid-column: 1;
     //background: #f2471a;
     width: 100%;
     height: 100%;
     overflow-y: scroll;
-    border-right: 1px solid #666;
-    padding-right: 1.7rem;
+}
+
+.filter-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.filter-header #filter-reset-btn {
+    padding-top: 12px;
+    padding-left: 10px;
 }
 
 .main-view {
     grid-column: 2;
     //background: #dddbff;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20% 80%;
     min-height: 50vh;
     height: 80vh; /*shares height with #vis-container*/
+    border-left: 1px solid #666;
+    padding-left: 0.5em;
+}
+
+.results-view {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 64vh;
+    gap: 0.5rem;
 }
 
 .main-view-chars {
@@ -332,7 +371,8 @@ table {
 
 /* brush handles */
 #timeline .metric-chart .resize .handle {
-	fill: white;
+	//fill: white;
+    fill:red;
 }
 
 #timeline .metric-chart .resize .handle-mini {
@@ -348,6 +388,7 @@ table {
 #timeline .metric-chart .scale_button rect {
 	fill: rgb(32, 33, 36);
 }
+
 #timeline .metric-chart .scale_button:hover text {
 	fill: #417DD6;
 	transition: all 0.1s cubic-bezier(.25,.8,.25,1);

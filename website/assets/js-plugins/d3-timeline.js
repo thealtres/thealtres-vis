@@ -9,7 +9,14 @@ and show years only
 
 var optwidth = 900;
 var optheight = 150;
-var defaultHighlightColor = "rgba(255, 255, 255, 0.3)";
+
+let highlightColors = {
+    "fre": "rgba(255, 255, 0, 0.3)",
+    "ger": "rgba(255, 0, 255, 0.3)",
+    "als": "rgba(0, 255, 255, 0.3)",
+    "unique": "rgba(255, 255, 255, 0.3)",
+    "default": "rgba(255, 255, 255, 0.3)",
+}
 
 // global variables used for export function highlightGraphPeriod()
 var context = null;
@@ -507,9 +514,9 @@ export function setTimeline(dataset) {
     }
 }
 
-export function highlightGraphPeriod(d1, d2, highlightUniqueColor = null) {
+export function highlightGraphPeriod(d1, d2, highlightUniqueColor = null, lang = null) {
     // check if highlight at same position
-    const existingRect = context.selectAll(".highlight-rect").filter(function() {
+    const existingRect = context.selectAll('[class^="highlight-rect"').filter(function() {
         const x = parseFloat(d3.select(this).attr('x'));
         const width = parseFloat(d3.select(this).attr('width'));
         return x === x2(new Date(d1, 0, 1))
@@ -520,8 +527,10 @@ export function highlightGraphPeriod(d1, d2, highlightUniqueColor = null) {
         return;
     }
 
+    console.log(lang)
+
     // only show one unique rectangle at a time (for show-play-unique-btn)
-    const existingUniqueRect = context.selectAll(".highlight-rect").filter(function() {
+    const existingUniqueRect = context.selectAll('[class^="highlight-rect"').filter(function() {
         return d3.select(this).style("fill") === highlightUniqueColor;
     });
 
@@ -546,16 +555,31 @@ export function highlightGraphPeriod(d1, d2, highlightUniqueColor = null) {
     }
 
     // add new highlight
+    let rectType;
+    let rectColor;
+
+    if (highlightUniqueColor) {
+        rectType = "highlight-rect-unique";
+        rectColor = highlightColors["unique"];
+    } else if (lang) {
+        rectType = "highlight-rect-" + lang;
+        rectColor = highlightColors[lang];
+    } else {
+        rectType = "highlight-rect";
+        rectColor = highlightColors["default"];
+    }
+
+    console.log(1)
     context.append("rect")
-    .attr("class", "highlight-rect")
+    .attr("class", rectType)
     .attr("x", highlightStartX)
     .attr("width", highlightEndX - highlightStartX)
     .attr("y", 0)
     .attr("height", height_context)
-    .style("fill", highlightUniqueColor ? highlightUniqueColor : defaultHighlightColor);
+    .style("fill", rectColor);
 }
 
-function resetBrush() {
+export function recreateBrush(moveHandles = false) {
     // remove the brush
     context.selectAll(".brush").remove();
 
@@ -589,16 +613,19 @@ function resetBrush() {
         // .resize are the handles on either size
         // of the 'window' (each is made of a set of rectangles)
 
-    // reset date range
-    brush.extent([dataXrange[0], dataXrange[1]]);
-    brushg.call(brush);
+    // reset date range and move handles to start
+    if (moveHandles) {
+        brush.extent([dataXrange[0], dataXrange[1]]);
+        brushg.call(brush);
+    }
 }
 
 export function clearGraphHighlight(brushReset = false) {
-    context.selectAll(".highlight-rect").remove();
+    console.log("clearing graph highlight");
+    context.selectAll('[class^="highlight-rect"').remove();
 
     if (brushReset) {
-        resetBrush();
+        recreateBrush();
     }
         // .transition()
         // .duration(500)
@@ -613,7 +640,7 @@ export function clearGraphHighlight(brushReset = false) {
 }
 
 export function clearLastSingleRectHighlight() {
-    const existingRect = context.selectAll(".highlight-rect");
+    const existingRect = context.selectAll('[class^="highlight-rect"');
 
     if (existingRect.size() > 0) {
         existingRect[0][existingRect.size() - 1].remove();
