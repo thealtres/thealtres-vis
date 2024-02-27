@@ -502,13 +502,13 @@ function fillSelect(dataType: string, selectId: string) {
     case "publisher":
       data = publisherData.map((publisher: Publisher) => ({
         value: publisher.publisherId,
-        text: publisher.normalizedName,
+        text: publisher.normalizedName + " (" + getNumberOfPlaysById(publisher.publisherId, "publisher") + ")"
       }));
       break;
     case "author":
       data = authorData.map((author: Author) => ({
         value: author.authorId,
-        text: author.fullName,
+        text: author.fullName + " (" + getNumberOfPlaysById(author.authorId, "author") + ")"
       }));
       break;
   }
@@ -743,6 +743,18 @@ function getCharacter(workId: number, lang: string, charId: number) : Character 
   return charData.find((char: Character) =>
     char.workId === workId && char.lang === lang && char.characterId === charId
   );
+}
+
+function getNumberOfPlaysById(id: number, type: string) : number {
+  switch (type) {
+    case "author":
+      return playData.filter((play: Play) =>
+        play.authorId instanceof Array ?
+        play.authorId.some((authorId: number) => authorId === id) :
+        play.authorId === id).length;
+    case "publisher":
+      return playData.filter((play: Play) => parseInt(play.publisherId) === id).length;
+  }
 }
 
 function filterCharacters(charData: Character[]) : Character[] {
