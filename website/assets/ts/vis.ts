@@ -1,6 +1,6 @@
 import { Character, Play, Author, Publisher } from "./IEntity";
 import { setTimeline, highlightGraphPeriod,
-  clearGraphHighlight, clearLastSingleRectHighlight, recreateBrush } from "../js-plugins/d3-timeline";
+  clearGraphHighlight, clearLastSingleRectHighlight, raiseHandles } from "../js-plugins/d3-timeline";
 
 // These are professionalGroup values to be filtered out in fillFilterValues()
 // we may convert them to null in the future
@@ -1105,11 +1105,11 @@ function setGraphHighlight(data, highlightUnique = false, lang = null) {
     }
   }
 
-  // recreate the brush and handles svgs
+  // raises handles svgs
   // fixes problem with svg layering order,
   // as highlight would be on top of handles,
   // which would make it impossible to drag the handles
-  recreateBrush();
+  raiseHandles();
 }
 
 async function fetchData(): Promise<void> {

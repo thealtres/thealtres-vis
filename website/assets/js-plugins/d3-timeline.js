@@ -579,7 +579,13 @@ export function highlightGraphPeriod(d1, d2, highlightUniqueColor = null, lang =
     .style("fill", rectColor);
 }
 
-export function recreateBrush(moveHandles = false) {
+export function raiseHandles() {
+    brushg.selectAll(".resize").each(function() {
+        this.parentNode.appendChild(this);
+    });
+}
+
+export function recreateBrush() {
     // remove the brush
     context.selectAll(".brush").remove();
 
@@ -614,14 +620,13 @@ export function recreateBrush(moveHandles = false) {
         // of the 'window' (each is made of a set of rectangles)
 
     // reset date range and move handles to start
-    if (moveHandles) {
         brush.extent([dataXrange[0], dataXrange[1]]);
         brushg.call(brush);
-    }
 }
 
 export function clearGraphHighlight(brushReset = false) {
     console.log("clearing graph highlight");
+
     context.selectAll('[class^="highlight-rect"').remove();
 
     if (brushReset) {
