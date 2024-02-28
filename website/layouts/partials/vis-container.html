@@ -12,7 +12,7 @@
     <div class="item filters">
         <div class="filter-header">
             <h2>Filters</h2>
-            <i id="filter-reset-btn" class="fa-solid fa-undo pointer" rel="tooltip" title="Reset filters"></i>
+            <i id="filter-reset-btn" class="fa-solid fa-undo pointer" rel="tooltip" title="Reset view"></i>
         </div>
         <div id="filter-list filter-fixed">
             <div id="filter-lang">
@@ -61,6 +61,7 @@
                     <span class="header-info" name="header-info-char">
                         <select id="char-list-pagination"></select>
                         <span class="header-icons">
+                            <i id="char-list-show-all-btn" class="fa-solid fa-list pointer" rel="tooltip" title="Show All"></i>
                             <i id="char-list-show-plays-btn" class="fa-solid fa-masks-theater pointer" rel="tooltip" title="Show Plays"></i>
                             <i id="char-list-sort-btn" class="fa-solid fa-sort sort-btn pointer" rel="tooltip" title="Sort by…"></i>
                         </span>
@@ -70,7 +71,9 @@
             </div>
             <div class="item main-view-plays">
                 <div class="item main-view-plays-chart">
-                    <h2>Diagrams</h2>
+                    <div class="diagram-header header">
+                        <h2 class="diagram-header-text">Diagrams</h2>
+                    </div>
                 </div>
                 <div class="item main-view-plays-table">
                     <div class="play-header header">

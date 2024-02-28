@@ -24,6 +24,15 @@ h1, h2, h3 {
     color: #ccc;
 }
 
+h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
 button {
     color: #ccc;
     background: #333;
@@ -133,7 +142,6 @@ table {
 }
 
 .filter-header #filter-reset-btn {
-    padding-top: 12px;
     padding-left: 10px;
 }
 
@@ -167,7 +175,9 @@ table {
     //background: red;
 }
 
-.char-header h2, .play-header h2 {
+.char-header h2, .play-header h2,
+.diagram-header h2 {
+    font-size: 1.2rem;
     margin: 0;
 }
 

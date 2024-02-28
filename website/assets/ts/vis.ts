@@ -1,6 +1,6 @@
 import { Character, Play, Author, Publisher } from "./IEntity";
 import { setTimeline, highlightGraphPeriod,
-  clearGraphHighlight, clearLastSingleRectHighlight, raiseHandles } from "../js-plugins/d3-timeline";
+  clearGraphHighlight, raiseHandles } from "../js-plugins/d3-timeline";
 
 // These are professionalGroup values to be filtered out in fillFilterValues()
 // we may convert them to null in the future
@@ -50,7 +50,6 @@ let preventScrollEvent = false;
 
 let timelineData = [];
 let noDateRange = false;
-let uniqueHighlightColor = "rgba(255, 204, 0, 0.5)"; // orange
 
 /* Pagination */
 let playCurrentPage = 1;
@@ -61,6 +60,8 @@ let loadedPlayData: Play[] = [];
 
 const caretDownEl = `<i class="fa-solid fa-caret-down caret-force-visible"></i>`;
 const caretUpEl = `<i class="fa-solid fa-caret-up caret-force-visible"></i>`;
+
+let allCharsShown = false;
 
 /**
  * Fetches JSON data from file path and returns it as a Promise
@@ -88,19 +89,31 @@ function getJSON(path: string) : Promise<any> {
  * @param data - array of plays
  * @returns - array of years
  */
-function getDataYears(data: Play[]) : number[] {
-  // we're using plays to get years of the data
-  // because it has the "printed" property
-  const years = data.map((item: Play) => +item.printed);
-  // filter duplicates
+function getDataYears(data: Play[]) {
+  // // we're using plays to get years of the data
+  // // because it has the "printed" property
+  // const years = data.map((item: Play) => +item.printed);
+  // // filter duplicates
+  // return years.filter((year, index) =>
+  // years.indexOf(year) === index && year !== 0);
+  const years = data.map(item => {
+    return {
+      year: +item.printed,
+      lang: item.lang
+    };
+  }).filter(y => y.year !== 0 && !isNaN(y.year));
+
   return years.filter((year, index) =>
-  years.indexOf(year) === index && year !== 0);
+    years.indexOf(year) === index
+  );
 }
 
-function findSuccessiveYears(years: number[]) : object {
-  const sortedDates = years.sort((a, b) => a - b);
+function findSuccessiveYears(years) : object {
+  const sortedDates = years.sort((a, b) => a.year - b.year);
   const ranges = {}; // { range1: [1824, 1825, 1826], range2: [1830, 1831] }
   let currentRange = [];
+
+  console.log("sortedDates", filteredCharData, filteredPlayData, totalShownCharItems, totalShownPlayItems)
 
   for (let i = 0; i < sortedDates.length; i++) {
     const currentDate = sortedDates[i];
@@ -110,15 +123,22 @@ function findSuccessiveYears(years: number[]) : object {
         // check if range has only one date
         // we need one beginning and one end date to create the highlight rect
         if (currentRange.length === 1) {
-          currentRange.push(currentRange[0] + 1);
+            currentRange.push({
+              year: currentRange[0].year + 1,
+              lang: currentRange[0].lang
+          });
         }
-        ranges[`range${Object.keys(ranges).length + 1}`] = currentRange;
+
+        ranges[`range${Object.keys(ranges).length + 1}`] = {
+          lang: currentRange[0].lang,
+          years: currentRange.map(y => y.year)
+        };
       }
       currentRange = [currentDate];
-    } else {
-      currentRange.push(currentDate);
+      } else {
+        currentRange.push(currentDate);
+      }
     }
-  }
 
   console.log("currentRange0", currentRange)
 
@@ -127,13 +147,27 @@ function findSuccessiveYears(years: number[]) : object {
     // add last range
   } else if (currentRange.length > 0) {
     noDateRange = false;
-    // check if range has only one date
+// check if range has only one date
     // we need one beginning and one end date to create the highlight rect
     if (currentRange.length === 1) {
-      currentRange.push(currentRange[0] + 1);
+      currentRange.push({
+        year: currentRange[0].year + 1,
+        lang: currentRange[0].lang
+      });
     }
-    ranges[`range${Object.keys(ranges).length + 1}`] = currentRange;
+    // // check if range has only one date
+    // // we need one beginning and one end date to create the highlight rect
+    // if (currentRange.length === 1) {
+    //   currentRange.push(currentRange[0] + 1);
+    // }
+    // ranges[`range${Object.keys(ranges).length + 1}`] = currentRange;
+    ranges[`range${Object.keys(ranges).length + 1}`] = {
+      lang: currentRange[0].lang,
+      years: currentRange.map(y => y.year)
+    };
   }
+
+  console.log("ranges", ranges)
 
   return ranges;
 }
@@ -143,7 +177,8 @@ async function renderData(elName: string, loadedData: Character[] | Play[], curr
       // only clear if we're on the first page
       // otherwise, caused the highlight to be cleared when scrolling
       && currentPage === 1) {
-    clearGraphHighlight();
+    //! don't think it's needed anymore
+    //clearGraphHighlight();
   }
 
   if (loadedData.length === 0) {
@@ -186,6 +221,18 @@ async function renderData(elName: string, loadedData: Character[] | Play[], curr
   option.innerHTML = `Page ${currentPage}`;
   // append option and change selected option to last loaded page
   $(selectId).append(option).val(option.value);
+}
+
+async function showAllCharData() {
+  if (allCharsShown) {
+    return;
+  }
+
+  const template = await generateCharacterTemplate(charData);
+  $("#char-list").html(template);
+  $("#char-list-pagination").remove();
+  $("#char-list-show-all-btn").addClass("disabled");
+  $("#filter-reset-btn").removeClass("disabled");
 }
 
 function handlePagination(e, currentPage: number, totalItems: number, filteredData: Character[] | Play[], loadedData) {
@@ -585,7 +632,7 @@ async function generateCharacterTemplate(data: Character[], showPlayBtn = true, 
           html = `<thead><tr>
           <th scope="col">Name<br>${caretDownEl} ${caretUpEl}</th>
           <th scope="col">Gender<br>${caretDownEl} ${caretUpEl}</th>
-          <th scope="col">Social Class<br>${caretDownEl} ${caretUpEl}</th>
+          <th scope="col">Soc. Class<br>${caretDownEl} ${caretUpEl}</th>
           <th scope="col">Profession<br>${caretDownEl} ${caretUpEl}</th>
           <th scope="col">Date<br>${caretDownEl} ${caretUpEl}</th>
           <th scope="col"></th>
@@ -880,6 +927,10 @@ async function updateView(dataType: string, sharedProp = false, lang: string = n
 
       $("#char-list").html("");
       $("#char-list-pagination").html("");
+
+      if (filteredData.length <= itemsPerPage) {
+        $("#char-list-show-all-btn").addClass("disabled");
+      }
       renderData("main-view-chars", filteredData, charCurrentPage);
 
       // if ((!sharedProp) || sharedProp && (charFilters.sex.length > 0 || charFilters.professionalGroup.length > 0 || charFilters.socialClass.length > 0)) {
@@ -923,6 +974,8 @@ async function updateView(dataType: string, sharedProp = false, lang: string = n
 };
 
 function resetFilters() {
+  allCharsShown = false;
+
   // reset filter arrays
   charFilters = defaultCharFilters;
   playFilters = defaultPlayFilters;
@@ -946,6 +999,7 @@ function resetFilters() {
   $("#char-list-pagination").find("option").not(":first").remove();
   $("#play-list-pagination").find("option").not(":first").remove();
 
+  $("#char-list-show-all-btn").removeClass("disabled");
 
   totalShownCharItems = charData.length;
   totalShownPlayItems = playData.length;
@@ -1013,7 +1067,12 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
       });
     }
 
-    //!
+    // save a copy of the data only if we're not using magnifier mode
+    // we need to do that to execute setGraphHighlight(filteredPlayData)
+    // and go back to the previous graph view
+    if (playsWithChars.length > 1) {
+      filteredPlayData = playsWithChars;
+    }
     totalShownPlayItems = playsWithChars.length;
 
     let playTemplate: string;
@@ -1034,7 +1093,7 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
 
     // only highlight graph if filtered
     if (totalShownPlayItems !== playData.length) {
-      setGraphHighlight(playsWithChars, unique, lang);
+      setGraphHighlight(playsWithChars, unique);
     }
 
   } else if (viewMode === "charsByPlay") {
@@ -1091,18 +1150,21 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
   }
 };
 
-function setGraphHighlight(data, highlightUnique = false, lang = null) {
+function setGraphHighlight(data, highlightUnique = false) {
   let dateRanges = null;
   const years = getDataYears(data);
   dateRanges = findSuccessiveYears(years);
+
+  if (dateRanges !== null) {
+    clearGraphHighlight();
+  }
+
   for (const range in dateRanges) {
-    const minYear = dateRanges[range][0];
-    const maxYear = dateRanges[range][dateRanges[range].length - 1];
-    if (highlightUnique) {
-      highlightGraphPeriod(minYear, maxYear, uniqueHighlightColor);
-    } else {
-      highlightGraphPeriod(minYear, maxYear, null, lang);
-    }
+    const minYear = dateRanges[range].years[0];
+    const maxYear = dateRanges[range].years[dateRanges[range].years.length - 1];
+    const lang = dateRanges[range].lang;
+
+    highlightGraphPeriod(minYear, maxYear, lang, highlightUnique);
   }
 
   // raises handles svgs
@@ -1224,13 +1286,22 @@ $(function () {
     showRelations("charsByPlay", false, null, true);
   });
 
-  $("#filter-reset-btn").on("click" , function() {
+  $("#filter-reset-btn").on("click", function() {
     if ($(this).hasClass("disabled")) {
       return;
     }
 
     resetFilters();
     updateProgress();
+  });
+
+  $("#char-list-show-all-btn").on("click", function() {
+    if ($(this).hasClass("disabled")) {
+      return;
+    }
+
+    showAllCharData();
+    allCharsShown = true;
   });
 
   $("#char-list-pagination, #play-list-pagination").on("change", function(e) {
@@ -1249,9 +1320,9 @@ $(function () {
 
       $("#play-list").html(currentPlayTemplate);
 
-      if (totalShownPlayItems === 1 && !noDateRange) {
-        clearLastSingleRectHighlight();
-      }
+      //if (totalShownPlayItems === 1 && !noDateRange) {
+      setGraphHighlight(filteredPlayData, false);
+      //}
 
       $(".play-header-text").text("Plays")
       .next().css("display", "inline") // show progress number again
