@@ -176,7 +176,7 @@ table {
 }
 
 .char-header h2, .play-header h2,
-.diagram-header h2 {
+.chart-header h2 {
     font-size: 1.2rem;
     margin: 0;
 }
@@ -213,7 +213,7 @@ table {
 
 .main-view-plays {
     display: grid;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 40% 60%;
 }
 
 .main-view-plays-chart {
@@ -221,13 +221,13 @@ table {
 }
 
 .main-view-plays-table {
-    //background: orange;
+    background: white;
     height: 100%;
     overflow: scroll;
 }
 
 .main-view-plays-table #play-list {
-    height: 5em;
+    height: 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -239,18 +239,40 @@ table {
 }
 
 .main-view-plays-table #play-list .play-card {
-    background: #666;
-    color: #ccc;
+    color: black;
     margin: 0.5rem;
     padding: 0.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 0.5rem 0.1rem #000;
     flex-grow: 1;
     width: calc(100% * (1/4));
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.play-card:has(.char-list-show-char-unique-btn[data-lang="fre"]) {
+    background: linear-gradient(to top right, transparent 80%, rgb(0, 170, 255));
+}
+
+.play-card:has(.char-list-show-char-unique-btn[data-lang="ger"]) {
+    background: linear-gradient(to top right, transparent 80%, yellow);
+}
+
+.play-card:has(.char-list-show-char-unique-btn[data-lang="als"]) {
+    background: linear-gradient(to top right, transparent 80%, red);
 }
 
 .main-view-plays-table #play-list .play-card .unique {
     color: rgba(255, 204, 0, 0.8);
+}
+
+#chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
 /* todo: improved loader styling */
