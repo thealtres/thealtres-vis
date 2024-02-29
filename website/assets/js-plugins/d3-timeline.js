@@ -11,14 +11,12 @@ var optwidth = 900;
 var optheight = 150;
 
 let highlightColors = {
-    "fre": "rgba(255, 255, 0, 0.3)",
-    "ger": "rgba(255, 0, 255, 0.3)",
-    "als": "rgba(0, 255, 255, 0.3)",
+    "fre": "rgb(0, 170, 255)", // blue
+    "ger": "rgba(255, 255, 0, 0.3)", // yellow
+    "als": "rgba(255, 0, 0, 0.3)", // red
     "unique": "rgba(255, 204, 0, 0.5)",
     "default": "rgba(255, 255, 255, 0.3)",
 }
-
-let previousGraph;
 
 // global variables used for export function highlightGraphPeriod()
 var context = null;
