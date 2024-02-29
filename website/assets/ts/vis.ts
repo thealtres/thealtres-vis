@@ -1,6 +1,7 @@
 import { Character, Play, Author, Publisher } from "./IEntity";
 import { setTimeline, highlightGraphPeriod,
   clearGraphHighlight, raiseHandles } from "../js-plugins/d3-timeline";
+import { setChart } from "../js-plugins/d3-charts";
 
 // These are professionalGroup values to be filtered out in fillFilterValues()
 // we may convert them to null in the future
@@ -684,17 +685,23 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
     // ? check performance
     const playPromises = data.map(async (play: Play) => {
       const titleMain = play.titleMain;
-      const lang = play.lang;
-      const authorName = await getPlayInfo(play.authorId, lang, "author");
+      const date = play.printed ?? "";
+      const authorName = await getPlayInfo(play.authorId, play.lang, "author");
+
+      let titleMainDated = titleMain.trim();
+      if (date) {
+        titleMainDated += ` (${date})`;
+      }
 
       // filter out empty values
-      let playText = [titleMain, authorName].filter(Boolean).join("<br>");
+      let playText = [titleMainDated, authorName].filter(Boolean).join("<br>");
 
       if (charsInPlayCard) {
         // do not include char-list-show-play-unique-btn search icon
         // when adding chars to play card
-        // ?but why not?
-        playText += await generateCharacterTemplate(play.characters, false, true);
+        // this creates side effects when using both magnifier modes;
+        // may fix later
+        playText += await generateCharacterTemplate(play.characters, false, true, true);
         html = `<div class="play-card">${playText}</div>`;
         return html;
       }
@@ -977,7 +984,7 @@ async function updateView(dataType: string, sharedProp = false) {
           console.log("cF", charFilters)
         filteredData = filterPlays(filteredPlaysWithChars);
       } else {
-      filteredData = filterPlays(playData);
+        filteredData = filterPlays(playData);
       }
 
       $("#play-list").html("");
@@ -1344,7 +1351,7 @@ async function drawUI() {
 
   observer.observe($("#displayDates")[0], { childList: true });
 
-  setGraph();
+  setChart();
 
   totalShownCharItems = charData.length;
   totalShownPlayItems = playData.length;
