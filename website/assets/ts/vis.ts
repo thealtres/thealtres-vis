@@ -29,6 +29,9 @@ let filteredCharsInPlays: Character[] = [];
 // same for plays with characters
 let filteredPlaysWithChars: Play[] = [];
 
+let authorSelectData: { value: number, text: string }[] = [];
+let pubSelectData: { value: number, text: string }[] = [];
+
 const defaultCharFilters = {
   lang: [],
   sex: [],
@@ -62,6 +65,7 @@ const itemsPerPage = 50;
 let loadedCharData: Character[] = [];
 let loadedPlayData: Play[] = [];
 
+// FA icons used in table headers for sorting
 const caretDownEl = `<i class="fa-solid fa-caret-down caret-force-visible"></i>`;
 const caretUpEl = `<i class="fa-solid fa-caret-up caret-force-visible"></i>`;
 
@@ -556,14 +560,14 @@ function fillSelect(dataType: string, selectId: string) {
         value: publisher.publisherId,
         // some publisher values have no normalizedName
         text: (publisher.normalizedName ?? publisher.nameOnPlay) +" (" +
-        getNumberOfPlaysByIdAndLang(publisher.publisherId, publisher.lang, "publisher") + ")"
+        getNumberOfPlaysByIdAndLang(playData, publisher.publisherId, publisher.lang, "publisher") + ")"
       }))
       break;
     case "author":
       data = authorData.map((author: Author) => ({
         value: author.authorId,
         text: author.fullName + " (" +
-        getNumberOfPlaysByIdAndLang(author.authorId, author.lang, "author") + ")"
+        getNumberOfPlaysByIdAndLang(playData, author.authorId, author.lang, "author") + ")"
       }));
       break;
   }
@@ -579,16 +583,76 @@ function fillSelect(dataType: string, selectId: string) {
     maxOptions: null,
     highlight: true,
     maxItems: null,
-    onItemAdd: (id) => {
+    onItemAdd: (id: string) => {
       playFilters[dataType].push(id);
       updateView("plays", false);
       updateProgress();
     },
-    onItemRemove: (id) => {
+    onItemRemove: (id: string) => {
       playFilters[dataType] = playFilters[dataType].filter(item => item !== id);
       updateView("plays", false);
       updateProgress();
     },
+  });
+
+  if (dataType === "author") {
+    // create shallow copy of select data to be used for reset
+    // @ts-ignore
+    authorSelectData = {...document.getElementById("select-author").tomselect.options};
+  } else if (dataType === "publisher") {
+    // create shallow copy of select data to be used for reset
+    // @ts-ignore
+    pubSelectData = {...document.getElementById("select-pub").tomselect.options};
+  }
+};
+
+function updateSelectOption(selectId: string, optionValue: number, newCount: number) {
+  // @ts-ignore
+  const select = document.getElementById(selectId).tomselect;
+  const option = select.options[optionValue];
+  const newOptionText = option.text.split(" (")[0] + " (" + newCount + ")";
+
+  if (!option) {
+    console.error(`Option with value ${optionValue} not found in select ${selectId}`);
+    return;
+  }
+
+  select.updateOption(optionValue, {
+    value: optionValue,
+    text: newOptionText
+    });
+};
+
+// function updateCreatorSelectOptionObjs(selectEl) {
+//   let selectData = selectEl.id === "select-author" ?
+//   authorSelectData : pubSelectData;
+
+//   // https://stackoverflow.com/a/14810722/6479579
+//   const objectMap = (obj, fn) =>
+//   Object.fromEntries(
+//     Object.entries(obj).map(
+//       ([k, v], i) => [k, fn(v, k, i)]
+//     )
+//   );
+
+//   const updatedSelectObj = objectMap(selectData, (option, key) => {
+//     const newCount = selectData[key].text.split(" (")[1].split(")")[0];
+//     const newText = selectData[key].text.split(" (")[0] + " (" + newCount + ")";
+//     return { ...option, text: newText };
+//   });
+
+//   selectEl.options = updatedSelectObj;
+// }
+
+function updateCreatorSelects(filteredData: Play[]) {
+  authorData.forEach((author: Author) => {
+    updateSelectOption("select-author", author.authorId,
+    getNumberOfPlaysByIdAndLang(filteredData, author.authorId, author.lang, "author"));
+  });
+
+  publisherData.forEach((publisher: Publisher) => {
+    updateSelectOption("select-pub", publisher.publisherId,
+    getNumberOfPlaysByIdAndLang(filteredData, publisher.publisherId, publisher.lang, "publisher"));
   });
 };
 
@@ -804,10 +868,10 @@ function getCharacter(workId: number, lang: string, charId: number) : Character 
   );
 }
 
-function getNumberOfPlaysByIdAndLang(id: number, lang: string, type: string) : number {
+function getNumberOfPlaysByIdAndLang(data: Play[], id: number, lang: string, type: string) : number {
   switch (type) {
     case "author":
-      return playData.filter((play: Play) => {
+      return data.filter((play: Play) => {
         if (play.authorId instanceof Array) {
           return play.authorId.some((authorId: number) =>
             authorId === id && play.lang === lang);
@@ -816,7 +880,7 @@ function getNumberOfPlaysByIdAndLang(id: number, lang: string, type: string) : n
         }
       }).length;
     case "publisher":
-      return playData.filter((play: Play) =>
+      return data.filter((play: Play) =>
         parseInt(play.publisherId) === id && play.lang === lang).length;
   }
 }
@@ -1056,6 +1120,34 @@ function resetFilters() {
   playCurrentPage = 1;
 
   clearGraphHighlight(true); // reset highlight and brush
+
+  // reset selects data
+  // @ts-ignore
+  const authorSelect = document.getElementById("select-author").tomselect;
+  // @ts-ignore
+  const pubSelect = document.getElementById("select-pub").tomselect;
+
+  const objectMap = (obj, fn) =>
+  Object.fromEntries(
+    Object.entries(obj).map(
+      ([k, v], i) => [k, fn(v, k, i)]
+    )
+  );
+
+  const updatedAuthorSelectOptObj = objectMap(authorSelectData, (option, key) => {
+    const newCount = authorSelectData[key].text.split(" (")[1].split(")")[0];
+    const newText = authorSelectData[key].text.split(" (")[0] + " (" + newCount + ")";
+    return { ...option, text: newText };
+  });
+
+  const updatedPubSelectOptObj = objectMap(pubSelectData, (option, key) => {
+    const newCount = pubSelectData[key].text.split(" (")[1].split(")")[0];
+    const newText = pubSelectData[key].text.split(" (")[0] + " (" + newCount + ")";
+    return { ...option, text: newText };
+  });
+
+  authorSelect.options = updatedAuthorSelectOptObj;
+  pubSelect.options = updatedPubSelectOptObj;
 };
 
 function updateProgress() {
@@ -1088,7 +1180,7 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
         characters: [entity as Character]
       });
 
-      $(".play-header-text").text("Plays with " + entity.persName)
+      $(".play-header-text").text("Plays with " + (entity as Character).persName)
       .next().css("display", "none") // hide progress number
        // hide header info
       $(".header-info[name='header-info-play']").css("display", "none");
@@ -1150,6 +1242,7 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
     // only highlight graph if filtered
     if (totalShownPlayItems !== playData.length) {
       setGraphHighlight(playsWithChars, unique);
+      updateCreatorSelects(playsWithChars);
     }
 
   } else if (viewMode === "charsByPlay") {
@@ -1165,10 +1258,12 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
         ...matchingChar,
         play: entity as Play
       })));
-      console.log("charsInPlays", charsInPlays, entity)
-      $(".char-header-text").text(`Characters in ${entity.titleMain} (${charsInPlays.length})`)
+
+      $(".char-header-text")
+      .text(`Characters in ${(entity as Play).titleMain} (${charsInPlays.length})`)
       .next().css("display", "none") // hide progress number
-       // hide header info
+
+      // hide header info
       $(".header-info[name='header-info-char']").css("display", "none");
     } else {
       filteredPlayData.forEach((play: Play) => {
@@ -1270,6 +1365,7 @@ async function setMagnifierView(zoomOn: string, el: JQuery<HTMLElement>) {
 
       $(".char-header-text").text("Characters")
         .next().css("display", "inline") // show progress number again
+      console.log($(".char-header-text").next());
       $(".header-info[name='header-info-char']").css("display", "flex"); // show header info again
       return;
     }

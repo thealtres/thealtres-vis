@@ -39,6 +39,7 @@ interface Location {
 interface Publisher {
     publisherId: number;
     lang: string;
+    nameOnPlay: string;
     normalizedName: string;
     coord: string;
 }
