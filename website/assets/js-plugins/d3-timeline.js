@@ -11,9 +11,9 @@ var optwidth = 900;
 var optheight = 150;
 
 let highlightColors = {
-    "fre": "rgb(0, 170, 255)", // blue
+    "fre": "rgba(0, 170, 255, 0.3)", // blue
     "ger": "rgba(255, 255, 0, 0.3)", // yellow
-    "als": "rgba(255, 0, 0, 0.3)", // red
+    "als": "rgba(255, 25, 25, 0.3)", // red
     "unique": "rgba(255, 204, 0, 0.5)",
     "default": "rgba(255, 255, 255, 0.3)",
 }
