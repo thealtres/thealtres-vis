@@ -11,9 +11,9 @@ var optwidth = 900;
 var optheight = 150;
 
 let highlightColors = {
-    "fre": "rgba(0, 170, 255, 0.3)", // blue
-    "ger": "rgba(255, 255, 0, 0.3)", // yellow
-    "als": "rgba(255, 25, 25, 0.3)", // red
+    "fre": "rgba(0, 170, 255, 0.7)", // blue
+    "ger": "rgba(255, 255, 0, 0.7)", // yellow
+    "als": "rgba(255, 25, 25, 0.7)", // red
     "unique": "rgba(255, 204, 0, 0.5)",
     "default": "rgba(255, 255, 255, 0.3)",
 }
@@ -21,7 +21,9 @@ let highlightColors = {
 // global variables used for export function highlightGraphPeriod()
 var context = null;
 var height_context = null;
+var y = null;
 var x2 = null;
+var y2 = null;
 var brush = null;
 var brushg = null;
 var dataXrange = null;
@@ -85,7 +87,7 @@ export function setTimeline(dataset) {
         .range([0, (width)])
         .domain(dataXrange);
 
-    var y = d3.scale.linear()
+    y = d3.scale.linear()
         .range([height, 0])
         .domain(dataYrange);;
 
@@ -95,7 +97,7 @@ export function setTimeline(dataset) {
         .range([0, width])
         .domain([mindate, maxdate]);
 
-    var y2 = d3.scale.linear()
+    y2 = d3.scale.linear()
         .range([height_context, 0])
         .domain(y.domain());
 
@@ -570,6 +572,30 @@ export function highlightGraphPeriod(d1, d2, lang, highlightUnique) {
     .style("fill", rectColor);
 }
 
+export function updateTimelineLangPlot(data) {
+    // remove existing lines
+    context.selectAll(".language-line").remove();
+
+    const line = d3.svg.line()
+        .x(function(d) { return x2(new Date(d.year, 0, 1)); })
+        .y(function(d) { return y2(d.value); });
+
+    const langs = [...new Set(data.map(d => d.lang))];
+
+    for (const lang of langs) {
+        const langData = data.filter(d => d.lang === lang).sort((a, b) => a.year - b.year);
+        console.log(langData)
+
+        context.append("path")
+        .datum(langData)
+        .attr("class", `language-line ${lang}`)
+        .attr("d", line)
+        .style("stroke", highlightColors[lang] || highlightColors["default"])
+        .style("stroke-width", 2)
+        .style("fill", "none");
+    }
+}
+
 export function raiseHandles() {
     brushg.selectAll(".resize").each(function() {
         this.parentNode.appendChild(this);
@@ -625,7 +651,8 @@ export function clearGraphHighlight(brushReset = false, unique = false) {
         return;
     }
 
-    context.selectAll('[class^="highlight-rect"').remove();
+    context.selectAll(".language-line").remove();
+    //context.selectAll('[class^="highlight-rect"').remove();
 
     if (brushReset) {
         recreateBrush();

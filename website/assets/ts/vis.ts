@@ -1,5 +1,5 @@
 import { Character, Play, Author, Publisher } from "./IEntity";
-import { setTimeline, highlightGraphPeriod,
+import { setTimeline, updateTimelineLangPlot,
   clearGraphHighlight, raiseHandles } from "../js-plugins/d3-timeline";
 import { setChart } from "../js-plugins/d3-charts";
 
@@ -97,23 +97,37 @@ function getJSON(path: string) : Promise<any> {
  * @param data - array of plays
  * @returns - array of years
  */
-function getDataYears(data: Play[]) {
-  // // we're using plays to get years of the data
-  // // because it has the "printed" property
-  // const years = data.map((item: Play) => +item.printed);
-  // // filter duplicates
-  // return years.filter((year, index) =>
-  // years.indexOf(year) === index && year !== 0);
+function getDataCountByYear(data: Play[]) {
+  // we're using plays to get years of the data
+  // because it has the "printed" property
+  const minPlayDataYear = Math.min(...playData.map((item: Play) => +item.printed)
+  .filter(year => !isNaN(year) && year !== 0));
+  const maxPlayDataYear = Math.max(...playData.map((item: Play) => +item.printed)
+  .filter(year => !isNaN(year)));
+
+  // array used to generate data with zero values for years with no data
+  // so that the timeline graph can be generated correctly
+  const allYears = Array.from({ length: maxPlayDataYear - minPlayDataYear + 1 },
+    (_, i) => i + minPlayDataYear);
+
+  const uniqueLangs = Array.from(new Set(data.map(item => item.lang)));
+
   const years = data.map(item => {
     return {
       year: +item.printed,
+      value: data.filter(play => (play.printed === item.printed && play.lang === item.lang)).length,
       lang: item.lang
     };
   }).filter(y => y.year !== 0 && !isNaN(y.year));
 
-  return years.filter((year, index) =>
-    years.indexOf(year) === index
-  );
+  const dataCountByYear = allYears.flatMap(year => {
+    return uniqueLangs.map(lang => {
+      const yearData = years.find(y => y.year === year && y.lang === lang);
+      return yearData || { year, value: 0, lang };
+    });
+  });
+
+  return dataCountByYear;
 }
 
 function findSuccessiveYears(years) : object {
@@ -1303,21 +1317,26 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
 };
 
 function setGraphHighlight(data, highlightUnique = false) {
-  let dateRanges = null;
-  const years = getDataYears(data);
-  dateRanges = findSuccessiveYears(years);
+  console.log("calling setGraphHighlight")
+  //let dateRanges = null;
+  const dataCount = getDataCountByYear(data);
+  //dateRanges = findSuccessiveYears(years);
 
-  if (dateRanges !== null) {
-    clearGraphHighlight();
-  }
+  // if (dateRanges !== null) {
+  //   clearGraphHighlight();
+  // }
 
-  for (const range in dateRanges) {
-    const minYear = dateRanges[range].years[0];
-    const maxYear = dateRanges[range].years[dateRanges[range].years.length - 1];
-    const lang = dateRanges[range].lang;
+  //console.log(dateRanges)
 
-    highlightGraphPeriod(minYear, maxYear, lang, highlightUnique);
-  }
+  // for (const range in dateRanges) {
+  //   const minYear = dateRanges[range].years[0];
+  //   const maxYear = dateRanges[range].years[dateRanges[range].years.length - 1];
+  //   const lang = dateRanges[range].lang;
+
+  //   highlightGraphPeriod(minYear, maxYear, lang, highlightUnique);
+  // }
+
+  updateTimelineLangPlot(dataCount);
 
   // raises handles svgs
   // fixes problem with svg layering order,
