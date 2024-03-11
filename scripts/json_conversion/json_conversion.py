@@ -1,6 +1,8 @@
 """
 This script is used to convert data CSV files to JSON files.
 Data can be: characters, plays, locations, authors, settings, publishers.
+
+Usage: python json_conversion.py <data_type> <inp_filename> <out_filename>
 """
 import csv
 import json
@@ -89,6 +91,9 @@ def convert_to_json(data: dict, type: str) -> dict:
     if type == "play_data":
         play_data = [{k: None if not v else v for k, v in dct.items()}
             for dct in data]
+
+        # remove plays with no lang
+        play_data = [dct for dct in play_data if dct["lang"]]
 
         # split values with comma into list
         play_data = [{k: re.split("[,.]", v.replace(" ", ""))
