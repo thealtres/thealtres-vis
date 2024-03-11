@@ -164,9 +164,9 @@ export function setTimeline(dataset) {
     // === the main components === //
 
     var vis = d3.select("#timeline").append("svg")
-        .attr("width", 1200) // !old: width + margin.left + margin.right
-        .attr("height", 200) // !old: height + margin.top + margin.bottom
-        .attr("viewBox", "0 50 900 50") //!
+        //.attr("width", 1200) // !old: width + margin.left + margin.right
+        //.attr("height", 200) // !old: height + margin.top + margin.bottom
+        .attr("viewBox", "0 30 900 130") //! better use this for responsiveness
         .attr("class", "metric-chart"); // CB -- "line-chart" -- CB //
 
     vis.append("defs").append("clipPath")
