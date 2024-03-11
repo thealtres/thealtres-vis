@@ -1,0 +1,32 @@
+{{ if .IsTranslated | and site.Params.footer.show_translations }}
+<div class="powered-by d-flex flex-wrap pb-2 justify-content-center">
+  <div class="p-2 font-weight-bold"><i class="fas fa-globe pr-1" aria-hidden="true"></i>{{ i18n "languages" }}:</div>
+  <div class="p-2">{{ index site.Data.i18n.languages .Lang }}</div>
+  {{ range .Translations }}
+  <div class="p-2"><a href="{{ .Permalink }}">{{ index site.Data.i18n.languages .Lang }}</a></div>
+  {{ end }}
+</div>
+{{ end }}
+
+{{ if or (site.GetPage "/terms.md") (site.GetPage "/privacy.md") }}
+<p class="powered-by">
+  {{ with site.GetPage "/privacy.md" }}
+  {{ printf "<a href=\"%s\">%s</a>" .RelPermalink .Title | safeHTML }}
+  {{ end }}
+  {{ with site.GetPage "/terms.md" }}
+  {{ if site.GetPage "/privacy.md" }} &middot; {{ end }}
+  {{ printf "<a href=\"%s\">%s</a>" .RelPermalink .Title | safeHTML }}
+  {{ end }}
+</p>
+{{ end }}
+
+{{ if not (in .Permalink "/vis/") }}
+  {{ with site.Params.footer.text }}
+    <p class="powered-by">
+      {{ . | markdownify | emojify }}
+    </p>
+  {{ end }}
+  {{ partial "site_footer_license" . }}
+{{ else }}
+  <p>© Théaltres — {{ now.Year }}. Site licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY SA 4.0</a> and powered by the <a href="https://github.com/HugoBlox/theme-academic-cv" target="_blank">Academic theme</a> for <a href="https://github.com/gohugoio/hugo" target="_blank">Hugo</a>. Project supported by <a href="https://www.misha.fr/recherche/programmes-scientifiques-misha" target="_blank">MISHA</a> (<i>Maison Interuniversitaire des Sciences de l'Homme d'Alsace</i>).</p>
+{{ end }}
