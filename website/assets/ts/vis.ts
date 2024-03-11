@@ -56,7 +56,6 @@ let totalShownCharItems = 0, totalShownPlayItems = 0;
 let preventScrollEvent = false;
 
 let timelineData = [];
-let noDateRange = false;
 
 /* Pagination */
 let playCurrentPage = 1;
@@ -164,6 +163,7 @@ function findSuccessiveYears(years) : object {
 
   console.log("currentRange0", currentRange)
 
+  let noDateRange = null;
   if (currentRange.length === 0) {
     noDateRange = true;
     // add last range
@@ -780,7 +780,7 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
         // this creates side effects when using both magnifier modes;
         // may fix later
         playText += await generateCharacterTemplate(play.characters, false, true, true);
-        html = `<div class="play-card">${playText}</div>`;
+        html = `<div class="play-card" data-lang="${play.lang}">${playText}</div>`;
         return html;
       }
 
@@ -789,7 +789,8 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
       data-workid=${play.workId}
       data-lang=${play.lang}></i>`;
 
-      html = `<div class="play-card">${playText}</div>`;
+      // include data-lang property for language-specific play card styling
+      html = `<div class="play-card" data-lang="${play.lang}">${playText}</div>`;
 
       return html;
     });
@@ -810,8 +811,12 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
       // to disable the "Plays with" view
       // may be caused by the fact that the "Page 1" string
       // is not part of the html generated for the "Plays with" view
-      currentPlayTemplate = `<span id="play-p-1">Page 1</span>` + html;
+      const spanPageEl = `<span id="play-p-1">Page 1</span>`;
+      currentPlayTemplate = spanPageEl + html;
     }
+
+    console.log('html', html)
+    console.log('currentPlayTemplate', currentPlayTemplate)
 
     return html;
   } catch (error) {
@@ -819,19 +824,6 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
     return "";
   }
 }
-
-// async function getTemplate(data: Character[] | Play[], type: string): Promise<string> {
-//   console.time("getTemplate")
-//   if (type === "characters") {
-//     console.timeEnd("getTemplate");
-//     return generateCharacterTemplate(data as Character[]);
-//   } else if (type === "plays") {
-//     console.timeEnd("getTemplate");
-//     return generatePlayTemplate(data as Play[]);
-//   }
-
-//   return "";
-// };
 
 async function getPlayInfo(id: number | number[], lang: string, type: string) : Promise<string|number|Play> {
   //console.time("getPlayInfo")
@@ -1043,7 +1035,12 @@ async function updateView(dataType: string, sharedProp = false) {
       // } else {
       //   $("#play-list").html(originalPlayTemplate);
       // }
-      showRelations("playsByChar", false, null, false);
+      //!
+      if (!sharedProp) {
+        showRelations("playsByChar", false, null, false);
+      } else {
+        updateView("plays", false);
+      }
 
       break;
     case "plays":
@@ -1069,8 +1066,8 @@ async function updateView(dataType: string, sharedProp = false) {
       $("#play-list-pagination").html("");
       renderData("main-view-plays-table", filteredData, playCurrentPage);
 
-      if (playFilters.publisher.length > 0 || playFilters.author.length > 0 || playFilters.dates.length > 0) {
-        showRelations("charsByPlay", false);
+      if (playFilters.publisher.length > 0 || playFilters.author.length > 0 || playFilters.dates.length > 0 || playFilters.lang.length > 0) {
+        showRelations("charsByPlay", false, null, false, true);
       } else {
         $("#char-list").html(originalCharTemplate);
       }
@@ -1173,7 +1170,8 @@ function updateProgress() {
   $(".play-progress").text(`${totalShownPlayItems}`);
 }
 
-async function showRelations(viewMode: string, unique: boolean, entity: Character | Play = null, appendNames = false) : Promise<void> {
+async function showRelations(viewMode: string, unique: boolean, entity: Character | Play = null, appendNames = false, useFilters = true) : Promise<void> {
+  console.log("showRelations() called with args:", viewMode, unique, entity, appendNames)
 
   //console.time("showRelations");
   if (viewMode === "playsByChar") {
@@ -1247,8 +1245,13 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
     // by clicking on the show-play-btn again
     if (appendNames || unique) {
       playTemplate = await generatePlayTemplate(playsWithChars, true);
-    } else {
+    } else {      console.log("test2")
       playTemplate = await generatePlayTemplate(playsWithChars, false);
+    }
+
+    // fix anchor not appearing when filtering by char-specific filter
+    if (playTemplate && !playTemplate.includes(`<span id="play-p-1">Page 1</span>`)) {
+      playTemplate = `<span id="play-p-1">Page 1</span>` + playTemplate;
     }
 
     $("#play-list").html(playTemplate);
@@ -1280,12 +1283,24 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
       // hide header info
       $(".header-info[name='header-info-char']").css("display", "none");
     } else {
-      filteredPlayData.forEach((play: Play) => {
-        charData.filter((char: Character) => char.workId === play.workId && char.lang === play.lang)
-        .forEach((char: Character) => {
-          charsInPlays.push(char);
+      // take into account char filters when filtering
+      if (useFilters) {
+        filteredPlayData.forEach((play: Play) => {
+          let filteredData = null;
+          filteredData = charData.filter((char: Character) => char.workId === play.workId && char.lang === play.lang)
+          filteredData = filterCharacters(filteredData);
+          filteredData.forEach((char: Character) => {
+            charsInPlays.push(char);
+          });
         });
-      })
+      } else {
+        filteredPlayData.forEach((play: Play) => {
+          charData.filter((char: Character) => char.workId === play.workId && char.lang === play.lang)
+          .forEach((char: Character) => {
+            charsInPlays.push(char);
+          });
+        });
+      }
     };
 
     // This creates an explicit, global copy
