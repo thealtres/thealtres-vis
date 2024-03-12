@@ -451,7 +451,7 @@
             "premiere": "1882",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": "maybe not 1st ed. ",
+            "comments": "maybe not 1st ed.",
             "genre": "com\u00e9die",
             "subgenre": null
         },
@@ -788,7 +788,7 @@
             "lang": "fre",
             "anOrd": "75",
             "wikidataId": null,
-            "titleMain": "Inviolable\u00a0! ",
+            "titleMain": "Inviolable\u00a0!",
             "titleSub": "Com\u00e9die-vaudeville en trois actes",
             "authorId": [
                 4
@@ -874,7 +874,7 @@
             "lang": "fre",
             "anOrd": "83",
             "wikidataId": null,
-            "titleMain": "Monsieur Gavroche\u00a0",
+            "titleMain": "Monsieur Gavroche",
             "titleSub": "Com\u00e9die-vaudeville en 2 actes, avec choeurs et couplets",
             "authorId": [
                 39
@@ -901,7 +901,7 @@
             "lang": "fre",
             "anOrd": "63",
             "wikidataId": null,
-            "titleMain": "La demoiselle du t\u00e9l\u00e9phone\u00a0",
+            "titleMain": "La demoiselle du t\u00e9l\u00e9phone",
             "titleSub": "com\u00e9die-op\u00e9rette en 3 actes",
             "authorId": [
                 36,
@@ -985,7 +985,7 @@
             "lang": "fre",
             "anOrd": "61",
             "wikidataId": null,
-            "titleMain": "Durand et Durand\u00a0",
+            "titleMain": "Durand et Durand",
             "titleSub": "com\u00e9die-vaudeville en trois actes",
             "authorId": [
                 3,
@@ -1117,7 +1117,7 @@
             "lang": "fre",
             "anOrd": "68",
             "wikidataId": null,
-            "titleMain": "B\u00e9b\u00e9\u00a0",
+            "titleMain": "B\u00e9b\u00e9",
             "titleSub": "com\u00e9die en trois actes",
             "authorId": [
                 1,
@@ -1833,7 +1833,7 @@
             "lang": "fre",
             "anOrd": "7",
             "wikidataId": null,
-            "titleMain": "Le bourgeois de Paris, ou Les le\u00e7ons au pouvoir ",
+            "titleMain": "Le bourgeois de Paris, ou Les le\u00e7ons au pouvoir",
             "titleSub": "Com\u00e9die-vaudeville en trois actes et six tableaux",
             "authorId": [
                 9,
@@ -2365,7 +2365,7 @@
             "anOrd": "86",
             "wikidataId": null,
             "titleMain": "Les deux amoureux de la grand-m\u00e8re",
-            "titleSub": "Com\u00e9die-vaudeville en un acte ",
+            "titleSub": "Com\u00e9die-vaudeville en un acte",
             "authorId": [
                 46
             ],
@@ -2418,7 +2418,7 @@
             "anOrd": "88",
             "wikidataId": null,
             "titleMain": "Chien et chat",
-            "titleSub": "Com\u00e9die-vaudeville en un acte ",
+            "titleSub": "Com\u00e9die-vaudeville en un acte",
             "authorId": [
                 48
             ],
@@ -4882,7 +4882,7 @@
             "nbActs": "3",
             "nbScenes": null,
             "comments": "publisher source: https://www.deutsche-digitale-bibliothek.de/item/F63D6WRPNLS6QARRBVP5P4GU6F73RHKY",
-            "genre": "0",
+            "genre": null,
             "subgenre": null
         },
         {
@@ -6051,7 +6051,7 @@
                 1
             ],
             "publisherId": "1",
-            "url": "https://www.digitale-sammlungen.de/en/details/bsb00062580 ",
+            "url": "https://www.digitale-sammlungen.de/en/details/bsb00062580",
             "sourceType": "FullText",
             "sourcePlatform": null,
             "printed": "1849",
@@ -6339,7 +6339,7 @@
             "premiere": "1910",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": "premiere source: https://de.wikipedia.org/wiki/Polnische_Wirtschaft_(Operette) ",
+            "comments": "premiere source: https://de.wikipedia.org/wiki/Polnische_Wirtschaft_(Operette)",
             "genre": "posse",
             "subgenre": null
         },
@@ -6895,7 +6895,7 @@
             "lang": "ger",
             "anOrd": "78",
             "wikidataId": null,
-            "titleMain": "Ein Toller Fall ",
+            "titleMain": "Ein Toller Fall",
             "titleSub": "Musikalischer Schwank in drei Akten",
             "authorId": [
                 31,
@@ -6966,7 +6966,7 @@
                 "35",
                 "34"
             ],
-            "comments": "dates source: https://de.wikipedia.org/wiki/Zu_ebener_Erde_und_erster_Stock ",
+            "comments": "dates source: https://de.wikipedia.org/wiki/Zu_ebener_Erde_und_erster_Stock",
             "genre": "posse",
             "subgenre": null
         },
@@ -9812,7 +9812,7 @@
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
-            "titleMain": "E Surprise (in 2 Stro\u00dfburjer Kom\u00f6die) ",
+            "titleMain": "E Surprise (in 2 Stro\u00dfburjer Kom\u00f6die)",
             "titleSub": "E kleins Kom\u00f6die in einem Akt",
             "authorId": [
                 9
@@ -10197,7 +10197,7 @@
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
-            "titleMain": "E H ",
+            "titleMain": "E H",
             "titleSub": "oder s'Gezaicht Trousseau (Lustspiel in Strassburger Mundart)",
             "authorId": [
                 34
@@ -11364,7 +11364,7 @@
             "anOrd": null,
             "wikidataId": null,
             "titleMain": "Der Ordnungsstifter oder Der neue Wirrwarr.",
-            "titleSub": "Lustspiel mit Gesang in drei Aufz\u00fcgen. ",
+            "titleSub": "Lustspiel mit Gesang in drei Aufz\u00fcgen.",
             "authorId": [
                 45
             ],
@@ -11387,7 +11387,7 @@
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
-            "titleMain": "Hans Dampf oder Wer heirathet Sie? ",
+            "titleMain": "Hans Dampf oder Wer heirathet Sie?",
             "titleSub": "Komische Oper in zwei Acten.",
             "authorId": [
                 45
@@ -11508,7 +11508,7 @@
             "anOrd": null,
             "wikidataId": null,
             "titleMain": "Der Gaasejopper macht Chasene",
-            "titleSub": "Lustspiel in sieben Aufz\u00fcgen. In els\u00e4ssisch-j\u00fcdischem Dialekt verfasst. ",
+            "titleSub": "Lustspiel in sieben Aufz\u00fcgen. In els\u00e4ssisch-j\u00fcdischem Dialekt verfasst.",
             "authorId": [
                 48
             ],
@@ -11844,7 +11844,7 @@
             "anOrd": null,
             "wikidataId": null,
             "titleMain": "Unverbesserli !",
-            "titleSub": "Sittegem\u00e4ld in zwei Uffz\u00fcg un in Vers. ",
+            "titleSub": "Sittegem\u00e4ld in zwei Uffz\u00fcg un in Vers.",
             "authorId": [
                 38
             ],
@@ -11988,7 +11988,7 @@
             "anOrd": null,
             "wikidataId": null,
             "titleMain": "Der Pankratz-Da oder Thee-Owen am Wasserzoll.",
-            "titleSub": "Schwank in 1 Akt in Strassburger Mundart. ",
+            "titleSub": "Schwank in 1 Akt in Strassburger Mundart.",
             "authorId": [
                 55
             ],
@@ -12012,7 +12012,7 @@
             "anOrd": null,
             "wikidataId": null,
             "titleMain": "Der H\u00fcsherr",
-            "titleSub": "Lustspiel in einem Akt. ",
+            "titleSub": "Lustspiel in einem Akt.",
             "authorId": [
                 9
             ],
@@ -12204,7 +12204,7 @@
             "anOrd": null,
             "wikidataId": null,
             "titleMain": "Im Dahomey",
-            "titleSub": "Bouffonerie mit Gesang, Musik und Tanz in 1 Akt und 2 Tableaux. ",
+            "titleSub": "Bouffonerie mit Gesang, Musik und Tanz in 1 Akt und 2 Tableaux.",
             "authorId": [
                 58
             ],
@@ -12483,7 +12483,7 @@
             "nbActs": "6 Bilder",
             "nbScenes": null,
             "comments": null,
-            "genre": " ",
+            "genre": null,
             "subgenre": "festspiel"
         },
         {
@@ -12515,7 +12515,7 @@
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
-            "titleMain": "D' Wundergej ",
+            "titleMain": "D' Wundergej",
             "titleSub": "Zauberm\u00e4rel in 5 Bilder mit Gsang un Danz",
             "authorId": [
                 1
@@ -12772,7 +12772,7 @@
             "nbActs": "1",
             "nbScenes": null,
             "comments": null,
-            "genre": " ",
+            "genre": null,
             "subgenre": null
         },
         {
@@ -12900,7 +12900,7 @@
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
-            "titleMain": "D'Gett'l vom Gaggser-Jerri ",
+            "titleMain": "D'Gett'l vom Gaggser-Jerri",
             "titleSub": "od'r Durch Schrecken geheilt od'r D'r Stiafbr\u00fcader vom Mississippi. Com\u00e9die en aim Akt.",
             "authorId": [
                 67,
@@ -13312,7 +13312,7 @@
             "anOrd": null,
             "wikidataId": null,
             "titleMain": "Vorm Friddesrichter",
-            "titleSub": "Gerichtssc\u00e8ne in einem Akt ",
+            "titleSub": "Gerichtssc\u00e8ne in einem Akt",
             "authorId": [
                 1
             ],
@@ -13335,7 +13335,7 @@
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
-            "titleMain": "Es sp\u00fcckt ",
+            "titleMain": "Es sp\u00fcckt",
             "titleSub": "Schwank in 3 Akt.",
             "authorId": [
                 1
@@ -14368,7 +14368,7 @@
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
-            "titleMain": "D'r Hans on's Greht\u00e4l\u00e4 \u00e9m Ehschtand. ",
+            "titleMain": "D'r Hans on's Greht\u00e4l\u00e4 \u00e9m Ehschtand.",
             "titleSub": "Loscht's Operettl\u00e4 \u00e9n 1 Act\u00e4... von J. Mangold,... M\u00fcsik vom J. Heyberger...",
             "authorId": [
                 15
@@ -15016,7 +15016,7 @@
             "anOrd": null,
             "wikidataId": null,
             "titleMain": "Mirabelle Muller",
-            "titleSub": "Lustspiel in 1 Akt von Paul Cl\u00e9mens. ",
+            "titleSub": "Lustspiel in 1 Akt von Paul Cl\u00e9mens.",
             "authorId": [
                 3
             ],
@@ -15952,7 +15952,7 @@
             "lang": "als",
             "anOrd": null,
             "wikidataId": null,
-            "titleMain": "Viel Krach f\u00fcr nix ",
+            "titleMain": "Viel Krach f\u00fcr nix",
             "titleSub": "odder Cherchez la femme ! Com\u00e9die in 4 kurze Akt vum Camille Jost",
             "authorId": [
                 11
@@ -16097,7 +16097,7 @@
             "anOrd": null,
             "wikidataId": null,
             "titleMain": "Stichwahl",
-            "titleSub": "Farce in einem Akt vun Fernand Kuehne. ",
+            "titleSub": "Farce in einem Akt vun Fernand Kuehne.",
             "authorId": [
                 13
             ],
@@ -16624,7 +16624,7 @@
             "anOrd": null,
             "wikidataId": null,
             "titleMain": "D'r Hochzitter vum Land",
-            "titleSub": "Schwank in einem Uffzug in els\u00e4ssischer Mundart ",
+            "titleSub": "Schwank in einem Uffzug in els\u00e4ssischer Mundart",
             "authorId": [
                 100
             ],
@@ -16788,7 +16788,7 @@
             "anOrd": null,
             "wikidataId": null,
             "titleMain": "D'g'stohlene G\u00e4ns",
-            "titleSub": "Lustspiel in einem Aufzug in els\u00e4ssischer Mundart ",
+            "titleSub": "Lustspiel in einem Aufzug in els\u00e4ssischer Mundart",
             "authorId": [
                 115
             ],

@@ -68,7 +68,7 @@ def convert_to_json(data: dict, type: str) -> dict:
     json_template = get_json_template(type)
 
     if type == "char_data":
-        char_data = [{k: None if not v else v for k, v in dct.items()}
+        char_data = [{k: None if not v or v.isspace() else v.strip() for k, v in dct.items()}
             for dct in data]
 
         # convert zeroes as values of "cl", "isGrp" to False, and ones to True
@@ -89,7 +89,7 @@ def convert_to_json(data: dict, type: str) -> dict:
             json_template["characters"].append(char_dict)
 
     if type == "play_data":
-        play_data = [{k: None if not v else v for k, v in dct.items()}
+        play_data = [{k: None if not v or v.isspace() else v.strip() for k, v in dct.items()}
             for dct in data]
 
         # remove plays with no lang
@@ -125,7 +125,7 @@ def convert_to_json(data: dict, type: str) -> dict:
             json_template["plays"].append(play_dict)
 
     if type == "location_data":
-        location_data = [{k: None if not v else v for k, v in dct.items()}
+        location_data = [{k: None if not v or v.isspace() else v.strip() for k, v in dct.items()}
             for dct in data]
 
         # convert ids to integers
@@ -138,7 +138,7 @@ def convert_to_json(data: dict, type: str) -> dict:
             json_template["locations"].append(location_dict)
 
     if type == "author_data":
-        author_data = [{k: None if not v else v for k, v in dct.items()}
+        author_data = [{k: None if not v or v.isspace() else v for k, v in dct.items()}
             for dct in data]
 
         # convert ids to integers
@@ -151,7 +151,7 @@ def convert_to_json(data: dict, type: str) -> dict:
             json_template["authors"].append(author_dict)
 
     if type == "setting_data":
-        setting_data = [{k: None if not v else v for k, v in dct.items()}
+        setting_data = [{k: None if not v or v.isspace() else v.strip() for k, v in dct.items()}
             for dct in data]
 
         # convert ids to integers
@@ -171,7 +171,7 @@ def convert_to_json(data: dict, type: str) -> dict:
             json_template["settings"].append(setting_dict)
 
     if type == "publisher_data":
-        publisher_data = [{k: None if not v else v for k, v in dct.items()}
+        publisher_data = [{k: None if not v or v.isspace() else v.strip() for k, v in dct.items()}
             for dct in data]
 
         # convert ids to integers
