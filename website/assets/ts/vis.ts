@@ -1,6 +1,6 @@
 import { Character, Play, Author, Publisher } from "./IEntity";
 import { setTimeline, updateTimelineLangPlot,
-  clearGraphHighlight, raiseHandles } from "../js-plugins/d3-timeline";
+  clearGraphHighlight, raiseHandles, highlightGraphPeriod } from "../js-plugins/d3-timeline";
 import { setChart } from "../js-plugins/d3-charts";
 
 // These are professionalGroup values to be filtered out in fillFilterValues()
@@ -115,7 +115,7 @@ function getDataCountByYear(data: Play[]) {
 
   const uniqueLangs = Array.from(new Set(data.map(item => item.lang)));
 
-  const years = data.map(item => {
+  const dataObj = data.map(item => {
     return {
       year: +item.printed,
       value: data.filter(play => (play.printed === item.printed && play.lang === item.lang)).length,
@@ -125,12 +125,24 @@ function getDataCountByYear(data: Play[]) {
 
   const dataCountByYear = allYears.flatMap(year => {
     return uniqueLangs.map(lang => {
-      const yearData = years.find(y => y.year === year && y.lang === lang);
+      const yearData = dataObj.find(y => y.year === year && y.lang === lang);
       return yearData || { year, value: 0, lang };
     });
   });
 
   return dataCountByYear;
+}
+
+function getYearPair(data: Play[]) {
+  console.log(data)
+  return data.map((item: Play) => {
+    return {
+      year1: +item.printed,
+      year2: +item.printed + 1,
+      lang: item.lang
+    };
+  }).filter(y => y.year1 !== 0 && !isNaN(y.year1))
+  .reduce((acc, curr) => ({ ...acc, ...curr }), {});
 }
 
 function findSuccessiveYears(years) : object {
@@ -203,8 +215,6 @@ async function renderData(elName: string, loadedData: Character[] | Play[], curr
       // only clear if we're on the first page
       // otherwise, caused the highlight to be cleared when scrolling
       && currentPage === 1) {
-    //! don't think it's needed anymore
-    //clearGraphHighlight();
   }
 
   if (loadedData.length === 0) {
@@ -1166,6 +1176,7 @@ function resetFilters() {
   playCurrentPage = 1;
 
   clearGraphHighlight(true); // reset highlight and brush
+  setGraphHighlight(playData); // reset timeline plot to default
 
   // reset selects data
   // @ts-ignore
@@ -1367,26 +1378,18 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
   }
 };
 
-function setGraphHighlight(data, highlightUnique = false) {
-  console.log("calling setGraphHighlight")
-  //let dateRanges = null;
+function setGraphHighlight(data: Play[], highlightUnique = false) {
+  console.log(`calling setGraphHighlight with highlightUnique=${highlightUnique}`)
+  console.log("data", data)
+  clearGraphHighlight();
+
+  if (highlightUnique) {
+    const yearPair = getYearPair(data);
+    console.log(yearPair)
+    highlightGraphPeriod(yearPair["year1"], yearPair["year2"], yearPair["lang"]);
+    return;
+  }
   const dataCount = getDataCountByYear(data);
-  //dateRanges = findSuccessiveYears(years);
-
-  // if (dateRanges !== null) {
-  //   clearGraphHighlight();
-  // }
-
-  //console.log(dateRanges)
-
-  // for (const range in dateRanges) {
-  //   const minYear = dateRanges[range].years[0];
-  //   const maxYear = dateRanges[range].years[dateRanges[range].years.length - 1];
-  //   const lang = dateRanges[range].lang;
-
-  //   highlightGraphPeriod(minYear, maxYear, lang, highlightUnique);
-  // }
-
   updateTimelineLangPlot(dataCount);
 
   // raises handles svgs
@@ -1501,13 +1504,17 @@ async function drawUI() {
 
   //let [graphDateRangeStart, graphDateRangeEnd] = $("#displayDates").text().split(" - ");
   //console.log("graphDateRangeStart", graphDateRangeStart, "graphDateRangeEnd", graphDateRangeEnd)
-  let debounceTimer;
+  let debounceTimer: ReturnType<typeof setTimeout>;
   let observer = new MutationObserver(function(mutations) {
     clearTimeout(debounceTimer);
 
     debounceTimer = setTimeout(() => {
       mutations.forEach(function(mutation) {
         let [graphDateRangeStart, graphDateRangeEnd] = mutation.target.textContent.split(" - ");
+
+        // if no end date is set, set it to the start date
+        if (!graphDateRangeEnd) graphDateRangeEnd = graphDateRangeStart;
+
         playFilters.dates = [[+graphDateRangeStart, +graphDateRangeEnd]];
         updateView("plays", false);
         updateProgress();
@@ -1517,6 +1524,8 @@ async function drawUI() {
 
   observer.observe($("#displayDates")[0], { childList: true });
 
+  // set timeline, chart
+  setGraphHighlight(playData);
   setChart();
 
   totalShownCharItems = charData.length;
