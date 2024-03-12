@@ -19,6 +19,8 @@ interface Play {
     publisherId: string;
     nbActs: string;
     printed: string; // some values such as: "?1824"
+    genre: string;
+    subgenre: string;
     characters: Character[]; // not part of the JSON; used for showRelations()
 }
 

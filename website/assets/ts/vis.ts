@@ -15,6 +15,9 @@ const charFilterEls = {
   "professionalGroup": $("#filter-profession-values"),
   "socialClass": $("#filter-social-class-values"),
 }
+const playFilterEls = {
+  "genre": $("#filter-genre-values"),
+}
 
 let charData: Character[] = [], playData: Play[] = [],
 authorData: Author[] = [], publisherData: Publisher[] = [];
@@ -42,6 +45,7 @@ let charFilters = defaultCharFilters;
 
 const defaultPlayFilters = {
   lang: [],
+  genre: [],
   publisher: [],
   author: [],
   dates: [],
@@ -429,20 +433,35 @@ function generateTimelineData(data: Play[]) {
   return yearsCount;
 };
 
-async function fillFilterValues(dataType: string): Promise<void> {
+async function fillFilterValues(dataType: string, filterMappings): Promise<void> {
+  // This JSON file is used to map values in charData and playData to:
+  // 1) their full names to be shown as tooltips
+  // (applies to charData lang, gender and socialClass; playData genre)
+  // 2) their abbreviated values to be shown as buttons
+  // as the original values would be too long to display
+  // (applies to professionalGroup)
+  console.log(filterMappings["sex"])
+
   switch (dataType) {
     case "plays":
       fillSelect("publisher", "#select-pub");
       fillSelect("author", "#select-author");
+
+      for (const key in playFilterEls) {
+        const values = new Set(playData.map((play: Play) => play[key]));
+        console.log(filterMappings[key])
+
+        const select = playFilterEls[key];
+        values.forEach((value : string) => {
+          const option = document.createElement("button");
+          option.name = key;
+          option.textContent = filterMappings[key][value];
+          $(option).addClass("filter-btn");
+          select.append(option);
+        });
+      }
       break;
     case "characters":
-      // This JSON file is used to map values in charData to:
-      // 1) their full names to be shown as tooltips
-      // (applies to lang, gender and socialClass)
-      // 2) their abbreviated values to be shown as buttons
-      // as the original values would be too long to display
-      // (applies to professionalGroup)
-      const filterMappings = await getJSON("/json/misc/filter_map.json");
       // Keep an array of original (long) professionalGroup values
       // to later set the og-value attribute of the Profession filter buttons.
       // We set the og-value attribute to the original value
@@ -534,6 +553,9 @@ function enableFilterBtns() {
       } else if (key === "sex" || key === "professionalGroup" || key === "socialClass") {
         charFilters[key] = charFilters[key].filter(item => item !== value);
         updateView("characters");
+      } else if (key === "genre") {
+        playFilters[key] = playFilters[key].filter(item => item !== value);
+        updateView("plays");
       }
 
     } else {
@@ -548,6 +570,9 @@ function enableFilterBtns() {
       } else if (key === "sex" || key === "professionalGroup" || key === "socialClass") {
         charFilters[key].push(value);
         updateView("characters");
+      } else if (key === "genre") {
+        playFilters[key].push(value);
+        updateView("plays");
       }
     }
 
@@ -765,6 +790,9 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
       const titleMain = play.titleMain;
       const date = play.printed ?? "";
       const authorName = await getPlayInfo(play.authorId, play.lang, "author");
+      const genre = play.genre;
+
+      const capitalizedGenre = genre ? genre.charAt(0).toUpperCase() + play.genre.slice(1) : "";
 
       let titleMainDated = titleMain.trim();
       if (date) {
@@ -772,7 +800,7 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
       }
 
       // filter out empty values
-      let playText = [titleMainDated, authorName].filter(Boolean).join("<br>");
+      let playText = [titleMainDated, authorName, capitalizedGenre].filter(Boolean).join("<br>");
 
       if (charsInPlayCard) {
         // do not include char-list-show-play-unique-btn search icon
@@ -929,6 +957,7 @@ function filterPlays(playData: Play[]) : Play[] {
   const publisherFilter = playFilters.publisher;
   const authorFilter = playFilters.author;
   const langFilter = playFilters.lang;
+  const genreFilter = playFilters.genre;
   const dateFilter = playFilters.dates;
 
   filteredPlayData = playData.filter((play: Play) => {
@@ -968,13 +997,17 @@ function filterPlays(playData: Play[]) : Play[] {
     const langMatches = langFilter.length === 0 ||
     langFilter.some((filter: string) => filter === play.lang);
 
+    const genreMatches = genreFilter.length === 0 ||
+    genreFilter.some((filter: string) => filter === play.genre);
+
     const dateMatches = dateFilter.length === 0 ||
     dateFilter.some((filter: Array<number>) => {
       const printed = +play.printed;
       return (printed >= filter[0] && printed <= filter[1]);
     });
 
-    return publisherMatches && authorMatches && langMatches && dateMatches;
+    return publisherMatches && authorMatches && langMatches
+    && genreMatches && dateMatches;
   });
 
   // activate "Show Characters" filter button
@@ -1016,7 +1049,8 @@ async function updateView(dataType: string, sharedProp = false) {
       //console.log("charData", charData)
       //console.log("filteredCharData", filteredCharData)
 
-      if (playFilters.dates.length > 0 || playFilters.publisher.length > 0 || playFilters.author.length > 0) {
+      const isFiltered = ["dates", "publisher", "author", "genre"].some(filter => playFilters[filter].length > 0);
+      if (isFiltered) {
         filteredData = filterCharacters(filteredCharsInPlays);
       } else {
         filteredData = filterCharacters(charData);
@@ -1098,6 +1132,7 @@ function resetFilters() {
   playFilters = {
     publisher: [],
     lang: [],
+    genre: [],
     author: [],
     dates: []
   }
@@ -1305,7 +1340,7 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
 
     // This creates an explicit, global copy
     // of the charsInPlays array when data is filtered by
-    // play-specific filters (dates, author, publisher).
+    // play-specific filters (dates, author, publisher, genre).
     // We need to have a copy available
     // to do further char-specific (gender; prof; class) filtering
     // on already play-filtered characters.
@@ -1314,7 +1349,8 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
     //
     // Otherwise, applying a play-specific filter would reset the character data.
     // There may be a better way to do this, improve later if enough time.
-    if (playFilters.dates.length > 0 || playFilters.author.length > 0 || playFilters.publisher.length > 0) {
+    const isFiltered = ["dates", "publisher", "author", "genre"].some(filter => playFilters[filter].length > 0);
+    if (isFiltered) {
       filteredCharsInPlays = charsInPlays;
     }
 
@@ -1494,8 +1530,9 @@ async function drawUI() {
   renderData("main-view-chars", loadedCharData, charCurrentPage);
   renderData("main-view-plays-table", loadedPlayData, playCurrentPage);
 
-  await fillFilterValues("characters");
-  await fillFilterValues("plays");
+  const filterMappings = await getJSON("/json/misc/filter_map.json");
+  await fillFilterValues("characters", filterMappings);
+  await fillFilterValues("plays", filterMappings);
 
   enableFilterBtns();
   enableSortRows();
