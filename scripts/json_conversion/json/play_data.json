@@ -27,7 +27,9 @@
                 "9",
                 "5"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "folie-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 2,
@@ -51,7 +53,9 @@
             "nbScenes": [
                 "10"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 3,
@@ -77,7 +81,9 @@
                 "15",
                 "11"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 4,
@@ -104,7 +110,9 @@
                 "18",
                 "22"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 5,
@@ -131,7 +139,9 @@
                 "17",
                 "11"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 6,
@@ -154,7 +164,9 @@
             "premiere": "1897",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "op\u00e9ra-bouffe",
+            "subgenre": null
         },
         {
             "workId": 7,
@@ -180,7 +192,9 @@
                 "18",
                 "11"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 8,
@@ -206,7 +220,9 @@
                 "13",
                 "14"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 9,
@@ -230,7 +246,9 @@
             "nbScenes": [
                 "12"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 10,
@@ -253,7 +271,9 @@
             "premiere": "1890",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 11,
@@ -276,7 +296,9 @@
             "premiere": "1892",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 12,
@@ -299,7 +321,9 @@
             "premiere": "1889",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 13,
@@ -322,7 +346,9 @@
             "premiere": "1894",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "pi\u00e8ce",
+            "subgenre": null
         },
         {
             "workId": 14,
@@ -345,7 +371,9 @@
             "premiere": "1894",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 15,
@@ -371,7 +399,9 @@
                 "16",
                 "11"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 16,
@@ -397,7 +427,9 @@
                 "18",
                 "20"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 17,
@@ -419,7 +451,9 @@
             "premiere": "1882",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": "maybe not 1st ed. "
+            "comments": "maybe not 1st ed. ",
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 18,
@@ -441,7 +475,9 @@
             "premiere": "1877",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 19,
@@ -468,7 +504,9 @@
                 "17",
                 "11"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 20,
@@ -490,7 +528,9 @@
             "premiere": "1877",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 21,
@@ -512,7 +552,9 @@
             "premiere": "1873",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 22,
@@ -536,7 +578,9 @@
             "nbScenes": [
                 "19"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 23,
@@ -558,7 +602,9 @@
             "premiere": "1899",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "pi\u00e8ce",
+            "subgenre": null
         },
         {
             "workId": 24,
@@ -581,7 +627,9 @@
             "premiere": "1877",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "folie-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 25,
@@ -604,7 +652,9 @@
             "premiere": "1876",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 26,
@@ -626,7 +676,9 @@
             "premiere": "1898",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 27,
@@ -648,7 +700,9 @@
             "premiere": "1890",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 28,
@@ -671,7 +725,9 @@
             "premiere": "1888",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 29,
@@ -694,7 +750,9 @@
             "premiere": "1910",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 30,
@@ -721,7 +779,9 @@
                 "18",
                 "16"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 31,
@@ -747,7 +807,9 @@
                 "22",
                 "12"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 32,
@@ -774,7 +836,9 @@
                 "25",
                 "26"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "pi\u00e8ce",
+            "subgenre": null
         },
         {
             "workId": 33,
@@ -801,7 +865,9 @@
                 "28",
                 "24"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "pi\u00e8ce",
+            "subgenre": null
         },
         {
             "workId": 34,
@@ -826,7 +892,9 @@
                 "15",
                 "18"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 35,
@@ -849,7 +917,9 @@
             "premiere": "1891",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-op\u00e9rette",
+            "subgenre": null
         },
         {
             "workId": 36,
@@ -876,7 +946,9 @@
                 "17",
                 "11"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 37,
@@ -904,7 +976,9 @@
                 "18",
                 "14"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 38,
@@ -931,7 +1005,9 @@
                 "16",
                 "11"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 39,
@@ -958,7 +1034,9 @@
                 "22",
                 "15"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 40,
@@ -980,7 +1058,9 @@
             "premiere": "1899",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 41,
@@ -1004,7 +1084,9 @@
             "premiere": "1916",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "pi\u00e8ce",
+            "subgenre": null
         },
         {
             "workId": 42,
@@ -1026,7 +1108,9 @@
             "premiere": "1871",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 43,
@@ -1049,7 +1133,9 @@
             "premiere": "1877",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 44,
@@ -1076,7 +1162,9 @@
                 "11",
                 "10"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "folie-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 45,
@@ -1099,7 +1187,9 @@
             "premiere": "1866",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 46,
@@ -1121,7 +1211,9 @@
             "premiere": "1879",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 47,
@@ -1143,7 +1235,9 @@
             "premiere": "1904",
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 48,
@@ -1165,7 +1259,9 @@
             "premiere": "1892",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 49,
@@ -1187,7 +1283,9 @@
             "premiere": "1894",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 50,
@@ -1209,7 +1307,9 @@
             "premiere": "1896",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "pi\u00e8ce",
+            "subgenre": null
         },
         {
             "workId": 51,
@@ -1231,7 +1331,9 @@
             "premiere": "1907",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 52,
@@ -1256,7 +1358,9 @@
             "nbScenes": [
                 "20"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 53,
@@ -1286,7 +1390,9 @@
                 "9",
                 "8"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 54,
@@ -1312,7 +1418,9 @@
             "nbScenes": [
                 "16"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 55,
@@ -1335,7 +1443,9 @@
             "premiere": "1852",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 56,
@@ -1358,7 +1468,9 @@
             "premiere": "1860",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 57,
@@ -1381,7 +1493,9 @@
             "premiere": "1850",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 58,
@@ -1403,7 +1517,9 @@
             "premiere": "1850",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 59,
@@ -1426,7 +1542,9 @@
             "premiere": "1862",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 60,
@@ -1450,7 +1568,9 @@
             "premiere": "1857",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 61,
@@ -1474,7 +1594,9 @@
             "nbScenes": [
                 "11"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 62,
@@ -1497,7 +1619,9 @@
             "premiere": "1851",
             "nbActs": "5",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 63,
@@ -1521,7 +1645,9 @@
             "premiere": "1852",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 64,
@@ -1544,7 +1670,9 @@
             "premiere": "1856",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 65,
@@ -1567,7 +1695,9 @@
             "premiere": "1862",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 66,
@@ -1590,7 +1720,9 @@
             "premiere": "1867",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 67,
@@ -1612,7 +1744,9 @@
             "premiere": "1873",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 68,
@@ -1635,7 +1769,9 @@
             "premiere": "1875",
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 69,
@@ -1659,7 +1795,9 @@
             "premiere": "1844",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 70,
@@ -1686,7 +1824,9 @@
                 "14",
                 "10"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 71,
@@ -1717,7 +1857,9 @@
                 "7",
                 "5"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 72,
@@ -1743,7 +1885,9 @@
             "nbScenes": [
                 "11"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 73,
@@ -1768,7 +1912,9 @@
             "nbScenes": [
                 "12"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 74,
@@ -1792,7 +1938,9 @@
             "nbScenes": [
                 "17"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 75,
@@ -1815,7 +1963,9 @@
             "premiere": "1821",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 76,
@@ -1839,7 +1989,9 @@
             "premiere": "1826",
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 77,
@@ -1862,7 +2014,9 @@
             "premiere": "1841",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 78,
@@ -1887,7 +2041,9 @@
             "nbScenes": [
                 "17"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 79,
@@ -1911,7 +2067,9 @@
             "nbScenes": [
                 "21"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 80,
@@ -1936,7 +2094,9 @@
             "nbScenes": [
                 "20"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 81,
@@ -1961,7 +2121,9 @@
                 "7",
                 "17"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 82,
@@ -1986,7 +2148,9 @@
             "nbScenes": [
                 "13"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "m\u00eal\u00e9e",
+            "subgenre": null
         },
         {
             "workId": 83,
@@ -2015,7 +2179,9 @@
                 "5",
                 "8"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 84,
@@ -2038,7 +2204,9 @@
             "premiere": "1872",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 85,
@@ -2061,7 +2229,9 @@
             "premiere": "1874",
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 86,
@@ -2084,7 +2254,9 @@
             "premiere": "1883",
             "nbActs": "5",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "pi\u00e8ce",
+            "subgenre": null
         },
         {
             "workId": 87,
@@ -2106,7 +2278,9 @@
             "premiere": "1888",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 88,
@@ -2128,7 +2302,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 89,
@@ -2154,7 +2330,9 @@
                 "12",
                 "16"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 90,
@@ -2177,7 +2355,9 @@
             "premiere": "1880",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 91,
@@ -2201,7 +2381,9 @@
             "nbScenes": [
                 "21"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 92,
@@ -2226,7 +2408,9 @@
                 "14",
                 "15"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 93,
@@ -2250,7 +2434,9 @@
             "nbScenes": [
                 "12"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 94,
@@ -2274,7 +2460,9 @@
             "nbScenes": [
                 "13"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville-proverbe",
+            "subgenre": null
         },
         {
             "workId": 95,
@@ -2298,7 +2486,9 @@
             "nbScenes": [
                 "17"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 96,
@@ -2322,7 +2512,9 @@
             "nbScenes": [
                 "14"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 97,
@@ -2346,7 +2538,9 @@
             "nbScenes": [
                 "10"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 98,
@@ -2370,7 +2564,9 @@
             "nbScenes": [
                 "15"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 99,
@@ -2394,7 +2590,9 @@
             "nbScenes": [
                 "15"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 100,
@@ -2418,7 +2616,9 @@
             "nbScenes": [
                 "6"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 101,
@@ -2443,7 +2643,9 @@
                 "11",
                 "20"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 102,
@@ -2468,7 +2670,9 @@
             "nbScenes": [
                 "22"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 103,
@@ -2493,7 +2697,9 @@
                 "11",
                 "14"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 104,
@@ -2518,7 +2724,9 @@
                 "11",
                 "14"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 105,
@@ -2540,7 +2748,9 @@
             "premiere": "1840",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 106,
@@ -2565,7 +2775,9 @@
                 "11",
                 "14"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 107,
@@ -2589,7 +2801,9 @@
             "nbScenes": [
                 "17"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 108,
@@ -2615,7 +2829,9 @@
                 "14",
                 "11"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 109,
@@ -2640,7 +2856,9 @@
                 "15",
                 "12"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 110,
@@ -2664,7 +2882,9 @@
             "nbScenes": [
                 "14"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 111,
@@ -2686,7 +2906,9 @@
             "premiere": "1908",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "pi\u00e8ce",
+            "subgenre": null
         },
         {
             "workId": 112,
@@ -2710,7 +2932,9 @@
             "premiere": "1837",
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 113,
@@ -2735,7 +2959,9 @@
             "nbScenes": [
                 "17"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 114,
@@ -2758,7 +2984,9 @@
             "premiere": "1855",
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 115,
@@ -2781,7 +3009,9 @@
             "premiere": "1858",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 116,
@@ -2807,7 +3037,9 @@
             "nbScenes": [
                 "17"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 117,
@@ -2832,7 +3064,9 @@
             "nbScenes": [
                 "15"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 118,
@@ -2861,7 +3095,9 @@
                 "8",
                 "5"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 119,
@@ -2886,7 +3122,9 @@
             "nbScenes": [
                 "23"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 120,
@@ -2911,7 +3149,9 @@
             "nbScenes": [
                 "21"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 121,
@@ -2937,7 +3177,9 @@
             "nbScenes": [
                 "15"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 122,
@@ -2962,7 +3204,9 @@
             "nbScenes": [
                 "16"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 123,
@@ -2987,7 +3231,9 @@
             "nbScenes": [
                 "19"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 124,
@@ -3013,7 +3259,9 @@
                 "16",
                 "15"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 125,
@@ -3038,7 +3286,9 @@
             "nbScenes": [
                 "17"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 126,
@@ -3064,7 +3314,9 @@
                 "16",
                 "18"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 127,
@@ -3089,7 +3341,9 @@
             "nbScenes": [
                 "28"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 128,
@@ -3114,7 +3368,9 @@
             "nbScenes": [
                 "16"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 129,
@@ -3140,7 +3396,9 @@
             "nbScenes": [
                 "20"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 130,
@@ -3166,7 +3424,9 @@
             "nbScenes": [
                 "17"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 131,
@@ -3191,7 +3451,9 @@
             "nbScenes": [
                 "23"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 132,
@@ -3215,7 +3477,9 @@
             "premiere": "1864",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 133,
@@ -3240,7 +3504,9 @@
             "nbScenes": [
                 "20"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 134,
@@ -3264,7 +3530,9 @@
             "nbScenes": [
                 "20"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 135,
@@ -3289,7 +3557,9 @@
             "nbScenes": [
                 "18"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 136,
@@ -3317,7 +3587,9 @@
                 "16",
                 "10"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 137,
@@ -3341,7 +3613,9 @@
             "nbScenes": [
                 "22"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 138,
@@ -3366,7 +3640,9 @@
             "nbScenes": [
                 "22"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 139,
@@ -3390,7 +3666,9 @@
             "nbScenes": [
                 "13"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die",
+            "subgenre": null
         },
         {
             "workId": 140,
@@ -3415,7 +3693,9 @@
             "nbScenes": [
                 "12"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 141,
@@ -3440,7 +3720,9 @@
             "nbScenes": [
                 "19"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 142,
@@ -3464,7 +3746,9 @@
             "premiere": "1861",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": "the characters are dances, so of course it is difficult to assign social variables"
+            "comments": "the characters are dances, so of course it is difficult to assign social variables",
+            "genre": "vaudeville",
+            "subgenre": null
         },
         {
             "workId": 143,
@@ -3487,7 +3771,9 @@
             "premiere": "1867",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 144,
@@ -3510,7 +3796,9 @@
             "premiere": "1860",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "com\u00e9die-vaudeville",
+            "subgenre": null
         },
         {
             "workId": 1,
@@ -3537,7 +3825,9 @@
                 "13",
                 "13"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 2,
@@ -3561,7 +3851,9 @@
             "nbScenes": [
                 "9"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 3,
@@ -3585,7 +3877,9 @@
             "nbScenes": [
                 "14"
             ],
-            "comments": "firstPrinted source: https://einakter.dracor.org/angely-list-und-phlegma"
+            "comments": "firstPrinted source: https://einakter.dracor.org/angely-list-und-phlegma",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 4,
@@ -3612,7 +3906,9 @@
                 "8",
                 "6"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 5,
@@ -3639,7 +3935,9 @@
                 "10",
                 "7"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 6,
@@ -3663,7 +3961,9 @@
             "nbScenes": [
                 "20"
             ],
-            "comments": "dates source: https://einakter.staging.dracor.org/angely-die-erholungs-reise"
+            "comments": "dates source: https://einakter.staging.dracor.org/angely-die-erholungs-reise",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 7,
@@ -3687,7 +3987,9 @@
             "nbScenes": [
                 "17"
             ],
-            "comments": "firstPrinted source: https://einakter.staging.dracor.org/angely-punkt-drei-uhr"
+            "comments": "firstPrinted source: https://einakter.staging.dracor.org/angely-punkt-drei-uhr",
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 8,
@@ -3711,7 +4013,9 @@
             "nbScenes": [
                 "18"
             ],
-            "comments": "dates source: https://einakter.dracor.org/angely-zephyr-und-flora"
+            "comments": "dates source: https://einakter.dracor.org/angely-zephyr-und-flora",
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 9,
@@ -3738,7 +4042,9 @@
                 "20",
                 "15"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 10,
@@ -3764,7 +4070,9 @@
                 "15",
                 "15"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 11,
@@ -3789,7 +4097,9 @@
             "nbScenes": [
                 "43440"
             ],
-            "comments": "fake print value (current edition from 2015)"
+            "comments": "fake print value (current edition from 2015)",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 12,
@@ -3811,7 +4121,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 13,
@@ -3833,7 +4145,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 14,
@@ -3855,7 +4169,9 @@
             "premiere": null,
             "nbActs": "5",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 15,
@@ -3882,7 +4198,9 @@
                 "14",
                 "11"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 16,
@@ -3893,7 +4211,7 @@
             "titleSub": "Schwank in vier Akten",
             "authorId": [
                 8,
-                10
+                1
             ],
             "publisherId": "6",
             "url": "http://www.zeno.org/Literatur/M/Sch%C3%B6nthan,+Franz+und+Paul+von/Drama/Der+Raub+der+Sabinerinnen",
@@ -3910,7 +4228,9 @@
                 "15",
                 "8"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 17,
@@ -3934,7 +4254,9 @@
             "nbScenes": [
                 "18"
             ],
-            "comments": "dates source: https://einakter.dracor.org/voss-die-damenhuete-im-berliner-theater"
+            "comments": "dates source: https://einakter.dracor.org/voss-die-damenhuete-im-berliner-theater",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 18,
@@ -3956,7 +4278,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 19,
@@ -3979,7 +4303,9 @@
             "premiere": "1897",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 20,
@@ -4002,7 +4328,9 @@
             "premiere": "1892",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 21,
@@ -4030,7 +4358,9 @@
                 "6",
                 "9"
             ],
-            "comments": "full text available on GoogleDrive"
+            "comments": "full text available on GoogleDrive",
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 22,
@@ -4057,7 +4387,9 @@
                 "20",
                 "19"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 23,
@@ -4080,7 +4412,9 @@
             "premiere": "1897",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 24,
@@ -4091,7 +4425,7 @@
             "titleSub": "Schwank in drei Akten",
             "authorId": [
                 17,
-                20
+                2
             ],
             "publisherId": "16",
             "url": "https://vb2.uni-wuerzburg.de/solr/theaterzettel-resources/scans/folio-big/DE-20__63_S_1903__0001__12_08_A.jpg",
@@ -4103,7 +4437,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 25,
@@ -4130,7 +4466,9 @@
                 "12",
                 "10"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 26,
@@ -4153,7 +4491,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": "firstPrinted source: https://en.wikipedia.org/wiki/The_Spanish_Fly_(play)"
+            "comments": "firstPrinted source: https://en.wikipedia.org/wiki/The_Spanish_Fly_(play)",
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 27,
@@ -4179,7 +4519,9 @@
                 "25",
                 "17"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 28,
@@ -4207,7 +4549,9 @@
                 "18",
                 "13"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 29,
@@ -4230,7 +4574,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 30,
@@ -4258,7 +4604,9 @@
                 "7",
                 "6"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 31,
@@ -4281,7 +4629,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 32,
@@ -4308,7 +4658,9 @@
                 "25",
                 "17"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 33,
@@ -4330,7 +4682,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 34,
@@ -4353,7 +4707,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 35,
@@ -4376,7 +4732,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 36,
@@ -4399,7 +4757,9 @@
             "premiere": "1893",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 37,
@@ -4422,7 +4782,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 38,
@@ -4445,7 +4807,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 39,
@@ -4468,7 +4832,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 40,
@@ -4491,7 +4857,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 41,
@@ -4513,7 +4881,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": "publisher source: https://www.deutsche-digitale-bibliothek.de/item/F63D6WRPNLS6QARRBVP5P4GU6F73RHKY"
+            "comments": "publisher source: https://www.deutsche-digitale-bibliothek.de/item/F63D6WRPNLS6QARRBVP5P4GU6F73RHKY",
+            "genre": "0",
+            "subgenre": null
         },
         {
             "workId": 42,
@@ -4524,7 +4894,7 @@
             "titleSub": "Schwank in drei Akten",
             "authorId": [
                 27,
-                20
+                2
             ],
             "publisherId": "unknown",
             "url": "https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00044233/032073.tif",
@@ -4536,7 +4906,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 43,
@@ -4559,7 +4931,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 44,
@@ -4582,7 +4956,9 @@
             "premiere": "1919",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 45,
@@ -4609,7 +4985,9 @@
                 "11",
                 "8"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 46,
@@ -4633,7 +5011,9 @@
             "nbScenes": [
                 "11"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 47,
@@ -4659,7 +5039,9 @@
                 "19",
                 "14"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 48,
@@ -4686,7 +5068,9 @@
                 "20",
                 "16"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 49,
@@ -4715,7 +5099,9 @@
                 "9",
                 "8"
             ],
-            "comments": "nbActs: 6 Bilder (no acts)"
+            "comments": "nbActs: 6 Bilder (no acts)",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 50,
@@ -4737,7 +5123,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": "firstPrinted source: https://de.wikipedia.org/wiki/Gustav_von_Moser; fake print value (current edition from 2023)"
+            "comments": "firstPrinted source: https://de.wikipedia.org/wiki/Gustav_von_Moser; fake print value (current edition from 2023)",
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 51,
@@ -4761,7 +5149,9 @@
             "nbScenes": [
                 "21"
             ],
-            "comments": "fake firstPrinted value"
+            "comments": "fake firstPrinted value",
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 52,
@@ -4785,7 +5175,9 @@
             "nbScenes": [
                 "12"
             ],
-            "comments": "fake firstPrinted value"
+            "comments": "fake firstPrinted value",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 53,
@@ -4808,7 +5200,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 54,
@@ -4836,7 +5230,9 @@
                 "12",
                 "11"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 55,
@@ -4859,7 +5255,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 56,
@@ -4870,7 +5268,7 @@
             "titleSub": "Schwank in drei Akten",
             "authorId": [
                 27,
-                20
+                2
             ],
             "publisherId": "unknown",
             "url": "https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00032209/029994.tif",
@@ -4882,7 +5280,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 57,
@@ -4905,7 +5305,9 @@
             "premiere": "1921",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 58,
@@ -4928,7 +5330,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 59,
@@ -4951,7 +5355,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": "fake Printed value"
+            "comments": "fake Printed value",
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 60,
@@ -4974,7 +5380,9 @@
             "premiere": "1920",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 61,
@@ -4997,7 +5405,9 @@
             "premiere": "1924",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 62,
@@ -5020,7 +5430,9 @@
             "premiere": "1928",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 63,
@@ -5043,7 +5455,9 @@
             "premiere": "1921",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 64,
@@ -5066,7 +5480,9 @@
             "premiere": "1927",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 65,
@@ -5091,7 +5507,9 @@
                 "7",
                 "8"
             ],
-            "comments": "dates source: https://en.wikipedia.org/wiki/Carl_Mal%C3%9F"
+            "comments": "dates source: https://en.wikipedia.org/wiki/Carl_Mal%C3%9F",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 66,
@@ -5116,7 +5534,9 @@
                 "17",
                 "15"
             ],
-            "comments": "dates source: https://de.wikipedia.org/wiki/Carl_Mal%C3%9F"
+            "comments": "dates source: https://de.wikipedia.org/wiki/Carl_Mal%C3%9F",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 67,
@@ -5143,7 +5563,9 @@
                 "23",
                 "28"
             ],
-            "comments": "dates source: https://en.wikipedia.org/wiki/Carl_Mal%C3%9F; nbActs: 4 Bilder (no acts)"
+            "comments": "dates source: https://en.wikipedia.org/wiki/Carl_Mal%C3%9F; nbActs: 4 Bilder (no acts)",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 68,
@@ -5172,7 +5594,9 @@
                 "6",
                 "1"
             ],
-            "comments": "dates source: https://en.wikipedia.org/wiki/Carl_Mal%C3%9F; nbActs: 6 Bilder (no acts)"
+            "comments": "dates source: https://en.wikipedia.org/wiki/Carl_Mal%C3%9F; nbActs: 6 Bilder (no acts)",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 69,
@@ -5200,7 +5624,9 @@
                 "7",
                 "4"
             ],
-            "comments": "dates source: https://en.wikipedia.org/wiki/Carl_Mal%C3%9F; nbActs: 5 Bilder (no acts)"
+            "comments": "dates source: https://en.wikipedia.org/wiki/Carl_Mal%C3%9F; nbActs: 5 Bilder (no acts)",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 70,
@@ -5224,7 +5650,9 @@
             "nbScenes": [
                 "18"
             ],
-            "comments": "dates source: https://einakter.dracor.org/angely-das-fest-der-handwerker"
+            "comments": "dates source: https://einakter.dracor.org/angely-das-fest-der-handwerker",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 71,
@@ -5249,7 +5677,9 @@
                 "24",
                 "19"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 72,
@@ -5273,7 +5703,9 @@
             "nbScenes": [
                 "19"
             ],
-            "comments": "date sources: https://de.wikipedia.org/wiki/Ein_gebildeter_Hausknecht"
+            "comments": "date sources: https://de.wikipedia.org/wiki/Ein_gebildeter_Hausknecht",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 73,
@@ -5297,7 +5729,9 @@
             "nbScenes": [
                 "18"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 74,
@@ -5325,7 +5759,9 @@
                 "9",
                 "7"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 75,
@@ -5351,7 +5787,9 @@
                 "21",
                 "30"
             ],
-            "comments": "dates source: https://de.wikipedia.org/wiki/Eine_Wohnung_ist_zu_vermiethen_in_der_Stadt"
+            "comments": "dates source: https://de.wikipedia.org/wiki/Eine_Wohnung_ist_zu_vermiethen_in_der_Stadt",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 76,
@@ -5362,7 +5800,7 @@
             "titleSub": "Schwank in vier Akten",
             "authorId": [
                 8,
-                10
+                1
             ],
             "publisherId": "unknown",
             "url": "https://vb2.uni-wuerzburg.de/solr/theaterzettel-resources/scans/folio-big/DE-20__63_S_1893__0001__09_29_A.jpg",
@@ -5374,7 +5812,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 77,
@@ -5398,7 +5838,9 @@
             "nbScenes": [
                 "28"
             ],
-            "comments": "dates source: https://einakter.dracor.org/vanoni-der-friseur"
+            "comments": "dates source: https://einakter.dracor.org/vanoni-der-friseur",
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 78,
@@ -5427,7 +5869,9 @@
                 "11",
                 "12"
             ],
-            "comments": "dates source: https://de.wikipedia.org/wiki/Datterich; nbActs: 6 Bilder (no acts)"
+            "comments": "dates source: https://de.wikipedia.org/wiki/Datterich; nbActs: 6 Bilder (no acts)",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 79,
@@ -5454,7 +5898,9 @@
                 "12",
                 "14"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 80,
@@ -5480,7 +5926,9 @@
                 "22",
                 "17"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 81,
@@ -5506,7 +5954,9 @@
                 "22",
                 "15"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 82,
@@ -5530,7 +5980,9 @@
             "nbScenes": [
                 "44178"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 83,
@@ -5556,7 +6008,9 @@
                 "17",
                 "34"
             ],
-            "comments": "dates source: https://de.wikipedia.org/wiki/Umsonst!"
+            "comments": "dates source: https://de.wikipedia.org/wiki/Umsonst!",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 84,
@@ -5582,7 +6036,9 @@
                 "15",
                 "11"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 85,
@@ -5608,7 +6064,9 @@
                 "18",
                 "12"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 86,
@@ -5631,7 +6089,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": "fake Printed value; firstPrinted source: https://de.wikipedia.org/wiki/Oskar_Justinus"
+            "comments": "fake Printed value; firstPrinted source: https://de.wikipedia.org/wiki/Oskar_Justinus",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 87,
@@ -5653,7 +6113,9 @@
             "premiere": "1833",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": "dates source: https://de.wikipedia.org/wiki/Der_Tritschtratsch"
+            "comments": "dates source: https://de.wikipedia.org/wiki/Der_Tritschtratsch",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 88,
@@ -5677,7 +6139,9 @@
             "nbScenes": [
                 "20"
             ],
-            "comments": "dates source: https://einakter.dracor.org/angely-die-schneider-mamsells"
+            "comments": "dates source: https://einakter.dracor.org/angely-die-schneider-mamsells",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 89,
@@ -5701,7 +6165,9 @@
             "nbScenes": [
                 "18"
             ],
-            "comments": "dates source: https://einakter.dracor.org/angely-sieben-maedchen-in-uniform"
+            "comments": "dates source: https://einakter.dracor.org/angely-sieben-maedchen-in-uniform",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 90,
@@ -5723,7 +6189,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 91,
@@ -5745,7 +6213,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": "fake firstPrinted value"
+            "comments": "fake firstPrinted value",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 92,
@@ -5770,7 +6240,9 @@
                 "17",
                 "12"
             ],
-            "comments": "firstPrinted source: https://www.deutsche-biographie.de/sfz84107.html"
+            "comments": "firstPrinted source: https://www.deutsche-biographie.de/sfz84107.html",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 93,
@@ -5781,7 +6253,7 @@
             "titleSub": "Schwank in drei Akten",
             "authorId": [
                 17,
-                20
+                2
             ],
             "publisherId": "16",
             "url": "https://www.zvab.com/servlet/BookDetailsPL?bi=18768472132&searchurl=kn%3Dmax%2Bneal%26sortby%3D20&cm_sp=snippet-_-srp1-_-image6#&gid=1&pid=2",
@@ -5793,7 +6265,9 @@
             "premiere": "1922",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 94,
@@ -5804,7 +6278,7 @@
             "titleSub": "Satirischer Schwank in drei Akten",
             "authorId": [
                 20,
-                30
+                3
             ],
             "publisherId": "unknown",
             "url": "https://www.zvab.com/servlet/BookDetailsPL?bi=4724927485&searchurl=kn%3Dmax%2Bneal%26sortby%3D20&cm_sp=snippet-_-srp1-_-image9",
@@ -5816,7 +6290,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 95,
@@ -5838,7 +6314,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 96,
@@ -5861,7 +6339,9 @@
             "premiere": "1910",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": "premiere source: https://de.wikipedia.org/wiki/Polnische_Wirtschaft_(Operette) "
+            "comments": "premiere source: https://de.wikipedia.org/wiki/Polnische_Wirtschaft_(Operette) ",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 97,
@@ -5887,7 +6367,9 @@
                 "25",
                 "15"
             ],
-            "comments": "dates source: https://de.wikipedia.org/wiki/Die_verh%C3%A4ngnisvolle_Faschingsnacht"
+            "comments": "dates source: https://de.wikipedia.org/wiki/Die_verh%C3%A4ngnisvolle_Faschingsnacht",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 98,
@@ -5913,7 +6395,9 @@
                 "20",
                 "19"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 99,
@@ -5940,7 +6424,9 @@
                 "13",
                 "10"
             ],
-            "comments": "dates source: https://de.wikipedia.org/wiki/Einen_Jux_will_er_sich_machen"
+            "comments": "dates source: https://de.wikipedia.org/wiki/Einen_Jux_will_er_sich_machen",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 100,
@@ -5966,7 +6452,9 @@
                 "15",
                 "16"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 101,
@@ -5990,7 +6478,9 @@
             "nbScenes": [
                 "20"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 102,
@@ -6014,7 +6504,9 @@
             "nbScenes": [
                 "41935"
             ],
-            "comments": "firstPrinted source: https://de.wikipedia.org/wiki/Josef_Alois_Gleich"
+            "comments": "firstPrinted source: https://de.wikipedia.org/wiki/Josef_Alois_Gleich",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 103,
@@ -6038,7 +6530,9 @@
             "nbScenes": [
                 "15"
             ],
-            "comments": "dates source: https://einakter.dracor.org/holtei-dreiunddreissig-minuten-in-grueneberg-oder-der-halbe-weg"
+            "comments": "dates source: https://einakter.dracor.org/holtei-dreiunddreissig-minuten-in-grueneberg-oder-der-halbe-weg",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 104,
@@ -6062,7 +6556,9 @@
             "nbScenes": [
                 "15"
             ],
-            "comments": "firstPrinted source: https://de.frwiki.wiki/wiki/Karl_Eduard_von_Holtei"
+            "comments": "firstPrinted source: https://de.frwiki.wiki/wiki/Karl_Eduard_von_Holtei",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 105,
@@ -6088,7 +6584,9 @@
                 "23",
                 "12"
             ],
-            "comments": "dates source: https://de.wikipedia.org/wiki/Die_B%C3%BCrger_in_Wien"
+            "comments": "dates source: https://de.wikipedia.org/wiki/Die_B%C3%BCrger_in_Wien",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 106,
@@ -6114,7 +6612,9 @@
                 "13",
                 "15"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 107,
@@ -6140,7 +6640,9 @@
                 "12",
                 "6"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 108,
@@ -6166,7 +6668,9 @@
                 "23",
                 "17"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 109,
@@ -6191,7 +6695,9 @@
                 "26",
                 "28"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 110,
@@ -6214,7 +6720,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 111,
@@ -6237,7 +6745,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 112,
@@ -6264,7 +6774,9 @@
                 "14",
                 "9"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 113,
@@ -6288,7 +6800,9 @@
             "nbScenes": [
                 "43022"
             ],
-            "comments": "firstPrinted source: https://de.wikipedia.org/wiki/Frank_Wedekind"
+            "comments": "firstPrinted source: https://de.wikipedia.org/wiki/Frank_Wedekind",
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 114,
@@ -6316,7 +6830,9 @@
                 "9",
                 "9"
             ],
-            "comments": "firstPrinted source: https://de.wikipedia.org/wiki/August_von_Kotzebue"
+            "comments": "firstPrinted source: https://de.wikipedia.org/wiki/August_von_Kotzebue",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 115,
@@ -6344,7 +6860,9 @@
                 "13",
                 "17"
             ],
-            "comments": "firstPrinted source: https://de.wikipedia.org/wiki/August_von_Kotzebue"
+            "comments": "firstPrinted source: https://de.wikipedia.org/wiki/August_von_Kotzebue",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 116,
@@ -6368,7 +6886,9 @@
             "nbScenes": [
                 "14"
             ],
-            "comments": "dates source: https://einakter.dracor.org/herrmann-drei-stunden-vor-der-hochzeit"
+            "comments": "dates source: https://einakter.dracor.org/herrmann-drei-stunden-vor-der-hochzeit",
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 117,
@@ -6391,7 +6911,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": "firstPrinted source: https://de.wikipedia.org/wiki/Carl_Mathern"
+            "comments": "firstPrinted source: https://de.wikipedia.org/wiki/Carl_Mathern",
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 118,
@@ -6416,7 +6938,9 @@
             "nbScenes": [
                 "11"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 119,
@@ -6442,7 +6966,9 @@
                 "35",
                 "34"
             ],
-            "comments": "dates source: https://de.wikipedia.org/wiki/Zu_ebener_Erde_und_erster_Stock "
+            "comments": "dates source: https://de.wikipedia.org/wiki/Zu_ebener_Erde_und_erster_Stock ",
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 120,
@@ -6469,7 +6995,9 @@
                 "34",
                 "24"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 121,
@@ -6496,7 +7024,9 @@
                 "15",
                 "14"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 122,
@@ -6523,7 +7053,9 @@
                 "22",
                 "11"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 123,
@@ -6549,7 +7081,9 @@
                 "17",
                 "10"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 124,
@@ -6575,7 +7109,9 @@
                 "10",
                 "8"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 125,
@@ -6599,7 +7135,9 @@
             "nbScenes": [
                 "8"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 126,
@@ -6623,7 +7161,9 @@
             "nbScenes": [
                 "10"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 127,
@@ -6647,7 +7187,9 @@
             "nbScenes": [
                 "11"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 128,
@@ -6674,7 +7216,9 @@
                 "18",
                 "17"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 129,
@@ -6701,7 +7245,9 @@
                 "15",
                 "16"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 130,
@@ -6729,7 +7275,9 @@
                 "19",
                 "17"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "posse",
+            "subgenre": null
         },
         {
             "workId": 131,
@@ -6756,7 +7304,9 @@
                 "18",
                 "21"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 132,
@@ -6780,7 +7330,9 @@
             "nbScenes": [
                 "14"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 133,
@@ -6806,7 +7358,9 @@
                 "20",
                 "14"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 134,
@@ -6830,7 +7384,9 @@
             "nbScenes": [
                 "45241"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 135,
@@ -6854,7 +7410,9 @@
             "nbScenes": [
                 "41254"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 136,
@@ -6880,7 +7438,9 @@
                 "26",
                 "15"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 137,
@@ -6907,7 +7467,9 @@
                 "24",
                 "14"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 138,
@@ -6934,7 +7496,9 @@
                 "24",
                 "19"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 139,
@@ -6961,7 +7525,9 @@
                 "13",
                 "12"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 140,
@@ -6988,7 +7554,9 @@
                 "23",
                 "24"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 141,
@@ -7015,7 +7583,9 @@
                 "13",
                 "12"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 142,
@@ -7026,7 +7596,7 @@
             "titleSub": "Schwank in drei Akten",
             "authorId": [
                 19,
-                20
+                2
             ],
             "publisherId": "12",
             "url": "https://haab-digital.klassik-stiftung.de/viewer/image/4329720159/2/LOG_0000/",
@@ -7042,7 +7612,9 @@
                 "14",
                 "20"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 143,
@@ -7070,7 +7642,9 @@
                 "16",
                 "12"
             ],
-            "comments": null
+            "comments": null,
+            "genre": "schwank",
+            "subgenre": null
         },
         {
             "workId": 1,
@@ -7092,7 +7666,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 2,
@@ -7114,7 +7690,9 @@
             "premiere": "1907",
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 3,
@@ -7136,7 +7714,9 @@
             "premiere": "1905",
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 4,
@@ -7158,7 +7738,9 @@
             "premiere": "1898",
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 5,
@@ -7180,7 +7762,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 6,
@@ -7202,7 +7786,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "einakter"
         },
         {
             "workId": 7,
@@ -7224,7 +7810,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 8,
@@ -7246,7 +7834,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 9,
@@ -7268,7 +7858,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 10,
@@ -7290,7 +7882,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "gerichtsscene"
         },
         {
             "workId": 11,
@@ -7312,7 +7906,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "horreur",
+            "subgenre": null
         },
         {
             "workId": 12,
@@ -7334,7 +7930,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 13,
@@ -7356,7 +7954,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 14,
@@ -7378,7 +7978,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "volksst\u00fcck"
         },
         {
             "workId": 15,
@@ -7400,7 +8002,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "comedie-bouffe"
         },
         {
             "workId": 16,
@@ -7422,7 +8026,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": null
         },
         {
             "workId": 17,
@@ -7444,7 +8050,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 18,
@@ -7466,7 +8074,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "volksst\u00fcck"
         },
         {
             "workId": 19,
@@ -7488,7 +8098,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "volksst\u00fcck"
         },
         {
             "workId": 20,
@@ -7510,7 +8122,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "volksspiel"
         },
         {
             "workId": 21,
@@ -7532,7 +8146,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustoperettle"
         },
         {
             "workId": 22,
@@ -7554,7 +8170,9 @@
             "premiere": null,
             "nbActs": "5 bilder",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 24,
@@ -7576,7 +8194,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 25,
@@ -7598,7 +8218,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 26,
@@ -7620,7 +8242,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": null
         },
         {
             "workId": 27,
@@ -7642,7 +8266,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 28,
@@ -7664,7 +8290,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": null
         },
         {
             "workId": 29,
@@ -7686,7 +8314,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "geduldspiel"
         },
         {
             "workId": 30,
@@ -7708,7 +8338,9 @@
             "premiere": "1907",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 31,
@@ -7730,7 +8362,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "duoszene"
         },
         {
             "workId": 32,
@@ -7752,7 +8386,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": "bauerndrama"
         },
         {
             "workId": 33,
@@ -7774,7 +8410,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 34,
@@ -7796,7 +8434,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "farce"
         },
         {
             "workId": 35,
@@ -7818,7 +8458,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 36,
@@ -7840,7 +8482,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "farce"
         },
         {
             "workId": 37,
@@ -7862,7 +8506,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "volksst\u00fcck"
         },
         {
             "workId": 38,
@@ -7884,7 +8530,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "quacksalwers-komedie"
         },
         {
             "workId": 39,
@@ -7906,7 +8554,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "farce"
         },
         {
             "workId": 40,
@@ -7928,7 +8578,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 41,
@@ -7950,7 +8602,9 @@
             "premiere": null,
             "nbActs": "1 Vorspiel + 3 Akte",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": "lebensbild"
         },
         {
             "workId": 42,
@@ -7972,7 +8626,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 43,
@@ -7994,7 +8650,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 44,
@@ -8017,7 +8675,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 45,
@@ -8039,7 +8699,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 46,
@@ -8061,7 +8723,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "volksschauspiel"
         },
         {
             "workId": 47,
@@ -8083,7 +8747,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 48,
@@ -8105,7 +8771,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "volksst\u00fcck"
         },
         {
             "workId": 49,
@@ -8127,7 +8795,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "volksst\u00fcck"
         },
         {
             "workId": 50,
@@ -8149,7 +8819,9 @@
             "premiere": "1902",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": null
         },
         {
             "workId": 51,
@@ -8171,7 +8843,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 52,
@@ -8193,7 +8867,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 53,
@@ -8215,7 +8891,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 54,
@@ -8237,7 +8915,9 @@
             "premiere": null,
             "nbActs": "5",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "liewes-scene"
         },
         {
             "workId": 55,
@@ -8259,7 +8939,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 56,
@@ -8281,7 +8963,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 57,
@@ -8303,7 +8987,9 @@
             "premiere": "1935",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": "volksst\u00fcck"
         },
         {
             "workId": 58,
@@ -8325,7 +9011,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 59,
@@ -8347,7 +9035,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 60,
@@ -8369,7 +9059,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 61,
@@ -8391,7 +9083,9 @@
             "premiere": null,
             "nbActs": "7 Bilder",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 62,
@@ -8413,7 +9107,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": null
         },
         {
             "workId": 63,
@@ -8435,7 +9131,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 64,
@@ -8457,7 +9155,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "volkst\u00fcck"
         },
         {
             "workId": 65,
@@ -8479,7 +9179,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "historisch",
+            "subgenre": "heimetspiel"
         },
         {
             "workId": 66,
@@ -8501,7 +9203,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 67,
@@ -8523,7 +9227,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 68,
@@ -8545,7 +9251,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "wirthsh\u00fcs-scene"
         },
         {
             "workId": 69,
@@ -8567,7 +9275,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 70,
@@ -8589,7 +9299,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 71,
@@ -8611,7 +9323,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "comedie-bouffe"
         },
         {
             "workId": 72,
@@ -8633,7 +9347,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 73,
@@ -8655,7 +9371,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "komischi scene"
         },
         {
             "workId": 74,
@@ -8677,7 +9395,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "unsinn"
         },
         {
             "workId": 75,
@@ -8699,7 +9419,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "comedie-bouffe"
         },
         {
             "workId": 76,
@@ -8721,7 +9443,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustsspiel"
         },
         {
             "workId": 77,
@@ -8743,7 +9467,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "volksst\u00fcck"
         },
         {
             "workId": 78,
@@ -8765,7 +9491,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "volksst\u00fcck"
         },
         {
             "workId": 79,
@@ -8787,7 +9515,9 @@
             "premiere": "1897",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "Humoristisches Intermezzo"
         },
         {
             "workId": 80,
@@ -8809,7 +9539,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 81,
@@ -8831,7 +9563,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 82,
@@ -8853,7 +9587,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "farce"
         },
         {
             "workId": 83,
@@ -8875,7 +9611,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": null
         },
         {
             "workId": 84,
@@ -8897,7 +9635,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 85,
@@ -8919,7 +9659,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "volksst\u00fcck"
         },
         {
             "workId": 86,
@@ -8941,7 +9683,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 87,
@@ -8963,7 +9707,9 @@
             "premiere": null,
             "nbActs": "3 (+Zwischenakt entre 2. et 3.)",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 88,
@@ -8985,7 +9731,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 89,
@@ -9007,7 +9755,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "farce"
         },
         {
             "workId": 90,
@@ -9029,7 +9779,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": null
         },
         {
             "workId": 91,
@@ -9051,7 +9803,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 92,
@@ -9073,7 +9827,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 93,
@@ -9095,7 +9851,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 94,
@@ -9117,7 +9875,9 @@
             "premiere": null,
             "nbActs": "1 Vorspiel + 3 Akte",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 95,
@@ -9139,7 +9899,9 @@
             "premiere": null,
             "nbActs": "1 Vorspiel + 3 Akte",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "tragedy",
+            "subgenre": "Bauerntragoedie"
         },
         {
             "workId": 96,
@@ -9161,7 +9923,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 97,
@@ -9183,7 +9947,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 98,
@@ -9205,7 +9971,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 99,
@@ -9227,7 +9995,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 100,
@@ -9249,7 +10019,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 101,
@@ -9272,7 +10044,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": "volksst\u00fcck"
         },
         {
             "workId": 102,
@@ -9294,7 +10068,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 103,
@@ -9316,7 +10092,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 104,
@@ -9338,7 +10116,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 105,
@@ -9360,7 +10140,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 106,
@@ -9382,7 +10164,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": "dramolet"
         },
         {
             "workId": 107,
@@ -9404,7 +10188,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 108,
@@ -9426,7 +10212,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 109,
@@ -9448,7 +10236,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": "volksst\u00fcck"
         },
         {
             "workId": 110,
@@ -9470,7 +10260,9 @@
             "premiere": "1879",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 111,
@@ -9492,7 +10284,9 @@
             "premiere": "1879",
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 112,
@@ -9514,7 +10308,9 @@
             "premiere": "1880",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 113,
@@ -9536,7 +10332,9 @@
             "premiere": "1880",
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 114,
@@ -9558,7 +10356,9 @@
             "premiere": "1880",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 115,
@@ -9580,7 +10380,9 @@
             "premiere": "1881",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 116,
@@ -9602,7 +10404,9 @@
             "premiere": "1880",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 117,
@@ -9624,7 +10428,9 @@
             "premiere": "1882",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 118,
@@ -9646,7 +10452,9 @@
             "premiere": "1883",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 119,
@@ -9668,7 +10476,9 @@
             "premiere": "1884",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 120,
@@ -9690,7 +10500,9 @@
             "premiere": "1885",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 121,
@@ -9712,7 +10524,9 @@
             "premiere": "1885",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 122,
@@ -9734,7 +10548,9 @@
             "premiere": "1885",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 123,
@@ -9756,7 +10572,9 @@
             "premiere": "1885",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 124,
@@ -9778,7 +10596,9 @@
             "premiere": "1886",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 125,
@@ -9800,7 +10620,9 @@
             "premiere": "1887",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 126,
@@ -9822,7 +10644,9 @@
             "premiere": "1887",
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 127,
@@ -9844,7 +10668,9 @@
             "premiere": "1892",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 128,
@@ -9866,7 +10692,9 @@
             "premiere": "1892",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 129,
@@ -9888,7 +10716,9 @@
             "premiere": "1895",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 130,
@@ -9910,7 +10740,9 @@
             "premiere": "1895",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 131,
@@ -9932,7 +10764,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 132,
@@ -9954,7 +10788,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 133,
@@ -9976,7 +10812,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 134,
@@ -9998,7 +10836,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "monologue"
         },
         {
             "workId": 135,
@@ -10020,7 +10860,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "fasenachtscene"
         },
         {
             "workId": 137,
@@ -10042,7 +10884,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "tale",
+            "subgenre": "weihnachtsst\u00fcck"
         },
         {
             "workId": 138,
@@ -10064,7 +10908,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "tale",
+            "subgenre": "weihnachtsst\u00fcck"
         },
         {
             "workId": 139,
@@ -10086,7 +10932,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 140,
@@ -10106,7 +10954,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 141,
@@ -10126,7 +10976,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 142,
@@ -10146,7 +10998,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 143,
@@ -10166,7 +11020,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 144,
@@ -10186,7 +11042,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 145,
@@ -10208,7 +11066,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 146,
@@ -10230,7 +11090,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 147,
@@ -10252,7 +11114,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 148,
@@ -10274,7 +11138,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 149,
@@ -10296,7 +11162,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 150,
@@ -10318,7 +11186,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 151,
@@ -10340,7 +11210,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "oparettle"
         },
         {
             "workId": 152,
@@ -10362,7 +11234,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 153,
@@ -10384,7 +11258,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": "volksscene"
         },
         {
             "workId": 154,
@@ -10406,7 +11282,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 155,
@@ -10428,7 +11306,9 @@
             "premiere": "1869",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "oparettle"
         },
         {
             "workId": 156,
@@ -10450,7 +11330,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 157,
@@ -10472,7 +11354,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 158,
@@ -10494,7 +11378,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 159,
@@ -10516,7 +11402,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "oper"
         },
         {
             "workId": 160,
@@ -10538,7 +11426,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 161,
@@ -10560,7 +11450,9 @@
             "premiere": "1875",
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 162,
@@ -10582,7 +11474,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 163,
@@ -10604,7 +11498,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 164,
@@ -10626,7 +11522,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 165,
@@ -10648,7 +11546,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 166,
@@ -10670,7 +11570,9 @@
             "premiere": null,
             "nbActs": "5",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 167,
@@ -10692,7 +11594,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 168,
@@ -10714,7 +11618,9 @@
             "premiere": null,
             "nbActs": "7",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 169,
@@ -10736,7 +11642,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 170,
@@ -10758,7 +11666,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 171,
@@ -10780,7 +11690,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": "sittegem\u00e4ld"
         },
         {
             "workId": 172,
@@ -10802,7 +11714,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "dialog",
+            "subgenre": null
         },
         {
             "workId": 173,
@@ -10824,7 +11738,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 174,
@@ -10846,7 +11762,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 175,
@@ -10868,7 +11786,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 176,
@@ -10890,7 +11810,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 177,
@@ -10912,7 +11834,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 178,
@@ -10934,7 +11858,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": "sittegem\u00e4ld"
         },
         {
             "workId": 179,
@@ -10956,7 +11882,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 180,
@@ -10978,7 +11906,9 @@
             "premiere": null,
             "nbActs": "5",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 181,
@@ -11000,7 +11930,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": "lustspiel"
         },
         {
             "workId": 182,
@@ -11022,7 +11954,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "posse"
         },
         {
             "workId": 183,
@@ -11044,7 +11978,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "posse"
         },
         {
             "workId": 184,
@@ -11066,7 +12002,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 185,
@@ -11088,7 +12026,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 186,
@@ -11110,7 +12050,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 187,
@@ -11132,7 +12074,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": "genrebild"
         },
         {
             "workId": 188,
@@ -11154,7 +12098,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 189,
@@ -11176,7 +12122,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 190,
@@ -11198,7 +12146,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 191,
@@ -11220,7 +12170,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "com\u00e9die-bouffe"
         },
         {
             "workId": 192,
@@ -11242,7 +12194,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 193,
@@ -11264,7 +12218,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "bouffonerie"
         },
         {
             "workId": 194,
@@ -11286,7 +12242,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 195,
@@ -11308,7 +12266,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 196,
@@ -11330,7 +12290,9 @@
             "premiere": "1896",
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 197,
@@ -11352,7 +12314,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 198,
@@ -11374,7 +12338,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": "sittegem\u00e4ld"
         },
         {
             "workId": 199,
@@ -11396,7 +12362,9 @@
             "premiere": "1897",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 200,
@@ -11418,7 +12386,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "tale",
+            "subgenre": "m\u00e4rel"
         },
         {
             "workId": 201,
@@ -11440,7 +12410,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "tale",
+            "subgenre": "weihnachtsst\u00fcck"
         },
         {
             "workId": 202,
@@ -11462,7 +12434,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "tale",
+            "subgenre": "m\u00e4rel"
         },
         {
             "workId": 203,
@@ -11484,7 +12458,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "tale",
+            "subgenre": "m\u00e4rel"
         },
         {
             "workId": 204,
@@ -11506,7 +12482,9 @@
             "premiere": null,
             "nbActs": "6 Bilder",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": " ",
+            "subgenre": "festspiel"
         },
         {
             "workId": 205,
@@ -11528,7 +12506,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "tale",
+            "subgenre": "m\u00e4rel"
         },
         {
             "workId": 206,
@@ -11550,7 +12530,9 @@
             "premiere": null,
             "nbActs": "5 Bilder",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "tale",
+            "subgenre": "m\u00e4rel"
         },
         {
             "workId": 207,
@@ -11572,7 +12554,9 @@
             "premiere": null,
             "nbActs": "7 Bilder",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "tale",
+            "subgenre": "m\u00e4rel"
         },
         {
             "workId": 208,
@@ -11594,7 +12578,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "tale",
+            "subgenre": "m\u00e4rel"
         },
         {
             "workId": 209,
@@ -11616,7 +12602,9 @@
             "premiere": null,
             "nbActs": "7 Bilder",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "tale",
+            "subgenre": "m\u00e4rchenspiel"
         },
         {
             "workId": 210,
@@ -11638,7 +12626,9 @@
             "premiere": null,
             "nbActs": "5 Bilder",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "tale",
+            "subgenre": "m\u00e4rel"
         },
         {
             "workId": 300,
@@ -11661,7 +12651,9 @@
             "premiere": "1897",
             "nbActs": "5 Bilder",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 301,
@@ -11683,7 +12675,9 @@
             "premiere": null,
             "nbActs": "4 Bilder",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 302,
@@ -11705,7 +12699,9 @@
             "premiere": null,
             "nbActs": "5 Bilder",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 303,
@@ -11727,7 +12723,9 @@
             "premiere": null,
             "nbActs": "6",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 304,
@@ -11749,7 +12747,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 305,
@@ -11771,7 +12771,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": " ",
+            "subgenre": null
         },
         {
             "workId": 306,
@@ -11793,7 +12795,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 307,
@@ -11815,7 +12819,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 308,
@@ -11837,7 +12843,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 309,
@@ -11859,7 +12867,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 310,
@@ -11881,7 +12891,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 311,
@@ -11904,7 +12916,9 @@
             "premiere": "1898",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 312,
@@ -11926,7 +12940,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 313,
@@ -11948,7 +12964,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 314,
@@ -11971,7 +12989,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": "volksst\u00fcck"
         },
         {
             "workId": 315,
@@ -11993,7 +13013,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 316,
@@ -12015,7 +13037,9 @@
             "premiere": "1899",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 317,
@@ -12037,7 +13061,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": "weihnachtsst\u00fcck"
         },
         {
             "workId": 318,
@@ -12059,7 +13085,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 319,
@@ -12081,7 +13109,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 320,
@@ -12103,7 +13133,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 321,
@@ -12125,7 +13157,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 322,
@@ -12147,7 +13181,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 323,
@@ -12169,7 +13205,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 324,
@@ -12192,7 +13230,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 325,
@@ -12214,7 +13254,9 @@
             "premiere": null,
             "nbActs": "5",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": "volksst\u00fcck"
         },
         {
             "workId": 326,
@@ -12236,7 +13278,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 327,
@@ -12258,7 +13302,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 328,
@@ -12280,7 +13326,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "gerichtsscene",
+            "subgenre": null
         },
         {
             "workId": 329,
@@ -12302,7 +13350,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 330,
@@ -12324,7 +13374,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 331,
@@ -12346,7 +13398,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "mystery",
+            "subgenre": null
         },
         {
             "workId": 332,
@@ -12368,7 +13422,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 333,
@@ -12390,7 +13446,9 @@
             "premiere": "1898",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 334,
@@ -12412,7 +13470,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 335,
@@ -12435,7 +13495,9 @@
             "premiere": null,
             "nbActs": "5",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 336,
@@ -12457,7 +13519,9 @@
             "premiere": null,
             "nbActs": "5",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": "volksst\u00fcck"
         },
         {
             "workId": 337,
@@ -12479,7 +13543,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 338,
@@ -12501,7 +13567,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 339,
@@ -12523,7 +13591,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 340,
@@ -12545,7 +13615,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": "volksst\u00fcck"
         },
         {
             "workId": 341,
@@ -12567,7 +13639,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 342,
@@ -12589,7 +13663,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 343,
@@ -12611,7 +13687,9 @@
             "premiere": null,
             "nbActs": "1 Vorspiel + 3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 344,
@@ -12633,7 +13711,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "historisch",
+            "subgenre": null
         },
         {
             "workId": 345,
@@ -12655,7 +13735,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 346,
@@ -12677,7 +13759,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": null
         },
         {
             "workId": 347,
@@ -12699,7 +13783,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 348,
@@ -12721,7 +13807,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 349,
@@ -12743,7 +13831,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 350,
@@ -12765,7 +13855,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 351,
@@ -12787,7 +13879,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 352,
@@ -12809,7 +13903,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": "b\u00fcredrama"
         },
         {
             "workId": 353,
@@ -12831,7 +13927,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": "todetanz"
         },
         {
             "workId": 354,
@@ -12853,7 +13951,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 355,
@@ -12875,7 +13975,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "historisch",
+            "subgenre": null
         },
         {
             "workId": 356,
@@ -12897,7 +13999,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 357,
@@ -12919,7 +14023,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": null
         },
         {
             "workId": 358,
@@ -12941,7 +14047,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 359,
@@ -12963,7 +14071,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 360,
@@ -12985,7 +14095,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": "volksst\u00fcck"
         },
         {
             "workId": 361,
@@ -13007,7 +14119,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": null
         },
         {
             "workId": 362,
@@ -13029,7 +14143,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "tale",
+            "subgenre": "m\u00e4rel"
         },
         {
             "workId": 363,
@@ -13051,7 +14167,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 364,
@@ -13073,7 +14191,9 @@
             "premiere": "1904",
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 365,
@@ -13095,7 +14215,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 366,
@@ -13117,7 +14239,9 @@
             "premiere": null,
             "nbActs": "5",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 367,
@@ -13139,7 +14263,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 368,
@@ -13161,7 +14287,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 369,
@@ -13183,7 +14311,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 370,
@@ -13205,7 +14335,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 371,
@@ -13227,7 +14359,9 @@
             "premiere": "1860",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 372,
@@ -13249,7 +14383,9 @@
             "premiere": "1869",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "Loscht's-Operettl\u00e4"
         },
         {
             "workId": 373,
@@ -13271,7 +14407,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 374,
@@ -13293,7 +14431,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "biblical",
+            "subgenre": null
         },
         {
             "workId": 375,
@@ -13315,7 +14455,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "farce"
         },
         {
             "workId": 376,
@@ -13337,7 +14479,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 377,
@@ -13359,7 +14503,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 378,
@@ -13381,7 +14527,9 @@
             "premiere": "1897",
             "nbActs": "Vorspiel + 5",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 379,
@@ -13403,7 +14551,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 380,
@@ -13425,7 +14575,9 @@
             "premiere": "1923",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": null
         },
         {
             "workId": 381,
@@ -13448,7 +14600,9 @@
             "premiere": "1913",
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 382,
@@ -13470,7 +14624,9 @@
             "premiere": null,
             "nbActs": "5",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 383,
@@ -13492,7 +14648,9 @@
             "premiere": null,
             "nbActs": "5",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 384,
@@ -13512,7 +14670,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": null
         },
         {
             "workId": 385,
@@ -13534,7 +14694,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": null
         },
         {
             "workId": 386,
@@ -13556,7 +14718,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 387,
@@ -13578,7 +14742,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 388,
@@ -13600,7 +14766,9 @@
             "premiere": null,
             "nbActs": "5",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 389,
@@ -13622,7 +14790,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "biblical",
+            "subgenre": null
         },
         {
             "workId": 390,
@@ -13644,7 +14814,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 391,
@@ -13666,7 +14838,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 392,
@@ -13688,7 +14862,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 393,
@@ -13710,7 +14886,9 @@
             "premiere": "1872",
             "nbActs": "5",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drame historique",
+            "subgenre": null
         },
         {
             "workId": 394,
@@ -13732,7 +14910,9 @@
             "premiere": "1919",
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": null
         },
         {
             "workId": 395,
@@ -13754,7 +14934,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 396,
@@ -13776,7 +14958,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 397,
@@ -13798,7 +14982,9 @@
             "premiere": null,
             "nbActs": "10",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 398,
@@ -13820,7 +15006,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 399,
@@ -13842,7 +15030,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 400,
@@ -13864,7 +15054,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 401,
@@ -13886,7 +15078,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 402,
@@ -13908,7 +15102,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 403,
@@ -13930,7 +15126,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 404,
@@ -13952,7 +15150,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 405,
@@ -13974,7 +15174,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 406,
@@ -13996,7 +15198,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 407,
@@ -14018,7 +15222,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 408,
@@ -14040,7 +15246,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 409,
@@ -14062,7 +15270,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 410,
@@ -14084,7 +15294,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 411,
@@ -14106,7 +15318,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 412,
@@ -14128,7 +15342,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 413,
@@ -14150,7 +15366,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 414,
@@ -14172,7 +15390,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 415,
@@ -14194,7 +15414,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "tale",
+            "subgenre": null
         },
         {
             "workId": 416,
@@ -14216,7 +15438,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": "volksst\u00fcck"
         },
         {
             "workId": 417,
@@ -14238,7 +15462,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "ehestandskom\u00f6die"
         },
         {
             "workId": 418,
@@ -14260,7 +15486,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 419,
@@ -14282,7 +15510,9 @@
             "premiere": null,
             "nbActs": "5",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 420,
@@ -14304,7 +15534,9 @@
             "premiere": null,
             "nbActs": "prolog + 5",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 421,
@@ -14326,7 +15558,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": null
         },
         {
             "workId": 422,
@@ -14348,7 +15582,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 423,
@@ -14370,7 +15606,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": "volkssteck"
         },
         {
             "workId": 424,
@@ -14392,7 +15630,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schulscene"
         },
         {
             "workId": 425,
@@ -14414,7 +15654,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 426,
@@ -14436,7 +15678,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": "Wyhnachtsufftritt"
         },
         {
             "workId": 427,
@@ -14458,7 +15702,9 @@
             "premiere": null,
             "nbActs": "5",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 428,
@@ -14480,7 +15726,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 429,
@@ -14502,7 +15750,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 430,
@@ -14524,7 +15774,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 431,
@@ -14546,7 +15798,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 432,
@@ -14568,7 +15822,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 433,
@@ -14590,7 +15846,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 434,
@@ -14613,7 +15871,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 435,
@@ -14635,7 +15895,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 436,
@@ -14657,7 +15919,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 437,
@@ -14679,7 +15943,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": "volksst\u00fcck"
         },
         {
             "workId": 438,
@@ -14701,7 +15967,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 439,
@@ -14723,7 +15991,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 440,
@@ -14745,7 +16015,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 441,
@@ -14767,7 +16039,9 @@
             "premiere": null,
             "nbActs": "5",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 442,
@@ -14789,7 +16063,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 443,
@@ -14811,7 +16087,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 444,
@@ -14833,7 +16111,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "farce"
         },
         {
             "workId": 445,
@@ -14855,7 +16135,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 446,
@@ -14877,7 +16159,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 447,
@@ -14899,7 +16183,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "farce"
         },
         {
             "workId": 448,
@@ -14921,7 +16207,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": "volksst\u00fcck"
         },
         {
             "workId": 449,
@@ -14941,7 +16229,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 450,
@@ -14963,7 +16253,9 @@
             "premiere": null,
             "nbActs": "2",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 451,
@@ -14985,7 +16277,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 452,
@@ -15007,7 +16301,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 453,
@@ -15029,7 +16325,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": "volkstick"
         },
         {
             "workId": 454,
@@ -15051,7 +16349,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": null
         },
         {
             "workId": 455,
@@ -15073,7 +16373,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 456,
@@ -15095,7 +16397,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 457,
@@ -15117,7 +16421,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 458,
@@ -15139,7 +16445,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 459,
@@ -15161,7 +16469,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 460,
@@ -15183,7 +16493,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "tale",
+            "subgenre": "wihnachtsst\u00fcckel"
         },
         {
             "workId": 461,
@@ -15205,7 +16517,9 @@
             "premiere": null,
             "nbActs": "4",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": "volksschauspiel"
         },
         {
             "workId": 462,
@@ -15227,7 +16541,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "vortrag"
         },
         {
             "workId": 463,
@@ -15249,7 +16565,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 464,
@@ -15271,7 +16589,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "vortrag"
         },
         {
             "workId": 465,
@@ -15294,7 +16614,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         },
         {
             "workId": 466,
@@ -15316,7 +16638,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 467,
@@ -15338,7 +16662,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "drama",
+            "subgenre": null
         },
         {
             "workId": 468,
@@ -15360,7 +16686,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": "volksst\u00fcck"
         },
         {
             "workId": 469,
@@ -15380,7 +16708,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 470,
@@ -15402,7 +16732,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": "charakterst\u00fcck"
         },
         {
             "workId": 471,
@@ -15424,7 +16756,9 @@
             "premiere": null,
             "nbActs": "3",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "schwank"
         },
         {
             "workId": 472,
@@ -15444,7 +16778,9 @@
             "premiere": null,
             "nbActs": "5",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 473,
@@ -15466,7 +16802,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": "lustspiel"
         },
         {
             "workId": 474,
@@ -15486,7 +16824,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 475,
@@ -15506,7 +16846,9 @@
             "premiere": null,
             "nbActs": "1",
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": null,
+            "subgenre": null
         },
         {
             "workId": 476,
@@ -15528,7 +16870,9 @@
             "premiere": null,
             "nbActs": null,
             "nbScenes": null,
-            "comments": null
+            "comments": null,
+            "genre": "comedy",
+            "subgenre": null
         }
     ]
 }

@@ -1,677 +1,677 @@
-workId,lang,anOrd,wikidataId,titleMain,titleSub,authorId,publisherId,url,sourceType,sourcePlatform,printed,firstPrinted,firstPublisher,premiere,nbActs,nbScenes,comments
-1,fre,1,,Le Tour du Cadran,Folie-vaudeville en cinq actes et six tableaux,"66, 67",6,https://www.google.fr/books/edition/Le_tour_du_cadran/HhRWAAAAcAAJ?hl=fr&gbpv=0,,Google Books,1872,,,1872,5,"7, 11, 9, 9, 5",
-2,fre,121,,Le Homard,comédie en un acte,20,6,https://books.google.fr/books?id=Y0uC46z30QEC&printsec=frontcover&hl=fr&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false,,Google Books,1874,,,1874,1,10,
-3,fre,52,Q107266236,Le Député de Bombignac,Comédie en trois actes,37,11,https://www.google.fr/books/edition/Le_d%C3%A9put%C3%A9_de_Bombignac/OQxJAQAAIAAJ?hl=fr&gbpv=0,,Google Books,1887,,,1884,3,"14, 15, 11",
-4,fre,55,Q19210904,Les Fiancés de Loches,Vaudeville en trois actes,"38, 36",2,https://www.google.fr/books/edition/Les_fianc%C3%A9s_de_loches/J5E7AQAAMAAJ?hl=fr&gbpv=0,,Google Books,1888,,,1888,3,"12, 18, 22",
-5,fre,2,Q65659179,Niniche,Vaudeville en trois actes,1.2,1,https://books.google.fr/books?id=RWp3nQEACAAJ,,Google Books,1878,,,1878,3,"20,17,11",
-6,fre,141,,Le cabinet Piperlin,opéra-bouffe en trois actes,"71, 72",28,https://gallica.bnf.fr/ark:/12148/bpt6k1281066x/f7.item,,Gallica,1897,,,1897,3,,
-7,fre,69,,L’héroïque Le Cardunois,Comédie en trois actes,37,11,https://www.google.fr/books/edition/L_h%C3%A9ro%C3%AFque_Le_Cardunois/M3U6AQAAMAAJ?hl=fr&gbpv=0,,Google Books,1894,,,1894,3,"22, 18, 11",
-8,fre,65,,La Famille Pont-Bicquet,Comédie en trois actes,37,5,https://books.google.fr/books?id=6nY5AQAAMAAJ&printsec=frontcover&hl=fr&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false,,Google Books,1913,1892,11,1892,3,"13, 13, 14",
-9,fre,50,,Une matinée de contrat,Comédie en un acte,36,2,https://www.google.fr/books/edition/Une_matin%C3%A9e_de_contrat/uithXllT3SIC?hl=fr&gbpv=1&dq=vaudeville+inauthor:desvalli%C3%A8res&pg=PA50&printsec=frontcover,,Google Books,1883,,,1883,1,12,
-10,fre,58,Q2553475,Le mariage de Barillon,Vaudeville en trois actes,"38, 36",,https://libretheatre.fr/le-mariage-de-barillon-de-georges-feydeau/,,,,1890,2,1890,3,,
-11,fre,66,Q3227495,Le système Ribadier,Comédie en trois actes et en prose,"38, 4",,https://libretheatre.fr/le-systeme-ribadier-de-georges-feydeau/,,,,?,,1892,3,,
-12,fre,57,Q19176633,L’affaire Edouard,Comédie-vaudeville en trois actes,"38, 36",,https://libretheatre.fr/laffaire-edouard-de-georges-feydeau/,,,,,,1889,3,,
-13,fre,70,Q3203961,L’hôtel du libre-échange,Pièce en trois actes,"38, 36",,https://libretheatre.fr/hotel-du-libre-echange-feydeau/,,,,?,,1894,3,,
-14,fre,71,Q3226710,Le Ruban,Comédie en trois actes,"38, 36",,https://libretheatre.fr/le-ruban-de-georges-feydeau/,,,,?,,1894,3,,
-15,fre,18,,"Gavaut, Minard et Cie",Comédie en trois actes,20,6,https://www.google.fr/books/edition/Gavaut_Minard_Cie/JWc6AAAAcAAJ?hl=fr&gbpv=1&dq=edmond+gondinet&printsec=frontcover,,Google Books,1869,,,1869,3,"15,16,11",
-16,fre,42,,Le Panache,Comédie en trois actes,20,6,https://www.google.fr/books/edition/Le_panache/o4r1rCmcseYC?hl=fr&gbpv=0,,,1876,,,1875,3,"13, 18, 20",
-17,fre,49,,Tête de Linotte,Comédie en trois actes,20,5,https://www.google.fr/books/edition/Gavaut_Minard_et_cie_Christiane_La_crava/CRFJAQAAIAAJ?hl=fr&gbpv=0,,Google Books,1892,1886,5,1882,3,,maybe not 1st ed. 
-18,fre,45,,Le Tunnel,Comédie en un acte,20,5,https://www.google.fr/books/edition/Le_panache_Les_grandes_demoiselles_Jonat/rglJAQAAIAAJ?hl=fr&gbpv=0,,Google Books,1877,,,1877,1,,
-19,fre,19,Q3225705,Le plus heureux des Trois,Comédie en trois actes,20.5,5,https://www.google.fr/books/edition/Th%C3%A9%C3%A2tre_complet_Le_plus_heureux_des_tr/CyYtAAAAYAAJ?hl=fr&gbpv=0,,Google Books,1894,1870,8,1870,3,"16,17,11",
-20,fre,46,,Les Convictions de papa,Comédie en un acte,20,5,https://gallica.bnf.fr/ark:/12148/bpt6k241252q,,Gallica,1894,1877,2,1877,1,,
-21,fre,38,,Panazol,"Comédie en un acte, en vers",20,6,https://www.google.fr/books/edition/Panazol_Com%C3%A9die_en_un_acte_en_vers/RHACK_J8zCYC?hl=fr&gbpv=0,,Google Books,1873,,,1873,1,,
-22,fre,17,,L’Amour qui dort,Comédie en un acte,19,8,https://www.google.fr/books/edition/L_Amour_qui_dort_Com%C3%A9die_en_un_acte_and/7hNdAAAAcAAJ?hl=fr&gbpv=0,,Google Books,1864,,,1864,1,19,
-23,fre,76,Q3208097,La Dame de chez Maxim,Pièce en trois actes,38,,https://libretheatre.fr/la-dame-de-chez-maxim-de-feydeau/,,,,?,,1899,3,,
-24,fre,122,,La Poudre d’escampette,folie-vaudeville en trois actes,"1, 66",1,https://www.google.fr/books/edition/La_poudre_d_escampette/DlVGAAAAYAAJ?hl=fr&gbpv=0,,Google Books,1877,,,1877,3,,
-25,fre,44,Q104850798,Les Dominos roses,Comédie en trois actes,"1, 29",1,https://www.amazon.fr/Dominos-Com%C3%A9die-Alfred-Delacour-Hennequin/dp/1115046632?asin=1115046632&revisionId=&format=4&depth=1,,,1884,1876,26,1876,3,,
-26,fre,74,Q107154738,Le Contrôleur des Wagons-lits,Comédie en trois actes,37,13,https://archive.org/details/lecontroleurdesw00bissuoft/page/6/mode/2up,,Internet Archive,1908,1898,13,1898,3,,
-27,fre,59,,Feu Toupinel,Comédie en trois actes,37,5,https://archive.org/details/feutoupinelcom00bissuoft,,Internet Archive,1907,1890,11,1890,3,,
-28,fre,60,,Les Surprises du Divorce,Comédie en trois actes,"37, 39",5,https://archive.org/details/lessurprisesdudi00bissuoft/page/n7/mode/2up,,Internet Archive,1914,1889,11,1888,3,,
-29,fre,142,Q105748095,Pastilles Hercules,vaudeville en trois actes,"4, 45",29,https://archive.org/details/pastilleshrcules2593henn/page/n7/mode/2up,,Internet Archive,1910,,,1910,3,,
-30,fre,53,,Les vacances du mariage,Comédie-vaudeville en trois actes,"3, 4",3,https://archive.org/details/lesvacancesdumar00valauoft/page/4/mode/2up,,Internet Archive,,,,1887,3,"16, 18, 16",
-31,fre,75,,Inviolable ! ,Comédie-vaudeville en trois actes,4,13,https://archive.org/details/inviolablecomd00hennuoft/page/14/mode/2up,,Internet Archive,1898,,,1897,3,"14, 22, 12",
-32,fre,79,,Vous n’avez rien à déclarer ?,Pièce en trois actes,"4, 43",13,https://archive.org/details/vousnavezriendec00hennuoft,,Internet Archive,1906,,,1906,3,"20, 25, 26",
-33,fre,84,Q30742511,La Présidente,Pièce en trois actes,"4, 43",13,https://archive.org/details/laprsidentepi00hennuoft,,Internet Archive,1913,,,1913,3,"22, 28, 24",
-34,fre,83,,Monsieur Gavroche ,"Comédie-vaudeville en 2 actes, avec choeurs et couplets",39,14,https://archive.org/details/monsieurgavroche00mars,,Internet Archive,1912,1889,14,?,2,"15, 18",
-35,fre,63,,La demoiselle du téléphone ,comédie-opérette en 3 actes,"36, 39",12,https://archive.org/details/lademoiselledut00serp/page/n7/mode/2up,,Internet Archive,,1891,3,1891,3,,
-36,fre,64,,Les Petites Godin,Comédie-vaudeville en trois actes,"40, 41",11,https://www.google.fr/books/edition/Les_Petites_Godin/49yT8S_tnTkC?hl=fr&gbpv=0,,Google Books,1891,1885,25,1884,3,"16, 17, 11",
-37,fre,77,,Les Boulinard,comédie-vaudeville en trois actes,"40, 3, 42",13,https://archive.org/details/lesboulinardcomd00ordo/page/n9/mode/2up,,Internet Archive,1901,1891,11,1890,3,"15, 18, 14",
-38,fre,61,,Durand et Durand ,comédie-vaudeville en trois actes,"3, 40",3,https://archive.org/details/duranddurandcom00ordouoft,,,1890,,,1887,3,"12, 16, 11",
-39,fre,3,,Les ricochets de l'amour,Comédie en trois actes,3.4,2,https://archive.org/details/lesricochetsdela00valauoft/page/4/mode/2up,,Internet Archive,1895,,,1894,3,"14,22,15",
-40,fre,80,,Que Suzanne n’en sache rien,comédie en trois actes,43,13,https://archive.org/details/quesuzannenensac00vebeuoft/page/4/mode/2up,,Internet Archive,1907,1900,27,1899,3,,
-41,fre,85,,Madame et son filleul,pièce en trois actes,"4, 43, 44",3,https://archive.org/details/madameetsonfille00henn/page/n7/mode/2up,,Internet Archive,1921,1917,,1916,3,,
-42,fre,54,,Les trois Chapeaux,Comédie en trois actes,1,5,https://archive.org/details/lestroischapeaux00henn,,Internet Archive,1887,1871,6,1871,3,,
-43,fre,68,,Bébé ,comédie en trois actes,"1, 35",3,https://archive.org/details/bbcomdieen00najauoft,,Internet Archive,1893,1877,1,1877,3,,
-44,fre,121,,Le Bal du Sauvage,folie-vaudeville en trois actes,"64, 65",3,https://gallica.bnf.fr/ark:/12148/bpt6k5713197j.texteImage,,Gallica,,1855,3,1854,3,"16, 11, 10",
-45,fre,39,,La Consigne est de ronfler,Comédie-vaudeville en un acte,18.15,6,https://www.google.fr/books/edition/La_consigne_est_de_ronfler/n_RbAAAAcAAJ?hl=fr&gbpv=0,,Google Books,1873,1866,6,1866,1,,
-46,fre,47,,La Veuve Chapuzot,Comédie en trois actes,3,8,https://www.google.fr/books/edition/La_veuve_Chapuzot_Comedie_en_3_actes/Wuvh2qZ4yd4C?hl=fr&gbpv=1&dq=la+veuve+chapuzot&printsec=frontcover,,Google Books,1879,,,1879,3,,
-47,fre,78,Q3214090,La Main passe,Comédie,38,,https://libretheatre.fr/la-main-passe-de-georges-feydeau/,,,,?,,1904,4,,
-48,fre,67,Q104846695,Monsieur Chasse,Comédie en trois actes,38,,https://libretheatre.fr/monsieur-chasse-de-georges-feydeau/,,,,1897,2,1892,3,,
-49,fre,72,Q3548595,Un fil à la patte,Comédie en trois actes,38,,https://libretheatre.fr/un-fil-a-la-patte-de-georges-feydeau/,,,,?,,1894,3,,
-50,fre,73,Q3222323,Le Dindon,Pièce en trois actes,38,,https://libretheatre.fr/le-dindon-de-georges-feydeau/,,,,?,,1896,3,,
-51,fre,81,Q3212044,La Puce à l’oreille,Comédie en trois actes,38,,https://libretheatre.fr/la-puce-a-loreille-de-georges-feydeau/,,,,?,,1907,3,,
-52,fre,4,Q3220311,Le Baron de Fourchevif,Comédie en un acte,5.6,3,https://gallica.bnf.fr/ark:/12148/bpt6k61293336#,,Gallica,1859,,,1859,1,20,
-53,fre,32,Q3231420,Les Chemins de Fer,Comédie-Vaudeville en cinq actes,"5, 29, 30",,https://libretheatre.fr/chemin-de-fer-labiche/,,Gallica,,1867,24,1867,5,"9,7,8,9,8",
-54,fre,5,Q2827376,Agénor le dangereux,Vaudeville en un acte,"5,7,8",4,https://gallica.bnf.fr/ark:/12148/bpt6k6209552x.texteImage#,,Gallica,1848,,,1848,1,16,
-55,fre,24,Q3319790,Mon Isménie,"Comédie en un acte, mêlée de couplets","5, 24",5,,,Gallica,1893,1853,6,1852,1,,
-56,fre,29,Q3232056,Les Deux Timides,Comédie-Vaudeville en un acte,"5, 24",5,,,Gallica,1893,?,,1860,1,,
-57,fre,21,Q3052094,"Embrassons-nous, Folleville !",Comédie-vaudeville en un acte,5.21,5,,,Gallica,1892,1850,6,1850,1,,
-58,fre,26,Q3548635,Un Garçon de chez Véry,Comédie en un acte mêlée de couplets,5,5,,,Gallica,1893,1850,6,1850,1,,
-59,fre,30,Q3230324,Les Trente-sept sous de M. Montaudoin,Comédie-Vaudeville en un acte,"5, 28",5,,,Gallica,1892,1863,8,1862,1,,
-60,fre,28,Q19176618,L’Affaire de la rue de Lourcine,Comédie en un acte mêlée de couplets,"5, 27, 28",5,,,Gallica,1893,1857,6,1857,1,,
-61,fre,6,Q3548736,Un Jeune Homme pressé,Vaudeville en un acte,5,5,,,Gallica,1893,1848,6,1848,1,11,
-62,fre,23,Q19236233,Un Chapeau de paille d’Italie,"Comédie en cinq actes, mêlée de couplets",5.24,5,,,Gallica,1893,1851,6,1851,5,,
-63,fre,25,Q3224615,Le Misanthrope et l’Auvergnat,Comédie en un acte mêlée de couplets,"5,25, 26",5,,,Gallica,1893,1852,25,1852,1,,
-64,fre,27,Q3482836,Si jamais je te pince,Comédie en trois actes mêlée de chant,"5, 24",5,,,Gallica,1892,1856,6,1856,3,,
-65,fre,31,Q3212958,La Station Champbaudet,Comédie-Vaudeville en trois actes,"5, 24",5,,,Gallica,1892,1862,3,1862,3,,
-66,fre,33,Q3209442,La Grammaire,Comédie-Vaudeville en un acte,5.6,5,,,Gallica,1892,1867,24,1867,1,,
-67,fre,40,Q2815721,29 Degrés à l’Ombre,Comédie en un acte,5,5,,,Gallica,1892,1873,8,1873,1,,
-68,fre,43,Q3235817,Les Trente millions de Gladiator,Comédie-vaudeville en quatre actes,"5, 34",5,,,Gallica,1892,1875,8,1875,4,,
-69,fre,36,,Major Cravachon,Comédie-Vaudeville en un acte,"5, 21, 33",5,,,Gallica,1892,1844,4,1844,1,,
-70,fre,8,,Les Avocats,comédie-vaudeville en 3 actes,10.11,7,https://gallica.bnf.fr/ark:/12148/bpt6k6115572g,,Gallica,1852,,,1852,3,"9,14,10",
-71,fre,7,,"Le bourgeois de Paris, ou Les leçons au pouvoir ",Comédie-vaudeville en trois actes et six tableaux,"9,10,11",6,https://gallica.bnf.fr/ark:/12148/bpt6k6181216h,,Gallica,1853,1850,,1850,3,"7,5,7,7,7,5",
-72,fre,22,,À la Bastille,Vaudeville en un acte,"22,13, 23",9,https://books.google.fr/books?id=fFJSAAAAcAAJ,,Google Books,1850,,,1850,1,11,
-73,fre,15,,Brouillés depuis Wagram,Comédie-vaudeville en un acte,15.18,6,https://gallica.bnf.fr/ark:/12148/bpt6k9745630c.texteImage,,Gallica,1861,,,1861,1,12,
-74,fre,12,,Le Passé de Nichette,Comédie-vaudeville,15,6,https://www.google.fr/books/edition/Le_pass%C3%A9_de_nichette/okQ6AAAAcAAJ?hl=fr&gbpv=0,,Google Books,1865,,,1860,1,17,
-75,fre,34,,Le Secrétaire et le Cuisinier,Comédie-Vaudeville en un acte,31.12,10,https://books.google.fr/books?id=cpWJ-nxz1J8C,,Google Books,1823,,,1821,1,,
-76,fre,35,,La Lune de Miel,Comédie-Vaudeville en deux actes,"31,12, 32",,https://xn--thtre-documentation-cvb0m.com/content/la-lune-de-miel-eug%C3%A8ne-scribe-pierre-carmouche-m%C3%A9lesville ; https://books.google.com/books/about/La_lune_de_miel_com%C3%A9die_vaudeville_en_d.html?id=tk8NFl3N8oUC,,Théâtre Documentation,,1826,"SECONDE ED. Impr. de David, à Paris. - A Paris, chez les auteurs",1826,2,,
-77,fre,122,,La Permission de dix heures,Comédie-vaudeville en un acte,"12, 32",9,https://archive.org/details/lapermissiondedi00mluoft ; https://théâtre-documentation.com/content/la-permission-de-dix-heures-pierre-carmouche-m%C3%A9lesville,,Internet Archive,1841,,,1841,1,,
-78,fre,9,,M. Beauminet,Vaudeville en un acte,12.13,4,https://books.google.fr/books?id=nj5o-XdAfgUC&pg=PA4&lpg=PA4&dq=m%C3%A9lesville+beauminet&source=bl&ots=GB8bpdXnGt&sig=ACfU3U1xRAMH4yfGvkPRcftt-tqLrzWeYw&hl=fr&sa=X&ved=2ahUKEwim4tLb3qj-AhVVVKQEHTKqAoQQ6AF6BAgYEAM,,Google Books,1855,,,1855,1,17,
-79,fre,10,,"Garde-toi, je me garde","Comédie en un acte, mêlée de chant",14,6,https://books.google.fr/books/about/Garde_toi_je_me_garde.html?id=iYQGAAAAQAAJ&redir_esc=y ; https://www.xn--thtre-documentation-cvb0m.com/content/garde-toi-je-me-garde-henri-meilhac,,Google Books,1868,,,1868,1,21,
-80,fre,16,,Le Brésilien,Comédie en un acte mêlée de chant,14.16,6,https://books.google.fr/books?id=uZFUAAAAcAAJ ; https://xn--thtre-documentation-cvb0m.com/content/le-br%C3%A9silien-henri-meilhac-ludovic-hal%C3%A9vy,,Google Books,1863,,,1863,1,20,
-81,fre,11,,Satania,"Comédie en deux actes, mêlée de couplets",14,4,https://books.google.fr/books?id=P8-EOBhAT9gC ; http://www.xn--thtre-documentation-cvb0m.com/content/satania-henri-meilhac,,Google Books,1856,,,1856,2,"7, 17",
-82,fre,13,,Ce qui plaît aux Hommes,"Mêlée de prose, de vers et de couplets",14.16,4,https://books.google.fr/books/about/Ce_qui_pla%C3%AEt_aux_Hommes_pi%C3%A8ce_en_un_ac.html?id=YsNHAQAAMAAJ&hl=en&output=html_text&redir_esc=y ; https://www.théâtre-documentation.com/content/ce-qui-pla%C3%Aet-aux-hommes-henri-meilhac,,Google Books,1860,,,1860,1,13,
-83,fre,20,Q107170059,Tricoche et Cacolet,Vaudeville en cinq actes,14.16,6,https://www.théâtre-documentation.com/content/tricoche-et-cacolet-henri-meilhac-ludovic-hal%C3%A9vy ; https://books.google.fr/books/about/Tricoche_et_Cacolet.html?id=vhVWAAAAcAAJ&redir_esc=y,,Théâtre Documentation,1872,,,1871,5,"14,13,12,5,8",
-84,fre,37,,Le Réveillon,Comédie en trois actes,14.16,5,https://books.google.fr/books?id=MiA-AAAAIAAJ,,Google Books,1880,1872,6,1872,3,,
-85,fre,41,,La Boule,Comédie,14.16,6,https://books.google.fr/books?id=eQo_AAAAIAAJ,,Google Books,1874,,,1874,,,
-86,fre,51,,Ma Camarade,Pièce en cinq actes,"14, 34",5,https://books.google.fr/books?id=WdM-AQAAMAAJ,,Google Books,1894,?,,1883,5,,
-87,fre,56,,Décoré,Comédie en trois actes,14,5,https://books.google.fr/books/about/D%C3%A9cor%C3%A9.html?id=uAlJAQAAIAAJ,,Google Books,1899,1894,5,1888,3,,
-88,fre,62,,Ma Cousine,Comédie en trois actes,14,5,https://books.google.fr/books/about/Ma_cousine.html?id=L_9TAAAAYAAJ,,Google Books,1897,1890,,,3,,
-89,fre,14,,Pattes de Mouche,Comédie en trois actes en prose,17,6,https://www.google.fr/books/edition/Les_Pattes_de_mouche/pTOyEtKq37YC?hl ; http://www.xn--thtre-documentation-cvb0m.com/content/les-pattes-de-mouche-victorien-sardou,,Google Books,1860,,,1860,3,"13,12,16",
-90,fre,48,,Divorçons !,Comédie en trois actes,17.35,5,https://www.google.fr/books/edition/Divor%C3%A7ons/iJbvAAAAMAAJ,,Google Books,1896,1883,5,1880,3,,
-91,fre,86,,Les deux amoureux de la grand-mère,Comédie-vaudeville en un acte ,46,3,https://gallica.bnf.fr/ark:/12148/bpt6k3078859c.texteImage,,Gallica,1850,,,1850,1,21,
-92,fre,87,,Mon voisin de campagne,Comédie-vaudeville en deux actes,47,15,https://www.google.fr/books/edition/Un_voisin_de_campagne/C-b-zzNMVygC,,Google Books,,1852,15,1852,2,"14, 15",
-93,fre,88,,Chien et chat,Comédie-vaudeville en un acte ,48,15,https://www.google.fr/books/edition/Chien_et_chat/OmmbRxUlyscC?hl=fr&gbpv=1&pg=PP1&printsec=frontcover,,Google Books,,1853,15,1852,1,12,
-94,fre,89,,"Après l'orage, le beau temps",Vaudeville-proverbe en un acte,47,16,https://www.google.fr/books/edition/Apr%C3%A8s_l_orage_vient_le_beau_temps/kcF9Tl8vk-gC?hl=fr&gbpv=1&pg=PA1&printsec=frontcover,,Google Books,1853,,,1853,1,13,
-95,fre,90,,Les Inconvénients de la sympathie,Vaudeville en un acte,46,3,https://gallica.bnf.fr/ark:/12148/bpt6k3046140d.texteImage,,Gallica,1854,,,1854,1,17,
-96,fre,91,,Drelin ! Drelin!,Vaudeville en un acte,49,6,https://www.google.fr/books/edition/Drelin_Drelin_vaudeville_en_un_acte_par/RbSLcm4Ri7kC?hl=fr&gbpv=1&pg=PA1&printsec=frontcover,,Google Books,1858,,,1858,1,14,
-97,fre,92,,La Tirelire de Jeannette,Comédie-vaudeville en un acte,50,3,https://www.google.fr/books/edition/La_tirelire_de_Jeannette_comedie_vaudevi/Xwfx-pDOh6cC?hl=fr&gbpv=1&pg=PA1&printsec=frontcover,,Google Books,1859,,,1859,1,10,
-98,fre,93,,Un Bon petit diable,Vaudeville en un acte,51,3,https://www.google.fr/books/edition/Un_bon_petit_diable_vaudeville_en_un_act/_O_C1G_YJ0wC?hl=fr&gbpv=1&pg=PA1&printsec=frontcover,,Google Books,1859,,,1859,1,15,
-99,fre,94,,La Mère Grippetout,Vaudeville en un acte,50,3,https://www.google.fr/books/edition/La_M%C3%A8re_Grippetout_vaudeville_en_un_act/uRNdAAAAcAAJ?hl=fr&gbpv=1&pg=PP1&printsec=frontcover,,Google Books,1861,,,1861,1,15,
-100,fre,95,,L' Amour de l'art,Vaudeville en un acte,52,17,https://gallica.bnf.fr/ark:/12148/bpt6k5849542w,,Gallica,1865,,,1865,1,6,
-101,fre,96,,Clémence,Comédie en deux actes mêlée de couplets,53,18,https://gallica.bnf.fr/ark:/12148/bpt6k98011272,,Gallica,1839,,,1839,2,"11, 20",
-102,fre,97,,Une Femme charmante,"Comédie en un acte, mêlée de chant","48, 54",19,https://www.google.fr/books/edition/Une_Femme_charmante_com%C3%A9die_en_un_acte/8g_60CAnYv4C?hl=fr&gbpv=1&pg=PA1&printsec=frontcover,,Google Books,,1840,21,1840,1,22,
-103,fre,98,,Les Honneurs et les moeurs ou Le même homme,"Comédie-vaudeville en deux actes, mêlée de chant",53,18,https://gallica.bnf.fr/ark:/12148/bpt6k4224580t#,,Gallica,1840,1840,18,1840,2,"11, 14",
-104,fre,99,,Georges ou Le même homme,Comédie en deux actes,53,20,https://gallica.bnf.fr/ark:/12148/bpt6k3040768p,,Gallica,1841,,,1840,2,"11, 14",
-105,fre,100,,Marguerite,Comédie en trois actes et en prose,53,20,https://gallica.bnf.fr/ark:/12148/bpt6k3040768p,,Gallica,1841,,,1840,3,,
-106,fre,101,,Le Père Marcel,Comédie en deux actes mêlée de chant,53,18,https://gallica.bnf.fr/ark:/12148/bpt6k9601540t,,Gallica,1841,1841,18,1841,2,"11, 14",
-107,fre,102,,Une Femme à la mode,Comédie en un acte,53,4,https://gallica.bnf.fr/ark:/12148/bpt6k9614704v,,Gallica,1843,,,1843,1,17,
-108,fre,103,,Hermance ou Un an trop tard,"Comédie en trois actes, mêlée de chant",53,4,https://gallica.bnf.fr/ark:/12148/bpt6k3043553g#,,Gallica,1843,,,1843,3,"14, 14, 11",
-109,fre,104,,Loïsa,"Comédie en deux actes, mêlée de chant",53,4,https://gallica.bnf.fr/ark:/12148/bpt6k9614380v,,Gallica,1843,,,1843,2,"15, 12",
-110,fre,105,,Follette,Comédie-vaudeville en un acte,53,4,https://gallica.bnf.fr/ark:/12148/bpt6k96035977,,Gallica,1844,,,1844,1,14,
-111,fre,82,Q19221114,Occupe-toi d’Amélie,Pièce en trois actes et quatre tableaux,38,,https://libretheatre.fr/occupe-toi-damelie-de-georges-feydeau/,,,,?,,1908,3,,
-112,fre,106,,Suzette,Comédie-vaudeville en deux actes,"55, 10, 56",10,https://fr.wikisource.org/wiki/Suzette,,,1837,,,1837,2,,
-113,fre,107,,Les Fils Gavet,Vaudeville en un acte,"57, 58",3,https://archive.org/details/bub_gb_3A1anEvnAvoC,,,,1853,,1853,1,17,
-114,fre,112,,Histoire d'un châle,vaudeville en deux actes,"58, 62",21,http://digital.bib-bvb.de/view/bvb_single/single.jsp?dvs=1686124267773~118&locale=en_US&VIEWER_URL=/view/bvb_single/single.jsp?&DELIVERY_RULE_ID=39&bfe=view/action/singleViewer.do?dvs=&frameId=1&usePid1=true&usePid2=true,,,,1855,21,1855,2,,
-115,fre,108,,Sous le paillasson,Vaudeville en un acte,"58, 59",21,https://books.google.fr/books?id=IoQ_AAAAcAAJ,,Google Books,1856,,,1858,1,,
-116,fre,109,,Détournement de majeure,Vaudeville en un acte,"26, 60, 61",6,https://www.google.fr/books/edition/Detournement_de_majeure_vaudeville_en_un/GdosMnBkKLEC,,Google Books,1857,,,1857,1,17,
-117,fre,110,,Fleur du Tyrol,Vaudeville en un acte,"18, 61",6,https://www.google.fr/books/edition/Fleur_du_Tyrol_vaudeville_en_un_acte_par/M2JKt__Ann4C,,Google Books,1872,,,1872,1,15,
-118,fre,111,,Le baptême du petit Oscar,Comédie-vaudeville en cinq actes,"18, 61",6,https://www.google.fr/books/edition/Le_bapteme_du_petit_Oscar_comedie_vaudev/5RVvJELGEkEC,,Google Books,1873,,,1873,,"11, 5, 11, 8, 5",
-119,fre,113,,Le luxe de ma femme,Comédie-vaudeville en un acte,"63, 41",8,https://www.google.fr/books/edition/Le_luxe_de_ma_femme_comedie_vaudeville_e/AWDy-wg47EoC,,Google Books,1868,,,1868,1,23,
-120,fre,114,,Un homme de bronze,Comédie-vaudeville en un acte,"63, 41",8,https://www.google.fr/books/edition/Un_homme_de_bronze_comedie_vaudeville_en/35bQgAawjAIC,,Google Books,1865,,,1865,1,21,
-121,fre,115,,Pifferaro,Comédie-vaudeville en un acte,"26, 63, 42",8,https://www.google.fr/books/edition/Le_pifferaro_com%C3%A9die_vaudeville_en_un_a/QuDhTJnUJT0C,,Google Books,1863,,,1863,1,15,
-122,fre,116,,Les filles de Barazin,Comédie-vaudeville en un acte,"63, 41",8,https://www.google.fr/books/edition/Les_filles_de_Barazin_comedie_vaudeville/ANxEBv4Q2R4C,,Google Books,1872,,,1872,1,16,
-123,fre,117,,Bloqué!,vaudeville en un acte,"63, 41",22,https://www.google.fr/books/edition/Bloque/vfo-AAAAIAAJ,,Google Books,1859,,,1858,1,19,
-124,fre,118,,La poésie des amours et...,comédie-vaudeville en deux actes,"22, 23",4,https://www.google.fr/books/edition/La_po%C3%A9sie_des_amours_et_Com%C3%A9die_vaudev/j3j0NM928zYC,,Google Books,1849,,,1849,2,"16, 15",
-125,fre,119,,Riche de cœur,Comédie-vaudeville en un acte,"22, 23",4,https://www.google.fr/books/edition/Riche_de_coeur_Com%C3%A9die_vaudeville_en_un/6VWEfFk3k5IC,,Google Books,1856,,,1856,1,17,
-126,fre,120,,Ce que femme veut...,comédie-vaudeville en deux actes,"22, 23",9,https://www.google.fr/books/edition/Ce_que_femme_veut/oDMUAAAAQAAJ,,Google Books,1847,,,1847,2,"16, 18",
-127,fre,123,,La clef dans le dos,Comédie-vaudeville en un acte,"22, 23",,https://www.google.fr/books/edition/La_clef_dans_le_dos/tjhMAAAAcAAJ,,Google Books,,1848,6,1848,1,28,
-128,fre,124,,Le pont cassé,Comédie-vaudeville en un acte,"22, 23",23,https://www.google.fr/books/edition/Le_pont_cass%C3%A9/sUVSAAAAcAAJ,,Google Books,1850,,,1850,1,16,
-129,fre,125,,Riche d'amour,Comédie-vaudeville en un acte,"22, 23, 13",15,https://www.google.fr/books/edition/Riche_d_amour/Ye84ZzxJNwAC?gbpv=1,,Google Books,,1846,"4, 25",1845,1,20,
-130,fre,126,,Macaroni d'Italie,vaudeville en un acte,"22, 23, 68",4,https://www.google.fr/books/edition/Macaroni_d_Italie_Vaudeville_en_un_acte/YivKFpEEXSoC,,Google Books,1858,,,1858,1,17,
-131,fre,127,,Le hanneton du Japon,Comédie-vaudeville en un acte,"22, 23",4,https://www.google.fr/books/edition/Le_hanneton_du_Japon/L7lbAAAAQAAJ,,Google Books,1858,,,1858,1,23,
-132,fre,128,,Les femmes sérieuses,Comédie-vaudeville en trois actes,"26, 29, 69",8,https://books.google.fr/books?id=9_irBIIjelcC&printsec=frontcover&dq=inauthor:siraudin&hl=fr&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwiq98b-k6P_AhW-VqQEHQWZCNQQ6AF6BAgJEAI,,Google Books,1864,,,1864,3,,
-133,fre,129,,L'argent fait peur,comédie-vaudeville en un acte,"26, 61",6,https://www.google.fr/books/edition/L_argent_fait_peur/da0ZeFr6Ft0C,,Google Books,1861,,,1861,1,20,
-134,fre,130,,Le propriétaire à la porte,vaudeville en un acte,26,8,https://www.google.fr/books/edition/Le_propri%C3%A9taire_a_la_porte/5NRpPgwxmbgC,,Google Books,1863,,,1863,1,20,
-135,fre,131,,Un avocat du beau sexe,comédie-vaudeville en un acte,"26, 30",8,https://books.google.fr/books?id=XRRdAAAAcAAJ&printsec=frontcover&dq=inauthor:siraudin&hl=fr&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwiq98b-k6P_AhW-VqQEHQWZCNQQ6AF6BAgCEAI,,Google Books,1862,,,1862,1,18,
-136,fre,132,,Le passage Radziwill ou La journée aux parapluies,Vaudeville en trois actes,"18, 26, 15",6,https://www.google.fr/books/edition/Le_passage_Radzivill_ou_la_journee_aux_p/ASOxZFuuPJcC,,Google Books,1860,,,1860,3,"14, 16, 10",
-137,fre,133,,L'ami des femmes,comédie en un acte mêlée de couplets,26,22,https://books.google.fr/books?id=AxVdAAAAcAAJ&pg=PA50&dq=inauthor:siraudin&hl=fr&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwj-qf_olKP_AhUyUKQEHWMsDcY4ChDoAXoECAcQAg,,Google Books,1861,,,1861,1,22,
-138,fre,134,,Le monsieur de la Rue de Vendôme,vaudeville en un acte précédé d'un prologue,"26, 70",6,https://www.google.fr/books/edition/Le_monsieur_de_la_rue_de_vendome_vaudevi/e8mfsjpJF8wC,,Google Books,1862,,,1861,1,22,
-139,fre,135,,Les idées de Beaucornet,comédie en un acte,26,24,https://www.google.fr/books/edition/Les_id%C3%A9es_de_Beaucornet/gZYGAAAAQAAJ,,Google Books,1867,,,1867,1,13,
-140,fre,136,,Bébé-actrice,vaudeville en un acte,"26, 30",22,https://www.google.fr/books/edition/Bebe_actrice_parodie_vaudeville_en_un_ac/v026VJyVeloC,,Google Books,1861,,,1861,1,12,
-141,fre,137,,Une femme aux cornichons,vaudeville en un acte,"26, 29",22,https://www.google.fr/books/edition/Une_femme_aux_cornichons_Vaudeville_en_1/o8hce-O5IwIC,,Google Books,1860,,,1860,1,19,
-142,fre,138,,Les danses nationales de la France,vaudeville en trois actes et cinq tableaux,"11, 29, 15",6,https://www.google.fr/books/edition/Les_danses_nationales_de_la_France_vaude/SzJPsDBm67wC,,Google Books,1861,1861,6,1861,3,,"the characters are dances, so of course it is difficult to assign social variables"
-143,fre,139,,La puce à l'oreille,comédie-vaudeville en un acte,"15, 26",6,https://books.google.com/books?id=T7YXkyRpPRAC&printsec=frontcover&dq=inauthor:%22lambert-thiboust%22+vaudeville&hl=fr&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwi5npLrlqP_AhVSUqQEHY2xBKI4ChDoAXoECAcQAg,,Google Books,1867,,,1867,1,,
-144,fre,140,,Le guide de l'étranger dans Paris,comédie-vaudeville en trois actes,"18, 15",6,https://gallica.bnf.fr/ark:/12148/bpt6k97497492/f4.item.texteImage,,Gallica,1860,,,1860,3,,
-1,ger,45,,Als ich wiederkam,Schwank in drei Aufzügen,9.16,6,https://www.nli.org.il/en/books/NNL_ALEPH990019496860205171/NLI,FullText,,1899,1899,,,3,"8,13,13",
-2,ger,5,,Numero Sicher,Posse in einem Akt,2,5,https://www.digitale-sammlungen.de/en/details/bsb10573590,FullText,,1858,1858,,,1,9,
-3,ger,6,,List und Phlegma,Vaudeville-Posse in einem Akt,3,4,https://archive.org/details/bub_gb_NscOAAAAYAAJ/page/n3/mode/2up,FullText,,1859,1829,,1827,1,14,firstPrinted source: https://einakter.dracor.org/angely-list-und-phlegma
-4,ger,14,,Der Liebe Onkel,Schwank in vier Aufzügen,7,9,https://books.google.fr/books?id=6pl7lmKE0LAC&printsec=frontcover&hl=fr&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false,FullText,,1873,1873,,,4,"6,19,8,6",
-5,ger,100,,Die Sängerin und die Näherin,Posse in vier Abtheilungen,3,30,https://archive.org/details/bub_gb_c8AsAAAAYAAJ/page/n9/mode/2up,FullText,,1836,1836,,,4,"5,6,10,7",
-6,ger,99,,Die Erholungs-Reise,Posse in einem Akt,3,30,https://archive.org/details/bub_gb_c8AsAAAAYAAJ/page/n139/mode/2up,FullText,,1836,1836,,1832,1,20,dates source: https://einakter.staging.dracor.org/angely-die-erholungs-reise
-7,ger,98,,Punkt drei Uhr,Schwank in einem Akt,3,30,https://archive.org/details/bub_gb_c8AsAAAAYAAJ/page/n189/mode/2up,FullText,,1836,1836,,,1,17,firstPrinted source: https://einakter.staging.dracor.org/angely-punkt-drei-uhr
-8,ger,96,,Zephyr und Flora,Fastnachtsschwank in einem Akt,3,30,https://archive.org/details/bub_gb_c8AsAAAAYAAJ/page/n291/mode/2up?view=theater,FullText,,1836,1836,,1839,1,18,dates source: https://einakter.dracor.org/angely-zephyr-und-flora
-9,ger,19,,Die Teufelsfelsen,Schwank in vier Aufzügen,9,7,https://sammlungen.ulb.uni-muenster.de/hd/content/titleinfo/4265769,FullText,,1880,1880,,,4,"16,15,20,15",
-10,ger,3,,"Junger Zunder, alter Plunder",Posse mit Gesang in drei Akten,1,3,https://www.digitale-sammlungen.de/en/details/bsb00054080,FullText,,1850,1850,,1850,3,"12,15,15",
-11,ger,43,,Pension Schöller,Posse in drei Aufzügen,15.13,6,https://www.google.fr/books/edition/Pension_Sch%C3%B6ller/xjp6CgAAQBAJ?hl=fr&gbpv=1&dq=inauthor:%22Carl+Laufs%22&printsec=frontcover,FullText,,1889,1889,,1890,3,43440,fake print value (current edition from 2015)
-12,ger,4,,Der Aktienbudiker,Fastnachtsposse mit Gesang in drei Aufzügen,1,unknown,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00035452/010678.tif,TZettel,,1862,1856,,,3,,
-13,ger,26,,Die Spatzen,Schwank in drei Akten,8,unknown,https://www.archivinformationssystem.at/bild.aspx?VEID=2693494&DEID=10&SQNZNR=1,TZettel,,1886,1882,,,3,,
-14,ger,20,,Reif-Reiflingen,Schwank in fünf Aufzügen,5,6,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00046737/014349.tif,TZettel,,1883,1882,,,5,,
-15,ger,24,,Die goldene Spinne,Schwank in vier Aufzügen,8,7,https://sammlungen.ulb.uni-muenster.de/hd/content/titleinfo/4305461,FullText,,1885,1885,,,4,"17,10,14,11",
-16,ger,21,,Raub der Sabinerinnen,Schwank in vier Akten,"8,10",6,"http://www.zeno.org/Literatur/M/Sch%C3%B6nthan,+Franz+und+Paul+von/Drama/Der+Raub+der+Sabinerinnen",FullText,,1885,1884,,1884,4,"11,12,15,8",
-17,ger,81,,Die Damenhüte im Berliner Theater,Posse in einem Akt,33,28,https://books.google.fr/books?id=OatIAAAAcAAJ&pg=PA1&redir_esc=y#v=onepage&q&f=false,FullText,,1821,1819,,1818,1,18,dates source: https://einakter.dracor.org/voss-die-damenhuete-im-berliner-theater
-18,ger,35,,Niobe,Schwank in drei Akten,9,14,https://digital.blb-karlsruhe.de/blbtheater/periodical/pageview/3051431,TZettel,,1894,1894,,,3,,
-19,ger,40,,Hans Huckebein,Schwank in drei Akten,9.16,6,https://vb2.uni-wuerzburg.de/solr/theaterzettel-resources/scans/folio-big/DE-20__63_S_1898__0001__01_07_A.jpg,TZettel,,1898,1897,,1897,3,,
-20,ger,32,,Die Orientreise,Schwank in drei Akten,9.16,6,https://vb2.uni-wuerzburg.de/solr/theaterzettel-resources/scans/folio-big/DE-20__63_S_1893__0001__01_10_A.jpg,TZettel,,1893,1892,,1892,3,,
-21,ger,33,,Zwei glückliche Tage,Schwank in vier Akten,16.8,35,https://vb2.uni-wuerzburg.de/solr/theaterzettel-resources/scans/folio-big/DE-20__63_S_1900__0001__01_20.jpg,FullText,,1900,1892,,,4,"7,12,6,9",full text available on GoogleDrive
-22,ger,97,,Die rothe Ampel,Schwank in drei Akten,17.15,6,https://haab-digital.klassik-stiftung.de/viewer/image/4329719541/2/LOG_0000/,FullText,,1901,1901,,,3,"17,20,19",
-23,ger,39,,Die Logenbrüder,Schwank in drei Akten,13.17,16,https://www.theatermuseum.at/online-sammlung/detail/1398698/?offset=0&lv=list,TZettel,,1899,1897,,1897,3,,
-24,ger,46,,Der Hochtourist,Schwank in drei Akten,"17,20",16,https://vb2.uni-wuerzburg.de/solr/theaterzettel-resources/scans/folio-big/DE-20__63_S_1903__0001__12_08_A.jpg,TZettel,,1903,1903,,,3,,
-25,ger,17,,Sodom und Gomorrha,Schwank in vier Akten,8,6,http://digital.bib-bvb.de/publish/content/27/3042566.html,FullText,,1879,1879,,,4,"7,10,12,10",
-26,ger,58,,Die spanische Fliege,Schwank in drei Akten,28.29,13,https://digital.blb-karlsruhe.de/blbtheater/periodical/pageview/3102444,TZettel,,1920,1913,,,3,,firstPrinted source: https://en.wikipedia.org/wiki/The_Spanish_Fly_(play)
-27,ger,7,,Der Goldonkel,Posse mit Gesang und Tanz in drei Akten und sieben Bildern,4,7,https://sammlungen.ulb.uni-muenster.de/hd/content/titleinfo/4202560,FullText,,1882,1862,,1861,3,"16,25,17",
-28,ger,25,,Köpnickerstraße 120,Schwank in vier Aufzügen,5.12,7,https://sammlungen.ulb.uni-muenster.de/hd/content/titleinfo/4188634,FullText,,1885,1884,,,4,"16,22,18,13",
-29,ger,38,,Bocksprünge,Schwank in drei Akten,17.18,unknown,https://www.theatermuseum.at/online-sammlung/detail/1398684/?offset=3&lv=list,TZettel,,1897,1896,,,3,,
-30,ger,36,,Zwei Wappen,Schwank in vier Akten,9.16,6,https://www.nli.org.il/en/books/NNL_ALEPH990020405450205171/NLI,FullText,,1894,1894,,,4,"5,9,7,6",
-31,ger,42,,Mamsell Tourbillon,Schwank mit Gesang in drei Akten,17.19,unknown,https://www.theatermuseum.at/online-sammlung/detail/1398701/?offset=1&lv=list,TZettel,,1900,1898,,,3,,
-32,ger,27,,Ein toller Einfall,Schwank in vier Aufzügen,13,7,https://babel.hathitrust.org/cgi/pt?id=hvd.32044087245759&view=1up&seq=1,FullText,,1891,1886,,1886,4,"25,29,25,17",
-33,ger,41,,In Zivil,Schwank in einem Aufzuge,16,unknown,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00034222/017235.tif,TZettel,,1897,1892,,,1,,
-34,ger,44,,Die Goldgrube,Posse in drei Akten,15.13,unknown,https://www.archivinformationssystem.at/detail.aspx?ID=2694156,TZettel,,1899,1899,,,3,,
-35,ger,29,,Die Strohwitwe,Schwank in drei Akten,14.15,unknown,https://vb2.uni-wuerzburg.de/solr/theaterzettel-resources/scans/folio-big/DE-20__63_S_1891__0001__01_23_A.jpg,TZettel,,1891,1890,,,3,,
-36,ger,34,,Der ungläubige Thomas,Schwank in drei Akten,15.13,12,https://vb2.uni-wuerzburg.de/solr/theaterzettel-resources/scans/folio-big/DE-20__63_S_1894__0001__10_03_A.jpg,TZettel,,1894,1893,,1893,3,,
-37,ger,37,,Der große Komet,Schwank in drei Akten,15.13,12,https://vb2.uni-wuerzburg.de/solr/theaterzettel-resources/scans/folio-big/DE-20__63_S_1896__0001__01_17_A.jpg,TZettel,,1896,1895,,,3,,
-38,ger,52,,Der Doppelmensch,Schwank in drei Akten,15.21,unknown,https://druckschriften-digital.marchivum.de/theaterzettel/content/zoom/528702,TZettel,,1909,1909,,,3,,
-39,ger,47,,Los vom Manne!,Schwank in drei Akten,15.21,unknown,https://druckschriften-digital.marchivum.de/theaterzettel/content/zoom/512870,TZettel,,1903,1902,,,3,,
-40,ger,50,,Die Tür ins Freie,Lustspiel in drei Aufzügen,9.16,unknown,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00044116/020100.tif,TZettel,,1909,1908,,,3,,
-41,ger,48,,Der Familientag,Lustspiel in drei Aufzügen,16,6,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00054135/019123.tif,TZettel,,1905,1904,,,3,,publisher source: https://www.deutsche-digitale-bibliothek.de/item/F63D6WRPNLS6QARRBVP5P4GU6F73RHKY
-42,ger,70,,Der Hunderter im Westentaschl,Schwank in drei Akten,"27,20",unknown,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00044233/032073.tif,TZettel,,1936,1935,,,3,,
-43,ger,57,,Der müde Theodor,Schwank in drei Akten,20.27,20,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00032466/029894.tif,TZettel,,1931,1913,,,3,,
-44,ger,61,,Die drei Zwillinge,Schwank in drei Akten,31.32,16,https://dana.thulb.uni-jena.de/rsc/viewer/dana_derivate_00009330/5_961_A_1_2_1919_20_46_01.tif,TZettel,,1920,1919,,1919,3,,
-45,ger,53,,Der fromme Habakuk,Schwank in drei Akten,22.23,15,https://archive.org/details/3569912,FullText,,1909,1909,,,3,"11,11,8",
-46,ger,28,,Zimmer Nr. 18,Schwank in einem Act,10,19,https://archive.org/details/zimmernr18schwan00sch,FullText,,1886,1886,,,1,11,
-47,ger,8,,Eine kranke Familie,Schwank in drei Akten,5,8,https://archive.org/details/krankefamiliesch00mose/mode/2up,FullText,,1862,1862,,,3,"15,19,14",
-48,ger,16,,Der Bibliothekar,Schwank in vier Akten,5,6,https://www.digitale-sammlungen.de/en/details/bsb11750875,FullText,,1880,1879,,,4,"13,17,20,16",
-49,ger,71,,Lucinde vom Theater,Gesangsposse in sechs Bildern,4,7,https://www.digitale-sammlungen.de/en/details/bsb00063442,FullText,,1883,1870,,1873,6,"9,9,2,11,9,8",nbActs: 6 Bilder (no acts)
-50,ger,13,,Das Stiftungsfest,Schwank in drei Aufzügen,5,10,https://www.google.fr/books/edition/Das_Stiftungsfest/t26uEAAAQBAJ?hl=de&gbpv=0,TextExcerpts,,1871,1871,,,3,,firstPrinted source: https://de.wikipedia.org/wiki/Gustav_von_Moser; fake print value (current edition from 2023)
-51,ger,15,,Hector,Schwank in einem Act,5,11,https://www.google.fr/books/edition/Hector_Schwank_in_1_Act/hBvFQnCJnOcC?hl=de&gbpv=0,FullText,,1876,1876,,,1,21,fake firstPrinted value
-52,ger,11,,"Aus Liebe zur Kunst, oder Ein Singspiel",Posse mit Gesang in einem Akt,5,6,https://www.digitale-sammlungen.de/en/details/bsb00056236,FullText,,1864,1864,,,1,12,fake firstPrinted value
-53,ger,51,,Wintersport,Schwank in drei Akten,20.19,unknown,https://druckschriften-digital.marchivum.de/theaterzettel/content/zoom/528439,TZettel,,1908,1908,,,3,,
-54,ger,30,,Großstadtluft,Schwank in vier Akten,9.16,6,https://babel.hathitrust.org/cgi/pt?id=wu.89099469462&view=1up&seq=7,FullText,,1891,1891,,1891,4,"9,15,12,11",
-55,ger,59,,Die Hosenknöpf,Schwank in einem Akt,20.27,unknown,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00048111/031322.tif,TZettel,,1935,1914,,,1,,
-56,ger,67,,Die drei Dorfheiligen,Schwank in drei Akten,"27,20",unknown,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00032209/029994.tif,TZettel,,1932,1926,,,3,,
-57,ger,63,,"Börsenfieber, oder Er träumt von Ilse",Schwank in drei Akten,22.23,6,https://digital.blb-karlsruhe.de/blbtheater/periodical/pageview/3112458,TZettel,,1922,1921,,1921,3,,
-58,ger,18,,Der Zugvogel,Schwank in vier Akten,5.8,6,https://digital.lb-oldenburg.de/ihd/periodical/pageview/361730,TZettel,,1883,1880,,,4,,
-59,ger,119,,Junggesellendämmerung (Der Kampf mit dem Drachen),Schwanklustspiel in drei Akten,31.32,unknown,https://hoerspiele.dra.de/vollinfo.php?dukey=3225197&SID,BibliographicDB,,1917,1917,,,3,,fake Printed value
-60,ger,62,,Zwangseinquartierung,Schwank in drei Akten,28.29,13,https://digital.blb-karlsruhe.de/blbtheater/periodical/pageview/3103007,TZettel,,1921,1920,,1920,3,,
-61,ger,66,,Der wahre Jakob,Schwank in drei Akten,28.29,6,https://digital.blb-karlsruhe.de/blbtheater/periodical/pageview/3154763,TZettel,,1925,1924,,1924,3,,
-62,ger,68,,Weekend im Paradies,Schwank in drei Akten,28.29,6,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00037773/028547.tif,TZettel,,1930,1928,,1928,3,,
-63,ger,64,,Der keusche Lebemann,Schwank in drei Akten,28.29,6,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00042288/027148.tif,TZettel,,1926,1921,,1921,3,,
-64,ger,69,,Unter Geschäftsaufsicht,Schwank in drei Akten,28.29,6,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00034592/029086.tif,TZettel,,1931,1927,,1927,3,,
-65,ger,113,,"Das Stelldichein im Tivoli, oder Schuster und Schneider als Nebenbuhler",Localposse mit Gesang in zwei Acten,43,24,http://kvk.bibliothek.kit.edu/view-title/index.php?katalog=ARCHIVE_ORG&url=http%3A%2F%2Farchive.org%2Fdetails%2Fbub_gb_yeU6AAAAcAAJ&signature=jkRNhSuxLIcophEiAuBENzIRaiZ_otfpU9gFE665q6M&showCoverImg=1,FullText,,1832,1832,,1832,2,7.8,dates source: https://en.wikipedia.org/wiki/Carl_Mal%C3%9F
-66,ger,112,,"Die Entführung, oder Der alte Bürger-Capitain",Lustspiel in zwei Aufzügen,43,23,https://books.google.fr/books?id=mc8-AAAAIAAJ&hl=de&pg=PR1#v=onepage&q&f=false,FullText,,1829,1820,,1821,2,17.15,dates source: https://de.wikipedia.org/wiki/Carl_Mal%C3%9F
-67,ger,105,,"Herr Hampelmann, oder Die Landpartie nach Königstein",Frankfurter Lokal-Skizze in vier Bildern,43,32,https://books.google.fr/books?id=kshIAAAAcAAJ&hl=fr&pg=PP5#v=onepage&q&f=false,FullText,,1836,1832,,1832,4,"8,14,23,28",dates source: https://en.wikipedia.org/wiki/Carl_Mal%C3%9F; nbActs: 4 Bilder (no acts)
-68,ger,104,,Herr Hampelmann im Eilwagen,Hampelmanniade in sechs Bildern,43,32,https://books.google.fr/books?id=DJxoWmCIcbgC&hl=fr&pg=PP3#v=onepage&q&f=false,FullText,,1834,1833,,1833,6,"8,3,4,2,6,1",dates source: https://en.wikipedia.org/wiki/Carl_Mal%C3%9F; nbActs: 6 Bilder (no acts)
-69,ger,102,,Herr Hampelmann sucht ein Logis,Lokal-Lustspiel in fünf Bildern,43,32,https://books.google.fr/books?id=TMlIAAAAcAAJ&hl=de&pg=PP5#v=onepage&q&f=false,FullText,,1834,1834,,1834,5,"6,7,9,7,4",dates source: https://en.wikipedia.org/wiki/Carl_Mal%C3%9F; nbActs: 5 Bilder (no acts)
-70,ger,107,,Das Fest der Handwerker,Komisches Gemälde aus dem Volksleben in einem Akt,3,4,https://books.google.fr/books?id=tWU6AAAAcAAJ&pg=RA4-PA1&redir_esc=y#v=onepage&q&f=false,FullText,,1830,1830,,1828,1,18,dates source: https://einakter.dracor.org/angely-das-fest-der-handwerker
-71,ger,2,,Otto Bellmann,Posse mit Gesang in zwei Acten,1,2,https://www.digitale-sammlungen.de/en/details/bsb00053198,FullText,,1857,1850,,,2,24.19,
-72,ger,79,,"Ein gebildeter Hausknecht, oder Verfehlte Prüfung",Posse mit Gesang in einem Akt,1,8,https://books.google.de/books?id=NFREUUh49u0C&printsec=frontcover&hl=de&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false,FullText,,1858,1858,,1858,1,19,date sources: https://de.wikipedia.org/wiki/Ein_gebildeter_Hausknecht
-73,ger,75,,"Haussegen, oder Berlin wird Weltstadt",Vaudeville in einem Akt,1,27,https://www.google.fr/books/edition/Lustige_Werke/Y1h1Qssoq7sC,FullText,,1870,1850,,,1,18,
-74,ger,106,,Die Reise auf gemeinschaftliche Kosten,Komisches Gemälde in fünf Aufzügen,3,7,https://www.digitale-sammlungen.de/en/details/bsb10135803,FullText,,1868,1830,,,5,"10,6,8,9,7",
-75,ger,95,,Eine Wohnung ist zu vermiethen in der Stadt. Eine Wohnung ist zu verlassen in der Vorstadt. Eine Wohnung mit Garten ist zu haben in Hietzing,Lokalposse mit Gesang in drei Aufzügen,6,unknown,https://www.nestroy-werke.at/index.php?r=play/viewpdf/id/30,BibliographicDB,,1837,1837,,1837,3,"29,21,30",dates source: https://de.wikipedia.org/wiki/Eine_Wohnung_ist_zu_vermiethen_in_der_Stadt
-76,ger,31,,Das gelobte Land,Schwank in vier Akten,"8,10",unknown,https://vb2.uni-wuerzburg.de/solr/theaterzettel-resources/scans/folio-big/DE-20__63_S_1893__0001__09_29_A.jpg,TZettel,,1893,1892,,,4,,
-77,ger,82,,Der Friseur,Schwank in einem Akte,37,unknown,https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1808798694&PHYSID=PHYS_0003&DMDID=,FullText,,1843,1843,,1843,1,28,dates source: https://einakter.dracor.org/vanoni-der-friseur
-78,ger,91,,Datterich,Lokalposse in sechs Bildern,41,18,http://tudigit.ulb.tu-darmstadt.de/show/Ro-497,FullText,,1841,1841,,1862,6,"4,3,11,7,11,12",dates source: https://de.wikipedia.org/wiki/Datterich; nbActs: 6 Bilder (no acts)
-79,ger,94,,"Des Burschen Heimkehr, oder Der tolle Hund",Lustspiel in vier Aufzügen,41,33,https://www.projekt-gutenberg.org/niebergl/heimkehr/titlepage.html,FullText,,1837,1837,,,4,"9,10,12,14",
-80,ger,12,,Eine leichte Person,Posse mit Gesang in drei Abteilungen und acht Bildern,4,7,https://sammlungen.ulb.uni-muenster.de/hd/content/titleinfo/4202962,FullText,,1880,1864,,1864,3,"21,22,17",
-81,ger,9,,"Unruhige Zeiten, oder Lietze's Memoiren",Posse mit Gesang und Tanz in drei Akten und acht Bildern,4,7,https://sammlungen.ulb.uni-muenster.de/hd/content/titleinfo/4201571,FullText,,1882,1862,,1862,3,"22,22,15",
-82,ger,23,,Nicht I a,Schwäbisches Lustspiel in drei Aufzügen,11,17,https://books.google.fr/books/about/Nicht_I_a.html?id=1koHAAAAQAAJ,FullText,,1884,1884,,,3,44178,
-83,ger,10,,Umsonst!,Posse mit Gesang und Tanz in drei Akten,6,unknown,https://www.nestroy.at/nestroy-stuecke/77_umsonst/umsonst.pdf,FullText,,1857,1857,,1857,3,"21,17,34",dates source: https://de.wikipedia.org/wiki/Umsonst!
-84,ger,87,,Einmal hunderttausend Thaler,Posse mit Gesang in drei Akten,1,27,https://books.google.de/books?id=hXOxbPRILzQC&pg=PAPP4#v=onepage&q&f=false,FullText,,1850,1847,,,3,"9,15,11",
-85,ger,1,,Berlin bei Nacht,Vaudeville-Posse in drei Aufzügen,1,1,https://www.digitale-sammlungen.de/en/details/bsb00062580 ,FullText,,1849,1849,,,3,"8,18,12",
-86,ger,77,,Kyritz-Pyritz,Posse mit Gesang in drei Aufzügen,34.35,7,https://lib.ugent.be/catalog/rug01:001807519/items/800000019874,TZettel,,1886,1886,,,3,,fake Printed value; firstPrinted source: https://de.wikipedia.org/wiki/Oskar_Justinus
-87,ger,103,,Tritschtratsch,Lokalposse mit Gesang in einem Ackte,6,unknown,https://www.nestroy-werke.at/index.php?r=play/viewpdf/id/20,BibliographicDB,,1833,1833,,1833,1,,dates source: https://de.wikipedia.org/wiki/Der_Tritschtratsch
-88,ger,111,,Die Schneider-Mamsells,Vaudeville in einem Akt,3,4,https://books.google.fr/books?id=y2U6AAAAcAAJ&hl=fr&pg=RA3-PA1#v=onepage&q&f=false,FullText,,1834,1834,,1824,1,20,dates source: https://einakter.dracor.org/angely-die-schneider-mamsells
-89,ger,73,,Sieben Mädchen in Uniform,Vaudeville-Posse in einem Akt,3,4,https://sammlungen.ulb.uni-muenster.de/hd/content/titleinfo/4256019,FullText,,1870,1830,,1825,1,18,dates source: https://einakter.dracor.org/angely-sieben-maedchen-in-uniform
-90,ger,74,,"Doktor Peschke, oder Kleine Herren",Posse mit Gesang in einem Akt,1,27,https://vb2.uni-wuerzburg.de/solr/theaterzettel-resources/scans/folio-big/DE-20__63_S_1858__0001__03_08.jpg,TZettel,,1858,1850,,,1,,
-91,ger,72,,Einer von unsere Leut,Posse mit Gesang in drei Akten,1,7,https://vb2.uni-wuerzburg.de/solr/theaterzettel-resources/scans/folio-big/DE-20__63_S_1860__0001__09_28.jpg,TZettel,,1860,1860,,,3,,fake firstPrinted value
-92,ger,76,,Damenschuhe im Theater,Posse in zwei Aufzügen,33,28,https://digital.zlb.de/viewer/image/14195962/128/,FullText,,1822,1822,,,2,17.12,firstPrinted source: https://www.deutsche-biographie.de/sfz84107.html
-93,ger,65,,Die Hamburger Filiale,Schwank in drei Akten,"17,20",16,https://www.zvab.com/servlet/BookDetailsPL?bi=18768472132&searchurl=kn%3Dmax%2Bneal%26sortby%3D20&cm_sp=snippet-_-srp1-_-image6#&gid=1&pid=2,TZettel,,1925,1922,,1922,3,,
-94,ger,60,,Der heilige Florian,Satirischer Schwank in drei Akten,"20,30",unknown,https://www.zvab.com/servlet/BookDetailsPL?bi=4724927485&searchurl=kn%3Dmax%2Bneal%26sortby%3D20&cm_sp=snippet-_-srp1-_-image9,TZettel,,1919,1919,,,3,,
-95,ger,49,,Der Kilometerfresser,Schwank in drei Akten,17,unknown,https://www.archivinformationssystem.at/detail.aspx?ID=2694461,TZettel,,1905,1904,,,3,,
-96,ger,54,,Polnische Wirtschaft,Posse mit Gesang in 3 Akten,17.24,unknown,https://hoerspiele.dra.de/vollinfo.php?dukey=3084333,BibliographicDB,,1909,1909,,1910,3,,premiere source: https://de.wikipedia.org/wiki/Polnische_Wirtschaft_(Operette) 
-97,ger,92,,Die verhängnisvolle Faschingsnacht,Lokalposse mit Gesang in drei Aufzügen,6,unknown,https://www.nestroy-werke.at/index.php?r=play/viewpdf/id/36,BibliographicDB,,1839,1839,,1839,3,"29,25,15",dates source: https://de.wikipedia.org/wiki/Die_verh%C3%A4ngnisvolle_Faschingsnacht
-98,ger,90,,"Das Mädl aus der Vorstadt, oder Ehrlich währt am längsten",Posse mit Gesang in drei Acten,6,unknown,https://www.projekt-gutenberg.org/nestroy/vorstadt/vorstadt.html,FullText,,1841,1841,,1841,3,"21,20,19",
-99,ger,89,,Einen Jux will er sich machen,Posse mit Gesang in vier Aufzügen,6,unknown,https://www.nestroy.at/nestroy-stuecke/44_jux/jux-sw.pdf,FullText,,1842,1842,,1842,4,"21,19,13,10",dates source: https://de.wikipedia.org/wiki/Einen_Jux_will_er_sich_machen
-100,ger,88,,"Eisenbahnheiraten, oder Wien, Neustadt, Brünn",Posse mit Gesang in drei Acten,6,unknown,https://www.nestroy-werke.at/index.php?r=play/viewpdf/id/47,BibliographicDB,,1844,1844,,1844,3,"18,15,16",
-101,ger,109,,Die Berliner in Wien,Liederposse in einem Aufzug,42,21,https://books.google.fr/books?id=JgezAgO-nqIC,FullText,,1826,1826,,,1,20,
-102,ger,110,,Herr Josef und Frau Baberl,Posse mit Gesang in drei Aufzügen,44,22,https://www.digitale-sammlungen.de/en/details/bsb00055632,FullText,,1840,1840,,1826,3,41935,firstPrinted source: https://de.wikipedia.org/wiki/Josef_Alois_Gleich
-103,ger,93,,"Dreiunddreißig Minuten in Grüneberg, oder der halbe Weg",Possenspiel in einem Akt,42,34,https://books.google.com/books?id=Gu1LxKya5MkC&pg=PA213,FullText,,1839,1839,,,1,15,dates source: https://einakter.dracor.org/holtei-dreiunddreissig-minuten-in-grueneberg-oder-der-halbe-weg
-104,ger,108,,Die Wiener in Berlin,Liederposse in einem Aufzug,42,21,https://books.google.fr/books?id=JgezAgO-nqIC,FullText,,1826,1824,,,1,15,firstPrinted source: https://de.frwiki.wiki/wiki/Karl_Eduard_von_Holtei
-105,ger,118,,Die Bürger in Wien,Locale Posse in drey Acten,45,unknown,https://books.google.fr/books?id=p4j1xwEACAAJ&hl=fr&pg=PA1#v=onepage&q&f=false,FullText,,1819,1813,,1813,3,"15,23,12",dates source: https://de.wikipedia.org/wiki/Die_B%C3%BCrger_in_Wien
-106,ger,116,,"Die Musikanten am Hohen Markt, erster Theil",Eine lokale Posse mit Gesang in drey Aufzügen,44,26,https://www.digitale-sammlungen.de/en/details/bsb00056126,FullText,,1816,1816,,1815,3,"15,13,15",
-107,ger,117,,"Herr Adam Kratzerl von Kratzerlfeld, als zweyter und letzer Theil der Musikanten am Hohenmarkt",Eine lokale Posse mit Gesang in drey Aufzügen,44,26,https://www.digitale-sammlungen.de/en/details/bsb00056117,FullText,,1816,1816,,1815,3,"12,12,6",
-108,ger,115,,Der Fiaker als Marquis,Komische Oper in drey Acten,45,25,https://www.digitale-sammlungen.de/en/details/bsb10104999,FullText,,1821,1821,,1816,3,"13,23,17",
-109,ger,114,,Die falsche Primadonna,Posse mit Gesang in zwey Acten,45,25,https://books.google.fr/books?id=d5VRAAAAcAAJ&hl=fr&pg=PA1#v=onepage&q&f=false,FullText,,1820,1820,,1818,2,26.28,
-110,ger,55,,Bachmeisels Himmelfahrt,Schwank in vier Akten,15.25,unknown,https://digital.lb-oldenburg.de/ihd/periodical/pageview/376066,TZettel,,1911,1910,,,4,,
-111,ger,56,,So’n Windhund,Schwank in drei Akten,17.26,unknown,https://digital.staatsbibliothek-berlin.de/werkansicht/?PPN=PPN74662543X,TZettel,,1916,1911,,,3,,
-112,ger,22,,Der Schwabenstreich,Lustspiel in vier Akten,8,6,https://babel.hathitrust.org/cgi/pt?id=mdp.39015065920111&view=1up&seq=9,FullText,,1883,1882,,,4,"9,13,14,9",
-113,ger,83,,"Fritz Schwigerling, oder der Liebestrank",Schwank in drei Aufzügen,38,29,https://dracor.org/ger/wedekind-fritz-schwigerling#text,FullText,,1969,1899,,,3,43022,firstPrinted source: https://de.wikipedia.org/wiki/Frank_Wedekind
-114,ger,84,,"Der Wirrwarr, oder der Muthwillige",Posse in fünf Akten,39,31,https://www.projekt-gutenberg.org/kotzebue/wirrwarr/index.html,FullText,,1836,1803,,,5,"8,11,13,9,9",firstPrinted source: https://de.wikipedia.org/wiki/August_von_Kotzebue
-115,ger,85,,Pagenstreiche,Posse in fünf Aufzügen,39,31,https://www.projekt-gutenberg.org/kotzebue/pagenstr/titlepage.html,FullText,,1820,1804,,,5,"17,14,15,13,17",firstPrinted source: https://de.wikipedia.org/wiki/August_von_Kotzebue
-116,ger,86,,Drei Stunden vor der Hochzeit,Schwank in einem Akt,40,30,https://books.google.fr/books?id=Dq87AAAAcAAJ,FullText,,1836,1836,,1838,1,14,dates source: https://einakter.dracor.org/herrmann-drei-stunden-vor-der-hochzeit
-117,ger,78,,Ein Toller Fall ,Musikalischer Schwank in drei Akten,31.32,unknown,https://digital.blb-karlsruhe.de/download/webcache/1104/3858588,TZettel,,1943,1941,,,3,,firstPrinted source: https://de.wikipedia.org/wiki/Carl_Mathern
-118,ger,80,,"Gräfin Guste, oder ein gebildeter Hausknecht, des Werkes zweiter Theil",Posse mit Gesang in einem Akt,1.36,27,https://loc.getarchive.net/media/plays-selections-9b7dc6,TextExcerpts,,1863,1863,,,1,11,
-119,ger,101,,"Zu ebener Erde und erster Stock, oder Die Launen des Glückes",Lokalposse mit Gesang in drei Aufzügen,6,unknown,https://www.projekt-gutenberg.org/nestroy/ebenerde/ebenerde.html,FullText,,1835,1835,,1835,3,"20,35,34",dates source: https://de.wikipedia.org/wiki/Zu_ebener_Erde_und_erster_Stock 
-120,ger,120,,Der historische Festzug,Schwank in drei Akten,15.21,12,https://haab-digital.klassik-stiftung.de/viewer/image/4328079433/2/LOG_0000/,FullText,,1901,1901,,,3,"19,34,24",
-121,ger,121,,Miss Domino,Schwank in drei Akten,15.46,6,https://haab-digital.klassik-stiftung.de/viewer/image/4348292310/2/LOG_0000/,FullText,,1897,1897,,,3,"10,15,14",
-122,ger,122,,Five o’clock,Schwank in drei Akten,15.21,6,https://haab-digital.klassik-stiftung.de/viewer/image/4329720884/2/LOG_0000/,FullText,,1905,1904,,,3,"18,22,11",
-123,ger,123,,Das Bärenfell,Schwank in drei Akten,16,6,https://haab-digital.klassik-stiftung.de/viewer/image/4329719959/2/LOG_0000/,FullText,,1900,1900,,,3,"10,17,10",
-124,ger,124,,Familie Schierke,Schwank in drei Akten,16,6,https://haab-digital.klassik-stiftung.de/viewer/image/4329719282/2/LOG_0000/,FullText,,1902,1902,,1902,3,"9,10,8",
-125,ger,125,,Das schwache Geschlecht,Schwank in einem Akt,16,6,https://haab-digital.klassik-stiftung.de/viewer/image/4329720442/11/LOG_0004/,FullText,,1900,1900,,,1,8,
-126,ger,126,,Das Pulverfaß,Schwank in einem Akt,16,6,https://haab-digital.klassik-stiftung.de/viewer/image/4329720442/51/LOG_0015/,FullText,,1900,1900,,,1,10,
-127,ger,127,,Der neue Vormund,Schwank in einem Akt,16,6,https://haab-digital.klassik-stiftung.de/viewer/image/4329720442/99/LOG_0028/,FullText,,1900,1900,,,1,11,
-128,ger,128,,Flotten-Manöver,Schwank in drei Akten,17.19,6,https://haab-digital.klassik-stiftung.de/viewer/image/4329719770/2/LOG_0000/,FullText,,1899,1899,,,3,"18,18,17",
-129,ger,129,,Hochzeitsfreuden,Schwank in drei Akten,17.19,12,https://haab-digital.klassik-stiftung.de/viewer/image/4329720663/2/LOG_0000/,FullText,,1900,1900,,,3,"13,15,16",
-130,ger,130,,Der Stille Associé,Posse in vier Akten,13.15,6,https://haab-digital.klassik-stiftung.de/viewer/image/4328012509/2/LOG_0000/,FullText,,1891,1891,,,4,"14,16,19,17",
-131,ger,131,,Papa's Flitterwochen,Schwank in vier Aufzügen,13,6,https://haab-digital.klassik-stiftung.de/viewer/image/4328024655/2/LOG_0000/,FullText,,1884,1884,,,4,"18,18,18,21",
-132,ger,132,,Der Gedankenleser,Schwank in einem Akt,13,6,https://haab-digital.klassik-stiftung.de/viewer/image/4329722763/2/LOG_0000/,FullText,,1887,1887,,,1,14,
-133,ger,133,,Der Stolz der Familie,Schwank in drei Akten,13,12,https://haab-digital.klassik-stiftung.de/viewer/image/4327973785/2/LOG_0000/,FullText,,1893,1893,,,3,"10,20,14",
-134,ger,134,,Leichte Streiche,Schwank in drei Akten,13,6,https://haab-digital.klassik-stiftung.de/viewer/image/4329721376/2/LOG_0000/,FullText,,1886,1886,,,3,45241,
-135,ger,135,,Der Sündenbock,Schwank in drei Akten,13,6,https://haab-digital.klassik-stiftung.de/viewer/image/4329721503/2/LOG_0000/,FullText,,1888,1887,,,3,41254,
-136,ger,136,,Die gütige Fee,Schwank in drei Akten,13,12,https://haab-digital.klassik-stiftung.de/viewer/image/4328039172/2/LOG_0000/,FullText,,1896,1896,,,3,"17,26,15",
-137,ger,137,,Der schöne Arno,Schwank in drei Akten,13.18,6,https://haab-digital.klassik-stiftung.de/viewer/image/432972104X/2/LOG_0000/,FullText,,1900,1900,,,3,"12,24,14",
-138,ger,138,,Der höchste Trumpf,Schwank in drei Akten,13.15,12,https://haab-digital.klassik-stiftung.de/viewer/image/4328015729/9/,FullText,,1894,1894,,,3,"19,24,19",
-139,ger,139,,Oberst Pemperton,Schwank in drei Akten,13.47,12,https://haab-digital.klassik-stiftung.de/viewer/image/4328043501/2/LOG_0000/,FullText,,1899,1898,,,3,"14,13,12",
-140,ger,140,,Hans in allen Gassen,Schwank in drei Akten,13.48,12,https://haab-digital.klassik-stiftung.de/viewer/image/4327984566/2/LOG_0000/,FullText,,1903,1903,,,3,"16,23,24",
-141,ger,141,,Das Schützenfest,Schwank in drei Akten,14.15,12,https://haab-digital.klassik-stiftung.de/viewer/image/4329721228/2/LOG_0000/,FullText,,1889,1889,,,3,"18,13,12",
-142,ger,142,,Das Feigenblatt,Schwank in drei Akten,"19,20",12,https://haab-digital.klassik-stiftung.de/viewer/image/4329720159/2/LOG_0000/,FullText,,1905,1905,,,3,"22,14,20",
-143,ger,143,,Operationen,Schwank in vier Akten,9.49,12,https://haab-digital.klassik-stiftung.de/viewer/image/4327969907/6/,FullText,,1879,1879,,,4,"11,21,16,12",
-1,als,,,Der Pfingstmontag,Lustspiel in Straßburger Mundart. Nach der vom Dichter durchgesehenen zweiten Ausgabe des Jahres 1816 herausgegeben von J. Lefftz und E. Marckwald,35,29,,,,1816,,,,,,
-2,als,,,In's Ropfer's Apothek,Schwank in 3 Aufzügen von G. Stoskopf,25,30,,,,1907,,,1907,,,
-3,als,,,D'r Hoflieferant,Elsassiche Komödie in 3 Aufzügen von G. Stoskopf,25,1,,,,1906,,,1905,,,
-4,als,,,D'r Herr Maire,Lustspiel in drei Aufzügen von G. Stoskopf,25,2,,,,1898,,,1898,,,
-5,als,,,E Dienschtbott wurd g'suecht,E Schnirichel in 1 Akt vum Camille Jost,11,3,,,,1928,,,,,,
-6,als,,,D'r poetisch Oscar,einakter,8,2,,,,1937,,,,3,,
-7,als,,,Sainte-Cécile!,Lustspiel in einem Aufzuge in Straßburger Mundart von Julius Greber,5,1,,,,1897,,,,3,,
-8,als,,,Sainte Barbe,Comédie in Aam Uffzug vun Jean Riff,21,6,,,,1919,,,,3,,
-9,als,,,Goal!,E luschtigs Schwänkele üss'em Sportsläwe vun Jean Riff,21,7,,,,1922,,,,1,,
-10,als,,,Der Zeuge,Gerichtsscene in einem Aufzug,5,1,,,,1906,,,,1,,
-11,als,,,s Gaischtert im Hüss,E grüsligi Szene vun Ferd. Bastian,1,4,,,,not before 1927,,,,1,,
-12,als,,,D'Madam fahrt Velo,E modern's Lustspiel in 1 Akt,9,80,,,,1901,,,,1,,
-13,als,,,E Mässigkeitsaposchtel,Komische Szene mit Gesang in elsässer Mundart von Emilie Hahn,7,9,,,,1910,,,,1,,
-14,als,,,D'r Stadtnarr,Volksstüeck in 3 Akt.,8,1,,,,1907,,,,1,,
-15,als,,,Zwei Meier oder D'r Bombié,Comedie-Bouffe in 1 Act,9,8,,,,1896,,,,1,,
-16,als,,,s Dunneraxl,Drama in einem Akt,1,5,,,,1907,,,,1,,
-17,als,,,D' Madam und d'Magd,Schwank in einem Aufzug,5,1,,,,1903,,,,1,,
-18,als,,,D' Brueder,"Volksstück in 5 Bilder üs dr Zitt vun 1914 bis 1918|vun Paul Clemens, Membre du Théâtre Alsacien",3,10,,,,1920,,,,3,,
-19,als,,,D'r Amerikaner,"Elsässisches Volksstück in 3 Aufzügen|von Paul Clemens, Membre du Théâtre Alsacien",3,10,,,,1920,,,,1,,
-20,als,,,D'r Hans im Schnokeloch,"Volksspiel in 4 Aufzügen mit Musik, Gesang und Tanz von Ferd. Bastian",1,23,,,,1903,,,,1,,
-21,als,,,D'r verhàxt Herbst,"Lustoperettle uf Colmererditsch, én vièr Acte|vo J. Mangold, Pastébeck|Musik vo J. B. Weckerlin, du Conservatoire de Paris",15,12,,,,1879,,,,1,,
-22,als,,,D'r Döüsigmarkschin,Schwank in einem Aufzug|in Straßburger Mundart,5,1,,,,1906,,,,5 bilder,,
-24,als,,,D'r Hüssjé,Luschtpiel in 1 Act|von D. G. Ad. Horsch,9,8,,,,1897,,,,3,,
-25,als,,,In dr Awril g'schickt,Lustspiel in zwei Akten|von M. Weigel,30,13,,,,1930,,,,4,,
-26,als,,,L'oubli? (Das Vergessen?),Dramatische Skizze in einem Akt,6,14,,,,1905,,,,4,,
-27,als,,,Zum 70. Geburtstag,Lustspiel in zwei Aufzügen|von M. Weigel,30,13,,,,1932,,,,1,,
-28,als,,,Lucie,Dramatisches Sittenbild in einem Aufzuge in Straßburger Mundart,5,1,,,,1896,,,,1,,
-29,als,,,Yo-Yo!,E Geduldspiel in einem Akt,28,15,,,,1932,,,,2,,
-30,als,,,Gschpàngschter,Elsàssich Theaterstück für Theater un Vereiner mit un ohne Damerolle uffierbar.|vo Josef Meyer,16,16,,,,1908,,,1907,1,,
-31,als,,,A gelungener Patient,Komische Duoszene für zwei Herren von Martin Huck,10,13,,,,1931,,,,2,,
-32,als,,,Andres Ruffenach,Bauerndrama in vier Akten,1,5,,,,1912,,,,1,,
-33,als,,,E Reis' in's Hochgebirj,Schwank in einem Akt von Ch. F. Kettner,33,17,,,,1881,,,,1,,
-34,als,,,E Sportshochzitt,E Farce in aam Akt,1,2,,,,1937,,,,1,,
-35,als,,,Uff Dr Hochzittsreis,Luschtspiel in 1 Akt im els. Dialekt,33,18,,,,1924,,,,1,,
-36,als,,,D'r Cousin Réfractaire,E Stroßburjer Familiefarce in 2 Akte,6,14,,,,1907,,,,4,,
-37,als,,,D'Mamsell Elis,Volksstück üsm Bürelawe in 3 Akte un 1 Vorakt,24,10,,,,1920,,,,1,,
-38,als,,,D' Schloofere,Elsässischi Quacksalwers-Komedie in aam Uffzug,21,19,,,,1914,,,,1,,
-39,als,,,D' Satisfaction,Farce in zwei Scene,11,3,,,,1924,,,,1,,
-40,als,,,D'r Erbunkel,Lustspiel in eim Uffzug,21,20,,,,1903,,,,2,,
-41,als,,,D'r Fremdelegionär,"Elsässisches Lebensbild in 3 Aufzügen von Hermann Günther, Mitglied des Elsässischen Theaters Strassburg",6,14,,,,1903,,,,1 Vorspiel + 3 Akte,,
-42,als,,,D'r Hasestrickler,Lustspiel in aam Uffzueg,21,7,,,,1922,,,,1,,
-43,als,,,D'r Itzig em Fass,Lustspiel in 1 Akt von Leo Pfiffer,18,13,,,,1938,,,,1,,
-44,als,,,D'r Kindbetter,Schwank in einem Akt,"1,2",5,,,,1908,,,,1,,
-45,als,,,D'r Maischter hett gewunne!,Schwank in aam Akt,1,2,,,,1937,,,,3,,
-46,als,,,D'r Millionengartner,Volksschauspiel in 3 Aufzügen in elsässer Mundart,1,5,,,,1900,,,,1,,
-47,als,,,D'r Kœnig Charles X im Elsass,"Lustspiel in 3 Akten von Ch. Rath, neu bearbeitet und herausgegeben von A. Seyller",20,13,,,,1930,,,,1,,
-48,als,,,D'r Napoleon,Volksstück in 3 Aufzügen aus der Zeit November 1918,29,10,,,,1920,,,,1,,
-49,als,,,D'r Parisler,"Elsässisches Volksstück mit Gesang und Tanz in einem Aufzug, Gesangseinlagen von J. Heyberger u. Johannes Pache",21,21,,,,1904,,,,1,,
-50,als,,,D'r Prophet,Drama in fünf Aufzügen,25,1,,,,1902,,,1902,3,,
-51,als,,,D'r Schnider von Gambse,Lustspiel von H. Kleisecker,12,2,,,,1920,,,,3,,
-52,als,,,Bureaukrate!,Dialektkomödie in einem Akt,13,10,,,,1923,,,,3,,
-53,als,,,D'r erscht Box,Schwank in aam Uffzug,21,11,,,,1908,,,,1,,
-54,als,,,Zue Großmuedders Zitte (Du temps des grand'mères),E Liewes-Scene mit ine Couplet,1,5,,,,1922,,,,5,,
-55,als,,,E Hochzitter im Kleiderkaschte,Schwank in einem Aufzug in Straßburger Mundart,5,1,,,,1894,,,,1,,
-56,als,,,300 Mark Belohnung,Schwank in einem Aufzug im elsässischer Mundart,5,1,,,,1910,,,,1,,
-57,als,,,Heimlichi Lieb,Elsässisch's Volksstüeck in 7 Bilder,4,2,,,,1914,,,1935,1,,
-58,als,,,S'Vogesehiesel,Luschtspiel üss dr Vosges in 1 Akt vun Paul Clemens Nach einer alten Kalendererzählung,3,10,,,,1920,,,,1,,
-59,als,,,Ar esch mondsechtig,E Luschtspeel vun dr Wohnungsnot en 1 Uffzug umgearbeitet und herausgegeben von Albert Schott,23,9,,,,1921,,,,1,,
-60,als,,,Verboteni Lieb,Lustspiel in einem Aufzug in Straßburger Mundart von Jean Riff,21,1,,,,1906,,,,1,,
-61,als,,,s' Paradies,E luschdigs Schwänkele in aam Uffzug von Jean Riff,21,7,,,,1922,,,,7 Bilder,,
-62,als,,,Lisbeth,Schauspiel in einem Aufzuge,5,1,,,,1900,,,,1,,
-63,als,,,Gouverneur fur 24 Stund,"E Schwank in 1 Akt nooch're spanische, g'schichtliche Erzählung üss'm Johr 1420, verarweit unn iwersetzt vum Camille Jost",11,3,,,,1928,,,,1,,
-64,als,,,D'r Babbler,Volksstück in drei Szenen von Gustav Lasch,14,11,,,,1911,,,,1,,
-65,als,,,Lettre de France,"E-n-elsässischs Heimetspiel, gedicht uff's Bild vum Frédéric Régamey vun F. X. Neukirch (Zuem erschte Mol gespielt am Banquet vum H.S.)",17,n.d.,,,,1910,,,,1,,
-66,als,,,Mister Smith,Schwank in einem Aufzug in Strassburger Mundart von Julius Greber,5,1,,,,1911,,,,1,,
-67,als,,,Uewer unseri Kraft,Komödie in eim Uffzug.,21,3,,,,1907,,,,1,,
-68,als,,,E hitzigi Debatt',(Nach einer älteren Idee.) E üssergewöhnlichi Wirtshüs-Scen'.,21,3,,,,1907,,,,1,,
-69,als,,,So e liederlicher Frack!,odder:E foljieschwäri Hüssuechung. E Schwank in 1 Uffzug,11,3,,,,1928,,,,1,,
-70,als,,,Gift!,Schwank in einem Akt in elsässischer Mundart,3,10,,,,1919,,,,1,,
-71,als,,,E Mann fur mini Nièce,Comédie-Bouffe in eim Akt von D. G. Ad. Horsch,9,11,,,,1895,,,,1,,
-72,als,,,Verzwickti Hochzitts-Affäre,Elsässischer Schwank in einem Aufzug (frei nach Labiche),5,19,,,,1913,,,,1,,
-73,als,,,Professer Dackeloriüs mit sim künstliche Mensch « Coco »,E komischi Scène für 2 Persone vun Paul CLEMENS,3,18,,,,1925,,,,1,,
-74,als,,,Michel Strohkopf oder Die fidele Regimentskapelle,"Unsinn mit Gesang, Musik und Tanz in einem Aufzug",32,27,,,,1893,,,,1,,
-75,als,,,Neui Hosse,Comédie-Bouffe in eim Akt von D. G. Ad. Horsch,9,11,,,,1908,,,,1,,
-76,als,,,D'r lätz Bardessü,Lustspiel ein einem Aufzug von Julius Greber,5,1,,,,1904,,,,1,,
-77,als,,,D'r letz Unkel,Volksstueck,14,24,,,,1912,,,,1,,
-78,als,,,Im Wald,Volksstück in zwei Aufzügen,1,5,,,,1907,,,,1,,
-79,als,,,Was d' Steckelburjer vun d'r „Université“ saaue,"Humoristisches Intermezzo von Dr. Heinrich Schneegans Privatdocent, Aufgeführt zum Universitäts-Jubiläum am 2. Mai 1897",22,1,,,,1897,,,1897,1,,
-80,als,,,s Afrikaner Frànzele,"Scene üs 'm algerische Colon-Lawe, Comedie in 1 Akt",20,25,,,,1897,,,,1,,
-81,als,,,Ohne Köche,Comedie in 1 Akt,20,25,,,,1897,,,,1,,
-82,als,,,D'r erscht Händel,E Farce in 2 Akt (mit d'r nämlich Szenerie) vum Camille Jost,11,3,,,,1928,,,,2,,
-83,als,,,D'Jumpfer Prinzesse,Schauspiel in 3 Aufzügen in Straßburger Mundart von Julius Greber. Mit einer Deckenzeichnung von C. Spindler.,5,1,,,,1899,,,,1,,
-84,als,,,„Charlot“,"E ürgelungenes Stückel in 1 Akt im elsässischa Dialekt von Paul Clemens, Bischheim (Nur Herrenrollen)",3,10,,,,1920,,,,1,,
-85,als,,,'s Teschtament,Volksstück in drei Aufzügen von Julius Greber,5,1,,,,1910,,,,1,,
-86,als,,,'s Orakel,Lustspiel in 1 Akt vun G. Stoskopf,25,7,,,,not before 1918,,,,2,,
-87,als,,,E Diplomat,Zwei Lustpiele in Strassburger Mundart von G. Stoskopf. Mit 7 Illustrationen von P. Braunagel,25,1,,,,1899,,,,3 (+Zwischenakt entre 2. et 3.),,
-88,als,,,E Mordsaffär,Zwei Lustpiele in Strassburger Mundart von G. Stoskopf. Mit 7 Illustrationen von P. Braunagel,25,1,,,,1900,,,,1,,
-89,als,,,E Daa im Narrehüss,E Original-Farce in zwei kurze  Akt vum Camille Jost,11,3,,,,1928,,,,3,,
-90,als,,,E bissel Lieb,"Drama im e Vorspiel un 3 Akt von Emile Weber, 5 Herren - 3 Damen",28,2,,,,1936,,,,1,,
-91,als,,,Kaktüs un kei And,E-n-elsassisch Lustspiel in drei Uffzig un miteme Vorspiel,31,10,,,,1941,,,,1,,
-92,als,,,E Surprise (in 2 Stroßburjer Komödie) ,E kleins Komödie in einem Akt,9,11,,,,1902,,,,1,,
-93,als,,,E Stariker! (in 2 Stroßburjer Komödie),Schwank in einem Akt freij noch e-me andere Stück,9,11,,,,1902,,,,2,,
-94,als,,,A lätzi Visit,Elsässisch Luschtspiel in 1 Akt vun Paul Clemens,3,10,,,,1920,,,,1 Vorspiel + 3 Akte,,
-95,als,,,'s sechst Gebott,Bauerntragödie in vier Aufzügen von Julius Greber,5,1,,,,1904,,,,1 Vorspiel + 3 Akte,,
-96,als,,,Buewestreich,"Lustspiel in eim Affzug vun Jean Riff, Amateur-Schriftsteller vun Schilke",21,11,,,,1905,,,,1,,
-97,als,,,E Demonstration,Elsässische Komödie in drei Akten von G. Stoskopf,25,23,,,,1903,,,,1,,
-98,als,,,Jungi Madamme,Lustspiel in einem Aufzug in Strassburger Mundart,7,7,,,,1922,,,,1,,
-99,als,,,D'r Candidat,Luschtspiel in dreij Akt vun G. Stoskopf. Mit-e-r-e Deckenzeichnung vun P. Braunagel,25,1,,,,1899,,,,4,,
-100,als,,,Wenn d'Fraue wähle,Lustspiel in 3 Akt vun G. Stoskopf,25,23,,,,1925,,,,1,,
-101,als,,,D'Heimet,Elsässisches Volksstück in drei Aufzügen (bier Bildern) von J. Greber und G. Stoskopf. Mit einer Deckenzeichnung von H. Loux,"5,25",1,,,,1901,,,,3,,
-102,als,,,D'r Pfetter vum Land od'r e Kindtaif mit Hindernisse,Original-Komödie in eim Uffzug vun Jean Riff,21,11,,,,1902,,,,1,,
-103,als,,,D'Pariser Reis,Schwank in dreij Akt vun G. Stoskopf. Mit-e-re Deckenzeichnung vun L. Schnug,25,1,,,,1900,,,,3,,
-104,als,,,S'Chinesisch Loos,Schwank in 1 Akt in Stroßburjer Mundart vun Ferd. Bastian,1,5,,,,1903,,,,3,,
-105,als,,,Er hieroth sini Frau!,Schwank in 1 Akt vun Gustave Stoskopf,25,7,,,,not before 1909,,,,3,,
-106,als,,,D'r Abschied,Dramolet in einem Aufzuge in elsässischer Mundart von Julius Greber,5,1,,,,1910,,,,1,,
-107,als,,,Der Tolle Morgen,Lustspiel in zwei Acten zum Theil in Straßburger Mundart von Alph. Pick. Mit Wörterbuch und Bemerkungen über den Straßburger Dialekt,19,26,,,,1864,,,,3,,
-108,als,,,E H ,oder s'Gezaicht Trousseau (Lustspiel in Strassburger Mundart),34,27,,,,1889,,,,1,,
-109,als,,,Die Greifensteiner,"oder Hugo, der Abtrünnige. Volksstück im Elsässer-Dialekt in 4. Akten von Emile Wagner",27,18,,,,1930,,,,1,,
-110,als,,,Drei schwarze Liebschafte,Theaterstück uf Milhüserditsch mit Gsang.,36,94,,,,1879,,,1879,1,,
-111,als,,,Hans Dich Hat's!,Theaterstück uf Milhüserditsch mit Gsang.,36,94,,,,1879,,,1879,2,,
-112,als,,,Im Gretele sine Künstler,Theâterstück uf Milhüserditsch mit Gsang.,36,94,,,,1880,,,1880,1,,
-113,als,,,Milhüser Bilder,"Theater-Rundschaü uf Milhüserditsch mit Gsang, componiert fir's Bankett vom Cerle Mulhousien 13. März 1880.",36,94,,,,1880,,,1880,4,,
-114,als,,,D'Milhüser in Paris,Theaterstück uf Milhüserditsch mit Gsang.,36,94,,,,1880,,,1880,1,,
-115,als,,,Dr Astronom,Theaterstück uf Milhüserditsch mit Gsang.,36,94,,,,1881,,,1881,1,,
-116,als,,,D'Tante Domino,Theaterstück uf Milhüserditsch mit Gsang.,36,94,,,,1881,,,1880,1,,
-117,als,,,Ne Hiroth dur d'Extrapost,Komische Scene mit Gsang.,36,94,,,,1882,,,1882,1,,
-118,als,,,D'Hüslit vo dr Fraü Suppedunke,Theaterstück uf Milhüserditsch mit Gsang.,36,94,,,,1882,,,1883,1,,
-119,als,,,Zwei Erfindunge,Theaterstück uf Milhüserditsch mit Gsang.,36,94,,,,1884,,,1884,1,,
-120,als,,,Im Julie si G'heimniss,Theaterstück uf Milhüserditsch mit Gsang.,36,94,,,,1885,,,1885,1,,
-121,als,,,Ne Scandal,Komische Scene mit Gsang.,36,94,,,,1885,,,1885,1,,
-122,als,,,Vor un no dr Hochzit,Theaterstück uf Milhüserditsch mit Gsang.,36,94,,,,1885,,,1885,1,,
-123,als,,,In dr Falle,Theaterstück uf Milhüserditsch mit Gsang.,36,94,,,,1886,,,1885,1,,
-124,als,,,Bi de Wilde,"Komische Scene mit Gsang, componiert fir dr Cercle Mulhousien.",36,94,,,,1886,,,1886,1,,
-125,als,,,D'G'sellschaftere,Theaterstück uf Milhüserditsch mit Gsang.,36,94,,,,1887,,,1887,1,,
-126,als,,,D'Singstund,"Komische Scene mit Gsang, componiert fir dr Cercle Mulhousien.",36,94,,,,1887,,,1887,2,,
-127,als,,,Dr Chineserfranz,Zwei Theaterstück uf Milhüserditsch mit Gsang.,36,93,,,,1891,,,1892,1,,
-128,als,,,Drizehne,Zwei Theaterstück uf Milhüserditsch mit Gsang.,36,93,,,,1891,,,1892,1,,
-129,als,,,"Ne Jumpfre, wo nitt hirothe will",Theaterstück uf Milhüserditsch mit Gsang.,36,25,,,,1895,,,1895,1,,
-130,als,,,Dr Fechtmeister,Theaterstück uf Milhüserditsch mit Gsang.,36,25,,,,1895,,,1895,1,,
-131,als,,,"Babette, mach 's Fenster züe",Theaterstück uf Milhüserditsch mit Gsang.,36,25,,,,1895,,,,1,,
-132,als,,,Uf B'süech bi dr Fraü,Theaterstück uf Milhüserditsch mit Gsang.,36,25,,,,1895,,,,1,,
-133,als,,,Z'Nacht am Zehne,Komische Scene uf em Spittelplatw,36,25,,,,1896,,,,1,,
-134,als,,,Dr Hochzitstag,Monolog mit Gsang,36,25,,,,1896,,,,1,,
-135,als,,,Am letzte Maskebal,Fasenachtscene.,36,25,,,,1896,,,,1,,
-137,als,,,Wihnachtsstimme,Weihnachtsstück im Dialekt aus der Zeit der grossen Revolution in 2 Akten,29,,,,,1920,,,,1,,
-138,als,,,Am Wihnachtsowe bym 'e Kriejsblinde,E Wihnachtsstüeck in eim Akt,28,,,,,1927,,,,1,,
-139,als,,,Mossieu le maire,Traduction vers le français de D'r Herr Maire,25,3,,,,1903,,,,1,,
-140,als,,,D'r Juckel,,,,,,,,,,,1,,
-141,als,,,Wittman,,,,,,,,,,,2,,
-142,als,,,Automat,,,,,,,,,,,1,,
-143,als,,,Scharele,,,,,,,,,,,3,,
-144,als,,,Soloscenen (Clemens),,,,,,,,,,,,,
-145,als,,,Die Frau Pfarrerin,Lustspiel in einem Aufzug bey Gelegenheit der lutherischen Jubelfeier,34,82,,,,1817,,,,,,
-146,als,,,Daniel oder der Strassburger auf der Probe,Lustspiel mit Gesang in zwey Aufzügen.,37,81,,,,1823,,,,,,
-147,als,,,Die Meisenlocker,(Eine häusliche Scene aus unseren Tagen),38,83,,,,1839,,,,,,
-148,als,,,D'Husmittel,e Komödie wo au ebbs vunn de Hxenmeister unn de respektable Schlofer vorkummt; uff'gsetzt vun der Frau Bärwel von Blappermuul,39,85,,,,1842,,,,,,
-149,als,,,s'Lob vom ledigä Schtand (Lob des ledigen Standes),Dialog in Colmarer Mundart,15,84,,,,1860,,,,1,,
-150,als,,,D'Réprationg d'Honnair d'm Ehschtand.,"Wederschproch geyän'm Hans sirä Moral, us em Lob vom ledigä Schtand. Loscht-Oparettlä met em Colmerer Schporä, on Grut-Salat-Paschtelä us em Hut-Bigott-Ofä.",15,84,,,,,,,,2,,
-151,als,,,Die dreyfach Hochzitt em Bäsäthal,Loscht's Oparettlä en drey Actä.,15,84,,,,1863,,,,,,
-152,als,,,Der gute Mann. (Häusliche Scene.),Lustspiel in einem Aufzug.,40,86,,,,1863,,,,,,
-153,als,,,E. Firobe im ê Sundgauer Wirthshus.,Volksscene in zwei Abtheilungen.,41,88,,,,1865,,,,1,,
-154,als,,,Im Hirtejerri sin verborjener Schatz.,"Komédie in 1 Act in nidderelsässer Sprôch nôch ere Verzählung ""Le trésor de Blaise"" von Eug. Müller.",42,89,,,,1865,,,,,,
-155,als,,,D'r Hans on's Grehtälä ém Ehstand,"Loscht's-Operettlä én 1 Aktä, én ehrem güetä Frénd dédiärt Herrn A. Ernst, Presidänt vom Orphéon.",15,90,,,,1869,,,1869,3,,
-156,als,,,Die vierte Kunkelstub bei der Frau Velten.,Ein kleines Lustspiel zum Theil in elsässischer Mundart,43,91,,,,1870,,,,1,,
-157,als,,,Der Steckelburger,"Lustspiel in 4 Aufzügen, mit Gesängen. Theils in deutscher Schriftsprache, theils in Strassburger Mundart",44,92,,,,1871,,,,2,,
-158,als,,,Der Ordnungsstifter oder Der neue Wirrwarr.,Lustspiel mit Gesang in drei Aufzügen. ,45,12,,,,1872,,,,1,,
-159,als,,,Hans Dampf oder Wer heirathet Sie? ,Komische Oper in zwei Acten.,45,12,,,,1872,,,,1,,
-160,als,,,Der Dreikönigstag oder das alte Schlestadt,,46,102,,,,1875,,,,,,
-161,als,,,D'Schnurante,Introduction au sextuor comique de J. Wiernsberger.,47,93,,,,1875,,,1875,4,,
-162,als,,,Der Gaasejopper geht auf die Freierei oder die heiratlustige Zipper.,Schauspiel in 5 Aufzügen und 9 Scenen. Vortrag nach dem elsässisch-jüdischen Dialekt.,48,,,,,1876,,,,3,,
-163,als,,,D'Maiselocker,"Lustspiel in drei Acten. Herausgebung zum Besten der ""Société des loyers"" von Strassburg.",33,91,,,,1877,,,,2,,
-164,als,,,Der Gaasejopper macht Chasene,Lustspiel in sieben Aufzügen. In elsässisch-jüdischem Dialekt verfasst. ,48,,,,,1877,,,,2,,
-165,als,,,Prologue zue der Theatervorstellung vum 9. février 1878.,,49,17,,,,1878,,,,,,
-166,als,,,D'Linsespalter,Lustspiel in 3 Akten. Dédié à l'Union Musicale de Strasbourg,33,93,,,,1878,,,,5,,
-167,als,,,M'r bhaupt' es sey bassirt,Lustspiel in einem Akt.,33,93,,,,1878,,,,3,,
-168,als,,,Stocktaub oder 's sin alli Better b'setzt.,Lustspiel in 1 Akt frei nach dem Französischen.,33,93,,,,1878,,,,7,,
-169,als,,,Colmerditschi Komedi ('s Lob vom ledige Stand. Die Drèifach Hochzitt ém Bâsethel. D'r Hans un's Gretele ém Ehestand.),,15,90,,,,1878,,,,,,
-170,als,,,Die vierte Kunkelstub bei der Frau Velten.,Ein kleines Lustspiel zum Theil in elsässischer Mundart.,43,95,,,,1879,,,,3,,
-171,als,,,Fufzig Fawle frei nooch'm Lafontaine.,"Als Angang d'rzue ""Unsri Dienstbotte"", Sittegemäld in zwei Akte un in Vers, mit noch etliche-n-andere Gedicht. Alles in Strossburjer Mundart.",38,17,,,,1880,,,,1,,
-172,als,,,Für e Rappe dreierlei,Dialog.,48,,,,,1882,,,,1,,
-173,als,,,Gasejopper als Almon,Lustspiel in 4 Akten.,48,,,,,1883,,,,,,
-174,als,,,Zwei Duellante,Theaterstück auf Milhüserditsch mit Gsang.,50,96,,,,1884,,,,,,
-175,als,,,Bas Jechido oder das kranke Töchterlein.,Lusterspiel in 4 Akten,48,97,,,,1884,,,,2,,
-176,als,,,Der Gersching Narr well ach a Fraa.,"Lustspiel in 5 Acten, in elsässich-jüdischem Dialekt.",51,26,,,,1885,,,,,,
-177,als,,,E Radikal-Kuur,"Lustspiel in zwei Uffzüg, in elsässer Mundart un in Vers.",38,98,,,,1886,,,,4,,
-178,als,,,Unverbesserli !,Sittegemäld in zwei Uffzüg un in Vers. ,38,98,,,,1886,,,,,,
-179,als,,,Zwei dauwi Meiselocker,,52,27,,,,1886,,,,4,,
-180,als,,,Im Finele sini Hochzit.,Lustspiel in 4 Akte Schlettstadter Mundart un Schlettstadter Gedichte.,53,99,,,,1886,,,,5,,
-181,als,,,Drei Narre of am Karre,Lustspiel in 3 Acten.,48,,,,,1887,,,,2,,
-182,als,,,Der Bär un der Sultan,(Posse in Strassburger Mundart.) (D'après un vaudeville de Scribe et de Saintine.),32,27,,,,1888,,,,2,,
-183,als,,,E ungemietlichi Ménage.,(Posse in elsässischem Dialekt),34,27,,,,1889,,,,,,
-184,als,,,Der Pankratz-Da oder Thee-Owen am Wasserzoll.,Schwank in 1 Akt in Strassburger Mundart. ,55,11,,,,1891,,,,4,,
-185,als,,,Der Hüsherr,Lustspiel in einem Akt. ,9,11,,,,1892,,,,3,,
-186,als,,,D'Millionedante üss Amerika oder d'Verwande uf der Prob,"Schwank in 2 Akten, aufgeführt in ""Strassburger Nautischen Verein"" am 30. November 1889.",55,11,,,,1892,,,,1,,
-187,als,,,Die Bürgschaft.,Genrebild in 1 Akt. (Pièce écrite en allemand littéraire et en dialecte),56,100,,,,1892,,,,,,
-188,als,,,Champagner-Härzel von Metz.,Lustspiel,48,,,,,1892,,,,1,,
-189,als,,,D'r Boriermeischter en Verlaiahait.,Loschtspel met Gsang en aim Act,57,12,,,,1893,,,,1,,
-190,als,,,Marie oder die lustige Almone,Lustspiel in 4 Akten.,48,,,,,1893,,,,2,,
-191,als,,,D'r Unkel,Comédie-Bouffe in eim Akt,9,11,,,,1894,,,,1,,
-192,als,,,Guet vun hie,Meiselokeriade. (En appendice : E Reis' in's Hochgebirj. -Stocktaub oder's sin alli Better b'setzt. -M'r bhaupt' es sey bassirt.),33,101,,,,1894,,,,,,
-193,als,,,Im Dahomey,"Bouffonerie mit Gesang, Musik und Tanz in 1 Akt und 2 Tableaux. ",58,27,,,,1894,,,,,,
-194,als,,,"Vater und Sohn, beide als Heirathskandidaten.",Lustspiel in 3 Akten,48,,,,,1894,,,,4,,
-195,als,,,Dreij Freijer,Lustspiel in einem Aufzug.,5,1,,,,1895,,,,1,,
-196,als,,,D'r König Charles X im Ower-Elsass.,Komedie in 3 Akte mit G'sang,20,25,,,,1896,,,1896,,,
-197,als,,,S'ich wie mer will !,"E Dummheit von Anno 48 in einem Akt un 3 Tableaux, vum e Strossburger sinnere G'sellschaft dediert.",59,,,,,around 1880,,,,1,,
-198,als,,,Der Schlettstadter Pfingstmontag.,Ländliches Sittengemälde in 3 Akten (Bearbeitet von A. Schwab).,46,102,,,,1897,,,,3,,
-199,als,,,Die Kunkelstube in einem Vogesendorfe.,Ländliche Scene mit Gesang und Tanz in 1 Aufzug,60,1,,,,1897,,,1897,1,,
-200,als,,,D’r Hofnarr Heidideldum,Märel in 6 Bilder un 2 Verwandlunge vun Ferd. Bastian. Musik von Aug. Schwoob,1,28,,,,1937,,,,3,,
-201,als,,,Chrischtowe,E Wihnachtsstüeckel in 1 Akt in elsässischem Dialekt füer kleine und grossi Kinder,3,,,,,1919,,,,1,,
-202,als,,,Kinnj Wüetass,E Kindermärel in 5 Bilder vum Ernest Fuchs,4,,,,,1921,,,,3,,
-203,als,,,Strüwelpeter,Originalmaerel in 7 Bilder un 3 Verwandlunge,1,,,,,1932,,,,1,,
-204,als,,,Wihnachtsglüeck,Festspiel in siewe Bilder,14,,,,,1921,,,,6 Bilder,,
-205,als,,,Rund um d'Welt,E Märel in acht Bilder vun Emile Weber mit Müsik von Aloyse Braun,28,,,,,1931,,,,1,,
-206,als,,,D' Wundergej ,Zaubermärel in 5 Bilder mit Gsang un Danz,1,,,,,1922,,,,5 Bilder,,
-207,als,,,Prinzessel Eijesinn,Märel in 5 Bilder un aanere Verwandlung mit Gsang un Danz,1,,,,,1928,,,,7 Bilder,,
-208,als,,,Im Traumland,Maerel in 4 Bilder mit Muesik un Danz,1,,,,,1924,,,,1,,
-209,als,,,Prinz Changele,Märchenspiel in 5 Bildern,3,,,,,,,,,7 Bilder,,
-210,als,,,Princesse Fleurette,Märel in 6 Blider,1,,,,,1918?,,,,5 Bilder,,
-300,als,,,D'r Roméo un's Juliette vo Colmer.,Comédie en 1 Akt.,"67, 64",,,,,,,,1897,5 Bilder,,
-301,als,,,A Sundaasbroote mit Schnaps odder E Malheur in der Krütenau.,"Lustspiel in Strassburger Ditsch mit Gesangeinlagen, in 1 Akt.",12,103,,,,1897,,,,4 Bilder,,
-302,als,,,Wàge-n-'re halwe Million.,Milhüserditsch Theaterstückle in 1 Akt.,62,25,,,,1897,,,,5 Bilder,,
-303,als,,,D'r Loyala-kriay vu Colmer im Johr 1669,(Schwank of Colmerditsch met G'sang en 3 Akta.),57,104,,,,1897,,,,6,,
-304,als,,,D'r Onkel üss Amerika,Schwank in 1 Akt.,32,21,,,,1897,,,,1,,
-305,als,,,E Kneippkür,Theaterstück uf Milhüserditsch.,63,25,,,,1897,,,,1,,
-306,als,,,D'Inspektion vom Gsangverein vo Brielinge,Grosse komische Scène uf Milhüserditsch mit Gsang.,63,25,,,,1897,,,,1,,
-307,als,,,D'r Ernest in Verlàgeheit,Theaterstück uf Milhüserditsch.,63,25,,,,1897,,,,3,,
-308,als,,,Nitt g'spielt un doch g'spielt,Theaterstück uf Milhüserditsch.,63,25,,,,1897,,,,1,,
-309,als,,,Im Bawele si Träum,Komische Duo uf Milhüserditsch.,63,25,,,,1897,,,,,,
-310,als,,,D'r Vetter Bläsel,Schwank in einem Aufzuge in Strassburger Mundart.,1,1,,,,1897,,,,1,,
-311,als,,,D'Gett'l vom Gaggser-Jerri ,od'r Durch Schrecken geheilt od'r D'r Stiafbrüader vom Mississippi. Comédie en aim Akt.,"67, 64",,,,,,,,1898,1,,
-312,als,,,Dr Onkel Anatol,Milhüserditsch Theaterstickle in 1 Akt.,62,25,,,,1898,,,,1,,
-313,als,,,D'r ney Jean.,Schwank in aam Uffzugg,1,3,,,,1899,,,,1,,
-314,als,,,Mi Tante,Volksstück in 3 Acte.,"65, 62",25,,,,1899,,,,1,,
-315,als,,,D'Schmuggler,Elsässiche Komödie in vier Akten.,66,105,,,,1899?,,,,1,,
-316,als,,,D'Freundschaft,Einakter,67,,,,,,,,1899,1,,
-317,als,,,Danneholz,Wihnachts-Stimmungsbild in einem Uffzug in Strossburjer Ditsch. Mit-ere Deckezeichnung von Ch. Bastian,68,1,,,,1899,,,,1,,
-318,als,,,D'Müettersproch.,Prolog mit Inscenierung.,62,106,,,,1899,,,,3,,
-319,als,,,Der Pfingstmondâa vun hitt ze Dâa.,Dramatisches Culturbild aus dem Elsass am Ende des 19. Jahrhunderts.,22,29,,,,1899,,,,4,,
-320,als,,,Eifersüchtig (Schallü),Musikalisches Lustspiel in einem Aufzug nach dem Elsässischen.,69,107,,,,1900,,,,1,,
-321,als,,,Am Belche,Lustspiel in 5 Aufzügen. Ins Milhüserditsche iwersetzt vu Ch. Kolmann,70,1,,,,1900,,,,1,,
-322,als,,,Geld un Liewe,Theaterstück in 4 Akte.,61,25,,,,1900,,,,,,
-323,als,,,Uns'r Ferdinand,"Luschtspeel in zwei Akte, met ere Deckezeichnung vo J. J. Waltz.",67,1,,,,1900,,,,3,,
-324,als,,,D'Waldmühl,Schauspiel in 3 Akt.,"71, 72",108,,,,1901,,,,1,,
-325,als,,,D'r Dorfschmidt,Elsässischs Volksstüeck in drei Uffzüeg,1,3,,,,1901,,,,5,,
-326,als,,,D'r schwarz Kaffee,Schwank in einem Akt.,1,5,,,,1907,,,,4,,
-327,als,,,'s Deifele,Komödie in vier Aufzügen,1,5,,,,1909,,,,2,,
-328,als,,,Vorm Friddesrichter,Gerichtsscène in einem Akt ,1,5,,,,1908,,,,3,,
-329,als,,,Es spückt ,Schwank in 3 Akt.,1,5,,,,1911,,,,3,,
-330,als,,,Alles verliebt,Lustspiel in 3 Akt,1,5,,,,1914,,,,1,,
-331,als,,,St. Odile,Mysterium in 5 Bilder,1,6,,,,1920,,,,4,,
-332,als,,,D'r Rotschriewer von Hauenau,Schauspiel in 5 Akt üs d'r Vadder-Zytt,73,,,,,,,,,1,,
-333,als,,,D'r Ami Fritz,els. Schauspiel in 3 Akt - Ins Elsässich uewertrauwe vun Charles Hauss | Schauspiel in drej Akt noch'm Roman von Erckmann-Chatrian for d'elsässisch Büehn bearweit von K. Hauß,68,112,,,,1910,,,1898,3,,
-334,als,,,D'Rantzau,els. Schauspiel in 3 Akt - Ins Elsässich uewertrauwe vun Charles Hauss,68,,,,,,,,,3,,
-335,als,,,D'r polnisch Jud,els. Schauspiel in 3 Akt - Ins Elsässich uewertrauwe vun Eugène Criqui und Henri Wolff,"74, 75",,,,,,,,,5,,
-336,als,,,D'Schatzgräwer,els. Volksstück in 3 Akt,76,,,,,,,,,5,,
-337,als,,,D'Nachtwächter,"e luschtigs Spiel üss d'r Zytt vom Krimm-Krej, in 4 Akt.",76,,,,,1908,,,,3,,
-338,als,,,E Summertheater,Schwank in 3 Akt.,77,,,,,,,,,3,,
-339,als,,,Joscht Ittel,E Stüeck üs'm elsässische Bürekriej in 3 Akt un 1 Vorspiel,4,,,,,1920,,,,3,,
-340,als,,,Am Abgrund,Volsstüeck in 3 Akt.,61,109,,,,1902,,,,3,,
-341,als,,,E Budell Quetschwasser,Schwank in einem Akt.,5,1,,,,1906,,,,4,,
-342,als,,,Gabrielle,els. Schauspiel in 4 Akt,78,,,,,,,,,3,,
-343,als,,,D'Aposchtel üs'm Elsass,Schauspiel in 3 Akt.,78,,,,,1920?,,,,1 Vorspiel + 3,,
-344,als,,,1812,historisch's Schauspiel in 4 Akt.,79,,,,,after 1910,,,,3,,
-345,als,,,Nur d'Lieb,Schauspiel in 3 Akt.,67,1,,,,1901,,,,1,,
-346,als,,,D'Hochzittsnacht,Drama in einem Akt.,67,1,,,,1907,,,,4,,
-347,als,,,D'Maikür,Schwank in einem Akt.,67,1,,,,1907,,,,3,,
-348,als,,,Eulogius Schneider,Vaterländlich's Schauspiel in 4 Akt.,68,108,,,,1903,,,,4,,
-349,als,,,Dokter Franz Mathäus,Schauspiel in 4 Akt,68,,,,,,,,,3,,
-350,als,,,D'Erbschaft,Elsässisch's Schauspiel in 3 Akt.,80,,,,,,,,,1,,
-351,als,,,D'r rüssisch Graf,Schwank in 2 Akt,81,,,,,,,,,1,,
-352,als,,,D'r Schlittehannes,Büredrama in 2 Akt,82,110,,,,1907,,,,4,,
-353,als,,,Sabine un d'r Tod,E Todedanz in 3 Akt,83,111,,,,1920,,,,4,,
-354,als,,,D'r Hüsshärr,Schwank in 3 Akt.,84,,,,,,,,,3,,
-355,als,,,Peter Hagebach,Historisch's Schauspiel in 4 Akt.,85,,,,,1913,,,,2,,
-356,als,,,D'schoen Berth,Komödie in 4 Akt.,86,,,,,,,,,2,,
-357,als,,,Elsässisch Bluet,Els. Drama in 4 Akt.,86,,,,,1908,,,,3,,
-358,als,,,Respekt im Hüs,Lustspiel in 2 Akt.,86,,,,,,,,,3,,
-359,als,,,Republik im 4. Stock,Schwank in 1 Akt.,86,,,,,,,,,4,,
-360,als,,,'s Morjerot,Elsässich's Volksschauspiel üs d'r Zytt vom Bürekriej,87,,,,,,,,,4,,
-361,als,,,Daniel Jeust,Drama in 4 Akt.,88,,,,,,,,,4,,
-362,als,,,Tischel deck dich,E Märel in 5 Bilder,89,,,,,,,,,2,,
-363,als,,,D'Millionepartie,Schwank in 3 Akt.,25,1,,,,1901,,,,1,,
-364,als,,,D'r verbotte Fahne,Elsässische Komödie in 3 Aufzügen.,25,1,,,,1904,,,1904,,,
-365,als,,,D'r Luftibüs,Schwank in 3 Akt.,25,7,,,,1919,,,,4,,
-366,als,,,Junggselle,E einaktigi Farce,1,3,,,,1903,,,,5,,
-367,als,,,E Serenädl,E schwankächts Lustspiel in aam Uffzugg in Stroßburjer Babbelart,1,5,,,,1905,,,,3,,
-368,als,,,E komischi Erbschaft,"Lustspiel in elsässer Mundart, in aam Uffzugg",1,5,,,,1907,,,,3,,
-369,als,,,D'r Unkel Güschtav,Schwank in einem Aufzug,5,1,,,,1909?,,,,3,,
-370,als,,,Babbelhans,,3,3,,,,,,,,1,,
-371,als,,,L'Éloge du célibat,"dialogue en vers, représenté à l'Académie du dimanche le 21 avril 1860, avec une scène en dialecte colmarien sur le même sujet [, par R. Yves]... (avec Lob des ledigen Standes (149))",15,84,,,,1860,,,1860,1,,
-372,als,,,D'r Hans on's Grehtälä ém Ehschtand. ,"Loscht's Operettlä én 1 Actä... von J. Mangold,... Müsik vom J. Heyberger...",15,90,,,,1869,,,1869,1,,
-373,als,,,Uf d'r Polizei,E. Heiters Beld en 1 Akt,90,13,,,,1928,,,,1,,
-374,als,,,Jesus von Nazareth,"biblisch-dramatische Dichtung in 5 Teilen. Bethlehem, Weihnachtsfestspiel in fünk Akten.",91,13,,,,1926,,,,,,
-375,als,,,Theater im Theater,oder E lätzi Hochzyttere. E Farce in 1 Akt vum Camille Jost,11,3,,,,1927,,,,1,,
-376,als,,,Er wurd Energisch,E Schwank in 1 Akt nooch're ältere Idee vum Camille Jost,11,3,,,,1928,,,,1,,
-377,als,,,E lätzi commission,"Comedie in 3 Akt (Nooch're-n-ältere Idee), vum Camille Jost, Strossburj",11,3,,,,1928,,,,1,,
-378,als,,,Gottfried von Strassburg,Schauspiel in 5 Aufzuegen,92,1,,,,1897,,,1897,Vorspiel + 5,,
-379,als,,,Wie's vum Vater ervorwe vom Sohn verdorwe.,"Volkstück im elsäszische Dialekt in 5 akte, von Paul Clemens",3,113,,,,1928,,,,1,,
-380,als,,,"""Moineau"" d'Alsace","drame patriotique en 3 actes, pour jeunes gens, épisode de la guerre 1914-1918 en Alsace",93,114,,,,1923,,,1923,1,,
-381,als,,,Alsace,"pièce en 3 actes, par Gaston Leroux et Lucien Camille","94, 95",,,,,1913,,,1913,3,,
-382,als,,,Der Klopfgeist,Lustspiel in vier Aufzügen,5,20,,,,1903,,,,5,,
-383,als,,,Die Frau Velten in der Kunkelstub,,43,115,,,,1863,,,,5,,
-384,als,,,Une perle fine de la chère Alsace,drame en 5 actes par une religieuse,,116,,,,1896,,,,3,,
-385,als,,,Nuit d'Alsace,épisode dramatique en 2 actes,96,117,,,,1911,,,,3,,
-386,als,,,Was mein einst war,Volksschauspiel in 1 Aufzug von Fernand Kühne,13,10,,,,1921,,,,4,,
-387,als,,,D'Excellenz meyer,Lustspiel in eim Akt vum Camille Jost,11,3,,,,1928,,,,1,,
-388,als,,,A gelungene Wette,Lustspiel für Frauenbühne in 2 Akten,30,13,,,,1927,,,,5,,
-389,als,,,Gedeon,"biblisches Heldendrama in 5 Akten. Aus der Zeit der Richter, von Aug. Schmidlin",91,118,,,,1932,,,,2,,
-390,als,,,D'bluetig Füscht,E Schwank in 1 Akt von Camille Jost,11,3,,,,1927,,,,1,,
-391,als,,,E natti Band,Gesamtspiel in 1 Akt für 7 kleinere und grössere Knaben,27,2,,,,1939,,,,1,,
-392,als,,,Glüeck muess d'r Mensch han,Volksstueck in 3 Akte mit Müsik un Gsang,1,5,,,,1925,,,,2,,
-393,als,,,Les Martyrs de Strasbourg,"ou l'Alsace en 1870, drame historique et patriotique en 5 actes et 10 tableaux",97,119,,,,1874,,,1872,5,,
-394,als,,,L'Heure de l'Alsace,évocation dramatique en vers de Jules Princet,98,120,,,,1919,,,1919,1,,
-395,als,,,Gheilt,Lustspiel in 1 Akt für Vereine und Schulen,27,2,,,,1939,,,,1,,
-396,als,,,A fatali Verwachslung,Lustspiel in 1 Akt von J. Kempf,99,13,,,,1924,,,,3,,
-397,als,,,D'r Gymnasler,Komischer Vortrag von Robert Golder,100,3,,,,1929,,,,10,,
-398,als,,,S gelehnt Metier,Komedie in 3 Akt (nooch're-n-ältere-n-Idee) vum Camille Jost,11,3,,,,1927,,,,1,,
-399,als,,,Mirabelle Muller,Lustspiel in 1 Akt von Paul Clémens. ,3,18,,,,1925,,,,1,,
-400,als,,,E Säij un e Schelm,"Komischer Vortrag für 2 Herren, von F. X. Neukirch",17,10,,,,1924,,,,1,,
-401,als,,,Uff'm Standesamt,"Komischer Vortrag für 4 Herren, von F. X. Neukirch",17,10,,,,1924,,,,1,,
-402,als,,,D'r Cousin Dagobert,"E luschtigs Stückel in 1 Akt vu Paul Clémens, Bischheim. Nur Herrenrollen",3,113,,,,1924,,,,3,,
-403,als,,,D'r Ledig Ehemann,Elsassisch Singspiel in 3 Akte vu Fernand Kuehne,13,18,,,,1925,,,,1,,
-404,als,,,A G'sangprob' fer d'r Uessflug,A heiteres Steckel,30,13,,,,1931,,,,1,,
-405,als,,,D'r Toni suecht e Fraüj,"Lustspiel in 1 Akt, von A. Gfall",101,13,,,,1936,,,,1,,
-406,als,,,D'r schloj Michl un s'falsche Barawl,"Schwank in 2 Aufzügen, von Martin Huck",10,13,,,,1936,,,,1,,
-407,als,,,Wer wurd Maire?,"od'r 30 Johr später, Lustspiel in 3 Akt",28,2,,,,1936,,,,3,,
-408,als,,,D'verkracht Affetheorie,"Lustspiel in 2 Akten, von Paul Müller",102,13,,,,1936,,,,1,,
-409,als,,,"Wie m'r's macht, isch's lätz",Lustspiel in 1 Akt von A. Seyller,103,13,,,,1937,,,,1,,
-410,als,,,Mayonnaise,"Schwank in drei Akt, von Ferd. Bastian",1,5,,,,1932,,,,2,,
-411,als,,,D'r Babbe isch verreist,Lustspiel in 1 Akt von Ch. Fr. Mochel,104,2,,,,1939,,,,3,,
-412,als,,,D'r Fabian blost Alarm,"Lustspiel für Pompiersvereine in 1 Akt, von Leo Pfiffer",18,13,,,,1937?,,,,2,,
-413,als,,,Donner und Doria,"tragikkomischi Denkmolsg'schicht üss'm Elsass em Dialekt en 4 Akt, vun Charles Weber",29,13,,,,1924,,,,1,,
-414,als,,,Wer am letschte lacht,"Lustspiel in 1 Aufzug, vun Emilie Hahn",7,13,,,,1929,,,,3,,
-415,als,,,D'r Dummerle,Märelspiel in 5 Bilder un zwai Verwandlunge von Ferd. Bastian,1,5,,,,1925,,,,1,,
-416,als,,,D'r Schwedetrank,"dramatisches Volksstück aus dem Schwedenkrieg im Elsass in 5 Akten, von P. Guth",105,13,,,,1937,,,,1,,
-417,als,,,D'r Cigarrestumpe,"E kleini Ehestandskomödie in 1 Akt, von Ch. Kettner",33,18,,,,1923,,,,4,,
-418,als,,,System Hoppeldihopp,"oder ""Es brännt !"" Komische Scene für 5 Herren in einem Aufzug",3,10,,,,1922,,,,1,,
-419,als,,,So'ne Gauner,"Humoristische Scene für zwei Herren, von Martin Huck",10,3,,,,1932,,,,5,,
-420,als,,,Im Embarras,"(In d'r Klemme), Lustspiel in einem Akt, von Joseph Lejeune",106,13,,,,1926,,,,prolog + 5,,
-421,als,,,Kokain,"Drama in drei Akt, von Ferd. Bastian",1,5,,,,1929,,,,1,,
-422,als,,,Phantom,E Stück in 4 Akt von Ferd. Bastian,1,5,,,,,,,,1,,
-423,als,,,Heiss Blüet,Els. Volkssteck en 4 Akta vo Emile Wagner-Wettolsheim,27,18,,,,1923,,,,1,,
-424,als,,,In d'r Schuelklass n° 3,Humoristische Schulscene von Martin Huck,10,3,,,,1933,,,,1,,
-425,als,,,E Gewaltstreich,Schwank in 1 Akt von Paul Clemens,3,113,,,,1925,,,,3,,
-426,als,,,S'Chrischtkindl un d'r Hanstrapp,E Wyhnachtsufftritt vor'm Himmer drüsse. Vortraa für kleini unn grossi Kinder vun F. X. Neukirch,17,10,,,,,,,,4,,
-427,als,,,D'Karteschläuere,"A luschtig's Steckel in 1 Akt, von Martin Huck",10,13,,,,1932,,,,5,,
-428,als,,,D'Waschwiewer,"Lustspiel in einem Akt, von Martin Huck",10,13,,,,1932,,,,1,,
-429,als,,,Er Babbelt im Schloof !,"Lustspiel in 1 Akt von Georges Bravo, für die elsässische Vereinsbühne bearbeitet von Georges Jaggi",107,2,,,,1939?,,,,1,,
-430,als,,,So e kaiwe T. S. F. ! (Drohtlosi Telephonie),E Comédie in eim Akt vum Camille Jost,11,3,,,,1927,,,,1,,
-431,als,,,Richardis,"Historisches Schauspiel aus der elsässischen Vergangenheit in 4 Aufzügen, von Aug. Schmidlin",91,,,,,1930,,,,1,,
-432,als,,,D'Philomé em Stadttheater,Kom. Vortrag für Damen,99,13,,,,1923,,,,1,,
-433,als,,,E g'fährlicher Seppeles-Daa,E Luschtspiel in 1 Akt,11,3,,,,1929,,,,1,,
-434,als,,,D'r Herr im Hüss,Schwank in 4 Bilder by glycher Szenerie vum Camille Jost unn Franz Boehm,"11, 108",3,,,,1928,,,,1,,
-435,als,,,D'r Metzjerburscht,Komischer Vortrag,100,3,,,,1929,,,,,,
-436,als,,,An d'lätz Adress,Lustspiel in 1 Akt,33,18,,,,1923,,,,1,,
-437,als,,,Von Vatter verstosse,Volksstück in 5 Akten. Freie Bearbeitung von Leo Welker,109,13,,,,1934,,,,1,,
-438,als,,,Viel Krach für nix ,odder Cherchez la femme ! Comédie in 4 kurze Akt vum Camille Jost,11,3,,,,1928,,,,4,,
-439,als,,,E Barebli als Geldsack,"Lustspiel in 1 Akt, von Emilie Hahn",7,13,,,,1931,,,,1,,
-440,als,,,Im Name vum Gsetz,oder Mensch geh' nie vor Gericht. Lustspiel in einem Akt,110,13,,,,1930,,,,1,,
-441,als,,,D'reis in's Wynland,Komödie in 1 Uffzug,21,18,,,,1925,,,,5,,
-442,als,,,Zwei Dauwi,Schwank in einem Akt von Ch. Kettner. Frei nach dem Französischem von Moinaux.,33,18,,,,,,,,4,,
-443,als,,,E halbi Küah,Schwank in els. Dialekt in 2 Akten von X. Sengelin,24,10,,,,1923,,,,1,,
-444,als,,,Stichwahl,Farce in einem Akt vun Fernand Kuehne. ,13,18,,,,1924,,,,1,,
-445,als,,,S'Deschtament,"Lustspiel in zwei Akt, vum Xavier Zaspel",111,3,,,,1924,,,,1,,
-446,als,,,Zwei Schweschtere,Komödie in elsässicher Mundart in zwei Akten von Emilie Hahn,7,3,,,,1926,,,,1,,
-447,als,,,Hilf ! E Menschfresser !,E Farce in eim Akt vum Camille Jost,11,3,,,,1926,,,,2,,
-448,als,,,D'r griene Ritter,Volksstück in 3 Akten von Fernand Kuhne,13,10,,,,1927,,,,1,,
-449,als,,,Ferdinand von Hompesch,"oder: Das vierte Gebot. Historisches Volksstück in 2 Akten, von Camille Jost",,,,,,,,,,2,,
-450,als,,,Em Photographe-Atelier,Lustspiel in 1 Akt,99,13,,,,1924,,,,2,,
-451,als,,,E-n-Ohrfeij,"Komischer Vortrag für 1 Herr u. 2 Damen, von F. X. Neukirch",17,10,,,,1924,,,,1,,
-452,als,,,D'Advekate !,Komische Szene mit Gesang in elsässischer Mundart für 7 Herren von Emilie Hahn,7,3,,,,1924,,,,3,,
-453,als,,,Um a Stimmig (Gmeinrotswahl),Volkstick in 3 Akte vo Xavier Sengelin,24,10,,,,1922,,,,,,
-454,als,,,Dr Schuldig,"Drama in 4 Akten, von Maurice Manquat",112,13,,,,1925,,,,1,,
-455,als,,,A Mord,Schwank in eim Uffzug,90,10,,,,1923,,,,1,,
-456,als,,,D'küraschiert Frau,"e Gspräch mit sich selbscht vunn ere ""starike"" Krämpe.",17,10,,,,1925,,,,1,,
-457,als,,,Hampel oder Bampel,Luschtspiel in 4 Uffzuegg,21,10,,,,1924,,,,3,,
-458,als,,,Nasskutt contra Nasskutt,Komischer Vortrag für 2 Herren u. 1 Dame,17,10,,,,1924,,,,4,,
-459,als,,,S'Gsprach uff d'r Waschbritsch,Komischer Vortrag für 3 Damen,17,10,,,,1925,,,,1,,
-460,als,,,Wenn d'Not am gröeschte,E Wihnachtstückel in 1 Akt im elsäßische Dialekt,3,3,,,,1921,,,,1,,
-461,als,,,D'Dragüner-Schmide,Volkschauspiel in 3 Akten in elsässischem Dialekt,3,10,,,,1922,,,,4,,
-462,als,,,E gelungener Uessflug,Komischer Vortrag in elsässischer Mundart,3,10,,,,1922,,,,1,,
-463,als,,,S'Patent,Luschtspiel in eim Akt,113,3,,,,1923,,,,1,,
-464,als,,,A Promenade mit Hindernisse,Komischer Vortrag,100,3,,,,1922,,,,1,,
-465,als,,,D'schwarz Hand,e Ynbrechers Comedie in aam Uffzug,"21, 114",3,,,,1920,,,,3,,
-466,als,,,D'r Hochzitter vum Land,Schwank in einem Uffzug in elsässischer Mundart ,100,3,,,,1922,,,,1,,
-467,als,,,D'r Färschter uf Waldmatt,Drama in els. Dialekt in 3 Akten,13,10,,,,1923,,,,1,,
-468,als,,,D'nei Zit,Volksstück in fünf Szenen,14,11,,,,1913,,,,1,,
-469,als,,,Im Morgenrot,Schauspiel aus der Strassburger Reformationszeit,,,,,,,,,,1,,
-470,als,,,"Bieje, awer nit breche !",Charakterstück in eim Uffzug,21,11,,,,1902,,,,1,,
-471,als,,,Telegraphie ohni Droht,Original-Schwank in eim Uffzug,21,11,,,,1902,,,,3,,
-472,als,,,La nuit de la Toussaint,drame alsacien en un acte et en vers,,,,,,,,,,5,,
-473,als,,,D'g'stohlene Gäns,Lustspiel in einem Aufzug in elsässischer Mundart ,115,11,,,,1909,,,,,,
-474,als,,,Die Schöne Bärbel,oder der Buchsweiler Weiberkrieg. Volksschauspiel in drei Akten,,,,,,,,,,1,,
-475,als,,,L'Horloger de Strasbourg,"drame en vers, en 4 actes et 6 tableaux",,,,,,,,,,1,,
-476,als,,,Zwei dauwi Meiselocker uun's Sælmel im Bierhuus,Komischer Vortrag für 2 Herren u. 1 Dame,17,10,,,,before 1925,,,,,,
-,,,,,,,,,,,,,,,1,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,1,,
+workId,lang,anOrd,wikidataId,titleMain,titleSub,authorId,publisherId,url,sourceType,sourcePlatform,printed,firstPrinted,firstPublisher,premiere,nbActs,nbScenes,comments,genre,subgenre
+1,fre,1,,Le Tour du Cadran,Folie-vaudeville en cinq actes et six tableaux,"66, 67",6,https://www.google.fr/books/edition/Le_tour_du_cadran/HhRWAAAAcAAJ?hl=fr&gbpv=0,,Google Books,1872,,,1872,5,"7, 11, 9, 9, 5",,folie-vaudeville,
+2,fre,121,,Le Homard,comédie en un acte,20,6,https://books.google.fr/books?id=Y0uC46z30QEC&printsec=frontcover&hl=fr&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false,,Google Books,1874,,,1874,1,10,,comédie,
+3,fre,52,Q107266236,Le Député de Bombignac,Comédie en trois actes,37,11,https://www.google.fr/books/edition/Le_d%C3%A9put%C3%A9_de_Bombignac/OQxJAQAAIAAJ?hl=fr&gbpv=0,,Google Books,1887,,,1884,3,"14, 15, 11",,comédie,
+4,fre,55,Q19210904,Les Fiancés de Loches,Vaudeville en trois actes,"38, 36",2,https://www.google.fr/books/edition/Les_fianc%C3%A9s_de_loches/J5E7AQAAMAAJ?hl=fr&gbpv=0,,Google Books,1888,,,1888,3,"12, 18, 22",,vaudeville,
+5,fre,2,Q65659179,Niniche,Vaudeville en trois actes,1.2,1,https://books.google.fr/books?id=RWp3nQEACAAJ,,Google Books,1878,,,1878,3,"20,17,11",,vaudeville,
+6,fre,141,,Le cabinet Piperlin,opéra-bouffe en trois actes,"71, 72",28,https://gallica.bnf.fr/ark:/12148/bpt6k1281066x/f7.item,,Gallica,1897,,,1897,3,,,opéra-bouffe,
+7,fre,69,,L’héroïque Le Cardunois,Comédie en trois actes,37,11,https://www.google.fr/books/edition/L_h%C3%A9ro%C3%AFque_Le_Cardunois/M3U6AQAAMAAJ?hl=fr&gbpv=0,,Google Books,1894,,,1894,3,"22, 18, 11",,comédie,
+8,fre,65,,La Famille Pont-Bicquet,Comédie en trois actes,37,5,https://books.google.fr/books?id=6nY5AQAAMAAJ&printsec=frontcover&hl=fr&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false,,Google Books,1913,1892,11,1892,3,"13, 13, 14",,comédie,
+9,fre,50,,Une matinée de contrat,Comédie en un acte,36,2,https://www.google.fr/books/edition/Une_matin%C3%A9e_de_contrat/uithXllT3SIC?hl=fr&gbpv=1&dq=vaudeville+inauthor:desvalli%C3%A8res&pg=PA50&printsec=frontcover,,Google Books,1883,,,1883,1,12,,comédie,
+10,fre,58,Q2553475,Le mariage de Barillon,Vaudeville en trois actes,"38, 36",,https://libretheatre.fr/le-mariage-de-barillon-de-georges-feydeau/,,,,1890,2,1890,3,,,vaudeville,
+11,fre,66,Q3227495,Le système Ribadier,Comédie en trois actes et en prose,"38, 4",,https://libretheatre.fr/le-systeme-ribadier-de-georges-feydeau/,,,,?,,1892,3,,,comédie,
+12,fre,57,Q19176633,L’affaire Edouard,Comédie-vaudeville en trois actes,"38, 36",,https://libretheatre.fr/laffaire-edouard-de-georges-feydeau/,,,,,,1889,3,,,comédie-vaudeville,
+13,fre,70,Q3203961,L’hôtel du libre-échange,Pièce en trois actes,"38, 36",,https://libretheatre.fr/hotel-du-libre-echange-feydeau/,,,,?,,1894,3,,,pièce,
+14,fre,71,Q3226710,Le Ruban,Comédie en trois actes,"38, 36",,https://libretheatre.fr/le-ruban-de-georges-feydeau/,,,,?,,1894,3,,,comédie,
+15,fre,18,,"Gavaut, Minard et Cie",Comédie en trois actes,20,6,https://www.google.fr/books/edition/Gavaut_Minard_Cie/JWc6AAAAcAAJ?hl=fr&gbpv=1&dq=edmond+gondinet&printsec=frontcover,,Google Books,1869,,,1869,3,"15,16,11",,comédie,
+16,fre,42,,Le Panache,Comédie en trois actes,20,6,https://www.google.fr/books/edition/Le_panache/o4r1rCmcseYC?hl=fr&gbpv=0,,,1876,,,1875,3,"13, 18, 20",,comédie,
+17,fre,49,,Tête de Linotte,Comédie en trois actes,20,5,https://www.google.fr/books/edition/Gavaut_Minard_et_cie_Christiane_La_crava/CRFJAQAAIAAJ?hl=fr&gbpv=0,,Google Books,1892,1886,5,1882,3,,maybe not 1st ed. ,comédie,
+18,fre,45,,Le Tunnel,Comédie en un acte,20,5,https://www.google.fr/books/edition/Le_panache_Les_grandes_demoiselles_Jonat/rglJAQAAIAAJ?hl=fr&gbpv=0,,Google Books,1877,,,1877,1,,,comédie,
+19,fre,19,Q3225705,Le plus heureux des Trois,Comédie en trois actes,20.5,5,https://www.google.fr/books/edition/Th%C3%A9%C3%A2tre_complet_Le_plus_heureux_des_tr/CyYtAAAAYAAJ?hl=fr&gbpv=0,,Google Books,1894,1870,8,1870,3,"16,17,11",,comédie,
+20,fre,46,,Les Convictions de papa,Comédie en un acte,20,5,https://gallica.bnf.fr/ark:/12148/bpt6k241252q,,Gallica,1894,1877,2,1877,1,,,comédie,
+21,fre,38,,Panazol,"Comédie en un acte, en vers",20,6,https://www.google.fr/books/edition/Panazol_Com%C3%A9die_en_un_acte_en_vers/RHACK_J8zCYC?hl=fr&gbpv=0,,Google Books,1873,,,1873,1,,,comédie,
+22,fre,17,,L’Amour qui dort,Comédie en un acte,19,8,https://www.google.fr/books/edition/L_Amour_qui_dort_Com%C3%A9die_en_un_acte_and/7hNdAAAAcAAJ?hl=fr&gbpv=0,,Google Books,1864,,,1864,1,19,,comédie,
+23,fre,76,Q3208097,La Dame de chez Maxim,Pièce en trois actes,38,,https://libretheatre.fr/la-dame-de-chez-maxim-de-feydeau/,,,,?,,1899,3,,,pièce,
+24,fre,122,,La Poudre d’escampette,folie-vaudeville en trois actes,"1, 66",1,https://www.google.fr/books/edition/La_poudre_d_escampette/DlVGAAAAYAAJ?hl=fr&gbpv=0,,Google Books,1877,,,1877,3,,,folie-vaudeville,
+25,fre,44,Q104850798,Les Dominos roses,Comédie en trois actes,"1, 29",1,https://www.amazon.fr/Dominos-Com%C3%A9die-Alfred-Delacour-Hennequin/dp/1115046632?asin=1115046632&revisionId=&format=4&depth=1,,,1884,1876,26,1876,3,,,comédie,
+26,fre,74,Q107154738,Le Contrôleur des Wagons-lits,Comédie en trois actes,37,13,https://archive.org/details/lecontroleurdesw00bissuoft/page/6/mode/2up,,Internet Archive,1908,1898,13,1898,3,,,comédie,
+27,fre,59,,Feu Toupinel,Comédie en trois actes,37,5,https://archive.org/details/feutoupinelcom00bissuoft,,Internet Archive,1907,1890,11,1890,3,,,comédie,
+28,fre,60,,Les Surprises du Divorce,Comédie en trois actes,"37, 39",5,https://archive.org/details/lessurprisesdudi00bissuoft/page/n7/mode/2up,,Internet Archive,1914,1889,11,1888,3,,,comédie,
+29,fre,142,Q105748095,Pastilles Hercules,vaudeville en trois actes,"4, 45",29,https://archive.org/details/pastilleshrcules2593henn/page/n7/mode/2up,,Internet Archive,1910,,,1910,3,,,vaudeville,
+30,fre,53,,Les vacances du mariage,Comédie-vaudeville en trois actes,"3, 4",3,https://archive.org/details/lesvacancesdumar00valauoft/page/4/mode/2up,,Internet Archive,,,,1887,3,"16, 18, 16",,comédie-vaudeville,
+31,fre,75,,Inviolable ! ,Comédie-vaudeville en trois actes,4,13,https://archive.org/details/inviolablecomd00hennuoft/page/14/mode/2up,,Internet Archive,1898,,,1897,3,"14, 22, 12",,comédie-vaudeville,
+32,fre,79,,Vous n’avez rien à déclarer ?,Pièce en trois actes,"4, 43",13,https://archive.org/details/vousnavezriendec00hennuoft,,Internet Archive,1906,,,1906,3,"20, 25, 26",,pièce,
+33,fre,84,Q30742511,La Présidente,Pièce en trois actes,"4, 43",13,https://archive.org/details/laprsidentepi00hennuoft,,Internet Archive,1913,,,1913,3,"22, 28, 24",,pièce,
+34,fre,83,,Monsieur Gavroche ,"Comédie-vaudeville en 2 actes, avec choeurs et couplets",39,14,https://archive.org/details/monsieurgavroche00mars,,Internet Archive,1912,1889,14,?,2,"15, 18",,comédie-vaudeville,
+35,fre,63,,La demoiselle du téléphone ,comédie-opérette en 3 actes,"36, 39",12,https://archive.org/details/lademoiselledut00serp/page/n7/mode/2up,,Internet Archive,,1891,3,1891,3,,,comédie-opérette,
+36,fre,64,,Les Petites Godin,Comédie-vaudeville en trois actes,"40, 41",11,https://www.google.fr/books/edition/Les_Petites_Godin/49yT8S_tnTkC?hl=fr&gbpv=0,,Google Books,1891,1885,25,1884,3,"16, 17, 11",,comédie-vaudeville,
+37,fre,77,,Les Boulinard,comédie-vaudeville en trois actes,"40, 3, 42",13,https://archive.org/details/lesboulinardcomd00ordo/page/n9/mode/2up,,Internet Archive,1901,1891,11,1890,3,"15, 18, 14",,comédie-vaudeville,
+38,fre,61,,Durand et Durand ,comédie-vaudeville en trois actes,"3, 40",3,https://archive.org/details/duranddurandcom00ordouoft,,,1890,,,1887,3,"12, 16, 11",,comédie-vaudeville,
+39,fre,3,,Les ricochets de l'amour,Comédie en trois actes,3.4,2,https://archive.org/details/lesricochetsdela00valauoft/page/4/mode/2up,,Internet Archive,1895,,,1894,3,"14,22,15",,comédie,
+40,fre,80,,Que Suzanne n’en sache rien,comédie en trois actes,43,13,https://archive.org/details/quesuzannenensac00vebeuoft/page/4/mode/2up,,Internet Archive,1907,1900,27,1899,3,,,comédie,
+41,fre,85,,Madame et son filleul,pièce en trois actes,"4, 43, 44",3,https://archive.org/details/madameetsonfille00henn/page/n7/mode/2up,,Internet Archive,1921,1917,,1916,3,,,pièce,
+42,fre,54,,Les trois Chapeaux,Comédie en trois actes,1,5,https://archive.org/details/lestroischapeaux00henn,,Internet Archive,1887,1871,6,1871,3,,,comédie,
+43,fre,68,,Bébé ,comédie en trois actes,"1, 35",3,https://archive.org/details/bbcomdieen00najauoft,,Internet Archive,1893,1877,1,1877,3,,,comédie,
+44,fre,121,,Le Bal du Sauvage,folie-vaudeville en trois actes,"64, 65",3,https://gallica.bnf.fr/ark:/12148/bpt6k5713197j.texteImage,,Gallica,,1855,3,1854,3,"16, 11, 10",,folie-vaudeville,
+45,fre,39,,La Consigne est de ronfler,Comédie-vaudeville en un acte,18.15,6,https://www.google.fr/books/edition/La_consigne_est_de_ronfler/n_RbAAAAcAAJ?hl=fr&gbpv=0,,Google Books,1873,1866,6,1866,1,,,comédie-vaudeville,
+46,fre,47,,La Veuve Chapuzot,Comédie en trois actes,3,8,https://www.google.fr/books/edition/La_veuve_Chapuzot_Comedie_en_3_actes/Wuvh2qZ4yd4C?hl=fr&gbpv=1&dq=la+veuve+chapuzot&printsec=frontcover,,Google Books,1879,,,1879,3,,,comédie,
+47,fre,78,Q3214090,La Main passe,Comédie,38,,https://libretheatre.fr/la-main-passe-de-georges-feydeau/,,,,?,,1904,4,,,comédie,
+48,fre,67,Q104846695,Monsieur Chasse,Comédie en trois actes,38,,https://libretheatre.fr/monsieur-chasse-de-georges-feydeau/,,,,1897,2,1892,3,,,comédie,
+49,fre,72,Q3548595,Un fil à la patte,Comédie en trois actes,38,,https://libretheatre.fr/un-fil-a-la-patte-de-georges-feydeau/,,,,?,,1894,3,,,comédie,
+50,fre,73,Q3222323,Le Dindon,Pièce en trois actes,38,,https://libretheatre.fr/le-dindon-de-georges-feydeau/,,,,?,,1896,3,,,pièce,
+51,fre,81,Q3212044,La Puce à l’oreille,Comédie en trois actes,38,,https://libretheatre.fr/la-puce-a-loreille-de-georges-feydeau/,,,,?,,1907,3,,,comédie,
+52,fre,4,Q3220311,Le Baron de Fourchevif,Comédie en un acte,5.6,3,https://gallica.bnf.fr/ark:/12148/bpt6k61293336#,,Gallica,1859,,,1859,1,20,,comédie,
+53,fre,32,Q3231420,Les Chemins de Fer,Comédie-Vaudeville en cinq actes,"5, 29, 30",,https://libretheatre.fr/chemin-de-fer-labiche/,,Gallica,,1867,24,1867,5,"9,7,8,9,8",,comédie-vaudeville,
+54,fre,5,Q2827376,Agénor le dangereux,Vaudeville en un acte,"5,7,8",4,https://gallica.bnf.fr/ark:/12148/bpt6k6209552x.texteImage#,,Gallica,1848,,,1848,1,16,,vaudeville,
+55,fre,24,Q3319790,Mon Isménie,"Comédie en un acte, mêlée de couplets","5, 24",5,,,Gallica,1893,1853,6,1852,1,,,comédie,
+56,fre,29,Q3232056,Les Deux Timides,Comédie-Vaudeville en un acte,"5, 24",5,,,Gallica,1893,?,,1860,1,,,comédie-vaudeville,
+57,fre,21,Q3052094,"Embrassons-nous, Folleville !",Comédie-vaudeville en un acte,5.21,5,,,Gallica,1892,1850,6,1850,1,,,comédie-vaudeville,
+58,fre,26,Q3548635,Un Garçon de chez Véry,Comédie en un acte mêlée de couplets,5,5,,,Gallica,1893,1850,6,1850,1,,,comédie,
+59,fre,30,Q3230324,Les Trente-sept sous de M. Montaudoin,Comédie-Vaudeville en un acte,"5, 28",5,,,Gallica,1892,1863,8,1862,1,,,comédie-vaudeville,
+60,fre,28,Q19176618,L’Affaire de la rue de Lourcine,Comédie en un acte mêlée de couplets,"5, 27, 28",5,,,Gallica,1893,1857,6,1857,1,,,comédie,
+61,fre,6,Q3548736,Un Jeune Homme pressé,Vaudeville en un acte,5,5,,,Gallica,1893,1848,6,1848,1,11,,vaudeville,
+62,fre,23,Q19236233,Un Chapeau de paille d’Italie,"Comédie en cinq actes, mêlée de couplets",5.24,5,,,Gallica,1893,1851,6,1851,5,,,comédie,
+63,fre,25,Q3224615,Le Misanthrope et l’Auvergnat,Comédie en un acte mêlée de couplets,"5,25, 26",5,,,Gallica,1893,1852,25,1852,1,,,comédie,
+64,fre,27,Q3482836,Si jamais je te pince,Comédie en trois actes mêlée de chant,"5, 24",5,,,Gallica,1892,1856,6,1856,3,,,comédie,
+65,fre,31,Q3212958,La Station Champbaudet,Comédie-Vaudeville en trois actes,"5, 24",5,,,Gallica,1892,1862,3,1862,3,,,comédie-vaudeville,
+66,fre,33,Q3209442,La Grammaire,Comédie-Vaudeville en un acte,5.6,5,,,Gallica,1892,1867,24,1867,1,,,comédie-vaudeville,
+67,fre,40,Q2815721,29 Degrés à l’Ombre,Comédie en un acte,5,5,,,Gallica,1892,1873,8,1873,1,,,comédie,
+68,fre,43,Q3235817,Les Trente millions de Gladiator,Comédie-vaudeville en quatre actes,"5, 34",5,,,Gallica,1892,1875,8,1875,4,,,comédie-vaudeville,
+69,fre,36,,Major Cravachon,Comédie-Vaudeville en un acte,"5, 21, 33",5,,,Gallica,1892,1844,4,1844,1,,,comédie-vaudeville,
+70,fre,8,,Les Avocats,comédie-vaudeville en 3 actes,10.11,7,https://gallica.bnf.fr/ark:/12148/bpt6k6115572g,,Gallica,1852,,,1852,3,"9,14,10",,comédie-vaudeville,
+71,fre,7,,"Le bourgeois de Paris, ou Les leçons au pouvoir ",Comédie-vaudeville en trois actes et six tableaux,"9,10,11",6,https://gallica.bnf.fr/ark:/12148/bpt6k6181216h,,Gallica,1853,1850,,1850,3,"7,5,7,7,7,5",,comédie-vaudeville,
+72,fre,22,,À la Bastille,Vaudeville en un acte,"22,13, 23",9,https://books.google.fr/books?id=fFJSAAAAcAAJ,,Google Books,1850,,,1850,1,11,,vaudeville,
+73,fre,15,,Brouillés depuis Wagram,Comédie-vaudeville en un acte,15.18,6,https://gallica.bnf.fr/ark:/12148/bpt6k9745630c.texteImage,,Gallica,1861,,,1861,1,12,,comédie-vaudeville,
+74,fre,12,,Le Passé de Nichette,Comédie-vaudeville,15,6,https://www.google.fr/books/edition/Le_pass%C3%A9_de_nichette/okQ6AAAAcAAJ?hl=fr&gbpv=0,,Google Books,1865,,,1860,1,17,,comédie-vaudeville,
+75,fre,34,,Le Secrétaire et le Cuisinier,Comédie-Vaudeville en un acte,31.12,10,https://books.google.fr/books?id=cpWJ-nxz1J8C,,Google Books,1823,,,1821,1,,,comédie-vaudeville,
+76,fre,35,,La Lune de Miel,Comédie-Vaudeville en deux actes,"31,12, 32",,https://xn--thtre-documentation-cvb0m.com/content/la-lune-de-miel-eug%C3%A8ne-scribe-pierre-carmouche-m%C3%A9lesville ; https://books.google.com/books/about/La_lune_de_miel_com%C3%A9die_vaudeville_en_d.html?id=tk8NFl3N8oUC,,Théâtre Documentation,,1826,"SECONDE ED. Impr. de David, à Paris. - A Paris, chez les auteurs",1826,2,,,comédie-vaudeville,
+77,fre,122,,La Permission de dix heures,Comédie-vaudeville en un acte,"12, 32",9,https://archive.org/details/lapermissiondedi00mluoft ; https://théâtre-documentation.com/content/la-permission-de-dix-heures-pierre-carmouche-m%C3%A9lesville,,Internet Archive,1841,,,1841,1,,,comédie-vaudeville,
+78,fre,9,,M. Beauminet,Vaudeville en un acte,12.13,4,https://books.google.fr/books?id=nj5o-XdAfgUC&pg=PA4&lpg=PA4&dq=m%C3%A9lesville+beauminet&source=bl&ots=GB8bpdXnGt&sig=ACfU3U1xRAMH4yfGvkPRcftt-tqLrzWeYw&hl=fr&sa=X&ved=2ahUKEwim4tLb3qj-AhVVVKQEHTKqAoQQ6AF6BAgYEAM,,Google Books,1855,,,1855,1,17,,vaudeville,
+79,fre,10,,"Garde-toi, je me garde","Comédie en un acte, mêlée de chant",14,6,https://books.google.fr/books/about/Garde_toi_je_me_garde.html?id=iYQGAAAAQAAJ&redir_esc=y ; https://www.xn--thtre-documentation-cvb0m.com/content/garde-toi-je-me-garde-henri-meilhac,,Google Books,1868,,,1868,1,21,,comédie,
+80,fre,16,,Le Brésilien,Comédie en un acte mêlée de chant,14.16,6,https://books.google.fr/books?id=uZFUAAAAcAAJ ; https://xn--thtre-documentation-cvb0m.com/content/le-br%C3%A9silien-henri-meilhac-ludovic-hal%C3%A9vy,,Google Books,1863,,,1863,1,20,,comédie,
+81,fre,11,,Satania,"Comédie en deux actes, mêlée de couplets",14,4,https://books.google.fr/books?id=P8-EOBhAT9gC ; http://www.xn--thtre-documentation-cvb0m.com/content/satania-henri-meilhac,,Google Books,1856,,,1856,2,"7, 17",,comédie,
+82,fre,13,,Ce qui plaît aux Hommes,"Mêlée de prose, de vers et de couplets",14.16,4,https://books.google.fr/books/about/Ce_qui_pla%C3%AEt_aux_Hommes_pi%C3%A8ce_en_un_ac.html?id=YsNHAQAAMAAJ&hl=en&output=html_text&redir_esc=y ; https://www.théâtre-documentation.com/content/ce-qui-pla%C3%Aet-aux-hommes-henri-meilhac,,Google Books,1860,,,1860,1,13,,mêlée,
+83,fre,20,Q107170059,Tricoche et Cacolet,Vaudeville en cinq actes,14.16,6,https://www.théâtre-documentation.com/content/tricoche-et-cacolet-henri-meilhac-ludovic-hal%C3%A9vy ; https://books.google.fr/books/about/Tricoche_et_Cacolet.html?id=vhVWAAAAcAAJ&redir_esc=y,,Théâtre Documentation,1872,,,1871,5,"14,13,12,5,8",,vaudeville,
+84,fre,37,,Le Réveillon,Comédie en trois actes,14.16,5,https://books.google.fr/books?id=MiA-AAAAIAAJ,,Google Books,1880,1872,6,1872,3,,,comédie,
+85,fre,41,,La Boule,Comédie,14.16,6,https://books.google.fr/books?id=eQo_AAAAIAAJ,,Google Books,1874,,,1874,,,,comédie,
+86,fre,51,,Ma Camarade,Pièce en cinq actes,"14, 34",5,https://books.google.fr/books?id=WdM-AQAAMAAJ,,Google Books,1894,?,,1883,5,,,pièce,
+87,fre,56,,Décoré,Comédie en trois actes,14,5,https://books.google.fr/books/about/D%C3%A9cor%C3%A9.html?id=uAlJAQAAIAAJ,,Google Books,1899,1894,5,1888,3,,,comédie,
+88,fre,62,,Ma Cousine,Comédie en trois actes,14,5,https://books.google.fr/books/about/Ma_cousine.html?id=L_9TAAAAYAAJ,,Google Books,1897,1890,,,3,,,comédie,
+89,fre,14,,Pattes de Mouche,Comédie en trois actes en prose,17,6,https://www.google.fr/books/edition/Les_Pattes_de_mouche/pTOyEtKq37YC?hl ; http://www.xn--thtre-documentation-cvb0m.com/content/les-pattes-de-mouche-victorien-sardou,,Google Books,1860,,,1860,3,"13,12,16",,comédie,
+90,fre,48,,Divorçons !,Comédie en trois actes,17.35,5,https://www.google.fr/books/edition/Divor%C3%A7ons/iJbvAAAAMAAJ,,Google Books,1896,1883,5,1880,3,,,comédie,
+91,fre,86,,Les deux amoureux de la grand-mère,Comédie-vaudeville en un acte ,46,3,https://gallica.bnf.fr/ark:/12148/bpt6k3078859c.texteImage,,Gallica,1850,,,1850,1,21,,comédie-vaudeville,
+92,fre,87,,Mon voisin de campagne,Comédie-vaudeville en deux actes,47,15,https://www.google.fr/books/edition/Un_voisin_de_campagne/C-b-zzNMVygC,,Google Books,,1852,15,1852,2,"14, 15",,comédie-vaudeville,
+93,fre,88,,Chien et chat,Comédie-vaudeville en un acte ,48,15,https://www.google.fr/books/edition/Chien_et_chat/OmmbRxUlyscC?hl=fr&gbpv=1&pg=PP1&printsec=frontcover,,Google Books,,1853,15,1852,1,12,,comédie-vaudeville,
+94,fre,89,,"Après l'orage, le beau temps",Vaudeville-proverbe en un acte,47,16,https://www.google.fr/books/edition/Apr%C3%A8s_l_orage_vient_le_beau_temps/kcF9Tl8vk-gC?hl=fr&gbpv=1&pg=PA1&printsec=frontcover,,Google Books,1853,,,1853,1,13,,vaudeville-proverbe,
+95,fre,90,,Les Inconvénients de la sympathie,Vaudeville en un acte,46,3,https://gallica.bnf.fr/ark:/12148/bpt6k3046140d.texteImage,,Gallica,1854,,,1854,1,17,,vaudeville,
+96,fre,91,,Drelin ! Drelin!,Vaudeville en un acte,49,6,https://www.google.fr/books/edition/Drelin_Drelin_vaudeville_en_un_acte_par/RbSLcm4Ri7kC?hl=fr&gbpv=1&pg=PA1&printsec=frontcover,,Google Books,1858,,,1858,1,14,,vaudeville,
+97,fre,92,,La Tirelire de Jeannette,Comédie-vaudeville en un acte,50,3,https://www.google.fr/books/edition/La_tirelire_de_Jeannette_comedie_vaudevi/Xwfx-pDOh6cC?hl=fr&gbpv=1&pg=PA1&printsec=frontcover,,Google Books,1859,,,1859,1,10,,comédie-vaudeville,
+98,fre,93,,Un Bon petit diable,Vaudeville en un acte,51,3,https://www.google.fr/books/edition/Un_bon_petit_diable_vaudeville_en_un_act/_O_C1G_YJ0wC?hl=fr&gbpv=1&pg=PA1&printsec=frontcover,,Google Books,1859,,,1859,1,15,,vaudeville,
+99,fre,94,,La Mère Grippetout,Vaudeville en un acte,50,3,https://www.google.fr/books/edition/La_M%C3%A8re_Grippetout_vaudeville_en_un_act/uRNdAAAAcAAJ?hl=fr&gbpv=1&pg=PP1&printsec=frontcover,,Google Books,1861,,,1861,1,15,,vaudeville,
+100,fre,95,,L' Amour de l'art,Vaudeville en un acte,52,17,https://gallica.bnf.fr/ark:/12148/bpt6k5849542w,,Gallica,1865,,,1865,1,6,,vaudeville,
+101,fre,96,,Clémence,Comédie en deux actes mêlée de couplets,53,18,https://gallica.bnf.fr/ark:/12148/bpt6k98011272,,Gallica,1839,,,1839,2,"11, 20",,comédie,
+102,fre,97,,Une Femme charmante,"Comédie en un acte, mêlée de chant","48, 54",19,https://www.google.fr/books/edition/Une_Femme_charmante_com%C3%A9die_en_un_acte/8g_60CAnYv4C?hl=fr&gbpv=1&pg=PA1&printsec=frontcover,,Google Books,,1840,21,1840,1,22,,comédie,
+103,fre,98,,Les Honneurs et les moeurs ou Le même homme,"Comédie-vaudeville en deux actes, mêlée de chant",53,18,https://gallica.bnf.fr/ark:/12148/bpt6k4224580t#,,Gallica,1840,1840,18,1840,2,"11, 14",,comédie-vaudeville,
+104,fre,99,,Georges ou Le même homme,Comédie en deux actes,53,20,https://gallica.bnf.fr/ark:/12148/bpt6k3040768p,,Gallica,1841,,,1840,2,"11, 14",,comédie,
+105,fre,100,,Marguerite,Comédie en trois actes et en prose,53,20,https://gallica.bnf.fr/ark:/12148/bpt6k3040768p,,Gallica,1841,,,1840,3,,,comédie,
+106,fre,101,,Le Père Marcel,Comédie en deux actes mêlée de chant,53,18,https://gallica.bnf.fr/ark:/12148/bpt6k9601540t,,Gallica,1841,1841,18,1841,2,"11, 14",,comédie,
+107,fre,102,,Une Femme à la mode,Comédie en un acte,53,4,https://gallica.bnf.fr/ark:/12148/bpt6k9614704v,,Gallica,1843,,,1843,1,17,,comédie,
+108,fre,103,,Hermance ou Un an trop tard,"Comédie en trois actes, mêlée de chant",53,4,https://gallica.bnf.fr/ark:/12148/bpt6k3043553g#,,Gallica,1843,,,1843,3,"14, 14, 11",,comédie,
+109,fre,104,,Loïsa,"Comédie en deux actes, mêlée de chant",53,4,https://gallica.bnf.fr/ark:/12148/bpt6k9614380v,,Gallica,1843,,,1843,2,"15, 12",,comédie,
+110,fre,105,,Follette,Comédie-vaudeville en un acte,53,4,https://gallica.bnf.fr/ark:/12148/bpt6k96035977,,Gallica,1844,,,1844,1,14,,comédie-vaudeville,
+111,fre,82,Q19221114,Occupe-toi d’Amélie,Pièce en trois actes et quatre tableaux,38,,https://libretheatre.fr/occupe-toi-damelie-de-georges-feydeau/,,,,?,,1908,3,,,pièce,
+112,fre,106,,Suzette,Comédie-vaudeville en deux actes,"55, 10, 56",10,https://fr.wikisource.org/wiki/Suzette,,,1837,,,1837,2,,,comédie-vaudeville,
+113,fre,107,,Les Fils Gavet,Vaudeville en un acte,"57, 58",3,https://archive.org/details/bub_gb_3A1anEvnAvoC,,,,1853,,1853,1,17,,vaudeville,
+114,fre,112,,Histoire d'un châle,vaudeville en deux actes,"58, 62",21,http://digital.bib-bvb.de/view/bvb_single/single.jsp?dvs=1686124267773~118&locale=en_US&VIEWER_URL=/view/bvb_single/single.jsp?&DELIVERY_RULE_ID=39&bfe=view/action/singleViewer.do?dvs=&frameId=1&usePid1=true&usePid2=true,,,,1855,21,1855,2,,,vaudeville,
+115,fre,108,,Sous le paillasson,Vaudeville en un acte,"58, 59",21,https://books.google.fr/books?id=IoQ_AAAAcAAJ,,Google Books,1856,,,1858,1,,,vaudeville,
+116,fre,109,,Détournement de majeure,Vaudeville en un acte,"26, 60, 61",6,https://www.google.fr/books/edition/Detournement_de_majeure_vaudeville_en_un/GdosMnBkKLEC,,Google Books,1857,,,1857,1,17,,vaudeville,
+117,fre,110,,Fleur du Tyrol,Vaudeville en un acte,"18, 61",6,https://www.google.fr/books/edition/Fleur_du_Tyrol_vaudeville_en_un_acte_par/M2JKt__Ann4C,,Google Books,1872,,,1872,1,15,,vaudeville,
+118,fre,111,,Le baptême du petit Oscar,Comédie-vaudeville en cinq actes,"18, 61",6,https://www.google.fr/books/edition/Le_bapteme_du_petit_Oscar_comedie_vaudev/5RVvJELGEkEC,,Google Books,1873,,,1873,,"11, 5, 11, 8, 5",,comédie-vaudeville,
+119,fre,113,,Le luxe de ma femme,Comédie-vaudeville en un acte,"63, 41",8,https://www.google.fr/books/edition/Le_luxe_de_ma_femme_comedie_vaudeville_e/AWDy-wg47EoC,,Google Books,1868,,,1868,1,23,,comédie-vaudeville,
+120,fre,114,,Un homme de bronze,Comédie-vaudeville en un acte,"63, 41",8,https://www.google.fr/books/edition/Un_homme_de_bronze_comedie_vaudeville_en/35bQgAawjAIC,,Google Books,1865,,,1865,1,21,,comédie-vaudeville,
+121,fre,115,,Pifferaro,Comédie-vaudeville en un acte,"26, 63, 42",8,https://www.google.fr/books/edition/Le_pifferaro_com%C3%A9die_vaudeville_en_un_a/QuDhTJnUJT0C,,Google Books,1863,,,1863,1,15,,comédie-vaudeville,
+122,fre,116,,Les filles de Barazin,Comédie-vaudeville en un acte,"63, 41",8,https://www.google.fr/books/edition/Les_filles_de_Barazin_comedie_vaudeville/ANxEBv4Q2R4C,,Google Books,1872,,,1872,1,16,,comédie-vaudeville,
+123,fre,117,,Bloqué!,vaudeville en un acte,"63, 41",22,https://www.google.fr/books/edition/Bloque/vfo-AAAAIAAJ,,Google Books,1859,,,1858,1,19,,vaudeville,
+124,fre,118,,La poésie des amours et...,comédie-vaudeville en deux actes,"22, 23",4,https://www.google.fr/books/edition/La_po%C3%A9sie_des_amours_et_Com%C3%A9die_vaudev/j3j0NM928zYC,,Google Books,1849,,,1849,2,"16, 15",,comédie-vaudeville,
+125,fre,119,,Riche de cœur,Comédie-vaudeville en un acte,"22, 23",4,https://www.google.fr/books/edition/Riche_de_coeur_Com%C3%A9die_vaudeville_en_un/6VWEfFk3k5IC,,Google Books,1856,,,1856,1,17,,comédie-vaudeville,
+126,fre,120,,Ce que femme veut...,comédie-vaudeville en deux actes,"22, 23",9,https://www.google.fr/books/edition/Ce_que_femme_veut/oDMUAAAAQAAJ,,Google Books,1847,,,1847,2,"16, 18",,comédie-vaudeville,
+127,fre,123,,La clef dans le dos,Comédie-vaudeville en un acte,"22, 23",,https://www.google.fr/books/edition/La_clef_dans_le_dos/tjhMAAAAcAAJ,,Google Books,,1848,6,1848,1,28,,comédie-vaudeville,
+128,fre,124,,Le pont cassé,Comédie-vaudeville en un acte,"22, 23",23,https://www.google.fr/books/edition/Le_pont_cass%C3%A9/sUVSAAAAcAAJ,,Google Books,1850,,,1850,1,16,,comédie-vaudeville,
+129,fre,125,,Riche d'amour,Comédie-vaudeville en un acte,"22, 23, 13",15,https://www.google.fr/books/edition/Riche_d_amour/Ye84ZzxJNwAC?gbpv=1,,Google Books,,1846,"4, 25",1845,1,20,,comédie-vaudeville,
+130,fre,126,,Macaroni d'Italie,vaudeville en un acte,"22, 23, 68",4,https://www.google.fr/books/edition/Macaroni_d_Italie_Vaudeville_en_un_acte/YivKFpEEXSoC,,Google Books,1858,,,1858,1,17,,vaudeville,
+131,fre,127,,Le hanneton du Japon,Comédie-vaudeville en un acte,"22, 23",4,https://www.google.fr/books/edition/Le_hanneton_du_Japon/L7lbAAAAQAAJ,,Google Books,1858,,,1858,1,23,,comédie-vaudeville,
+132,fre,128,,Les femmes sérieuses,Comédie-vaudeville en trois actes,"26, 29, 69",8,https://books.google.fr/books?id=9_irBIIjelcC&printsec=frontcover&dq=inauthor:siraudin&hl=fr&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwiq98b-k6P_AhW-VqQEHQWZCNQQ6AF6BAgJEAI,,Google Books,1864,,,1864,3,,,comédie-vaudeville,
+133,fre,129,,L'argent fait peur,comédie-vaudeville en un acte,"26, 61",6,https://www.google.fr/books/edition/L_argent_fait_peur/da0ZeFr6Ft0C,,Google Books,1861,,,1861,1,20,,comédie-vaudeville,
+134,fre,130,,Le propriétaire à la porte,vaudeville en un acte,26,8,https://www.google.fr/books/edition/Le_propri%C3%A9taire_a_la_porte/5NRpPgwxmbgC,,Google Books,1863,,,1863,1,20,,vaudeville,
+135,fre,131,,Un avocat du beau sexe,comédie-vaudeville en un acte,"26, 30",8,https://books.google.fr/books?id=XRRdAAAAcAAJ&printsec=frontcover&dq=inauthor:siraudin&hl=fr&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwiq98b-k6P_AhW-VqQEHQWZCNQQ6AF6BAgCEAI,,Google Books,1862,,,1862,1,18,,comédie-vaudeville,
+136,fre,132,,Le passage Radziwill ou La journée aux parapluies,Vaudeville en trois actes,"18, 26, 15",6,https://www.google.fr/books/edition/Le_passage_Radzivill_ou_la_journee_aux_p/ASOxZFuuPJcC,,Google Books,1860,,,1860,3,"14, 16, 10",,vaudeville,
+137,fre,133,,L'ami des femmes,comédie en un acte mêlée de couplets,26,22,https://books.google.fr/books?id=AxVdAAAAcAAJ&pg=PA50&dq=inauthor:siraudin&hl=fr&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwj-qf_olKP_AhUyUKQEHWMsDcY4ChDoAXoECAcQAg,,Google Books,1861,,,1861,1,22,,comédie,
+138,fre,134,,Le monsieur de la Rue de Vendôme,vaudeville en un acte précédé d'un prologue,"26, 70",6,https://www.google.fr/books/edition/Le_monsieur_de_la_rue_de_vendome_vaudevi/e8mfsjpJF8wC,,Google Books,1862,,,1861,1,22,,vaudeville,
+139,fre,135,,Les idées de Beaucornet,comédie en un acte,26,24,https://www.google.fr/books/edition/Les_id%C3%A9es_de_Beaucornet/gZYGAAAAQAAJ,,Google Books,1867,,,1867,1,13,,comédie,
+140,fre,136,,Bébé-actrice,vaudeville en un acte,"26, 30",22,https://www.google.fr/books/edition/Bebe_actrice_parodie_vaudeville_en_un_ac/v026VJyVeloC,,Google Books,1861,,,1861,1,12,,vaudeville,
+141,fre,137,,Une femme aux cornichons,vaudeville en un acte,"26, 29",22,https://www.google.fr/books/edition/Une_femme_aux_cornichons_Vaudeville_en_1/o8hce-O5IwIC,,Google Books,1860,,,1860,1,19,,vaudeville,
+142,fre,138,,Les danses nationales de la France,vaudeville en trois actes et cinq tableaux,"11, 29, 15",6,https://www.google.fr/books/edition/Les_danses_nationales_de_la_France_vaude/SzJPsDBm67wC,,Google Books,1861,1861,6,1861,3,,"the characters are dances, so of course it is difficult to assign social variables",vaudeville,
+143,fre,139,,La puce à l'oreille,comédie-vaudeville en un acte,"15, 26",6,https://books.google.com/books?id=T7YXkyRpPRAC&printsec=frontcover&dq=inauthor:%22lambert-thiboust%22+vaudeville&hl=fr&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwi5npLrlqP_AhVSUqQEHY2xBKI4ChDoAXoECAcQAg,,Google Books,1867,,,1867,1,,,comédie-vaudeville,
+144,fre,140,,Le guide de l'étranger dans Paris,comédie-vaudeville en trois actes,"18, 15",6,https://gallica.bnf.fr/ark:/12148/bpt6k97497492/f4.item.texteImage,,Gallica,1860,,,1860,3,,,comédie-vaudeville,
+1,ger,45,,Als ich wiederkam,Schwank in drei Aufzügen,9.16,6,https://www.nli.org.il/en/books/NNL_ALEPH990019496860205171/NLI,FullText,,1899,1899,,,3,"8,13,13",,schwank,
+2,ger,5,,Numero Sicher,Posse in einem Akt,2,5,https://www.digitale-sammlungen.de/en/details/bsb10573590,FullText,,1858,1858,,,1,9,,posse,
+3,ger,6,,List und Phlegma,Vaudeville-Posse in einem Akt,3,4,https://archive.org/details/bub_gb_NscOAAAAYAAJ/page/n3/mode/2up,FullText,,1859,1829,,1827,1,14,firstPrinted source: https://einakter.dracor.org/angely-list-und-phlegma,posse,
+4,ger,14,,Der Liebe Onkel,Schwank in vier Aufzügen,7,9,https://books.google.fr/books?id=6pl7lmKE0LAC&printsec=frontcover&hl=fr&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false,FullText,,1873,1873,,,4,"6,19,8,6",,schwank,
+5,ger,100,,Die Sängerin und die Näherin,Posse in vier Abtheilungen,3,30,https://archive.org/details/bub_gb_c8AsAAAAYAAJ/page/n9/mode/2up,FullText,,1836,1836,,,4,"5,6,10,7",,posse,
+6,ger,99,,Die Erholungs-Reise,Posse in einem Akt,3,30,https://archive.org/details/bub_gb_c8AsAAAAYAAJ/page/n139/mode/2up,FullText,,1836,1836,,1832,1,20,dates source: https://einakter.staging.dracor.org/angely-die-erholungs-reise,posse,
+7,ger,98,,Punkt drei Uhr,Schwank in einem Akt,3,30,https://archive.org/details/bub_gb_c8AsAAAAYAAJ/page/n189/mode/2up,FullText,,1836,1836,,,1,17,firstPrinted source: https://einakter.staging.dracor.org/angely-punkt-drei-uhr,schwank,
+8,ger,96,,Zephyr und Flora,Fastnachtsschwank in einem Akt,3,30,https://archive.org/details/bub_gb_c8AsAAAAYAAJ/page/n291/mode/2up?view=theater,FullText,,1836,1836,,1839,1,18,dates source: https://einakter.dracor.org/angely-zephyr-und-flora,schwank,
+9,ger,19,,Die Teufelsfelsen,Schwank in vier Aufzügen,9,7,https://sammlungen.ulb.uni-muenster.de/hd/content/titleinfo/4265769,FullText,,1880,1880,,,4,"16,15,20,15",,schwank,
+10,ger,3,,"Junger Zunder, alter Plunder",Posse mit Gesang in drei Akten,1,3,https://www.digitale-sammlungen.de/en/details/bsb00054080,FullText,,1850,1850,,1850,3,"12,15,15",,posse,
+11,ger,43,,Pension Schöller,Posse in drei Aufzügen,15.13,6,https://www.google.fr/books/edition/Pension_Sch%C3%B6ller/xjp6CgAAQBAJ?hl=fr&gbpv=1&dq=inauthor:%22Carl+Laufs%22&printsec=frontcover,FullText,,1889,1889,,1890,3,43440,fake print value (current edition from 2015),posse,
+12,ger,4,,Der Aktienbudiker,Fastnachtsposse mit Gesang in drei Aufzügen,1,unknown,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00035452/010678.tif,TZettel,,1862,1856,,,3,,,posse,
+13,ger,26,,Die Spatzen,Schwank in drei Akten,8,unknown,https://www.archivinformationssystem.at/bild.aspx?VEID=2693494&DEID=10&SQNZNR=1,TZettel,,1886,1882,,,3,,,schwank,
+14,ger,20,,Reif-Reiflingen,Schwank in fünf Aufzügen,5,6,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00046737/014349.tif,TZettel,,1883,1882,,,5,,,schwank,
+15,ger,24,,Die goldene Spinne,Schwank in vier Aufzügen,8,7,https://sammlungen.ulb.uni-muenster.de/hd/content/titleinfo/4305461,FullText,,1885,1885,,,4,"17,10,14,11",,schwank,
+16,ger,21,,Raub der Sabinerinnen,Schwank in vier Akten,8.1,6,"http://www.zeno.org/Literatur/M/Sch%C3%B6nthan,+Franz+und+Paul+von/Drama/Der+Raub+der+Sabinerinnen",FullText,,1885,1884,,1884,4,"11,12,15,8",,schwank,
+17,ger,81,,Die Damenhüte im Berliner Theater,Posse in einem Akt,33,28,https://books.google.fr/books?id=OatIAAAAcAAJ&pg=PA1&redir_esc=y#v=onepage&q&f=false,FullText,,1821,1819,,1818,1,18,dates source: https://einakter.dracor.org/voss-die-damenhuete-im-berliner-theater,posse,
+18,ger,35,,Niobe,Schwank in drei Akten,9,14,https://digital.blb-karlsruhe.de/blbtheater/periodical/pageview/3051431,TZettel,,1894,1894,,,3,,,schwank,
+19,ger,40,,Hans Huckebein,Schwank in drei Akten,9.16,6,https://vb2.uni-wuerzburg.de/solr/theaterzettel-resources/scans/folio-big/DE-20__63_S_1898__0001__01_07_A.jpg,TZettel,,1898,1897,,1897,3,,,schwank,
+20,ger,32,,Die Orientreise,Schwank in drei Akten,9.16,6,https://vb2.uni-wuerzburg.de/solr/theaterzettel-resources/scans/folio-big/DE-20__63_S_1893__0001__01_10_A.jpg,TZettel,,1893,1892,,1892,3,,,schwank,
+21,ger,33,,Zwei glückliche Tage,Schwank in vier Akten,16.8,35,https://vb2.uni-wuerzburg.de/solr/theaterzettel-resources/scans/folio-big/DE-20__63_S_1900__0001__01_20.jpg,FullText,,1900,1892,,,4,"7,12,6,9",full text available on GoogleDrive,schwank,
+22,ger,97,,Die rothe Ampel,Schwank in drei Akten,17.15,6,https://haab-digital.klassik-stiftung.de/viewer/image/4329719541/2/LOG_0000/,FullText,,1901,1901,,,3,"17,20,19",,schwank,
+23,ger,39,,Die Logenbrüder,Schwank in drei Akten,13.17,16,https://www.theatermuseum.at/online-sammlung/detail/1398698/?offset=0&lv=list,TZettel,,1899,1897,,1897,3,,,schwank,
+24,ger,46,,Der Hochtourist,Schwank in drei Akten,17.2,16,https://vb2.uni-wuerzburg.de/solr/theaterzettel-resources/scans/folio-big/DE-20__63_S_1903__0001__12_08_A.jpg,TZettel,,1903,1903,,,3,,,schwank,
+25,ger,17,,Sodom und Gomorrha,Schwank in vier Akten,8,6,http://digital.bib-bvb.de/publish/content/27/3042566.html,FullText,,1879,1879,,,4,"7,10,12,10",,schwank,
+26,ger,58,,Die spanische Fliege,Schwank in drei Akten,28.29,13,https://digital.blb-karlsruhe.de/blbtheater/periodical/pageview/3102444,TZettel,,1920,1913,,,3,,firstPrinted source: https://en.wikipedia.org/wiki/The_Spanish_Fly_(play),schwank,
+27,ger,7,,Der Goldonkel,Posse mit Gesang und Tanz in drei Akten und sieben Bildern,4,7,https://sammlungen.ulb.uni-muenster.de/hd/content/titleinfo/4202560,FullText,,1882,1862,,1861,3,"16,25,17",,posse,
+28,ger,25,,Köpnickerstraße 120,Schwank in vier Aufzügen,5.12,7,https://sammlungen.ulb.uni-muenster.de/hd/content/titleinfo/4188634,FullText,,1885,1884,,,4,"16,22,18,13",,schwank,
+29,ger,38,,Bocksprünge,Schwank in drei Akten,17.18,unknown,https://www.theatermuseum.at/online-sammlung/detail/1398684/?offset=3&lv=list,TZettel,,1897,1896,,,3,,,schwank,
+30,ger,36,,Zwei Wappen,Schwank in vier Akten,9.16,6,https://www.nli.org.il/en/books/NNL_ALEPH990020405450205171/NLI,FullText,,1894,1894,,,4,"5,9,7,6",,schwank,
+31,ger,42,,Mamsell Tourbillon,Schwank mit Gesang in drei Akten,17.19,unknown,https://www.theatermuseum.at/online-sammlung/detail/1398701/?offset=1&lv=list,TZettel,,1900,1898,,,3,,,schwank,
+32,ger,27,,Ein toller Einfall,Schwank in vier Aufzügen,13,7,https://babel.hathitrust.org/cgi/pt?id=hvd.32044087245759&view=1up&seq=1,FullText,,1891,1886,,1886,4,"25,29,25,17",,schwank,
+33,ger,41,,In Zivil,Schwank in einem Aufzuge,16,unknown,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00034222/017235.tif,TZettel,,1897,1892,,,1,,,schwank,
+34,ger,44,,Die Goldgrube,Posse in drei Akten,15.13,unknown,https://www.archivinformationssystem.at/detail.aspx?ID=2694156,TZettel,,1899,1899,,,3,,,posse,
+35,ger,29,,Die Strohwitwe,Schwank in drei Akten,14.15,unknown,https://vb2.uni-wuerzburg.de/solr/theaterzettel-resources/scans/folio-big/DE-20__63_S_1891__0001__01_23_A.jpg,TZettel,,1891,1890,,,3,,,schwank,
+36,ger,34,,Der ungläubige Thomas,Schwank in drei Akten,15.13,12,https://vb2.uni-wuerzburg.de/solr/theaterzettel-resources/scans/folio-big/DE-20__63_S_1894__0001__10_03_A.jpg,TZettel,,1894,1893,,1893,3,,,schwank,
+37,ger,37,,Der große Komet,Schwank in drei Akten,15.13,12,https://vb2.uni-wuerzburg.de/solr/theaterzettel-resources/scans/folio-big/DE-20__63_S_1896__0001__01_17_A.jpg,TZettel,,1896,1895,,,3,,,schwank,
+38,ger,52,,Der Doppelmensch,Schwank in drei Akten,15.21,unknown,https://druckschriften-digital.marchivum.de/theaterzettel/content/zoom/528702,TZettel,,1909,1909,,,3,,,schwank,
+39,ger,47,,Los vom Manne!,Schwank in drei Akten,15.21,unknown,https://druckschriften-digital.marchivum.de/theaterzettel/content/zoom/512870,TZettel,,1903,1902,,,3,,,schwank,
+40,ger,50,,Die Tür ins Freie,Lustspiel in drei Aufzügen,9.16,unknown,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00044116/020100.tif,TZettel,,1909,1908,,,3,,,schwank,
+41,ger,48,,Der Familientag,Lustspiel in drei Aufzügen,16,6,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00054135/019123.tif,TZettel,,1905,1904,,,3,,publisher source: https://www.deutsche-digitale-bibliothek.de/item/F63D6WRPNLS6QARRBVP5P4GU6F73RHKY,0,
+42,ger,70,,Der Hunderter im Westentaschl,Schwank in drei Akten,27.2,unknown,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00044233/032073.tif,TZettel,,1936,1935,,,3,,,schwank,
+43,ger,57,,Der müde Theodor,Schwank in drei Akten,20.27,20,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00032466/029894.tif,TZettel,,1931,1913,,,3,,,schwank,
+44,ger,61,,Die drei Zwillinge,Schwank in drei Akten,31.32,16,https://dana.thulb.uni-jena.de/rsc/viewer/dana_derivate_00009330/5_961_A_1_2_1919_20_46_01.tif,TZettel,,1920,1919,,1919,3,,,schwank,
+45,ger,53,,Der fromme Habakuk,Schwank in drei Akten,22.23,15,https://archive.org/details/3569912,FullText,,1909,1909,,,3,"11,11,8",,schwank,
+46,ger,28,,Zimmer Nr. 18,Schwank in einem Act,10,19,https://archive.org/details/zimmernr18schwan00sch,FullText,,1886,1886,,,1,11,,schwank,
+47,ger,8,,Eine kranke Familie,Schwank in drei Akten,5,8,https://archive.org/details/krankefamiliesch00mose/mode/2up,FullText,,1862,1862,,,3,"15,19,14",,schwank,
+48,ger,16,,Der Bibliothekar,Schwank in vier Akten,5,6,https://www.digitale-sammlungen.de/en/details/bsb11750875,FullText,,1880,1879,,,4,"13,17,20,16",,schwank,
+49,ger,71,,Lucinde vom Theater,Gesangsposse in sechs Bildern,4,7,https://www.digitale-sammlungen.de/en/details/bsb00063442,FullText,,1883,1870,,1873,6,"9,9,2,11,9,8",nbActs: 6 Bilder (no acts),posse,
+50,ger,13,,Das Stiftungsfest,Schwank in drei Aufzügen,5,10,https://www.google.fr/books/edition/Das_Stiftungsfest/t26uEAAAQBAJ?hl=de&gbpv=0,TextExcerpts,,1871,1871,,,3,,firstPrinted source: https://de.wikipedia.org/wiki/Gustav_von_Moser; fake print value (current edition from 2023),schwank,
+51,ger,15,,Hector,Schwank in einem Act,5,11,https://www.google.fr/books/edition/Hector_Schwank_in_1_Act/hBvFQnCJnOcC?hl=de&gbpv=0,FullText,,1876,1876,,,1,21,fake firstPrinted value,schwank,
+52,ger,11,,"Aus Liebe zur Kunst, oder Ein Singspiel",Posse mit Gesang in einem Akt,5,6,https://www.digitale-sammlungen.de/en/details/bsb00056236,FullText,,1864,1864,,,1,12,fake firstPrinted value,posse,
+53,ger,51,,Wintersport,Schwank in drei Akten,20.19,unknown,https://druckschriften-digital.marchivum.de/theaterzettel/content/zoom/528439,TZettel,,1908,1908,,,3,,,schwank,
+54,ger,30,,Großstadtluft,Schwank in vier Akten,9.16,6,https://babel.hathitrust.org/cgi/pt?id=wu.89099469462&view=1up&seq=7,FullText,,1891,1891,,1891,4,"9,15,12,11",,schwank,
+55,ger,59,,Die Hosenknöpf,Schwank in einem Akt,20.27,unknown,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00048111/031322.tif,TZettel,,1935,1914,,,1,,,schwank,
+56,ger,67,,Die drei Dorfheiligen,Schwank in drei Akten,27.2,unknown,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00032209/029994.tif,TZettel,,1932,1926,,,3,,,schwank,
+57,ger,63,,"Börsenfieber, oder Er träumt von Ilse",Schwank in drei Akten,22.23,6,https://digital.blb-karlsruhe.de/blbtheater/periodical/pageview/3112458,TZettel,,1922,1921,,1921,3,,,schwank,
+58,ger,18,,Der Zugvogel,Schwank in vier Akten,5.8,6,https://digital.lb-oldenburg.de/ihd/periodical/pageview/361730,TZettel,,1883,1880,,,4,,,schwank,
+59,ger,119,,Junggesellendämmerung (Der Kampf mit dem Drachen),Schwanklustspiel in drei Akten,31.32,unknown,https://hoerspiele.dra.de/vollinfo.php?dukey=3225197&SID,BibliographicDB,,1917,1917,,,3,,fake Printed value,schwank,
+60,ger,62,,Zwangseinquartierung,Schwank in drei Akten,28.29,13,https://digital.blb-karlsruhe.de/blbtheater/periodical/pageview/3103007,TZettel,,1921,1920,,1920,3,,,schwank,
+61,ger,66,,Der wahre Jakob,Schwank in drei Akten,28.29,6,https://digital.blb-karlsruhe.de/blbtheater/periodical/pageview/3154763,TZettel,,1925,1924,,1924,3,,,schwank,
+62,ger,68,,Weekend im Paradies,Schwank in drei Akten,28.29,6,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00037773/028547.tif,TZettel,,1930,1928,,1928,3,,,schwank,
+63,ger,64,,Der keusche Lebemann,Schwank in drei Akten,28.29,6,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00042288/027148.tif,TZettel,,1926,1921,,1921,3,,,schwank,
+64,ger,69,,Unter Geschäftsaufsicht,Schwank in drei Akten,28.29,6,https://staatsarchive.thulb.uni-jena.de/rsc/viewer/ThHStAW_derivate_00034592/029086.tif,TZettel,,1931,1927,,1927,3,,,schwank,
+65,ger,113,,"Das Stelldichein im Tivoli, oder Schuster und Schneider als Nebenbuhler",Localposse mit Gesang in zwei Acten,43,24,http://kvk.bibliothek.kit.edu/view-title/index.php?katalog=ARCHIVE_ORG&url=http%3A%2F%2Farchive.org%2Fdetails%2Fbub_gb_yeU6AAAAcAAJ&signature=jkRNhSuxLIcophEiAuBENzIRaiZ_otfpU9gFE665q6M&showCoverImg=1,FullText,,1832,1832,,1832,2,7.8,dates source: https://en.wikipedia.org/wiki/Carl_Mal%C3%9F,posse,
+66,ger,112,,"Die Entführung, oder Der alte Bürger-Capitain",Lustspiel in zwei Aufzügen,43,23,https://books.google.fr/books?id=mc8-AAAAIAAJ&hl=de&pg=PR1#v=onepage&q&f=false,FullText,,1829,1820,,1821,2,17.15,dates source: https://de.wikipedia.org/wiki/Carl_Mal%C3%9F,posse,
+67,ger,105,,"Herr Hampelmann, oder Die Landpartie nach Königstein",Frankfurter Lokal-Skizze in vier Bildern,43,32,https://books.google.fr/books?id=kshIAAAAcAAJ&hl=fr&pg=PP5#v=onepage&q&f=false,FullText,,1836,1832,,1832,4,"8,14,23,28",dates source: https://en.wikipedia.org/wiki/Carl_Mal%C3%9F; nbActs: 4 Bilder (no acts),posse,
+68,ger,104,,Herr Hampelmann im Eilwagen,Hampelmanniade in sechs Bildern,43,32,https://books.google.fr/books?id=DJxoWmCIcbgC&hl=fr&pg=PP3#v=onepage&q&f=false,FullText,,1834,1833,,1833,6,"8,3,4,2,6,1",dates source: https://en.wikipedia.org/wiki/Carl_Mal%C3%9F; nbActs: 6 Bilder (no acts),posse,
+69,ger,102,,Herr Hampelmann sucht ein Logis,Lokal-Lustspiel in fünf Bildern,43,32,https://books.google.fr/books?id=TMlIAAAAcAAJ&hl=de&pg=PP5#v=onepage&q&f=false,FullText,,1834,1834,,1834,5,"6,7,9,7,4",dates source: https://en.wikipedia.org/wiki/Carl_Mal%C3%9F; nbActs: 5 Bilder (no acts),posse,
+70,ger,107,,Das Fest der Handwerker,Komisches Gemälde aus dem Volksleben in einem Akt,3,4,https://books.google.fr/books?id=tWU6AAAAcAAJ&pg=RA4-PA1&redir_esc=y#v=onepage&q&f=false,FullText,,1830,1830,,1828,1,18,dates source: https://einakter.dracor.org/angely-das-fest-der-handwerker,posse,
+71,ger,2,,Otto Bellmann,Posse mit Gesang in zwei Acten,1,2,https://www.digitale-sammlungen.de/en/details/bsb00053198,FullText,,1857,1850,,,2,24.19,,posse,
+72,ger,79,,"Ein gebildeter Hausknecht, oder Verfehlte Prüfung",Posse mit Gesang in einem Akt,1,8,https://books.google.de/books?id=NFREUUh49u0C&printsec=frontcover&hl=de&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false,FullText,,1858,1858,,1858,1,19,date sources: https://de.wikipedia.org/wiki/Ein_gebildeter_Hausknecht,posse,
+73,ger,75,,"Haussegen, oder Berlin wird Weltstadt",Vaudeville in einem Akt,1,27,https://www.google.fr/books/edition/Lustige_Werke/Y1h1Qssoq7sC,FullText,,1870,1850,,,1,18,,posse,
+74,ger,106,,Die Reise auf gemeinschaftliche Kosten,Komisches Gemälde in fünf Aufzügen,3,7,https://www.digitale-sammlungen.de/en/details/bsb10135803,FullText,,1868,1830,,,5,"10,6,8,9,7",,posse,
+75,ger,95,,Eine Wohnung ist zu vermiethen in der Stadt. Eine Wohnung ist zu verlassen in der Vorstadt. Eine Wohnung mit Garten ist zu haben in Hietzing,Lokalposse mit Gesang in drei Aufzügen,6,unknown,https://www.nestroy-werke.at/index.php?r=play/viewpdf/id/30,BibliographicDB,,1837,1837,,1837,3,"29,21,30",dates source: https://de.wikipedia.org/wiki/Eine_Wohnung_ist_zu_vermiethen_in_der_Stadt,posse,
+76,ger,31,,Das gelobte Land,Schwank in vier Akten,8.1,unknown,https://vb2.uni-wuerzburg.de/solr/theaterzettel-resources/scans/folio-big/DE-20__63_S_1893__0001__09_29_A.jpg,TZettel,,1893,1892,,,4,,,schwank,
+77,ger,82,,Der Friseur,Schwank in einem Akte,37,unknown,https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN1808798694&PHYSID=PHYS_0003&DMDID=,FullText,,1843,1843,,1843,1,28,dates source: https://einakter.dracor.org/vanoni-der-friseur,schwank,
+78,ger,91,,Datterich,Lokalposse in sechs Bildern,41,18,http://tudigit.ulb.tu-darmstadt.de/show/Ro-497,FullText,,1841,1841,,1862,6,"4,3,11,7,11,12",dates source: https://de.wikipedia.org/wiki/Datterich; nbActs: 6 Bilder (no acts),posse,
+79,ger,94,,"Des Burschen Heimkehr, oder Der tolle Hund",Lustspiel in vier Aufzügen,41,33,https://www.projekt-gutenberg.org/niebergl/heimkehr/titlepage.html,FullText,,1837,1837,,,4,"9,10,12,14",,posse,
+80,ger,12,,Eine leichte Person,Posse mit Gesang in drei Abteilungen und acht Bildern,4,7,https://sammlungen.ulb.uni-muenster.de/hd/content/titleinfo/4202962,FullText,,1880,1864,,1864,3,"21,22,17",,posse,
+81,ger,9,,"Unruhige Zeiten, oder Lietze's Memoiren",Posse mit Gesang und Tanz in drei Akten und acht Bildern,4,7,https://sammlungen.ulb.uni-muenster.de/hd/content/titleinfo/4201571,FullText,,1882,1862,,1862,3,"22,22,15",,posse,
+82,ger,23,,Nicht I a,Schwäbisches Lustspiel in drei Aufzügen,11,17,https://books.google.fr/books/about/Nicht_I_a.html?id=1koHAAAAQAAJ,FullText,,1884,1884,,,3,44178,,posse,
+83,ger,10,,Umsonst!,Posse mit Gesang und Tanz in drei Akten,6,unknown,https://www.nestroy.at/nestroy-stuecke/77_umsonst/umsonst.pdf,FullText,,1857,1857,,1857,3,"21,17,34",dates source: https://de.wikipedia.org/wiki/Umsonst!,posse,
+84,ger,87,,Einmal hunderttausend Thaler,Posse mit Gesang in drei Akten,1,27,https://books.google.de/books?id=hXOxbPRILzQC&pg=PAPP4#v=onepage&q&f=false,FullText,,1850,1847,,,3,"9,15,11",,posse,
+85,ger,1,,Berlin bei Nacht,Vaudeville-Posse in drei Aufzügen,1,1,https://www.digitale-sammlungen.de/en/details/bsb00062580 ,FullText,,1849,1849,,,3,"8,18,12",,posse,
+86,ger,77,,Kyritz-Pyritz,Posse mit Gesang in drei Aufzügen,34.35,7,https://lib.ugent.be/catalog/rug01:001807519/items/800000019874,TZettel,,1886,1886,,,3,,fake Printed value; firstPrinted source: https://de.wikipedia.org/wiki/Oskar_Justinus,posse,
+87,ger,103,,Tritschtratsch,Lokalposse mit Gesang in einem Ackte,6,unknown,https://www.nestroy-werke.at/index.php?r=play/viewpdf/id/20,BibliographicDB,,1833,1833,,1833,1,,dates source: https://de.wikipedia.org/wiki/Der_Tritschtratsch,posse,
+88,ger,111,,Die Schneider-Mamsells,Vaudeville in einem Akt,3,4,https://books.google.fr/books?id=y2U6AAAAcAAJ&hl=fr&pg=RA3-PA1#v=onepage&q&f=false,FullText,,1834,1834,,1824,1,20,dates source: https://einakter.dracor.org/angely-die-schneider-mamsells,posse,
+89,ger,73,,Sieben Mädchen in Uniform,Vaudeville-Posse in einem Akt,3,4,https://sammlungen.ulb.uni-muenster.de/hd/content/titleinfo/4256019,FullText,,1870,1830,,1825,1,18,dates source: https://einakter.dracor.org/angely-sieben-maedchen-in-uniform,posse,
+90,ger,74,,"Doktor Peschke, oder Kleine Herren",Posse mit Gesang in einem Akt,1,27,https://vb2.uni-wuerzburg.de/solr/theaterzettel-resources/scans/folio-big/DE-20__63_S_1858__0001__03_08.jpg,TZettel,,1858,1850,,,1,,,posse,
+91,ger,72,,Einer von unsere Leut,Posse mit Gesang in drei Akten,1,7,https://vb2.uni-wuerzburg.de/solr/theaterzettel-resources/scans/folio-big/DE-20__63_S_1860__0001__09_28.jpg,TZettel,,1860,1860,,,3,,fake firstPrinted value,posse,
+92,ger,76,,Damenschuhe im Theater,Posse in zwei Aufzügen,33,28,https://digital.zlb.de/viewer/image/14195962/128/,FullText,,1822,1822,,,2,17.12,firstPrinted source: https://www.deutsche-biographie.de/sfz84107.html,posse,
+93,ger,65,,Die Hamburger Filiale,Schwank in drei Akten,17.2,16,https://www.zvab.com/servlet/BookDetailsPL?bi=18768472132&searchurl=kn%3Dmax%2Bneal%26sortby%3D20&cm_sp=snippet-_-srp1-_-image6#&gid=1&pid=2,TZettel,,1925,1922,,1922,3,,,schwank,
+94,ger,60,,Der heilige Florian,Satirischer Schwank in drei Akten,20.3,unknown,https://www.zvab.com/servlet/BookDetailsPL?bi=4724927485&searchurl=kn%3Dmax%2Bneal%26sortby%3D20&cm_sp=snippet-_-srp1-_-image9,TZettel,,1919,1919,,,3,,,schwank,
+95,ger,49,,Der Kilometerfresser,Schwank in drei Akten,17,unknown,https://www.archivinformationssystem.at/detail.aspx?ID=2694461,TZettel,,1905,1904,,,3,,,schwank,
+96,ger,54,,Polnische Wirtschaft,Posse mit Gesang in 3 Akten,17.24,unknown,https://hoerspiele.dra.de/vollinfo.php?dukey=3084333,BibliographicDB,,1909,1909,,1910,3,,premiere source: https://de.wikipedia.org/wiki/Polnische_Wirtschaft_(Operette) ,posse,
+97,ger,92,,Die verhängnisvolle Faschingsnacht,Lokalposse mit Gesang in drei Aufzügen,6,unknown,https://www.nestroy-werke.at/index.php?r=play/viewpdf/id/36,BibliographicDB,,1839,1839,,1839,3,"29,25,15",dates source: https://de.wikipedia.org/wiki/Die_verh%C3%A4ngnisvolle_Faschingsnacht,posse,
+98,ger,90,,"Das Mädl aus der Vorstadt, oder Ehrlich währt am längsten",Posse mit Gesang in drei Acten,6,unknown,https://www.projekt-gutenberg.org/nestroy/vorstadt/vorstadt.html,FullText,,1841,1841,,1841,3,"21,20,19",,posse,
+99,ger,89,,Einen Jux will er sich machen,Posse mit Gesang in vier Aufzügen,6,unknown,https://www.nestroy.at/nestroy-stuecke/44_jux/jux-sw.pdf,FullText,,1842,1842,,1842,4,"21,19,13,10",dates source: https://de.wikipedia.org/wiki/Einen_Jux_will_er_sich_machen,posse,
+100,ger,88,,"Eisenbahnheiraten, oder Wien, Neustadt, Brünn",Posse mit Gesang in drei Acten,6,unknown,https://www.nestroy-werke.at/index.php?r=play/viewpdf/id/47,BibliographicDB,,1844,1844,,1844,3,"18,15,16",,posse,
+101,ger,109,,Die Berliner in Wien,Liederposse in einem Aufzug,42,21,https://books.google.fr/books?id=JgezAgO-nqIC,FullText,,1826,1826,,,1,20,,posse,
+102,ger,110,,Herr Josef und Frau Baberl,Posse mit Gesang in drei Aufzügen,44,22,https://www.digitale-sammlungen.de/en/details/bsb00055632,FullText,,1840,1840,,1826,3,41935,firstPrinted source: https://de.wikipedia.org/wiki/Josef_Alois_Gleich,posse,
+103,ger,93,,"Dreiunddreißig Minuten in Grüneberg, oder der halbe Weg",Possenspiel in einem Akt,42,34,https://books.google.com/books?id=Gu1LxKya5MkC&pg=PA213,FullText,,1839,1839,,,1,15,dates source: https://einakter.dracor.org/holtei-dreiunddreissig-minuten-in-grueneberg-oder-der-halbe-weg,posse,
+104,ger,108,,Die Wiener in Berlin,Liederposse in einem Aufzug,42,21,https://books.google.fr/books?id=JgezAgO-nqIC,FullText,,1826,1824,,,1,15,firstPrinted source: https://de.frwiki.wiki/wiki/Karl_Eduard_von_Holtei,posse,
+105,ger,118,,Die Bürger in Wien,Locale Posse in drey Acten,45,unknown,https://books.google.fr/books?id=p4j1xwEACAAJ&hl=fr&pg=PA1#v=onepage&q&f=false,FullText,,1819,1813,,1813,3,"15,23,12",dates source: https://de.wikipedia.org/wiki/Die_B%C3%BCrger_in_Wien,posse,
+106,ger,116,,"Die Musikanten am Hohen Markt, erster Theil",Eine lokale Posse mit Gesang in drey Aufzügen,44,26,https://www.digitale-sammlungen.de/en/details/bsb00056126,FullText,,1816,1816,,1815,3,"15,13,15",,posse,
+107,ger,117,,"Herr Adam Kratzerl von Kratzerlfeld, als zweyter und letzer Theil der Musikanten am Hohenmarkt",Eine lokale Posse mit Gesang in drey Aufzügen,44,26,https://www.digitale-sammlungen.de/en/details/bsb00056117,FullText,,1816,1816,,1815,3,"12,12,6",,posse,
+108,ger,115,,Der Fiaker als Marquis,Komische Oper in drey Acten,45,25,https://www.digitale-sammlungen.de/en/details/bsb10104999,FullText,,1821,1821,,1816,3,"13,23,17",,posse,
+109,ger,114,,Die falsche Primadonna,Posse mit Gesang in zwey Acten,45,25,https://books.google.fr/books?id=d5VRAAAAcAAJ&hl=fr&pg=PA1#v=onepage&q&f=false,FullText,,1820,1820,,1818,2,26.28,,posse,
+110,ger,55,,Bachmeisels Himmelfahrt,Schwank in vier Akten,15.25,unknown,https://digital.lb-oldenburg.de/ihd/periodical/pageview/376066,TZettel,,1911,1910,,,4,,,schwank,
+111,ger,56,,So’n Windhund,Schwank in drei Akten,17.26,unknown,https://digital.staatsbibliothek-berlin.de/werkansicht/?PPN=PPN74662543X,TZettel,,1916,1911,,,3,,,schwank,
+112,ger,22,,Der Schwabenstreich,Lustspiel in vier Akten,8,6,https://babel.hathitrust.org/cgi/pt?id=mdp.39015065920111&view=1up&seq=9,FullText,,1883,1882,,,4,"9,13,14,9",,schwank,
+113,ger,83,,"Fritz Schwigerling, oder der Liebestrank",Schwank in drei Aufzügen,38,29,https://dracor.org/ger/wedekind-fritz-schwigerling#text,FullText,,1969,1899,,,3,43022,firstPrinted source: https://de.wikipedia.org/wiki/Frank_Wedekind,schwank,
+114,ger,84,,"Der Wirrwarr, oder der Muthwillige",Posse in fünf Akten,39,31,https://www.projekt-gutenberg.org/kotzebue/wirrwarr/index.html,FullText,,1836,1803,,,5,"8,11,13,9,9",firstPrinted source: https://de.wikipedia.org/wiki/August_von_Kotzebue,posse,
+115,ger,85,,Pagenstreiche,Posse in fünf Aufzügen,39,31,https://www.projekt-gutenberg.org/kotzebue/pagenstr/titlepage.html,FullText,,1820,1804,,,5,"17,14,15,13,17",firstPrinted source: https://de.wikipedia.org/wiki/August_von_Kotzebue,posse,
+116,ger,86,,Drei Stunden vor der Hochzeit,Schwank in einem Akt,40,30,https://books.google.fr/books?id=Dq87AAAAcAAJ,FullText,,1836,1836,,1838,1,14,dates source: https://einakter.dracor.org/herrmann-drei-stunden-vor-der-hochzeit,schwank,
+117,ger,78,,Ein Toller Fall ,Musikalischer Schwank in drei Akten,31.32,unknown,https://digital.blb-karlsruhe.de/download/webcache/1104/3858588,TZettel,,1943,1941,,,3,,firstPrinted source: https://de.wikipedia.org/wiki/Carl_Mathern,schwank,
+118,ger,80,,"Gräfin Guste, oder ein gebildeter Hausknecht, des Werkes zweiter Theil",Posse mit Gesang in einem Akt,1.36,27,https://loc.getarchive.net/media/plays-selections-9b7dc6,TextExcerpts,,1863,1863,,,1,11,,posse,
+119,ger,101,,"Zu ebener Erde und erster Stock, oder Die Launen des Glückes",Lokalposse mit Gesang in drei Aufzügen,6,unknown,https://www.projekt-gutenberg.org/nestroy/ebenerde/ebenerde.html,FullText,,1835,1835,,1835,3,"20,35,34",dates source: https://de.wikipedia.org/wiki/Zu_ebener_Erde_und_erster_Stock ,posse,
+120,ger,120,,Der historische Festzug,Schwank in drei Akten,15.21,12,https://haab-digital.klassik-stiftung.de/viewer/image/4328079433/2/LOG_0000/,FullText,,1901,1901,,,3,"19,34,24",,schwank,
+121,ger,121,,Miss Domino,Schwank in drei Akten,15.46,6,https://haab-digital.klassik-stiftung.de/viewer/image/4348292310/2/LOG_0000/,FullText,,1897,1897,,,3,"10,15,14",,schwank,
+122,ger,122,,Five o’clock,Schwank in drei Akten,15.21,6,https://haab-digital.klassik-stiftung.de/viewer/image/4329720884/2/LOG_0000/,FullText,,1905,1904,,,3,"18,22,11",,schwank,
+123,ger,123,,Das Bärenfell,Schwank in drei Akten,16,6,https://haab-digital.klassik-stiftung.de/viewer/image/4329719959/2/LOG_0000/,FullText,,1900,1900,,,3,"10,17,10",,schwank,
+124,ger,124,,Familie Schierke,Schwank in drei Akten,16,6,https://haab-digital.klassik-stiftung.de/viewer/image/4329719282/2/LOG_0000/,FullText,,1902,1902,,1902,3,"9,10,8",,schwank,
+125,ger,125,,Das schwache Geschlecht,Schwank in einem Akt,16,6,https://haab-digital.klassik-stiftung.de/viewer/image/4329720442/11/LOG_0004/,FullText,,1900,1900,,,1,8,,schwank,
+126,ger,126,,Das Pulverfaß,Schwank in einem Akt,16,6,https://haab-digital.klassik-stiftung.de/viewer/image/4329720442/51/LOG_0015/,FullText,,1900,1900,,,1,10,,schwank,
+127,ger,127,,Der neue Vormund,Schwank in einem Akt,16,6,https://haab-digital.klassik-stiftung.de/viewer/image/4329720442/99/LOG_0028/,FullText,,1900,1900,,,1,11,,schwank,
+128,ger,128,,Flotten-Manöver,Schwank in drei Akten,17.19,6,https://haab-digital.klassik-stiftung.de/viewer/image/4329719770/2/LOG_0000/,FullText,,1899,1899,,,3,"18,18,17",,schwank,
+129,ger,129,,Hochzeitsfreuden,Schwank in drei Akten,17.19,12,https://haab-digital.klassik-stiftung.de/viewer/image/4329720663/2/LOG_0000/,FullText,,1900,1900,,,3,"13,15,16",,schwank,
+130,ger,130,,Der Stille Associé,Posse in vier Akten,13.15,6,https://haab-digital.klassik-stiftung.de/viewer/image/4328012509/2/LOG_0000/,FullText,,1891,1891,,,4,"14,16,19,17",,posse,
+131,ger,131,,Papa's Flitterwochen,Schwank in vier Aufzügen,13,6,https://haab-digital.klassik-stiftung.de/viewer/image/4328024655/2/LOG_0000/,FullText,,1884,1884,,,4,"18,18,18,21",,schwank,
+132,ger,132,,Der Gedankenleser,Schwank in einem Akt,13,6,https://haab-digital.klassik-stiftung.de/viewer/image/4329722763/2/LOG_0000/,FullText,,1887,1887,,,1,14,,schwank,
+133,ger,133,,Der Stolz der Familie,Schwank in drei Akten,13,12,https://haab-digital.klassik-stiftung.de/viewer/image/4327973785/2/LOG_0000/,FullText,,1893,1893,,,3,"10,20,14",,schwank,
+134,ger,134,,Leichte Streiche,Schwank in drei Akten,13,6,https://haab-digital.klassik-stiftung.de/viewer/image/4329721376/2/LOG_0000/,FullText,,1886,1886,,,3,45241,,schwank,
+135,ger,135,,Der Sündenbock,Schwank in drei Akten,13,6,https://haab-digital.klassik-stiftung.de/viewer/image/4329721503/2/LOG_0000/,FullText,,1888,1887,,,3,41254,,schwank,
+136,ger,136,,Die gütige Fee,Schwank in drei Akten,13,12,https://haab-digital.klassik-stiftung.de/viewer/image/4328039172/2/LOG_0000/,FullText,,1896,1896,,,3,"17,26,15",,schwank,
+137,ger,137,,Der schöne Arno,Schwank in drei Akten,13.18,6,https://haab-digital.klassik-stiftung.de/viewer/image/432972104X/2/LOG_0000/,FullText,,1900,1900,,,3,"12,24,14",,schwank,
+138,ger,138,,Der höchste Trumpf,Schwank in drei Akten,13.15,12,https://haab-digital.klassik-stiftung.de/viewer/image/4328015729/9/,FullText,,1894,1894,,,3,"19,24,19",,schwank,
+139,ger,139,,Oberst Pemperton,Schwank in drei Akten,13.47,12,https://haab-digital.klassik-stiftung.de/viewer/image/4328043501/2/LOG_0000/,FullText,,1899,1898,,,3,"14,13,12",,schwank,
+140,ger,140,,Hans in allen Gassen,Schwank in drei Akten,13.48,12,https://haab-digital.klassik-stiftung.de/viewer/image/4327984566/2/LOG_0000/,FullText,,1903,1903,,,3,"16,23,24",,schwank,
+141,ger,141,,Das Schützenfest,Schwank in drei Akten,14.15,12,https://haab-digital.klassik-stiftung.de/viewer/image/4329721228/2/LOG_0000/,FullText,,1889,1889,,,3,"18,13,12",,schwank,
+142,ger,142,,Das Feigenblatt,Schwank in drei Akten,19.2,12,https://haab-digital.klassik-stiftung.de/viewer/image/4329720159/2/LOG_0000/,FullText,,1905,1905,,,3,"22,14,20",,schwank,
+143,ger,143,,Operationen,Schwank in vier Akten,9.49,12,https://haab-digital.klassik-stiftung.de/viewer/image/4327969907/6/,FullText,,1879,1879,,,4,"11,21,16,12",,schwank,
+1,als,,,Der Pfingstmontag,Lustspiel in Straßburger Mundart. Nach der vom Dichter durchgesehenen zweiten Ausgabe des Jahres 1816 herausgegeben von J. Lefftz und E. Marckwald,35,29,,,,1816,,,,,,,comedy,lustspiel
+2,als,,,In's Ropfer's Apothek,Schwank in 3 Aufzügen von G. Stoskopf,25,30,,,,1907,,,1907,,,,comedy,schwank
+3,als,,,D'r Hoflieferant,Elsassiche Komödie in 3 Aufzügen von G. Stoskopf,25,1,,,,1906,,,1905,,,,comedy,
+4,als,,,D'r Herr Maire,Lustspiel in drei Aufzügen von G. Stoskopf,25,2,,,,1898,,,1898,,,,comedy,lustspiel
+5,als,,,E Dienschtbott wurd g'suecht,E Schnirichel in 1 Akt vum Camille Jost,11,3,,,,1928,,,,,,,comedy,
+6,als,,,D'r poetisch Oscar,einakter,8,2,,,,1937,,,,3,,,comedy,einakter
+7,als,,,Sainte-Cécile!,Lustspiel in einem Aufzuge in Straßburger Mundart von Julius Greber,5,1,,,,1897,,,,3,,,comedy,lustspiel
+8,als,,,Sainte Barbe,Comédie in Aam Uffzug vun Jean Riff,21,6,,,,1919,,,,3,,,comedy,
+9,als,,,Goal!,E luschtigs Schwänkele üss'em Sportsläwe vun Jean Riff,21,7,,,,1922,,,,1,,,comedy,schwank
+10,als,,,Der Zeuge,Gerichtsscene in einem Aufzug,5,1,,,,1906,,,,1,,,comedy,gerichtsscene
+11,als,,,s Gaischtert im Hüss,E grüsligi Szene vun Ferd. Bastian,1,4,,,,not before 1927,,,,1,,,horreur,
+12,als,,,D'Madam fahrt Velo,E modern's Lustspiel in 1 Akt,9,80,,,,1901,,,,1,,,comedy,lustspiel
+13,als,,,E Mässigkeitsaposchtel,Komische Szene mit Gesang in elsässer Mundart von Emilie Hahn,7,9,,,,1910,,,,1,,,comedy,
+14,als,,,D'r Stadtnarr,Volksstüeck in 3 Akt.,8,1,,,,1907,,,,1,,,comedy,volksstück
+15,als,,,Zwei Meier oder D'r Bombié,Comedie-Bouffe in 1 Act,9,8,,,,1896,,,,1,,,comedy,comedie-bouffe
+16,als,,,s Dunneraxl,Drama in einem Akt,1,5,,,,1907,,,,1,,,drama,
+17,als,,,D' Madam und d'Magd,Schwank in einem Aufzug,5,1,,,,1903,,,,1,,,comedy,schwank
+18,als,,,D' Brueder,"Volksstück in 5 Bilder üs dr Zitt vun 1914 bis 1918|vun Paul Clemens, Membre du Théâtre Alsacien",3,10,,,,1920,,,,3,,,comedy,volksstück
+19,als,,,D'r Amerikaner,"Elsässisches Volksstück in 3 Aufzügen|von Paul Clemens, Membre du Théâtre Alsacien",3,10,,,,1920,,,,1,,,comedy,volksstück
+20,als,,,D'r Hans im Schnokeloch,"Volksspiel in 4 Aufzügen mit Musik, Gesang und Tanz von Ferd. Bastian",1,23,,,,1903,,,,1,,,comedy,volksspiel
+21,als,,,D'r verhàxt Herbst,"Lustoperettle uf Colmererditsch, én vièr Acte|vo J. Mangold, Pastébeck|Musik vo J. B. Weckerlin, du Conservatoire de Paris",15,12,,,,1879,,,,1,,,comedy,lustoperettle
+22,als,,,D'r Döüsigmarkschin,Schwank in einem Aufzug|in Straßburger Mundart,5,1,,,,1906,,,,5 bilder,,,comedy,schwank
+24,als,,,D'r Hüssjé,Luschtpiel in 1 Act|von D. G. Ad. Horsch,9,8,,,,1897,,,,3,,,comedy,lustspiel
+25,als,,,In dr Awril g'schickt,Lustspiel in zwei Akten|von M. Weigel,30,13,,,,1930,,,,4,,,comedy,lustspiel
+26,als,,,L'oubli? (Das Vergessen?),Dramatische Skizze in einem Akt,6,14,,,,1905,,,,4,,,drama,
+27,als,,,Zum 70. Geburtstag,Lustspiel in zwei Aufzügen|von M. Weigel,30,13,,,,1932,,,,1,,,comedy,lustspiel
+28,als,,,Lucie,Dramatisches Sittenbild in einem Aufzuge in Straßburger Mundart,5,1,,,,1896,,,,1,,,drama,
+29,als,,,Yo-Yo!,E Geduldspiel in einem Akt,28,15,,,,1932,,,,2,,,comedy,geduldspiel
+30,als,,,Gschpàngschter,Elsàssich Theaterstück für Theater un Vereiner mit un ohne Damerolle uffierbar.|vo Josef Meyer,16,16,,,,1908,,,1907,1,,,comedy,
+31,als,,,A gelungener Patient,Komische Duoszene für zwei Herren von Martin Huck,10,13,,,,1931,,,,2,,,comedy,duoszene
+32,als,,,Andres Ruffenach,Bauerndrama in vier Akten,1,5,,,,1912,,,,1,,,drama,bauerndrama
+33,als,,,E Reis' in's Hochgebirj,Schwank in einem Akt von Ch. F. Kettner,33,17,,,,1881,,,,1,,,comedy,schwank
+34,als,,,E Sportshochzitt,E Farce in aam Akt,1,2,,,,1937,,,,1,,,comedy,farce
+35,als,,,Uff Dr Hochzittsreis,Luschtspiel in 1 Akt im els. Dialekt,33,18,,,,1924,,,,1,,,comedy,lustspiel
+36,als,,,D'r Cousin Réfractaire,E Stroßburjer Familiefarce in 2 Akte,6,14,,,,1907,,,,4,,,comedy,farce
+37,als,,,D'Mamsell Elis,Volksstück üsm Bürelawe in 3 Akte un 1 Vorakt,24,10,,,,1920,,,,1,,,comedy,volksstück
+38,als,,,D' Schloofere,Elsässischi Quacksalwers-Komedie in aam Uffzug,21,19,,,,1914,,,,1,,,comedy,quacksalwers-komedie
+39,als,,,D' Satisfaction,Farce in zwei Scene,11,3,,,,1924,,,,1,,,comedy,farce
+40,als,,,D'r Erbunkel,Lustspiel in eim Uffzug,21,20,,,,1903,,,,2,,,comedy,lustspiel
+41,als,,,D'r Fremdelegionär,"Elsässisches Lebensbild in 3 Aufzügen von Hermann Günther, Mitglied des Elsässischen Theaters Strassburg",6,14,,,,1903,,,,1 Vorspiel + 3 Akte,,,drama,lebensbild
+42,als,,,D'r Hasestrickler,Lustspiel in aam Uffzueg,21,7,,,,1922,,,,1,,,comedy,lustspiel
+43,als,,,D'r Itzig em Fass,Lustspiel in 1 Akt von Leo Pfiffer,18,13,,,,1938,,,,1,,,comedy,lustspiel
+44,als,,,D'r Kindbetter,Schwank in einem Akt,1.2,5,,,,1908,,,,1,,,comedy,schwank
+45,als,,,D'r Maischter hett gewunne!,Schwank in aam Akt,1,2,,,,1937,,,,3,,,comedy,schwank
+46,als,,,D'r Millionengartner,Volksschauspiel in 3 Aufzügen in elsässer Mundart,1,5,,,,1900,,,,1,,,comedy,volksschauspiel
+47,als,,,D'r Kœnig Charles X im Elsass,"Lustspiel in 3 Akten von Ch. Rath, neu bearbeitet und herausgegeben von A. Seyller",20,13,,,,1930,,,,1,,,comedy,lustspiel
+48,als,,,D'r Napoleon,Volksstück in 3 Aufzügen aus der Zeit November 1918,29,10,,,,1920,,,,1,,,comedy,volksstück
+49,als,,,D'r Parisler,"Elsässisches Volksstück mit Gesang und Tanz in einem Aufzug, Gesangseinlagen von J. Heyberger u. Johannes Pache",21,21,,,,1904,,,,1,,,comedy,volksstück
+50,als,,,D'r Prophet,Drama in fünf Aufzügen,25,1,,,,1902,,,1902,3,,,drama,
+51,als,,,D'r Schnider von Gambse,Lustspiel von H. Kleisecker,12,2,,,,1920,,,,3,,,comedy,lustspiel
+52,als,,,Bureaukrate!,Dialektkomödie in einem Akt,13,10,,,,1923,,,,3,,,comedy,
+53,als,,,D'r erscht Box,Schwank in aam Uffzug,21,11,,,,1908,,,,1,,,comedy,schwank
+54,als,,,Zue Großmuedders Zitte (Du temps des grand'mères),E Liewes-Scene mit ine Couplet,1,5,,,,1922,,,,5,,,comedy,liewes-scene
+55,als,,,E Hochzitter im Kleiderkaschte,Schwank in einem Aufzug in Straßburger Mundart,5,1,,,,1894,,,,1,,,comedy,schwank
+56,als,,,300 Mark Belohnung,Schwank in einem Aufzug im elsässischer Mundart,5,1,,,,1910,,,,1,,,comedy,schwank
+57,als,,,Heimlichi Lieb,Elsässisch's Volksstüeck in 7 Bilder,4,2,,,,1914,,,1935,1,,,drama,volksstück
+58,als,,,S'Vogesehiesel,Luschtspiel üss dr Vosges in 1 Akt vun Paul Clemens Nach einer alten Kalendererzählung,3,10,,,,1920,,,,1,,,comedy,lustspiel
+59,als,,,Ar esch mondsechtig,E Luschtspeel vun dr Wohnungsnot en 1 Uffzug umgearbeitet und herausgegeben von Albert Schott,23,9,,,,1921,,,,1,,,comedy,lustspiel
+60,als,,,Verboteni Lieb,Lustspiel in einem Aufzug in Straßburger Mundart von Jean Riff,21,1,,,,1906,,,,1,,,comedy,lustspiel
+61,als,,,s' Paradies,E luschdigs Schwänkele in aam Uffzug von Jean Riff,21,7,,,,1922,,,,7 Bilder,,,comedy,schwank
+62,als,,,Lisbeth,Schauspiel in einem Aufzuge,5,1,,,,1900,,,,1,,,drama,
+63,als,,,Gouverneur fur 24 Stund,"E Schwank in 1 Akt nooch're spanische, g'schichtliche Erzählung üss'm Johr 1420, verarweit unn iwersetzt vum Camille Jost",11,3,,,,1928,,,,1,,,comedy,schwank
+64,als,,,D'r Babbler,Volksstück in drei Szenen von Gustav Lasch,14,11,,,,1911,,,,1,,,comedy,volkstück
+65,als,,,Lettre de France,"E-n-elsässischs Heimetspiel, gedicht uff's Bild vum Frédéric Régamey vun F. X. Neukirch (Zuem erschte Mol gespielt am Banquet vum H.S.)",17,n.d.,,,,1910,,,,1,,,historisch,heimetspiel
+66,als,,,Mister Smith,Schwank in einem Aufzug in Strassburger Mundart von Julius Greber,5,1,,,,1911,,,,1,,,comedy,schwank
+67,als,,,Uewer unseri Kraft,Komödie in eim Uffzug.,21,3,,,,1907,,,,1,,,comedy,
+68,als,,,E hitzigi Debatt',(Nach einer älteren Idee.) E üssergewöhnlichi Wirtshüs-Scen'.,21,3,,,,1907,,,,1,,,comedy,wirthshüs-scene
+69,als,,,So e liederlicher Frack!,odder:E foljieschwäri Hüssuechung. E Schwank in 1 Uffzug,11,3,,,,1928,,,,1,,,comedy,schwank
+70,als,,,Gift!,Schwank in einem Akt in elsässischer Mundart,3,10,,,,1919,,,,1,,,comedy,schwank
+71,als,,,E Mann fur mini Nièce,Comédie-Bouffe in eim Akt von D. G. Ad. Horsch,9,11,,,,1895,,,,1,,,comedy,comedie-bouffe
+72,als,,,Verzwickti Hochzitts-Affäre,Elsässischer Schwank in einem Aufzug (frei nach Labiche),5,19,,,,1913,,,,1,,,comedy,schwank
+73,als,,,Professer Dackeloriüs mit sim künstliche Mensch « Coco »,E komischi Scène für 2 Persone vun Paul CLEMENS,3,18,,,,1925,,,,1,,,comedy,komischi scene
+74,als,,,Michel Strohkopf oder Die fidele Regimentskapelle,"Unsinn mit Gesang, Musik und Tanz in einem Aufzug",32,27,,,,1893,,,,1,,,comedy,unsinn
+75,als,,,Neui Hosse,Comédie-Bouffe in eim Akt von D. G. Ad. Horsch,9,11,,,,1908,,,,1,,,comedy,comedie-bouffe
+76,als,,,D'r lätz Bardessü,Lustspiel ein einem Aufzug von Julius Greber,5,1,,,,1904,,,,1,,,comedy,lustsspiel
+77,als,,,D'r letz Unkel,Volksstueck,14,24,,,,1912,,,,1,,,comedy,volksstück
+78,als,,,Im Wald,Volksstück in zwei Aufzügen,1,5,,,,1907,,,,1,,,comedy,volksstück
+79,als,,,Was d' Steckelburjer vun d'r „Université“ saaue,"Humoristisches Intermezzo von Dr. Heinrich Schneegans Privatdocent, Aufgeführt zum Universitäts-Jubiläum am 2. Mai 1897",22,1,,,,1897,,,1897,1,,,comedy,Humoristisches Intermezzo
+80,als,,,s Afrikaner Frànzele,"Scene üs 'm algerische Colon-Lawe, Comedie in 1 Akt",20,25,,,,1897,,,,1,,,comedy,
+81,als,,,Ohne Köche,Comedie in 1 Akt,20,25,,,,1897,,,,1,,,comedy,
+82,als,,,D'r erscht Händel,E Farce in 2 Akt (mit d'r nämlich Szenerie) vum Camille Jost,11,3,,,,1928,,,,2,,,comedy,farce
+83,als,,,D'Jumpfer Prinzesse,Schauspiel in 3 Aufzügen in Straßburger Mundart von Julius Greber. Mit einer Deckenzeichnung von C. Spindler.,5,1,,,,1899,,,,1,,,drama,
+84,als,,,„Charlot“,"E ürgelungenes Stückel in 1 Akt im elsässischa Dialekt von Paul Clemens, Bischheim (Nur Herrenrollen)",3,10,,,,1920,,,,1,,,comedy,
+85,als,,,'s Teschtament,Volksstück in drei Aufzügen von Julius Greber,5,1,,,,1910,,,,1,,,comedy,volksstück
+86,als,,,'s Orakel,Lustspiel in 1 Akt vun G. Stoskopf,25,7,,,,not before 1918,,,,2,,,comedy,lustspiel
+87,als,,,E Diplomat,Zwei Lustpiele in Strassburger Mundart von G. Stoskopf. Mit 7 Illustrationen von P. Braunagel,25,1,,,,1899,,,,3 (+Zwischenakt entre 2. et 3.),,,comedy,lustspiel
+88,als,,,E Mordsaffär,Zwei Lustpiele in Strassburger Mundart von G. Stoskopf. Mit 7 Illustrationen von P. Braunagel,25,1,,,,1900,,,,1,,,comedy,lustspiel
+89,als,,,E Daa im Narrehüss,E Original-Farce in zwei kurze  Akt vum Camille Jost,11,3,,,,1928,,,,3,,,comedy,farce
+90,als,,,E bissel Lieb,"Drama im e Vorspiel un 3 Akt von Emile Weber, 5 Herren - 3 Damen",28,2,,,,1936,,,,1,,,drama,
+91,als,,,Kaktüs un kei And,E-n-elsassisch Lustspiel in drei Uffzig un miteme Vorspiel,31,10,,,,1941,,,,1,,,comedy,lustspiel
+92,als,,,E Surprise (in 2 Stroßburjer Komödie) ,E kleins Komödie in einem Akt,9,11,,,,1902,,,,1,,,comedy,
+93,als,,,E Stariker! (in 2 Stroßburjer Komödie),Schwank in einem Akt freij noch e-me andere Stück,9,11,,,,1902,,,,2,,,comedy,schwank
+94,als,,,A lätzi Visit,Elsässisch Luschtspiel in 1 Akt vun Paul Clemens,3,10,,,,1920,,,,1 Vorspiel + 3 Akte,,,comedy,lustspiel
+95,als,,,'s sechst Gebott,Bauerntragödie in vier Aufzügen von Julius Greber,5,1,,,,1904,,,,1 Vorspiel + 3 Akte,,,tragedy,Bauerntragoedie
+96,als,,,Buewestreich,"Lustspiel in eim Affzug vun Jean Riff, Amateur-Schriftsteller vun Schilke",21,11,,,,1905,,,,1,,,comedy,lustspiel
+97,als,,,E Demonstration,Elsässische Komödie in drei Akten von G. Stoskopf,25,23,,,,1903,,,,1,,,comedy,
+98,als,,,Jungi Madamme,Lustspiel in einem Aufzug in Strassburger Mundart,7,7,,,,1922,,,,1,,,comedy,lustspiel
+99,als,,,D'r Candidat,Luschtspiel in dreij Akt vun G. Stoskopf. Mit-e-r-e Deckenzeichnung vun P. Braunagel,25,1,,,,1899,,,,4,,,comedy,lustspiel
+100,als,,,Wenn d'Fraue wähle,Lustspiel in 3 Akt vun G. Stoskopf,25,23,,,,1925,,,,1,,,comedy,lustspiel
+101,als,,,D'Heimet,Elsässisches Volksstück in drei Aufzügen (bier Bildern) von J. Greber und G. Stoskopf. Mit einer Deckenzeichnung von H. Loux,5.25,1,,,,1901,,,,3,,,drama,volksstück
+102,als,,,D'r Pfetter vum Land od'r e Kindtaif mit Hindernisse,Original-Komödie in eim Uffzug vun Jean Riff,21,11,,,,1902,,,,1,,,comedy,
+103,als,,,D'Pariser Reis,Schwank in dreij Akt vun G. Stoskopf. Mit-e-re Deckenzeichnung vun L. Schnug,25,1,,,,1900,,,,3,,,comedy,schwank
+104,als,,,S'Chinesisch Loos,Schwank in 1 Akt in Stroßburjer Mundart vun Ferd. Bastian,1,5,,,,1903,,,,3,,,comedy,schwank
+105,als,,,Er hieroth sini Frau!,Schwank in 1 Akt vun Gustave Stoskopf,25,7,,,,not before 1909,,,,3,,,comedy,schwank
+106,als,,,D'r Abschied,Dramolet in einem Aufzuge in elsässischer Mundart von Julius Greber,5,1,,,,1910,,,,1,,,drama,dramolet
+107,als,,,Der Tolle Morgen,Lustspiel in zwei Acten zum Theil in Straßburger Mundart von Alph. Pick. Mit Wörterbuch und Bemerkungen über den Straßburger Dialekt,19,26,,,,1864,,,,3,,,comedy,lustspiel
+108,als,,,E H ,oder s'Gezaicht Trousseau (Lustspiel in Strassburger Mundart),34,27,,,,1889,,,,1,,,comedy,lustspiel
+109,als,,,Die Greifensteiner,"oder Hugo, der Abtrünnige. Volksstück im Elsässer-Dialekt in 4. Akten von Emile Wagner",27,18,,,,1930,,,,1,,,drama,volksstück
+110,als,,,Drei schwarze Liebschafte,Theaterstück uf Milhüserditsch mit Gsang.,36,94,,,,1879,,,1879,1,,,comedy,
+111,als,,,Hans Dich Hat's!,Theaterstück uf Milhüserditsch mit Gsang.,36,94,,,,1879,,,1879,2,,,comedy,
+112,als,,,Im Gretele sine Künstler,Theâterstück uf Milhüserditsch mit Gsang.,36,94,,,,1880,,,1880,1,,,comedy,
+113,als,,,Milhüser Bilder,"Theater-Rundschaü uf Milhüserditsch mit Gsang, componiert fir's Bankett vom Cerle Mulhousien 13. März 1880.",36,94,,,,1880,,,1880,4,,,comedy,
+114,als,,,D'Milhüser in Paris,Theaterstück uf Milhüserditsch mit Gsang.,36,94,,,,1880,,,1880,1,,,comedy,
+115,als,,,Dr Astronom,Theaterstück uf Milhüserditsch mit Gsang.,36,94,,,,1881,,,1881,1,,,comedy,
+116,als,,,D'Tante Domino,Theaterstück uf Milhüserditsch mit Gsang.,36,94,,,,1881,,,1880,1,,,comedy,
+117,als,,,Ne Hiroth dur d'Extrapost,Komische Scene mit Gsang.,36,94,,,,1882,,,1882,1,,,comedy,
+118,als,,,D'Hüslit vo dr Fraü Suppedunke,Theaterstück uf Milhüserditsch mit Gsang.,36,94,,,,1882,,,1883,1,,,comedy,
+119,als,,,Zwei Erfindunge,Theaterstück uf Milhüserditsch mit Gsang.,36,94,,,,1884,,,1884,1,,,comedy,
+120,als,,,Im Julie si G'heimniss,Theaterstück uf Milhüserditsch mit Gsang.,36,94,,,,1885,,,1885,1,,,comedy,
+121,als,,,Ne Scandal,Komische Scene mit Gsang.,36,94,,,,1885,,,1885,1,,,comedy,
+122,als,,,Vor un no dr Hochzit,Theaterstück uf Milhüserditsch mit Gsang.,36,94,,,,1885,,,1885,1,,,comedy,
+123,als,,,In dr Falle,Theaterstück uf Milhüserditsch mit Gsang.,36,94,,,,1886,,,1885,1,,,comedy,
+124,als,,,Bi de Wilde,"Komische Scene mit Gsang, componiert fir dr Cercle Mulhousien.",36,94,,,,1886,,,1886,1,,,comedy,
+125,als,,,D'G'sellschaftere,Theaterstück uf Milhüserditsch mit Gsang.,36,94,,,,1887,,,1887,1,,,comedy,
+126,als,,,D'Singstund,"Komische Scene mit Gsang, componiert fir dr Cercle Mulhousien.",36,94,,,,1887,,,1887,2,,,comedy,
+127,als,,,Dr Chineserfranz,Zwei Theaterstück uf Milhüserditsch mit Gsang.,36,93,,,,1891,,,1892,1,,,comedy,
+128,als,,,Drizehne,Zwei Theaterstück uf Milhüserditsch mit Gsang.,36,93,,,,1891,,,1892,1,,,comedy,
+129,als,,,"Ne Jumpfre, wo nitt hirothe will",Theaterstück uf Milhüserditsch mit Gsang.,36,25,,,,1895,,,1895,1,,,comedy,
+130,als,,,Dr Fechtmeister,Theaterstück uf Milhüserditsch mit Gsang.,36,25,,,,1895,,,1895,1,,,comedy,
+131,als,,,"Babette, mach 's Fenster züe",Theaterstück uf Milhüserditsch mit Gsang.,36,25,,,,1895,,,,1,,,comedy,
+132,als,,,Uf B'süech bi dr Fraü,Theaterstück uf Milhüserditsch mit Gsang.,36,25,,,,1895,,,,1,,,comedy,
+133,als,,,Z'Nacht am Zehne,Komische Scene uf em Spittelplatw,36,25,,,,1896,,,,1,,,comedy,
+134,als,,,Dr Hochzitstag,Monolog mit Gsang,36,25,,,,1896,,,,1,,,comedy,monologue
+135,als,,,Am letzte Maskebal,Fasenachtscene.,36,25,,,,1896,,,,1,,,comedy,fasenachtscene
+137,als,,,Wihnachtsstimme,Weihnachtsstück im Dialekt aus der Zeit der grossen Revolution in 2 Akten,29,,,,,1920,,,,1,,,tale,weihnachtsstück
+138,als,,,Am Wihnachtsowe bym 'e Kriejsblinde,E Wihnachtsstüeck in eim Akt,28,,,,,1927,,,,1,,,tale,weihnachtsstück
+139,als,,,Mossieu le maire,Traduction vers le français de D'r Herr Maire,25,3,,,,1903,,,,1,,,comedy,
+140,als,,,D'r Juckel,,,,,,,,,,,1,,,,
+141,als,,,Wittman,,,,,,,,,,,2,,,,
+142,als,,,Automat,,,,,,,,,,,1,,,,
+143,als,,,Scharele,,,,,,,,,,,3,,,,
+144,als,,,Soloscenen (Clemens),,,,,,,,,,,,,,,
+145,als,,,Die Frau Pfarrerin,Lustspiel in einem Aufzug bey Gelegenheit der lutherischen Jubelfeier,34,82,,,,1817,,,,,,,comedy,lustspiel
+146,als,,,Daniel oder der Strassburger auf der Probe,Lustspiel mit Gesang in zwey Aufzügen.,37,81,,,,1823,,,,,,,comedy,lustspiel
+147,als,,,Die Meisenlocker,(Eine häusliche Scene aus unseren Tagen),38,83,,,,1839,,,,,,,,
+148,als,,,D'Husmittel,e Komödie wo au ebbs vunn de Hxenmeister unn de respektable Schlofer vorkummt; uff'gsetzt vun der Frau Bärwel von Blappermuul,39,85,,,,1842,,,,,,,comedy,
+149,als,,,s'Lob vom ledigä Schtand (Lob des ledigen Standes),Dialog in Colmarer Mundart,15,84,,,,1860,,,,1,,,,
+150,als,,,D'Réprationg d'Honnair d'm Ehschtand.,"Wederschproch geyän'm Hans sirä Moral, us em Lob vom ledigä Schtand. Loscht-Oparettlä met em Colmerer Schporä, on Grut-Salat-Paschtelä us em Hut-Bigott-Ofä.",15,84,,,,,,,,2,,,comedy,
+151,als,,,Die dreyfach Hochzitt em Bäsäthal,Loscht's Oparettlä en drey Actä.,15,84,,,,1863,,,,,,,comedy,oparettle
+152,als,,,Der gute Mann. (Häusliche Scene.),Lustspiel in einem Aufzug.,40,86,,,,1863,,,,,,,comedy,lustspiel
+153,als,,,E. Firobe im ê Sundgauer Wirthshus.,Volksscene in zwei Abtheilungen.,41,88,,,,1865,,,,1,,,,volksscene
+154,als,,,Im Hirtejerri sin verborjener Schatz.,"Komédie in 1 Act in nidderelsässer Sprôch nôch ere Verzählung ""Le trésor de Blaise"" von Eug. Müller.",42,89,,,,1865,,,,,,,comedy,
+155,als,,,D'r Hans on's Grehtälä ém Ehstand,"Loscht's-Operettlä én 1 Aktä, én ehrem güetä Frénd dédiärt Herrn A. Ernst, Presidänt vom Orphéon.",15,90,,,,1869,,,1869,3,,,comedy,oparettle
+156,als,,,Die vierte Kunkelstub bei der Frau Velten.,Ein kleines Lustspiel zum Theil in elsässischer Mundart,43,91,,,,1870,,,,1,,,comedy,
+157,als,,,Der Steckelburger,"Lustspiel in 4 Aufzügen, mit Gesängen. Theils in deutscher Schriftsprache, theils in Strassburger Mundart",44,92,,,,1871,,,,2,,,comedy,lustspiel
+158,als,,,Der Ordnungsstifter oder Der neue Wirrwarr.,Lustspiel mit Gesang in drei Aufzügen. ,45,12,,,,1872,,,,1,,,comedy,lustspiel
+159,als,,,Hans Dampf oder Wer heirathet Sie? ,Komische Oper in zwei Acten.,45,12,,,,1872,,,,1,,,comedy,oper
+160,als,,,Der Dreikönigstag oder das alte Schlestadt,,46,102,,,,1875,,,,,,,,
+161,als,,,D'Schnurante,Introduction au sextuor comique de J. Wiernsberger.,47,93,,,,1875,,,1875,4,,,comedy,
+162,als,,,Der Gaasejopper geht auf die Freierei oder die heiratlustige Zipper.,Schauspiel in 5 Aufzügen und 9 Scenen. Vortrag nach dem elsässisch-jüdischen Dialekt.,48,,,,,1876,,,,3,,,,
+163,als,,,D'Maiselocker,"Lustspiel in drei Acten. Herausgebung zum Besten der ""Société des loyers"" von Strassburg.",33,91,,,,1877,,,,2,,,comedy,lustspiel
+164,als,,,Der Gaasejopper macht Chasene,Lustspiel in sieben Aufzügen. In elsässisch-jüdischem Dialekt verfasst. ,48,,,,,1877,,,,2,,,comedy,lustspiel
+165,als,,,Prologue zue der Theatervorstellung vum 9. février 1878.,,49,17,,,,1878,,,,,,,,
+166,als,,,D'Linsespalter,Lustspiel in 3 Akten. Dédié à l'Union Musicale de Strasbourg,33,93,,,,1878,,,,5,,,comedy,lustspiel
+167,als,,,M'r bhaupt' es sey bassirt,Lustspiel in einem Akt.,33,93,,,,1878,,,,3,,,comedy,lustspiel
+168,als,,,Stocktaub oder 's sin alli Better b'setzt.,Lustspiel in 1 Akt frei nach dem Französischen.,33,93,,,,1878,,,,7,,,comedy,lustspiel
+169,als,,,Colmerditschi Komedi ('s Lob vom ledige Stand. Die Drèifach Hochzitt ém Bâsethel. D'r Hans un's Gretele ém Ehestand.),,15,90,,,,1878,,,,,,,comedy,
+170,als,,,Die vierte Kunkelstub bei der Frau Velten.,Ein kleines Lustspiel zum Theil in elsässischer Mundart.,43,95,,,,1879,,,,3,,,comedy,lustspiel
+171,als,,,Fufzig Fawle frei nooch'm Lafontaine.,"Als Angang d'rzue ""Unsri Dienstbotte"", Sittegemäld in zwei Akte un in Vers, mit noch etliche-n-andere Gedicht. Alles in Strossburjer Mundart.",38,17,,,,1880,,,,1,,,,sittegemäld
+172,als,,,Für e Rappe dreierlei,Dialog.,48,,,,,1882,,,,1,,,dialog,
+173,als,,,Gasejopper als Almon,Lustspiel in 4 Akten.,48,,,,,1883,,,,,,,comedy,lustspiel
+174,als,,,Zwei Duellante,Theaterstück auf Milhüserditsch mit Gsang.,50,96,,,,1884,,,,,,,,
+175,als,,,Bas Jechido oder das kranke Töchterlein.,Lusterspiel in 4 Akten,48,97,,,,1884,,,,2,,,comedy,lustspiel
+176,als,,,Der Gersching Narr well ach a Fraa.,"Lustspiel in 5 Acten, in elsässich-jüdischem Dialekt.",51,26,,,,1885,,,,,,,comedy,lustspiel
+177,als,,,E Radikal-Kuur,"Lustspiel in zwei Uffzüg, in elsässer Mundart un in Vers.",38,98,,,,1886,,,,4,,,comedy,lustspiel
+178,als,,,Unverbesserli !,Sittegemäld in zwei Uffzüg un in Vers. ,38,98,,,,1886,,,,,,,,sittegemäld
+179,als,,,Zwei dauwi Meiselocker,,52,27,,,,1886,,,,4,,,,
+180,als,,,Im Finele sini Hochzit.,Lustspiel in 4 Akte Schlettstadter Mundart un Schlettstadter Gedichte.,53,99,,,,1886,,,,5,,,comedy,lustspiel
+181,als,,,Drei Narre of am Karre,Lustspiel in 3 Acten.,48,,,,,1887,,,,2,,,,lustspiel
+182,als,,,Der Bär un der Sultan,(Posse in Strassburger Mundart.) (D'après un vaudeville de Scribe et de Saintine.),32,27,,,,1888,,,,2,,,comedy,posse
+183,als,,,E ungemietlichi Ménage.,(Posse in elsässischem Dialekt),34,27,,,,1889,,,,,,,comedy,posse
+184,als,,,Der Pankratz-Da oder Thee-Owen am Wasserzoll.,Schwank in 1 Akt in Strassburger Mundart. ,55,11,,,,1891,,,,4,,,comedy,schwank
+185,als,,,Der Hüsherr,Lustspiel in einem Akt. ,9,11,,,,1892,,,,3,,,comedy,lustspiel
+186,als,,,D'Millionedante üss Amerika oder d'Verwande uf der Prob,"Schwank in 2 Akten, aufgeführt in ""Strassburger Nautischen Verein"" am 30. November 1889.",55,11,,,,1892,,,,1,,,comedy,schwank
+187,als,,,Die Bürgschaft.,Genrebild in 1 Akt. (Pièce écrite en allemand littéraire et en dialecte),56,100,,,,1892,,,,,,,,genrebild
+188,als,,,Champagner-Härzel von Metz.,Lustspiel,48,,,,,1892,,,,1,,,comedy,lustspiel
+189,als,,,D'r Boriermeischter en Verlaiahait.,Loschtspel met Gsang en aim Act,57,12,,,,1893,,,,1,,,comedy,lustspiel
+190,als,,,Marie oder die lustige Almone,Lustspiel in 4 Akten.,48,,,,,1893,,,,2,,,comedy,lustspiel
+191,als,,,D'r Unkel,Comédie-Bouffe in eim Akt,9,11,,,,1894,,,,1,,,comedy,comédie-bouffe
+192,als,,,Guet vun hie,Meiselokeriade. (En appendice : E Reis' in's Hochgebirj. -Stocktaub oder's sin alli Better b'setzt. -M'r bhaupt' es sey bassirt.),33,101,,,,1894,,,,,,,,
+193,als,,,Im Dahomey,"Bouffonerie mit Gesang, Musik und Tanz in 1 Akt und 2 Tableaux. ",58,27,,,,1894,,,,,,,comedy,bouffonerie
+194,als,,,"Vater und Sohn, beide als Heirathskandidaten.",Lustspiel in 3 Akten,48,,,,,1894,,,,4,,,comedy,lustspiel
+195,als,,,Dreij Freijer,Lustspiel in einem Aufzug.,5,1,,,,1895,,,,1,,,comedy,lustspiel
+196,als,,,D'r König Charles X im Ower-Elsass.,Komedie in 3 Akte mit G'sang,20,25,,,,1896,,,1896,,,,comedy,
+197,als,,,S'ich wie mer will !,"E Dummheit von Anno 48 in einem Akt un 3 Tableaux, vum e Strossburger sinnere G'sellschaft dediert.",59,,,,,around 1880,,,,1,,,,
+198,als,,,Der Schlettstadter Pfingstmontag.,Ländliches Sittengemälde in 3 Akten (Bearbeitet von A. Schwab).,46,102,,,,1897,,,,3,,,,sittegemäld
+199,als,,,Die Kunkelstube in einem Vogesendorfe.,Ländliche Scene mit Gesang und Tanz in 1 Aufzug,60,1,,,,1897,,,1897,1,,,,
+200,als,,,D’r Hofnarr Heidideldum,Märel in 6 Bilder un 2 Verwandlunge vun Ferd. Bastian. Musik von Aug. Schwoob,1,28,,,,1937,,,,3,,,tale,märel
+201,als,,,Chrischtowe,E Wihnachtsstüeckel in 1 Akt in elsässischem Dialekt füer kleine und grossi Kinder,3,,,,,1919,,,,1,,,tale,weihnachtsstück
+202,als,,,Kinnj Wüetass,E Kindermärel in 5 Bilder vum Ernest Fuchs,4,,,,,1921,,,,3,,,tale,märel
+203,als,,,Strüwelpeter,Originalmaerel in 7 Bilder un 3 Verwandlunge,1,,,,,1932,,,,1,,,tale,märel
+204,als,,,Wihnachtsglüeck,Festspiel in siewe Bilder,14,,,,,1921,,,,6 Bilder,,, ,festspiel
+205,als,,,Rund um d'Welt,E Märel in acht Bilder vun Emile Weber mit Müsik von Aloyse Braun,28,,,,,1931,,,,1,,,tale,märel
+206,als,,,D' Wundergej ,Zaubermärel in 5 Bilder mit Gsang un Danz,1,,,,,1922,,,,5 Bilder,,,tale,märel
+207,als,,,Prinzessel Eijesinn,Märel in 5 Bilder un aanere Verwandlung mit Gsang un Danz,1,,,,,1928,,,,7 Bilder,,,tale,märel
+208,als,,,Im Traumland,Maerel in 4 Bilder mit Muesik un Danz,1,,,,,1924,,,,1,,,tale,märel
+209,als,,,Prinz Changele,Märchenspiel in 5 Bildern,3,,,,,,,,,7 Bilder,,,tale,märchenspiel
+210,als,,,Princesse Fleurette,Märel in 6 Blider,1,,,,,1918?,,,,5 Bilder,,,tale,märel
+300,als,,,D'r Roméo un's Juliette vo Colmer.,Comédie en 1 Akt.,"67, 64",,,,,,,,1897,5 Bilder,,,comedy,
+301,als,,,A Sundaasbroote mit Schnaps odder E Malheur in der Krütenau.,"Lustspiel in Strassburger Ditsch mit Gesangeinlagen, in 1 Akt.",12,103,,,,1897,,,,4 Bilder,,,comedy,lustspiel
+302,als,,,Wàge-n-'re halwe Million.,Milhüserditsch Theaterstückle in 1 Akt.,62,25,,,,1897,,,,5 Bilder,,,,
+303,als,,,D'r Loyala-kriay vu Colmer im Johr 1669,(Schwank of Colmerditsch met G'sang en 3 Akta.),57,104,,,,1897,,,,6,,,comedy,schwank
+304,als,,,D'r Onkel üss Amerika,Schwank in 1 Akt.,32,21,,,,1897,,,,1,,,comedy,schwank
+305,als,,,E Kneippkür,Theaterstück uf Milhüserditsch.,63,25,,,,1897,,,,1,,, ,
+306,als,,,D'Inspektion vom Gsangverein vo Brielinge,Grosse komische Scène uf Milhüserditsch mit Gsang.,63,25,,,,1897,,,,1,,,comedy,
+307,als,,,D'r Ernest in Verlàgeheit,Theaterstück uf Milhüserditsch.,63,25,,,,1897,,,,3,,,,
+308,als,,,Nitt g'spielt un doch g'spielt,Theaterstück uf Milhüserditsch.,63,25,,,,1897,,,,1,,,,
+309,als,,,Im Bawele si Träum,Komische Duo uf Milhüserditsch.,63,25,,,,1897,,,,,,,comedy,
+310,als,,,D'r Vetter Bläsel,Schwank in einem Aufzuge in Strassburger Mundart.,1,1,,,,1897,,,,1,,,comedy,schwank
+311,als,,,D'Gett'l vom Gaggser-Jerri ,od'r Durch Schrecken geheilt od'r D'r Stiafbrüader vom Mississippi. Comédie en aim Akt.,"67, 64",,,,,,,,1898,1,,,comedy,
+312,als,,,Dr Onkel Anatol,Milhüserditsch Theaterstickle in 1 Akt.,62,25,,,,1898,,,,1,,,,
+313,als,,,D'r ney Jean.,Schwank in aam Uffzugg,1,3,,,,1899,,,,1,,,comedy,schwank
+314,als,,,Mi Tante,Volksstück in 3 Acte.,"65, 62",25,,,,1899,,,,1,,,,volksstück
+315,als,,,D'Schmuggler,Elsässiche Komödie in vier Akten.,66,105,,,,1899?,,,,1,,,comedy,
+316,als,,,D'Freundschaft,Einakter,67,,,,,,,,1899,1,,,,
+317,als,,,Danneholz,Wihnachts-Stimmungsbild in einem Uffzug in Strossburjer Ditsch. Mit-ere Deckezeichnung von Ch. Bastian,68,1,,,,1899,,,,1,,,,weihnachtsstück
+318,als,,,D'Müettersproch.,Prolog mit Inscenierung.,62,106,,,,1899,,,,3,,,,
+319,als,,,Der Pfingstmondâa vun hitt ze Dâa.,Dramatisches Culturbild aus dem Elsass am Ende des 19. Jahrhunderts.,22,29,,,,1899,,,,4,,,,
+320,als,,,Eifersüchtig (Schallü),Musikalisches Lustspiel in einem Aufzug nach dem Elsässischen.,69,107,,,,1900,,,,1,,,comedy,lustspiel
+321,als,,,Am Belche,Lustspiel in 5 Aufzügen. Ins Milhüserditsche iwersetzt vu Ch. Kolmann,70,1,,,,1900,,,,1,,,comedy,lustspiel
+322,als,,,Geld un Liewe,Theaterstück in 4 Akte.,61,25,,,,1900,,,,,,,,
+323,als,,,Uns'r Ferdinand,"Luschtspeel in zwei Akte, met ere Deckezeichnung vo J. J. Waltz.",67,1,,,,1900,,,,3,,,comedy,lustspiel
+324,als,,,D'Waldmühl,Schauspiel in 3 Akt.,"71, 72",108,,,,1901,,,,1,,,,
+325,als,,,D'r Dorfschmidt,Elsässischs Volksstüeck in drei Uffzüeg,1,3,,,,1901,,,,5,,,,volksstück
+326,als,,,D'r schwarz Kaffee,Schwank in einem Akt.,1,5,,,,1907,,,,4,,,comedy,schwank
+327,als,,,'s Deifele,Komödie in vier Aufzügen,1,5,,,,1909,,,,2,,,comedy,
+328,als,,,Vorm Friddesrichter,Gerichtsscène in einem Akt ,1,5,,,,1908,,,,3,,,gerichtsscene,
+329,als,,,Es spückt ,Schwank in 3 Akt.,1,5,,,,1911,,,,3,,,comedy,schwank
+330,als,,,Alles verliebt,Lustspiel in 3 Akt,1,5,,,,1914,,,,1,,,comedy,lustspiel
+331,als,,,St. Odile,Mysterium in 5 Bilder,1,6,,,,1920,,,,4,,,mystery,
+332,als,,,D'r Rotschriewer von Hauenau,Schauspiel in 5 Akt üs d'r Vadder-Zytt,73,,,,,,,,,1,,,,
+333,als,,,D'r Ami Fritz,els. Schauspiel in 3 Akt - Ins Elsässich uewertrauwe vun Charles Hauss | Schauspiel in drej Akt noch'm Roman von Erckmann-Chatrian for d'elsässisch Büehn bearweit von K. Hauß,68,112,,,,1910,,,1898,3,,,,
+334,als,,,D'Rantzau,els. Schauspiel in 3 Akt - Ins Elsässich uewertrauwe vun Charles Hauss,68,,,,,,,,,3,,,,
+335,als,,,D'r polnisch Jud,els. Schauspiel in 3 Akt - Ins Elsässich uewertrauwe vun Eugène Criqui und Henri Wolff,"74, 75",,,,,,,,,5,,,,
+336,als,,,D'Schatzgräwer,els. Volksstück in 3 Akt,76,,,,,,,,,5,,,,volksstück
+337,als,,,D'Nachtwächter,"e luschtigs Spiel üss d'r Zytt vom Krimm-Krej, in 4 Akt.",76,,,,,1908,,,,3,,,comedy,lustspiel
+338,als,,,E Summertheater,Schwank in 3 Akt.,77,,,,,,,,,3,,,comedy,schwank
+339,als,,,Joscht Ittel,E Stüeck üs'm elsässische Bürekriej in 3 Akt un 1 Vorspiel,4,,,,,1920,,,,3,,,,
+340,als,,,Am Abgrund,Volsstüeck in 3 Akt.,61,109,,,,1902,,,,3,,,,volksstück
+341,als,,,E Budell Quetschwasser,Schwank in einem Akt.,5,1,,,,1906,,,,4,,,comedy,schwank
+342,als,,,Gabrielle,els. Schauspiel in 4 Akt,78,,,,,,,,,3,,,,
+343,als,,,D'Aposchtel üs'm Elsass,Schauspiel in 3 Akt.,78,,,,,1920?,,,,1 Vorspiel + 3,,,,
+344,als,,,1812,historisch's Schauspiel in 4 Akt.,79,,,,,after 1910,,,,3,,,historisch,
+345,als,,,Nur d'Lieb,Schauspiel in 3 Akt.,67,1,,,,1901,,,,1,,,,
+346,als,,,D'Hochzittsnacht,Drama in einem Akt.,67,1,,,,1907,,,,4,,,drama,
+347,als,,,D'Maikür,Schwank in einem Akt.,67,1,,,,1907,,,,3,,,comedy,schwank
+348,als,,,Eulogius Schneider,Vaterländlich's Schauspiel in 4 Akt.,68,108,,,,1903,,,,4,,,,
+349,als,,,Dokter Franz Mathäus,Schauspiel in 4 Akt,68,,,,,,,,,3,,,,
+350,als,,,D'Erbschaft,Elsässisch's Schauspiel in 3 Akt.,80,,,,,,,,,1,,,,
+351,als,,,D'r rüssisch Graf,Schwank in 2 Akt,81,,,,,,,,,1,,,comedy,schwank
+352,als,,,D'r Schlittehannes,Büredrama in 2 Akt,82,110,,,,1907,,,,4,,,drama,büredrama
+353,als,,,Sabine un d'r Tod,E Todedanz in 3 Akt,83,111,,,,1920,,,,4,,,drama,todetanz
+354,als,,,D'r Hüsshärr,Schwank in 3 Akt.,84,,,,,,,,,3,,,comedy,schwank
+355,als,,,Peter Hagebach,Historisch's Schauspiel in 4 Akt.,85,,,,,1913,,,,2,,,historisch,
+356,als,,,D'schoen Berth,Komödie in 4 Akt.,86,,,,,,,,,2,,,comedy,
+357,als,,,Elsässisch Bluet,Els. Drama in 4 Akt.,86,,,,,1908,,,,3,,,drama,
+358,als,,,Respekt im Hüs,Lustspiel in 2 Akt.,86,,,,,,,,,3,,,comedy,lustspiel
+359,als,,,Republik im 4. Stock,Schwank in 1 Akt.,86,,,,,,,,,4,,,comedy,schwank
+360,als,,,'s Morjerot,Elsässich's Volksschauspiel üs d'r Zytt vom Bürekriej,87,,,,,,,,,4,,,,volksstück
+361,als,,,Daniel Jeust,Drama in 4 Akt.,88,,,,,,,,,4,,,drama,
+362,als,,,Tischel deck dich,E Märel in 5 Bilder,89,,,,,,,,,2,,,tale,märel
+363,als,,,D'Millionepartie,Schwank in 3 Akt.,25,1,,,,1901,,,,1,,,comedy,schwank
+364,als,,,D'r verbotte Fahne,Elsässische Komödie in 3 Aufzügen.,25,1,,,,1904,,,1904,,,,comedy,
+365,als,,,D'r Luftibüs,Schwank in 3 Akt.,25,7,,,,1919,,,,4,,,comedy,schwank
+366,als,,,Junggselle,E einaktigi Farce,1,3,,,,1903,,,,5,,,comedy,schwank
+367,als,,,E Serenädl,E schwankächts Lustspiel in aam Uffzugg in Stroßburjer Babbelart,1,5,,,,1905,,,,3,,,comedy,lustspiel
+368,als,,,E komischi Erbschaft,"Lustspiel in elsässer Mundart, in aam Uffzugg",1,5,,,,1907,,,,3,,,comedy,lustspiel
+369,als,,,D'r Unkel Güschtav,Schwank in einem Aufzug,5,1,,,,1909?,,,,3,,,comedy,schwank
+370,als,,,Babbelhans,,3,3,,,,,,,,1,,,,
+371,als,,,L'Éloge du célibat,"dialogue en vers, représenté à l'Académie du dimanche le 21 avril 1860, avec une scène en dialecte colmarien sur le même sujet [, par R. Yves]... (avec Lob des ledigen Standes (149))",15,84,,,,1860,,,1860,1,,,,
+372,als,,,D'r Hans on's Grehtälä ém Ehschtand. ,"Loscht's Operettlä én 1 Actä... von J. Mangold,... Müsik vom J. Heyberger...",15,90,,,,1869,,,1869,1,,,comedy,Loscht's-Operettlä
+373,als,,,Uf d'r Polizei,E. Heiters Beld en 1 Akt,90,13,,,,1928,,,,1,,,,
+374,als,,,Jesus von Nazareth,"biblisch-dramatische Dichtung in 5 Teilen. Bethlehem, Weihnachtsfestspiel in fünk Akten.",91,13,,,,1926,,,,,,,biblical,
+375,als,,,Theater im Theater,oder E lätzi Hochzyttere. E Farce in 1 Akt vum Camille Jost,11,3,,,,1927,,,,1,,,comedy,farce
+376,als,,,Er wurd Energisch,E Schwank in 1 Akt nooch're ältere Idee vum Camille Jost,11,3,,,,1928,,,,1,,,comedy,schwank
+377,als,,,E lätzi commission,"Comedie in 3 Akt (Nooch're-n-ältere Idee), vum Camille Jost, Strossburj",11,3,,,,1928,,,,1,,,comedy,
+378,als,,,Gottfried von Strassburg,Schauspiel in 5 Aufzuegen,92,1,,,,1897,,,1897,Vorspiel + 5,,,,
+379,als,,,Wie's vum Vater ervorwe vom Sohn verdorwe.,"Volkstück im elsäszische Dialekt in 5 akte, von Paul Clemens",3,113,,,,1928,,,,1,,,,
+380,als,,,"""Moineau"" d'Alsace","drame patriotique en 3 actes, pour jeunes gens, épisode de la guerre 1914-1918 en Alsace",93,114,,,,1923,,,1923,1,,,drama,
+381,als,,,Alsace,"pièce en 3 actes, par Gaston Leroux et Lucien Camille","94, 95",,,,,1913,,,1913,3,,,,
+382,als,,,Der Klopfgeist,Lustspiel in vier Aufzügen,5,20,,,,1903,,,,5,,,comedy,lustspiel
+383,als,,,Die Frau Velten in der Kunkelstub,,43,115,,,,1863,,,,5,,,,
+384,als,,,Une perle fine de la chère Alsace,drame en 5 actes par une religieuse,,116,,,,1896,,,,3,,,drama,
+385,als,,,Nuit d'Alsace,épisode dramatique en 2 actes,96,117,,,,1911,,,,3,,,drama,
+386,als,,,Was mein einst war,Volksschauspiel in 1 Aufzug von Fernand Kühne,13,10,,,,1921,,,,4,,,,
+387,als,,,D'Excellenz meyer,Lustspiel in eim Akt vum Camille Jost,11,3,,,,1928,,,,1,,,comedy,lustspiel
+388,als,,,A gelungene Wette,Lustspiel für Frauenbühne in 2 Akten,30,13,,,,1927,,,,5,,,comedy,lustspiel
+389,als,,,Gedeon,"biblisches Heldendrama in 5 Akten. Aus der Zeit der Richter, von Aug. Schmidlin",91,118,,,,1932,,,,2,,,biblical,
+390,als,,,D'bluetig Füscht,E Schwank in 1 Akt von Camille Jost,11,3,,,,1927,,,,1,,,comedy,schwank
+391,als,,,E natti Band,Gesamtspiel in 1 Akt für 7 kleinere und grössere Knaben,27,2,,,,1939,,,,1,,,,
+392,als,,,Glüeck muess d'r Mensch han,Volksstueck in 3 Akte mit Müsik un Gsang,1,5,,,,1925,,,,2,,,,
+393,als,,,Les Martyrs de Strasbourg,"ou l'Alsace en 1870, drame historique et patriotique en 5 actes et 10 tableaux",97,119,,,,1874,,,1872,5,,,drame historique,
+394,als,,,L'Heure de l'Alsace,évocation dramatique en vers de Jules Princet,98,120,,,,1919,,,1919,1,,,drama,
+395,als,,,Gheilt,Lustspiel in 1 Akt für Vereine und Schulen,27,2,,,,1939,,,,1,,,comedy,lustspiel
+396,als,,,A fatali Verwachslung,Lustspiel in 1 Akt von J. Kempf,99,13,,,,1924,,,,3,,,comedy,lustspiel
+397,als,,,D'r Gymnasler,Komischer Vortrag von Robert Golder,100,3,,,,1929,,,,10,,,comedy,
+398,als,,,S gelehnt Metier,Komedie in 3 Akt (nooch're-n-ältere-n-Idee) vum Camille Jost,11,3,,,,1927,,,,1,,,comedy,
+399,als,,,Mirabelle Muller,Lustspiel in 1 Akt von Paul Clémens. ,3,18,,,,1925,,,,1,,,comedy,lustspiel
+400,als,,,E Säij un e Schelm,"Komischer Vortrag für 2 Herren, von F. X. Neukirch",17,10,,,,1924,,,,1,,,comedy,
+401,als,,,Uff'm Standesamt,"Komischer Vortrag für 4 Herren, von F. X. Neukirch",17,10,,,,1924,,,,1,,,comedy,
+402,als,,,D'r Cousin Dagobert,"E luschtigs Stückel in 1 Akt vu Paul Clémens, Bischheim. Nur Herrenrollen",3,113,,,,1924,,,,3,,,comedy,
+403,als,,,D'r Ledig Ehemann,Elsassisch Singspiel in 3 Akte vu Fernand Kuehne,13,18,,,,1925,,,,1,,,,
+404,als,,,A G'sangprob' fer d'r Uessflug,A heiteres Steckel,30,13,,,,1931,,,,1,,,,
+405,als,,,D'r Toni suecht e Fraüj,"Lustspiel in 1 Akt, von A. Gfall",101,13,,,,1936,,,,1,,,comedy,lustspiel
+406,als,,,D'r schloj Michl un s'falsche Barawl,"Schwank in 2 Aufzügen, von Martin Huck",10,13,,,,1936,,,,1,,,comedy,lustspiel
+407,als,,,Wer wurd Maire?,"od'r 30 Johr später, Lustspiel in 3 Akt",28,2,,,,1936,,,,3,,,comedy,lustspiel
+408,als,,,D'verkracht Affetheorie,"Lustspiel in 2 Akten, von Paul Müller",102,13,,,,1936,,,,1,,,comedy,lustspiel
+409,als,,,"Wie m'r's macht, isch's lätz",Lustspiel in 1 Akt von A. Seyller,103,13,,,,1937,,,,1,,,comedy,lustspiel
+410,als,,,Mayonnaise,"Schwank in drei Akt, von Ferd. Bastian",1,5,,,,1932,,,,2,,,comedy,schwank
+411,als,,,D'r Babbe isch verreist,Lustspiel in 1 Akt von Ch. Fr. Mochel,104,2,,,,1939,,,,3,,,comedy,lustspiel
+412,als,,,D'r Fabian blost Alarm,"Lustspiel für Pompiersvereine in 1 Akt, von Leo Pfiffer",18,13,,,,1937?,,,,2,,,comedy,lustspiel
+413,als,,,Donner und Doria,"tragikkomischi Denkmolsg'schicht üss'm Elsass em Dialekt en 4 Akt, vun Charles Weber",29,13,,,,1924,,,,1,,,,
+414,als,,,Wer am letschte lacht,"Lustspiel in 1 Aufzug, vun Emilie Hahn",7,13,,,,1929,,,,3,,,comedy,lustspiel
+415,als,,,D'r Dummerle,Märelspiel in 5 Bilder un zwai Verwandlunge von Ferd. Bastian,1,5,,,,1925,,,,1,,,tale,
+416,als,,,D'r Schwedetrank,"dramatisches Volksstück aus dem Schwedenkrieg im Elsass in 5 Akten, von P. Guth",105,13,,,,1937,,,,1,,,drama,volksstück
+417,als,,,D'r Cigarrestumpe,"E kleini Ehestandskomödie in 1 Akt, von Ch. Kettner",33,18,,,,1923,,,,4,,,comedy,ehestandskomödie
+418,als,,,System Hoppeldihopp,"oder ""Es brännt !"" Komische Scene für 5 Herren in einem Aufzug",3,10,,,,1922,,,,1,,,comedy,
+419,als,,,So'ne Gauner,"Humoristische Scene für zwei Herren, von Martin Huck",10,3,,,,1932,,,,5,,,comedy,
+420,als,,,Im Embarras,"(In d'r Klemme), Lustspiel in einem Akt, von Joseph Lejeune",106,13,,,,1926,,,,prolog + 5,,,comedy,lustspiel
+421,als,,,Kokain,"Drama in drei Akt, von Ferd. Bastian",1,5,,,,1929,,,,1,,,drama,
+422,als,,,Phantom,E Stück in 4 Akt von Ferd. Bastian,1,5,,,,,,,,1,,,,
+423,als,,,Heiss Blüet,Els. Volkssteck en 4 Akta vo Emile Wagner-Wettolsheim,27,18,,,,1923,,,,1,,,,volkssteck
+424,als,,,In d'r Schuelklass n° 3,Humoristische Schulscene von Martin Huck,10,3,,,,1933,,,,1,,,comedy,schulscene
+425,als,,,E Gewaltstreich,Schwank in 1 Akt von Paul Clemens,3,113,,,,1925,,,,3,,,comedy,schwank
+426,als,,,S'Chrischtkindl un d'r Hanstrapp,E Wyhnachtsufftritt vor'm Himmer drüsse. Vortraa für kleini unn grossi Kinder vun F. X. Neukirch,17,10,,,,,,,,4,,,,Wyhnachtsufftritt
+427,als,,,D'Karteschläuere,"A luschtig's Steckel in 1 Akt, von Martin Huck",10,13,,,,1932,,,,5,,,comedy,
+428,als,,,D'Waschwiewer,"Lustspiel in einem Akt, von Martin Huck",10,13,,,,1932,,,,1,,,comedy,lustspiel
+429,als,,,Er Babbelt im Schloof !,"Lustspiel in 1 Akt von Georges Bravo, für die elsässische Vereinsbühne bearbeitet von Georges Jaggi",107,2,,,,1939?,,,,1,,,comedy,lustspiel
+430,als,,,So e kaiwe T. S. F. ! (Drohtlosi Telephonie),E Comédie in eim Akt vum Camille Jost,11,3,,,,1927,,,,1,,,comedy,
+431,als,,,Richardis,"Historisches Schauspiel aus der elsässischen Vergangenheit in 4 Aufzügen, von Aug. Schmidlin",91,,,,,1930,,,,1,,,,
+432,als,,,D'Philomé em Stadttheater,Kom. Vortrag für Damen,99,13,,,,1923,,,,1,,,comedy,
+433,als,,,E g'fährlicher Seppeles-Daa,E Luschtspiel in 1 Akt,11,3,,,,1929,,,,1,,,comedy,lustspiel
+434,als,,,D'r Herr im Hüss,Schwank in 4 Bilder by glycher Szenerie vum Camille Jost unn Franz Boehm,"11, 108",3,,,,1928,,,,1,,,comedy,schwank
+435,als,,,D'r Metzjerburscht,Komischer Vortrag,100,3,,,,1929,,,,,,,comedy,
+436,als,,,An d'lätz Adress,Lustspiel in 1 Akt,33,18,,,,1923,,,,1,,,comedy,lustspiel
+437,als,,,Von Vatter verstosse,Volksstück in 5 Akten. Freie Bearbeitung von Leo Welker,109,13,,,,1934,,,,1,,,,volksstück
+438,als,,,Viel Krach für nix ,odder Cherchez la femme ! Comédie in 4 kurze Akt vum Camille Jost,11,3,,,,1928,,,,4,,,comedy,
+439,als,,,E Barebli als Geldsack,"Lustspiel in 1 Akt, von Emilie Hahn",7,13,,,,1931,,,,1,,,comedy,lustspiel
+440,als,,,Im Name vum Gsetz,oder Mensch geh' nie vor Gericht. Lustspiel in einem Akt,110,13,,,,1930,,,,1,,,comedy,lustspiel
+441,als,,,D'reis in's Wynland,Komödie in 1 Uffzug,21,18,,,,1925,,,,5,,,comedy,
+442,als,,,Zwei Dauwi,Schwank in einem Akt von Ch. Kettner. Frei nach dem Französischem von Moinaux.,33,18,,,,,,,,4,,,comedy,schwank
+443,als,,,E halbi Küah,Schwank in els. Dialekt in 2 Akten von X. Sengelin,24,10,,,,1923,,,,1,,,comedy,schwank
+444,als,,,Stichwahl,Farce in einem Akt vun Fernand Kuehne. ,13,18,,,,1924,,,,1,,,comedy,farce
+445,als,,,S'Deschtament,"Lustspiel in zwei Akt, vum Xavier Zaspel",111,3,,,,1924,,,,1,,,comedy,lustspiel
+446,als,,,Zwei Schweschtere,Komödie in elsässicher Mundart in zwei Akten von Emilie Hahn,7,3,,,,1926,,,,1,,,comedy,
+447,als,,,Hilf ! E Menschfresser !,E Farce in eim Akt vum Camille Jost,11,3,,,,1926,,,,2,,,comedy,farce
+448,als,,,D'r griene Ritter,Volksstück in 3 Akten von Fernand Kuhne,13,10,,,,1927,,,,1,,,,volksstück
+449,als,,,Ferdinand von Hompesch,"oder: Das vierte Gebot. Historisches Volksstück in 2 Akten, von Camille Jost",,,,,,,,,,2,,,,
+450,als,,,Em Photographe-Atelier,Lustspiel in 1 Akt,99,13,,,,1924,,,,2,,,comedy,lustspiel
+451,als,,,E-n-Ohrfeij,"Komischer Vortrag für 1 Herr u. 2 Damen, von F. X. Neukirch",17,10,,,,1924,,,,1,,,comedy,
+452,als,,,D'Advekate !,Komische Szene mit Gesang in elsässischer Mundart für 7 Herren von Emilie Hahn,7,3,,,,1924,,,,3,,,comedy,
+453,als,,,Um a Stimmig (Gmeinrotswahl),Volkstick in 3 Akte vo Xavier Sengelin,24,10,,,,1922,,,,,,,,volkstick
+454,als,,,Dr Schuldig,"Drama in 4 Akten, von Maurice Manquat",112,13,,,,1925,,,,1,,,drama,
+455,als,,,A Mord,Schwank in eim Uffzug,90,10,,,,1923,,,,1,,,comedy,schwank
+456,als,,,D'küraschiert Frau,"e Gspräch mit sich selbscht vunn ere ""starike"" Krämpe.",17,10,,,,1925,,,,1,,,,
+457,als,,,Hampel oder Bampel,Luschtspiel in 4 Uffzuegg,21,10,,,,1924,,,,3,,,comedy,lustspiel
+458,als,,,Nasskutt contra Nasskutt,Komischer Vortrag für 2 Herren u. 1 Dame,17,10,,,,1924,,,,4,,,comedy,
+459,als,,,S'Gsprach uff d'r Waschbritsch,Komischer Vortrag für 3 Damen,17,10,,,,1925,,,,1,,,comedy,
+460,als,,,Wenn d'Not am gröeschte,E Wihnachtstückel in 1 Akt im elsäßische Dialekt,3,3,,,,1921,,,,1,,,tale,wihnachtsstückel
+461,als,,,D'Dragüner-Schmide,Volkschauspiel in 3 Akten in elsässischem Dialekt,3,10,,,,1922,,,,4,,,,volksschauspiel
+462,als,,,E gelungener Uessflug,Komischer Vortrag in elsässischer Mundart,3,10,,,,1922,,,,1,,,comedy,vortrag
+463,als,,,S'Patent,Luschtspiel in eim Akt,113,3,,,,1923,,,,1,,,comedy,lustspiel
+464,als,,,A Promenade mit Hindernisse,Komischer Vortrag,100,3,,,,1922,,,,1,,,comedy,vortrag
+465,als,,,D'schwarz Hand,e Ynbrechers Comedie in aam Uffzug,"21, 114",3,,,,1920,,,,3,,,comedy,
+466,als,,,D'r Hochzitter vum Land,Schwank in einem Uffzug in elsässischer Mundart ,100,3,,,,1922,,,,1,,,comedy,schwank
+467,als,,,D'r Färschter uf Waldmatt,Drama in els. Dialekt in 3 Akten,13,10,,,,1923,,,,1,,,drama,
+468,als,,,D'nei Zit,Volksstück in fünf Szenen,14,11,,,,1913,,,,1,,,,volksstück
+469,als,,,Im Morgenrot,Schauspiel aus der Strassburger Reformationszeit,,,,,,,,,,1,,,,
+470,als,,,"Bieje, awer nit breche !",Charakterstück in eim Uffzug,21,11,,,,1902,,,,1,,,,charakterstück
+471,als,,,Telegraphie ohni Droht,Original-Schwank in eim Uffzug,21,11,,,,1902,,,,3,,,comedy,schwank
+472,als,,,La nuit de la Toussaint,drame alsacien en un acte et en vers,,,,,,,,,,5,,,,
+473,als,,,D'g'stohlene Gäns,Lustspiel in einem Aufzug in elsässischer Mundart ,115,11,,,,1909,,,,,,,comedy,lustspiel
+474,als,,,Die Schöne Bärbel,oder der Buchsweiler Weiberkrieg. Volksschauspiel in drei Akten,,,,,,,,,,1,,,,
+475,als,,,L'Horloger de Strasbourg,"drame en vers, en 4 actes et 6 tableaux",,,,,,,,,,1,,,,
+476,als,,,Zwei dauwi Meiselocker uun's Sælmel im Bierhuus,Komischer Vortrag für 2 Herren u. 1 Dame,17,10,,,,before 1925,,,,,,,comedy,
+,,,,,,,,,,,,,,,1,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,1,,,,
