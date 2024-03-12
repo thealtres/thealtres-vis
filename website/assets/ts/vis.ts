@@ -543,6 +543,36 @@ async function fillFilterValues(dataType: string, filterMappings): Promise<void>
 
 function enableFilterBtns() {
   $(".filter-btn").on("click", function() {
+    // check if magnifier view is enabled
+    // if so, since we're dealing with filters,
+    // it needs to be disabled completely
+    // to show relevant filtered data
+    const activeMagnifierEls =
+    [".play-list-show-char-unique-btn", ".char-list-show-play-unique-btn"]
+    .filter((el) => $(el).hasClass("active"));
+
+    if (activeMagnifierEls.length > 0) {
+      const el = activeMagnifierEls[0];
+      $(el).removeClass("active");
+
+      // is the button for showing plays or characters?
+      const isChars = el === ".char-list-show-play-unique-btn";
+
+      const headerText = isChars ? ".play-header-text" : ".char-header-text";
+      console.log("headerText", headerText)
+      $(headerText)
+        .text(isChars ? "Plays" : "Characters")
+        .next()
+        .css("display", "inline"); // show progress number again
+
+      // enable timeline again
+      $(".resize, .brush, .pane").removeClass("tl-disabled");
+    }
+
+    // reset pagination
+    $("#char-list-pagination").find("option").not(":first").remove();
+    $("#play-list-pagination").find("option").not(":first").remove();
+
     const key = $(this).attr("name");
     let value = null;
 
@@ -826,7 +856,7 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
       }
 
       playText += `<i
-      class="char-list-show-char-unique-btn pointer fa-solid fa-magnifying-glass"
+      class="play-list-show-char-unique-btn pointer fa-solid fa-magnifying-glass"
       data-workid=${play.workId}
       data-lang=${play.lang}></i>`;
 
@@ -849,9 +879,9 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
     if (!charsInPlayCard) {
       // there is a bug that causes "Page 1" not to be saved in the html
       // when clicking the char-list-show-play-unique-btn search icon again
-      // to disable the "Plays with" view
+      // to disable the "[char] appears in" view
       // may be caused by the fact that the "Page 1" string
-      // is not part of the html generated for the "Plays with" view
+      // is not part of the html generated for the "[char] appears in" view
       const spanPageEl = `<span id="play-p-1">Page 1</span>`;
       currentPlayTemplate = spanPageEl + html;
     }
@@ -1153,7 +1183,7 @@ function resetFilters() {
   $("#char-list").html(originalCharTemplate);
   $("#play-list").html(originalPlayTemplate);
 
-  // reset play-header-text if in "Plays with" view
+  // reset play-header-text if in "[char] appears in" view
   $(".play-header-text").text("Plays")
   .next().css("display", "inline"); // show progress number again
   $(".header-info[name='header-info-play']").css("display", "flex"); // show header info again
@@ -1161,7 +1191,7 @@ function resetFilters() {
   $("#char-list-show-plays-btn, #play-list-show-chars-btn, #filter-reset-btn")
   .addClass("disabled");
   $(`.char-list-show-play-unique-btn,
-  char-list-show-char-unique-btn,
+  play-list-show-char-unique-btn,
   .filter-btn`).removeClass("active");
 
   // reset all pagination values except first page
@@ -1170,6 +1200,7 @@ function resetFilters() {
   $("#play-list-pagination").find("option").not(":first").remove();
 
   $("#char-list-show-all-btn").removeClass("disabled");
+  $(".resize, .brush, .pane").removeClass("tl-disabled");
 
   totalShownCharItems = charData.length;
   totalShownPlayItems = playData.length;
@@ -1241,8 +1272,10 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
         characters: [entity as Character]
       });
 
-      $(".play-header-text").text("Plays with " + (entity as Character).persName)
-      .next().css("display", "none") // hide progress number
+      $(".play-header-text").html("<strong>" + (entity as Character).persName +
+      "</strong> appears in:");
+
+      $(".play-header-text").next().css("display", "none") // hide progress number
        // hide header info
       $(".header-info[name='header-info-play']").css("display", "none");
     } else {
@@ -1328,9 +1361,11 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
         play: entity as Play
       })));
 
-      $(".char-header-text")
-      .text(`Characters in ${(entity as Play).titleMain} (${charsInPlays.length})`)
-      .next().css("display", "none") // hide progress number
+      $(".char-header-text").html(`Characters in
+      <i><strong>${(entity as Play).titleMain}</strong></i>
+      (${charsInPlays.length})`)
+
+      $(".char-header-text").next().css("display", "none") // hide progress number
 
       // hide header info
       $(".header-info[name='header-info-char']").css("display", "none");
@@ -1405,68 +1440,83 @@ function setGraphHighlight(data: Play[], highlightUnique = false) {
   raiseHandles();
 }
 
-async function setMagnifierView(zoomOn: string, el: JQuery<HTMLElement>) {
-  if (zoomOn === "plays") {
-    if (el.hasClass("active")) {
-      $(".char-list-show-play-unique-btn").removeClass("active");
-      $("#play-list").html(currentPlayTemplate);
+/**
+ * 
+ * @param zoomOn - Entity type to zoom on ("characters" or "plays")
+ * @param el - Clicked magnifier icon
+ */
+async function setMagnifierView(zoomOn: string, el: JQuery<HTMLElement>): Promise<void> {
+  const isActiveMagnifier = el.hasClass("active");
+  const isChars = zoomOn === "characters";
+  const isPlays = zoomOn === "plays";
 
-      setGraphHighlight(filteredPlayData, false);
-
-      $(".play-header-text").text("Plays")
-        .next().css("display", "inline"); // show progress number again
-      $(".header-info[name='header-info-play']").css("display", "flex"); // show header info again
-      return;
-    }
-
-    const workId = el.data("workid");
-    const lang = el.data("lang");
-    const charId = el.data("charid");
-    const char = getCharacter(workId, lang, charId);
-
-    showRelations("playsByChar", true, char);
-
-    $(".char-list-show-char-unique-btn").removeClass("active");
-    $(el).addClass("active");
-
-    // fix bug where char-list-show-plays-btn
-    // would remain active after having clicked it
-    // and then clicking char-list-show-char-unique-btn
-    if ($("#char-list-show-plays-btn").hasClass("active")) {
-      $("#char-list-show-plays-btn").removeClass("active");
-    }
-  } else if (zoomOn === "characters") {
-    if (el.hasClass("active")) {
-      $(".char-list-show-char-unique-btn").removeClass("active");
-      $("#char-list").html(currentCharTemplate);
-
-      setGraphHighlight(filteredCharData, false);
-
-      $(".char-header-text").text("Characters")
-        .next().css("display", "inline") // show progress number again
-      console.log($(".char-header-text").next());
-      $(".header-info[name='header-info-char']").css("display", "flex"); // show header info again
-      return;
-    }
-
-    const workId = el.data("workid");
-    const lang = el.data("lang");
-    const play = playData.find((play: Play) => play.workId === workId && play.lang === lang);
-
-    showRelations("charsByPlay", true, play);
-
-    $(".char-list-show-play-unique-btn").removeClass("active");
-    $(el).addClass("active");
-
-    // fix bug where char-list-show-plays-btn
-    // would remain active after having clicked it
-    // and then clicking char-list-show-play-unique-btn
-    if ($("#char-list-show-plays-btn").hasClass("active")) {
-      $("#char-list-show-plays-btn").removeClass("active");
-    }
-  } else {
+  if (!isChars && !isPlays) {
     console.error("Unknown magnifier view:", zoomOn);
-  }
+      return;
+    }
+
+  // logic executed when active magnifier icon is clicked
+  if (isActiveMagnifier) {
+    // disable active magnifier icon
+    const magnifierBtnClass = isChars
+      ? ".play-list-show-char-unique-btn"
+      : ".char-list-show-play-unique-btn";
+    $(magnifierBtnClass).removeClass("active");
+
+    // reset view
+    const listId = isChars ? "#char-list" : "#play-list";
+    const currentTemplate = isChars ? currentCharTemplate : currentPlayTemplate;
+    $(listId).html(currentTemplate);
+
+    // reset timeline
+    setGraphHighlight(filteredPlayData, false);
+
+    // reset header text
+    const headerText = isChars ? ".char-header-text" : ".play-header-text";
+    $(headerText)
+      .text(isChars ? "Characters" : "Plays")
+      .next()
+      .css("display", "inline"); // show progress number again
+
+    // reset header info
+    const headerInfoName = isChars ? "header-info-char" : "header-info-play";
+    $(`.header-info[name='${headerInfoName}']`).css("display", "flex");
+
+    // enable timeline again
+    $(".resize, .brush, .pane").removeClass("tl-disabled");
+      return;
+    }
+
+    const workId = el.data("workid");
+    const lang = el.data("lang");
+  const charId = el.data("charid");
+
+  const entityType = isChars
+    ? playData.find((play: Play) => play.workId === workId && play.lang === lang)
+    : getCharacter(workId, lang, charId);
+
+  const relationType = isChars ? "charsByPlay" : "playsByChar";
+  showRelations(relationType, true, entityType);
+
+  const otherMagnifierBtnClass = isChars
+    ? ".char-list-show-play-unique-btn"
+    : ".play-list-show-char-unique-btn";
+  $(otherMagnifierBtnClass).removeClass("active");
+
+  // enable magnifier icon
+    $(el).addClass("active");
+
+  // Fix bug where char-list-show-plays-btn
+    // would remain active after having clicked it
+  // and then clicking the other magnifier view button
+      $("#char-list-show-plays-btn").removeClass("active");
+
+  // Disable timeline handles when using magnifier mode
+  // since only one play/characters from one play are shown,
+  // it doesn't make sense to have the handles enabled
+  // plus, it would cause a bug where going beyond the play date
+  // would render data as if magnifier mode were inactive
+  $(".resize, .brush, .pane").addClass("tl-disabled");
 }
 
 async function fetchData(): Promise<void> {
@@ -1623,7 +1673,7 @@ $(function () {
 
   // needs to be done at document level
   // because the button is dynamically created
-  $(document).on("click", ".char-list-show-char-unique-btn", async function() {
+  $(document).on("click", ".play-list-show-char-unique-btn", async function() {
     setMagnifierView("characters", $(this));
   });
 
