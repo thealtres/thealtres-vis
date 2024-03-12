@@ -233,14 +233,17 @@ async function renderData(elName: string, loadedData: Character[] | Play[], curr
   await generateCharacterTemplate(pageData as Character[]) :
   await generatePlayTemplate(pageData as Play[]);
 
-  // console.log("pageData", pageData)
-  // console.log("template", elName, template)
-  // console.log(`function renderData() called with args: ${elName}, ${loadedData}, ${currentPage}`);
-  // console.trace()
+  // only show anchor if all data to be loaded > itemsPerPage
+  let anchorEl = "";
+  if (elName === "main-view-chars" && filteredCharData.length > itemsPerPage) {
+    anchorEl = `<p id="char-p-${currentPage}">Page ${currentPage}</p>`
+  } else if (elName === "main-view-plays-table" && filteredPlayData.length > itemsPerPage) {
+    anchorEl = `<span id="play-p-${currentPage}">Page ${currentPage}</span>`
+  }
 
   let html = elName === "main-view-chars" ?
-    $("#char-list").html() + `<p id="char-p-${currentPage}">Page ${currentPage}</p>` + template :
-    $("#play-list").html() + `<span id="play-p-${currentPage}">Page ${currentPage}</span>` + template;
+    $("#char-list").html() + anchorEl + template :
+    $("#play-list").html() + anchorEl + template;
 
   if (elName === "main-view-chars") {
     $("#char-list").html(html);
@@ -1296,7 +1299,10 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
     }
 
     // fix anchor not appearing when filtering by char-specific filter
-    if (playTemplate && !playTemplate.includes(`<span id="play-p-1">Page 1</span>`)) {
+    if (playTemplate &&
+        !playTemplate.includes(`<span id="play-p-1">Page 1</span>`) &&
+        // except in magnifier view
+        !unique) {
       playTemplate = `<span id="play-p-1">Page 1</span>` + playTemplate;
     }
 
