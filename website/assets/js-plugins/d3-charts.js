@@ -1,14 +1,15 @@
 // set the dimensions and margins of the graph
-var margin = {top: 10, right: 50, bottom: 80, left: 30},
-    width = 360 - margin.left - margin.right,
-    height = 320 - margin.top - margin.bottom;
+var margin = {top: 0, right: 50, bottom: 150, left: 30},
+    width = 600 - margin.left - margin.right,
+    height = 550 - margin.top - margin.bottom;
 
 export function setChart() {
     // append the svg object to the body of the page
     var svg = d3.select("#chart")
     .append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
+        //.attr("width", width + margin.left + margin.right)
+        //.attr("height", height + margin.top + margin.bottom)
+        .attr("viewBox", `0 70 ${width} ${height}`)
     .append("g")
         .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
