@@ -147,6 +147,12 @@ def convert_to_json(data: dict, type: str) -> dict:
                 else v for k, v in dct.items()}
                 for dct in author_data]
 
+        # replace "sex" property nulls with "U"
+        author_data = [{k: "U" if k in ["sex"]
+                and v is None
+                else v for k, v in dct.items()}
+                for dct in author_data]
+
         for author_dict in author_data:
             json_template["authors"].append(author_dict)
 
