@@ -495,6 +495,10 @@ export function setTimeline(dataset) {
                 brush_end_new = new Date(b[0].getTime() + interval_ms);
             };
 
+        //! note: if data has missing years, clicking on the "reset" button
+        //! will cause only data with available years to be shown
+        //! because data is updated based on the "Showing data from" text,
+        //! AKA dataXrange
         } else if ( d == "reset")  {
             brush_start_new = dataXrange[0];
             brush_end_new = dataXrange[1]
@@ -516,18 +520,19 @@ export function setTimeline(dataset) {
     }
 }
 
-export function highlightGraphPeriod(d1, d2, lang, highlightUnique) {
+export function highlightGraphPeriod(d1, d2, lang) {
+    // !deprecated: used for languages (instead of new line plot)
     // check if highlight at same position
-    const existingRect = context.selectAll('[class^="highlight-rect"').filter(function() {
-        const x = parseFloat(d3.select(this).attr('x'));
-        const width = parseFloat(d3.select(this).attr('width'));
-        return x === x2(new Date(d1, 0, 1))
-        && width === x2(new Date(d2, 0, 1)) - x2(new Date(d1, 0, 1));
-    });
+    // const existingRect = context.selectAll('[class^="highlight-rect"').filter(function() {
+    //     const x = parseFloat(d3.select(this).attr('x'));
+    //     const width = parseFloat(d3.select(this).attr('width'));
+    //     return x === x2(new Date(d1, 0, 1))
+    //     && width === x2(new Date(d2, 0, 1)) - x2(new Date(d1, 0, 1));
+    // });
 
-    if (existingRect.size() > 0) {
-        return;
-    }
+    // if (existingRect.size() > 0) {
+    //     return;
+    // }
 
     // only show one unique rectangle at a time (for show-play-unique-btn)
     const existingUniqueRect = context.selectAll('[class^="highlight-rect"').filter(function() {
@@ -558,10 +563,10 @@ export function highlightGraphPeriod(d1, d2, lang, highlightUnique) {
     let rectType = "highlight-rect-" + lang;
     let rectColor = highlightColors[lang] || highlightColors["default"];
 
-    if (highlightUnique) {
-        rectType += "-unique";
-        rectColor = highlightColors["unique"];
-    }
+    // if (highlightUnique) {
+    //     rectType += "-unique";
+    //     rectColor = highlightColors["unique"];
+    // }
 
     context.append("rect")
     .attr("class", rectType)
@@ -652,21 +657,17 @@ export function clearGraphHighlight(brushReset = false, unique = false) {
     }
 
     context.selectAll(".language-line").remove();
-    //context.selectAll('[class^="highlight-rect"').remove();
+    context.selectAll('[class^="highlight-rect"').remove();
 
     if (brushReset) {
         recreateBrush();
     }
-        // .transition()
-        // .duration(500)
-        // .style("opacity", 0)
-        // .each("end", function() {
-        //     if (brushReset) {
-        //         resetBrush();
-        //     }
+}
 
-        //     d3.select(this).remove();
-        // });
+export function isSlidingTimeline() {
+    //todo: low priority task
+    //todo: check if brush is being slided,
+    //todo: if so, do not update the timeline until release
 }
 
 function clearLastSingleRectHighlight() {

@@ -1,7 +1,7 @@
 import { Character, Play, Author, Publisher } from "./IEntity";
 import { setTimeline, updateTimelineLangPlot,
   clearGraphHighlight, raiseHandles, highlightGraphPeriod } from "../js-plugins/d3-timeline";
-import { setChart } from "../js-plugins/d3-charts";
+import { setChart, updateChart } from "../js-plugins/d3-charts";
 
 // These are professionalGroup values to be filtered out in fillFilterValues()
 // we may convert them to null in the future
@@ -40,6 +40,7 @@ const defaultCharFilters = {
   sex: [],
   professionalGroup: [],
   socialClass: [],
+  searchInput: "",
 };
 let charFilters = defaultCharFilters;
 
@@ -49,6 +50,7 @@ const defaultPlayFilters = {
   publisher: [],
   author: [],
   dates: [],
+  searchInput: "",
 };
 let playFilters = defaultPlayFilters;
 
@@ -393,23 +395,27 @@ function enableSortRows() {
   function comparer(index: number) {
     /**
      * Get cell value
-     * @param {HTMLTableCellElement} row - Row to get value from
-     * @param {number} index - Index of the column to get value from
+     * @param row - Row to get value from
+     * @param index - Index of the column to get value from
      * @returns {string}
      */
-    function getCellValue(row, index) {
+    function getCellValue(row: HTMLTableCellElement, index: number) {
       return $(row).children("td").eq(index).text();
     }
 
-    function isNumeric(n) {
-      return !isNaN(parseFloat(n)) && isFinite(n);
+    /**
+     * @param n - Number or string to check
+     * @returns - Whether n is a number or string; and is finite
+     */
+    function isNumeric(n: number | string) {
+      return !isNaN(parseFloat(n as string)) && isFinite(n as number);
     }
 
-    return function(a, b) {
-        const valA = getCellValue(a, index);
-        const valB = getCellValue(b, index);
-        return isNumeric(valA) && isNumeric(valB) ? parseInt(valA) - parseInt(valB)
-        : valA.toString().localeCompare(valB);
+    return function(a: HTMLTableCellElement, b: HTMLTableCellElement) {
+      const valA = getCellValue(a, index);
+      const valB = getCellValue(b, index);
+      return isNumeric(valA) && isNumeric(valB) ? parseInt(valA) - parseInt(valB)
+      : valA.toString().localeCompare(valB);
     };
   }
 }
@@ -688,11 +694,12 @@ function fillSelect(dataType: string, selectId: string) {
   }
 };
 
-function updateSelectOption(selectId: string, optionValue: number, newCount: number) {
+function updateSelectOption(selectId: string, optionValue: number, includeCount = false, newCount: number = 0) {
   // @ts-ignore
   const select = document.getElementById(selectId).tomselect;
   const option = select.options[optionValue];
-  const newOptionText = option.text.split(" (")[0] + " (" + newCount + ")";
+  const newOptionText = includeCount ?
+  option.text.split(" (")[0] + " (" + newCount + ")" : option.text.split(" (")[0]
 
   if (!option) {
     console.error(`Option with value ${optionValue} not found in select ${selectId}`);
@@ -702,7 +709,7 @@ function updateSelectOption(selectId: string, optionValue: number, newCount: num
   select.updateOption(optionValue, {
     value: optionValue,
     text: newOptionText
-    });
+  });
 };
 
 // function updateCreatorSelectOptionObjs(selectEl) {
@@ -729,12 +736,16 @@ function updateSelectOption(selectId: string, optionValue: number, newCount: num
 function updateCreatorSelects(filteredData: Play[]) {
   authorData.forEach((author: Author) => {
     updateSelectOption("select-author", author.authorId,
-    getNumberOfPlaysByIdAndLang(filteredData, author.authorId, author.lang, "author"));
+    //! getNumberOfPlaysByIdAndLang is broken; sometimes returns zero when filtering :(
+    //! temp fix: hide count when filtering
+    //getNumberOfPlaysByIdAndLang(filteredData, author.authorId, author.lang, "author"));
+    false);
   });
 
   publisherData.forEach((publisher: Publisher) => {
     updateSelectOption("select-pub", publisher.publisherId,
-    getNumberOfPlaysByIdAndLang(filteredData, publisher.publisherId, publisher.lang, "publisher"));
+    //getNumberOfPlaysByIdAndLang(filteredData, publisher.publisherId, publisher.lang, "publisher"));
+    false);
   });
 };
 
@@ -1143,15 +1154,21 @@ async function updateView(dataType: string, sharedProp = false) {
       $("#play-list-pagination").html("");
       renderData("main-view-plays-table", filteredData, playCurrentPage);
 
-      if (playFilters.publisher.length > 0 || playFilters.author.length > 0 || playFilters.dates.length > 0 || playFilters.lang.length > 0) {
-        showRelations("charsByPlay", false, null, false, true);
-      } else {
-        $("#char-list").html(originalCharTemplate);
-      }
+      showRelations("charsByPlay", false, null, false, true);
+      //! this was used so that if a play-specific filter was used,
+      //! the character list would be updated accordingly
+      //! when removing the filters
+      //! but that's not a good way of doing it
+      // if (playFilters.publisher.length > 0 || playFilters.author.length > 0 || playFilters.dates.length > 0 || playFilters.lang.length > 0) {
+      //   showRelations("charsByPlay", false, null, false, true);
+      // } else {
+      //   $("#char-list").html(originalCharTemplate);
+      // }
 
       // update highlight graph when using play-specific filter
       // (e.g. publisher, author, date)
       setGraphHighlight(filteredData, false);
+      updateChart(getChartData(filteredData));
 
       break;
   }
@@ -1170,14 +1187,16 @@ function resetFilters() {
     lang: [],
     sex: [],
     professionalGroup: [],
-    socialClass: []
+    socialClass: [],
+    searchInput: "",
   }
   playFilters = {
     publisher: [],
     lang: [],
     genre: [],
     author: [],
-    dates: []
+    dates: [],
+    searchInput: "",
   }
 
   $("#char-list").html(originalCharTemplate);
@@ -1344,6 +1363,7 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
     // only highlight graph if filtered
     if (totalShownPlayItems !== playData.length) {
       setGraphHighlight(playsWithChars, unique);
+      updateChart(getChartData(playsWithChars));
       updateCreatorSelects(playsWithChars);
     }
 
@@ -1438,10 +1458,65 @@ function setGraphHighlight(data: Play[], highlightUnique = false) {
   // as highlight would be on top of handles,
   // which would make it impossible to drag the handles
   raiseHandles();
-}
+};
+
+function getChartData(data: Play[]) {
+  const authorGenderData: { [key: number]: { M: number; F: number } } = {};
+
+  //todo: create sep function for this
+  const minPlayDataYear = Math.min(...playData.map((item: Play) => +item.printed)
+  .filter(year => !isNaN(year) && year !== 0));
+  const maxPlayDataYear = Math.max(...playData.map((item: Play) => +item.printed)
+  .filter(year => !isNaN(year)));
+
+  // array used to generate data with zero values for years with no data
+  // so that the chart graph can be generated correctly
+  const allYears = Array.from({ length: maxPlayDataYear - minPlayDataYear + 1 },
+    (_, i) => i + minPlayDataYear);
+
+  // get number of plays over time with male or female authors
+  data.forEach((play: Play) => {
+    const { lang, printed } = play;
+
+    if (printed === null || Number.isNaN(Number(printed))) return;
+
+    const authorIds = Array.isArray(play.authorId) ? play.authorId : [play.authorId];
+
+    authorIds.forEach((authorId: number) => {
+      const author = authorData.find((author: Author) => author.authorId === authorId && author.lang === lang);
+
+      if (author && author.sex) {
+        if (!authorGenderData[printed]) {
+          authorGenderData[printed] = { M: 0, F: 0, U: 0 };
+        }
+
+        console.log("aGD", authorGenderData[printed])
+
+        if (author.sex === "M") {
+          authorGenderData[printed].M++;
+        } else if (author.sex === "F") {
+          authorGenderData[printed].F++;
+        } else if (author.sex === "U") {
+          authorGenderData[printed].U++;
+        }
+      }
+    });
+  })
+
+  const chartData = allYears.map(year => {
+    const yearData = authorGenderData[year] || { M: 0, F: 0, U: 0 };
+    return {
+      // convert to date object for D3
+      year: new Date(year, 0, 1),
+      ...yearData
+    }
+  })
+
+  return chartData;
+};
 
 /**
- * 
+ *
  * @param zoomOn - Entity type to zoom on ("characters" or "plays")
  * @param el - Clicked magnifier icon
  */
@@ -1452,8 +1527,8 @@ async function setMagnifierView(zoomOn: string, el: JQuery<HTMLElement>): Promis
 
   if (!isChars && !isPlays) {
     console.error("Unknown magnifier view:", zoomOn);
-      return;
-    }
+    return;
+  }
 
   // logic executed when active magnifier icon is clicked
   if (isActiveMagnifier) {
@@ -1484,11 +1559,11 @@ async function setMagnifierView(zoomOn: string, el: JQuery<HTMLElement>): Promis
 
     // enable timeline again
     $(".resize, .brush, .pane").removeClass("tl-disabled");
-      return;
-    }
+    return;
+  }
 
-    const workId = el.data("workid");
-    const lang = el.data("lang");
+  const workId = el.data("workid");
+  const lang = el.data("lang");
   const charId = el.data("charid");
 
   const entityType = isChars
@@ -1504,12 +1579,12 @@ async function setMagnifierView(zoomOn: string, el: JQuery<HTMLElement>): Promis
   $(otherMagnifierBtnClass).removeClass("active");
 
   // enable magnifier icon
-    $(el).addClass("active");
+  $(el).addClass("active");
 
   // Fix bug where char-list-show-plays-btn
-    // would remain active after having clicked it
+  // would remain active after having clicked it
   // and then clicking the other magnifier view button
-      $("#char-list-show-plays-btn").removeClass("active");
+  $("#char-list-show-plays-btn").removeClass("active");
 
   // Disable timeline handles when using magnifier mode
   // since only one play/characters from one play are shown,
@@ -1582,7 +1657,7 @@ async function drawUI() {
 
   // set timeline, chart
   setGraphHighlight(playData);
-  setChart();
+  setChart(getChartData(playData));
 
   totalShownCharItems = charData.length;
   totalShownPlayItems = playData.length;

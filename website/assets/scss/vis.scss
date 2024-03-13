@@ -174,7 +174,7 @@ footer {
 }
 
 .filter-btn[title="Alsatian"]:hover, .filter-btn[title="Alsatian"].active {
-    background: rgba(255, 25, 25, 0.7);
+    background: rgba(255, 25, 25, 0.87);
     color: white;
 }
 
@@ -303,7 +303,6 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
     width: 100%;
 }
 
@@ -459,4 +458,9 @@ footer {
 
 #timeline .metric-chart text#displayDates {
 	font-weight: bold;
+}
+
+#timeline .tl-disabled {
+    opacity: 0.5;
+    pointer-events: none !important;
 }

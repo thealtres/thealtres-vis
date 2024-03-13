@@ -28,6 +28,7 @@ interface Author {
     authorId: number;
     lang: string;
     fullName: string;
+    sex: string;
 }
 
 interface Location {

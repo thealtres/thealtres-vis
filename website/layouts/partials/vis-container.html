@@ -48,7 +48,7 @@
     <div class="item main-view">
         <div class="timeline-header">
             <div id="timeline"></div>
-            <div class="logo-container">
+            {{/*  <div class="logo-container">
                 {{- if $has_logo -}}
                 <img class="logo" src="{{ $logo.RelPermalink }}" alt="{{ site.Title }}"
                 {{with site.Params.header.image.width}}width="{{.}}"{{end}}
@@ -56,15 +56,16 @@
                 {{- else -}}
                     {{- site.Title -}}
                 {{- end -}}
-            </div>
+            </div>  */}}
         </div>
         <div class="results-view">
             <div class="item main-view-chars">
                 <div class="char-header header">
                     <h2 class="char-header-heading">
-                        <span class="char-header-text">Characters</span> <span class="char-progress"></span>
+                        <span class="char-header-text">Chars</span> <span class="char-progress"></span>
                     </h2>
                     <span class="header-info" name="header-info-char">
+                        <input type="text" placeholder="Search..">
                         <select id="char-list-pagination"></select>
                         <span class="header-icons">
                             <i id="char-list-show-all-btn" class="fa-solid fa-list pointer" rel="tooltip" title="Show All"></i>
@@ -91,6 +92,7 @@
                             <span class="play-header-text">Plays</span> <span class="play-progress"></span>
                         </h2>
                         <span class="header-info" name="header-info-play">
+                            <input type="text" placeholder="Search..">
                             <select id="play-list-pagination"></select>
                             <span class="header-icons">
                                 <i id="play-list-show-chars-btn" class="fa-solid fa-people-group pointer" rel="tooltip" title="Show Characters"></i>
