@@ -1,7 +1,7 @@
 import { Character, Play, Author, Publisher } from "./IEntity";
 import { setTimeline, updateTimelineLangPlot,
   clearGraphHighlight, raiseHandles, highlightGraphPeriod } from "../js-plugins/d3-timeline";
-import { setChart, updateChart } from "../js-plugins/d3-charts";
+import { drawChart, setChart, updateChart } from "../js-plugins/d3-charts";
 
 // These are professionalGroup values to be filtered out in fillFilterValues()
 // we may convert them to null in the future
@@ -63,6 +63,8 @@ let preventScrollEvent = false;
 
 let timelineData = [];
 
+let currentGraphType: string;
+
 /* Pagination */
 let playCurrentPage = 1;
 let charCurrentPage = 1;
@@ -105,10 +107,7 @@ function getJSON(path: string) : Promise<any> {
 function getDataCountByYear(data: Play[]) {
   // we're using plays to get years of the data
   // because it has the "printed" property
-  const minPlayDataYear = Math.min(...playData.map((item: Play) => +item.printed)
-  .filter(year => !isNaN(year) && year !== 0));
-  const maxPlayDataYear = Math.max(...playData.map((item: Play) => +item.printed)
-  .filter(year => !isNaN(year)));
+  const [minPlayDataYear, maxPlayDataYear] = getMinMaxPlayDataYear(data);
 
   // array used to generate data with zero values for years with no data
   // so that the timeline graph can be generated correctly
@@ -145,6 +144,15 @@ function getYearPair(data: Play[]) {
     };
   }).filter(y => y.year1 !== 0 && !isNaN(y.year1))
   .reduce((acc, curr) => ({ ...acc, ...curr }), {});
+}
+
+function getMinMaxPlayDataYear(data: Play[]) : number[] {
+  const minYear = Math.min(...data.map((item: Play) => +item.printed)
+  .filter(year => !isNaN(year) && year !== 0));
+  const maxYear = Math.max(...data.map((item: Play) => +item.printed)
+  .filter(year => !isNaN(year)));
+
+  return [minYear, maxYear];
 }
 
 function findSuccessiveYears(years) : object {
@@ -1231,6 +1239,14 @@ function resetFilters() {
   clearGraphHighlight(true); // reset highlight and brush
   setGraphHighlight(playData); // reset timeline plot to default
 
+  // reset chart to default in current selected view
+  // currentGraphType will be undefined if graph type has not been changed
+  // so using authorGender, because it's the default graph type
+  const chartData = (currentGraphType === undefined || currentGraphType === "authorGender")
+  ? getChartData(playData, "authorGender") : getChartData(charData, "charGender");
+
+  updateChart(chartData);
+
   // reset selects data
   // @ts-ignore
   const authorSelect = document.getElementById("select-author").tomselect;
@@ -1363,8 +1379,12 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
     // only highlight graph if filtered
     if (totalShownPlayItems !== playData.length) {
       setGraphHighlight(playsWithChars, unique);
-      updateChart(getChartData(playsWithChars));
-      updateCreatorSelects(playsWithChars);
+
+      // don't update chart nor selects if we're using magnifier mode
+      if (!unique) {
+        updateChart(getChartData(playsWithChars));
+        updateCreatorSelects(playsWithChars);
+      }
     }
 
   } else if (viewMode === "charsByPlay") {
@@ -1460,59 +1480,120 @@ function setGraphHighlight(data: Play[], highlightUnique = false) {
   raiseHandles();
 };
 
-function getChartData(data: Play[]) {
-  const authorGenderData: { [key: number]: { M: number; F: number } } = {};
+function getChartData(data: Play[] | Character[] = filteredPlayData, dataType: string = "authorGender") {
+  console.log(`calling getChartData with dataType=${dataType}`)
+  let minPlayDataYear, maxPlayDataYear: number;
 
-  //todo: create sep function for this
-  const minPlayDataYear = Math.min(...playData.map((item: Play) => +item.printed)
-  .filter(year => !isNaN(year) && year !== 0));
-  const maxPlayDataYear = Math.max(...playData.map((item: Play) => +item.printed)
-  .filter(year => !isNaN(year)));
+  if (dataType === "charGender") {
+    const getPlay = (char: Character): Play => {
+      return playData.find((play: Play) =>
+        play.workId === char.workId && play.lang === char.lang);
+    };
+    const plays = (data as Character[]).map((char: Character) => getPlay(char));
+    [minPlayDataYear, maxPlayDataYear] = getMinMaxPlayDataYear(plays);
+  } else {
+    [minPlayDataYear, maxPlayDataYear] = getMinMaxPlayDataYear(data as Play[]);
+  }
 
   // array used to generate data with zero values for years with no data
   // so that the chart graph can be generated correctly
   const allYears = Array.from({ length: maxPlayDataYear - minPlayDataYear + 1 },
     (_, i) => i + minPlayDataYear);
 
-  // get number of plays over time with male or female authors
-  data.forEach((play: Play) => {
-    const { lang, printed } = play;
+  let chartData = null;
+  if (dataType === "authorGender") {
+    const authorGenderData: { [key: number]:
+      { M: number; F: number, U: number } } = {};
 
-    if (printed === null || Number.isNaN(Number(printed))) return;
+    // get number of plays over time with male or female authors
+    data.forEach((play: Play) => {
+      const { lang, printed } = play;
 
-    const authorIds = Array.isArray(play.authorId) ? play.authorId : [play.authorId];
+      if (printed === null || Number.isNaN(Number(printed))) return;
 
-    authorIds.forEach((authorId: number) => {
-      const author = authorData.find((author: Author) => author.authorId === authorId && author.lang === lang);
+      const authorIds = Array.isArray(play.authorId)
+      ? play.authorId : [play.authorId];
 
-      if (author && author.sex) {
-        if (!authorGenderData[printed]) {
-          authorGenderData[printed] = { M: 0, F: 0, U: 0 };
+      authorIds.forEach((authorId: number) => {
+        const author = authorData.find((author: Author) =>
+        author.authorId === authorId && author.lang === lang);
+
+        if (author && author.sex) {
+          if (!authorGenderData[printed]) {
+            authorGenderData[printed] = { M: 0, F: 0, U: 0 };
+          }
+
+          authorGenderData[printed][author.sex === "M" ? "M"
+          : author.sex === "F" ? "F"
+          : author.sex === "U" ? "U" : ""]++;
+        }
+      });
+    })
+
+    chartData = allYears.map(year => {
+      const yearData = authorGenderData[year] || { M: 0, F: 0, U: 0 };
+      return {
+        // convert to date object for D3
+        year: new Date(year, 0, 1),
+        ...yearData
+      }
+    })
+  } else if (dataType === "charGender") {
+    const charGenderData: { [key: number]: { M: number; F: number,
+      U: number, B: number } } = {};
+
+    data.forEach((char: Character) => {
+      const play = playData.find((play: Play) =>
+        play.workId === char.workId && play.lang === char.lang);
+
+      if (play) {
+        const { lang, printed } = play;
+
+        if (printed === null || Number.isNaN(Number(printed))) return;
+
+        if (!charGenderData[printed]) {
+          charGenderData[printed] = { M: 0, F: 0, U: 0, B: 0 };
         }
 
-        console.log("aGD", authorGenderData[printed])
-
-        if (author.sex === "M") {
-          authorGenderData[printed].M++;
-        } else if (author.sex === "F") {
-          authorGenderData[printed].F++;
-        } else if (author.sex === "U") {
-          authorGenderData[printed].U++;
-        }
+        charGenderData[printed][char.sex === "M" ? "M"
+        : char.sex === "F" ? "F"
+        : char.sex === "U" ? "U"
+        : char.sex === "B" ? "B" : ""]++;
       }
     });
-  })
 
-  const chartData = allYears.map(year => {
-    const yearData = authorGenderData[year] || { M: 0, F: 0, U: 0 };
-    return {
-      // convert to date object for D3
-      year: new Date(year, 0, 1),
-      ...yearData
-    }
-  })
+    chartData = allYears.map(year => {
+      const yearData = charGenderData[year] || { M: 0, F: 0, U: 0, B: 0 };
+      return {
+        // convert to date object for D3
+        year: new Date(year, 0, 1),
+        ...yearData
+      }
+    })
+  };
 
   return chartData;
+};
+
+// this function is here (and not in d3-charts.js) because
+// we need to get the data from here
+// unfortunately exporting getChartData() to d3-charts.js
+// does not work as it calls the "on document ready" function
+// when importing getChartData,
+// causing data and other stuff to be loaded twice
+function switchChart(option: string) {
+  let data = null;
+
+  switch (option) {
+    case "authorGender":
+      data = getChartData();
+      break;
+    case "charGender":
+      data = getChartData(filteredCharData, "charGender");
+      break;
+  }
+
+  drawChart(data, option);
 };
 
 /**
@@ -1754,5 +1835,10 @@ $(function () {
 
   $(".main-view-chars, .main-view-plays-table").on("scroll", function() {
     handleScroll(this, preventScrollEvent);
+  });
+
+  d3.select("#chartSelectBtn").on("change", function() {
+    currentGraphType = d3.select(this).property("value");
+    switchChart(currentGraphType);
   });
 });

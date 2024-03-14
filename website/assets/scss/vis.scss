@@ -51,6 +51,10 @@ svg {
     vertical-align: baseline;
 }
 
+select[disabled] {
+    color: #ccc;
+}
+
 table {
     width: 100%;
 }
