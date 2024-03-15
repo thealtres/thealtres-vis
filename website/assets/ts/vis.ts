@@ -1201,7 +1201,7 @@ function resetFilters() {
   .next().css("display", "inline"); // show progress number again
   $(".header-info[name='header-info-play']").css("display", "flex"); // show header info again
 
-  $("##filter-reset-btn").addClass("disabled");
+  $("#filter-reset-btn").addClass("disabled");
   $(`.char-list-show-play-unique-btn,
   play-list-show-char-unique-btn,
   .filter-btn`).removeClass("active");

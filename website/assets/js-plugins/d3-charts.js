@@ -73,7 +73,7 @@ export function drawChart(data, chartType) {
     .append("svg")
         //.attr("width", width + margin.left + margin.right)
         //.attr("height", height + margin.top + margin.bottom)
-        .attr("viewBox", "-10 -10 950 1120") //! old: 0 70 870 390
+        .attr("viewBox", "-10 -5 950 1120") //! old: 0 70 870 390
         // 0 -30 1000 560
         //new responsive: 0 -30 950 1100
     .append("g")
