@@ -4,6 +4,8 @@ let margin = {top: 0, right: 0, bottom: 30, left: 30},
 
 let x;
 let y;
+let xAxis;
+let yAxis;
 
 let chartGroups = {
     "authorGender": {
@@ -31,6 +33,7 @@ function getYValues(key) {
 }
 
 function getMaxestNumberOfY(data, key) {
+    console.log("Called getMaxestNumberOfY with key", key);
     // return maxest Y value among max Y values
     return d3.max(data, function(d) {
         // return max Y value for each group
@@ -55,6 +58,11 @@ function setChartSelect(data) {
 export function drawChart(data, chartType) {
     console.log(`Called drawChart with chartType: ${chartType}`)
 
+    x = null;
+    y = null;
+
+    if (chartType === undefined) chartType = Object.keys(chartGroups)[0];
+
     // remove existing chart
     if (d3.select("#chart").selectAll("*").length > 0) {
         d3.select("#chart").selectAll("*").remove();
@@ -65,7 +73,7 @@ export function drawChart(data, chartType) {
     .append("svg")
         //.attr("width", width + margin.left + margin.right)
         //.attr("height", height + margin.top + margin.bottom)
-        .attr("viewBox", "0 -10 950 1120") //! old: 0 70 870 390
+        .attr("viewBox", "-10 -10 950 1120") //! old: 0 70 870 390
         // 0 -30 1000 560
         //new responsive: 0 -30 950 1100
     .append("g")
@@ -77,31 +85,32 @@ export function drawChart(data, chartType) {
         return d3.ascending(x.year, y.year);
     });
 
-    // Add X axis --> it is a date format
+    // add X axis (date format)
     const dataXrange = d3.extent(data, function(d) { return d.year; });
     x = d3.time.scale()
     .domain(dataXrange)
     .range([0, width]);
-    svg.append("g")
+
+    xAxis = svg.append("g")
     .attr("transform", "translate(0," + height + ")")
+    .attr("class", "x-axis")
     .call(d3.svg.axis().scale(x).orient("bottom"));
 
-    // Add Y axis
+    // add Y axis
     y = d3.scale.linear()
-    .domain([0, getMaxestNumberOfY(data, chartType)])
+    .domain([0, getMaxestNumberOfY(data, chartType)]).nice()
     .range([height, 0]);
-    svg.append("g")
-    .call(d3.svg.axis().scale(y).orient("left"));
 
-    if (chartType === "authorGender") {
-        var lineM = createLine(svg, data, "M", chartGroups.authorGender.M);
-        var lineF = createLine(svg, data, "F", chartGroups.authorGender.F);
-        var lineU = createLine(svg, data, "U", chartGroups.authorGender.U);
-    } else if (chartType === "charGender") {
-        var lineM = createLine(svg, data, "M", chartGroups.charGender.M);
-        var lineF = createLine(svg, data, "F", chartGroups.charGender.F);
-        var lineU = createLine(svg, data, "U", chartGroups.charGender.U);
-        var lineB = createLine(svg, data, "B", chartGroups.charGender.B);
+    console.log("maxestDrawChart", getMaxestNumberOfY(data, d3.select("#chartSelectBtn").property("value")))
+    console.log(data)
+
+    yAxis = svg.append("g")
+    .attr("class", "y-axis")
+    .call(d3.svg.axis().scale(y).orient("left").ticks(5));
+
+    // create line for each group
+    for (const group of getYValues(chartType)) {
+        createLine(svg, data, group, chartGroups[chartType][group]);
     }
 
     // add legend dot
@@ -151,6 +160,7 @@ export function setChart(data, chartType = Object.keys(chartGroups)[0]) {
 
 export function updateChart(data) {
     console.log("Updating chart with data of length", data.length, data);
+    // we set 1 because we need at least 2 data points to draw a line
     if (data.length <= 1) {
         d3.select("#chart").selectAll("*").attr("display", "none");
 
@@ -180,6 +190,23 @@ export function updateChart(data) {
     data.sort(function(x, y) {
         return d3.ascending(x.year, y.year);
     });
+
+    x.domain(d3.extent(data, function(d) { return d.year; }));
+    y.domain([0, getMaxestNumberOfY(data, d3.select("#chartSelectBtn").property("value"))]);
+
+    console.log("maxestUpdateChart", getMaxestNumberOfY(data, d3.select("#chartSelectBtn").property("value")))
+
+    d3.select("#chart").select(".x-axis")
+    .transition()
+    .duration(0)
+    .call(d3.svg.axis().scale(x).orient("bottom"));
+
+    console.log("y", y.domain());
+
+    d3.select("#chart").select(".y-axis")
+    .transition()
+    .duration(0)
+    .call(d3.svg.axis().scale(y).orient("left").ticks(5));
 
     // get chart lines
     d3.select("#chart").selectAll("path").each(function(d, i) {

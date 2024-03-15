@@ -230,10 +230,10 @@ async function renderData(elName: string, loadedData: Character[] | Play[], curr
   if (loadedData.length === 0) {
     if (elName === "main-view-chars") {
       $("#char-list").html("<p>No characters found</p>");
-      $("#char-list-show-plays-btn, #char-list-sort-btn").addClass("disabled");
+      $("#char-list-sort-btn").addClass("disabled");
     } else {
       $("#play-list").html("<p>No plays found</p>");
-      $("#play-list-show-chars-btn, #play-list-sort-btn").addClass("disabled");
+      $("#play-list-sort-btn").addClass("disabled");
     }
     return;
   }
@@ -633,15 +633,6 @@ function enableFilterBtns() {
       }
     }
 
-    // activate "Show Plays" filter button
-    // we only want to enable the button if the list is filtered
-    // since all plays are shown by default
-    if ($(".filter-btn.active").length > 0) {
-      $("#char-list-show-plays-btn").removeClass("disabled");
-    } else {
-      $("#char-list-show-plays-btn").addClass("disabled");
-    }
-
     updateProgress();
   });
 }
@@ -818,6 +809,7 @@ async function generateCharacterTemplate(data: Character[], showPlayBtn = true, 
         // only when clicking show-play-unique-btn
         // otherwise, triggers when clicking the char-list-show-plays-btn
         // when only one char is returned for a play
+        //  ???
         && $(".char-list-show-play-unique-btn").filter((i, el) =>
         $(el).hasClass("active")).length > 0) {
           html = html.replace("<p class=\"char-minified\">",
@@ -1072,11 +1064,6 @@ function filterPlays(playData: Play[]) : Play[] {
     && genreMatches && dateMatches;
   });
 
-  // activate "Show Characters" filter button
-  // we only want to enable the button if the list is filtered
-  // since all characters are shown by default
-  $("#play-list-show-chars-btn").removeClass("disabled");
-
   totalShownPlayItems = filteredPlayData.length;
 
   //console.timeEnd("filterPlays");
@@ -1176,8 +1163,7 @@ async function updateView(dataType: string, sharedProp = false) {
       // update highlight graph when using play-specific filter
       // (e.g. publisher, author, date)
       setGraphHighlight(filteredData, false);
-      updateChart(getChartData(filteredData));
-
+      updateChart(getChartData(filteredData, currentGraphType));
       break;
   }
 
@@ -1215,8 +1201,7 @@ function resetFilters() {
   .next().css("display", "inline"); // show progress number again
   $(".header-info[name='header-info-play']").css("display", "flex"); // show header info again
 
-  $("#char-list-show-plays-btn, #play-list-show-chars-btn, #filter-reset-btn")
-  .addClass("disabled");
+  $("##filter-reset-btn").addClass("disabled");
   $(`.char-list-show-play-unique-btn,
   play-list-show-char-unique-btn,
   .filter-btn`).removeClass("active");
@@ -1245,7 +1230,8 @@ function resetFilters() {
   const chartData = (currentGraphType === undefined || currentGraphType === "authorGender")
   ? getChartData(playData, "authorGender") : getChartData(charData, "charGender");
 
-  updateChart(chartData);
+  //updateChart(chartData);
+  drawChart(chartData, currentGraphType);
 
   // reset selects data
   // @ts-ignore
@@ -1354,8 +1340,7 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
 
     let playTemplate: string;
     // charsInPlayCard of generatePlayTemplate() must be true
-    // when char-list-show-plays-btn
-    // or char-list-show-play-unique-btn are clicked
+    // when char-list-show-play-unique-btn is clicked
     // this way, the previous template is saved
     // as currentPlayTemplate in generatePlayTemplate()
     // and the user can go back to the previous view
@@ -1382,7 +1367,7 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
 
       // don't update chart nor selects if we're using magnifier mode
       if (!unique) {
-        updateChart(getChartData(playsWithChars));
+        updateChart(getChartData(playsWithChars, currentGraphType, viewMode));
         updateCreatorSelects(playsWithChars);
       }
     }
@@ -1480,11 +1465,15 @@ function setGraphHighlight(data: Play[], highlightUnique = false) {
   raiseHandles();
 };
 
-function getChartData(data: Play[] | Character[] = filteredPlayData, dataType: string = "authorGender") {
-  console.log(`calling getChartData with dataType=${dataType}`)
+function getChartData(data: Play[] | Character[] = filteredPlayData, chartType: string = "authorGender", viewMode = null) {
+  console.log(`calling getChartData with chartType=${chartType}`)
+  console.log("dLength", data.length, Object.keys(data[0]).length, data)
+  console.trace()
+  console.log("data", data)
+
   let minPlayDataYear, maxPlayDataYear: number;
 
-  if (dataType === "charGender") {
+  if (chartType === "charGender") {
     const getPlay = (char: Character): Play => {
       return playData.find((play: Play) =>
         play.workId === char.workId && play.lang === char.lang);
@@ -1495,13 +1484,28 @@ function getChartData(data: Play[] | Character[] = filteredPlayData, dataType: s
     [minPlayDataYear, maxPlayDataYear] = getMinMaxPlayDataYear(data as Play[]);
   }
 
+  // if getChartData() is called from showRelations() w/ viewMode "playsByChar"
+  // and we want to show a char-specific chart (e.g. charGender),
+  // data needs to be replaced with filteredCharData
+  // so that only data from the filtered characters is used in the chart
+  // otherwise, data is a Play[] because we're passing playsWithChars Play[]
+  // (which is used for play-specific charts, e.g. authorGender)
+  // also, this check is done here and not before in the function
+  // because we still need to pass Play[] to getMinMaxPlayDataYear()
+  if (viewMode === "playsByChar" && chartType === "charGender") {
+    data = filteredCharData;
+  }
+
+  console.log("filteredCharDataLength", filteredCharData.length)
+  console.log("charsInPlaysLength", filteredCharsInPlays.length)
+
   // array used to generate data with zero values for years with no data
   // so that the chart graph can be generated correctly
   const allYears = Array.from({ length: maxPlayDataYear - minPlayDataYear + 1 },
     (_, i) => i + minPlayDataYear);
 
   let chartData = null;
-  if (dataType === "authorGender") {
+  if (chartType === "authorGender") {
     const authorGenderData: { [key: number]:
       { M: number; F: number, U: number } } = {};
 
@@ -1538,7 +1542,7 @@ function getChartData(data: Play[] | Character[] = filteredPlayData, dataType: s
         ...yearData
       }
     })
-  } else if (dataType === "charGender") {
+  } else if (chartType === "charGender") {
     const charGenderData: { [key: number]: { M: number; F: number,
       U: number, B: number } } = {};
 
@@ -1562,6 +1566,8 @@ function getChartData(data: Play[] | Character[] = filteredPlayData, dataType: s
       }
     });
 
+    console.log("charGenderData", charGenderData)
+
     chartData = allYears.map(year => {
       const yearData = charGenderData[year] || { M: 0, F: 0, U: 0, B: 0 };
       return {
@@ -1571,6 +1577,8 @@ function getChartData(data: Play[] | Character[] = filteredPlayData, dataType: s
       }
     })
   };
+
+  console.log("chartData", chartData)
 
   return chartData;
 };
@@ -1582,13 +1590,16 @@ function getChartData(data: Play[] | Character[] = filteredPlayData, dataType: s
 // when importing getChartData,
 // causing data and other stuff to be loaded twice
 function switchChart(option: string) {
+  console.log(`calling switchChart with option=${option}`)
   let data = null;
 
   switch (option) {
     case "authorGender":
+      console.log("dLength — calling getChartData with option authorGender")
       data = getChartData();
       break;
     case "charGender":
+      console.log("dLength — calling getChartData with option charGender", filteredCharData.length)
       data = getChartData(filteredCharData, "charGender");
       break;
   }
@@ -1661,11 +1672,6 @@ async function setMagnifierView(zoomOn: string, el: JQuery<HTMLElement>): Promis
 
   // enable magnifier icon
   $(el).addClass("active");
-
-  // Fix bug where char-list-show-plays-btn
-  // would remain active after having clicked it
-  // and then clicking the other magnifier view button
-  $("#char-list-show-plays-btn").removeClass("active");
 
   // Disable timeline handles when using magnifier mode
   // since only one play/characters from one play are shown,
@@ -1764,37 +1770,13 @@ async function drawUI() {
   // @ts-ignore | initialize tooltips
   $("[rel=tooltip]").tooltip();
 
-  // disable "Show Plays", "Show Characters" and "Reset" buttons by default
-  $("#char-list-show-plays-btn, #play-list-show-chars-btn, #filter-reset-btn")
+  // disable "Reset" button by default
+  $("#filter-reset-btn")
   .addClass("disabled");
 }
 
 $(function () {
   fetchData();
-
-  $("#char-list-show-plays-btn").on("click", function() {
-    if ($(this).hasClass("disabled")) {
-      return;
-    }
-
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active");
-      $("#play-list").html(currentPlayTemplate);
-      $(".play-header-text").text("Plays")
-      return;
-    }
-
-    showRelations("playsByChar", false, null, true);
-    $(this).addClass("active");
-    });
-
-  $("#play-list-show-chars-btn").on("click", function() {
-    if ($(this).hasClass("disabled")) {
-      return;
-    }
-
-    showRelations("charsByPlay", false, null, true);
-  });
 
   $("#filter-reset-btn").on("click", function() {
     if ($(this).hasClass("disabled")) {
