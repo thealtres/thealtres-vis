@@ -7,6 +7,9 @@
 {{ end }}
 
 <div id="loader"></div>
+<div id="map-overlay">
+    <div id="map"></div>
+</div>
 
 <div id="vis-container">
     <div class="item filters">
@@ -52,8 +55,8 @@
                 <i id="map-open-btn" class="fa-solid fa-map pointer" rel="tooltip" title="Show Map"></i>
                 {{- if $has_logo -}}
                 <a href="{{ site.BaseURL }}">
-                <img class="logo" src="{{ $logo.RelPermalink }}" alt="{{ site.Title }}"
-                {{with site.Params.header.image.width}}width="{{.}}"{{end}}
+                    <img class="logo" src="{{ $logo.RelPermalink }}" alt="{{ site.Title }}"
+                    {{with site.Params.header.image.width}}width="{{.}}"{{end}}
                     {{with site.Params.header.image.height}}height="{{.}}"{{end}}
                     title="Go back to Thealtres website">
                 </a>

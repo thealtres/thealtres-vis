@@ -78,6 +78,8 @@ const caretUpEl = `<i class="fa-solid fa-caret-up caret-force-visible"></i>`;
 
 let allCharsShown = false;
 
+let isMapSet = false;
+
 /**
  * Fetches JSON data from file path and returns it as a Promise
  * @param path - path to JSON file
@@ -1681,6 +1683,17 @@ async function setMagnifierView(zoomOn: string, el: JQuery<HTMLElement>): Promis
   $(".resize, .brush, .pane").addClass("tl-disabled");
 }
 
+function setMap() {
+  let map = L.map('map').setView([51.505, -0.09], 13);
+
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+
+  map.invalidateSize(true);
+}
+
 async function fetchData(): Promise<void> {
   //console.time("fetchData");
   try {
@@ -1822,5 +1835,21 @@ $(function () {
   d3.select("#chartSelectBtn").on("change", function() {
     currentGraphType = d3.select(this).property("value");
     switchChart(currentGraphType);
+  });
+
+  $("#map-open-btn").on("click", function() {
+    $("#map-overlay").css("display", "flex");
+
+    // map needs to be displayed for it to be set
+    if (!isMapSet) {
+      setMap();
+      isMapSet = true;
+    }
+  });
+
+  document.addEventListener("click", function(e) {
+    if ((e.target as HTMLElement).id === "map-overlay") {
+      $("#map-overlay").css("display", "none");
+    }
   });
 });
