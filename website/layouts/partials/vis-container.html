@@ -14,7 +14,7 @@
             <h2>Filters</h2>
             <i id="filter-reset-btn" class="fa-solid fa-undo pointer" rel="tooltip" title="Reset view"></i>
         </div>
-        <div id="filter-list filter-fixed">
+        <div id="filter-list">
             <div id="filter-lang">
                 <h3 class="filter-label">Tradition</h3>
                 <div id="filter-lang-values"></div>
@@ -46,30 +46,33 @@
         </div>
     </div>
     <div class="item main-view">
-        <div class="timeline-header">
+        <div class="main-header">
             <div id="timeline"></div>
-            {{/*  <div class="logo-container">
+            <div id="header-btns">
+                <i id="map-open-btn" class="fa-solid fa-map pointer" rel="tooltip" title="Show Map"></i>
                 {{- if $has_logo -}}
+                <a href="{{ site.BaseURL }}">
                 <img class="logo" src="{{ $logo.RelPermalink }}" alt="{{ site.Title }}"
                 {{with site.Params.header.image.width}}width="{{.}}"{{end}}
-                {{with site.Params.header.image.height}}height="{{.}}"{{end}}>
+                    {{with site.Params.header.image.height}}height="{{.}}"{{end}}
+                    title="Go back to Thealtres website">
+                </a>
                 {{- else -}}
                     {{- site.Title -}}
                 {{- end -}}
-            </div>  */}}
+            </div>
         </div>
         <div class="results-view">
             <div class="item main-view-chars">
                 <div class="char-header header">
                     <h2 class="char-header-heading">
-                        <span class="char-header-text">Chars</span> <span class="char-progress"></span>
+                        <span class="char-header-text">Characters</span> <span class="char-progress"></span>
                     </h2>
                     <span class="header-info" name="header-info-char">
                         <input type="text" placeholder="Search.. (unimplemented)">
                         <select id="char-list-pagination"></select>
                         <span class="header-icons">
                             <i id="char-list-show-all-btn" class="fa-solid fa-list pointer" rel="tooltip" title="Show All"></i>
-                            <i id="char-list-sort-btn" class="fa-solid fa-sort sort-btn pointer" rel="tooltip" title="Sort by…"></i>
                         </span>
                     </span>
                 </div>
@@ -81,8 +84,8 @@
                         <h2 class="chart-header-heading">
                             <span class="chart-header-text">Charts</span></span>
                         </h2>
+                        <select id="chartSelectBtn"></select>
                     </div>
-                    <select id="chartSelectBtn"></select>
                     <div id="chart"></div>
                 </div>
                 <div class="item main-view-plays-table">
