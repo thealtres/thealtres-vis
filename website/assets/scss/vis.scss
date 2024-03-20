@@ -5,16 +5,23 @@
     --main-text-color: #000000;
 
     --accent-color: #00afb9;
+    --border-color: #666;
 
     --timeline-color: rgba(0, 170, 141, 0.5);
 
     --lang-color-fre: rgba(21, 96, 189, 0.5);
     --lang-color-fre-active: rgba(0, 170, 255, 0.7);
+    --lang-color-fre-play-card: rgb(0, 170, 255);
+
     --lang-color-ger: rgba(246, 215, 18, 1);
     --lang-color-ger-active: rgba(255, 255, 0, 0.9);
     --lang-color-ger-active-sec: #ffc308;
+    --lang-color-ger-play-card: rgb(235, 235, 0);
+
     --lang-color-als: rgba(250, 15, 54, 0.7);
     --lang-color-als-active: rgba(255, 25, 25, 0.87);
+    --lang-color-als-active-sec: #ff1919;
+    --lang-color-als-play-card: rgb(200, 50, 50);
 }
 
 html {
@@ -53,12 +60,12 @@ h3 {
 button {
     color: var(--main-text-color);
     background: var(--main-bg-color);
-    border: 1px solid #666;
+    border: 1px solid var(--border-color);
     cursor: pointer;
 }
 
 button:hover {
-    background: #ccc;
+    background: var(--third-bg-color);
 }
 
 svg {
@@ -159,7 +166,7 @@ footer {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    border-left: 1px solid #666;
+    border-left: 1px solid var(--border-color);
 }
 
 .logo {
@@ -170,13 +177,18 @@ footer {
     font-size: 2.5rem;
 }
 
+.fa-map:hover {
+    color: var(--accent-color);
+    transition: color 0.3s ease;
+}
+
 #vis-container {
     display: grid;
     grid-template-columns: 10% 90%;
     grid-gap: 0.8rem;
     width: 100%;
     min-height: 50vh;
-    height: 97vh; // leave a bit of height for footer
+    height: 98vh; // leave a bit of height for footer
     padding-right: 1.3rem;
     overflow: hidden;
     background: var(--sec-bg-color);
@@ -198,10 +210,28 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .filter-header #filter-reset-btn {
     padding-left: 10px;
+}
+
+div[id^="filter"][id$="values"] {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div[id^="filter"][id$="values"] > button {
+    margin-right: 1px;
+}
+
+.filter-label {
+    text-align: center;
+}
+
+.filter-btn {
+    flex: 1 0 auto;
 }
 
 .filter-btn[title="French"] {
@@ -232,13 +262,34 @@ footer {
     color: white;
 }
 
+.filter-gender-sub-header {
+    display: flex;
+}
+
+.filter-gender-sub-header i {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.filter-gender-sub-char {
+    width: 50%;
+    padding-right: 4px;
+}
+
+.filter-gender-sub-author {
+    width: 50%;
+    padding-left: 4px;
+}
+
 .main-view {
     // grid-column: 2;
     // display: grid;
     // grid-template-rows: 20% 80%;
     min-height: 50vh;
     height: 90vh; /*shares height with #vis-container*/
-    border-left: 1px solid #666;
+    border-left: 1px solid var(--border-color);
     padding-left: 0.5em;
 }
 
@@ -255,18 +306,15 @@ footer {
     padding-right: 0.5rem; /* add space between magnifier icon and scrollbar */
 }
 
-.char-list-show-play-unique-btn[data-lang="fre"]:hover,
-.play-list-show-char-unique-btn[data-lang="fre"]:hover {
+.char-list-show-play-unique-btn[data-lang="fre"]:hover {
     color: var(--lang-color-fre);
 }
 
-.char-list-show-play-unique-btn[data-lang="ger"]:hover,
-.play-list-show-char-unique-btn[data-lang="ger"]:hover {
+.char-list-show-play-unique-btn[data-lang="ger"]:hover {
     color: var(--lang-color-ger);
 }
 
-.char-list-show-play-unique-btn[data-lang="als"]:hover,
-.play-list-show-char-unique-btn[data-lang="als"]:hover {
+.char-list-show-play-unique-btn[data-lang="als"]:hover {
     color: var(--lang-color-als);
 }
 
@@ -306,8 +354,9 @@ footer {
     background: var(--third-bg-color);
     border-radius: 5px;
     padding: 0.5rem;
-    height: 1.5rem;
+    height: 2rem;
     white-space: nowrap;
+    z-index: 2; /* keep header on top when play-card is scaled on hover */
 }
 
 .header-info {
@@ -319,6 +368,19 @@ footer {
 #char-list p[id*="char-p"] {
     margin-left: auto;
     margin-right: auto;
+    font-weight: bold;
+}
+
+#char-list div[id*="char-p"] .page-circle {
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    width: 2rem;
+    line-height: 1rem;
+    padding: 0.4rem;
+    border: 2px solid var(--third-bg-color);
+    font-weight: bold;
+    background: var(--third-bg-color);
 }
 
 /* wrap names */
@@ -330,6 +392,10 @@ footer {
 #char-list td:nth-child(5) {
     display: inline;
     margin-right: 0.7rem;
+}
+
+#char-list tr:hover {
+    background: var(--sec-bg-color);
 }
 
 .main-view-plays {
@@ -350,13 +416,29 @@ footer {
 }
 
 /* page label */
-.main-view-plays-table #play-list span[id*="play-p"] {
+.main-view-plays-table #play-list div[id*="play-p"] {
     flex-grow: 1;
     width: 100%;
 }
 
+.main-view-plays-table #play-list div[id*="play-p"] .page-circle {
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    width: 2rem;
+    line-height: 1rem;
+    padding: 0.4rem;
+    border: 2px solid var(--third-bg-color);
+    font-weight: bold;
+    margin: 0.5rem auto 0 auto;
+    background: var(--third-bg-color);
+}
+
 .main-view-plays-table #play-list .play-card {
-    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 5px;
     margin: 0.5rem;
     padding: 0.5rem;
     flex-grow: 1;
@@ -367,19 +449,61 @@ footer {
 }
 
 .play-card[data-lang="fre"] {
-    box-shadow: inset 0 5px 0 rgb(0, 170, 255), 0 2px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 5px 0 var(--lang-color-fre-play-card), 0 2px 20px rgba(0, 0, 0, 0.2);
 }
 
 .play-card[data-lang="ger"] {
-    box-shadow: inset 0 5px 0 rgb(235, 235, 0), 0 2px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 5px 0 var(--lang-color-ger-play-card), 0 2px 20px rgba(0, 0, 0, 0.2);
 }
 
 .play-card[data-lang="als"] {
-    box-shadow: inset 0 5px 0 rgb(200, 50, 50), 0 2px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 5px 0 var(--lang-color-als-play-card), 0 2px 20px rgba(0, 0, 0, 0.2);
 }
 
 .main-view-plays-table #play-list .play-card .unique {
-    color: rgba(255, 204, 0, 0.8);
+    font-weight: bold;
+}
+
+.play-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.play-card[data-lang="fre"]:hover {
+    background: var(--lang-color-fre-play-card);
+    color: white;
+}
+
+.play-card[data-lang="ger"]:hover {
+    background: var(--lang-color-ger-play-card);
+}
+
+.play-card[data-lang="als"]:hover {
+    background: var(--lang-color-als-play-card);
+    color: white;
+}
+
+.play-card[data-lang="fre"]:hover > .play-list-show-char-unique-btn[data-lang="fre"].active,
+.play-card[data-lang="als"]:hover > .play-list-show-char-unique-btn[data-lang="als"].active {
+    color: white;
+}
+
+.play-card[data-lang="ger"]:hover > .play-list-show-char-unique-btn[data-lang="ger"].active {
+    color: black;
+}
+
+.play-card .play-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-style: italic;
+}
+
+.play-card-info {
+    width: 100%;
+}
+
+.play-list-show-char-unique-btn {
+    align-self: flex-start;
 }
 
 #chart {

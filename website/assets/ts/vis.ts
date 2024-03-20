@@ -11,12 +11,15 @@ const invalidSocialClassValues = ["LMC|UC", "MC"]
 
 const charFilterEls = {
   "lang": $("#filter-lang-values"),
-  "sex": $("#filter-gender-values"),
+  "sex": $("#filter-gender-char-values"),
   "professionalGroup": $("#filter-profession-values"),
   "socialClass": $("#filter-social-class-values"),
 }
 const playFilterEls = {
   "genre": $("#filter-genre-values"),
+}
+const authorFilterEls = {
+  "sex": $("#filter-gender-author-values"),
 }
 
 let charData: Character[] = [], playData: Play[] = [],
@@ -248,9 +251,9 @@ async function renderData(elName: string, loadedData: Character[] | Play[], curr
   // only show anchor if all data to be loaded > itemsPerPage
   let anchorEl = "";
   if (elName === "main-view-chars" && filteredCharData.length > itemsPerPage) {
-    anchorEl = `<p id="char-p-${currentPage}">Page ${currentPage}</p>`
+    anchorEl = `<div id="char-p-${currentPage}"><span class="page-circle">${currentPage}</span></div>`
   } else if (elName === "main-view-plays-table" && filteredPlayData.length > itemsPerPage) {
-    anchorEl = `<span id="play-p-${currentPage}">Page ${currentPage}</span>`
+    anchorEl = `<div id="play-p-${currentPage}"><span class="page-circle">${currentPage}</span></div>`
   }
 
   let html = elName === "main-view-chars" ?
@@ -462,99 +465,112 @@ function generateTimelineData(data: Play[]) {
   return yearsCount;
 };
 
-async function fillFilterValues(dataType: string, filterMappings): Promise<void> {
-  // This JSON file is used to map values in charData and playData to:
-  // 1) their full names to be shown as tooltips
-  // (applies to charData lang, gender and socialClass; playData genre)
-  // 2) their abbreviated values to be shown as buttons
-  // as the original values would be too long to display
-  // (applies to professionalGroup)
-  console.log(filterMappings["sex"])
+async function fillFilterValues(filterMappings): Promise<void> {
+  // fill filter values for authors
+  for (const key in authorFilterEls) {
 
-  switch (dataType) {
-    case "plays":
-      fillSelect("publisher", "#select-pub");
-      fillSelect("author", "#select-author");
+    const values = new Set(authorData.map((author: Author) =>
+    // order: M, F, U
+    author[key]).sort((a, b) => {
+      const order: Record<string, number> = { M: 0, F: 1, U: 2 };
+      return order[a] - order[b];
+    }));
 
-      for (const key in playFilterEls) {
-        const values = new Set(playData.map((play: Play) => play[key]));
-        console.log(filterMappings[key])
+    const select = authorFilterEls[key];
+    values.forEach((value : string) => {
+      const option = document.createElement("button");
+      option.name = key;
+      option.title = filterMappings[key][value];
+      option.textContent = value;
+      $(option).addClass("filter-btn");
+      select.append(option);
+    });
+  }
 
-        const select = playFilterEls[key];
-        values.forEach((value : string) => {
-          const option = document.createElement("button");
-          option.name = key;
-          option.textContent = filterMappings[key][value];
-          $(option).addClass("filter-btn");
-          select.append(option);
-        });
-      }
-      break;
-    case "characters":
-      // Keep an array of original (long) professionalGroup values
-      // to later set the og-value attribute of the Profession filter buttons.
-      // We set the og-value attribute to the original value
-      // because Character's professionalGroup values
-      // are not the mapped (abbreviated) ones, but the original ones.
-      // Not doing this would make it impossible to filter professions.
-      const originalProfValues = [];
+  // fill filter values for plays
+  fillSelect("publisher", "#select-pub");
+  fillSelect("author", "#select-author");
 
-      for (const key in charFilterEls) {
-        const values = new Set();
+  for (const key in playFilterEls) {
+    const values = new Set(playData.map((play: Play) => play[key]));
+    console.log(filterMappings[key])
 
-        if (key === "professionalGroup") {
-          for (const char of charData) {
-            const originalValue = char.professionalGroup;
+    const select = playFilterEls[key];
+    values.forEach((value : string) => {
+      if (value === null) return;
 
-            // skip invalid values
-            if (invalidProfValues.includes(originalValue)
-            || originalValue === null
-            // temporarily skip values with pipe (invalid values)
-            || originalValue.includes("|")) continue;
+      const option = document.createElement("button");
+      option.name = key;
+      option.textContent = filterMappings[key][value];
+      $(option).addClass("filter-btn");
+      select.append(option);
+    });
+  }
 
-            const mappedValue = filterMappings.professionalGroup[originalValue];
-            originalProfValues.push(originalValue);
+  // fill filter values for characters
+  // Keep an array of original (long) professionalGroup values
+  // to later set the og-value attribute of the Profession filter buttons.
+  // We set the og-value attribute to the original value
+  // because Character's professionalGroup values
+  // are not the mapped (abbreviated) ones, but the original ones.
+  // Not doing this would make it impossible to filter professions.
+  const originalProfValues = [];
 
-            if (mappedValue) {
-              values.add(mappedValue);
-            } else {
-              values.add(originalValue);
-            }
-          };
+  for (const key in charFilterEls) {
+    const values = new Set();
+
+    if (key === "professionalGroup") {
+      for (const char of charData) {
+        const originalValue = char.professionalGroup;
+
+        // skip invalid values
+        if (invalidProfValues.includes(originalValue)
+        || originalValue === null
+        // temporarily skip values with pipe (invalid values)
+        || originalValue.includes("|")) continue;
+
+        const mappedValue = filterMappings.professionalGroup[originalValue];
+        originalProfValues.push(originalValue);
+
+        if (mappedValue) {
+          values.add(mappedValue);
         } else {
-          const newValues = charData.map((char) => char[key])
-          // temp fix for socialClass invalid values
-          .filter(value => value !== null && !invalidSocialClassValues.includes(value));
-
-          newValues.forEach(value => values.add(value));
+          values.add(originalValue);
         }
+      };
+    } else {
+      const newValues = charData.map((char) => char[key])
+      // temp fix for socialClass invalid values
+      .filter(value => value !== null && !invalidSocialClassValues.includes(value));
 
-        const select = charFilterEls[key];
-        values.forEach((value : string) => {
-          const option = document.createElement("button");
-          option.name = key;
-          option.textContent = value;
-
-          // set og-value attribute for profession filter buttons
-          // to the original (long) value in order to filter correctly
-          if (key === "professionalGroup") {
-            const originalValue =
-            originalProfValues.find((val) =>
-            filterMappings.professionalGroup[val] === value);
-
-            option.dataset.ogValue = originalValue;
-            // set title tooltip
-            option.title = originalValue;
-          } else {
-            option.title = filterMappings[key][value];
-          }
-
-          $(option).addClass("filter-btn");
-          select.append(option);
-        });
-      }
-      break;
+      newValues.forEach(value => values.add(value));
     }
+
+    const select = charFilterEls[key];
+    values.forEach((value : string) => {
+      const option = document.createElement("button");
+      option.name = key;
+      option.textContent = value;
+
+      // set og-value attribute for profession filter buttons
+      // to the original (long) value in order to filter correctly
+      if (key === "professionalGroup") {
+        const originalValue =
+        originalProfValues.find((val) =>
+        filterMappings.professionalGroup[val] === value);
+
+        option.dataset.ogValue = originalValue;
+        // set title tooltip
+        option.title = originalValue;
+      } else {
+        console.log("value-char", value, filterMappings[key][value], filterMappings[key])
+        option.title = filterMappings[key][value];
+      }
+
+      $(option).addClass("filter-btn");
+      select.append(option);
+    });
+  }
 }
 
 function enableFilterBtns() {
@@ -640,13 +656,15 @@ function enableFilterBtns() {
 }
 
 function fillSelect(dataType: string, selectId: string) {
-  let data: { value: number, text: string }[];
+  let data: { value: string, text: string }[];
 
   switch (dataType) {
     case "publisher":
       data = publisherData
       .map((publisher: Publisher) => ({
-        value: publisher.publisherId,
+        // value is a custom id (combination of lang and publisherId),
+        // as we need to know both to filter correctly
+        value: publisher.lang + publisher.publisherId,
         // some publisher values have no normalizedName
         text: (publisher.normalizedName ?? publisher.nameOnPlay) +" (" +
         getNumberOfPlaysByIdAndLang(playData, publisher.publisherId, publisher.lang, "publisher") + ")"
@@ -654,7 +672,9 @@ function fillSelect(dataType: string, selectId: string) {
       break;
     case "author":
       data = authorData.map((author: Author) => ({
-        value: author.authorId,
+        // value is a custom id (combination of lang and authorId),
+        // as we need to know both to filter correctly
+        value: author.lang + author.authorId,
         text: author.fullName + " (" +
         getNumberOfPlaysByIdAndLang(playData, author.authorId, author.lang, "author") + ")"
       }));
@@ -751,6 +771,7 @@ function updateCreatorSelects(filteredData: Play[]) {
 };
 
 async function generateCharacterTemplate(data: Character[], showPlayBtn = true, minified = false, charsInPlay = false): Promise<string> {
+  console.trace()
   if (data.length === 0) {
     return "<p>No characters found</p>";
   }
@@ -758,19 +779,15 @@ async function generateCharacterTemplate(data: Character[], showPlayBtn = true, 
   let html = "";
   try {
     const charPromises = data.map(async (character: Character) => {
-      let workId = character.workId;
-      let charId = character.characterId;
-      let lang = character.lang;
-      let name = character.persName ?? "";
-      let sex = character.sex ?? "";
-      let socialClass = character.socialClass ?? "";
-      let profession = character.professionalGroup ?? "";
-      let date = await getPlayInfo(workId, lang, "playObject")
+      const workId = character.workId;
+      const charId = character.characterId;
+      const lang = character.lang;
+      const name = character.persName ?? "";
+      const sex = character.sex ?? "";
+      const socialClass = character.socialClass ?? "";
+      const profession = character.professionalGroup ?? "";
+      const date = await getPlayInfo(workId, lang, "playObject")
       .then((play: Play) => { return play.printed; }) ?? "";
-
-      if (minified) {
-        return `<p class="char-minified">${name}</p>`;
-      }
 
       let charText = [name, sex, socialClass, profession, date]
       .map((item: string) => `<td>${item}</td>`).join("");
@@ -816,11 +833,15 @@ async function generateCharacterTemplate(data: Character[], showPlayBtn = true, 
         $(el).hasClass("active")).length > 0) {
           html = html.replace("<p class=\"char-minified\">",
           "<p class=\"char-minified unique\">");
-        }
+      }
 
-        if (!charsInPlay) {
-          currentCharTemplate = `<span id="char-p-1">Page 1</span>` + html;
-        }
+      console.log("html!", html)
+
+      if (!charsInPlay) {
+        currentCharTemplate = `<div id="char-p-1"><span class="page-circle">1</span></div>` + html;
+      }
+
+      console.log("currentCharTemplate", charsInPlay, currentCharTemplate)
 
       return html;
   } catch (error) {
@@ -829,7 +850,7 @@ async function generateCharacterTemplate(data: Character[], showPlayBtn = true, 
   }
 };
 
-async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Promise<string> {
+async function generatePlayTemplate(data: Play[], unique = false): Promise<string> {
   if (data.length === 0) {
     return "<p>No plays found</p>";
   }
@@ -850,20 +871,25 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
 
       const capitalizedGenre = genre ? genre.charAt(0).toUpperCase() + play.genre.slice(1) : "";
 
-      let titleMainDated = titleMain.trim();
+      let titleMainDated = `<span class="play-title">${titleMain.trim()}</span>`
       if (date) {
-        titleMainDated += ` (${date})`;
+        titleMainDated += ` <span class="play-date">(${date})</span>`;
       }
 
-      // filter out empty values
-      let playText = [titleMainDated, authorName, capitalizedGenre].filter(Boolean).join("<br>");
+      const authorNameFormatted = `<span class="play-author">${authorName}</span>`;
+      const genreFormatted = `<span class="play-genre">${capitalizedGenre}</span>`;
 
-      if (charsInPlayCard) {
+      // filter out empty values
+      let playText = [titleMainDated, authorNameFormatted, genreFormatted].filter(Boolean).join("<br>");
+
+      // wrap info into div for styling
+      playText = `<div class="play-card-info">${playText}</div>`
+
+      if (unique) {
         // do not include char-list-show-play-unique-btn search icon
-        // when adding chars to play card
+        // when showing unique play card for character
         // this creates side effects when using both magnifier modes;
         // may fix later
-        playText += await generateCharacterTemplate(play.characters, false, true, true);
         html = `<div class="play-card" data-lang="${play.lang}">${playText}</div>`;
         return html;
       }
@@ -886,21 +912,19 @@ async function generatePlayTemplate(data: Play[], charsInPlayCard = false): Prom
     html = playHtmlArray.join(""); // Combine HTML strings into a single string
 
     // we want to save the last template only if this function is not called
-    // from showRelations() (i.e. charsInPlayCard is false)
+    // from showRelations() (i.e. unique is false)
     // so that we can show all previously shown plays when clicking
     // the char-list-show-play-unique-btn search icon again
-    if (!charsInPlayCard) {
+    if (!unique) {
       // there is a bug that causes "Page 1" not to be saved in the html
       // when clicking the char-list-show-play-unique-btn search icon again
       // to disable the "[char] appears in" view
       // may be caused by the fact that the "Page 1" string
       // is not part of the html generated for the "[char] appears in" view
-      const spanPageEl = `<span id="play-p-1">Page 1</span>`;
+      const spanPageEl = `<div id="play-p-1"><span class="page-circle">1</span></div>`;
       currentPlayTemplate = spanPageEl + html;
+      console.log("currentPlayTemplate", currentPlayTemplate)
     }
-
-    console.log('html', html)
-    console.log('currentPlayTemplate', currentPlayTemplate)
 
     return html;
   } catch (error) {
@@ -1019,21 +1043,24 @@ function filterPlays(playData: Play[]) : Play[] {
   filteredPlayData = playData.filter((play: Play) => {
     const publisherMatches = publisherFilter.length === 0 ||
     publisherFilter.some((filter: string) => {
-      const matchingPublisher = play.publisherId === filter;
+      // value in dropdown is a custom id (lang + publisherId)
+      const matchingPublisher = play.lang + play.publisherId === filter;
 
       if (matchingPublisher) {
         const publisher = publisherData.find((publisher: Publisher) =>
-            publisher.publisherId === parseInt(filter)
+            publisher.lang + publisher.publisherId === filter
         );
 
-        return publisher && publisher.lang === play.lang;
+        return publisher;
+        //return publisher && publisher.lang === play.lang;
       }
     });
 
     const authorMatches = authorFilter.length === 0 ||
     authorFilter.some((filter: string) => {
       const author = authorData.find((author: Author) =>
-      author.authorId === parseInt(filter));
+      // value in dropdown is a custom id (lang + authorId)
+      author.lang + author.authorId === filter);
       if (!author) {
         return false;
       }
@@ -1341,7 +1368,7 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
     totalShownPlayItems = playsWithChars.length;
 
     let playTemplate: string;
-    // charsInPlayCard of generatePlayTemplate() must be true
+    // unique of generatePlayTemplate() must be true
     // when char-list-show-play-unique-btn is clicked
     // this way, the previous template is saved
     // as currentPlayTemplate in generatePlayTemplate()
@@ -1349,16 +1376,16 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
     // by clicking on the show-play-btn again
     if (appendNames || unique) {
       playTemplate = await generatePlayTemplate(playsWithChars, true);
-    } else {      console.log("test2")
+    } else {
       playTemplate = await generatePlayTemplate(playsWithChars, false);
     }
 
     // fix anchor not appearing when filtering by char-specific filter
     if (playTemplate &&
-        !playTemplate.includes(`<span id="play-p-1">Page 1</span>`) &&
+        !playTemplate.includes(`<div id="play-p-1"><span class="page-circle">1</span></div>`) &&
         // except in magnifier view
         !unique) {
-      playTemplate = `<span id="play-p-1">Page 1</span>` + playTemplate;
+      playTemplate = `<div id="play-p-1"><span class="page-circle">1</span></div>` + playTemplate;
     }
 
     $("#play-list").html(playTemplate);
@@ -1470,7 +1497,6 @@ function setGraphHighlight(data: Play[], highlightUnique = false) {
 function getChartData(data: Play[] | Character[] = filteredPlayData, chartType: string = "authorGender", viewMode = null) {
   console.log(`calling getChartData with chartType=${chartType}`)
   console.log("dLength", data.length, Object.keys(data[0]).length, data)
-  console.trace()
   console.log("data", data)
 
   let minPlayDataYear, maxPlayDataYear: number;
@@ -1635,6 +1661,7 @@ async function setMagnifierView(zoomOn: string, el: JQuery<HTMLElement>): Promis
     // reset view
     const listId = isChars ? "#char-list" : "#play-list";
     const currentTemplate = isChars ? currentCharTemplate : currentPlayTemplate;
+    console.log("currentTemplate", currentTemplate)
     $(listId).html(currentTemplate);
 
     // reset timeline
@@ -1650,6 +1677,10 @@ async function setMagnifierView(zoomOn: string, el: JQuery<HTMLElement>): Promis
     // reset header info
     const headerInfoName = isChars ? "header-info-char" : "header-info-play";
     $(`.header-info[name='${headerInfoName}']`).css("display", "flex");
+
+    // reset total shown items
+    totalShownCharItems = filteredCharData.length;
+    totalShownPlayItems = filteredPlayData.length;
 
     // enable timeline again
     $(".resize, .brush, .pane").removeClass("tl-disabled");
@@ -1690,8 +1721,6 @@ function setMap() {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }).addTo(map);
-
-  map.invalidateSize(true);
 }
 
 async function fetchData(): Promise<void> {
@@ -1770,9 +1799,14 @@ async function drawUI() {
   renderData("main-view-chars", loadedCharData, charCurrentPage);
   renderData("main-view-plays-table", loadedPlayData, playCurrentPage);
 
+  // This JSON file is used to map values in charData and playData to:
+  // 1) their full names to be shown as tooltips
+  // (applies to charData lang, gender and socialClass; playData genre)
+  // 2) their abbreviated values to be shown as buttons
+  // as the original values would be too long to display
+  // (applies to professionalGroup)
   const filterMappings = await getJSON("/json/misc/filter_map.json");
-  await fillFilterValues("characters", filterMappings);
-  await fillFilterValues("plays", filterMappings);
+  await fillFilterValues(filterMappings);
 
   enableFilterBtns();
   enableSortRows();
