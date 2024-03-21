@@ -237,7 +237,6 @@ async function renderData(elName: string, loadedData: Character[] | Play[], curr
   if (loadedData.length === 0) {
     if (elName === "main-view-chars") {
       $("#char-list").html("<p>No characters found</p>");
-      $("#char-list-sort-btn").addClass("disabled");
     } else {
       $("#play-list").html("<p>No plays found</p>");
       $("#play-list-sort-btn").addClass("disabled");
@@ -784,8 +783,21 @@ function updateCreatorSelects(filteredData: Play[]) {
   });
 };
 
+function handleSearch(el) {
+  const entity = el.id.split("-")[0];
+
+  if (entity === "char") {
+    charFilters.searchInput = el.value;
+    updateView("characters");
+  } else if (entity === "play") {
+    playFilters.searchInput = el.value;
+    updateView("plays");
+  } else {
+    console.error("Invalid entity for search:", entity);
+  }
+}
+
 async function generateCharacterTemplate(data: Character[], showPlayBtn = true, minified = false, charsInPlay = false): Promise<string> {
-  console.trace()
   if (data.length === 0) {
     return "<p>No characters found</p>";
   }
@@ -798,12 +810,12 @@ async function generateCharacterTemplate(data: Character[], showPlayBtn = true, 
       const lang = character.lang;
       const name = character.persName ?? "";
       const sex = character.sex ?? "";
-      const socialClass = character.socialClass ?? "";
       const profession = character.professionalGroup ?? "";
+      const socialClass = character.socialClass ?? "";
       const date = await getPlayInfo(workId, lang, "playObject")
       .then((play: Play) => { return play.printed; }) ?? "";
 
-      let charText = [name, sex, socialClass, profession, date]
+      let charText = [name, sex, profession, socialClass, date]
       .map((item: string) => `<td>${item}</td>`).join("");
 
       if (showPlayBtn) {
@@ -829,8 +841,8 @@ async function generateCharacterTemplate(data: Character[], showPlayBtn = true, 
           html = `<thead><tr>
           <th scope="col">Name<br>${caretDownEl} ${caretUpEl}</th>
           <th scope="col">Gender<br>${caretDownEl} ${caretUpEl}</th>
-          <th scope="col">Soc. Class<br>${caretDownEl} ${caretUpEl}</th>
           <th scope="col">Profession<br>${caretDownEl} ${caretUpEl}</th>
+          <th scope="col">Soc. Class<br>${caretDownEl} ${caretUpEl}</th>
           <th scope="col">Date<br>${caretDownEl} ${caretUpEl}</th>
           <th scope="col"></th>
           </tr></thead>` + html;
@@ -1024,6 +1036,7 @@ function filterCharacters(charData: Character[]) : Character[] {
   const professionFilter = charFilters.professionalGroup;
   //possible values: UC, MC, UMC, LC, LMC, LMC|UC
   const socialClassFilter = charFilters.socialClass;
+  const searchFilter = charFilters.searchInput;
 
   filteredCharData = charData.filter((char: Character) => {
     const langMatches = langFilter.length === 0 ||
@@ -1038,7 +1051,11 @@ function filterCharacters(charData: Character[]) : Character[] {
     const socialClassMatches = socialClassFilter.length === 0 ||
       socialClassFilter.some((filter: string) => filter === char.socialClass);
 
-    return langMatches && genderMatches && professionMatches && socialClassMatches;
+    const nameMatches = searchFilter.length === 0 ||
+      char.persName?.toLowerCase().includes(searchFilter.toLowerCase());
+
+    return langMatches && genderMatches && professionMatches
+    && socialClassMatches && nameMatches;
   });
 
   totalShownCharItems = filteredCharData.length;
@@ -1053,6 +1070,7 @@ function filterPlays(playData: Play[]) : Play[] {
   const langFilter = playFilters.lang;
   const genreFilter = playFilters.genre;
   const dateFilter = playFilters.dates;
+  const searchFilter = playFilters.searchInput;
 
   filteredPlayData = playData.filter((play: Play) => {
     const publisherMatches = publisherFilter.length === 0 ||
@@ -1095,7 +1113,13 @@ function filterPlays(playData: Play[]) : Play[] {
     langFilter.some((filter: string) => filter === play.lang);
 
     const genreMatches = genreFilter.length === 0 ||
-    genreFilter.some((filter: string) => filter === play.genre);
+    genreFilter.some((filter: string) => {
+      if (filterMappings.genre[filter] instanceof Array) {
+        return filterMappings.genre[filter].some((genre: string) => genre === play.genre);
+      } else {
+        return filterMappings.genre[filter] === play.genre;
+      }
+    });
 
     const dateMatches = dateFilter.length === 0 ||
     dateFilter.some((filter: Array<number>) => {
@@ -1103,8 +1127,9 @@ function filterPlays(playData: Play[]) : Play[] {
       return (printed >= filter[0] && printed <= filter[1]);
     });
 
-    return publisherMatches && authorMatches && langMatches
-    && genreMatches && dateMatches;
+    const searchMatches = searchFilter.length === 0 ||
+    play.titleMain.toLowerCase().includes(searchFilter.toLowerCase());
+    && langMatches && genreMatches && dateMatches && searchMatches;
   });
 
   totalShownPlayItems = filteredPlayData.length;
@@ -1210,6 +1235,7 @@ async function updateView(dataType: string, sharedProp = false) {
       break;
   }
 
+  updateProgress();
   $("#filter-reset-btn").removeClass("disabled");
 };
 
@@ -1263,6 +1289,8 @@ function resetFilters() {
   filteredPlayData = playData;
   charCurrentPage = 1;
   playCurrentPage = 1;
+
+  updateProgress();
 
   clearGraphHighlight(true); // reset highlight and brush
   setGraphHighlight(playData); // reset timeline plot to default
@@ -1791,7 +1819,6 @@ async function drawUI() {
 
         playFilters.dates = [[+graphDateRangeStart, +graphDateRangeEnd]];
         updateView("plays", false);
-        updateProgress();
       });
     }, 300);
   });
@@ -1878,6 +1905,10 @@ $(function () {
 
   $(".main-view-chars, .main-view-plays-table").on("scroll", function() {
     handleScroll(this, preventScrollEvent);
+  });
+
+  $("[id$=search-input]").on("input", function() {
+    handleSearch(this);
   });
 
   d3.select("#chartSelectBtn").on("change", function() {
