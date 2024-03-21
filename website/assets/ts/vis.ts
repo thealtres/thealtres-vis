@@ -52,6 +52,7 @@ const defaultPlayFilters = {
   genre: [],
   publisher: [],
   author: [],
+  sex: [],
   dates: [],
   searchInput: "",
 };
@@ -466,7 +467,7 @@ function generateTimelineData(data: Play[]) {
   return yearsCount;
 };
 
-async function fillFilterValues(filterMappings): Promise<void> {
+async function fillFilterValues(filterMappings: FilterMappings): Promise<void> {
   // fill filter values for authors
   for (const key in authorFilterEls) {
 
@@ -481,6 +482,7 @@ async function fillFilterValues(filterMappings): Promise<void> {
     values.forEach((value : string) => {
       const option = document.createElement("button");
       option.name = key;
+      option.dataset.type = "author";
       option.title = filterMappings[key][value];
       option.textContent = value;
       $(option).addClass("filter-btn");
@@ -506,18 +508,19 @@ async function fillFilterValues(filterMappings): Promise<void> {
         select.append(option);
       });
     } else {
-    const values = new Set(playData.map((play: Play) => play[key]));
-    console.log(filterMappings[key])
+      const values = new Set(playData.map((play: Play) => play[key]));
+      console.log(filterMappings[key])
 
-    values.forEach((value : string) => {
-      if (value === null) return;
+      values.forEach((value : string) => {
+        if (value === null) return;
 
-      const option = document.createElement("button");
-      option.name = key;
-      option.textContent = filterMappings[key][value];
-      $(option).addClass("filter-btn");
-      select.append(option);
-    });
+        const option = document.createElement("button");
+        option.name = key;
+        option.textContent = value;
+        $(option).addClass("filter-btn");
+        select.append(option);
+      });
+    }
   }
 
   // fill filter values for characters
@@ -563,6 +566,7 @@ async function fillFilterValues(filterMappings): Promise<void> {
     values.forEach((value : string) => {
       const option = document.createElement("button");
       option.name = key;
+      option.dataset.type = "char";
       option.textContent = value;
 
       // set og-value attribute for profession filter buttons
@@ -638,10 +642,13 @@ function enableFilterBtns() {
 
         updateView("characters", true);
         updateView("plays", true);
-      } else if (key === "sex" || key === "professionalGroup" || key === "socialClass") {
+      } else if ((key === "sex" && $(this).attr("data-type") == "char")
+      || key === "professionalGroup"
+      || key === "socialClass") {
         charFilters[key] = charFilters[key].filter(item => item !== value);
         updateView("characters");
-      } else if (key === "genre") {
+      } else if ((key === "sex" && $(this).attr("data-type") == "author")
+      || key === "genre") {
         playFilters[key] = playFilters[key].filter(item => item !== value);
         updateView("plays");
       }
@@ -655,16 +662,17 @@ function enableFilterBtns() {
 
         updateView("characters", true);
         updateView("plays", true);
-      } else if (key === "sex" || key === "professionalGroup" || key === "socialClass") {
+      } else if ((key === "sex" && $(this).attr("data-type") == "char")
+      || key === "professionalGroup"
+      || key === "socialClass") {
         charFilters[key].push(value);
         updateView("characters");
-      } else if (key === "genre") {
+      } else if ((key === "sex" && $(this).attr("data-type") == "author")
+      || key === "genre") {
         playFilters[key].push(value);
         updateView("plays");
       }
     }
-
-    updateProgress();
   });
 }
 
@@ -708,12 +716,10 @@ function fillSelect(dataType: string, selectId: string) {
     onItemAdd: (id: string) => {
       playFilters[dataType].push(id);
       updateView("plays", false);
-      updateProgress();
     },
     onItemRemove: (id: string) => {
       playFilters[dataType] = playFilters[dataType].filter(item => item !== id);
       updateView("plays", false);
-      updateProgress();
     },
   });
 
@@ -892,7 +898,7 @@ async function generatePlayTemplate(data: Play[], unique = false): Promise<strin
     const playPromises = data.map(async (play: Play) => {
       const titleMain = play.titleMain;
       const date = play.printed ?? "";
-      const authorName = await getPlayInfo(play.authorId, play.lang, "author");
+      const authorName = await getPlayInfo(play.authorId, play.lang, "authorName");
       const genre = play.genre;
 
       const capitalizedGenre = genre ? genre.charAt(0).toUpperCase() + play.genre.slice(1) : "";
@@ -959,14 +965,14 @@ async function generatePlayTemplate(data: Play[], unique = false): Promise<strin
   }
 }
 
-async function getPlayInfo(id: number | number[], lang: string, type: string) : Promise<string|number|Play> {
+async function getPlayInfo(id: number | number[], lang: string, type: string) : Promise<string|string[]|number|Play> {
   //console.time("getPlayInfo")
   if (id === undefined) {
     return "Unknown";
   }
 
   switch (type) {
-    case "author":
+    case "authorName":
       try {
         if (typeof id === "number") {
           //console.timeEnd("getPlayInfo");
@@ -985,7 +991,25 @@ async function getPlayInfo(id: number | number[], lang: string, type: string) : 
           return authorNames.join(", ");
         }
       } catch (error) {
-        console.error("Error getting play info for type 'author':", error);
+        console.error("Error getting play info for type 'authorName':", error);
+      };
+      break;
+
+    case "authorSex":
+      try {
+        if (typeof id === "number") {
+          const authorSex = authorData.find((author: Author) =>
+          author.authorId === id && author.lang === lang).sex;
+          return authorSex;
+        } else if (id instanceof Array) {
+          const authorSexes = id.map((authorId: number) =>
+            authorData.find((author: Author) =>
+              author.authorId === authorId && author.lang === lang).sex
+          );
+          return authorSexes;
+        }
+      } catch (error) {
+        console.error("Error getting play info for type 'authorSex':", error);
       };
       break;
 
@@ -1067,6 +1091,7 @@ function filterCharacters(charData: Character[]) : Character[] {
 function filterPlays(playData: Play[]) : Play[] {
   const publisherFilter = playFilters.publisher;
   const authorFilter = playFilters.author;
+  const authorSexFilter = playFilters.sex;
   const langFilter = playFilters.lang;
   const genreFilter = playFilters.genre;
   const dateFilter = playFilters.dates;
@@ -1109,6 +1134,19 @@ function filterPlays(playData: Play[]) : Play[] {
       return matchingAuthor && author.lang === play.lang;
     });
 
+    //todo: this doesn't work idk why
+    const authorSexMatches = authorSexFilter.length === 0 ||
+    authorSexFilter.some(async (filter: string) => {
+      console.log("bbb", filter)
+      const authorSex = await getPlayInfo(play.authorId, play.lang, "authorSex").then
+      ((authorSex: string|string[]) => {
+        console.log("aaa", authorSex)
+        return authorSex;
+      });
+      console.log("bbb As", authorSex, filter)
+      return (authorSex as string[]).some((sex: string) => sex === filter);
+    });
+
     const langMatches = langFilter.length === 0 ||
     langFilter.some((filter: string) => filter === play.lang);
 
@@ -1129,8 +1167,12 @@ function filterPlays(playData: Play[]) : Play[] {
 
     const searchMatches = searchFilter.length === 0 ||
     play.titleMain.toLowerCase().includes(searchFilter.toLowerCase());
+
+    return publisherMatches && authorMatches && authorSexMatches
     && langMatches && genreMatches && dateMatches && searchMatches;
   });
+
+  console.log("authorsex", authorSexFilter, filteredPlayData.length)
 
   totalShownPlayItems = filteredPlayData.length;
 
@@ -1258,6 +1300,7 @@ function resetFilters() {
     lang: [],
     genre: [],
     author: [],
+    sex: [],
     dates: [],
     searchInput: "",
   }
@@ -1580,7 +1623,7 @@ function getChartData(data: Play[] | Character[] = filteredPlayData, chartType: 
       { M: number; F: number, U: number } } = {};
 
     // get number of plays over time with male or female authors
-    data.forEach((play: Play) => {
+    (data as Play[]).forEach((play: Play) => {
       const { lang, printed } = play;
 
       if (printed === null || Number.isNaN(Number(printed))) return;
@@ -1616,7 +1659,7 @@ function getChartData(data: Play[] | Character[] = filteredPlayData, chartType: 
     const charGenderData: { [key: number]: { M: number; F: number,
       U: number, B: number } } = {};
 
-    data.forEach((char: Character) => {
+    (data as Character[]).forEach((char: Character) => {
       const play = playData.find((play: Play) =>
         play.workId === char.workId && play.lang === char.lang);
 
