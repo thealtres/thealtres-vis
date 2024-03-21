@@ -4,15 +4,13 @@ let margin = {top: 0, right: 0, bottom: 30, left: 30},
 
 let x;
 let y;
-let xAxis;
-let yAxis;
 
 let chartGroups = {
     "authorGender": {
         "text": "author gender", // text to display in dropdown
-        "M": "blue",
-        "F": "red",
-        "U": "green",
+        "M": "#198038",
+        "F": "#fa8775",
+        "U": "#a56eff",
     },
     "charGender": {
         "text": "character gender", // text to display in dropdown
@@ -134,6 +132,7 @@ export function drawChart(data, chartType) {
       .attr("x", width - 20)
       .attr("y", function(d,i){ return 5 + i*25}) // 25 is the distance between dots
       .style("fill", function(d){ return chartGroups[chartType][d]})
+      .style("font-weight", "bold")
       .text(function(d){ return d})
       .attr("text-anchor", "left")
       .style("alignment-baseline", "middle")
