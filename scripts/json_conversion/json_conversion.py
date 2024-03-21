@@ -28,7 +28,7 @@ parser.add_argument("out_filename", help="Name of output JSON file",
 
 args = parser.parse_args()
 
-if args.data_type not in TEMPLATE_MAP.keys():
+if args.data_type not in TEMPLATE_MAP:
     raise ValueError(f"Data type must be one of {list(TEMPLATE_MAP.keys())}")
 
 def load_csv(filename: str) -> list:
@@ -45,7 +45,7 @@ def load_csv(filename: str) -> list:
     with open(filename, "r", encoding="utf8") as f:
         return list(csv.DictReader(f))
 
-def get_json_template(type: str) -> dict:
+def get_json_template(template_type: str) -> dict:
     """Get a JSON template depending on type.
 
     Args:
@@ -54,9 +54,9 @@ def get_json_template(type: str) -> dict:
     Returns:
         dict: JSON template of type specified.
     """
-    return TEMPLATE_MAP.get(type, {})
+    return TEMPLATE_MAP.get(template_type, {})
 
-def convert_to_json(data: dict, type: str) -> dict:
+def convert_to_json(data: dict, template_type: str) -> dict:
     """Convert data to a specific JSON template depending on type.
 
     Args:
@@ -65,9 +65,9 @@ def convert_to_json(data: dict, type: str) -> dict:
     Returns:
         dict: Filled JSON template with data of type specified.
     """
-    json_template = get_json_template(type)
+    json_template = get_json_template(template_type)
 
-    if type == "char_data":
+    if template_type == "char_data":
         char_data = [{k: None if not v or v.isspace() else v.strip() for k, v in dct.items()}
             for dct in data]
 
@@ -88,7 +88,7 @@ def convert_to_json(data: dict, type: str) -> dict:
         for char_dict in char_data:
             json_template["characters"].append(char_dict)
 
-    if type == "play_data":
+    if template_type == "play_data":
         play_data = [{k: None if not v or v.isspace() else v.strip() for k, v in dct.items()}
             for dct in data]
 
@@ -124,7 +124,7 @@ def convert_to_json(data: dict, type: str) -> dict:
         for play_dict in play_data:
             json_template["plays"].append(play_dict)
 
-    if type == "location_data":
+    if template_type == "location_data":
         location_data = [{k: None if not v or v.isspace() else v.strip() for k, v in dct.items()}
             for dct in data]
 
@@ -137,7 +137,7 @@ def convert_to_json(data: dict, type: str) -> dict:
         for location_dict in location_data:
             json_template["locations"].append(location_dict)
 
-    if type == "author_data":
+    if template_type == "author_data":
         author_data = [{k: None if not v or v.isspace() else v for k, v in dct.items()}
             for dct in data]
 
@@ -156,7 +156,7 @@ def convert_to_json(data: dict, type: str) -> dict:
         for author_dict in author_data:
             json_template["authors"].append(author_dict)
 
-    if type == "setting_data":
+    if template_type == "setting_data":
         setting_data = [{k: None if not v or v.isspace() else v.strip() for k, v in dct.items()}
             for dct in data]
 
@@ -176,7 +176,7 @@ def convert_to_json(data: dict, type: str) -> dict:
         for setting_dict in setting_data:
             json_template["settings"].append(setting_dict)
 
-    if type == "publisher_data":
+    if template_type == "publisher_data":
         publisher_data = [{k: None if not v or v.isspace() else v.strip() for k, v in dct.items()}
             for dct in data]
 
@@ -203,6 +203,6 @@ def write_json(filename: str, json_template: dict) -> None:
         print(f"{args.data_type} JSON file successfully written to {f.name}")
 
 if __name__ == "__main__":
-    data = load_csv(args.inp_filename)
-    json_template = convert_to_json(data, args.data_type)
-    write_json(args.out_filename, json_template)
+    csv_data = load_csv(args.inp_filename)
+    json_templ = convert_to_json(csv_data, args.data_type)
+    write_json(args.out_filename, json_templ)
