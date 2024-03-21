@@ -56,11 +56,16 @@ interface Setting {
     coord: string;
 }
 
+interface FilterMappings {
+    [key: string]: string | string[];
+}
+
 export {
     Character,
     Play,
     Author,
     Location,
     Publisher,
-    Setting
+    Setting,
+    FilterMappings
 }

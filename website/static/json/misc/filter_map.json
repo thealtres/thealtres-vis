@@ -64,27 +64,18 @@
         "crafts|military": "craf|mili"
     },
     "genre": {
-      "vaudeville-proverbe": "vaudeville-proverbe",
+      "vaudeville": ["vaudeville-proverbe", "vaudeville", "folie-vaudeville", "comédie-vaudeville"],
+      "comedy": ["comedy", "comédie", "comédie-vaudeville", "comédie-opérette", "opéra-bouffe", "posse", "schwank"],
+      "drama": ["drama", "drame historique"],
       "mystery": "mystery",
-      "schwank": "schwank",
-      "comedy": "comedy",
-      "comédie-vaudeville": "comédie-vaudeville",
       "tale": "tale",
       "biblical": "biblical",
-      "opéra-bouffe": "opéra-bouffe",
       "dialog": "dialog",
-      "drama": "drama",
       "historisch": "historisch",
-      "comédie": "comédie",
       "tragedy": "tragedy",
-      "drame historique": "drame historique",
       "gerichtsscene": "gerichtsscene",
-      "folie-vaudeville": "folie-vaudeville",
-      "vaudeville": "vaudeville",
       "mêlée": "mêlée",
       "pièce": "pièce",
-      "horreur": "horreur",
-      "comédie-opérette": "comédie-opérette",
-      "posse": "posse"
+      "horreur": "horreur"
     }
 }

@@ -1,4 +1,4 @@
-import { Character, Play, Author, Publisher } from "./IEntity";
+import { Character, Play, Author, Publisher, FilterMappings } from "./IEntity";
 import { setTimeline, updateTimelineLangPlot,
   clearGraphHighlight, raiseHandles, highlightGraphPeriod } from "../js-plugins/d3-timeline";
 import { drawChart, setChart, updateChart } from "../js-plugins/d3-charts";
@@ -56,6 +56,8 @@ const defaultPlayFilters = {
   searchInput: "",
 };
 let playFilters = defaultPlayFilters;
+
+let filterMappings: FilterMappings = {};
 
 let originalCharTemplate: string, originalPlayTemplate: string;
 let currentCharTemplate: string, currentPlayTemplate: string;
@@ -492,10 +494,22 @@ async function fillFilterValues(filterMappings): Promise<void> {
   fillSelect("author", "#select-author");
 
   for (const key in playFilterEls) {
+    const select = playFilterEls[key];
+    if (key === "genre") {
+      const genreMapping = filterMappings.genre;
+      const genreKeys = Object.keys(genreMapping);
+
+      genreKeys.forEach((genreKey) => {
+        const option = document.createElement("button");
+        option.name = "genre";
+        option.textContent = genreKey;
+        $(option).addClass("filter-btn");
+        select.append(option);
+      });
+    } else {
     const values = new Set(playData.map((play: Play) => play[key]));
     console.log(filterMappings[key])
 
-    const select = playFilterEls[key];
     values.forEach((value : string) => {
       if (value === null) return;
 
@@ -1805,7 +1819,7 @@ async function drawUI() {
   // 2) their abbreviated values to be shown as buttons
   // as the original values would be too long to display
   // (applies to professionalGroup)
-  const filterMappings = await getJSON("/json/misc/filter_map.json");
+  filterMappings = await getJSON("/json/misc/filter_map.json");
   await fillFilterValues(filterMappings);
 
   enableFilterBtns();
