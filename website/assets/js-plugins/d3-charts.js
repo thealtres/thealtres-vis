@@ -31,7 +31,7 @@ function getYValues(key) {
 }
 
 function getMaxestNumberOfY(data, key) {
-    console.log("Called getMaxestNumberOfY with key", key);
+    //console.log("Called getMaxestNumberOfY with key", key);
     // return maxest Y value among max Y values
     return d3.max(data, function(d) {
         // return max Y value for each group
@@ -42,7 +42,7 @@ function getMaxestNumberOfY(data, key) {
 }
 
 function setChartSelect(data) {
-    d3.select("#chartSelectBtn")
+    d3.select("#chart-select-btn")
     .selectAll("options")
         .data(Object.keys(chartGroups))
     .enter()
@@ -100,9 +100,6 @@ export function drawChart(data, chartType) {
     .domain([0, getMaxestNumberOfY(data, chartType)]).nice()
     .range([height, 0]);
 
-    console.log("maxestDrawChart", getMaxestNumberOfY(data, d3.select("#chartSelectBtn").property("value")))
-    console.log(data)
-
     yAxis = svg.append("g")
     .attr("class", "y-axis")
     .call(d3.svg.axis().scale(y).orient("left").ticks(5));
@@ -159,15 +156,13 @@ export function setChart(data, chartType = Object.keys(chartGroups)[0]) {
 }
 
 export function updateChart(data) {
-    console.log("Updating chart with data of length", data.length, data);
+    //console.log("Updating chart with data of length", data.length, data);
     // we set 1 because we need at least 2 data points to draw a line
     if (data.length <= 1) {
         d3.select("#chart").selectAll("*").attr("display", "none");
 
         // disable dropdown
-        d3.select("#chartSelectBtn").attr("disabled", true);
-
-        console.log(d3.select("#chart").selectAll("svg image").length)
+        d3.select("#chart-select-btn").attr("disabled", true);
 
         // check if svg already exists
         if (d3.select("#chart").selectAll("svg image").length > 1) {
@@ -182,7 +177,7 @@ export function updateChart(data) {
         return;
     }
 
-    d3.select("#chartSelectBtn").attr("disabled", null);
+    d3.select("#chart-select-btn").attr("disabled", null);
     // remove all that's not the chart
     d3.select("#chart").selectAll("svg:not([viewBox])").remove();
     d3.select("#chart").selectAll("*").attr("display", null);
@@ -192,16 +187,12 @@ export function updateChart(data) {
     });
 
     x.domain(d3.extent(data, function(d) { return d.year; }));
-    y.domain([0, getMaxestNumberOfY(data, d3.select("#chartSelectBtn").property("value"))]);
-
-    console.log("maxestUpdateChart", getMaxestNumberOfY(data, d3.select("#chartSelectBtn").property("value")))
+    y.domain([0, getMaxestNumberOfY(data, d3.select("#chart-select-btn").property("value"))]);
 
     d3.select("#chart").select(".x-axis")
     .transition()
     .duration(0)
     .call(d3.svg.axis().scale(x).orient("bottom"));
-
-    console.log("y", y.domain());
 
     d3.select("#chart").select(".y-axis")
     .transition()
@@ -211,8 +202,6 @@ export function updateChart(data) {
     // get chart lines
     d3.select("#chart").selectAll("path").each(function(d, i) {
         const lineValue = d3.select(this).attr("data-value");
-
-        console.log("lineValue", lineValue, data);
 
         d3.select(this)
         .datum(data)

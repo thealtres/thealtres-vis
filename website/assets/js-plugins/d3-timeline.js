@@ -589,7 +589,6 @@ export function updateTimelineLangPlot(data) {
 
     for (const lang of langs) {
         const langData = data.filter(d => d.lang === lang).sort((a, b) => a.year - b.year);
-        console.log(langData)
 
         context.append("path")
         .datum(langData)
@@ -647,8 +646,6 @@ export function recreateBrush() {
 }
 
 export function clearGraphHighlight(brushReset = false, unique = false) {
-    console.log("clearing graph highlight");
-
     if (unique) {
         context.selectAll('[class^="highlight-rect"').filter(function() {
             return d3.select(this).style("fill") === highlightColors["unique"];

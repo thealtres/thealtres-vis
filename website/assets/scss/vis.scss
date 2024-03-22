@@ -5,6 +5,8 @@
     --main-text-color: #000000;
 
     --accent-color: #00afb9;
+    --accent-color-dark: #007f89;
+
     --border-color: #666;
 
     --timeline-color: rgba(0, 170, 141, 0.5);
@@ -368,14 +370,18 @@ div[id^="filter"][id$="values"] > button {
     flex: 1 0 auto;
 }
 
-[id$=search-input] {
+[class$="progress"] {
+    color: var(--accent-color-dark);
+}
+
+[id$="search-input"] {
     border: none;
     border-radius: 7px;
     text-indent: 0.2rem;
     transition: 100ms box-shadow ease-in-out;
 }
 
-[id$=search-input]:focus {
+[id$="search-input"]:focus {
     outline: none;
     box-shadow: 0 2px 4px 0 var(--accent-color), 0 0 0 1px var(--accent-color);
 }
