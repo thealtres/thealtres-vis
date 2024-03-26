@@ -167,11 +167,36 @@ def convert_to_json(data: dict, template_type: str) -> dict:
                 for dct in setting_data]
 
         # split values with comma into list
-        setting_data = [{k: v.replace(" ", "").split(",")
-                if k in ["placeId"]
+        setting_data = [{k: v.replace(" ", "").replace(".", ",").split(",")
+                if k == "placeId"
                 and v is not None
                 else v for k, v in dct.items()}
                 for dct in setting_data]
+
+        # convert previously split ids in placeId to integers
+        setting_data = [{k: [int(float(id)) if k == "placeId"
+                and id is not None
+                else id for id in v]
+                if isinstance(v, list)
+                else v for k, v in dct.items()}
+                for dct in setting_data]
+
+        # replace "N/A" with null for "coord" key
+        setting_data = [{k: None if k == "coord" and v == "#N/A"
+                else v for k, v in dct.items()}
+                for dct in setting_data]
+
+        # copy coord key to OSMLongLat
+        # to be consistent with location_data
+        setting_data = [{**d, "OSMLatLon": d.pop("coord")}
+                if "coord" in d
+                else {**d, "OSMLatLon": None}
+                for d in setting_data]
+
+        # remove coord key
+        setting_data = [{k: v for k, v in dct.items() if k != "coord"}
+                for dct in setting_data]
+
 
         for setting_dict in setting_data:
             json_template["settings"].append(setting_dict)
