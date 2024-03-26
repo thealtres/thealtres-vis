@@ -44,7 +44,7 @@ interface Publisher {
     lang: string;
     nameOnPlay: string;
     normalizedName: string;
-    coord: string;
+    placeId: number;
 }
 
 interface Setting {
@@ -52,7 +52,7 @@ interface Setting {
     lang: string;
     actId: number;
     sceneId: number;
-    placeId: string[]; //?
+    placeId: string[]; // can have several ids if multiple places are mentioned
     coord: string;
 }
 

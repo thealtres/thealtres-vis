@@ -1,7 +1,8 @@
-import { Character, Play, Author, Publisher, FilterMappings } from "./IEntity";
+import { Character, Play, Author, Publisher, FilterMappings, Location, Setting } from "./IEntity";
 import { setTimeline, updateTimelineLangPlot,
   clearGraphHighlight, raiseHandles, highlightGraphPeriod } from "../js-plugins/d3-timeline";
 import { drawChart, setChart, updateChart } from "../js-plugins/d3-charts";
+import { setMap } from "../js-plugins/map";
 
 // These are values to be filtered out in fillFilterValues()
 // we may convert them to null in the future
@@ -977,6 +978,25 @@ function getNumberOfPlaysByIdAndLang(data: Play[], id: number, lang: string, typ
   }
 }
 
+function getPublisherMapData(data: Play[]) {
+  const publisherMapData = {};
+
+  publisherData.forEach((publisher: Publisher) => {
+    const publisherId = publisher.publisherId;
+    const lang = publisher.lang;
+    const publisherName = publisher.normalizedName;
+    const placeId = publisher.placeId;
+
+    publisherMapData[lang + publisherId] = {
+      publisherName,
+      lang,
+      placeId
+    };
+  });
+
+  return publisherMapData;
+}
+
 function filterCharacters(charData: Character[]) : Character[] {
   //console.time("filterCharacters");
   //possible values: fre, ger, als
@@ -1735,27 +1755,19 @@ async function setMagnifierView(zoomOn: string, el: JQuery<HTMLElement>): Promis
   $(".resize, .brush, .pane").addClass("tl-disabled");
 }
 
-function setMap() {
-  let map = L.map('map').setView([51.505, -0.09], 13);
-
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-  }).addTo(map);
-}
-
 async function fetchData(): Promise<void> {
   //console.time("fetchData");
   try {
     const JSONFiles = ["/json/char_data.json", "/json/play_data.json",
-                      "/json/author_data.json", "/json/publisher_data.json"];
+                      "/json/author_data.json", "/json/publisher_data.json",
+                      "/json/location_data.json", "/json/setting_data.json"];
 
     $("#loader").show();
 
-    [charData, playData, authorData, publisherData] = await Promise.all(
+    [charData, playData, authorData, publisherData, locData, settingData] = await Promise.all(
       JSONFiles.map(async (file: string) => {
-        const {characters, plays, authors, publishers} = await getJSON(file);
-        return characters || plays || authors || publishers;
+        const {characters, plays, authors, publishers, locations, settings} = await getJSON(file);
+        return characters || plays || authors || publishers || locations || settings;
       })
     );
 
@@ -1887,7 +1899,7 @@ $(function () {
   });
 
   $("[id$=search-input]").on("input", function() {
-    handleSearch(this);
+    handleSearch(this as HTMLInputElement);
   });
 
   // @ts-ignore
@@ -1902,7 +1914,8 @@ $(function () {
 
     // map needs to be displayed for it to be set
     if (!isMapSet) {
-      setMap();
+      const publisherMapData = getPublisherMapData(playData);
+      setMap(locData, settingData, publisherMapData);
       isMapSet = true;
     }
   });

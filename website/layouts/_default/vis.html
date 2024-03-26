@@ -17,6 +17,12 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
   crossorigin=""/>
+  <!-- Leaflet MarkerCluster -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+
+  <!-- Material Icons: https://material.io/ -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -38,5 +44,16 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
   crossorigin=""></script>
+
+  <!-- Leaflet Smooth Wheel Zoom: https://github.com/mutsuyuki/Leaflet.SmoothWheelZoom -->
+  {{ $leafletSmoothWheelZoom := resources.Get "js-plugins/SmoothWheelZoom.js" }}
+  <script src="{{ $leafletSmoothWheelZoom.Permalink }}" defer></script>
+
+  <!-- Leaflet Material Icons: https://github.com/ilyankou/Leaflet.IconMaterial -->
+  {{ $leafletMaterialIcon := resources.Get "js-plugins/leaflet.icon-material.js" }}
+  <script src="{{ $leafletMaterialIcon.Permalink }}" defer></script>
+
+  <!-- Leaflet MarkerCluster -->
+  <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 </head>
 {{ end }}
