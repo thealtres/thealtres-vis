@@ -27,7 +27,8 @@ const filterEls = {
 };
 
 let charData: Character[] = [], playData: Play[] = [],
-authorData: Author[] = [], publisherData: Publisher[] = [];
+authorData: Author[] = [], publisherData: Publisher[] = [],
+locData: Location[] = [], settingData: Setting[] = [];
 
 let filteredCharData: Character[] = [], filteredPlayData: Play[] = [];
 
@@ -1920,9 +1921,15 @@ $(function () {
     }
   });
 
+  $("#info-open-btn").on("click", function() {
+    $("#info-overlay").css("display", "flex");
+  });
+
   document.addEventListener("click", function(e) {
     if ((e.target as HTMLElement).id === "map-overlay") {
       $("#map-overlay").css("display", "none");
+    } else if ((e.target as HTMLElement).id === "info-overlay") {
+      $("#info-overlay").css("display", "none");
     }
   });
 });

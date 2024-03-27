@@ -154,22 +154,13 @@ footer {
     scale: 0.8;
 }
 
-.fa-map {
-    font-size: 2.5rem;
-}
-
-.fa-map:hover {
-    color: var(--accent-color);
-    transition: color 0.3s ease;
-}
-
 #vis-container {
     display: grid;
     grid-template-columns: 10% 90%;
     grid-gap: 0.8rem;
     width: 100%;
     min-height: 50vh;
-    height: 98vh; // leave a bit of height for footer
+    height: calc(98vh - 15px); // leave a bit of height for footer
     padding-right: 1.3rem;
     overflow: hidden;
     background: var(--sec-bg-color);
@@ -375,9 +366,9 @@ div[id^="filter"][id$="values"] > button {
     display: block;
     text-align: center;
     border-radius: 50%;
-    width: 2rem;
-    line-height: 1rem;
-    padding: 0.4rem;
+    width: 2em;
+    line-height: 1em;
+    padding: 0.4em;
     border: 2px solid var(--third-bg-color);
     font-weight: bold;
     background: var(--third-bg-color);
@@ -425,12 +416,12 @@ div[id^="filter"][id$="values"] > button {
     display: block;
     text-align: center;
     border-radius: 50%;
-    width: 2rem;
-    line-height: 1rem;
-    padding: 0.4rem;
+    width: 2em;
+    line-height: 1em;
+    padding: 0.4em;
     border: 2px solid var(--third-bg-color);
     font-weight: bold;
-    margin: 0.5rem auto 0 auto;
+    margin: 0.5em auto 0 auto;
     background: var(--third-bg-color);
 }
 
@@ -678,7 +669,16 @@ div[id^="filter"][id$="values"] > button {
 /* Map specific styles */
 /* =================== */
 
-#map-overlay {
+.fa-map, .fa-circle-info {
+    font-size: 2.5rem;
+}
+
+.fa-map:hover, .fa-circle-info:hover {
+    color: var(--accent-color);
+    transition: color 0.3s ease;
+}
+
+#map-overlay, #info-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -697,6 +697,18 @@ div[id^="filter"][id$="values"] > button {
     width: 80%;
     height: 80%;
     z-index: 3;
+}
+
+#info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    width: 50%;
+    height: 50%;
 }
 
 .map-popup-title {

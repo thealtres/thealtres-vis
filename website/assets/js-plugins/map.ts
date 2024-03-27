@@ -1,4 +1,6 @@
-let ogLocData;
+import { Location, Setting, Publisher } from "../ts/IEntity";
+
+let ogLocData: Location[] = [];
 const maxListItems = 8;
 
 const markerProps = {
@@ -23,12 +25,19 @@ const markerCluster = L.markerClusterGroup({
   maxZoom: 15,
 });
 
-export function setMap(locData, settingData, publisherData) {
+/**
+ * Create Leaflet map object using given data
+ * @param locData - location data
+ * @param settingData - setting data
+ * @param publisherData - publisher data
+ */
+export function setMap(locData: Location[], settingData: Setting[], publisherData: Publisher[]) {
     let map = L.map("map", {
       // https://github.com/mutsuyuki/Leaflet.SmoothWheelZoom
       scrollWheelZoom: false,
       smoothWheelZoom: true,
       smoothSensitivity: 1.5,
+      tap: false,
     }).setView([50, 0], 3);
 
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -120,7 +129,7 @@ function convertToGeoJSON(mapData, dataType) {
   };
 };
 
-function createList(data, maxItems = maxListItems) {
+function createList(data, maxItems = maxListItems, collapseButton = null) {
   if (data.length === 1) {
     return data[0];
   }
@@ -142,11 +151,15 @@ function createList(data, maxItems = maxListItems) {
     ul.append(...visibleItems);
 
     const more = document.createElement("li");
-    more.textContent = `... and ${hiddenItems.length} more`;
+    more.innerHTML = `... and <b>${hiddenItems.length}</b> more`;
     more.style.cursor = "pointer";
     more.classList.add("more");
 
     ul.append(more);
+  } else {
+    if (collapseButton) {
+      ul.append(collapseButton);
+    }
   }
 
   return ul.outerHTML;
@@ -157,18 +170,28 @@ function handlePopUpList(layer, pubs) {
   const moreButton = popUp._contentNode.querySelector(".more");
 
   if (moreButton) {
-    moreButton.addEventListener("click", function() {
-      const ul = popUp._contentNode.querySelector("ul");
-      ul.innerHTML = createList(pubs, pubs.length);
+    moreButton.addEventListener("click", function(e) {
+      // we need to stop propagation to prevent the popup from closing
+      // because otherwise, leaflet registers a map click
+      // when clicking the popup "More" button,
+      // which causes the popup to close
+      e.stopPropagation();
+      // get lines before the list of publishers
+      const popUpInitialLines = popUp.getContent().split("<ul>")[0];
 
-      const collapseButton = document.createElement("li");
-      collapseButton.textContent = "Collapse";
-      collapseButton.style.cursor = "pointer";
-      collapseButton.addEventListener("click", function() {
-        ul.innerHTML = createList(pubs);
-      });
+      popUp.setContent(popUpInitialLines + createList(pubs, pubs.length));
 
-      //ul.appendChild(collapseButton);
+      //todo: fix later
+      // const collapseButton = document.createElement("p");
+      // collapseButton.textContent = "Collapse";
+      // collapseButton.style.cursor = "pointer";
+      // collapseButton.classList.add("collapse");
+
+      // const collapseBtnMapEl = popUp._contentNode.querySelector(".collapse");
+      // collapseBtnMapEl.addEventListener("click", function() {
+      //   console.log("test")
+      //   popUp.setContent(createList(pubs, maxListItems));
+      // });
     });
   }
 }
@@ -213,10 +236,12 @@ function addGeoJSONData(map, data, type) {
             ].filter(Boolean).join("<br>");
           }
 
-          layer.bindPopup(popUpContent);
+          layer.bindPopup(popUpContent, {
+            // set maxHeight for overflow:hidden to work
+            maxHeight: 300,
+          });
 
           layer.on("popupopen", function () {
-            //todo: fix popup closing when clicking on more button
             handlePopUpList(this, pubs);
           });
 

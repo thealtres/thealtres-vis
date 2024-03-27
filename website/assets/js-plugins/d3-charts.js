@@ -133,6 +133,34 @@ export function drawChart(data, chartType) {
       .text(function(d){ return d})
       .attr("text-anchor", "left")
       .style("alignment-baseline", "middle")
+
+    // add tooltip
+    const tooltip = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0)
+    .style("position", "absolute")
+    .style("background-color", "white")
+    .style("border", "solid")
+    .style("border-width", "1px")
+    .style("border-radius", "5px")
+    .style("padding", "5px");
+
+    // add tooltip handling on mousemove
+    svg.append("rect")
+    .attr("class", "overlay")
+    .attr("width", width)
+    .attr("height", height)
+    .style("opacity", 0)
+    .on("mouseover", function() { tooltip.style("opacity", 1); })
+    .on("mouseout", function() { tooltip.style("opacity", 0); })
+    .on("mousemove", function() {
+        const mouseX = d3.mouse(this)[0];
+        const event = d3.event;
+        const pageX = event.pageX;
+        const pageY = event.pageY;
+        handleTooltip(data, chartType, tooltip, mouseX, pageX, pageY);
+    });
 }
 
 function createLine(svg, data, group, color) {
@@ -149,6 +177,27 @@ function createLine(svg, data, group, color) {
         .style("fill", "none");
 }
 
+function handleTooltip(data, chartType, tooltip, mouseX, pageX, pageY) {
+    const hoveredYear = x.invert(mouseX);
+    const tooltipData = data.find(d => d.year.getFullYear() === hoveredYear.getFullYear());
+
+    if (tooltipData) {
+        const tooltipContent = `
+        <div><strong>Year: ${tooltipData.year.getFullYear()}</strong></div>
+        ${getYValues(chartType).map(group => `
+            <div>
+            <span style="color: ${chartGroups[chartType][group]};">●</span>
+            ${group}: ${tooltipData[group]}
+            </div>
+        `).join("")}
+        `;
+
+        tooltip.html(tooltipContent)
+        .style("left", (pageX - 40) + "px")
+        .style("top", (pageY - 130) + "px");
+    }
+}
+
 // data = Play[]
 export function setChart(data, chartType = Object.keys(chartGroups)[0]) {
     setChartSelect(data);
@@ -156,7 +205,7 @@ export function setChart(data, chartType = Object.keys(chartGroups)[0]) {
 }
 
 export function updateChart(data) {
-    //console.log("Updating chart with data of length", data.length, data);
+    // show "no data" image
     // we set 1 because we need at least 2 data points to draw a line
     if (data.length <= 1) {
         d3.select("#chart").selectAll("*").attr("display", "none");

@@ -12,7 +12,7 @@ var optheight = 150;
 
 let highlightColors = {
     "fre": "rgba(0, 170, 255, 0.7)", // blue
-    "ger": "rgba(255, 255, 0, 0.7)", // yellow
+    "ger": "rgba(255, 255, 0, 0.9)", // yellow
     "als": "rgba(255, 25, 25, 0.7)", // red
     "unique": "rgba(255, 204, 0, 0.5)",
     "default": "rgba(255, 255, 255, 0.3)",
