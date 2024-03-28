@@ -76,6 +76,24 @@ svg {
     vertical-align: baseline;
 }
 
+select {
+    border: none;
+    background: #ffffff;
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+}
+
+select:hover {
+    box-shadow: 0 2px 4px 0 var(--accent-color), 0 0 0 1px var(--accent-color);
+}
+
+select:focus {
+    outline: none;
+    box-shadow: 0 2px 4px 0 var(--accent-color), 0 0 0 1px var(--accent-color);
+}
+
 select[disabled] {
     color: #ccc;
 }
@@ -504,6 +522,12 @@ div[id^="filter"][id$="values"] > button {
     justify-content: center;
     width: 100%;
     background: var(--main-bg-color);
+    cursor: none;
+}
+
+.chart-tooltip {
+    pointer-events: none;
+    z-index: 2;
 }
 
 /* todo: improved loader styling */

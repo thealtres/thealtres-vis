@@ -21,8 +21,9 @@ let chartGroups = {
     },
     "playGenre": {
         "text": "play genre", // text to display in dropdown
-        "comedy": "yellow",
-        "tragedy": "black",
+        "comedy": "#28536b",
+        "vaudeville": "#e072a4",
+        "drama": "#bbb193",
     }
 }
 
@@ -65,6 +66,9 @@ export function drawChart(data, chartType) {
     if (d3.select("#chart").selectAll("*").length > 0) {
         d3.select("#chart").selectAll("*").remove();
     }
+
+    // remove any tooltips
+    d3.select(".chart-tooltip").remove();
 
     // append the svg object to the body of the page
     var svg = d3.select("#chart")
@@ -115,7 +119,7 @@ export function drawChart(data, chartType) {
     .data(Object.keys(chartGroups[chartType]).filter(function(d) { return d !== "text"; }))
     .enter()
     .append("circle")
-    .attr("cx", width - 40)
+    .attr("cx", width - 60)
     .attr("cy", function(d,i){ return i*25}) // 25 is the distance between dots
     .attr("r", 7)
     .style("fill", function(d){ return chartGroups[chartType][d]})
@@ -126,7 +130,7 @@ export function drawChart(data, chartType) {
     .data(Object.keys(chartGroups[chartType]).filter(function(d) { return d !== "text"; }))
     .enter()
     .append("text")
-      .attr("x", width - 20)
+      .attr("x", width - 40)
       .attr("y", function(d,i){ return 5 + i*25}) // 25 is the distance between dots
       .style("fill", function(d){ return chartGroups[chartType][d]})
       .style("font-weight", "bold")
@@ -134,10 +138,22 @@ export function drawChart(data, chartType) {
       .attr("text-anchor", "left")
       .style("alignment-baseline", "middle")
 
+    // add focus rect
+    const focus = svg.append("g")
+    .append("rect")
+    .style("fill", "black")
+    .style("pointer-events", "all")
+    .style("stroke", "black")
+    .style("stroke-width", "1px")
+    .attr("width", 5)
+    .attr("x", -5) // compensate for the width
+    .attr("height", height)
+    .style("opacity", 0);
+
     // add tooltip
     const tooltip = d3.select("body")
     .append("div")
-    .attr("class", "tooltip")
+    .attr("class", "chart-tooltip")
     .style("opacity", 0)
     .style("position", "absolute")
     .style("background-color", "white")
@@ -152,14 +168,14 @@ export function drawChart(data, chartType) {
     .attr("width", width)
     .attr("height", height)
     .style("opacity", 0)
-    .on("mouseover", function() { tooltip.style("opacity", 1); })
-    .on("mouseout", function() { tooltip.style("opacity", 0); })
+    .on("mouseover", function() { tooltip.style("opacity", 1); focus.style("opacity", 0.5); })
+    .on("mouseout", function() { tooltip.style("opacity", 0); focus.style("opacity", 0); })
     .on("mousemove", function() {
         const mouseX = d3.mouse(this)[0];
         const event = d3.event;
         const pageX = event.pageX;
         const pageY = event.pageY;
-        handleTooltip(data, chartType, tooltip, mouseX, pageX, pageY);
+        handleTooltip(data, chartType, tooltip, focus, mouseX, pageX, pageY);
     });
 }
 
@@ -177,24 +193,37 @@ function createLine(svg, data, group, color) {
         .style("fill", "none");
 }
 
-function handleTooltip(data, chartType, tooltip, mouseX, pageX, pageY) {
+function handleTooltip(data, chartType, tooltip, focus, mouseX, pageX, pageY) {
     const hoveredYear = x.invert(mouseX);
     const tooltipData = data.find(d => d.year.getFullYear() === hoveredYear.getFullYear());
 
     if (tooltipData) {
+        const yValues = getYValues(chartType);
+        // calculate group percentage for the hovered year
+        const total = yValues.reduce((acc, group) => acc + tooltipData[group], 0);
+        const tooltipPct = yValues.map(group => {
+            return {
+                group,
+                pct: Math.round((tooltipData[group] / total) * 100) || 0
+            }
+        });
+
         const tooltipContent = `
         <div><strong>Year: ${tooltipData.year.getFullYear()}</strong></div>
-        ${getYValues(chartType).map(group => `
+        ${yValues.map(group => `
             <div>
             <span style="color: ${chartGroups[chartType][group]};">●</span>
             ${group}: ${tooltipData[group]}
+            (${tooltipPct.find(p => p.group === group).pct}%)
             </div>
         `).join("")}
         `;
 
         tooltip.html(tooltipContent)
-        .style("left", (pageX - 40) + "px")
-        .style("top", (pageY - 130) + "px");
+        .style("left", (pageX + 20) + "px")
+        .style("top", (pageY - 30) + "px");
+
+        focus.attr("transform", `translate(${x(hoveredYear)}, 0)`);
     }
 }
 
