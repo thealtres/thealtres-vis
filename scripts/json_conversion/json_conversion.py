@@ -85,6 +85,14 @@ def convert_to_json(data: dict, template_type: str) -> dict:
                 else v for k, v in dct.items()}
                 for dct in char_data]
 
+        # replace "government executive officials" values
+        # with "government officials" for "professionalGroup" key
+        # for consistency
+        char_data = [{k: "government officials" if k == "professionalGroup"
+                and v == "government executive officials"
+                else v for k, v in dct.items()}
+                for dct in char_data]
+
         for char_dict in char_data:
             json_template["characters"].append(char_dict)
 
