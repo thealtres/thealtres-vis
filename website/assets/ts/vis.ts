@@ -1,4 +1,4 @@
-import { Character, Play, Author, Publisher, FilterMappings, Location, Setting } from "./IEntity";
+import { Character, Play, Author, Publisher, FilterMappings, Location, Setting, PublisherMapData } from "./IEntity";
 import { setTimeline, updateTimelineLangPlot,
   clearGraphHighlight, raiseHandles, highlightGraphPeriod } from "../js-plugins/d3-timeline";
 import { drawChart, setChart, updateChart } from "../js-plugins/d3-charts";
@@ -585,12 +585,36 @@ function enableFilterBtns() {
       || key === "professionalGroup"
       || key === "socialClass") {
         charFilters[key] = charFilters[key].filter(item => item !== value);
+        const isPlayFiltered = playFilters.lang.length > 0 ||
+        playFilters.genre.length > 0 ||
+        playFilters.publisher.length > 0 ||
+        playFilters.author.length > 0 ||
+        playFilters.dates.length > 0 ||
+        playFilters.sex.length > 0;
+        if (isPlayFiltered) {
+          // if we keep both, change updateView logic so that results do not appear twice
         updateView("characters");
-      } else if ((key === "sex" && $(this).attr("data-type") == "author")
-      || key === "genre") {
-        console.log("aaaa")
+          updateView("plays");
+        } else {
+          updateView("characters");
+        }
+      } else if (key === "genre") {
         playFilters[key] = playFilters[key].filter(item => item !== value);
         updateView("plays");
+      } else if (key === "sex" && $(this).attr("data-type") == "author") {
+        playFilters[key] = playFilters[key].filter(item => item !== value);
+        const isCharFiltered = charFilters.lang.length > 0 ||
+        charFilters.professionalGroup.length > 0 ||
+        charFilters.socialClass.length > 0 ||
+        charFilters.sex.length > 0;
+        if (isCharFiltered) {
+          updateView("characters");
+          updateView("plays");
+        } else {
+          updateView("plays");
+        }
+      } else {
+        console.error("Invalid filter button key found when removing filter:", key);
       }
 
     } else {
@@ -608,12 +632,25 @@ function enableFilterBtns() {
       || key === "professionalGroup"
       || key === "socialClass") {
         charFilters[key].push(value);
+        const isPlayFiltered = playFilters.lang.length > 0 ||
+        playFilters.genre.length > 0 ||
+        playFilters.publisher.length > 0 ||
+        playFilters.author.length > 0 ||
+        playFilters.dates.length > 0 ||
+        playFilters.sex.length > 0;
+        if (isPlayFiltered) {
         updateView("characters");
-      } else if ((key === "sex" && $(this).attr("data-type") == "author")
-      || key === "genre") {
-        console.log("bbbb")
+        } else {
+          updateView("characters");
+        }
+      } else if (key === "genre") {
         playFilters[key].push(value);
         updateView("plays");
+      } else if (key === "sex" && $(this).attr("data-type") == "author") {
+        playFilters[key].push(value);
+        updateView("plays");
+      } else {
+        console.error("Invalid filter button key found when adding filter:", key);
       }
     }
   });
@@ -662,7 +699,8 @@ function fillSelect(dataType: string, selectId: string) {
     },
     onItemRemove: (id: string) => {
       playFilters[dataType] = playFilters[dataType].filter(item => item !== id);
-      updateView("plays", false);
+      //! seems like we need to update characters instead
+      updateView("characters", false);
     },
   });
 
@@ -979,8 +1017,8 @@ function getNumberOfPlaysByIdAndLang(data: Play[], id: number, lang: string, typ
   }
 }
 
-function getPublisherMapData(data: Play[]) {
-  const publisherMapData = {};
+function getPublisherMapData(): PublisherMapData {
+  const publisherMapData = {} as PublisherMapData;
 
   publisherData.forEach((publisher: Publisher) => {
     const publisherId = publisher.publisherId;
@@ -1033,7 +1071,6 @@ function filterCharacters(charData: Character[]) : Character[] {
 
   totalShownCharItems = filteredCharData.length;
 
-  //console.timeEnd("filterCharacters");
   return filteredCharData;
 };
 
@@ -1056,8 +1093,6 @@ function filterPlays(playData: Play[]) : Play[] {
   const genreFilter = playFilters.genre;
   const dateFilter = playFilters.dates;
   const searchFilter = playFilters.searchInput;
-
-  console.log("playDataLen", playData.length)
 
   filteredPlayData = playData.filter((play: Play) => {
     const publisherMatches = publisherFilter.length === 0 ||
@@ -1166,12 +1201,10 @@ async function updateView(dataType: string, sharedProp = false) {
   switch (dataType) {
     case "characters":
       charCurrentPage = 1;
-      //console.log("charData", charData)
-      //console.log("filteredCharData", filteredCharData)
 
       const isFiltered = ["dates", "publisher", "author", "genre", "sex"].some(filter => playFilters[filter].length > 0);
       if (isFiltered) {
-        console.log("filteredCharsInPlays", filteredCharsInPlays, playFilters, charFilters)
+        console.log("debug174: filteredCharsInPlays with isFiltered", filteredCharsInPlays)
         filteredData = filterCharacters(filteredCharsInPlays);
       } else {
         filteredData = filterCharacters(charData);
@@ -1185,22 +1218,14 @@ async function updateView(dataType: string, sharedProp = false) {
       }
       renderData("main-view-chars", filteredData, charCurrentPage);
 
-      // if ((!sharedProp) || sharedProp && (charFilters.sex.length > 0 || charFilters.professionalGroup.length > 0 || charFilters.socialClass.length > 0)) {
-      //   showRelations("playsByChar", false);
-      // } else {
-      //   $("#play-list").html(originalPlayTemplate);
-      // }
-      //!
       if (!sharedProp) {
-        showRelations("playsByChar", false, null, false);
+        showRelations("playsByChar", false, null, false, true);
       } else {
         updateView("plays", false);
       }
 
       break;
     case "plays":
-      //! not sure about this
-      // if ((sharedProp) || sharedProp && (charFilters.sex.length < 0 || charFilters.professionalGroup.length < 0 || charFilters.socialClass.length < 0)) {
       if (sharedProp) {
         console.log("returning, sharedProp", sharedProp, charFilters)
         return;
@@ -1210,10 +1235,14 @@ async function updateView(dataType: string, sharedProp = false) {
       if (charFilters.professionalGroup.length > 0 ||
         charFilters.socialClass.length > 0 ||
         charFilters.sex.length > 0) {
-          console.log("filteredPlaysWithChars", filteredPlaysWithChars)
-          console.log("cF", charFilters)
-          console.log("pF", playFilters)
+        //! not a good way of doing it
+        // don't include lang because sharedProp
+        // if (playFilters.sex.length > 0 || playFilters.genre.length > 0 || playFilters.publisher.length > 0 || playFilters.author.length > 0 || playFilters.dates.length > 0){
+        //   console.log("aaaa15")
+        //   filteredData = filterPlays(playData);
+        // } else {
         filteredData = filterPlays(filteredPlaysWithChars);
+        // }
       } else {
         filteredData = filterPlays(playData);
       }
@@ -1303,10 +1332,7 @@ function resetFilters() {
   setGraphHighlight(playData); // reset timeline plot to default
 
   // reset chart to default in current selected view
-  // currentGraphType will be undefined if graph type has not been changed
-  // so using authorGender, because it's the default graph type
-  const chartData = (currentGraphType === undefined || currentGraphType === "authorGender")
-  ? getChartData(playData, "authorGender") : getChartData(charData, "charGender");
+  const chartData = getChartData(playData, currentGraphType);
 
   //updateChart(chartData);
   drawChart(chartData, currentGraphType);
@@ -1543,8 +1569,6 @@ function setGraphHighlight(data: Play[], highlightUnique = false) {
 };
 
 function getChartData(data: Play[] | Character[] = filteredPlayData, chartType: string = "authorGender", viewMode = null) {
-  console.log(`calling getChartData with chartType=${chartType}`)
-
   let minPlayDataYear, maxPlayDataYear: number;
 
   if (chartType === "charGender") {
@@ -1569,9 +1593,6 @@ function getChartData(data: Play[] | Character[] = filteredPlayData, chartType: 
   if (viewMode === "playsByChar" && chartType === "charGender") {
     data = filteredCharData;
   }
-
-  console.log("filteredCharDataLength", filteredCharData.length)
-  console.log("charsInPlaysLength", filteredCharsInPlays.length)
 
   // array used to generate data with zero values for years with no data
   // so that the chart graph can be generated correctly
@@ -1638,12 +1659,40 @@ function getChartData(data: Play[] | Character[] = filteredPlayData, chartType: 
         : char.sex === "U" ? "U"
         : char.sex === "B" ? "B" : ""]++;
       }
-    });
-
-    console.log("charGenderData", charGenderData)
+    })
 
     chartData = allYears.map(year => {
       const yearData = charGenderData[year] || { M: 0, F: 0, U: 0, B: 0 };
+      return {
+        // convert to date object for D3
+        year: new Date(year, 0, 1),
+        ...yearData
+      }
+    })
+  } else if (chartType === "playGenre") {
+    const genreData: { [key: number]: { [key: string]: number } } = {};
+    const genreKeys = Object.keys(filterMappings.genre);
+
+    (data as Play[]).forEach((play: Play) => {
+      const { printed, genre } = play;
+
+      if (printed === null || Number.isNaN(Number(printed))) return;
+
+      if (!genreData[printed]) {
+        genreData[printed] = genreKeys.reduce((acc, key) => {
+          acc[key] = 0;
+          return acc;
+        }, {} as { [key: string]: number });
+      }
+
+      genreData[printed][genre]++;
+    });
+
+    chartData = allYears.map(year => {
+      const yearData = genreData[year] || genreKeys.reduce((acc, key) => {
+        acc[key] = 0;
+        return acc;
+      }, {} as { [key: string]: number });
       return {
         // convert to date object for D3
         year: new Date(year, 0, 1),
@@ -1671,6 +1720,9 @@ function switchChart(option: string) {
       break;
     case "charGender":
       data = getChartData(filteredCharData, "charGender");
+      break;
+    case "playGenre":
+      data = getChartData(filteredPlayData, "playGenre");
       break;
   }
 
@@ -1915,7 +1967,7 @@ $(function () {
 
     // map needs to be displayed for it to be set
     if (!isMapSet) {
-      const publisherMapData = getPublisherMapData(playData);
+      const publisherMapData = getPublisherMapData();
       setMap(locData, settingData, publisherMapData);
       isMapSet = true;
     }
