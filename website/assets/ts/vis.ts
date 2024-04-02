@@ -4,6 +4,8 @@ import { setTimeline, updateTimelineLangPlot,
 import { drawChart, setChart, updateChart } from "../js-plugins/d3-charts";
 import { setMap } from "../js-plugins/map";
 
+const url = new URL(window.location.href);
+
 // These are values to be filtered out in fillFilterValues()
 // we may convert them to null in the future
 const invalidValues = {
@@ -1977,10 +1979,21 @@ $(function () {
     $("#info-overlay").css("display", "flex");
   });
 
-  document.addEventListener("click", function(e) {
-    if ((e.target as HTMLElement).id === "map-overlay") {
+  if (url.searchParams) {
+    if (url.searchParams.has("map")) {
+      showMap();
+    }
+    else if (url.searchParams.has("info")) {
+      $("#info-overlay").css("display", "flex");
+    }
+  }
+
+  $("#map-filter-window-close-btn").on("click", function() {
       $("#map-overlay").css("display", "none");
-    } else if ((e.target as HTMLElement).id === "info-overlay") {
+  });
+
+  document.addEventListener("click", function(e) {
+    if ((e.target as HTMLElement).id === "info-overlay") {
       $("#info-overlay").css("display", "none");
     }
   });
