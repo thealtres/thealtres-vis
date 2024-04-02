@@ -64,17 +64,11 @@
     },
     "genre": {
       "vaudeville": ["vaudeville-proverbe", "vaudeville", "folie-vaudeville", "comédie-vaudeville"],
-      "comedy": ["comedy", "comédie", "comédie-vaudeville", "comédie-opérette", "opéra-bouffe", "posse", "schwank"],
-      "drama": ["drama", "drame historique"],
-      "mystery": "mystery",
-      "tale": "tale",
-      "biblical": "biblical",
-      "dialog": "dialog",
-      "historisch": "historisch",
-      "tragedy": "tragedy",
-      "gerichtsscene": "gerichtsscene",
-      "mêlée": "mêlée",
-      "pièce": "pièce",
-      "horreur": "horreur"
+      "comedy": ["comedy", "comédie", "comédie-vaudeville", "comédie-opérette", "opéra-bouffe", "pièce"],
+      "posse": "posse",
+      "schwank": "schwank",
+      "drama": ["drama", "drame historique", "tragedy"],
+      "other": ["drama", "drame historique", "mystery", "biblical", "historisch", "gerichtsscene", "mêlée", "dialog", "horreur", "tale"]
     }
-}
+  }
+  
