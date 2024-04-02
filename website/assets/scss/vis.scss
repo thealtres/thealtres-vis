@@ -525,6 +525,10 @@ div[id^="filter"][id$="values"] > button {
     cursor: none;
 }
 
+#chart .y-axis, #chart .x-axis {
+    font-size: 1.3em;
+}
+
 .chart-tooltip {
     pointer-events: none;
     z-index: 2;

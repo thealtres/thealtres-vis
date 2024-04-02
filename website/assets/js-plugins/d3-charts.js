@@ -131,9 +131,10 @@ export function drawChart(data, chartType) {
     .enter()
     .append("text")
       .attr("x", width - 40)
-      .attr("y", function(d,i){ return 5 + i*25}) // 25 is the distance between dots
+      .attr("y", function(d,i){ return 7 + i*25}) // 25 is the distance between dots
       .style("fill", function(d){ return chartGroups[chartType][d]})
       .style("font-weight", "bold")
+      .style("font-size", "1.5em")
       .text(function(d){ return d})
       .attr("text-anchor", "left")
       .style("alignment-baseline", "middle")
@@ -141,6 +142,7 @@ export function drawChart(data, chartType) {
     // add focus rect
     const focus = svg.append("g")
     .append("rect")
+    .attr("class", "chart-rect")
     .style("fill", "black")
     .style("pointer-events", "all")
     .style("stroke", "black")
@@ -164,7 +166,7 @@ export function drawChart(data, chartType) {
 
     // add tooltip handling on mousemove
     svg.append("rect")
-    .attr("class", "overlay")
+    .attr("class", "chart-overlay")
     .attr("width", width)
     .attr("height", height)
     .style("opacity", 0)
@@ -220,8 +222,18 @@ function handleTooltip(data, chartType, tooltip, focus, mouseX, pageX, pageY) {
         `;
 
         tooltip.html(tooltipContent)
-        .style("left", (pageX + 20) + "px")
-        .style("top", (pageY - 30) + "px");
+
+        // move tooltip to the left if it's too close to the right edge
+        const tooltipWidth = tooltip.node().getBoundingClientRect().width;
+        const availSpace = window.innerWidth - pageX;
+
+        if (availSpace < (tooltipWidth + 20)) {
+            tooltip.style("left", `${pageX - tooltipWidth - 20}px`);
+        } else {
+            tooltip.style("left", `${pageX + 20}px`);
+        }
+
+        tooltip.style("top", `${pageY - 30}px`);
 
         focus.attr("transform", `translate(${x(hoveredYear)}, 0)`);
     }
@@ -275,7 +287,7 @@ export function updateChart(data) {
     d3.select("#chart").select(".y-axis")
     .transition()
     .duration(0)
-    .call(d3.svg.axis().scale(y).orient("left").ticks(5));
+    .call(d3.svg.axis().scale(y).orient("left").ticks(5).tickFormat(d3.format("d")));
 
     // get chart lines
     d3.select("#chart").selectAll("path").each(function(d, i) {
@@ -287,5 +299,15 @@ export function updateChart(data) {
             .x(function(d) { return x(d.year); })
             .y(function(d) { return y(d[lineValue]); })
         )
+    });
+
+    // update tooltips
+    d3.select("#chart").select(".chart-overlay")
+    .on("mousemove", function() {
+        const mouseX = d3.mouse(this)[0];
+        const event = d3.event;
+        const pageX = event.pageX;
+        const pageY = event.pageY;
+        handleTooltip(data, d3.select("#chart-select-btn").property("value"), d3.select(".chart-tooltip"), d3.select(".chart-rect"), mouseX, pageX, pageY);
     });
 }
