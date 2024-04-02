@@ -47,13 +47,19 @@ interface Publisher {
     placeId: number;
 }
 
+interface PublisherMapData {
+    lang: string;
+    placeId: number;
+    publisherName: string;
+}
+
 interface Setting {
     workId: number;
     lang: string;
     actId: number;
     sceneId: number;
     placeId: string[]; // can have several ids if multiple places are mentioned
-    coord: string;
+    OSMLatLon: string;
 }
 
 interface FilterMappings {
@@ -66,6 +72,7 @@ export {
     Author,
     Location,
     Publisher,
+    PublisherMapData,
     Setting,
     FilterMappings
 }

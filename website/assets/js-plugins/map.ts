@@ -1,7 +1,25 @@
+import { marker } from "leaflet";
 import { Location, Setting, Publisher } from "../ts/IEntity";
 
 let ogLocData: Location[] = [];
+let extendedLocData: Location[] = [];
+let extendedSettingData: Setting[] = [];
 const maxListItems = 8;
+
+const mapFilters = {
+  "fre": {
+    "locations": false,
+    "settings": false,
+  },
+  "ger": {
+    "locations": false,
+    "settings": false,
+  },
+  "als": {
+    "locations": false,
+    "settings": false,
+  }
+}
 
 const markerProps = {
   // Material Design Icons: https://fonts.google.com/icons
@@ -15,29 +33,31 @@ const markerProps = {
     "als": "rgba(255, 25, 25, 0.7)", // red
   },
   iconColor: "white",
-  iconSize: [42, 53], // [width, height]
+  iconSize: [62, 83], // [width, height]
   popupAnchor: [0, -50] // [x, y]
 }
 
 const markerCluster = L.markerClusterGroup({
   showCoverageOnHover: false,
   spiderfyOnMaxZoom: true,
-  maxZoom: 15,
+  maxClusterRadius: 150,
+  //todo: do not use this option now because it only shows one type of icon
+  //todo: but enable it once we have implemented filters
+  //disableClusteringAtZoom: 4,
 });
 
 /**
- * Create Leaflet map object using given data
+ * Create Leaflet map object and add data layers to it
  * @param locData - location data
  * @param settingData - setting data
  * @param publisherData - publisher data
  */
-export function setMap(locData: Location[], settingData: Setting[], publisherData: Publisher[]) {
+export function setMap(locData: Location[], settingData: Setting[], publisherData) {
     let map = L.map("map", {
       // https://github.com/mutsuyuki/Leaflet.SmoothWheelZoom
       scrollWheelZoom: false,
       smoothWheelZoom: true,
       smoothSensitivity: 1.5,
-      tap: false,
     }).setView([50, 0], 3);
 
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -51,19 +71,27 @@ export function setMap(locData: Location[], settingData: Setting[], publisherDat
 
     // keeping original locData to match with settingData
     // to assign place name to settings
-    ogLocData = filteredLocData;
+    ogLocData = filteredLocData as Location[];
 
     // extend data with publisher info
-    let [extendedLocData, extendedSettingData] = extendData(publisherData,
+    [extendedLocData, extendedSettingData] = extendData(publisherData,
       filteredLocData, filteredSettingData);
 
     let geoJSONLocData = convertToGeoJSON(extendedLocData, "locations");
     let geoJSONSettingData = convertToGeoJSON(extendedSettingData, "settings");
+    console.log("geoJSONLocData", geoJSONLocData)
+    console.log("geoJSONSettingData", geoJSONSettingData)
     addGeoJSONData(map, geoJSONLocData, "locations");
     addGeoJSONData(map, geoJSONSettingData, "settings");
+
+    enableMapFilterBtns(map);
 }
 
-function filterData(...mapData) {
+/**
+ *
+ * @param mapData - location or setting data to be filtered
+ */
+function filterData<T extends Location | Setting>(...mapData: T[][]): T[][] {
   return mapData.map(data => data.filter(item => item.OSMLatLon !== null));
 }
 
@@ -91,6 +119,8 @@ function convertToGeoJSON(mapData, dataType) {
     Must be either "locations" or "settings".`);
   }
 
+  console.log("mapData", mapData)
+
   const features = mapData.map((item) => {
     let name = item.name;
 
@@ -115,6 +145,8 @@ function convertToGeoJSON(mapData, dataType) {
       properties: {
         name,
         lang: item.lang,
+        playName: item.playName,
+        authorNames: item.authorNames,
         publishers: dataType === "locations" ? item.publishers : null,
         settingText: dataType === "settings" ? item.settingText : null,
         time: dataType === "settings" ? item.time : null,
@@ -197,6 +229,7 @@ function handlePopUpList(layer, pubs) {
 }
 
 function addGeoJSONData(map, data, type) {
+  console.log("d", data)
   L.geoJSON(data, {
       pointToLayer: function(feature, latlng) {
           const markerIcon = L.IconMaterial.icon({
@@ -219,6 +252,10 @@ function addGeoJSONData(map, data, type) {
           if (type === "locations") {
             popUpContent = [
               `<b class="map-popup-title">${popUpTitle}</b>`,
+              feature.properties.playName
+              ? `<b>Play</b>: ${feature.properties.playName}` : null,
+              feature.properties.authorNames
+              ? `<b>Author</b>: ${feature.properties.authorNames}` : null,
               feature.properties.name
               ? `<b>Place</b>: ${feature.properties.name}` : null,
               pubs && pubs.length > 0
@@ -227,6 +264,10 @@ function addGeoJSONData(map, data, type) {
           } else if (type === "settings") {
             popUpContent = [
               `<b class="map-popup-title">${popUpTitle}</b>`,
+              feature.properties.playName
+              ? `<b>Play</b>: ${feature.properties.playName}` : null,
+              feature.properties.authorNames
+              ? `<b>Author</b>: ${feature.properties.authorNames}` : null,
               feature.properties.name ?
               `<b>Place</b>: ${feature.properties.name}` : null,
               feature.properties.settingText ?
@@ -250,4 +291,85 @@ function addGeoJSONData(map, data, type) {
   });
 
   map.addLayer(markerCluster);
+}
+
+function enableMapFilterBtns(map) {
+  $(".map-filter-btn").on("click", function() {
+    const type = $(this).attr("data-type");
+    const lang = $(this).attr("data-lang");
+
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      console.log("mapFiltersPrev", mapFilters)
+      mapFilters[lang][type] = false;
+
+      console.log("mapFiltersPrev2", mapFilters)
+
+      // check if some buttons are active
+      const isFiltered = $(".map-filter-btn").toArray().some((btn) => {
+        return $(btn).hasClass("active");
+      });
+
+      // if all buttons are inactive, reset map filters
+      if (!isFiltered) {
+        resetMapFilters(map);
+        return;
+      }
+
+      const layerObj = markerCluster.getLayers().filter((layer) => {
+        return layer.feature.properties.type === type && layer.feature.properties.lang === lang;
+      });
+
+      layerObj.forEach((layer) => {
+        markerCluster.removeLayer(layer);
+      });
+    } else {
+      $(this).addClass("active");
+      const atLeastOneTypeIsTrue = Object.values(mapFilters[lang]).some(value => value === true);
+
+      //todo: fix issue where count is off when mixing locations and settings
+      //todo: of different languages
+      if (mapFilters[lang][type] === false && !atLeastOneTypeIsTrue) {
+        console.log("clearing markerCluster");
+        markerCluster.clearLayers();
+      }
+
+      mapFilters[lang][type] = true;
+
+      filterMarkers(map, type);
+    }
+  });
+}
+
+function filterMarkers(map, type) {
+
+  const data = type === "locations" ? extendedLocData : extendedSettingData;
+
+  console.log("originalData", data)
+
+  const filteredData = data.filter((item) => {
+    return mapFilters[item.lang][type];
+  });
+
+  console.log("filteredData", filteredData)
+
+  // ?
+  const geoJSONData = convertToGeoJSON(filteredData, type);
+  addGeoJSONData(map, geoJSONData, type);
+};
+
+function resetMapFilters(map) {
+  console.log("resetting map filters");
+  $(".map-filter-btn").removeClass("active");
+
+  // change every value in mapFilters object to false
+  for (const lang in mapFilters) {
+    for (const type in mapFilters[lang]) {
+      mapFilters[lang][type] = false;
+    }
+  }
+
+  markerCluster.clearLayers();
+  addGeoJSONData(map, convertToGeoJSON(extendedLocData, "locations"), "locations");
+  addGeoJSONData(map, convertToGeoJSON(extendedSettingData, "settings"), "settings");
 }

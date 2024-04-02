@@ -10,11 +10,50 @@
 
 <div id="map-overlay">
     <div id="map"></div>
+    <div id="map-filter-window">
+        <i id="map-filter-window-close-btn" class="fa-solid fa-times pointer" rel="tooltip" title="Close"></i>
+        <div id="map-filter-window-header">
+            <h2>Filters</h2>
+        </div>
+        <div id="map-filter-window-content">
+            <div id="map-filter-window-lang">
+                <h3 class="map-filter-label">Tradition</h3>
+                <div id="map-filter-window-lang-values">
+                    <div id="map-filter-window-lang-values-fre">
+                        <span>fre</span>
+                        <button class="map-filter-btn" data-type="locations" data-lang="fre">Location</button>
+                        <button class="map-filter-btn" data-type="settings" data-lang="fre">Setting</button>
+                    </div>
+                    <div id="map-filter-window-lang-values-ger">
+                        <span>ger</span>
+                        <button class="map-filter-btn" data-type="locations" data-lang="ger">Location</button>
+                        <button class="map-filter-btn" data-type="settings" data-lang="ger">Setting</button>
+                    </div>
+                    <div id="map-filter-window-lang-values-als">
+                        <span>als</span>
+                        <button class="map-filter-btn" data-type="locations" data-lang="als">Location</button>
+                        <button class="map-filter-btn" data-type="settings" data-lang="als">Setting</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div id="info-overlay">
     <div id="info">
-        <p>lorem ipsum</p>
+        <h1>Information</h1>
+        <div class="info-text">
+            <p>Welcome to the <b>Thealtres visualization interface</b> — you can use it to filter, search and analyze data from the <a href="https://thealtres.pages.unistra.fr/" target="_blank">Thealtres project</a>.</p>
+            <p>Use the <b>"Filters" panel</b> on the left and the top timeline to filter both plays and characters by various criteria. You can also search for specific plays and characters using the <b>search bar</b> in the respective panels.</p>
+            <p>Click on a play's <i class="fa-solid fa-magnifying-glass"></i> icon to view its characters. Click on a character's <i class="fa-solid fa-magnifying-glass"></i> icon to view in what play they appear in.</p>
+            <p>Use the <b>"Charts" panel</b> and associated dropdown to view various graphs based on the filtered data.</p>
+            <p>Click on the <i class="fa-solid fa-map"></i> icon in the top right corner to view the map of the plays' settings and locations.</p>
+            <p>Click on the <i class="fa-solid fa-circle-info"></i> icon in the top right corner to view this information again.</p>
+            <hr>
+            <p>Web app created by Enzo Doyen as part of an internship under the supervision of Senior lecturer <a href="https://lilpa.unistra.fr/theme-1-lexiques-discours-et-transpositions/membres/enseignants-chercheurs/ruiz-fabo-pablo/" target="_blank">Pablo Ruiz Fabo</a>.</p>
+            <p>For more information about the project, visit the <a href="https://thealtres.pages.unistra.fr/" target="_blank">Thealtres website</a>.</p>
+        </div>
     </div>
 </div>
 

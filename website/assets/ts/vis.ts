@@ -161,6 +161,11 @@ function getYearPair(data: Play[]) {
   .reduce((acc, curr) => ({ ...acc, ...curr }), {});
 };
 
+/**
+ * Calculates the minimum and maximum year of the printed plays in the given data
+ * @param data - array of Play objects
+ * @returns - array containing the minimum and maximum year
+ */
 function getMinMaxPlayDataYear(data: Play[]) : number[] {
   const minYear = Math.min(...data.map((item: Play) => +item.printed)
   .filter(year => !isNaN(year) && year !== 0));
@@ -1022,16 +1027,29 @@ function getNumberOfPlaysByIdAndLang(data: Play[], id: number, lang: string, typ
 function getPublisherMapData(): PublisherMapData {
   const publisherMapData = {} as PublisherMapData;
 
-  publisherData.forEach((publisher: Publisher) => {
+  publisherData.forEach(async (publisher: Publisher) => {
     const publisherId = publisher.publisherId;
     const lang = publisher.lang;
     const publisherName = publisher.normalizedName;
     const placeId = publisher.placeId;
+    const play = playData.find((play: Play) =>
+      parseInt(play.publisherId) === publisherId && play.lang === lang);
+
+    let playName = "";
+    let authorNames;
+    if (play) {
+      playName = play.titleMain;
+      //console.log("playName", playName, publisherName, placeId, lang)
+      const authorId = play.authorId;
+      authorNames = await getPlayInfo(authorId, lang, "authorName");
+    }
 
     publisherMapData[lang + publisherId] = {
       publisherName,
       lang,
-      placeId
+      placeId,
+      playName,
+      authorNames,
     };
   });
 
@@ -1930,6 +1948,18 @@ $(function () {
     allCharsShown = true;
   });
 
+  function showMap() {
+    $("#map-overlay").css("display", "flex");
+
+    // map needs to be displayed for it to be set
+    if (!isMapSet) {
+      const publisherMapData = getPublisherMapData();
+      setMap(locData, settingData, publisherMapData);
+      console.log("pub", publisherMapData)
+      isMapSet = true;
+    }
+  }
+
   $("#char-list-pagination, #play-list-pagination").on("change", function(e) {
     const target = e.target as HTMLInputElement;
     const page = target.value.split("-")[2];
@@ -1965,14 +1995,7 @@ $(function () {
   });
 
   $("#map-open-btn").on("click", function() {
-    $("#map-overlay").css("display", "flex");
-
-    // map needs to be displayed for it to be set
-    if (!isMapSet) {
-      const publisherMapData = getPublisherMapData();
-      setMap(locData, settingData, publisherMapData);
-      isMapSet = true;
-    }
+    showMap();
   });
 
   $("#info-open-btn").on("click", function() {

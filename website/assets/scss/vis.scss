@@ -70,6 +70,10 @@ button:hover {
     background: var(--third-bg-color);
 }
 
+div.disabled > button {
+    pointer-events: none;
+}
+
 svg {
     height: auto;
     width: auto;
@@ -207,12 +211,14 @@ footer {
     padding-left: 10px;
 }
 
-div[id^="filter"][id$="values"] {
+div[id^="filter"][id$="values"],
+div[class^="filter"][class$="values"] {
     display: flex;
     flex-wrap: wrap;
 }
 
-div[id^="filter"][id$="values"] > button {
+div[id^="filter"][id$="values"] > button,
+div[class^="filter"][class$="values"] > button {
     margin-right: 1px;
 }
 
@@ -222,6 +228,16 @@ div[id^="filter"][id$="values"] > button {
 
 .filter-btn {
     flex: 1 0 auto;
+    position: relative;
+}
+
+.filter-btn.active:before {
+    content: "";
+    position: absolute;
+    top: 130%;
+    left: 0;
+    width: 100%;
+    height: 0.2rem;
 }
 
 .filter-btn[title="French"] {
@@ -231,6 +247,10 @@ div[id^="filter"][id$="values"] > button {
 .filter-btn[title="French"]:hover, .filter-btn[title="French"].active {
     background: var(--lang-color-fre-active);
     color: black;
+}
+
+.filter-btn[title="French"].active:before {
+    background: var(--lang-color-fre-active);
 }
 
 .filter-btn[title="German"] {
@@ -243,6 +263,10 @@ div[id^="filter"][id$="values"] > button {
     color: black;
 }
 
+.filter-btn[title="German"].active:before {
+    background: var(--lang-color-ger);
+}
+
 .filter-btn[title="Alsatian"] {
     background: var(--lang-color-als);
 }
@@ -250,6 +274,10 @@ div[id^="filter"][id$="values"] > button {
 .filter-btn[title="Alsatian"]:hover, .filter-btn[title="Alsatian"].active {
     background: var(--lang-color-als-active);
     color: white;
+}
+
+.filter-btn[title="Alsatian"].active:before {
+    background: var(--lang-color-als-active);
 }
 
 .filter-gender-sub-header {
@@ -697,11 +725,11 @@ div[id^="filter"][id$="values"] > button {
 /* Map specific styles */
 /* =================== */
 
-.fa-map, .fa-circle-info {
+#header-btns .fa-map, #header-btns .fa-circle-info {
     font-size: 2.5rem;
 }
 
-.fa-map:hover, .fa-circle-info:hover {
+#header-btns .fa-map:hover, #header-btns .fa-circle-info:hover {
     color: var(--accent-color);
     transition: color 0.3s ease;
 }
@@ -719,11 +747,10 @@ div[id^="filter"][id$="values"] > button {
 
 #map {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 80%;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
     z-index: 3;
 }
 
@@ -735,8 +762,28 @@ div[id^="filter"][id$="values"] > button {
     background: rgba(0, 0, 0, 0.9);
     color: white;
     text-align: center;
-    width: 50%;
-    height: 50%;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+#info h1 {
+    margin: 0;
+    color: var(--accent-color);
+    font-size: 2em;
+}
+
+#info p {
+    text-align: left;
+    font-size: 1.1em;
+    margin: 0.5rem;
+}
+
+#info hr {
+    background: white;
+}
+
+#info .fa-solid {
+    margin: 0 0.3em;
 }
 
 .map-popup-title {
@@ -744,6 +791,47 @@ div[id^="filter"][id$="values"] > button {
     display: block;
     text-align: center;
     color: var(--accent-color);
+}
+
+#map-filter-window {
+    position: absolute;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+}
+
+#map-filter-window div {
+    color: white;
+}
+
+.marker-cluster-small {
+    background-color: rgb(140, 150, 198) !important;
+}
+
+.marker-cluster-small div {
+    background-color: rgb(109, 116, 153) !important;
+    color: #fff !important;
+}
+
+.marker-cluster-medium {
+    background-color: rgb(136, 86, 167) !important;
+}
+
+.marker-cluster-medium div {
+    background-color: rgb(112, 70, 138) !important;
+    color: #fff !important;
+}
+
+.marker-cluster-large {
+    background-color: rgb(129, 15, 124) !important;
+}
+
+.marker-cluster-large div {
+    background-color: rgb(99, 11, 96) !important;
+    color: #fff !important;
 }
 
 // https://github.com/ilyankou/Leaflet.IconMaterial/blob/master/dist/leaflet.icon-material.css
