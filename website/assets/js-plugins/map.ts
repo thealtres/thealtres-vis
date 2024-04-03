@@ -73,9 +73,14 @@ export function setMap(locData: Location[], settingData: Setting[], publisherDat
     // to assign place name to settings
     ogLocData = filteredLocData as Location[];
 
+    console.log("publisherData", publisherData);
+
     // extend data with publisher info
     [extendedLocData, extendedSettingData] = extendData(publisherData,
       filteredLocData, filteredSettingData);
+
+    console.log("extendedLocData", extendedLocData);
+    console.log("extendedSettingData", extendedSettingData);
 
     let geoJSONLocData = convertToGeoJSON(extendedLocData, "locations");
     let geoJSONSettingData = convertToGeoJSON(extendedSettingData, "settings");
@@ -96,15 +101,22 @@ function filterData<T extends Location | Setting>(...mapData: T[][]): T[][] {
 }
 
 function extendData(publisherData, ...mapData) {
+  console.log("publisherData", publisherData)
+  console.log("publisherData/mapData", mapData)
   let extendedData = mapData.map((data) => {
     return data.map((item) => {
+      console.log("item", item)
       let publishers = Object.values(publisherData).filter((pub) =>
         pub.lang === item.lang && (
           (Array.isArray(item.placeId) ? item.placeId.includes(pub.placeId) : pub.placeId === item.placeId)
         )
       );
+      console.log("item publishers", publishers)
+      // ? these properties are always null
       return {
         ...item,
+        authorNames: publishers.map((pub) => pub.authorNames).filter(Boolean),
+        playName: publishers.map((pub) => pub.playName).filter(Boolean),
         publishers: publishers.map((pub) => pub.publisherName).filter(Boolean)
       };
     });
@@ -300,10 +312,8 @@ function enableMapFilterBtns(map) {
 
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
-      console.log("mapFiltersPrev", mapFilters)
-      mapFilters[lang][type] = false;
 
-      console.log("mapFiltersPrev2", mapFilters)
+      mapFilters[lang][type] = false;
 
       // check if some buttons are active
       const isFiltered = $(".map-filter-btn").toArray().some((btn) => {
@@ -324,36 +334,30 @@ function enableMapFilterBtns(map) {
         markerCluster.removeLayer(layer);
       });
     } else {
-      $(this).addClass("active");
-      const atLeastOneTypeIsTrue = Object.values(mapFilters[lang]).some(value => value === true);
+      const isFiltered = $(".map-filter-btn").toArray().some((btn) => {
+        return $(btn).hasClass("active");
+      });
 
-      //todo: fix issue where count is off when mixing locations and settings
-      //todo: of different languages
-      if (mapFilters[lang][type] === false && !atLeastOneTypeIsTrue) {
-        console.log("clearing markerCluster");
+      if (!isFiltered) {
         markerCluster.clearLayers();
       }
 
+      $(this).addClass("active");
       mapFilters[lang][type] = true;
 
-      filterMarkers(map, type);
+      filterMarkers(map, lang, type);
     }
   });
 }
 
-function filterMarkers(map, type) {
-
+function filterMarkers(map, lang, type) {
   const data = type === "locations" ? extendedLocData : extendedSettingData;
 
-  console.log("originalData", data)
-
   const filteredData = data.filter((item) => {
-    return mapFilters[item.lang][type];
+    // filter by lang to avoid duplicates
+    return mapFilters[item.lang][type] && item.lang === lang;
   });
 
-  console.log("filteredData", filteredData)
-
-  // ?
   const geoJSONData = convertToGeoJSON(filteredData, type);
   addGeoJSONData(map, geoJSONData, type);
 };
