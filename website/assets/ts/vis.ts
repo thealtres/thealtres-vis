@@ -1020,7 +1020,7 @@ function getNumberOfPlaysByIdAndLang(data: Play[], id: number, lang: string, typ
       }).length;
     case "publisher":
       return data.filter((play: Play) =>
-        parseInt(play.publisherId) === id && play.lang === lang).length;
+        play.publisherId === id && play.lang === lang).length;
   }
 }
 
@@ -1033,7 +1033,7 @@ function getPublisherMapData(): PublisherMapData {
     const publisherName = publisher.normalizedName;
     const placeId = publisher.placeId;
     const play = playData.find((play: Play) =>
-      parseInt(play.publisherId) === publisherId && play.lang === lang);
+      play.publisherId == publisherId && play.lang === lang);
 
     let playName = "";
     let authorNames;
@@ -1057,15 +1057,10 @@ function getPublisherMapData(): PublisherMapData {
 }
 
 function filterCharacters(charData: Character[]) : Character[] {
-  //console.time("filterCharacters");
-  //possible values: fre, ger, als
+  // see filter_map.json for possible values
   const langFilter = charFilters.lang;
-  //possible values: M, F, B, U
-  // B = both (if several chars); U = unknown
   const genderFilter = charFilters.sex;
-  //todo: possible values: todo
   const professionFilter = charFilters.professionalGroup;
-  //possible values: UC, MC, UMC, LC, LMC, LMC|UC
   const socialClassFilter = charFilters.socialClass;
   const searchFilter = charFilters.searchInput;
 

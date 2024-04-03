@@ -16,7 +16,7 @@ interface Play {
     titleMain: string;
     titleSub: string;
     authorId: number | number[];
-    publisherId: string;
+    publisherId: number;
     nbActs: string;
     printed: string; // some values such as: "?1824"
     genre: string;
