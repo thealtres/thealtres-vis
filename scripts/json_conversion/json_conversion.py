@@ -110,12 +110,12 @@ def convert_to_json(data: dict, template_type: str) -> dict:
                 else v for k, v in dct.items()}
                 for dct in play_data]
 
-        # replace question marks with "unknown"
-        play_data = [{k: "unknown" if v == "?" else v for k, v in dct.items()}
+        # replace invalid string values with null values
+        play_data = [{k: None if v in ["?", "unknown", "n.d."] else v for k, v in dct.items()}
                 for dct in play_data]
 
         # convert ids to integers
-        play_data = [{k: int(float(v)) if k == "workId"
+        play_data = [{k: int(float(v)) if k in ["workId", "publisherId"]
                 and v is not None
                 else v for k, v in dct.items()}
                 for dct in play_data]

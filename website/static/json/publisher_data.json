@@ -188,7 +188,7 @@
             "wikidataId": null,
             "placeId": 1,
             "coord": "48.8588897, 2.3200410",
-            "notes": "Victorine de Lacombe https://data.bnf.fr/17959868/victorine_de_lacombe/ "
+            "notes": "Victorine de Lacombe https://data.bnf.fr/17959868/victorine_de_lacombe/"
         },
         {
             "publisherId": 20,
@@ -1263,7 +1263,7 @@
         {
             "publisherId": 10,
             "lang": "als",
-            "nameOnPlay": "Colmar, Soci\u00e9t\u00e9 Alsacienne d'\u00c9dition Alsatia, S. A. ",
+            "nameOnPlay": "Colmar, Soci\u00e9t\u00e9 Alsacienne d'\u00c9dition Alsatia, S. A.",
             "normalizedName": "Soci\u00e9t\u00e9 Alsacienne d\u2019\u00c9dition",
             "wikidataId": "Q13142475",
             "placeId": 4,
@@ -1603,7 +1603,7 @@
         {
             "publisherId": 17,
             "lang": "als",
-            "nameOnPlay": "Druck und Verlag von R. Schultz und Comp. ",
+            "nameOnPlay": "Druck und Verlag von R. Schultz und Comp.",
             "normalizedName": "Buchdr. R. Schultz & Comp.",
             "wikidataId": null,
             "placeId": 6,
@@ -1783,7 +1783,7 @@
         {
             "publisherId": 25,
             "lang": "als",
-            "nameOnPlay": "Imprimerie J. Brinkmann. ",
+            "nameOnPlay": "Imprimerie J. Brinkmann.",
             "normalizedName": "Buchdruckerei von J. Brinkmann, M\u00fchlhausen i. E.",
             "wikidataId": null,
             "placeId": 8,
@@ -1893,7 +1893,7 @@
         {
             "publisherId": 83,
             "lang": "als",
-            "nameOnPlay": "Ph. H. Dannbach, Schildgasse N* 1. ",
+            "nameOnPlay": "Ph. H. Dannbach, Schildgasse N* 1.",
             "normalizedName": "Ph. H. Dannbach",
             "wikidataId": null,
             "placeId": 6,
