@@ -53,7 +53,10 @@
   {{ $leafletMaterialIcon := resources.Get "js-plugins/leaflet.icon-material.js" }}
   <script src="{{ $leafletMaterialIcon.Permalink }}" defer></script>
 
-  <!-- Leaflet MarkerCluster -->
+  <!-- Leaflet MarkerCluster: https://github.com/Leaflet/Leaflet.markercluster -->
   <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+
+  <!-- Leaflet MarkerCluster Freezable: https://github.com/ghybs/Leaflet.MarkerCluster.Freezable -->
+  <script src="https://unpkg.com/leaflet.markercluster.freezable@1.0.0/dist/leaflet.markercluster.freezable.js"></script>
 </head>
 {{ end }}

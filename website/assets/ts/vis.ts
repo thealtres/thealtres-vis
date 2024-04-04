@@ -150,7 +150,6 @@ function getDataCountByYear(data: Play[]) {
 };
 
 function getYearPair(data: Play[]) {
-  console.log(data)
   return data.map((item: Play) => {
     return {
       year1: +item.printed,
@@ -578,8 +577,8 @@ function enableFilterBtns() {
     const isActive = $(this).hasClass("active");
 
     if (isActive) {
-      console.log("playFilters-notactiveanymore", playFilters)
-      console.log("charFilters-notactiveanymore", charFilters)
+      console.log("debug174: playFilters-notactiveanymore", playFilters)
+      console.log("debug174: charFilters-notactiveanymore", charFilters)
       $(this).removeClass("active");
 
       if (key === "lang") { // shared property
@@ -600,10 +599,12 @@ function enableFilterBtns() {
         playFilters.sex.length > 0;
         if (isPlayFiltered) {
           // if we keep both, change updateView logic so that results do not appear twice
-        updateView("characters");
+          updateView("characters");
           updateView("plays");
+          console.log("aaaa3")
         } else {
           updateView("characters");
+          console.log("aaaa4")
         }
       } else if (key === "genre") {
         playFilters[key] = playFilters[key].filter(item => item !== value);
@@ -617,8 +618,10 @@ function enableFilterBtns() {
         if (isCharFiltered) {
           updateView("characters");
           updateView("plays");
+          console.log("aaaa5")
         } else {
           updateView("plays");
+          console.log("aaaa6")
         }
       } else {
         console.error("Invalid filter button key found when removing filter:", key);
@@ -626,8 +629,8 @@ function enableFilterBtns() {
 
     } else {
       $(this).addClass("active");
-      console.log("playFilters-active", playFilters)
-      console.log("charFilters-active", charFilters)
+      console.log("debug174: playFilters-active", playFilters)
+      console.log("debug174: charFilters-active", charFilters)
 
       if (key === "lang") { // shared property
         charFilters[key].push(value);
@@ -638,6 +641,7 @@ function enableFilterBtns() {
       } else if ((key === "sex" && $(this).attr("data-type") == "char")
       || key === "professionalGroup"
       || key === "socialClass") {
+        console.log("aaaa0")
         charFilters[key].push(value);
         const isPlayFiltered = playFilters.lang.length > 0 ||
         playFilters.genre.length > 0 ||
@@ -646,15 +650,18 @@ function enableFilterBtns() {
         playFilters.dates.length > 0 ||
         playFilters.sex.length > 0;
         if (isPlayFiltered) {
-        updateView("characters");
+          updateView("characters");
+          console.log("aaaa1")
         } else {
           updateView("characters");
+          console.log("aaaa2")
         }
       } else if (key === "genre") {
         playFilters[key].push(value);
         updateView("plays");
       } else if (key === "sex" && $(this).attr("data-type") == "author") {
         playFilters[key].push(value);
+        console.log("aaaa7")
         updateView("plays");
       } else {
         console.error("Invalid filter button key found when adding filter:", key);
@@ -1024,25 +1031,33 @@ function getNumberOfPlaysByIdAndLang(data: Play[], id: number, lang: string, typ
   }
 }
 
-function getPublisherMapData(): PublisherMapData {
+async function getPublisherMapData(): Promise<PublisherMapData> {
   const publisherMapData = {} as PublisherMapData;
 
-  publisherData.forEach(async (publisher: Publisher) => {
+  console.log("pub0", publisherData)
+
+  for (const publisher of publisherData) {
     const publisherId = publisher.publisherId;
+    console.log("publisherId", publisherId)
     const lang = publisher.lang;
     const publisherName = publisher.normalizedName;
     const placeId = publisher.placeId;
+    console.log("publisherId", playData)
     const play = playData.find((play: Play) =>
       play.publisherId == publisherId && play.lang === lang);
 
     let playName = "";
-    let authorNames;
+    let authorNames = "";
+    console.log("play", play)
     if (play) {
       playName = play.titleMain;
-      //console.log("playName", playName, publisherName, placeId, lang)
+      console.log("playName", playName, publisherName, placeId, lang)
       const authorId = play.authorId;
-      authorNames = await getPlayInfo(authorId, lang, "authorName");
-    }
+      authorNames = await getPlayInfo(authorId, lang, "authorName").catch((err) => {
+        console.error("Error getting author names:", err);
+        return "";
+      }) as string;
+   }
 
     publisherMapData[lang + publisherId] = {
       publisherName,
@@ -1051,7 +1066,9 @@ function getPublisherMapData(): PublisherMapData {
       playName,
       authorNames,
     };
-  });
+  };
+
+  console.log("pub1", publisherMapData)
 
   return publisherMapData;
 }
@@ -1085,6 +1102,7 @@ function filterCharacters(charData: Character[]) : Character[] {
   });
 
   totalShownCharItems = filteredCharData.length;
+  console.log("debug174: Filtered characters, got ", filteredCharData.length, " characters")
 
   return filteredCharData;
 };
@@ -1186,14 +1204,14 @@ function filterPlays(playData: Play[]) : Play[] {
   });
 
   totalShownPlayItems = filteredPlayData.length;
+  console.log("debug174: Filtered plays, got ", filteredPlayData.length, " plays")
 
   return filteredPlayData;
 }
 
 async function updateView(dataType: string, sharedProp = false) {
   let filteredData: Character[] | Play[];
-  console.trace()
-  console.log(`function updateView() called with args: ${dataType}, sharedProp=${sharedProp}`)
+  console.log(`debug174: function updateView() called with args: ${dataType}, sharedProp=${sharedProp}`)
 
   // as updateView is called every time a filter is disabled,
   // do a check to see if all filters are disabled
@@ -1221,8 +1239,11 @@ async function updateView(dataType: string, sharedProp = false) {
       if (isFiltered) {
         console.log("debug174: filteredCharsInPlays with isFiltered", filteredCharsInPlays)
         filteredData = filterCharacters(filteredCharsInPlays);
+        console.log("debug174: filteredData after filteredCharsInPlays & isFiltered", filteredData)
       } else {
+        console.log("debug174: filteredCharsInPlays WITHOUT isFiltered", filteredCharsInPlays)
         filteredData = filterCharacters(charData);
+        console.log("debug174: filteredData after filteredCharsInPlays WITHOUT isFiltered", filteredData)
       }
 
       $("#char-list").html("");
@@ -1235,8 +1256,10 @@ async function updateView(dataType: string, sharedProp = false) {
 
       if (!sharedProp) {
         showRelations("playsByChar", false, null, false, true);
+        console.log("aaaa9")
       } else {
         updateView("plays", false);
+        console.log("aaaa10")
       }
 
       break;
@@ -1250,16 +1273,24 @@ async function updateView(dataType: string, sharedProp = false) {
       if (charFilters.professionalGroup.length > 0 ||
         charFilters.socialClass.length > 0 ||
         charFilters.sex.length > 0) {
+        console.log("aaaa11")
+        console.log("debug174: filteredPlaysWithChars with isFiltered", filteredPlaysWithChars)
+        console.log("aaaa13", filteredPlaysWithChars)
         //! not a good way of doing it
         // don't include lang because sharedProp
         // if (playFilters.sex.length > 0 || playFilters.genre.length > 0 || playFilters.publisher.length > 0 || playFilters.author.length > 0 || playFilters.dates.length > 0){
         //   console.log("aaaa15")
         //   filteredData = filterPlays(playData);
         // } else {
-        filteredData = filterPlays(filteredPlaysWithChars);
+          console.log("aaaa16")
+          filteredData = filterPlays(filteredPlaysWithChars);
         // }
+        console.log("debug174: filteredData after filteredPlaysWithChars & isFiltered", filteredData)
       } else {
+        console.log("aaaa12")
+        console.log("debug174: filteredPlaysWithChars WITHOUT isFiltered", filteredPlaysWithChars)
         filteredData = filterPlays(playData);
+        console.log("debug174: filteredData after filteredPlaysWithChars WITHOUT isFiltered", filteredData)
       }
 
       $("#play-list").html("");
@@ -1284,7 +1315,7 @@ async function updateView(dataType: string, sharedProp = false) {
       break;
   }
 
-  console.log("filteredDt", dataType, filteredData)
+  console.log("debug174: data length", filteredData.length, dataType)
   updateProgress();
   $("#filter-reset-btn").removeClass("disabled");
 };
@@ -1391,7 +1422,7 @@ function updateProgress() {
 }
 
 async function showRelations(viewMode: string, unique: boolean, entity: Character | Play = null, appendNames = false, useFilters = true) : Promise<void> {
-  console.log("showRelations() called with args:", viewMode, unique, entity, appendNames)
+  console.log("debug174: showRelations() called with args:", viewMode, unique, entity, appendNames, useFilters)
 
   //console.time("showRelations");
   if (viewMode === "playsByChar") {
@@ -1452,6 +1483,7 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
     if (charFilters.professionalGroup.length > 0 ||
       charFilters.socialClass.length > 0 ||
       charFilters.sex.length > 0) {
+      console.log("aaaa14; updating filteredPlaysWithChars")
       filteredPlaysWithChars = playsWithChars;
     }
 
@@ -1615,6 +1647,7 @@ function getChartData(data: Play[] | Character[] = filteredPlayData, chartType: 
     (_, i) => i + minPlayDataYear);
 
   let chartData = null;
+  //todo: refactor this, ugly!
   if (chartType === "authorGender") {
     const authorGenderData: { [key: number]:
       { M: number; F: number, U: number } } = {};
@@ -1948,10 +1981,11 @@ $(function () {
 
     // map needs to be displayed for it to be set
     if (!isMapSet) {
-      const publisherMapData = getPublisherMapData();
-      setMap(locData, settingData, publisherMapData);
-      console.log("pub", publisherMapData)
-      isMapSet = true;
+      getPublisherMapData().then((publisherMapData) => {
+        setMap(locData, settingData, publisherMapData, playData);
+        console.log("pub", publisherMapData)
+        isMapSet = true;
+      });
     }
   }
 
@@ -2007,7 +2041,7 @@ $(function () {
   }
 
   $("#map-filter-window-close-btn").on("click", function() {
-      $("#map-overlay").css("display", "none");
+    $("#map-overlay").css("display", "none");
   });
 
   document.addEventListener("click", function(e) {

@@ -1,6 +1,6 @@
-import { marker } from "leaflet";
-import { Location, Setting, Publisher } from "../ts/IEntity";
+import { Location, Setting, Publisher, Play } from "../ts/IEntity";
 
+let pData: Play[] = [];
 let ogLocData: Location[] = [];
 let extendedLocData: Location[] = [];
 let extendedSettingData: Setting[] = [];
@@ -8,16 +8,34 @@ const maxListItems = 8;
 
 const mapFilters = {
   "fre": {
-    "locations": false,
-    "settings": false,
+    "typeEnabled": {
+      "locations": false,
+      "settings": false,
+    },
+    "typeCount": {
+      "locations": 0,
+      "settings": 0,
+    }
   },
   "ger": {
-    "locations": false,
-    "settings": false,
+    "typeEnabled": {
+      "locations": false,
+      "settings": false,
+    },
+    "typeCount": {
+      "locations": 0,
+      "settings": 0,
+    }
   },
   "als": {
-    "locations": false,
-    "settings": false,
+    "typeEnabled": {
+      "locations": false,
+      "settings": false,
+    },
+    "typeCount": {
+      "locations": 0,
+      "settings": 0,
+    }
   }
 }
 
@@ -52,7 +70,7 @@ const markerCluster = L.markerClusterGroup({
  * @param settingData - setting data
  * @param publisherData - publisher data
  */
-export function setMap(locData: Location[], settingData: Setting[], publisherData) {
+export function setMap(locData: Location[], settingData: Setting[], publisherData, playData: Play[]) {
     let map = L.map("map", {
       // https://github.com/mutsuyuki/Leaflet.SmoothWheelZoom
       scrollWheelZoom: false,
@@ -72,8 +90,7 @@ export function setMap(locData: Location[], settingData: Setting[], publisherDat
     // keeping original locData to match with settingData
     // to assign place name to settings
     ogLocData = filteredLocData as Location[];
-
-    console.log("publisherData", publisherData);
+    pData = playData;
 
     // extend data with publisher info
     [extendedLocData, extendedSettingData] = extendData(publisherData,
@@ -84,8 +101,16 @@ export function setMap(locData: Location[], settingData: Setting[], publisherDat
 
     let geoJSONLocData = convertToGeoJSON(extendedLocData, "locations");
     let geoJSONSettingData = convertToGeoJSON(extendedSettingData, "settings");
-    console.log("geoJSONLocData", geoJSONLocData)
-    console.log("geoJSONSettingData", geoJSONSettingData)
+
+    for (const key in mapFilters) {
+      for (const type in mapFilters[key].typeEnabled) {
+        const data = type === "locations" ? geoJSONLocData : geoJSONSettingData;
+        mapFilters[key].typeCount[type] = data.features.filter((feature) => {
+          return feature.properties.lang === key;
+        }).length;
+      }
+    }
+
     addGeoJSONData(map, geoJSONLocData, "locations");
     addGeoJSONData(map, geoJSONSettingData, "settings");
 
@@ -112,7 +137,6 @@ function extendData(publisherData, ...mapData) {
         )
       );
       console.log("item publishers", publishers)
-      // ? these properties are always null
       return {
         ...item,
         authorNames: publishers.map((pub) => pub.authorNames).filter(Boolean),
@@ -159,7 +183,7 @@ function convertToGeoJSON(mapData, dataType) {
         lang: item.lang,
         playName: item.playName,
         authorNames: item.authorNames,
-        publishers: dataType === "locations" ? item.publishers : null,
+        publishers: item.publishers,
         settingText: dataType === "settings" ? item.settingText : null,
         time: dataType === "settings" ? item.time : null,
         type: dataType,
@@ -173,7 +197,8 @@ function convertToGeoJSON(mapData, dataType) {
   };
 };
 
-function createList(data, maxItems = maxListItems, collapseButton = null) {
+function createList(maxItems = maxListItems, collapseButton = null, ...data) {
+  console.log("datadd", data)
   if (data.length === 1) {
     return data[0];
   }
@@ -255,31 +280,41 @@ function addGeoJSONData(map, data, type) {
           return L.marker(latlng, {icon: markerIcon});
       },
       onEachFeature: function(feature, layer) {
+        console.log("feature", feature.properties.playName)
+          const playNames = feature.properties.playName
+          && feature.properties.playName.length > 0
+          ? feature.properties.playName : null;
+          console.log("type", typeof playNames)
+          const playNamesTitle = playNames && playNames.length === 1 ? "Play" : "Plays";
+
+          console.log("authorNames", feature.properties.authorNames)
+          console.log("playNames", feature.properties.playNames)
+
+          const authorNames = feature.properties.authorNames
+          && feature.properties.authorNames.length > 0
+          ? feature.properties.authorNames : null;
+          const authorNamesTitle = authorNames
+          && (authorNames.length > 1 || authorNames.some((name: string) => name.includes(",")))
+          ? "Authors" : "Author";
+
           const pubs = feature.properties.publishers;
           const pubTitle = pubs && pubs.length === 1 ? "Publisher" : "Publishers";
 
           let popUpContent = "";
           const popUpTitle = type === "locations" ? "Location" : "Setting";
 
+          //todo: redo this when several elements
           if (type === "locations") {
             popUpContent = [
               `<b class="map-popup-title">${popUpTitle}</b>`,
-              feature.properties.playName
-              ? `<b>Play</b>: ${feature.properties.playName}` : null,
-              feature.properties.authorNames
-              ? `<b>Author</b>: ${feature.properties.authorNames}` : null,
               feature.properties.name
               ? `<b>Place</b>: ${feature.properties.name}` : null,
               pubs && pubs.length > 0
-              ? `<b>${pubTitle}</b>: ${createList(pubs)}` : null
+              ? `<b>${pubTitle}</b>: ${createList(maxListItems, null, playNames, authorNames, pubs)}` : null
             ].filter(Boolean).join("<br>");
           } else if (type === "settings") {
             popUpContent = [
               `<b class="map-popup-title">${popUpTitle}</b>`,
-              feature.properties.playName
-              ? `<b>Play</b>: ${feature.properties.playName}` : null,
-              feature.properties.authorNames
-              ? `<b>Author</b>: ${feature.properties.authorNames}` : null,
               feature.properties.name ?
               `<b>Place</b>: ${feature.properties.name}` : null,
               feature.properties.settingText ?
@@ -313,7 +348,7 @@ function enableMapFilterBtns(map) {
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
 
-      mapFilters[lang][type] = false;
+      mapFilters[lang].typeEnabled[type] = false;
 
       // check if some buttons are active
       const isFiltered = $(".map-filter-btn").toArray().some((btn) => {
@@ -343,11 +378,39 @@ function enableMapFilterBtns(map) {
       }
 
       $(this).addClass("active");
-      mapFilters[lang][type] = true;
+      mapFilters[lang].typeEnabled[type] = true;
 
       filterMarkers(map, lang, type);
     }
+
+    if (isOnlyOneTypeActive()) {
+      markerCluster.disableClustering();
+    } else {
+      markerCluster.enableClustering();
+    }
   });
+}
+
+function isOnlyOneTypeActive() {
+  let activeTypes = new Set();
+
+  for (const lang in mapFilters) {
+    for (const type in mapFilters[lang].typeEnabled) {
+      if (mapFilters[lang].typeEnabled[type]
+      // don't add if there are no items of that type
+      // because we don't need to significantly change the map
+      // if nothing new is added to it
+      // right now, applies to ger/als settings
+      // as OSMLatLon is null for all of them in the data
+      && mapFilters[lang].typeCount[type] > 0) {
+        activeTypes.add(type);
+      }
+    }
+  }
+
+  console.log("only activeTypes", activeTypes)
+
+  return activeTypes.size === 1;
 }
 
 function filterMarkers(map, lang, type) {
@@ -355,8 +418,10 @@ function filterMarkers(map, lang, type) {
 
   const filteredData = data.filter((item) => {
     // filter by lang to avoid duplicates
-    return mapFilters[item.lang][type] && item.lang === lang;
+    return mapFilters[item.lang].typeEnabled[type] && item.lang === lang;
   });
+
+  console.log("options", markerCluster.options)
 
   const geoJSONData = convertToGeoJSON(filteredData, type);
   addGeoJSONData(map, geoJSONData, type);
@@ -368,12 +433,16 @@ function resetMapFilters(map) {
 
   // change every value in mapFilters object to false
   for (const lang in mapFilters) {
-    for (const type in mapFilters[lang]) {
-      mapFilters[lang][type] = false;
+    for (const type in mapFilters[lang].typeEnabled) {
+      mapFilters[lang].typeEnabled[type] = false;
     }
   }
 
+  console.log("markerCluster", markerCluster.options)
+
   markerCluster.clearLayers();
+  markerCluster.enableClustering();
+
   addGeoJSONData(map, convertToGeoJSON(extendedLocData, "locations"), "locations");
   addGeoJSONData(map, convertToGeoJSON(extendedSettingData, "settings"), "settings");
 }
