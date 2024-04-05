@@ -1869,6 +1869,21 @@ async function setMagnifierView(zoomOn: string, el: JQuery<HTMLElement>): Promis
   $(".resize, .brush, .pane").addClass("tl-disabled");
 }
 
+async function showMap() {
+  $("#map-overlay").css("display", "flex");
+
+  // map needs to be displayed for it to be set
+  if (!isMapSet) {
+    try {
+      const publisherMapData = await getPublisherMapData();
+      setMap(locData, settingData, publisherMapData, playData);
+      isMapSet = true;
+    } catch (error) {
+      console.error("Error setting map:", error);
+    }
+  }
+}
+
 async function fetchData(): Promise<void> {
   //console.time("fetchData");
   try {
@@ -1966,6 +1981,16 @@ async function drawUI() {
   // disable "Reset" button by default
   $("#filter-reset-btn")
   .addClass("disabled");
+
+  // handle url params
+  if (url.searchParams) {
+    if (url.searchParams.has("map")) {
+      showMap();
+    }
+    else if (url.searchParams.has("info")) {
+      $("#info-overlay").css("display", "flex");
+    }
+  }
 }
 
 $(function () {
@@ -1988,19 +2013,6 @@ $(function () {
     showAllCharData();
     allCharsShown = true;
   });
-
-  function showMap() {
-    $("#map-overlay").css("display", "flex");
-
-    // map needs to be displayed for it to be set
-    if (!isMapSet) {
-      getPublisherMapData().then((publisherMapData) => {
-        setMap(locData, settingData, publisherMapData, playData);
-        console.log("pub", publisherMapData)
-        isMapSet = true;
-      });
-    }
-  }
 
   $("#char-list-pagination, #play-list-pagination").on("change", function(e) {
     const target = e.target as HTMLInputElement;
@@ -2043,15 +2055,6 @@ $(function () {
   $("#info-open-btn").on("click", function() {
     $("#info-overlay").css("display", "flex");
   });
-
-  if (url.searchParams) {
-    if (url.searchParams.has("map")) {
-      showMap();
-    }
-    else if (url.searchParams.has("info")) {
-      $("#info-overlay").css("display", "flex");
-    }
-  }
 
   $("#map-filter-window-close-btn").on("click", function() {
     $("#map-overlay").css("display", "none");
