@@ -21,9 +21,12 @@ let chartGroups = {
     },
     "playGenre": {
         "text": "play genre", // text to display in dropdown
-        "comedy": "#28536b",
         "vaudeville": "#e072a4",
+        "comedy": "#28536b",
+        "posse": "#8B9EB7",
+        "schwank": "#f7b633",
         "drama": "#bbb193",
+        "other": "#632A50",
     }
 }
 
@@ -41,6 +44,12 @@ function getMaxestNumberOfY(data, key) {
         });
     });
 }
+
+function getMaxTextWidth(labels) {
+    return d3.max(d3.merge(labels), function(d) {
+      return d.getComputedTextLength();
+    });
+  }
 
 function setChartSelect(data) {
     d3.select("#chart-select-btn")
@@ -114,23 +123,21 @@ export function drawChart(data, chartType) {
     }
 
     // add legend dot
-    svg.selectAll("dots")
+    const legendDots = svg.selectAll("dots")
     // don't include the text key (used for dropdown)
     .data(Object.keys(chartGroups[chartType]).filter(function(d) { return d !== "text"; }))
     .enter()
     .append("circle")
-    .attr("cx", width - 60)
     .attr("cy", function(d,i){ return i*25}) // 25 is the distance between dots
     .attr("r", 7)
     .style("fill", function(d){ return chartGroups[chartType][d]})
 
     // add legend labels
-    svg.selectAll("labels")
+    const labels = svg.selectAll("labels")
     // don't include the text key (used for dropdown)
     .data(Object.keys(chartGroups[chartType]).filter(function(d) { return d !== "text"; }))
     .enter()
     .append("text")
-      .attr("x", width - 40)
       .attr("y", function(d,i){ return 7 + i*25}) // 25 is the distance between dots
       .style("fill", function(d){ return chartGroups[chartType][d]})
       .style("font-weight", "bold")
@@ -138,6 +145,10 @@ export function drawChart(data, chartType) {
       .text(function(d){ return d})
       .attr("text-anchor", "left")
       .style("alignment-baseline", "middle")
+
+    // position legend according to the width of the longest label
+    labels.attr("x", width - getMaxTextWidth(labels));
+    legendDots.attr("cx", width - getMaxTextWidth(labels) - 20);
 
     // add focus rect
     const focus = svg.append("g")
