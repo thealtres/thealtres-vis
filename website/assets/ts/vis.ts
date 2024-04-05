@@ -1733,7 +1733,20 @@ function getChartData(data: Play[] | Character[] = filteredPlayData, chartType: 
         }, {} as { [key: string]: number });
       }
 
-      genreData[printed][genre]++;
+      // associate genre to genreKey
+      // so that array values in filterMappings.genre
+      // get associated with the correct genre key
+      genreKeys.forEach((genreKey: string) => {
+        if (filterMappings.genre[genreKey] instanceof Array) {
+          if (filterMappings.genre[genreKey].some((g: string) => g === genre)) {
+            genreData[printed][genreKey]++;
+          }
+        } else {
+          if (filterMappings.genre[genreKey] === genre) {
+            genreData[printed][genreKey]++;
+          }
+        }
+      });
     });
 
     chartData = allYears.map(year => {
