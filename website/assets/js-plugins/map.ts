@@ -90,7 +90,6 @@ export function setMap(locData: Location[], settingData: Setting[], publisherDat
     // keeping original locData to match with settingData
     // to assign place name to settings
     ogLocData = filteredLocData as Location[];
-    pData = playData;
 
     // extend data with publisher info
     [extendedLocData, extendedSettingData] = extendData(publisherData,
@@ -197,8 +196,7 @@ function convertToGeoJSON(mapData, dataType) {
   };
 };
 
-function createList(maxItems = maxListItems, collapseButton = null, ...data) {
-  console.log("datadd", data)
+function createList(data, maxItems = maxListItems, collapseButton = null) {
   if (data.length === 1) {
     return data[0];
   }
@@ -310,7 +308,11 @@ function addGeoJSONData(map, data, type) {
               feature.properties.name
               ? `<b>Place</b>: ${feature.properties.name}` : null,
               pubs && pubs.length > 0
-              ? `<b>${pubTitle}</b>: ${createList(maxListItems, null, playNames, authorNames, pubs)}` : null
+              ? `<b>${pubTitle}</b>: ${createList(pubs)}` : null,
+              playNames && playNames.length > 0
+              ? `<b>${playNamesTitle}</b>: ${createList(playNames)}` : null,
+              authorNames && authorNames.length > 0
+              ? `<b>${authorNamesTitle}</b>: ${createList(authorNames)}` : null,
             ].filter(Boolean).join("<br>");
           } else if (type === "settings") {
             popUpContent = [
@@ -321,6 +323,12 @@ function addGeoJSONData(map, data, type) {
               `<b>Setting Text</b>: ${feature.properties.settingText}` : null,
               feature.properties.time ?
               `<b>Time</b>: ${feature.properties.time}` : null,
+              pubs && pubs.length > 0
+              ? `<b>${pubTitle}</b>: ${createList(pubs)}` : null,
+              playNames && playNames.length > 0
+              ? `<b>${playNamesTitle}</b>: ${createList(playNames)}` : null,
+              authorNames && authorNames.length > 0
+              ? `<b>${authorNamesTitle}</b>: ${createList(authorNames)}` : null,
             ].filter(Boolean).join("<br>");
           }
 
