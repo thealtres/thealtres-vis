@@ -14,16 +14,19 @@
     --lang-color-fre: rgba(21, 96, 189, 0.5);
     --lang-color-fre-active: rgba(0, 170, 255, 0.7);
     --lang-color-fre-play-card: rgb(0, 170, 255);
+    --lang-color-fre-map-filter-btn: rgb(0, 135, 204);
 
     --lang-color-ger: rgba(246, 215, 18, 1);
     --lang-color-ger-active: rgba(255, 255, 0, 0.9);
     --lang-color-ger-active-sec: #ffc308;
     --lang-color-ger-play-card: rgb(235, 235, 0);
+    --lang-color-ger-map-filter-btn: rgba(255, 255, 9, 0.83);
 
     --lang-color-als: rgba(250, 15, 54, 0.7);
     --lang-color-als-active: rgba(255, 25, 25, 0.87);
     --lang-color-als-active-sec: #ff1919;
     --lang-color-als-play-card: rgb(200, 50, 50);
+    --lang-color-als-map-filter-btn: rgba(255, 25, 25, 0.7);
 }
 
 html {
@@ -803,7 +806,56 @@ div[class^="filter"][class$="values"] > button {
     height: 100%;
 }
 
-#map-filter-window div {
+.map-filter-title, .map-filter-label {
+    color: white;
+}
+
+#map-filter-window-lang-values {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#map-filter-window-lang-values div > span {
+    gap: 1.8rem;
+}
+
+.map-filter-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.map-filter-btn span {
+    font-size: 1.8em;
+    vertical-align: middle;
+}
+
+.map-filter-btn[data-lang="fre"].active {
+    background: var(--lang-color-fre-map-filter-btn);
+}
+
+.map-filter-btn[data-lang="fre"].active span {
+    color: white;
+}
+
+.map-filter-btn[data-lang="ger"].active {
+    background: var(--lang-color-ger-map-filter-btn);
+}
+
+.map-filter-btn[data-lang="ger"].active span {
+    color: white;
+}
+
+.map-filter-btn[data-lang="als"].active {
+    background: var(--lang-color-als-map-filter-btn);
+}
+
+.map-filter-btn[data-lang="als"].active span {
     color: white;
 }
 

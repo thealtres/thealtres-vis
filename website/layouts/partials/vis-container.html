@@ -11,9 +11,9 @@
 <div id="map-overlay">
     <div id="map"></div>
     <div id="map-filter-window">
-        <i id="map-filter-window-close-btn" class="fa-solid fa-times pointer" rel="tooltip" title="Close"></i>
+        <i id="map-filter-window-close-btn" class="fa-solid fa-times pointer" rel="tooltip" title="Close Map"></i>
         <div id="map-filter-window-header">
-            <h2>Filters</h2>
+            <h2 class="map-filter-title">Filters</h2>
         </div>
         <div id="map-filter-window-content">
             <div id="map-filter-window-lang">
@@ -21,18 +21,36 @@
                 <div id="map-filter-window-lang-values">
                     <div id="map-filter-window-lang-values-fre">
                         <span>fre</span>
-                        <button class="map-filter-btn" data-type="locations" data-lang="fre">Location</button>
-                        <button class="map-filter-btn" data-type="settings" data-lang="fre">Setting</button>
+                        <div class="map-filter-btn-container">
+                            <button class="map-filter-btn" data-type="locations" data-lang="fre">
+                                <span class="material-symbols-outlined">book</span>
+                            </button>
+                            <button class="map-filter-btn" data-type="settings" data-lang="fre">
+                                <span class="material-symbols-outlined">theater_comedy</span>
+                            </button>
+                        </div>
                     </div>
                     <div id="map-filter-window-lang-values-ger">
                         <span>ger</span>
-                        <button class="map-filter-btn" data-type="locations" data-lang="ger">Location</button>
-                        <button class="map-filter-btn" data-type="settings" data-lang="ger">Setting</button>
+                        <div class="map-filter-btn-container">
+                            <button class="map-filter-btn" data-type="locations" data-lang="ger">
+                                <span class="material-symbols-outlined">book</span>
+                            </button>
+                            <button class="map-filter-btn" data-type="settings" data-lang="ger">
+                                <span class="material-symbols-outlined">theater_comedy</span>
+                            </button>
+                        </div>
                     </div>
                     <div id="map-filter-window-lang-values-als">
                         <span>als</span>
-                        <button class="map-filter-btn" data-type="locations" data-lang="als">Location</button>
-                        <button class="map-filter-btn" data-type="settings" data-lang="als">Setting</button>
+                        <div class="map-filter-btn-container">
+                            <button class="map-filter-btn" data-type="locations" data-lang="als">
+                                <span class="material-symbols-outlined">book</span>
+                            </button>
+                            <button class="map-filter-btn" data-type="settings" data-lang="als">
+                                <span class="material-symbols-outlined">theater_comedy</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -49,7 +67,7 @@
             <p>Click on a play's <i class="fa-solid fa-magnifying-glass"></i> icon to view its characters. Click on a character's <i class="fa-solid fa-magnifying-glass"></i> icon to view what play they appear in.</p>
             <p>Use the <b>"Charts" panel</b> and associated dropdown to view various graphs based on the filtered data.</p>
             <p>Click on the <i class="fa-solid fa-map"></i> icon in the top right corner to view the map of the plays' settings and locations.</p>
-            <p>Click on the <i class="fa-solid fa-circle-info"></i> icon in the top right corner to view this information again.</p>
+            <p>Click anywhere outside this popup to close it. Click on the <i class="fa-solid fa-circle-info"></i> icon in the top right corner to view this information again.</p>
             <hr>
             <p>Web app created by Enzo Doyen as part of an internship under the supervision of Senior lecturer <a href="https://lilpa.unistra.fr/theme-1-lexiques-discours-et-transpositions/membres/enseignants-chercheurs/ruiz-fabo-pablo/" target="_blank">Pablo Ruiz Fabo</a>.</p>
             <p>For more information about the project, visit the <a href="https://thealtres.pages.unistra.fr/" target="_blank">Thealtres website</a>.</p>
