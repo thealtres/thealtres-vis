@@ -1819,6 +1819,14 @@ async function setMagnifierView(zoomOn: string, el: JQuery<HTMLElement>): Promis
     console.log("currentTemplate", currentTemplate)
     $(listId).html(currentTemplate);
 
+    if (isPlays) {
+      // if we're zooming on a play while characters have been zoomed on,
+      // we need to keep the magnifier icon active for the play in which the character appears
+      const playId = el.data("workid");
+      const playMagnifierBtn = $(`.play-list-show-char-unique-btn[data-workid='${playId}']`);
+      playMagnifierBtn.addClass("active");
+    }
+
     // reset timeline
     setGraphHighlight(filteredPlayData, false);
 
