@@ -1,4 +1,4 @@
-import { Location, Setting, Publisher, Play } from "../ts/IEntity";
+import { Location, Setting, Play } from "../ts/IEntity";
 
 let ogLocData: Location[] = [];
 let extendedLocData: Location[] = [];
@@ -66,7 +66,7 @@ const markerCluster = L.markerClusterGroup({
  * @param settingData - setting data
  * @param publisherData - publisher data
  */
-export function setMap(locData: Location[], settingData: Setting[], publisherData, playData: Play[]) {
+export function setMap(locData: Location[], settingData: Setting[], publisherData) {
     let map = L.map("map", {
       // https://github.com/mutsuyuki/Leaflet.SmoothWheelZoom
       scrollWheelZoom: false,
@@ -90,9 +90,6 @@ export function setMap(locData: Location[], settingData: Setting[], publisherDat
     // extend data with publisher info
     [extendedLocData, extendedSettingData] = extendData(publisherData,
       filteredLocData, filteredSettingData);
-
-    console.log("extendedLocData", extendedLocData);
-    console.log("extendedSettingData", extendedSettingData);
 
     let geoJSONLocData = convertToGeoJSON(extendedLocData, "locations");
     let geoJSONSettingData = convertToGeoJSON(extendedSettingData, "settings");
@@ -121,11 +118,8 @@ function filterData<T extends Location | Setting>(...mapData: T[][]): T[][] {
 }
 
 function extendData(publisherData, ...mapData) {
-  console.log("publisherData", publisherData)
-  console.log("publisherData/mapData", mapData)
   let extendedData = mapData.map((data) => {
     return data.map((item) => {
-      console.log("item", item)
       let publishers = Object.values(publisherData).filter((pub) =>
         pub.lang === item.lang && (
           (Array.isArray(item.placeId) ? item.placeId.includes(pub.placeId) : pub.placeId === item.placeId)
@@ -152,18 +146,21 @@ function extendData(publisherData, ...mapData) {
     });
   });
 
-  console.log("extendedData", extendedData)
-
   return extendedData;
 }
 
-function convertToGeoJSON(mapData, dataType) {
+/**
+ * Converts an array of Location or Setting objects to GeoJSON format.
+ * @param mapData - The array of Location or Setting objects.
+ * @param dataType - The type of data being converted. Must be either "locations" or "settings".
+ * @returns The converted GeoJSON object.
+ * @throws Error if an invalid dataType is provided.
+ */
+function convertToGeoJSON(mapData: Location[] | Setting[], dataType: string) : any {
   if (!["locations", "settings"].includes(dataType)) {
     throw new Error(`Invalid dataType: ${dataType}.
     Must be either "locations" or "settings".`);
   }
-
-  console.log("mapData", mapData, typeof mapData)
 
   const features = mapData.map((item) => {
     let name = item.name;
@@ -201,7 +198,15 @@ function convertToGeoJSON(mapData, dataType) {
   };
 };
 
-function createList(data, maxItems = maxListItems) {
+/**
+ * Creates a list element from an array of data.
+ * If the data array has only one item, it returns that item.
+ * If the number of items in the data array exceeds the maximum number of items specified, it truncates the list and adds a "more" item.
+ * @param data - The array of data to create the list from.
+ * @param maxItems - The maximum number of items to display in the list. Defaults to `maxListItems`.
+ * @returns The HTML string representing the created list.
+ */
+function createList(data, maxItems = maxListItems) : string {
   if (data.length === 1) {
     return data[0];
   }
@@ -233,7 +238,13 @@ function createList(data, maxItems = maxListItems) {
   return ol.outerHTML;
 }
 
-function handlePopUpMoreBtn(layer, content) {
+/**
+ * Handles the click event of the "More" button shown when the number of items
+ * in a popup exceeds the maximum number of items specified.
+ * @param layer - The layer containing the popup.
+ * @param content - An array of strings representing the content to be added to the popup.
+ */
+function handlePopUpMoreBtn(layer, content: string[]) : void {
   const popUp = layer.getPopup();
   const moreButton = popUp._contentNode.querySelector(".more");
 
@@ -252,8 +263,13 @@ function handlePopUpMoreBtn(layer, content) {
   }
 }
 
-function addGeoJSONData(map, data, type) {
-  console.log("d", data)
+/**
+ * Adds GeoJSON data to the map.
+ * @param map - The Leaflet map object.
+ * @param data - The GeoJSON data to be added.
+ * @param type - The type of data being added (e.g., "locations" or "settings").
+ */
+function addGeoJSONData(map, data, type: string) : void {
   L.geoJSON(data, {
       pointToLayer: function(feature, latlng) {
           const markerIcon = L.IconMaterial.icon({
@@ -320,7 +336,11 @@ function addGeoJSONData(map, data, type) {
   map.addLayer(markerCluster);
 }
 
-function enableMapFilterBtns(map) {
+/**
+ * Enables the map filter buttons and handles the filtering logic based on the selected buttons.
+ * @param map - The map object.
+ */
+function enableMapFilterBtns(map) : void {
   $(".map-filter-btn").on("click", function() {
     const type = $(this).attr("data-type");
     const lang = $(this).attr("data-lang");
@@ -371,7 +391,11 @@ function enableMapFilterBtns(map) {
   });
 }
 
-function isOnlyOneTypeActive() {
+/**
+ * Checks if there is only one type of map filter active.
+ * @returns True if there is only one active type, false otherwise.
+ */
+function isOnlyOneTypeActive() : boolean {
   let activeTypes = new Set();
 
   for (const lang in mapFilters) {
@@ -388,12 +412,16 @@ function isOnlyOneTypeActive() {
     }
   }
 
-  console.log("only activeTypes", activeTypes)
-
   return activeTypes.size === 1;
 }
 
-function filterMarkers(map, lang, type) {
+/**
+ * Filters the markers on the map based on the specified language and type.
+ * @param map - The map object.
+ * @param lang - The language to filter by.
+ * @param type - The type of markers to filter.
+ */
+function filterMarkers(map, lang: string, type: string) : void {
   const data = type === "locations" ? extendedLocData : extendedSettingData;
 
   const filteredData = data.filter((item) => {
@@ -401,14 +429,15 @@ function filterMarkers(map, lang, type) {
     return mapFilters[item.lang].typeEnabled[type] && item.lang === lang;
   });
 
-  console.log("options", markerCluster.options)
-
   const geoJSONData = convertToGeoJSON(filteredData, type);
   addGeoJSONData(map, geoJSONData, type);
 };
 
-function resetMapFilters(map) {
-  console.log("resetting map filters");
+/**
+ * Resets the filters of the map and displays all markers again.
+ * @param map - The map object.
+ */
+function resetMapFilters(map: any) : void {
   $(".map-filter-btn").removeClass("active");
 
   // change every value in mapFilters object to false
@@ -417,8 +446,6 @@ function resetMapFilters(map) {
       mapFilters[lang].typeEnabled[type] = false;
     }
   }
-
-  console.log("markerCluster", markerCluster.options)
 
   markerCluster.clearLayers();
   markerCluster.enableClustering();

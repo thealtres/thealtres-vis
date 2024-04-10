@@ -4,14 +4,16 @@ import { setTimeline, updateTimelineLangPlot,
 import { drawChart, setChart, updateChart } from "../js-plugins/d3-charts";
 import { setMap } from "../js-plugins/map";
 
-const url = new URL(window.location.href);
-
 // These are values to be filtered out in fillFilterValues()
 // we may convert them to null in the future
 const invalidValues = {
   "professionalGroup": ["n/a", "ignorer", "vague", "pas couvert", "unknown"],
   "socialClass": ["LMC|UC", "MC"]
 };
+
+// FA icons used in table headers for sorting
+const caretDownEl = `<i class="fa-solid fa-caret-down caret-force-visible"></i>`;
+const caretUpEl = `<i class="fa-solid fa-caret-up caret-force-visible"></i>`;
 
 const filterEls = {
   "char": {
@@ -71,32 +73,27 @@ let originalCharTemplate: string, originalPlayTemplate: string;
 let currentCharTemplate: string, currentPlayTemplate: string;
 
 let totalShownCharItems = 0, totalShownPlayItems = 0;
-
-let preventScrollEvent = false;
+let allCharsShown = false;
 
 let timelineData = [];
 
-let currentGraphType: string;
-
-/* Pagination */
+// vars used for pagination
 let playCurrentPage = 1;
 let charCurrentPage = 1;
 const itemsPerPage = 50;
 let loadedCharData: Character[] = [];
 let loadedPlayData: Play[] = [];
 
-// FA icons used in table headers for sorting
-const caretDownEl = `<i class="fa-solid fa-caret-down caret-force-visible"></i>`;
-const caretUpEl = `<i class="fa-solid fa-caret-up caret-force-visible"></i>`;
+let preventScrollEvent = false;
 
-let allCharsShown = false;
+let currentGraphType: string;
 
 let isMapSet = false;
 
 /**
- * Fetches JSON data from file path and returns it as a Promise
- * @param path - path to JSON file
- * @returns - Promise containing JSON data
+ * Fetches JSON data from file path and returns it as a Promise.
+ * @param path - The path to the JSON file.
+ * @returns A Promise containing JSON data.
  */
 function getJSON(path: string) : Promise<any> {
   return new Promise((resolve, reject) => {
@@ -115,11 +112,11 @@ function getJSON(path: string) : Promise<any> {
 };
 
 /**
- * Returns a year range from the data
- * @param data - array of plays
- * @returns - array of years
+ * Calculates the count of data by year, grouped by language.
+ * @param data - An array of Play objects.
+ * @returns An array of objects containing the year, value, and language.
  */
-function getDataCountByYear(data: Play[]) {
+function getDataCountByYear(data: Play[]) : { year: number, value: number, lang: string }[] {
   // we're using plays to get years of the data
   // because it has the "printed" property
   const [minPlayDataYear, maxPlayDataYear] = getMinMaxPlayDataYear(data);
@@ -149,7 +146,13 @@ function getDataCountByYear(data: Play[]) {
   return dataCountByYear;
 };
 
-function getYearPair(data: Play[]) {
+/**
+ * Returns an array of objects containing the year pair and language for each play.
+ * Used to draw rectangles in the timeline graph.
+ * @param data - An array of Play objects.
+ * @returns An array of objects with year1, year2, and lang properties.
+ */
+function getYearPair(data: Play[]) : { year1: number, year2: number, lang: string } {
   return data.map((item: Play) => {
     return {
       year1: +item.printed,
@@ -157,13 +160,13 @@ function getYearPair(data: Play[]) {
       lang: item.lang
     };
   }).filter(y => y.year1 !== 0 && !isNaN(y.year1))
-  .reduce((acc, curr) => ({ ...acc, ...curr }), {});
+  .reduce((acc, curr) => ({ ...acc, ...curr }), { year1: 0, year2: 0, lang: "" });
 };
 
 /**
- * Calculates the minimum and maximum year of the printed plays in the given data
- * @param data - array of Play objects
- * @returns - array containing the minimum and maximum year
+ * Calculates the minimum and maximum year of the printed plays in the given data.
+ * @param data - An array of Play objects.
+ * @returns - An array containing the minimum and maximum year.
  */
 function getMinMaxPlayDataYear(data: Play[]) : number[] {
   const minYear = Math.min(...data.map((item: Play) => +item.printed)
@@ -174,7 +177,13 @@ function getMinMaxPlayDataYear(data: Play[]) : number[] {
   return [minYear, maxYear];
 };
 
-async function renderData(elName: string, loadedData: Character[] | Play[], currentPage: number) {
+/**
+ * Renders the data to the specified element based on the loaded data and current page.
+ * @param elName - The name of the element to render the data to.
+ * @param loadedData - The loaded data to be rendered.
+ * @param currentPage - The current page number.
+ */
+async function renderData<T extends Character | Play>(elName: string, loadedData: T[], currentPage: number) : Promise<void> {
   if ($("g.context").find("rect.highlight-rect").length > 0
       // only clear if we're on the first page
       // otherwise, caused the highlight to be cleared when scrolling
@@ -225,7 +234,10 @@ async function renderData(elName: string, loadedData: Character[] | Play[], curr
   $(selectId).append(option).val(option.value);
 };
 
-async function showAllCharData() {
+/**
+ * Shows all characters.
+ */
+async function showAllCharData() : Promise<void> {
   if (allCharsShown) {
     return;
   }
@@ -237,7 +249,15 @@ async function showAllCharData() {
   $("#filter-reset-btn").removeClass("disabled");
 };
 
-function handlePagination(e, currentPage: number, totalItems: number, filteredData: Character[] | Play[], loadedData) {
+/**
+ * Handles pagination for the given data.
+ * @param e - The event object.
+ * @param currentPage - The current page number.
+ * @param totalItems - The total number of items.
+ * @param filteredData - The filtered data array.
+ * @param loadedData - The array of loaded data.
+ */
+function handlePagination<T extends Character | Play>(e: HTMLElement, currentPage: number, totalItems: number, filteredData: T[], loadedData: T[]) : void {
   const elName = e.className.split(" ")[1];
   let currentScrollPosition = e.scrollTop;
   const listHeight = elName === "main-view-chars" ? $("#char-list").height() :
@@ -249,7 +269,7 @@ function handlePagination(e, currentPage: number, totalItems: number, filteredDa
       currentPage++;
       const newData = filteredData.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
       loadedData.push(...newData);
-      console.log(`Loading page ${currentPage} of ${elName} with ${newData.length} items`);
+      //console.log(`Loading page ${currentPage} of ${elName} with ${newData.length} items`);
       renderData(elName, loadedData, currentPage);
     }
   }
@@ -261,6 +281,11 @@ function handlePagination(e, currentPage: number, totalItems: number, filteredDa
   }
 };
 
+/**
+ * Scrolls to the specified page number of a given type.
+ * @param pageNumber - The page number to scroll to.
+ * @param type - The type of entity page to scroll within.
+ */
 function scrollToPageNumber(pageNumber: string, type: string): void {
   preventScrollEvent = true;
   const anchor = document.getElementById(`${type}-p-${pageNumber}`);
@@ -273,12 +298,17 @@ function scrollToPageNumber(pageNumber: string, type: string): void {
   preventScrollEvent = false;
 };
 
-function handleScroll(e, isScrollPrevented: boolean): void {
+/**
+ * Handles the scroll event.
+ * @param e - The HTML element that triggered the scroll event.
+ * @param isScrollPrevented - Indicates whether the scroll event is prevented.
+ */
+function handleScroll(e: HTMLElement, isScrollPrevented: boolean): void {
   if (isScrollPrevented) {
     return;
   }
   // unneeded?
-  preventScrollEvent = false;
+  //preventScrollEvent = false;
 
   const elName = e.className.split(" ")[1];
   if (elName === "main-view-chars") {
@@ -288,6 +318,10 @@ function handleScroll(e, isScrollPrevented: boolean): void {
   }
 };
 
+/**
+ * Calculates the height of the playlist based on the height of its rows.
+ * @returns The height of the playlist in pixels.
+ */
 function getPlayListHeight(): number {
   const playList = document.getElementById("play-list");
   // used to store the height of every row
@@ -324,7 +358,7 @@ function getPlayListHeight(): number {
  * Enable sort rows feature
  * Modified from https://stackoverflow.com/questions/3160277/jquery-table-sort
  */
-function enableSortRows() {
+function enableSortRows() : void {
   $(document).on("click", "th", function() {
     const table = $(this).parents("table").eq(0);
     const ths = table.find("th");
@@ -349,30 +383,29 @@ function enableSortRows() {
   });
 
   /**
-   * Compare rows
-   * @param index - Index of the column to sort by
-   * @returns - Comparator function to sort rows by index column
+   * Creates a comparer function for sorting HTML table rows based on a specific column.
+   * @param index - Index of the column to compare.
+   * @returns A comparer function that takes two HTML table cells and returns a number indicating their relative order.
    */
-  function comparer(index: number) {
+  function comparer(index: number) : (a: HTMLTableRowElement, b: HTMLTableRowElement) => number {
     /**
-     * Get cell value
-     * @param row - Row to get value from
-     * @param index - Index of the column to get value from
-     * @returns {string}
+     * Gets cell value.
+     * @param row - Row to get value from.
+     * @param index - Index of the column to get value from.
      */
-    function getCellValue(row: HTMLTableCellElement, index: number) {
+    function getCellValue(row: HTMLTableRowElement, index: number) : string {
       return $(row).children("td").eq(index).text();
     }
 
-    /**
-     * @param n - Number or string to check
-     * @returns - Whether n is a number or string; and is finite
+    /** Checks if a value is numeric and finite.
+     * @param n - Number or string to check.
+     * @returns - Whether n is a number or string; and is finite.
      */
     function isNumeric(n: number | string) {
       return !isNaN(parseFloat(n as string)) && isFinite(n as number);
     }
 
-    return function(a: HTMLTableCellElement, b: HTMLTableCellElement) {
+    return function(a: HTMLTableRowElement, b: HTMLTableRowElement) {
       const valA = getCellValue(a, index);
       const valB = getCellValue(b, index);
       return isNumeric(valA) && isNumeric(valB) ? parseInt(valA) - parseInt(valB)
@@ -382,12 +415,12 @@ function enableSortRows() {
 };
 
 /**
- * Create an object with the count of each year in the data
- * to be used to generate the D3.js timeline
- * @param data - array of plays
- * @returns - array of objects with year and count properties
+ * Creates an object with the count of each year in the data
+ * to be used to generate the D3.js timeline.
+ * @param data - Array of Play objects.
+ * @returns Array of objects with year and count properties.
  */
-function generateTimelineData(data: Play[]) {
+function generateTimelineData(data: Play[]) : { year: string, count: number }[] {
   const yearsCount = [];
 
   data.forEach((p: Play) => {
@@ -413,6 +446,11 @@ function generateTimelineData(data: Play[]) {
   return yearsCount;
 };
 
+/**
+ * Fills the filter values for authors, plays, and characters based on the provided filter mappings.
+ * @param filterMappings - Mappings used to map filter values to display values.
+ * @returns Promise that resolves when the filter values have been filled.
+ */
 async function fillFilterValues(filterMappings: FilterMappings): Promise<void> {
   // fill filter values for authors
   for (const key in filterEls.author) {
@@ -533,6 +571,12 @@ async function fillFilterValues(filterMappings: FilterMappings): Promise<void> {
   }
 };
 
+/**
+ * Enables the filter buttons functionality.
+ * When a filter button is clicked, toggles the active state
+ * and applies or removes the corresponding filter.
+ * Also updates the view based on the applied filters.
+ */
 function enableFilterBtns() {
   $(".filter-btn").on("click", function() {
     // check if magnifier view is enabled
@@ -551,7 +595,6 @@ function enableFilterBtns() {
       const isChars = el === ".char-list-show-play-unique-btn";
 
       const headerText = isChars ? ".play-header-text" : ".char-header-text";
-      console.log("headerText", headerText)
       $(headerText)
         .text(isChars ? "Plays" : "Characters")
         .next()
@@ -577,8 +620,6 @@ function enableFilterBtns() {
     const isActive = $(this).hasClass("active");
 
     if (isActive) {
-      console.log("debug174: playFilters-notactiveanymore", playFilters)
-      console.log("debug174: charFilters-notactiveanymore", charFilters)
       $(this).removeClass("active");
 
       if (key === "lang") { // shared property
@@ -591,37 +632,25 @@ function enableFilterBtns() {
       || key === "professionalGroup"
       || key === "socialClass") {
         charFilters[key] = charFilters[key].filter(item => item !== value);
-        const isPlayFiltered = playFilters.lang.length > 0 ||
-        playFilters.genre.length > 0 ||
-        playFilters.publisher.length > 0 ||
-        playFilters.author.length > 0 ||
-        playFilters.dates.length > 0 ||
-        playFilters.sex.length > 0;
+        const isPlayFiltered = Object.values(playFilters).some((filter) => filter.length > 0);
         if (isPlayFiltered) {
           // if we keep both, change updateView logic so that results do not appear twice
           updateView("characters");
           updateView("plays");
-          console.log("aaaa3")
         } else {
           updateView("characters");
-          console.log("aaaa4")
         }
       } else if (key === "genre") {
         playFilters[key] = playFilters[key].filter(item => item !== value);
         updateView("plays");
       } else if (key === "sex" && $(this).attr("data-type") == "author") {
         playFilters[key] = playFilters[key].filter(item => item !== value);
-        const isCharFiltered = charFilters.lang.length > 0 ||
-        charFilters.professionalGroup.length > 0 ||
-        charFilters.socialClass.length > 0 ||
-        charFilters.sex.length > 0;
+        const isCharFiltered = Object.values(charFilters).some((filter) => filter.length > 0);
         if (isCharFiltered) {
           updateView("characters");
           updateView("plays");
-          console.log("aaaa5")
         } else {
           updateView("plays");
-          console.log("aaaa6")
         }
       } else {
         console.error("Invalid filter button key found when removing filter:", key);
@@ -629,8 +658,6 @@ function enableFilterBtns() {
 
     } else {
       $(this).addClass("active");
-      console.log("debug174: playFilters-active", playFilters)
-      console.log("debug174: charFilters-active", charFilters)
 
       if (key === "lang") { // shared property
         charFilters[key].push(value);
@@ -641,27 +668,18 @@ function enableFilterBtns() {
       } else if ((key === "sex" && $(this).attr("data-type") == "char")
       || key === "professionalGroup"
       || key === "socialClass") {
-        console.log("aaaa0")
         charFilters[key].push(value);
-        const isPlayFiltered = playFilters.lang.length > 0 ||
-        playFilters.genre.length > 0 ||
-        playFilters.publisher.length > 0 ||
-        playFilters.author.length > 0 ||
-        playFilters.dates.length > 0 ||
-        playFilters.sex.length > 0;
+        const isPlayFiltered = Object.values(playFilters).some((filter) => filter.length > 0);
         if (isPlayFiltered) {
           updateView("characters");
-          console.log("aaaa1")
         } else {
           updateView("characters");
-          console.log("aaaa2")
         }
       } else if (key === "genre") {
         playFilters[key].push(value);
         updateView("plays");
       } else if (key === "sex" && $(this).attr("data-type") == "author") {
         playFilters[key].push(value);
-        console.log("aaaa7")
         updateView("plays");
       } else {
         console.error("Invalid filter button key found when adding filter:", key);
@@ -670,7 +688,12 @@ function enableFilterBtns() {
   });
 }
 
-function fillSelect(dataType: string, selectId: string) {
+/**
+ * Fills a TomSelect element with data based on the specified data types
+ * @param dataType - The type of data to fill the select element with.
+ * @param selectId - The ID of the TomSelect element to fill.
+ */
+function fillSelect(dataType: string, selectId: string) : void {
   let data: { value: string, text: string }[];
 
   switch (dataType) {
@@ -729,7 +752,14 @@ function fillSelect(dataType: string, selectId: string) {
   }
 };
 
-function updateSelectOption(selectId: string, optionValue: string, includeCount = false, newCount: number = 0) {
+/**
+ * Updates the specified select option with a new text and count
+ * @param selectId - The ID of the select element.
+ * @param optionValue - The value of the option to be updated.
+ * @param includeCount - Whether to include the count in the new option text.
+ * @param newCount - The new count to be included in the option text.
+ */
+function updateSelectOption(selectId: string, optionValue: string, includeCount = false, newCount: number = 0) : void {
   // @ts-ignore
   const select = document.getElementById(selectId).tomselect;
   const option = select.options[optionValue];
@@ -747,28 +777,10 @@ function updateSelectOption(selectId: string, optionValue: string, includeCount 
   });
 };
 
-// function updateCreatorSelectOptionObjs(selectEl) {
-//   let selectData = selectEl.id === "select-author" ?
-//   authorSelectData : pubSelectData;
-
-//   // https://stackoverflow.com/a/14810722/6479579
-//   const objectMap = (obj, fn) =>
-//   Object.fromEntries(
-//     Object.entries(obj).map(
-//       ([k, v], i) => [k, fn(v, k, i)]
-//     )
-//   );
-
-//   const updatedSelectObj = objectMap(selectData, (option, key) => {
-//     const newCount = selectData[key].text.split(" (")[1].split(")")[0];
-//     const newText = selectData[key].text.split(" (")[0] + " (" + newCount + ")";
-//     return { ...option, text: newText };
-//   });
-
-//   selectEl.options = updatedSelectObj;
-// }
-
-function updateCreatorSelects(filteredData: Play[]) {
+/**
+ * Updates the author and publisher select elements with new counts.
+ */
+function updateCreatorSelects() : void {
   authorData.forEach((author: Author) => {
     updateSelectOption("select-author", author.lang + author.authorId,
     //! getNumberOfPlaysByIdAndLang is broken; sometimes returns zero when filtering :(
@@ -784,7 +796,11 @@ function updateCreatorSelects(filteredData: Play[]) {
   });
 };
 
-function handleSearch(el: HTMLInputElement) {
+/**
+ * Handles the search functionality for plays and characters.
+ * @param el - An HTMLInputElement representing the search input element.
+ */
+function handleSearch(el: HTMLInputElement) : void {
   const entity = el.id.split("-")[0];
 
   if (entity === "char") {
@@ -798,7 +814,15 @@ function handleSearch(el: HTMLInputElement) {
   }
 }
 
-async function generateCharacterTemplate(data: Character[], showPlayBtn = true, minified = false, charsInPlay = false): Promise<string> {
+/**
+ * Generates a character template based on the provided data.
+ * @param data - An array of Character objects.
+ * @param showPlayBtn - Specifies whether to show the magnifier button to show the play in which the character appears.
+ * @param minified - Specifies whether the template should include table headers.
+ * @param unique - Specifies whether we're in magnifier mode.
+ * @returns Promise that resolves to a string representing the generated character template.
+ */
+async function generateCharacterTemplate(data: Character[], showPlayBtn = true, minified = false, unique = false): Promise<string> {
   if (data.length === 0) {
     return "<p>No characters found</p>";
   }
@@ -850,13 +874,9 @@ async function generateCharacterTemplate(data: Character[], showPlayBtn = true, 
         }
       }
 
-      //console.log("html!", html)
-
-      if (!charsInPlay) {
+      if (!unique) {
         currentCharTemplate = `<div id="char-p-1"><span class="page-circle">1</span></div>` + html;
       }
-
-      //console.log("currentCharTemplate", charsInPlay, currentCharTemplate)
 
       return html;
   } catch (error) {
@@ -865,6 +885,12 @@ async function generateCharacterTemplate(data: Character[], showPlayBtn = true, 
   }
 };
 
+/**
+ * Generates a play template based on the provided data.
+ * @param data - An array of Play objects.
+ * @param unique - Specifies whether we're in magnifier mode.
+ * @returns Promise that resolves to a string representing the generated play template.
+ */
 async function generatePlayTemplate(data: Play[], unique = false): Promise<string> {
   if (data.length === 0) {
     return "<p>No plays found</p>";
@@ -937,7 +963,6 @@ async function generatePlayTemplate(data: Play[], unique = false): Promise<strin
       // is not part of the html generated for the "[char] appears in" view
       const spanPageEl = `<div id="play-p-1"><span class="page-circle">1</span></div>`;
       currentPlayTemplate = spanPageEl + html;
-      //console.log("currentPlayTemplate", currentPlayTemplate)
     }
 
     return html;
@@ -947,8 +972,13 @@ async function generatePlayTemplate(data: Play[], unique = false): Promise<strin
   }
 }
 
+/**
+ * Retrieves play information based on the provided parameters.
+ * @param id - ID of the play (or an array of IDs if there are multiple authors for one play).
+ * @param lang - Language of the play.
+ * @param type - Type of information to retrieve (e.g., authorName, authorSex, playObject).
+ */
 async function getPlayInfo(id: number | number[], lang: string, type: string) : Promise<string|string[]|number|Play> {
-  //console.time("getPlayInfo")
   if (id === undefined) {
     return "Unknown";
   }
@@ -957,7 +987,6 @@ async function getPlayInfo(id: number | number[], lang: string, type: string) : 
     case "authorName":
       try {
         if (typeof id === "number") {
-          //console.timeEnd("getPlayInfo");
           const authorName = authorData.find((author: Author) =>
           author.authorId === id && author.lang === lang).fullName;
           return authorName;
@@ -969,7 +998,6 @@ async function getPlayInfo(id: number | number[], lang: string, type: string) : 
               author.authorId === authorId && author.lang === lang).fullName
           );
 
-          //console.timeEnd("getPlayInfo");
           return authorNames.join(", ");
         }
       } catch (error) {
@@ -1008,12 +1036,25 @@ async function getPlayInfo(id: number | number[], lang: string, type: string) : 
   };
 };
 
-function getCharacter(workId: number, lang: string, charId: number) : Character {
+/**
+ * Retrieves a character based on the specified work ID, language, and character ID.
+ * @param workId - ID of the play.
+ * @param lang - Language of the character.
+ * @param charId - ID of the character.
+ */
+function getCharacter(workId: number, lang: string, charId: number) : Character | undefined {
   return charData.find((char: Character) =>
     char.workId === workId && char.lang === lang && char.characterId === charId
   );
 }
 
+/**
+ * Returns the number of plays based on the provided parameters.
+ * @param data - An array of Play objects.
+ * @param id - ID of the author or publisher.
+ * @param lang - Language of the plays.
+ * @param type - Type of filter to apply (either "author" or "publisher").
+ */
 function getNumberOfPlaysByIdAndLang(data: Play[], id: number, lang: string, type: string) : number {
   switch (type) {
     case "author":
@@ -1031,27 +1072,25 @@ function getNumberOfPlaysByIdAndLang(data: Play[], id: number, lang: string, typ
   }
 }
 
+/**
+ * Retrieves the publisher map data.
+ * @returns Promise that resolves to the PublisherMapData object.
+ */
 async function getPublisherMapData(): Promise<PublisherMapData> {
   const publisherMapData = {} as PublisherMapData;
 
-  console.log("pub0", publisherData)
-
   for (const publisher of publisherData) {
     const publisherId = publisher.publisherId;
-    console.log("publisherId", publisherId)
     const lang = publisher.lang;
     const publisherName = publisher.normalizedName;
     const placeId = publisher.placeId;
-    console.log("publisherId", playData)
     const play = playData.find((play: Play) =>
       play.publisherId == publisherId && play.lang === lang);
 
-    let playName = "";
-    let authorNames = "";
-    console.log("play", play)
+    let [playName, authorNames, playDate] = "";
     if (play) {
       playName = play.titleMain;
-      console.log("playName", playName, publisherName, placeId, lang)
+      playDate = play.printed;
       const authorId = play.authorId;
       authorNames = await getPlayInfo(authorId, lang, "authorName").catch((err) => {
         console.error("Error getting author names:", err);
@@ -1064,15 +1103,19 @@ async function getPublisherMapData(): Promise<PublisherMapData> {
       lang,
       placeId,
       playName,
+      playDate,
       authorNames,
     };
   };
 
-  console.log("pub1", publisherMapData)
-
   return publisherMapData;
 }
 
+/**
+ * Filters an array of characters based on the provided filters.
+ * @param charData - The array of characters to be filtered.
+ * @returns The filtered array of characters.
+ */
 function filterCharacters(charData: Character[]) : Character[] {
   // see filter_map.json for possible values
   const langFilter = charFilters.lang;
@@ -1102,11 +1145,16 @@ function filterCharacters(charData: Character[]) : Character[] {
   });
 
   totalShownCharItems = filteredCharData.length;
-  console.log("debug174: Filtered characters, got ", filteredCharData.length, " characters")
 
   return filteredCharData;
 };
 
+/**
+ * Retrieves the sex of the author(s) based on the provided author ID(s) and language.
+ * @param authorId The ID(s) of the author(s).
+ * @param lang The language of the author(s).
+ * @returns The sex of the author(s).
+ */
 function getAuthorSex(authorId: number | number[], lang: string) : string | string[] {
   if (typeof authorId === "number") {
     return authorData.find((author: Author) =>
@@ -1118,6 +1166,11 @@ function getAuthorSex(authorId: number | number[], lang: string) : string | stri
   }
 };
 
+/**
+ * Filters an array of Play objects based on various filters.
+ * @param playData - The array of Play objects to be filtered.
+ * @returns An array of Play objects that match the specified filters.
+ */
 function filterPlays(playData: Play[]) : Play[] {
   const publisherFilter = playFilters.publisher;
   const authorFilter = playFilters.author;
@@ -1204,14 +1257,19 @@ function filterPlays(playData: Play[]) : Play[] {
   });
 
   totalShownPlayItems = filteredPlayData.length;
-  console.log("debug174: Filtered plays, got ", filteredPlayData.length, " plays")
 
   return filteredPlayData;
 }
 
-async function updateView(dataType: string, sharedProp = false) {
+/**
+ * Updates the view based on the specified data type and filters.
+ * @param entity - The type of entity to update the view with (either "characters" or "plays").
+ * @param sharedProp - Indicates whether properties are shared between the entities.
+ * @returns A Promise that resolves when the view is updated.
+ */
+async function updateView(entity: string, sharedProp = false) {
   let filteredData: Character[] | Play[];
-  console.log(`debug174: function updateView() called with args: ${dataType}, sharedProp=${sharedProp}`)
+  const isPlayFiltered = Object.values(playFilters).some((filter) => filter.length > 0);
 
   // as updateView is called every time a filter is disabled,
   // do a check to see if all filters are disabled
@@ -1226,24 +1284,18 @@ async function updateView(dataType: string, sharedProp = false) {
   // plays in play_data.json, and vice versa)
   if (Object.values(charFilters).every((filter) => filter.length === 0) &&
       Object.values(playFilters).every((filter) => filter.length === 0)) {
-    console.log("all filters disabled")
     resetFilters();
     return;
   }
 
-  switch (dataType) {
+  switch (entity) {
     case "characters":
       charCurrentPage = 1;
 
-      const isFiltered = ["dates", "publisher", "author", "genre", "sex"].some(filter => playFilters[filter].length > 0);
-      if (isFiltered) {
-        console.log("debug174: filteredCharsInPlays with isFiltered", filteredCharsInPlays)
+      if (isPlayFiltered) {
         filteredData = filterCharacters(filteredCharsInPlays);
-        console.log("debug174: filteredData after filteredCharsInPlays & isFiltered", filteredData)
       } else {
-        console.log("debug174: filteredCharsInPlays WITHOUT isFiltered", filteredCharsInPlays)
         filteredData = filterCharacters(charData);
-        console.log("debug174: filteredData after filteredCharsInPlays WITHOUT isFiltered", filteredData)
       }
 
       $("#char-list").html("");
@@ -1256,16 +1308,13 @@ async function updateView(dataType: string, sharedProp = false) {
 
       if (!sharedProp) {
         showRelations("playsByChar", false, null, false, true);
-        console.log("aaaa9")
       } else {
         updateView("plays", false);
-        console.log("aaaa10")
       }
 
       break;
     case "plays":
       if (sharedProp) {
-        console.log("returning, sharedProp", sharedProp, charFilters)
         return;
       }
 
@@ -1273,24 +1322,10 @@ async function updateView(dataType: string, sharedProp = false) {
       if (charFilters.professionalGroup.length > 0 ||
         charFilters.socialClass.length > 0 ||
         charFilters.sex.length > 0) {
-        console.log("aaaa11")
-        console.log("debug174: filteredPlaysWithChars with isFiltered", filteredPlaysWithChars)
-        console.log("aaaa13", filteredPlaysWithChars)
-        //! not a good way of doing it
-        // don't include lang because sharedProp
-        // if (playFilters.sex.length > 0 || playFilters.genre.length > 0 || playFilters.publisher.length > 0 || playFilters.author.length > 0 || playFilters.dates.length > 0){
-        //   console.log("aaaa15")
-        //   filteredData = filterPlays(playData);
-        // } else {
-          console.log("aaaa16")
           filteredData = filterPlays(filteredPlaysWithChars);
         // }
-        console.log("debug174: filteredData after filteredPlaysWithChars & isFiltered", filteredData)
       } else {
-        console.log("aaaa12")
-        console.log("debug174: filteredPlaysWithChars WITHOUT isFiltered", filteredPlaysWithChars)
         filteredData = filterPlays(playData);
-        console.log("debug174: filteredData after filteredPlaysWithChars WITHOUT isFiltered", filteredData)
       }
 
       $("#play-list").html("");
@@ -1311,16 +1346,18 @@ async function updateView(dataType: string, sharedProp = false) {
       // update highlight graph when using play-specific filter
       // (e.g. publisher, author, date)
       setGraphHighlight(filteredData, false);
-      updateChart(getChartData(filteredData, currentGraphType));
+      updateChart(getChartData(filteredData, currentGraphType, "playsByChar"));
       break;
   }
 
-  console.log("debug174: data length", filteredData.length, dataType)
   updateProgress();
   $("#filter-reset-btn").removeClass("disabled");
 };
 
-function resetFilters() {
+/**
+ * Resets the filters and restore UI to its default state.
+ */
+function resetFilters() : void {
   allCharsShown = false;
 
   // reset filter arrays
@@ -1378,7 +1415,9 @@ function resetFilters() {
   setGraphHighlight(playData); // reset timeline plot to default
 
   // reset chart to default in current selected view
-  const chartData = getChartData(playData, currentGraphType);
+  const chartData = currentGraphType === "charGender" ?
+  getChartData(charData, currentGraphType, "charsByPlay") :
+  getChartData(playData, currentGraphType);
 
   //updateChart(chartData);
   drawChart(chartData, currentGraphType);
@@ -1412,7 +1451,10 @@ function resetFilters() {
   pubSelect.options = updatedPubSelectOptObj;
 };
 
-function updateProgress() {
+/**
+ * Updates entity progress numbers and scrolls to the top of each entity view.
+ */
+function updateProgress() : void {
   preventScrollEvent = true;
   $(".main-view-chars, .main-view-plays-table").scrollTop(0);
   preventScrollEvent = false;
@@ -1421,10 +1463,16 @@ function updateProgress() {
   $(".play-progress").text(`${totalShownPlayItems}`);
 }
 
+/**
+ * Displays relations based on the specified view mode, uniqueness, entity, and other options.
+ * @param viewMode - The mode in which the relations are displayed.
+ * @param unique - A boolean indicating whether the relations should be unique or not.
+ * @param entity - The entity (Character or Play) for which the relations are displayed.
+ * @param appendNames - A boolean indicating whether to append names.
+ * @param useFilters - A boolean indicating whether to use filters when displaying relations.
+ * @returns A Promise that resolves when the relations are displayed.
+ */
 async function showRelations(viewMode: string, unique: boolean, entity: Character | Play = null, appendNames = false, useFilters = true) : Promise<void> {
-  console.log("debug174: showRelations() called with args:", viewMode, unique, entity, appendNames, useFilters)
-
-  //console.time("showRelations");
   if (viewMode === "playsByChar") {
     const playsWithChars: Play[] = [];
 
@@ -1480,10 +1528,8 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
       filteredPlayData = playsWithChars;
     }
 
-    if (charFilters.professionalGroup.length > 0 ||
-      charFilters.socialClass.length > 0 ||
-      charFilters.sex.length > 0) {
-      console.log("aaaa14; updating filteredPlaysWithChars")
+    if (Object.values(playFilters).some((filter) => filter.length > 0)
+    || Object.values(charFilters).some((filter) => filter.length > 0)) {
       filteredPlaysWithChars = playsWithChars;
     }
 
@@ -1519,7 +1565,7 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
       // don't update chart nor selects if we're using magnifier mode
       if (!unique) {
         updateChart(getChartData(playsWithChars, currentGraphType, viewMode));
-        updateCreatorSelects(playsWithChars);
+        updateCreatorSelects();
       }
     }
 
@@ -1575,8 +1621,7 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
     //
     // Otherwise, applying a play-specific filter would reset the character data.
     // There may be a better way to do this, improve later if enough time.
-    const isFiltered = ["dates", "publisher", "author", "genre", "sex"].some(filter => playFilters[filter].length > 0);
-    console.log("isFilteredcharByPlay", isFiltered)
+    const isFiltered = Object.values(playFilters).some((filter) => filter.length > 0);
     if (isFiltered) {
       filteredCharsInPlays = charsInPlays;
     }
@@ -1594,14 +1639,16 @@ async function showRelations(viewMode: string, unique: boolean, entity: Characte
   }
 };
 
+/**
+ * Sets the graph highlight based on the provided data.
+ * @param data - The array of Play objects.
+ * @param highlightUnique - Optional. Indicates whether to highlight a unique period. Default is false.
+ */
 function setGraphHighlight(data: Play[], highlightUnique = false) {
-  console.log(`calling setGraphHighlight with highlightUnique=${highlightUnique}`)
-  console.log("data", data)
   clearGraphHighlight();
 
   if (highlightUnique) {
     const yearPair = getYearPair(data);
-    console.log(yearPair)
     highlightGraphPeriod(yearPair["year1"], yearPair["year2"], yearPair["lang"]);
     return;
   }
@@ -1615,8 +1662,27 @@ function setGraphHighlight(data: Play[], highlightUnique = false) {
   raiseHandles();
 };
 
+/**
+ * Retrieves the chart data based on the provided parameters.
+ * @param data - Optional. The data to be used for generating the chart. Defaults to filteredPlayData.
+ * @param chartType - Optional. The type of chart to be generated. Defaults to "authorGender".
+ * @param viewMode - Optional. The view mode for the chart. Defaults to null.
+ * @returns The chart data.
+ */
 function getChartData(data: Play[] | Character[] = filteredPlayData, chartType: string = "authorGender", viewMode = null) {
   let minPlayDataYear, maxPlayDataYear: number;
+
+  // if getChartData() is called from showRelations() w/ viewMode "playsByChar"
+  // and we want to show a char-specific chart (e.g. charGender),
+  // data needs to be replaced with filteredCharData
+  // so that only data from the filtered characters is used in the chart
+  // otherwise, data is a Play[] because we're passing playsWithChars Play[]
+  // (which is used for play-specific charts, e.g. authorGender)
+  // changing the type of data accordingly
+  // will also enable us to get the correct min and max years for plays later on
+  if (viewMode === "playsByChar" && chartType === "charGender") {
+    data = filteredCharsInPlays.length === totalShownCharItems ? filteredCharsInPlays : filteredCharData;
+  }
 
   if (chartType === "charGender") {
     const getPlay = (char: Character): Play => {
@@ -1627,18 +1693,6 @@ function getChartData(data: Play[] | Character[] = filteredPlayData, chartType: 
     [minPlayDataYear, maxPlayDataYear] = getMinMaxPlayDataYear(plays);
   } else {
     [minPlayDataYear, maxPlayDataYear] = getMinMaxPlayDataYear(data as Play[]);
-  }
-
-  // if getChartData() is called from showRelations() w/ viewMode "playsByChar"
-  // and we want to show a char-specific chart (e.g. charGender),
-  // data needs to be replaced with filteredCharData
-  // so that only data from the filtered characters is used in the chart
-  // otherwise, data is a Play[] because we're passing playsWithChars Play[]
-  // (which is used for play-specific charts, e.g. authorGender)
-  // also, this check is done here and not before in the function
-  // because we still need to pass Play[] to getMinMaxPlayDataYear()
-  if (viewMode === "playsByChar" && chartType === "charGender") {
-    data = filteredCharData;
   }
 
   // array used to generate data with zero values for years with no data
@@ -1694,7 +1748,7 @@ function getChartData(data: Play[] | Character[] = filteredPlayData, chartType: 
         play.workId === char.workId && play.lang === char.lang);
 
       if (play) {
-        const { lang, printed } = play;
+        const { printed } = play;
 
         if (printed === null || Number.isNaN(Number(printed))) return;
 
@@ -1765,14 +1819,18 @@ function getChartData(data: Play[] | Character[] = filteredPlayData, chartType: 
   return chartData;
 };
 
-// this function is here (and not in d3-charts.js) because
-// we need to get the data from here
-// unfortunately exporting getChartData() to d3-charts.js
-// does not work as it calls the "on document ready" function
-// when importing getChartData,
-// causing data and other stuff to be loaded twice
-function switchChart(option: string) {
-  console.log(`calling switchChart with option=${option}`)
+
+/**
+ * Switches the chart based on the given option.
+ * @param option - The option to switch the chart.
+ * @remark This function is here (and not in d3-charts.js) because
+ * we need to get the data from here.
+ * Unfortunately, exporting getChartData() to d3-charts.js
+ * does not work as it calls the "on document ready" function
+ * when importing getChartData,
+ * causing data and other stuff to be loaded twice.
+ */
+function switchChart(option: string) : void {
   let data = null;
 
   switch (option) {
@@ -1780,7 +1838,7 @@ function switchChart(option: string) {
       data = getChartData();
       break;
     case "charGender":
-      data = getChartData(filteredCharData, "charGender");
+      data = getChartData(filteredCharData, "charGender", "playsByChar");
       break;
     case "playGenre":
       data = getChartData(filteredPlayData, "playGenre");
@@ -1791,9 +1849,9 @@ function switchChart(option: string) {
 };
 
 /**
- *
- * @param zoomOn - Entity type to zoom on ("characters" or "plays")
- * @param el - Clicked magnifier icon
+ * Sets magnifier view for the specified entity type.
+ * @param zoomOn - Entity type to zoom on ("characters" or "plays").
+ * @param el - Clicked magnifier icon.
  */
 async function setMagnifierView(zoomOn: string, el: JQuery<HTMLElement>): Promise<void> {
   const isActiveMagnifier = el.hasClass("active");
@@ -1804,6 +1862,9 @@ async function setMagnifierView(zoomOn: string, el: JQuery<HTMLElement>): Promis
     console.error("Unknown magnifier view:", zoomOn);
     return;
   }
+
+  $(".char-list-show-play-unique-btn.active").removeClass("active");
+  $(".play-list-show-char-unique-btn.active").removeClass("active");
 
   // logic executed when active magnifier icon is clicked
   if (isActiveMagnifier) {
@@ -1816,10 +1877,10 @@ async function setMagnifierView(zoomOn: string, el: JQuery<HTMLElement>): Promis
     // reset view
     const listId = isChars ? "#char-list" : "#play-list";
     const currentTemplate = isChars ? currentCharTemplate : currentPlayTemplate;
-    console.log("currentTemplate", currentTemplate)
     $(listId).html(currentTemplate);
 
-    if (isPlays) {
+    // find a better way for the second condition...
+    if (isPlays && $(".char-header-text").text().includes("in")) {
       // if we're zooming on a play while characters have been zoomed on,
       // we need to keep the magnifier icon active for the play in which the character appears
       const playId = el.data("workid");
@@ -1877,7 +1938,10 @@ async function setMagnifierView(zoomOn: string, el: JQuery<HTMLElement>): Promis
   $(".resize, .brush, .pane").addClass("tl-disabled");
 }
 
-async function showMap() {
+/**
+ * Displays the map overlay and sets up the map if it hasn't been set yet.
+ */
+async function showMap() : Promise<void> {
   $("#map-overlay").css("display", "flex");
 
   // map needs to be displayed for it to be set
@@ -1939,8 +2003,10 @@ async function downloadData() : Promise<void> {
   }
 }
 
+/**
+ * Fetches data from multiple JSON files asynchronously.
+ */
 async function fetchData(): Promise<void> {
-  //console.time("fetchData");
   try {
     const JSONFiles = ["/json/char_data.json", "/json/play_data.json",
                       "/json/author_data.json", "/json/publisher_data.json",
@@ -1957,7 +2023,6 @@ async function fetchData(): Promise<void> {
 
     filteredCharData = charData;
     filteredPlayData = playData;
-
   } catch (error) {
     console.error("Error fetching data:", error);
   } finally {
@@ -1965,22 +2030,15 @@ async function fetchData(): Promise<void> {
 
     $("#loader").hide();
   }
-  //console.timeEnd("fetchData");
 };
 
-async function drawUI() {
-  // unneeded now because renderData()
-  // const charTemplate = await getTemplate(charData, "characters");
-  // const playTemplate = await getTemplate(playData, "plays");
-
-  // currentCharTemplate = charTemplate;
-  // currentPlayTemplate = playTemplate;
-
+/**
+ * Draws the UI and initializes the necessary components and data.
+ */
+async function drawUI() : Promise<void> {
   timelineData = generateTimelineData(playData)
   setTimeline(timelineData);
 
-  //let [graphDateRangeStart, graphDateRangeEnd] = $("#displayDates").text().split(" - ");
-  //console.log("graphDateRangeStart", graphDateRangeStart, "graphDateRangeEnd", graphDateRangeEnd)
   let debounceTimer: ReturnType<typeof setTimeout>;
   let observer = new MutationObserver(function(mutations) {
     clearTimeout(debounceTimer);

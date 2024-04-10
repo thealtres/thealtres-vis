@@ -368,6 +368,12 @@ div[class^="filter"][class$="values"] > button {
     margin: 0;
 }
 
+.chart-header-desc {
+    font-size: 0.7em;
+    font-weight: normal;
+    font-style: italic;
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -446,7 +452,8 @@ div[class^="filter"][class$="values"] > button {
 
 .main-view-plays-table {
     background: white;
-    height: 100%;
+    // fixes last item not appearing when scrolling if alone
+    height: calc(100% - 6em);
     overflow: scroll;
 }
 
@@ -554,7 +561,6 @@ div[class^="filter"][class$="values"] > button {
     justify-content: center;
     width: 100%;
     background: var(--main-bg-color);
-    cursor: none;
 }
 
 #chart .y-axis, #chart .x-axis {
