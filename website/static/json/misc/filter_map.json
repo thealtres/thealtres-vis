@@ -68,7 +68,7 @@
       "posse": "posse",
       "schwank": "schwank",
       "drama": ["drama", "drame historique", "tragedy"],
-      "other": ["drama", "drame historique", "mystery", "biblical", "historisch", "gerichtsscene", "mêlée", "dialog", "horreur", "tale"]
+      "other": ["mystery", "biblical", "historisch", "gerichtsscene", "mêlée", "dialog", "horreur", "tale"]
     }
   }
   
