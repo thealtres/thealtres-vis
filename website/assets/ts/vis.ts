@@ -1885,6 +1885,14 @@ async function showMap() {
 }
 
 /**
+ * Removes the hash from the current URL and updates the browser's current URL.
+ */
+function removeHashFromURL() {
+  history.pushState("", document.title,
+  window.location.pathname + window.location.search);
+}
+
+/**
  * Generates metadata in JSON format to be used by downloadData().
  */
 function generateMetadata() : string {
@@ -2021,12 +2029,13 @@ async function drawUI() {
   $("#filter-reset-btn")
   .addClass("disabled");
 
-  // handle url params
-  if (url.searchParams) {
-    if (url.searchParams.has("map")) {
+  // handle url hashes
+  if (window.location.hash) {
+    const hash = window.location.hash.substring(1);
+    if (hash === "map") {
       showMap();
     }
-    else if (url.searchParams.has("info")) {
+    else if (hash === "info") {
       $("#info-overlay").css("display", "flex");
     }
   }
@@ -2089,19 +2098,23 @@ $(function () {
 
   $("#map-open-btn").on("click", function() {
     showMap();
+    window.location.hash = "map";
   });
 
   $("#info-open-btn").on("click", function() {
     $("#info-overlay").css("display", "flex");
+    window.location.hash = "info";
   });
 
   $("#map-filter-window-close-btn").on("click", function() {
     $("#map-overlay").css("display", "none");
+    removeHashFromURL();
   });
 
   document.addEventListener("click", function(e) {
     if ((e.target as HTMLElement).id === "info-overlay") {
       $("#info-overlay").css("display", "none");
+      removeHashFromURL();
     }
   });
 
