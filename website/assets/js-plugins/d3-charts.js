@@ -115,10 +115,12 @@ export function drawChart(data, chartType) {
 
     yAxis = svg.append("g")
     .attr("class", "y-axis")
-    .call(d3.svg.axis().scale(y).orient("left").ticks(5));
+    .call(d3.svg.axis().scale(y).orient("left").ticks(5).tickFormat(d3.format("d")));
 
     // create line for each group
     for (const group of getYValues(chartType)) {
+        console.log(`Creating line for group: ${group})`);
+        console.log("creating", data)
         createLine(svg, data, group, chartGroups[chartType][group]);
     }
 
@@ -193,6 +195,11 @@ export function drawChart(data, chartType) {
 }
 
 function createLine(svg, data, group, color) {
+    // don't draw line if all values for that group are 0
+    if (data.every(d => d[group] === 0)) {
+        return;
+    }
+
     return svg.append("g")
     .append("path")
         .datum(data)
@@ -303,6 +310,14 @@ export function updateChart(data) {
     // get chart lines
     d3.select("#chart").selectAll("path").each(function(d, i) {
         const lineValue = d3.select(this).attr("data-value");
+
+        // don't draw line if all values for that group are 0
+        if (data.every(d => d[lineValue] === 0)) {
+            // hide line using css instead of removing it
+            // so that it can be shown again if the data changes
+            d3.select(this).attr("display", "none");
+            return;
+        }
 
         d3.select(this)
         .datum(data)
