@@ -1,6 +1,5 @@
 import { Location, Setting, Publisher, Play } from "../ts/IEntity";
 
-let pData: Play[] = [];
 let ogLocData: Location[] = [];
 let extendedLocData: Location[] = [];
 let extendedSettingData: Setting[] = [];
@@ -51,17 +50,14 @@ const markerProps = {
     "als": "rgba(255, 25, 25, 0.7)", // red
   },
   iconColor: "white",
-  iconSize: [62, 83], // [width, height]
+  iconSize: [35, 45], // [width, height]
   popupAnchor: [0, -50] // [x, y]
 }
 
 const markerCluster = L.markerClusterGroup({
   showCoverageOnHover: false,
   spiderfyOnMaxZoom: true,
-  maxClusterRadius: 150,
-  //todo: do not use this option now because it only shows one type of icon
-  //todo: but enable it once we have implemented filters
-  //disableClusteringAtZoom: 4,
+  maxClusterRadius: 25,
 });
 
 /**
@@ -135,15 +131,28 @@ function extendData(publisherData, ...mapData) {
           (Array.isArray(item.placeId) ? item.placeId.includes(pub.placeId) : pub.placeId === item.placeId)
         )
       );
-      console.log("item publishers", publishers)
+
+      let playData = {};
+      publishers.forEach((pub, index) => {
+        let playKey = `play${index + 1}`;
+        playData[playKey] = {
+          playName: pub.playName || null,
+          playDate: pub.playDate || null,
+          authorNames: pub.authorNames || null,
+          publisherName: pub.publisherName || null,
+          settingTime: item.time || null,
+          settingText: item.settingText || null,
+        };
+      });
+
       return {
         ...item,
-        authorNames: publishers.map((pub) => pub.authorNames).filter(Boolean),
-        playName: publishers.map((pub) => pub.playName).filter(Boolean),
-        publishers: publishers.map((pub) => pub.publisherName).filter(Boolean)
+        playData,
       };
     });
   });
+
+  console.log("extendedData", extendedData)
 
   return extendedData;
 }
@@ -154,7 +163,7 @@ function convertToGeoJSON(mapData, dataType) {
     Must be either "locations" or "settings".`);
   }
 
-  console.log("mapData", mapData)
+  console.log("mapData", mapData, typeof mapData)
 
   const features = mapData.map((item) => {
     let name = item.name;
@@ -180,11 +189,7 @@ function convertToGeoJSON(mapData, dataType) {
       properties: {
         name,
         lang: item.lang,
-        playName: item.playName,
-        authorNames: item.authorNames,
-        publishers: item.publishers,
-        settingText: dataType === "settings" ? item.settingText : null,
-        time: dataType === "settings" ? item.time : null,
+        playData: item.playData,
         type: dataType,
       }
     };
@@ -196,43 +201,39 @@ function convertToGeoJSON(mapData, dataType) {
   };
 };
 
-function createList(data, maxItems = maxListItems, collapseButton = null) {
+function createList(data, maxItems = maxListItems) {
   if (data.length === 1) {
     return data[0];
   }
 
   const listItems = data.map((item) => {
     let li = document.createElement("li");
-    li.textContent = item;
+    li.innerHTML = item;
     return li;
   });
 
-  let ul = document.createElement("ul");
-  ul.append(...listItems);
+  let ol = document.createElement("ol");
+  ol.append(...listItems);
 
-  if (ul.children.length > maxItems) {
-    const visibleItems = Array.from(ul.children).slice(0, maxItems);
-    const hiddenItems = Array.from(ul.children).slice(maxItems);
+  if (ol.children.length > maxItems) {
+    const visibleItems = Array.from(ol.children).slice(0, maxItems);
+    const hiddenItems = Array.from(ol.children).slice(maxItems);
 
-    ul.innerHTML = "";
-    ul.append(...visibleItems);
+    ol.innerHTML = "";
+    ol.append(...visibleItems);
 
     const more = document.createElement("li");
     more.innerHTML = `... and <b>${hiddenItems.length}</b> more`;
     more.style.cursor = "pointer";
     more.classList.add("more");
 
-    ul.append(more);
-  } else {
-    if (collapseButton) {
-      ul.append(collapseButton);
-    }
+    ol.append(more);
   }
 
-  return ul.outerHTML;
+  return ol.outerHTML;
 }
 
-function handlePopUpList(layer, pubs) {
+function handlePopUpMoreBtn(layer, content) {
   const popUp = layer.getPopup();
   const moreButton = popUp._contentNode.querySelector(".more");
 
@@ -243,22 +244,10 @@ function handlePopUpList(layer, pubs) {
       // when clicking the popup "More" button,
       // which causes the popup to close
       e.stopPropagation();
-      // get lines before the list of publishers
-      const popUpInitialLines = popUp.getContent().split("<ul>")[0];
+      // get lines before the list of plays
+      const popUpInitialLines = popUp.getContent().split("<ol>")[0];
 
-      popUp.setContent(popUpInitialLines + createList(pubs, pubs.length));
-
-      //todo: fix later
-      // const collapseButton = document.createElement("p");
-      // collapseButton.textContent = "Collapse";
-      // collapseButton.style.cursor = "pointer";
-      // collapseButton.classList.add("collapse");
-
-      // const collapseBtnMapEl = popUp._contentNode.querySelector(".collapse");
-      // collapseBtnMapEl.addEventListener("click", function() {
-      //   console.log("test")
-      //   popUp.setContent(createList(pubs, maxListItems));
-      // });
+      popUp.setContent(popUpInitialLines + createList(content, content.length));
     });
   }
 }
@@ -278,59 +267,42 @@ function addGeoJSONData(map, data, type) {
           return L.marker(latlng, {icon: markerIcon});
       },
       onEachFeature: function(feature, layer) {
-        console.log("feature", feature.properties.playName)
-          const playNames = feature.properties.playName
-          && feature.properties.playName.length > 0
-          ? feature.properties.playName : null;
-          console.log("type", typeof playNames)
-          const playNamesTitle = playNames && playNames.length === 1 ? "Play" : "Plays";
-
-          console.log("authorNames", feature.properties.authorNames)
-          console.log("playNames", feature.properties.playNames)
-
-          const authorNames = feature.properties.authorNames
-          && feature.properties.authorNames.length > 0
-          ? feature.properties.authorNames : null;
-          const authorNamesTitle = authorNames
-          && (authorNames.length > 1 || authorNames.some((name: string) => name.includes(",")))
-          ? "Authors" : "Author";
-
-          const pubs = feature.properties.publishers;
-          const pubTitle = pubs && pubs.length === 1 ? "Publisher" : "Publishers";
-
           let popUpContent = "";
           const popUpTitle = type === "locations" ? "Location" : "Setting";
 
-          //todo: redo this when several elements
-          if (type === "locations") {
-            popUpContent = [
-              `<b class="map-popup-title">${popUpTitle}</b>`,
-              feature.properties.name
-              ? `<b>Place</b>: ${feature.properties.name}` : null,
-              pubs && pubs.length > 0
-              ? `<b>${pubTitle}</b>: ${createList(pubs)}` : null,
-              playNames && playNames.length > 0
-              ? `<b>${playNamesTitle}</b>: ${createList(playNames)}` : null,
-              authorNames && authorNames.length > 0
-              ? `<b>${authorNamesTitle}</b>: ${createList(authorNames)}` : null,
-            ].filter(Boolean).join("<br>");
-          } else if (type === "settings") {
-            popUpContent = [
-              `<b class="map-popup-title">${popUpTitle}</b>`,
-              feature.properties.name ?
-              `<b>Place</b>: ${feature.properties.name}` : null,
-              feature.properties.settingText ?
-              `<b>Setting Text</b>: ${feature.properties.settingText}` : null,
-              feature.properties.time ?
-              `<b>Time</b>: ${feature.properties.time}` : null,
-              pubs && pubs.length > 0
-              ? `<b>${pubTitle}</b>: ${createList(pubs)}` : null,
-              playNames && playNames.length > 0
-              ? `<b>${playNamesTitle}</b>: ${createList(playNames)}` : null,
-              authorNames && authorNames.length > 0
-              ? `<b>${authorNamesTitle}</b>: ${createList(authorNames)}` : null,
-            ].filter(Boolean).join("<br>");
-          }
+          popUpContent = [
+            `<b class="map-popup-title">${popUpTitle}</b>`,
+            feature.properties.name
+            ? `<b>Place</b>: ${feature.properties.name}` : null,
+          ].filter(Boolean).join("<br>");
+
+          const playData = feature.properties.playData;
+          let playTexts = [];
+          Object.values(playData).forEach((play) => {
+            const playNameWithDate = play.playDate ?
+            `<i>${play.playName}</i> [${play.playDate}]` :
+            play.playName ? `<i>${play.playName}</i>` : null;
+
+            let playText = play.authorNames && play.publisherName
+            ? `${playNameWithDate} (written by <b>${play.authorNames}</b>,
+            published by <b>${play.publisherName}</b>)`
+            : play.authorNames ? `${playNameWithDate}
+            (written by <b>${play.authorNames}</b>)`
+            : play.publisherName ? `${playNameWithDate}
+            (published by <b>${play.publisherName}</b>)`
+            : playNameWithDate;
+
+            const settingText = play.settingText || null;
+            const settingTime = play.settingTime || null;
+            playText += settingText ? ` | ${settingText}` : "";
+            playText += settingTime ? ` | ${settingTime}` : "";
+
+            playTexts.push(playText);
+          });
+
+          popUpContent += playTexts.length === 1 ?
+          `<br><b>Play</b>: ${playTexts[0]}` : playTexts.length > 1 ?
+          `<br><b>Plays</b>: ${createList(playTexts)}` : "",
 
           layer.bindPopup(popUpContent, {
             // set maxHeight for overflow:hidden to work
@@ -338,7 +310,7 @@ function addGeoJSONData(map, data, type) {
           });
 
           layer.on("popupopen", function () {
-            handlePopUpList(this, pubs);
+            handlePopUpMoreBtn(layer, playTexts);
           });
 
           markerCluster.addLayer(layer);
