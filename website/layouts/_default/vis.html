@@ -59,5 +59,9 @@
 
   <!-- Leaflet MarkerCluster Freezable: https://github.com/ghybs/Leaflet.MarkerCluster.Freezable -->
   <script src="https://unpkg.com/leaflet.markercluster.freezable@1.0.0/dist/leaflet.markercluster.freezable.js"></script>
+
+  <!-- JSZip: https://stuk.github.io/jszip/ -->
+  {{ $jsZip := resources.Get "js-plugins/jszip.min.js" }}
+  <script src="{{ $jsZip.Permalink }}" defer></script>
 </head>
 {{ end }}

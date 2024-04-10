@@ -1884,6 +1884,45 @@ async function showMap() {
   }
 }
 
+/**
+ * Generates metadata in JSON format to be used by downloadData().
+ */
+function generateMetadata() : string {
+  const playMetadata = playFilters;
+  const charMetadata = charFilters;
+
+  return JSON.stringify({ playMetadata, charMetadata }, null, 2);
+}
+
+/**
+ * Downloads the filtered character data, play data, and metadata in JSON format as a ZIP file.
+ */
+async function downloadData() : Promise<void> {
+  const charDataStr = JSON.stringify(filteredCharData, null, 2);
+  const playDataStr = JSON.stringify(filteredPlayData, null, 2);
+  const metadataStr = generateMetadata();
+
+  const zip = new JSZip();
+  zip.file("char_data.json", charDataStr);
+  zip.file("play_data.json", playDataStr);
+  zip.file("metadata.json", metadataStr);
+
+  try {
+    const content = await zip.generateAsync({ type: "blob" });
+    const url = URL.createObjectURL(content);
+    const currentTime = new Date().toISOString().replace(/:/g, "-");
+
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `thealtres-vis-data-${currentTime}.zip`;
+    link.click();
+
+    URL.revokeObjectURL(url);
+  } catch (error) {
+    console.error("Error generating ZIP file:", error);
+  }
+}
+
 async function fetchData(): Promise<void> {
   //console.time("fetchData");
   try {
@@ -2065,4 +2104,8 @@ $(function () {
       $("#info-overlay").css("display", "none");
     }
   });
+
+  $("#download-btn").on("click", function() {
+    downloadData();
+  })
 });
