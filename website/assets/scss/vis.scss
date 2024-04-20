@@ -7,6 +7,8 @@
     --accent-color: #00afb9;
     --accent-color-dark: #007f89;
 
+    --error-color: #c72f2f;
+
     --border-color: #666;
 
     --timeline-color: rgba(0, 170, 141, 0.5);
@@ -752,6 +754,11 @@ div[class^="filter"][class$="values"] > button {
 
 #header-btns-left i:hover {
     color: var(--accent-color);
+    transition: color 0.3s ease;
+}
+
+#header-btns-left i.disabled:hover {
+    color: var(--error-color);
     transition: color 0.3s ease;
 }
 

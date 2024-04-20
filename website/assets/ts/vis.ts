@@ -184,19 +184,16 @@ function getMinMaxPlayDataYear(data: Play[]) : number[] {
  * @param currentPage - The current page number.
  */
 async function renderData<T extends Character | Play>(elName: string, loadedData: T[], currentPage: number) : Promise<void> {
-  if ($("g.context").find("rect.highlight-rect").length > 0
-      // only clear if we're on the first page
-      // otherwise, caused the highlight to be cleared when scrolling
-      && currentPage === 1) {
-  }
-
   if (loadedData.length === 0) {
     if (elName === "main-view-chars") {
       $("#char-list").html("<p>No characters found</p>");
     } else {
       $("#play-list").html("<p>No plays found</p>");
-      $("#play-list-sort-btn").addClass("disabled");
     }
+
+    $("#download-btn").addClass("disabled")
+    .tooltip().attr("data-original-title", "No data to download");
+
     return;
   }
 
@@ -204,6 +201,9 @@ async function renderData<T extends Character | Play>(elName: string, loadedData
   const template = elName === "main-view-chars" ?
   await generateCharacterTemplate(pageData as Character[]) :
   await generatePlayTemplate(pageData as Play[]);
+
+  $("#download-btn").removeClass("disabled")
+  .tooltip().attr("data-original-title", "Download Data");
 
   // only show anchor if all data to be loaded > itemsPerPage
   let anchorEl = "";
@@ -1978,8 +1978,11 @@ function generateMetadata() : string {
  * Downloads the filtered character data, play data, and metadata in JSON format as a ZIP file.
  */
 async function downloadData() : Promise<void> {
-  const charDataStr = JSON.stringify(filteredCharData, null, 2);
-  const playDataStr = JSON.stringify(filteredPlayData, null, 2);
+  let charData = filteredCharsInPlays.length === totalShownCharItems ? filteredCharsInPlays : filteredCharData;
+  let playData = filteredPlaysWithChars.length === totalShownPlayItems ? filteredPlaysWithChars : filteredPlayData;
+
+  const charDataStr = JSON.stringify(charData, null, 2);
+  const playDataStr = JSON.stringify(playData, null, 2);
   const metadataStr = generateMetadata();
 
   const zip = new JSZip();
@@ -2185,6 +2188,10 @@ $(function () {
   });
 
   $("#download-btn").on("click", function() {
+    if (totalShownCharItems === 0 && totalShownPlayItems === 0) {
+      return;
+    }
+
     downloadData();
   })
 });
