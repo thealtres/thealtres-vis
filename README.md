@@ -1,6 +1,10 @@
 # thealtres-vis
 
-This project contains source and data for the "Visualization" section of the _Thealtres_ project website. The _Thealtres_ project is a digital humanities project which aims at comparing theater in Alsatian with popular theater in German and French. For more information, visit the [project website](https://thealtres.pages.unistra.fr/).
+This project contains source code and data for the "Visualization" section of the _Thealtres_ project website. The _Thealtres_ project is a digital humanities project which aims at comparing theater in Alsatian with popular theater in German and French. For more information, visit the [project website](https://thealtres.pages.unistra.fr/).
+
+The goal of the thealtres-vis project is to create a user-friendly, appealing visualization UI for data of the _Thealtres_ project, enabling users to easily view, filter, search and analyze trends across thousands of French, German and Alsatian plays. The web app was originally developed by [Enzo Doyen](https://edoyen.com/) as part of an internship under the supervision of [Pablo Ruiz Fabo](https://ruizfabo.link/unistra).
+
+This project is based on the original [https://git.unistra.fr/thealtres/thealtres.pages.unistra.fr](Thealtres project website), created with [Hugo](https://gohugo.io/). The web app was developed using TypeScript and leverages some JS libraries such as [Tom Select](https://tom-select.js.org/) (for dropdown search), [Leaflet](https://leafletjs.com/) (for map visualization of location and setting data), [D3.js](https://d3js.org/) (for custom charts) and [JSZip](https://stuk.github.io/jszip/) (for downloading data).
 
 <details>
   <summary><b>Click to preview website</b></summary>
@@ -15,7 +19,7 @@ The **scripts/json_conversion** folder contains original, annotated CSV data of 
 The following data types are made available: char_data, play_data, author_data, publisher_data, location_data, setting_data.
 
 The **website** folder contains source for the _Thealtres_ project website and was forked from [https://git.unistra.fr/thealtres/thealtres.pages.unistra.fr](https://git.unistra.fr/thealtres/thealtres.pages.unistra.fr).
-Uses [Hugo](https://gohugo.io/) v0.101.0.
+Uses Hugo v0.101.0.
 
 ## Usage
 
@@ -27,6 +31,7 @@ Uses [Hugo](https://gohugo.io/) v0.101.0.
 2) `python json_conversion.py <data_type> <inp_filename> <out_filename>`
 
 E.g., if you want to convert char_data.csv to char_data.json and place that file directly inside the corresponding website folder:
+
 `python json_conversion.py char_data csv/char_data.csv ../../website/static/json/char_data.json`
 
 ### website
