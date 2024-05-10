@@ -763,13 +763,14 @@ function updateSelectOption(selectId: string, optionValue: string, includeCount 
   // @ts-ignore
   const select = document.getElementById(selectId).tomselect;
   const option = select.options[optionValue];
-  const newOptionText = includeCount ?
-  option.text.split(" (")[0] + " (" + newCount + ")" : option.text.split(" (")[0]
 
   if (!option) {
     console.error(`Option with value ${optionValue} not found in select ${selectId}`);
     return;
   }
+
+  const newOptionText = includeCount ?
+  option.text.split(" (")[0] + " (" + newCount + ")" : option.text.split(" (")[0]
 
   select.updateOption(optionValue, {
     value: optionValue,
