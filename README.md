@@ -4,7 +4,7 @@ This project contains source and data for the "Visualization" section of the _Th
 
 <details>
   <summary><b>Click to preview website</b></summary>
-  ![Visualization Website Preview](https://i.imgur.com/fuMQGrY.png)
+  <img src="https://i.imgur.com/fuMQGrY.png" alt="Visualization Website Preview">
 </details>
 
 ## Project structure
