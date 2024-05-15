@@ -4,7 +4,7 @@ This project contains source code and data for the "Visualization" section of th
 
 The goal of the thealtres-vis project is to create a user-friendly, appealing visualization UI for data of the _Thealtres_ project, enabling users to easily view, filter, search and analyze trends across thousands of French, German and Alsatian plays. The web app was originally developed by [Enzo Doyen](https://edoyen.com/) as part of an internship under the supervision of [Pablo Ruiz Fabo](https://ruizfabo.link/unistra).
 
-This project is based on the original [https://git.unistra.fr/thealtres/thealtres.pages.unistra.fr](Thealtres project website), created with [Hugo](https://gohugo.io/). The web app was developed using TypeScript and leverages some JS libraries such as [Tom Select](https://tom-select.js.org/) (for dropdown search), [Leaflet](https://leafletjs.com/) (for map visualization of location and setting data), [D3.js](https://d3js.org/) (for custom charts) and [JSZip](https://stuk.github.io/jszip/) (for downloading data).
+This project is based on the original [Thealtres project website](https://git.unistra.fr/thealtres/thealtres.pages.unistra.fr), created with [Hugo](https://gohugo.io/). The web app was developed using TypeScript and leverages some JS libraries such as [Tom Select](https://tom-select.js.org/) (for dropdown search), [Leaflet](https://leafletjs.com/) (for map visualization of location and setting data), [D3.js](https://d3js.org/) (for custom charts) and [JSZip](https://stuk.github.io/jszip/) (for downloading data).
 
 <details>
   <summary><b>Click to preview website</b></summary>
