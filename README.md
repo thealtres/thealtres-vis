@@ -1,5 +1,8 @@
 # thealtres-vis
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11289442.svg)](https://doi.org/10.5281/zenodo.11289442)
+
+
 This project contains source code and data for the "Visualization" section of the _Thealtres_ project website. The _Thealtres_ project is a digital humanities project which aims at comparing theater in Alsatian with popular theater in German and French. For more information, visit the [project website](https://thealtres.pages.unistra.fr/).
 
 The goal of the thealtres-vis project is to create a user-friendly, appealing visualization UI for data of the _Thealtres_ project, enabling users to easily view, filter, search and analyze trends across thousands of French, German and Alsatian plays. The web app was originally developed by [Enzo Doyen](https://edoyen.com/) as part of an internship under the supervision of [Pablo Ruiz Fabo](https://ruizfabo.link/unistra).
