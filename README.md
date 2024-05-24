@@ -39,3 +39,12 @@ E.g., if you want to convert char_data.csv to char_data.json and place that file
 1) `cd thealtres-vis/website`
 2) `hugo serve`
 3) Open [http://localhost:1313](http://localhost:1313)
+
+## Screenshots
+
+![image](https://github.com/thealtres/thealtres-vis/assets/20565963/812781d3-b2dd-442b-86e4-81003e9a314e)
+Main view.
+
+![image](https://github.com/thealtres/thealtres-vis/assets/20565963/410d7984-ea06-4250-8587-abfb8e494b60)
+Geolocated publisher locations and play settings.
+
