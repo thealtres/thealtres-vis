@@ -9,11 +9,6 @@ The goal of the thealtres-vis project is to create a user-friendly, appealing vi
 
 This project is based on the original [Thealtres project website](https://git.unistra.fr/thealtres/thealtres.pages.unistra.fr), created with [Hugo](https://gohugo.io/). The web app was developed using TypeScript and leverages some JS libraries such as [Tom Select](https://tom-select.js.org/) (for dropdown search), [Leaflet](https://leafletjs.com/) (for map visualization of location and setting data), [D3.js](https://d3js.org/) (for custom charts) and [JSZip](https://stuk.github.io/jszip/) (for downloading data).
 
-<details>
-  <summary><b>Click to preview website</b></summary>
-  <img src="https://i.imgur.com/fuMQGrY.png" alt="Visualization Website Preview">
-</details>
-
 ## Project structure
 
 This repository contains two main folders: **scripts/json_conversion** and **website**.
