@@ -125,7 +125,8 @@ export function drawChart(data: any[], chartType: string) : void {
     const dataXrange = d3.extent(data, function(d) { return d.year; });
     x = d3.time.scale()
     .domain(dataXrange)
-    .range([0, width]);
+    // -3 to fix last year being untooltipable. Not sure why
+    .range([0, width - 3]);
 
     xAxis = svg.append("g")
     .attr("transform", "translate(0," + height + ")")

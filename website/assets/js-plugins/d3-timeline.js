@@ -327,7 +327,7 @@ export function setTimeline(dataset) {
     };
 
     function customTickFunction(t0, t1, dt)  {
-        var labelSize = 42; 
+        var labelSize = 42;
         var maxTotalLabels = Math.floor(width / labelSize);
 
         var time = d3.time.year.ceil(t0);
@@ -338,10 +338,16 @@ export function setTimeline(dataset) {
           time = new Date(time.setFullYear(time.getFullYear() + 1));
         }
 
-        if(times.length > maxTotalLabels) {
+        if (times.length > maxTotalLabels) {
           times = _.filter(times, function(d, i) {
             return i % Math.ceil(times.length / maxTotalLabels) === 0;
           });
+          // replace last time with t1 so that the last label
+          // equals the maximum date
+          if (_.last(times).getTime() !== t1.getTime()) {
+              times.pop();
+              times.push(new Date(t1));
+          }
         }
 
         return times;
