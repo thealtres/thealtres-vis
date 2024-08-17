@@ -168,6 +168,13 @@ def convert_to_json(data: dict, template_type: str) -> dict:
         setting_data = [{k: None if not v or v.isspace() else v.strip() for k, v in dct.items()}
             for dct in data]
 
+        # neutralize to 0 act ids that are composite over more than one act
+        # (we map place info for entire play, not act/scene level, so no need to keep that level of detail)
+        setting_data = [{k: 0 if k in ["actId", "sceneId"]
+                and v is not None and "," in v
+                else v for k, v in dct.items()}
+                for dct in setting_data]
+
         # convert ids to integers
         setting_data = [{k: int(float(v)) if k in ["workId", "actId", "sceneId"]
                 and v is not None
