@@ -2,672 +2,14 @@
     "publishers": [
         {
             "publisherId": 1,
-            "lang": "fre",
-            "nameOnPlay": "A. Allouard",
-            "normalizedName": "A. Allouard",
-            "wikidataId": null,
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": null
-        },
-        {
-            "publisherId": 2,
-            "lang": "fre",
-            "nameOnPlay": "Paul Ollendorff, \u00e9diteur",
-            "normalizedName": "Paul Ollendorff",
-            "wikidataId": "Q17517389",
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": null
-        },
-        {
-            "publisherId": 3,
-            "lang": "fre",
-            "nameOnPlay": "La Librairie Th\u00e9\u00e2trale",
-            "normalizedName": "Librairie Th\u00e9\u00e2trale",
-            "wikidataId": "Q3237904",
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": null
-        },
-        {
-            "publisherId": 4,
-            "lang": "fre",
-            "nameOnPlay": "Beck, \u00e9diteur",
-            "normalizedName": "Beck",
-            "wikidataId": null,
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": null
-        },
-        {
-            "publisherId": 5,
-            "lang": "fre",
-            "nameOnPlay": "Calmann L\u00e9vy, \u00c9diteur",
-            "normalizedName": "Calmann-L\u00e9vy",
-            "wikidataId": "Q2934320",
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": "after 1875"
-        },
-        {
-            "publisherId": 6,
-            "lang": "fre",
-            "nameOnPlay": "Michel L\u00e9vy Fr\u00e8res, \u00c9diteurs",
-            "normalizedName": "Michel L\u00e9vy Fr\u00e8res",
-            "wikidataId": "Q3310248",
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": "1836 - 1875"
-        },
-        {
-            "publisherId": 7,
-            "lang": "fre",
-            "nameOnPlay": "Typographie de Arbieu",
-            "normalizedName": null,
-            "wikidataId": null,
-            "placeId": 6,
-            "coord": "48.9274390, 2.0428293",
-            "notes": null
-        },
-        {
-            "publisherId": 8,
-            "lang": "fre",
-            "nameOnPlay": "E. Dentu",
-            "normalizedName": "Dentu",
-            "wikidataId": "Q20926521",
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": null
-        },
-        {
-            "publisherId": 9,
-            "lang": "fre",
-            "nameOnPlay": "J.-A. Lelong",
-            "normalizedName": "Maison E. Lelong",
-            "wikidataId": "Q56302959",
-            "placeId": 13,
-            "coord": "50.8550018, 4.3512334",
-            "notes": null
-        },
-        {
-            "publisherId": 10,
-            "lang": "fre",
-            "nameOnPlay": "J.-N. Barba",
-            "normalizedName": "Jean-Nicolas Barba",
-            "wikidataId": "Q15973482",
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": "1820-1839"
-        },
-        {
-            "publisherId": 11,
-            "lang": "fre",
-            "nameOnPlay": "Tresse & Stock",
-            "normalizedName": "Tresse & Stock",
-            "wikidataId": "Q42512509",
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": "1861 - 1896"
-        },
-        {
-            "publisherId": 12,
-            "lang": "fre",
-            "nameOnPlay": "Choudens Fils",
-            "normalizedName": "Paul de Choudens",
-            "wikidataId": "Q2063312",
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": null
-        },
-        {
-            "publisherId": 13,
-            "lang": "fre",
-            "nameOnPlay": "P. V. Stock",
-            "normalizedName": "P. V. Stock",
-            "wikidataId": "Q3579517",
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": "1896- 1921"
-        },
-        {
-            "publisherId": 14,
-            "lang": "fre",
-            "nameOnPlay": "Librairie Bricon & Lesot Andr\u00e9 Lesot, successeur",
-            "normalizedName": null,
-            "wikidataId": null,
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": null
-        },
-        {
-            "publisherId": 15,
-            "lang": "fre",
-            "nameOnPlay": "Imprimerie Vialat et Cie.",
-            "normalizedName": null,
-            "wikidataId": null,
-            "placeId": 41,
-            "coord": "49.6138706, 2.9174984",
-            "notes": null
-        },
-        {
-            "publisherId": 16,
-            "lang": "fre",
-            "nameOnPlay": "D. Giraud, libraire-\u00e9diteur",
-            "normalizedName": null,
-            "wikidataId": null,
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": null
-        },
-        {
-            "publisherId": 17,
-            "lang": "fre",
-            "nameOnPlay": "Typographie Alcan-L\u00e9vy",
-            "normalizedName": "Alcan L\u00e9vy",
-            "wikidataId": "Q117034422",
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": null
-        },
-        {
-            "publisherId": 18,
-            "lang": "fre",
-            "nameOnPlay": "Marchant \u00e9diteur",
-            "normalizedName": null,
-            "wikidataId": null,
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": null
-        },
-        {
-            "publisherId": 19,
-            "lang": "fre",
-            "nameOnPlay": "Imprimerie de Madame De Lacombe",
-            "normalizedName": null,
-            "wikidataId": null,
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": "Victorine de Lacombe https://data.bnf.fr/17959868/victorine_de_lacombe/"
-        },
-        {
-            "publisherId": 20,
-            "lang": "fre",
-            "nameOnPlay": "Librairie de Charles Gosselin",
-            "normalizedName": null,
-            "wikidataId": "Q28806811",
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": null
-        },
-        {
-            "publisherId": 21,
-            "lang": "fre",
-            "nameOnPlay": "Mifliez, libraire-\u00e9diteur. Tresse, successeur de Barba",
-            "normalizedName": "Mifliez",
-            "wikidataId": null,
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": null
-        },
-        {
-            "publisherId": 22,
-            "lang": "fre",
-            "nameOnPlay": "Bourdilliat",
-            "normalizedName": "Librairie nouvelle",
-            "wikidataId": "Q60568974",
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": null
-        },
-        {
-            "publisherId": 23,
-            "lang": "fre",
-            "nameOnPlay": "Imprimerie de G. Olivier",
-            "normalizedName": "Olivier",
-            "wikidataId": null,
-            "placeId": 6,
-            "coord": "48.9274390, 2.0428293",
-            "notes": null
-        },
-        {
-            "publisherId": 24,
-            "lang": "fre",
-            "nameOnPlay": "Librairie dramatique",
-            "normalizedName": null,
-            "wikidataId": null,
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": "belongs to Dentu id8"
-        },
-        {
-            "publisherId": 25,
-            "lang": "fre",
-            "nameOnPlay": "Tresse",
-            "normalizedName": null,
-            "wikidataId": null,
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": "1839 - 1861"
-        },
-        {
-            "publisherId": 26,
-            "lang": "fre",
-            "nameOnPlay": "impr. de Morris",
-            "normalizedName": null,
-            "wikidataId": null,
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": null
-        },
-        {
-            "publisherId": 27,
-            "lang": "fre",
-            "nameOnPlay": "H. Simonis Empis",
-            "normalizedName": null,
-            "wikidataId": "Q19962953",
-            "placeId": null,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 28,
-            "lang": "fre",
-            "nameOnPlay": "Paul Dupont",
-            "normalizedName": null,
-            "wikidataId": "Q618263",
-            "placeId": 1,
-            "coord": "48.8588897, 2.3200410",
-            "notes": null
-        },
-        {
-            "publisherId": 29,
-            "lang": "fre",
-            "nameOnPlay": "Imprempta de Salvador Bonav\u00eda",
-            "normalizedName": null,
-            "wikidataId": "Q85434844",
-            "placeId": 59,
-            "coord": "41.3828939, 2.1774322",
-            "notes": null
-        },
-        {
-            "publisherId": 1,
-            "lang": "ger",
-            "nameOnPlay": "Ferdinand Reichardt & Co.",
-            "normalizedName": "Reichardt",
-            "wikidataId": null,
-            "placeId": 1,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 2,
-            "lang": "ger",
-            "nameOnPlay": "A. Bahn & Comp.",
-            "normalizedName": "Bahn",
-            "wikidataId": null,
-            "placeId": 1,
-            "coord": null,
-            "notes": "printer not publisher"
-        },
-        {
-            "publisherId": 3,
-            "lang": "ger",
-            "nameOnPlay": "J. Draeger",
-            "normalizedName": "Draeger",
-            "wikidataId": null,
-            "placeId": 1,
-            "coord": null,
-            "notes": "printer not publisher"
-        },
-        {
-            "publisherId": 4,
-            "lang": "ger",
-            "nameOnPlay": "Cosmar und Krause",
-            "normalizedName": "Cosmar & Krause",
-            "wikidataId": null,
-            "placeId": 1,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 5,
-            "lang": "ger",
-            "nameOnPlay": "A. W. Hayn",
-            "normalizedName": "Hayn",
-            "wikidataId": null,
-            "placeId": 1,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 6,
-            "lang": "ger",
-            "nameOnPlay": "Eduard Bloch",
-            "normalizedName": "Bloch",
-            "wikidataId": "Q1288037",
-            "placeId": 1,
-            "coord": null,
-            "notes": "Eduard Bloch and Felix Bloch Erben are the same publishing house: https://de.wikipedia.org/wiki/Theatersammlung_Bloch"
-        },
-        {
-            "publisherId": 6,
-            "lang": "ger",
-            "nameOnPlay": "Felix Bloch Erben",
-            "normalizedName": "Bloch",
-            "wikidataId": "Q1403355",
-            "placeId": 1,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 7,
-            "lang": "ger",
-            "nameOnPlay": "Philipp Reclam jun.",
-            "normalizedName": "Reclam",
-            "wikidataId": "Q214632",
-            "placeId": 3,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 8,
-            "lang": "ger",
-            "nameOnPlay": "L. Kolbe",
-            "normalizedName": "Kolbe",
-            "wikidataId": null,
-            "placeId": 1,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 9,
-            "lang": "ger",
-            "nameOnPlay": "K\u00fchling & G\u00fcttner",
-            "normalizedName": "K\u00fchling",
-            "wikidataId": null,
-            "placeId": 1,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 10,
-            "lang": "ger",
-            "nameOnPlay": "Michaelson",
-            "normalizedName": "Michaelson",
-            "wikidataId": null,
-            "placeId": 1,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 11,
-            "lang": "ger",
-            "nameOnPlay": "Oswald Mutze",
-            "normalizedName": "Mutze",
-            "wikidataId": null,
-            "placeId": 3,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 12,
-            "lang": "ger",
-            "nameOnPlay": "A. Entsch",
-            "normalizedName": "Entsch",
-            "wikidataId": null,
-            "placeId": 1,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 13,
-            "lang": "ger",
-            "nameOnPlay": "Ahn und Simrock",
-            "normalizedName": "Ahn",
-            "wikidataId": "Q402136",
-            "placeId": 1,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 14,
-            "lang": "ger",
-            "nameOnPlay": "Josef Weinberger",
-            "normalizedName": "Weinberger",
-            "wikidataId": "Q57721296",
-            "placeId": 3,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 15,
-            "lang": "ger",
-            "nameOnPlay": "Aug. Weisbrod",
-            "normalizedName": "Weisbrod",
-            "wikidataId": null,
-            "placeId": 20,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 16,
-            "lang": "ger",
-            "nameOnPlay": "Vertriebsstelle und Verlag Deutscher B\u00fchnenschriftsteller und B\u00fchnenkomponisten",
-            "normalizedName": "VVB",
-            "wikidataId": "Q2519173",
-            "placeId": 26,
-            "coord": null,
-            "notes": "https://de.wikipedia.org/wiki/Vertriebsstelle_und_Verlag_Deutscher_B%C3%BChnenschriftsteller_und_B%C3%BChnenkomponisten"
-        },
-        {
-            "publisherId": 17,
-            "lang": "ger",
-            "nameOnPlay": "Adolf Bonz & Comp.",
-            "normalizedName": "Bonz",
-            "wikidataId": null,
-            "placeId": 8,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 18,
-            "lang": "ger",
-            "nameOnPlay": "L. Pabst",
-            "normalizedName": "Pabst",
-            "wikidataId": null,
-            "placeId": 6,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 19,
-            "lang": "ger",
-            "nameOnPlay": "Adolph W. K\u00fcnast",
-            "normalizedName": "K\u00fcnast",
-            "wikidataId": "Q55678104",
-            "placeId": 13,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 20,
-            "lang": "ger",
-            "nameOnPlay": "Drei Masken Verlag",
-            "normalizedName": "Masken",
-            "wikidataId": null,
-            "placeId": 14,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 21,
-            "lang": "ger",
-            "nameOnPlay": "Fr. Al. Grund",
-            "normalizedName": "Grund",
-            "wikidataId": null,
-            "placeId": 13,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 22,
-            "lang": "ger",
-            "nameOnPlay": "J. B. Wallishauser",
-            "normalizedName": "Wallishauser",
-            "wikidataId": "Q90897389",
-            "placeId": 13,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 23,
-            "lang": "ger",
-            "nameOnPlay": "Carl Friederich",
-            "normalizedName": "Friederich",
-            "wikidataId": null,
-            "placeId": 20,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 24,
-            "lang": "ger",
-            "nameOnPlay": "Johann David Sauerl\u00e4nder",
-            "normalizedName": "Sauerl\u00e4nder",
-            "wikidataId": "Q29951250",
-            "placeId": 20,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 25,
-            "lang": "ger",
-            "nameOnPlay": "Hartleben",
-            "normalizedName": "Hartleben",
-            "wikidataId": "Q278706",
-            "placeId": 15,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 26,
-            "lang": "ger",
-            "nameOnPlay": "Johann Georg M\u00f6\u00dfle",
-            "normalizedName": "M\u00f6\u00dfle",
-            "wikidataId": "Q98951659",
-            "placeId": 13,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 27,
-            "lang": "ger",
-            "nameOnPlay": "A. Hofmann & Comp",
-            "normalizedName": "Hofmann",
-            "wikidataId": null,
-            "placeId": 1,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 28,
-            "lang": "ger",
-            "nameOnPlay": "Heinrich Philipp Petri",
-            "normalizedName": "Petri",
-            "wikidataId": "Q94916073",
-            "placeId": 1,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 29,
-            "lang": "ger",
-            "nameOnPlay": "Aufbau",
-            "normalizedName": "Aufbau Verlag",
-            "wikidataId": "Q316922",
-            "placeId": 1,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 30,
-            "lang": "ger",
-            "nameOnPlay": "Magazin f\u00fcr Buchhandel, Musik und Kunst",
-            "normalizedName": "Magazin",
-            "wikidataId": null,
-            "placeId": 26,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 31,
-            "lang": "ger",
-            "nameOnPlay": "Eduard Kummer",
-            "normalizedName": "Kummer",
-            "wikidataId": null,
-            "placeId": 3,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 31,
-            "lang": "ger",
-            "nameOnPlay": "Paul Gotthelf Kummer",
-            "normalizedName": "Kummer",
-            "wikidataId": "Q23061020",
-            "placeId": 3,
-            "coord": null,
-            "notes": "Eduard Kummer and Paul Kummer are the same publishing house: https://de.wikipedia.org/wiki/Paul_Gotthelf_Kummer"
-        },
-        {
-            "publisherId": 32,
-            "lang": "ger",
-            "nameOnPlay": "Franz Varrentrapp",
-            "normalizedName": "Varrentrapp",
-            "wikidataId": "Q63349101",
-            "placeId": 20,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 33,
-            "lang": "ger",
-            "nameOnPlay": "Johann Andreas Kranzb\u00fchler",
-            "normalizedName": "Kranzb\u00fchler",
-            "wikidataId": null,
-            "placeId": 45,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 34,
-            "lang": "ger",
-            "nameOnPlay": "Eduard Frantzen",
-            "normalizedName": "Frantzen",
-            "wikidataId": null,
-            "placeId": 3,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 35,
-            "lang": "ger",
-            "nameOnPlay": "Max Simson",
-            "normalizedName": "Simson",
-            "wikidataId": null,
-            "placeId": 1,
-            "coord": null,
-            "notes": null
-        },
-        {
-            "publisherId": 1,
             "lang": "als",
             "nameOnPlay": "Alsatica-Verlag Schlesier & Schweikhardt, Strassburg",
             "normalizedName": "Schlesier & Schweikhardt",
             "wikidataId": "Q110409945",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -676,8 +18,10 @@
             "nameOnPlay": "Schlesier & Schweikhardt",
             "normalizedName": "Schlesier & Schweikhardt",
             "wikidataId": "Q110409945",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -686,8 +30,10 @@
             "nameOnPlay": "Schlesier & Schweikhardt",
             "normalizedName": "Schlesier & Schweikhardt",
             "wikidataId": "Q110409945",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -696,8 +42,10 @@
             "nameOnPlay": "Schlesier & Schweikhardt",
             "normalizedName": "Schlesier & Schweikhardt",
             "wikidataId": "Q110409945",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -706,8 +54,10 @@
             "nameOnPlay": "Schlesier & Scwheikhardt",
             "normalizedName": "Schlesier & Schweikhardt",
             "wikidataId": "Q110409945",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -716,8 +66,10 @@
             "nameOnPlay": "Stra\u00dfburg, Verlag von Schlesier & Schweikhardt",
             "normalizedName": "Schlesier & Schweikhardt",
             "wikidataId": "Q110409945",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -726,8 +78,10 @@
             "nameOnPlay": "Stra\u00dfburg. Verlag von Schlesier & Schweikhardt",
             "normalizedName": "Schlesier & Schweikhardt",
             "wikidataId": "Q110409945",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -736,8 +90,10 @@
             "nameOnPlay": "Stra\u00dfburg. Verlag von Schlesier & Schweikhardt",
             "normalizedName": "Schlesier & Schweikhardt",
             "wikidataId": "Q110409945",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -746,8 +102,10 @@
             "nameOnPlay": "Stra\u00dfburg. Verlag von Schlesier & Schweikhardt",
             "normalizedName": "Schlesier & Schweikhardt",
             "wikidataId": "Q110409945",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -756,8 +114,10 @@
             "nameOnPlay": "Verlag von Schlesier & Schweikhardt",
             "normalizedName": "Schlesier & Schweikhardt",
             "wikidataId": "Q110409945",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -766,8 +126,10 @@
             "nameOnPlay": "Verlag von Schlesier & Schweikhardt",
             "normalizedName": "Schlesier & Schweikhardt",
             "wikidataId": "Q110409945",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -776,8 +138,10 @@
             "nameOnPlay": "Verlag von Schlesier & Schweikhardt",
             "normalizedName": "Schlesier & Schweikhardt",
             "wikidataId": "Q110409945",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -786,8 +150,10 @@
             "nameOnPlay": "Verlag von Schlesier & Schweikhardt",
             "normalizedName": "Schlesier & Schweikhardt",
             "wikidataId": "Q110409945",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -796,8 +162,10 @@
             "nameOnPlay": "Verlag von Schlesier & Schweikhardt",
             "normalizedName": "Schlesier & Schweikhardt",
             "wikidataId": "Q110409945",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -806,8 +174,10 @@
             "nameOnPlay": "Verlag von Schlesier & Schweikhardt",
             "normalizedName": "Schlesier & Schweikhardt",
             "wikidataId": "Q110409945",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -816,8 +186,10 @@
             "nameOnPlay": "Verlag von Schlesier & Schweikhardt",
             "normalizedName": "Schlesier & Schweikhardt",
             "wikidataId": "Q110409945",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -826,8 +198,10 @@
             "nameOnPlay": "Verlag von Schlesier & Schweikhardt",
             "normalizedName": "Schlesier & Schweikhardt",
             "wikidataId": "Q110409945",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -836,8 +210,10 @@
             "nameOnPlay": "Verlag von Schlesier & Schweikhardt, Strassburg",
             "normalizedName": "Schlesier & Schweikhardt",
             "wikidataId": "Q110409945",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -846,8 +222,10 @@
             "nameOnPlay": "Verlag von Schlesier & Schweikhardt, Stra\u00dfburg",
             "normalizedName": "Schlesier & Schweikhardt",
             "wikidataId": "Q110409945",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -856,8 +234,10 @@
             "nameOnPlay": "Verlag von Schlesier & Schweikhardt, Stra\u00dfburg",
             "normalizedName": "Schlesier & Schweikhardt",
             "wikidataId": "Q110409945",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -866,8 +246,10 @@
             "nameOnPlay": "Verlag von Schlesier & Schweikhardt, Stra\u00dfburg i. E.",
             "normalizedName": "Schlesier & Schweikhardt",
             "wikidataId": "Q110409945",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -876,8 +258,10 @@
             "nameOnPlay": "Verlag von Schlesier & Scwheikhardt",
             "normalizedName": "Schlesier & Schweikhardt",
             "wikidataId": "Q110409945",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -886,8 +270,10 @@
             "nameOnPlay": "\u00c9dition de th\u00e9\u00e2tre et de musique L. Jaggi-Reiss Gundershoffen (Bas-Rhin)",
             "normalizedName": "L. Jaggi-Reiss",
             "wikidataId": "Q110411096",
+            "publisherType": null,
             "placeId": 9,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -896,8 +282,10 @@
             "nameOnPlay": "Edition de th\u00e9atre et de musique L. Jaggi-Reiss, Gundershoffen (Bas-Rhin)",
             "normalizedName": "L. Jaggi-Reiss",
             "wikidataId": "Q110411096",
+            "publisherType": null,
             "placeId": 9,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -906,8 +294,10 @@
             "nameOnPlay": "Edition de th\u00e9atre et de musique L. Jaggi-Reiss, Gundershoffen (Bas-Rhin)",
             "normalizedName": "L. Jaggi-Reiss",
             "wikidataId": "Q110411096",
+            "publisherType": null,
             "placeId": 9,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -916,8 +306,10 @@
             "nameOnPlay": "\u00c9dition de th\u00e9atre et de musique L. Jaggi-Reiss, Gundershoffen (Bas-Rhin)",
             "normalizedName": "L. Jaggi-Reiss",
             "wikidataId": "Q110411096",
+            "publisherType": null,
             "placeId": 9,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -926,8 +318,10 @@
             "nameOnPlay": "Gundershoffen, \u00c9dition de th\u00e9atre et de musique L. Jaggi-Reiss",
             "normalizedName": "L. Jaggi-Reiss",
             "wikidataId": "Q110411096",
+            "publisherType": null,
             "placeId": 9,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -936,8 +330,10 @@
             "nameOnPlay": "L. Jaggi-Reiss, Gundershoffen",
             "normalizedName": "L. Jaggi-Reiss",
             "wikidataId": "Q110411096",
+            "publisherType": null,
             "placeId": 9,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -946,8 +342,10 @@
             "nameOnPlay": "Druck und Verlag von F. X. Le Roux & Cie, Strasbourg",
             "normalizedName": "F. X. Le Roux",
             "wikidataId": "Q110409733",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -956,8 +354,10 @@
             "nameOnPlay": "Druck und Verlag von F. X. Le Roux & Cie., S. A.",
             "normalizedName": "F. X. Le Roux",
             "wikidataId": "Q110409733",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -966,8 +366,10 @@
             "nameOnPlay": "F. X Le Roux et Cie, Strasbourg",
             "normalizedName": "F. X. Le Roux",
             "wikidataId": "Q110409733",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -976,8 +378,10 @@
             "nameOnPlay": "F. X Le Roux et Cie, Strasbourg",
             "normalizedName": "F. X. Le Roux",
             "wikidataId": "Q110409733",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -986,8 +390,10 @@
             "nameOnPlay": "F. X. Le Roux & Cie Strasbourg",
             "normalizedName": "F. X. Le Roux",
             "wikidataId": "Q110409733",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -996,8 +402,10 @@
             "nameOnPlay": "F. X. Le Roux & Cie, Strasbourg",
             "normalizedName": "F. X. Le Roux",
             "wikidataId": "Q110409733",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1006,8 +414,10 @@
             "nameOnPlay": "Verlag von F. X. Le Roux u. Co.",
             "normalizedName": "F. X. Le Roux",
             "wikidataId": "Q110409733",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1016,8 +426,10 @@
             "nameOnPlay": "Verlag von F. X. Le Roux u. Co.",
             "normalizedName": "F. X. Le Roux",
             "wikidataId": "Q110409733",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1026,8 +438,10 @@
             "nameOnPlay": "Librairie \u00ab Sostralib \u00bb, Strasbourg",
             "normalizedName": "Sostralib",
             "wikidataId": "Q110410317",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1036,8 +450,10 @@
             "nameOnPlay": "Buch- und Kunstverlag C. A. Vomhoff",
             "normalizedName": "C. A. Vomhoff",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1046,8 +462,10 @@
             "nameOnPlay": "Buch- und Kunstverlag C. A. Vomhoff",
             "normalizedName": "C. A. Vomhoff",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1056,8 +474,10 @@
             "nameOnPlay": "Buch- und Kunstverlag C. A. Vomhoff, Stra\u00dfburg i. E.",
             "normalizedName": "C. A. Vomhoff",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1066,8 +486,10 @@
             "nameOnPlay": "Buech- un Kunschtverlaa C. A. Vomhoff, Stro\u00dfburj i. E.",
             "normalizedName": "C. A. Vomhoff",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1076,8 +498,10 @@
             "nameOnPlay": "C. A. Vomhoff, Verlag",
             "normalizedName": "C. A. Vomhoff",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1086,8 +510,10 @@
             "nameOnPlay": "Verlag von C. A. Vomhoff",
             "normalizedName": "C. A. Vomhoff",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1096,8 +522,10 @@
             "nameOnPlay": "Verlag von Paul Vomhoff, Stra\u00dfburg i. Els.",
             "normalizedName": "C. A. Vomhoff",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1106,8 +534,10 @@
             "nameOnPlay": "C.A. Vomhoff",
             "normalizedName": "C. A. Vomhoff",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1116,8 +546,10 @@
             "nameOnPlay": "Imprimeur et \u00c9diteur Imprimerie Gutemberg, J. Charles Schneider",
             "normalizedName": "Gutemberg, J. Charles Schneider",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1126,8 +558,10 @@
             "nameOnPlay": "J. Charles Schneider",
             "normalizedName": "Gutemberg, J. Charles Schneider",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1136,8 +570,10 @@
             "nameOnPlay": "Buchhandlung Ernest Finck, Blauwolkengasse 27, Strasbourg",
             "normalizedName": "Ernest Finck",
             "wikidataId": "Q111680504",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1146,8 +582,10 @@
             "nameOnPlay": "Buchhandlung Ernest Finck, Stra\u00dfburg",
             "normalizedName": "Ernest Finck",
             "wikidataId": "Q111680504",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1156,8 +594,10 @@
             "nameOnPlay": "Druck und Verlauu vun E. Finck, Alsatia-Verlauu, Stroo\u00dfburri",
             "normalizedName": "Ernest Finck",
             "wikidataId": "Q111680504",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1166,8 +606,10 @@
             "nameOnPlay": "Librairie Ernest Finck, Strasbourg",
             "normalizedName": "Ernest Finck",
             "wikidataId": "Q111680504",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1176,8 +618,10 @@
             "nameOnPlay": "Verlag von E. Finck, Alsatica-Verlag, Strasbourg",
             "normalizedName": "Ernest Finck",
             "wikidataId": "Q111680504",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1186,8 +630,10 @@
             "nameOnPlay": "Verlag von E. Finck, Alsatica-Verlag, Strasbourg",
             "normalizedName": "Ernest Finck",
             "wikidataId": "Q111680504",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1196,8 +642,10 @@
             "nameOnPlay": "Ernest Fink",
             "normalizedName": "Ernest Finck",
             "wikidataId": "Q111680504",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1206,8 +654,10 @@
             "nameOnPlay": "A. Ammel, Verlagsbuchhandlung",
             "normalizedName": "A. Ammel",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1216,8 +666,10 @@
             "nameOnPlay": "A. Ammel, Verlagsbuchhandlung",
             "normalizedName": "A. Ammel",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1226,8 +678,10 @@
             "nameOnPlay": "A. Ammel, Verlagsbuchhandlung",
             "normalizedName": "A. Ammel",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1236,8 +690,10 @@
             "nameOnPlay": "Buchdruckerei des \u201eEls\u00e4sser\u201c, Stra\u00dfburg",
             "normalizedName": "Buchdruckerei des \u201eEls\u00e4sser\u201c",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1246,8 +702,10 @@
             "nameOnPlay": "Buchdruckerei des \u201eEls\u00e4sser\u201c, Stra\u00dfburg",
             "normalizedName": "Buchdruckerei des \u201eEls\u00e4sser\u201c",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1256,8 +714,10 @@
             "nameOnPlay": "Alsatia-Verlag, Kolmar i. Elsass",
             "normalizedName": "Soci\u00e9t\u00e9 Alsacienne d\u2019\u00c9dition",
             "wikidataId": "Q13142475",
+            "publisherType": null,
             "placeId": 4,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1266,8 +726,10 @@
             "nameOnPlay": "Colmar, Soci\u00e9t\u00e9 Alsacienne d'\u00c9dition Alsatia, S. A.",
             "normalizedName": "Soci\u00e9t\u00e9 Alsacienne d\u2019\u00c9dition",
             "wikidataId": "Q13142475",
+            "publisherType": null,
             "placeId": 4,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1276,8 +738,10 @@
             "nameOnPlay": "Soci\u00e9t\u00e9 alsacienne d'\u00e9dition (Alsatia)",
             "normalizedName": "Soci\u00e9t\u00e9 Alsacienne d\u2019\u00c9dition",
             "wikidataId": "Q13142475",
+            "publisherType": null,
             "placeId": 4,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1286,8 +750,10 @@
             "nameOnPlay": "Soci\u00e9t\u00e9 Alsacienne d'Edition (Alsatia) S. A.",
             "normalizedName": "Soci\u00e9t\u00e9 Alsacienne d\u2019\u00c9dition",
             "wikidataId": "Q13142475",
+            "publisherType": null,
             "placeId": 4,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1296,8 +762,10 @@
             "nameOnPlay": "Soci\u00e9t\u00e9 Alsacienne d'Edition (Alsatia) S. A.",
             "normalizedName": "Soci\u00e9t\u00e9 Alsacienne d\u2019\u00c9dition",
             "wikidataId": "Q13142475",
+            "publisherType": null,
             "placeId": 4,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1306,8 +774,10 @@
             "nameOnPlay": "Soci\u00e9t\u00e9 Alsacienne d'\u00c9dition (Alsatia) S. A., Colmar",
             "normalizedName": "Soci\u00e9t\u00e9 Alsacienne d\u2019\u00c9dition",
             "wikidataId": "Q13142475",
+            "publisherType": null,
             "placeId": 4,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1316,8 +786,10 @@
             "nameOnPlay": "Soci\u00e9t\u00e9 Alsacienne d'\u00c9dition (Alsatia) S. A., Colmar",
             "normalizedName": "Soci\u00e9t\u00e9 Alsacienne d\u2019\u00c9dition",
             "wikidataId": "Q13142475",
+            "publisherType": null,
             "placeId": 4,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1326,8 +798,10 @@
             "nameOnPlay": "Soci\u00e9t\u00e9 Alsacienne d'\u00c9dition (Alsatia), Colmar",
             "normalizedName": "Soci\u00e9t\u00e9 Alsacienne d\u2019\u00c9dition",
             "wikidataId": "Q13142475",
+            "publisherType": null,
             "placeId": 4,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1336,8 +810,10 @@
             "nameOnPlay": "Soci\u00e9t\u00e9 Alsacienne d'Edtion \u201eAlsatia\u201c S. A.",
             "normalizedName": "Soci\u00e9t\u00e9 Alsacienne d\u2019\u00c9dition",
             "wikidataId": "Q13142475",
+            "publisherType": null,
             "placeId": 4,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1346,8 +822,10 @@
             "nameOnPlay": "Soci\u00e9t\u00e9 d'\u00e9dition Alsatia S.A.",
             "normalizedName": "Soci\u00e9t\u00e9 Alsacienne d\u2019\u00c9dition",
             "wikidataId": "Q13142475",
+            "publisherType": null,
             "placeId": 4,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1356,8 +834,10 @@
             "nameOnPlay": "Druck von J. H. Ed. Heitz (Heitz & M\u00fcndel), Stra\u00dfburg",
             "normalizedName": "J. H. Ed. Heitz (Heitz & M\u00fcndel)",
             "wikidataId": "Q110409759",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1366,8 +846,10 @@
             "nameOnPlay": "J. H. Ed. Heitz (Heitz & M\u00fcndel), Stra\u00dfburg",
             "normalizedName": "J. H. Ed. Heitz (Heitz & M\u00fcndel)",
             "wikidataId": "Q110409759",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1376,8 +858,10 @@
             "nameOnPlay": "J. H. Ed. Heitz (Heitz & M\u00fcndel), Stra\u00dfburg",
             "normalizedName": "J. H. Ed. Heitz (Heitz & M\u00fcndel)",
             "wikidataId": "Q110409759",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1386,8 +870,10 @@
             "nameOnPlay": "J. H. Ed. Heitz (Heitz & M\u00fcndel), Stra\u00dfburg",
             "normalizedName": "J. H. Ed. Heitz (Heitz & M\u00fcndel)",
             "wikidataId": "Q110409759",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1396,8 +882,10 @@
             "nameOnPlay": "J. H. Ed. Heitz (Heitz & M\u00fcndel), Stra\u00dfburg",
             "normalizedName": "J. H. Ed. Heitz (Heitz & M\u00fcndel)",
             "wikidataId": "Q110409759",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1406,8 +894,10 @@
             "nameOnPlay": "J. H. Ed. Heitz (Heitz & M\u00fcndel), Stra\u00dfburg",
             "normalizedName": "J. H. Ed. Heitz (Heitz & M\u00fcndel)",
             "wikidataId": "Q110409759",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1416,8 +906,10 @@
             "nameOnPlay": "J. H. Ed. Heitz (Heitz & M\u00fcndel), Stra\u00dfburg",
             "normalizedName": "J. H. Ed. Heitz (Heitz & M\u00fcndel)",
             "wikidataId": "Q110409759",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1426,8 +918,10 @@
             "nameOnPlay": "J. H. Ed. Heitz (Heitz & M\u00fcndel), Stra\u00dfburg",
             "normalizedName": "J. H. Ed. Heitz (Heitz & M\u00fcndel)",
             "wikidataId": "Q110409759",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1436,8 +930,10 @@
             "nameOnPlay": "J. H. Ed. Heitz.",
             "normalizedName": "J. H. Ed. Heitz (Heitz & M\u00fcndel)",
             "wikidataId": "Q110409759",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1446,8 +942,10 @@
             "nameOnPlay": "Buckdruckerei von Wwe. J. B. Jung",
             "normalizedName": "J. B. Jung",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 4,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1456,8 +954,10 @@
             "nameOnPlay": "Buchdruckerei von J. B. Jung.",
             "normalizedName": "J. B. Jung",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 4,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1466,8 +966,10 @@
             "nameOnPlay": "Buchdruckerei von J. B. Jung.",
             "normalizedName": "J. B. Jung",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 4,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1476,8 +978,10 @@
             "nameOnPlay": "Buchdruckerei von Wwe J. B. Jung.",
             "normalizedName": "J. B. Jung",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 4,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1486,8 +990,10 @@
             "nameOnPlay": "Buchdruckerei und Lithographie von J. B. Jung % Cie.",
             "normalizedName": "J. B. Jung",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 4,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1496,8 +1002,10 @@
             "nameOnPlay": "Salvator Verlag M\u00fclhausen",
             "normalizedName": "Salvator-Verlag",
             "wikidataId": "Q3470363",
+            "publisherType": null,
             "placeId": 8,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1506,8 +1014,10 @@
             "nameOnPlay": "Salvator Verlag M\u00fclhausen",
             "normalizedName": "Salvator-Verlag",
             "wikidataId": "Q3470363",
+            "publisherType": null,
             "placeId": 8,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1516,8 +1026,10 @@
             "nameOnPlay": "Salvator-Verlag M\u00falhausen",
             "normalizedName": "Salvator-Verlag",
             "wikidataId": "Q3470363",
+            "publisherType": null,
             "placeId": 8,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1526,8 +1038,10 @@
             "nameOnPlay": "Salvator-Verlag M\u00falhausen",
             "normalizedName": "Salvator-Verlag",
             "wikidataId": "Q3470363",
+            "publisherType": null,
             "placeId": 8,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1536,8 +1050,10 @@
             "nameOnPlay": "Salvator-Verlag M\u00falhausen 409",
             "normalizedName": "Salvator-Verlag",
             "wikidataId": "Q3470363",
+            "publisherType": null,
             "placeId": 8,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1546,8 +1062,10 @@
             "nameOnPlay": "Verlag des Els\u00e4ssischen Theaters Strassburg",
             "normalizedName": "Verlag des Els\u00e4ssischen Theaters Strassburg",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1556,8 +1074,10 @@
             "nameOnPlay": "Verlag des Els\u00e4ssischen Theaters Stra\u00dfburg",
             "normalizedName": "Verlag des Els\u00e4ssischen Theaters Strassburg",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1566,8 +1086,10 @@
             "nameOnPlay": "Verlag des Els\u00e4ssischen Theaters Stra\u00dfburg, Druck von Gebr. Riedel (B\u00fcrger-Zeitung), Stra\u00dfburg",
             "normalizedName": "Verlag des Els\u00e4ssischen Theaters Strassburg",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1576,8 +1098,10 @@
             "nameOnPlay": "Imprimerie de la Bourse, Strasbourg",
             "normalizedName": "Imprimerie de la Bourse",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1586,8 +1110,10 @@
             "nameOnPlay": "Verlag von G. Bisey, M\u00fchlhausen",
             "normalizedName": "G. Bisey",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 8,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1596,8 +1122,10 @@
             "nameOnPlay": "Buchdr. R. Schultz & Comp.",
             "normalizedName": "Buchdr. R. Schultz & Comp.",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1606,8 +1134,10 @@
             "nameOnPlay": "Druck und Verlag von R. Schultz und Comp.",
             "normalizedName": "Buchdr. R. Schultz & Comp.",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1616,8 +1146,10 @@
             "nameOnPlay": "Theater & Musikverlag Rouffach Imprimerie Keller-Immele",
             "normalizedName": "Theater & Musikverlag Rouffach",
             "wikidataId": "Q110410196",
+            "publisherType": null,
             "placeId": 3,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1626,8 +1158,10 @@
             "nameOnPlay": "Theater Verlag  Rouffach, Imprimerie J. Keller-Immel\u00e9",
             "normalizedName": "Theater & Musikverlag Rouffach",
             "wikidataId": "Q110410196",
+            "publisherType": null,
             "placeId": 3,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1636,8 +1170,10 @@
             "nameOnPlay": "Theater- und Musik-Verlag, Rouffach, Iprimerie Keller-Immel\u00e9",
             "normalizedName": "Theater & Musikverlag Rouffach",
             "wikidataId": "Q110410196",
+            "publisherType": null,
             "placeId": 3,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1646,8 +1182,10 @@
             "nameOnPlay": "Imprimerie J. Keller-Immerl\u00e9, Rouffach",
             "normalizedName": "Theater & Musikverlag Rouffach",
             "wikidataId": "Q110410196",
+            "publisherType": null,
             "placeId": 3,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1656,8 +1194,10 @@
             "nameOnPlay": "Verlag von Paul Schweikhardt, Stra\u00dfburg",
             "normalizedName": "Paul Schweikhardt",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1666,8 +1206,10 @@
             "nameOnPlay": "Verlag von Paul Schweikhardt, Stra\u00dfburg",
             "normalizedName": "Paul Schweikhardt",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1676,8 +1218,10 @@
             "nameOnPlay": "Kommissionsverlag von Josef Singer, Verlagsbuchhandlung",
             "normalizedName": "Kommissionsverlag von Josef Singer, Verlagsbuchhandlung",
             "wikidataId": "Q108806778",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1686,8 +1230,10 @@
             "nameOnPlay": "Verlag von Josef Singer",
             "normalizedName": "Kommissionsverlag von Josef Singer, Verlagsbuchhandlung",
             "wikidataId": "Q108806778",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1696,8 +1242,10 @@
             "nameOnPlay": "Druck u. Commissionsverlag von A. Bartl, Schiltigheim",
             "normalizedName": "A. Bartl",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 1,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1706,8 +1254,10 @@
             "nameOnPlay": "A. Bartl.",
             "normalizedName": "A. Bartl",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 1,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1716,8 +1266,10 @@
             "nameOnPlay": "Herausgebeben von Jul. Schies Gesellenpr\u00e4ses. Selbstverlag des Herausgebers, Stra\u00dfburg",
             "normalizedName": "Jul. Schies (Selbstverlag)",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1726,8 +1278,10 @@
             "nameOnPlay": "Druck und Verlag: Imprimerie du Nouveau Journal de Strasboug S. \u00e0. r. l.",
             "normalizedName": "Imprimerie du Nouveau Journal de Strasbourg, S.\u00e0.r.l",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1736,8 +1290,10 @@
             "nameOnPlay": "Imprimerie du Nouveau Journal de Strasbourg, S.\u00e0.r.l, Strasbourg",
             "normalizedName": "Imprimerie du Nouveau Journal de Strasbourg, S.\u00e0.r.l",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1746,8 +1302,10 @@
             "nameOnPlay": "Imprimerie du Nouveau Journal de Strasbourg, S.\u00e0.r.l, Strasbourg",
             "normalizedName": "Imprimerie du Nouveau Journal de Strasbourg, S.\u00e0.r.l",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1756,8 +1314,10 @@
             "nameOnPlay": "Buchdrukerei S. Brunschweig in Rappoltsweiler (Ober-Elsa\u00df)",
             "normalizedName": "S. Brunschweig",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 7,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1766,8 +1326,10 @@
             "nameOnPlay": "Buchdruckerei von J. Brinkmann, M\u00fchlhausen i. E.",
             "normalizedName": "Buchdruckerei von J. Brinkmann, M\u00fchlhausen i. E.",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 8,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1776,8 +1338,10 @@
             "nameOnPlay": "Buchdruckerei von J. Brinkmann, M\u00fchlhausen i. E.",
             "normalizedName": "Buchdruckerei von J. Brinkmann, M\u00fchlhausen i. E.",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 8,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1786,8 +1350,10 @@
             "nameOnPlay": "Imprimerie J. Brinkmann.",
             "normalizedName": "Buchdruckerei von J. Brinkmann, M\u00fchlhausen i. E.",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 8,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1796,8 +1362,10 @@
             "nameOnPlay": "Verlag von A. Schneider, Kleberplatz, 17, Stra\u00dfburg",
             "normalizedName": "A. Schneider",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1806,8 +1374,10 @@
             "nameOnPlay": "Druck von E. Gottlieb, Schiltigheim",
             "normalizedName": "E. Gottlieb",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 1,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1816,8 +1386,10 @@
             "nameOnPlay": "Geesetzt un gedruckt au grand galop bym Gottlieb in Schilke (Schiltigheim)",
             "normalizedName": "E. Gottlieb",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 1,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1826,8 +1398,10 @@
             "nameOnPlay": "E. Gottlieb",
             "normalizedName": "E. Gottlieb",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 1,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1836,8 +1410,10 @@
             "nameOnPlay": "Imprimerie A. Willm \u2013 Niderbronn-les-Bains",
             "normalizedName": "A. Willm",
             "wikidataId": "Q110438178",
+            "publisherType": null,
             "placeId": 2,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1846,8 +1422,10 @@
             "nameOnPlay": "Karl J. Tr\u00fcbner",
             "normalizedName": "Karl J. Tr\u00fcbner",
             "wikidataId": "Q3193477",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1856,8 +1434,10 @@
             "nameOnPlay": "Druck und Verlag der Neuen Stra\u00dfburger Verlagsanstalt G. m. b. H. (Stra\u00dfburger Neue Zeitung)",
             "normalizedName": "Neue Stra\u00dfburger Verlagsanstalt G. m. b. H. (Stra\u00dfburger Neue Zeitung)",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1866,8 +1446,10 @@
             "nameOnPlay": "Elsassische Aktien-Gesellschaft f\u00fcr Buchhandel und Publicit\u00e4t, vormals A. Ammel",
             "normalizedName": "Elsassische Aktien-Gesellschaft f\u00fcr Buchhandel und Publicit\u00e4t, vormals A. Ammel",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1876,8 +1458,10 @@
             "nameOnPlay": "G. L. Schuler",
             "normalizedName": "G. L. Schuler",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1886,8 +1470,10 @@
             "nameOnPlay": "S. K\u00f6nig",
             "normalizedName": "S. K\u00f6nig",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 10,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1896,8 +1482,10 @@
             "nameOnPlay": "Ph. H. Dannbach, Schildgasse N* 1.",
             "normalizedName": "Ph. H. Dannbach",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1906,8 +1494,10 @@
             "nameOnPlay": "Buchdruckerei und Lithographie von Camille Decker",
             "normalizedName": "Camille Decker",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 4,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1916,8 +1506,10 @@
             "nameOnPlay": "C. Decker.",
             "normalizedName": "Camille Decker",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 4,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1926,8 +1518,10 @@
             "nameOnPlay": "Imprimerie et lithographie de Camille Decker",
             "normalizedName": "Camille Decker",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 4,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1936,8 +1530,10 @@
             "nameOnPlay": "Tirage \u00e0 part des \"Affiches de Strasbourg\" de 1842. Nos 30-45",
             "normalizedName": "Tirage \u00e0 part des \"Affiches de Strasbourg\" de 1842. Nos 30-45",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1946,8 +1542,10 @@
             "nameOnPlay": "Buchdruckerei von Fr. Posth, Kr\u00e4mergasse, 34.",
             "normalizedName": "Fr. Posth",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 11,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1956,8 +1554,10 @@
             "nameOnPlay": "G. Silbermann, Thomasplatz, 3.",
             "normalizedName": "G. Silbermann",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1966,8 +1566,10 @@
             "nameOnPlay": "Buchdruckerei von L. L. Bader.",
             "normalizedName": "L. L. Bader",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 8,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1976,8 +1578,10 @@
             "nameOnPlay": "J. P. Risler u. Komp.",
             "normalizedName": "J. P. Risler u. Komp.",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 8,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1986,8 +1590,10 @@
             "nameOnPlay": "Eug. Barth",
             "normalizedName": "Eug. Barth",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 4,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -1996,8 +1602,10 @@
             "nameOnPlay": "Eugen Barth, Buchh\u00e4ndler. Langegasse.",
             "normalizedName": "Eug. Barth",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 4,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2006,8 +1614,10 @@
             "nameOnPlay": "J. Noiriel, Buchh\u00e4ndler, Schlossergasse",
             "normalizedName": "J. Noiriel",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2016,8 +1626,10 @@
             "nameOnPlay": "J. Noiriel's Buchhandlung.",
             "normalizedName": "J. Noiriel",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2026,8 +1638,10 @@
             "nameOnPlay": "Ad. Christophe, Fischmarktplatz 11.",
             "normalizedName": "Ad. Christophe",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2036,8 +1650,10 @@
             "nameOnPlay": "Imprimerie Veuve Bader & Cie.",
             "normalizedName": "Imprimerie Veuve Bader & Cie.",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 8,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2046,8 +1662,10 @@
             "nameOnPlay": "Vve Bader & Cie.",
             "normalizedName": "Imprimerie Veuve Bader & Cie.",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 8,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2056,8 +1674,10 @@
             "nameOnPlay": "A. Dusch",
             "normalizedName": "A. Dusch",
             "wikidataId": "Q107057347",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2066,8 +1686,10 @@
             "nameOnPlay": "Imprimerie Brustlein & Cie.",
             "normalizedName": "Imprimerie Brustlein & Cie.",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 8,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2076,8 +1698,10 @@
             "nameOnPlay": "Buchdruckerei von Ed. Schultheiss",
             "normalizedName": "Ed. Schultheiss",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 12,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2086,8 +1710,10 @@
             "nameOnPlay": "Lith. B. Lampert",
             "normalizedName": "Lith. B. Lampert.",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 8,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2096,8 +1722,10 @@
             "nameOnPlay": "K. J. Wyss",
             "normalizedName": "K. J. Wyss",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 13,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2106,8 +1734,10 @@
             "nameOnPlay": "Druck und Verlag von Ed. Hubert. M\u00fcnstergasse 16.",
             "normalizedName": "Ed. Hubert",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2116,8 +1746,10 @@
             "nameOnPlay": "Buchdruckerei des \"Elsass\". G. Dollmetsch.",
             "normalizedName": "Buchdruckerei des \"Elsass\". G. Dollmetsch.",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2126,8 +1758,10 @@
             "nameOnPlay": "Liebermann u. Cie.",
             "normalizedName": "Liebermann u. Cie.",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 14,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2136,8 +1770,10 @@
             "nameOnPlay": "Druck. vorm. G. Fischbach. Strassburg.",
             "normalizedName": "G. Fischbach",
             "wikidataId": "Q44036027",
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2146,8 +1782,10 @@
             "nameOnPlay": "Buch- und Steindruckerei H. Marchal & Cie.",
             "normalizedName": "Buch- und Steindruckerei H. Marchal & Cie.",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 15,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2156,8 +1794,10 @@
             "nameOnPlay": "F. Sutter.",
             "normalizedName": "F. Sutter",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 16,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2166,8 +1806,10 @@
             "nameOnPlay": "Lith. J. Husser, Colmar",
             "normalizedName": "J. Husser",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 4,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2176,8 +1818,10 @@
             "nameOnPlay": "Druck und Verlag von Charles Bahy.",
             "normalizedName": "Charles Bahy",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 8,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2186,8 +1830,10 @@
             "nameOnPlay": "J. Nawratil.",
             "normalizedName": "J. Nawratil",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 8,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2196,8 +1842,10 @@
             "nameOnPlay": "Luckhardt.",
             "normalizedName": "Luckhardt",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 17,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2206,8 +1854,10 @@
             "nameOnPlay": "Ludolf Beust",
             "normalizedName": "Ludolf Beust",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2216,8 +1866,10 @@
             "nameOnPlay": "Albert Geis",
             "normalizedName": "Albert Geis",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 8,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2226,8 +1878,10 @@
             "nameOnPlay": "Von Eduard van Hauten",
             "normalizedName": "Von Eduard van Hauten",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2236,8 +1890,10 @@
             "nameOnPlay": "Ed. de la litt\u00e9rature populaire",
             "normalizedName": "Ed. de la litt\u00e9rature populaire",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 8,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2246,8 +1902,10 @@
             "nameOnPlay": "Buchdruckerei von K. Hau\u00df",
             "normalizedName": "K. Hau\u00df",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2256,8 +1914,10 @@
             "nameOnPlay": "Soci\u00e9t\u00e9 als. d'\u00e9dition \"Alsatia\" S. A. Guebwiller",
             "normalizedName": "Soci\u00e9t\u00e9 als. d'\u00e9dition \"Alsatia\" S. A. Guebwiller",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 18,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2266,8 +1926,10 @@
             "nameOnPlay": "L. Klotz, \u00c9diteur",
             "normalizedName": "L. Klotz",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 19,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2276,8 +1938,10 @@
             "nameOnPlay": "Druck von Friedrich Carl Heitz, Schlauchgasse 5.",
             "normalizedName": "Friedrich Cark Heitz",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2286,8 +1950,10 @@
             "nameOnPlay": "Imprimerie de l'orphelinat de Don Bosco, 288 Rue Notre-Dame, 288",
             "normalizedName": "Imprimerie de l'orphelinat de Don Bosco",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 20,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2296,8 +1962,10 @@
             "nameOnPlay": "Charles Klotz \u00e9diteur, 35 rue Bonaparte, 35",
             "normalizedName": "Charles Klotz",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 19,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2306,8 +1974,10 @@
             "nameOnPlay": "Soci\u00e9t\u00e9 d'\u00e9dition de la Basse-Alsace, L'Alsacien",
             "normalizedName": "Soci\u00e9t\u00e9 d'\u00e9dition de la Basse-Alsace, L'Alsacien",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2316,8 +1986,10 @@
             "nameOnPlay": "Imprimerie et Lithographie de A. Jollet, rue des armuries",
             "normalizedName": "A. Jollet",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 21,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2326,8 +1998,10 @@
             "nameOnPlay": "\u00c9dition de l'Horizon",
             "normalizedName": "\u00c9dition de l'Horizon",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
             "notes": null
         },
         {
@@ -2336,8 +2010,2062 @@
             "nameOnPlay": "J. Lefftz und E. Marckwald",
             "normalizedName": "Lefftz & Marckwald",
             "wikidataId": null,
+            "publisherType": null,
             "placeId": 6,
             "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 1,
+            "lang": "ger",
+            "nameOnPlay": "Ferdinand Reichardt & Co.",
+            "normalizedName": "Reichardt",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 2,
+            "lang": "ger",
+            "nameOnPlay": "A. Bahn & Comp.",
+            "normalizedName": "Bahn",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": "printer not publisher",
+            "notes": null
+        },
+        {
+            "publisherId": 3,
+            "lang": "ger",
+            "nameOnPlay": "J. Draeger",
+            "normalizedName": "Draeger",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": "printer not publisher",
+            "notes": null
+        },
+        {
+            "publisherId": 4,
+            "lang": "ger",
+            "nameOnPlay": "Cosmar und Krause",
+            "normalizedName": "Cosmar & Krause",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 5,
+            "lang": "ger",
+            "nameOnPlay": "A. W. Hayn",
+            "normalizedName": "Hayn",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 6,
+            "lang": "ger",
+            "nameOnPlay": "Eduard Bloch",
+            "normalizedName": "Bloch",
+            "wikidataId": "Q1288037",
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": "Eduard Bloch and Felix Bloch Erben are the same publishing house: https://de.wikipedia.org/wiki/Theatersammlung_Bloch",
+            "notes": null
+        },
+        {
+            "publisherId": 6,
+            "lang": "ger",
+            "nameOnPlay": "Felix Bloch Erben",
+            "normalizedName": "Bloch",
+            "wikidataId": "Q1403355",
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 7,
+            "lang": "ger",
+            "nameOnPlay": "Philipp Reclam jun.",
+            "normalizedName": "Reclam",
+            "wikidataId": "Q214632",
+            "publisherType": null,
+            "placeId": 3,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 8,
+            "lang": "ger",
+            "nameOnPlay": "L. Kolbe",
+            "normalizedName": "Kolbe",
+            "wikidataId": "Q95338287",
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 9,
+            "lang": "ger",
+            "nameOnPlay": "K\u00fchling & G\u00fcttner",
+            "normalizedName": "K\u00fchling",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 10,
+            "lang": "ger",
+            "nameOnPlay": "Michaelson",
+            "normalizedName": "Michaelson",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 11,
+            "lang": "ger",
+            "nameOnPlay": "Oswald Mutze",
+            "normalizedName": "Mutze",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 3,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 12,
+            "lang": "ger",
+            "nameOnPlay": "A. Entsch",
+            "normalizedName": "Entsch",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 13,
+            "lang": "ger",
+            "nameOnPlay": "Ahn und Simrock",
+            "normalizedName": "Ahn",
+            "wikidataId": "Q402136",
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 14,
+            "lang": "ger",
+            "nameOnPlay": "Josef Weinberger",
+            "normalizedName": "Weinberger",
+            "wikidataId": "Q57721296",
+            "publisherType": null,
+            "placeId": 3,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 15,
+            "lang": "ger",
+            "nameOnPlay": "Aug. Weisbrod",
+            "normalizedName": "Weisbrod",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 20,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 16,
+            "lang": "ger",
+            "nameOnPlay": "Vertriebsstelle und Verlag Deutscher B\u00fchnenschriftsteller und B\u00fchnenkomponisten",
+            "normalizedName": "VVB",
+            "wikidataId": "Q2519173",
+            "publisherType": null,
+            "placeId": 26,
+            "coord": null,
+            "comments": "https://de.wikipedia.org/wiki/Vertriebsstelle_und_Verlag_Deutscher_B%C3%BChnenschriftsteller_und_B%C3%BChnenkomponisten",
+            "notes": null
+        },
+        {
+            "publisherId": 17,
+            "lang": "ger",
+            "nameOnPlay": "Adolf Bonz & Comp.",
+            "normalizedName": "Bonz",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 8,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 18,
+            "lang": "ger",
+            "nameOnPlay": "L. Pabst",
+            "normalizedName": "Pabst",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 6,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 19,
+            "lang": "ger",
+            "nameOnPlay": "Adolph W. K\u00fcnast",
+            "normalizedName": "K\u00fcnast",
+            "wikidataId": "Q55678104",
+            "publisherType": null,
+            "placeId": 13,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 20,
+            "lang": "ger",
+            "nameOnPlay": "Drei Masken Verlag",
+            "normalizedName": "Masken",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 14,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 21,
+            "lang": "ger",
+            "nameOnPlay": "Fr. Al. Grund",
+            "normalizedName": "Grund",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 13,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 22,
+            "lang": "ger",
+            "nameOnPlay": "J. B. Wallishausser",
+            "normalizedName": "Wallishausser",
+            "wikidataId": "Q90897389",
+            "publisherType": null,
+            "placeId": 13,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 23,
+            "lang": "ger",
+            "nameOnPlay": "Carl Friederich",
+            "normalizedName": "Friederich",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 20,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 24,
+            "lang": "ger",
+            "nameOnPlay": "Johann David Sauerl\u00e4nder",
+            "normalizedName": "Sauerl\u00e4nder",
+            "wikidataId": "Q29951250",
+            "publisherType": null,
+            "placeId": 20,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 25,
+            "lang": "ger",
+            "nameOnPlay": "Hartlebens Verlag",
+            "normalizedName": "Hartleben",
+            "wikidataId": "Q278706",
+            "publisherType": null,
+            "placeId": 15,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 26,
+            "lang": "ger",
+            "nameOnPlay": "Johann Georg M\u00f6\u00dfle",
+            "normalizedName": "M\u00f6\u00dfle",
+            "wikidataId": "Q98951659",
+            "publisherType": null,
+            "placeId": 13,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 27,
+            "lang": "ger",
+            "nameOnPlay": "A. Hofmann & Comp",
+            "normalizedName": "Hofmann",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 28,
+            "lang": "ger",
+            "nameOnPlay": "Heinrich Philipp Petri",
+            "normalizedName": "Petri",
+            "wikidataId": "Q94916073",
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 29,
+            "lang": "ger",
+            "nameOnPlay": "Aufbau",
+            "normalizedName": "Aufbau Verlag",
+            "wikidataId": "Q316922",
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 30,
+            "lang": "ger",
+            "nameOnPlay": "Magazin f\u00fcr Buchhandel, Musik und Kunst",
+            "normalizedName": "Magazin",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 26,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 31,
+            "lang": "ger",
+            "nameOnPlay": "Eduard Kummer",
+            "normalizedName": "Kummer",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 3,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 31,
+            "lang": "ger",
+            "nameOnPlay": "Paul Gotthelf Kummer",
+            "normalizedName": "Kummer",
+            "wikidataId": "Q23061020",
+            "publisherType": null,
+            "placeId": 3,
+            "coord": null,
+            "comments": "Eduard Kummer and Paul Kummer are the same publishing house: https://de.wikipedia.org/wiki/Paul_Gotthelf_Kummer",
+            "notes": null
+        },
+        {
+            "publisherId": 32,
+            "lang": "ger",
+            "nameOnPlay": "Franz Varrentrapp",
+            "normalizedName": "Varrentrapp",
+            "wikidataId": "Q63349101",
+            "publisherType": null,
+            "placeId": 20,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 33,
+            "lang": "ger",
+            "nameOnPlay": "Johann Andreas Kranzb\u00fchler",
+            "normalizedName": "Kranzb\u00fchler",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 45,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 34,
+            "lang": "ger",
+            "nameOnPlay": "Eduard Frantzen",
+            "normalizedName": "Frantzen",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 3,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 35,
+            "lang": "ger",
+            "nameOnPlay": "Max Simson",
+            "normalizedName": "Simson",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 36,
+            "lang": "ger",
+            "nameOnPlay": "Matthias Andreas Schmidt",
+            "normalizedName": "M-A. Schmidt",
+            "wikidataId": "Q61198402",
+            "publisherType": null,
+            "placeId": 13,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 37,
+            "lang": "ger",
+            "nameOnPlay": "Hoffman u. Campe",
+            "normalizedName": "Hoffmann & Campe",
+            "wikidataId": "Q2152124",
+            "publisherType": null,
+            "placeId": 26,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 38,
+            "lang": "ger",
+            "nameOnPlay": "W. G. Korn",
+            "normalizedName": "Korn",
+            "wikidataId": "Q2572862",
+            "publisherType": null,
+            "placeId": 59,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 39,
+            "lang": "ger",
+            "nameOnPlay": "Stageschen Buchhandlung",
+            "normalizedName": "Stage",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 3,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 40,
+            "lang": "ger",
+            "nameOnPlay": "Crazischen Buchhandlung",
+            "normalizedName": "Craz & Gerlach",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 60,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 41,
+            "lang": "ger",
+            "nameOnPlay": "K\u00f6niglich-Schwedische priviligierte Buchdruckerei",
+            "normalizedName": "Elias Holwein",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 61,
+            "coord": null,
+            "comments": "Holwein founded the Verlag https://de.wikipedia.org/wiki/Elias_Holwein",
+            "notes": null
+        },
+        {
+            "publisherId": 42,
+            "lang": "ger",
+            "nameOnPlay": "Gottfried Vollmer",
+            "normalizedName": "Vollmer",
+            "wikidataId": "Q26741033",
+            "publisherType": null,
+            "placeId": 26,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 43,
+            "lang": "ger",
+            "nameOnPlay": "Johann Wilhelm Schmidt",
+            "normalizedName": "J-W. Schmidt",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 44,
+            "lang": "ger",
+            "nameOnPlay": "J. A. Kienreich",
+            "normalizedName": "Kienreich",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 64,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 45,
+            "lang": "ger",
+            "nameOnPlay": "Johann Friedrich Wei\u00df",
+            "normalizedName": "Wei\u00df",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 46,
+            "lang": "ger",
+            "nameOnPlay": "C.J.G. Hartmann",
+            "normalizedName": "Hartmann",
+            "wikidataId": "Q54506904",
+            "publisherType": null,
+            "placeId": 3,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 47,
+            "lang": "ger",
+            "nameOnPlay": "Vereinsbuchhandlung",
+            "normalizedName": "Vereinsbuchhandlung",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 48,
+            "lang": "ger",
+            "nameOnPlay": "Maurerschen Buchhandlung",
+            "normalizedName": "Maurer",
+            "wikidataId": "Q109713090",
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 49,
+            "lang": "ger",
+            "nameOnPlay": "Karl August Wilhelm Schmidt",
+            "normalizedName": "K-A-W. Schmidt",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 50,
+            "lang": "ger",
+            "nameOnPlay": "Adolph Friedrich von Sch\u00fctz",
+            "normalizedName": "Sch\u00fctz",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 66,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 51,
+            "lang": "ger",
+            "nameOnPlay": "Dykiche Buchhandlung",
+            "normalizedName": "Dyk",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 3,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 52,
+            "lang": "ger",
+            "nameOnPlay": "Sch\u00fcppelche Buchhandlung",
+            "normalizedName": "Sch\u00fcppel",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 53,
+            "lang": "ger",
+            "nameOnPlay": "Engelmannsche Officin",
+            "normalizedName": "Engelmann",
+            "wikidataId": "Q1706928",
+            "publisherType": null,
+            "placeId": 68,
+            "coord": null,
+            "comments": "Joseph Engelmanns Verlag https://de.wikipedia.org/wiki/Joseph_Engelmann",
+            "notes": null
+        },
+        {
+            "publisherId": 54,
+            "lang": "ger",
+            "nameOnPlay": "J.G. Trassler",
+            "normalizedName": "Tra\u00dfler",
+            "wikidataId": "Q12026166",
+            "publisherType": null,
+            "placeId": 41,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 55,
+            "lang": "ger",
+            "nameOnPlay": "Florian Kupferberg",
+            "normalizedName": "Kupferberg",
+            "wikidataId": "Q55844506",
+            "publisherType": null,
+            "placeId": 69,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 56,
+            "lang": "ger",
+            "nameOnPlay": "Wilhelm Lauffer",
+            "normalizedName": "Lauffer",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 3,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 57,
+            "lang": "ger",
+            "nameOnPlay": "F. H. Morin",
+            "normalizedName": "Morin",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 58,
+            "lang": "ger",
+            "nameOnPlay": "F. Tendler Buchh\u00e4ndler",
+            "normalizedName": "Tendler",
+            "wikidataId": "Q55902400",
+            "publisherType": null,
+            "placeId": 13,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 59,
+            "lang": "ger",
+            "nameOnPlay": "S. M\u00fcller'schen Buchhandlung",
+            "normalizedName": "M\u00fcller",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 69,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 60,
+            "lang": "ger",
+            "nameOnPlay": "B. S. Berendsohn",
+            "normalizedName": "Berendsohn",
+            "wikidataId": "Q108814867",
+            "publisherType": null,
+            "placeId": 26,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 61,
+            "lang": "ger",
+            "nameOnPlay": "Schmid'sche Buchhandlung",
+            "normalizedName": "Schmid",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 75,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 62,
+            "lang": "ger",
+            "nameOnPlay": "Georg Franz",
+            "normalizedName": "Franz",
+            "wikidataId": "Q124337316",
+            "publisherType": null,
+            "placeId": 14,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 63,
+            "lang": "ger",
+            "nameOnPlay": "Gottlieb Haase S\u00f6hne",
+            "normalizedName": "Haase",
+            "wikidataId": "Q62415641",
+            "publisherType": null,
+            "placeId": 76,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 64,
+            "lang": "ger",
+            "nameOnPlay": "Franz Riedl's Wittwe & Sohn",
+            "normalizedName": "Riedl",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 13,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 65,
+            "lang": "ger",
+            "nameOnPlay": "L. W. Seidel",
+            "normalizedName": "Seidel",
+            "wikidataId": "Q1354946",
+            "publisherType": null,
+            "placeId": 13,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 66,
+            "lang": "ger",
+            "nameOnPlay": "Litfa\u00df",
+            "normalizedName": "Litfa\u00df",
+            "wikidataId": "Q90732",
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 67,
+            "lang": "ger",
+            "nameOnPlay": "Ulrich Klopf u. Alexander Eurich",
+            "normalizedName": "Klopf & Eurich",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 13,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 68,
+            "lang": "ger",
+            "nameOnPlay": "Sturm und Koppe",
+            "normalizedName": "Sturm & Koppe",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 3,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 69,
+            "lang": "ger",
+            "nameOnPlay": "Heinrich Hogrefe",
+            "normalizedName": "Hogrefe",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 79,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 70,
+            "lang": "ger",
+            "nameOnPlay": "F. Fridrich",
+            "normalizedName": "Fridrich",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 13,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 71,
+            "lang": "ger",
+            "nameOnPlay": "M. Lell",
+            "normalizedName": "Lell",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 13,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 72,
+            "lang": "ger",
+            "nameOnPlay": "C. Scriba",
+            "normalizedName": "Scriba",
+            "wikidataId": "Q22693898",
+            "publisherType": null,
+            "placeId": 80,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 73,
+            "lang": "ger",
+            "nameOnPlay": "Fr. F\u00f6rster und C. Bartelmus",
+            "normalizedName": "F\u00f6rster & Bartelmus",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 13,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 74,
+            "lang": "ger",
+            "nameOnPlay": "Selbstverlag des Verfassers",
+            "normalizedName": "Selbstverlag",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 76,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 75,
+            "lang": "ger",
+            "nameOnPlay": "Leopold Sommer",
+            "normalizedName": "Sommer",
+            "wikidataId": "Q94931614",
+            "publisherType": null,
+            "placeId": 13,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 76,
+            "lang": "ger",
+            "nameOnPlay": "Meinhold",
+            "normalizedName": "Meinhold & S\u00f6hne",
+            "wikidataId": "Q105047924",
+            "publisherType": null,
+            "placeId": 81,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 77,
+            "lang": "ger",
+            "nameOnPlay": "Die Gartenlaube f\u00fcr \u00d6sterreich",
+            "normalizedName": "Gartenlaube",
+            "wikidataId": "Q105675767",
+            "publisherType": null,
+            "placeId": 64,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 78,
+            "lang": "ger",
+            "nameOnPlay": "R. Bittner",
+            "normalizedName": "Bittner",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 79,
+            "lang": "ger",
+            "nameOnPlay": "Anton Schweiger",
+            "normalizedName": "Schweiger",
+            "wikidataId": "Q112437220",
+            "publisherType": null,
+            "placeId": 13,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 80,
+            "lang": "ger",
+            "nameOnPlay": "Wilhelm Pfund",
+            "normalizedName": "Pfund",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 83,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 81,
+            "lang": "ger",
+            "nameOnPlay": "Marschner & Stephan",
+            "normalizedName": "Marschner & Stephan",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 82,
+            "lang": "ger",
+            "nameOnPlay": "Verlag Der Stahelschen Buchhandlung",
+            "normalizedName": "Stahel",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 85,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 83,
+            "lang": "ger",
+            "nameOnPlay": "Josef Kaiser",
+            "normalizedName": "Kaiser",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 13,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 84,
+            "lang": "ger",
+            "nameOnPlay": "Adler's Erben",
+            "normalizedName": "Adler",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 86,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 85,
+            "lang": "ger",
+            "nameOnPlay": "F. K\u00fchkopf",
+            "normalizedName": "K\u00fchkopf",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 87,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 86,
+            "lang": "ger",
+            "nameOnPlay": "L. Rosner",
+            "normalizedName": "Rosner",
+            "wikidataId": "Q1819808",
+            "publisherType": null,
+            "placeId": 13,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 87,
+            "lang": "ger",
+            "nameOnPlay": "Leo Liepmannssohn",
+            "normalizedName": "Liepmannssohn",
+            "wikidataId": "Q29966690",
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 88,
+            "lang": "ger",
+            "nameOnPlay": "Johann N. Vernay",
+            "normalizedName": "Vernay",
+            "wikidataId": "Q98834977",
+            "publisherType": null,
+            "placeId": 13,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 89,
+            "lang": "ger",
+            "nameOnPlay": "Jos. A. Massanetz",
+            "normalizedName": "Massanetz",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 13,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 90,
+            "lang": "ger",
+            "nameOnPlay": "Gustav Lewy",
+            "normalizedName": "Lewy",
+            "wikidataId": "Q55902799",
+            "publisherType": null,
+            "placeId": 13,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 91,
+            "lang": "ger",
+            "nameOnPlay": "Georg Stubenvoll",
+            "normalizedName": "Stubenvoll",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 13,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 92,
+            "lang": "ger",
+            "nameOnPlay": "Dr. Otto F. Eirich",
+            "normalizedName": "Eirich",
+            "wikidataId": "Q94854808",
+            "publisherType": null,
+            "placeId": 13,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 93,
+            "lang": "ger",
+            "nameOnPlay": "Arion-Verlag",
+            "normalizedName": "Arion",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": "owned by Max Leichtman",
+            "notes": null
+        },
+        {
+            "publisherId": 94,
+            "lang": "ger",
+            "nameOnPlay": "S. Fischer",
+            "normalizedName": "Fischer",
+            "wikidataId": "Q481576",
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 95,
+            "lang": "ger",
+            "nameOnPlay": "Joseph Kastner",
+            "normalizedName": "Kastner",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 90,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 96,
+            "lang": "ger",
+            "nameOnPlay": "Herold und Wahlstab",
+            "normalizedName": "Herold & Wahlstab",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 91,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 97,
+            "lang": "ger",
+            "nameOnPlay": "Johann Daniel Simon",
+            "normalizedName": "Simon",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 20,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 98,
+            "lang": "ger",
+            "nameOnPlay": "H. J. H\u00f6lscher",
+            "normalizedName": "H\u00f6lscher",
+            "wikidataId": "Q1679109",
+            "publisherType": null,
+            "placeId": 92,
+            "coord": null,
+            "comments": "founded by Hermann Joseph H\u00f6lscher",
+            "notes": null
+        },
+        {
+            "publisherId": 99,
+            "lang": "ger",
+            "nameOnPlay": "Stephani und Schlosser",
+            "normalizedName": "Stephani & Schlosser",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 76,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 100,
+            "lang": "ger",
+            "nameOnPlay": "Dunker und Humblot",
+            "normalizedName": "Duncker & Humblot",
+            "wikidataId": "Q316626",
+            "publisherType": null,
+            "placeId": 1,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 101,
+            "lang": "ger",
+            "nameOnPlay": "August Schulz",
+            "normalizedName": "Schulz",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 59,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 102,
+            "lang": "ger",
+            "nameOnPlay": "Franz Kratz",
+            "normalizedName": "Kratz",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 13,
+            "coord": null,
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 1,
+            "lang": "fre",
+            "nameOnPlay": "A. Allouard",
+            "normalizedName": "Allouard",
+            "wikidataId": null,
+            "publisherType": "\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 2,
+            "lang": "fre",
+            "nameOnPlay": "Paul Ollendorff",
+            "normalizedName": "Ollendorff",
+            "wikidataId": "Q17517389",
+            "publisherType": "\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 3,
+            "lang": "fre",
+            "nameOnPlay": "La Librairie Th\u00e9\u00e2trale",
+            "normalizedName": "Librairie Th\u00e9\u00e2trale",
+            "wikidataId": "Q3237904",
+            "publisherType": "\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 4,
+            "lang": "fre",
+            "nameOnPlay": "Beck, \u00e9diteur",
+            "normalizedName": "Beck",
+            "wikidataId": null,
+            "publisherType": "\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 5,
+            "lang": "fre",
+            "nameOnPlay": "Calmann L\u00e9vy",
+            "normalizedName": "Calmann L\u00e9vy",
+            "wikidataId": "Q2934320",
+            "publisherType": "\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": "after 1875",
+            "notes": null
+        },
+        {
+            "publisherId": 6,
+            "lang": "fre",
+            "nameOnPlay": "Michel L\u00e9vy Fr\u00e8res",
+            "normalizedName": "L\u00e9vy Fr\u00e8res",
+            "wikidataId": "Q3310248",
+            "publisherType": "\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": "1836 - 1875",
+            "notes": null
+        },
+        {
+            "publisherId": 7,
+            "lang": "fre",
+            "nameOnPlay": "Typographie de Arbieu",
+            "normalizedName": "Arbieu",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 6,
+            "coord": "48.9274390, 2.0428293",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 8,
+            "lang": "fre",
+            "nameOnPlay": "E. Dentu",
+            "normalizedName": "Dentu",
+            "wikidataId": "Q20926521",
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 9,
+            "lang": "fre",
+            "nameOnPlay": "J.-A. Lelong",
+            "normalizedName": "Maison E. Lelong",
+            "wikidataId": "Q56302959",
+            "publisherType": null,
+            "placeId": 13,
+            "coord": "50.8550018, 4.3512334",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 10,
+            "lang": "fre",
+            "nameOnPlay": "J. N. Barba",
+            "normalizedName": "Jean-Nicolas Barba",
+            "wikidataId": "Q15973482",
+            "publisherType": "\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": "1820-1839",
+            "notes": null
+        },
+        {
+            "publisherId": 11,
+            "lang": "fre",
+            "nameOnPlay": "Tresse & Stock",
+            "normalizedName": "Tresse & Stock",
+            "wikidataId": "Q42512509",
+            "publisherType": "\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": "1861 - 1896",
+            "notes": null
+        },
+        {
+            "publisherId": 12,
+            "lang": "fre",
+            "nameOnPlay": "Choudens Fils",
+            "normalizedName": "Paul de Choudens",
+            "wikidataId": "Q2063312",
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 13,
+            "lang": "fre",
+            "nameOnPlay": "P.-V. Stock",
+            "normalizedName": "Stock",
+            "wikidataId": "Q3579517",
+            "publisherType": "\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": "1896- 1921",
+            "notes": null
+        },
+        {
+            "publisherId": 14,
+            "lang": "fre",
+            "nameOnPlay": "J. Bricon",
+            "normalizedName": "Bricon",
+            "wikidataId": null,
+            "publisherType": "libraire",
+            "placeId": null,
+            "coord": null,
+            "comments": "successeur de Sarlit",
+            "notes": null
+        },
+        {
+            "publisherId": 14,
+            "lang": "fre",
+            "nameOnPlay": "J. Bricon & A. Lesot",
+            "normalizedName": "Bricon & Lesot",
+            "wikidataId": null,
+            "publisherType": "libraire-\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 15,
+            "lang": "fre",
+            "nameOnPlay": "Imprimerie Vialat et Cie.",
+            "normalizedName": "Vialat",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 41,
+            "coord": "49.6138706, 2.9174984",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 16,
+            "lang": "fre",
+            "nameOnPlay": "D. Giraud",
+            "normalizedName": "Giraud",
+            "wikidataId": null,
+            "publisherType": "libraire-\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 17,
+            "lang": "fre",
+            "nameOnPlay": "Typographie Alcan-L\u00e9vy",
+            "normalizedName": "Alcan L\u00e9vy",
+            "wikidataId": "Q117034422",
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 18,
+            "lang": "fre",
+            "nameOnPlay": "Marchant",
+            "normalizedName": "Marchant",
+            "wikidataId": null,
+            "publisherType": "\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": "\u00e9diteur du Magasin Th\u00e9\u00e2tral",
+            "notes": null
+        },
+        {
+            "publisherId": 18,
+            "lang": "fre",
+            "nameOnPlay": "Magasin Th\u00e9\u00e2tral",
+            "normalizedName": "Marchant",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 19,
+            "lang": "fre",
+            "nameOnPlay": "Imprimerie de Madame De Lacombe",
+            "normalizedName": "Lacombe",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": "Victorine de Lacombe https://data.bnf.fr/17959868/victorine_de_lacombe/",
+            "notes": null
+        },
+        {
+            "publisherId": 20,
+            "lang": "fre",
+            "nameOnPlay": "Librairie de Charles Gosselin",
+            "normalizedName": "Gosselin",
+            "wikidataId": "Q28806811",
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 21,
+            "lang": "fre",
+            "nameOnPlay": "Mifliez, libraire-\u00e9diteur",
+            "normalizedName": "Mifliez",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 22,
+            "lang": "fre",
+            "nameOnPlay": "Bourdilliat",
+            "normalizedName": "Librairie nouvelle",
+            "wikidataId": "Q60568974",
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 23,
+            "lang": "fre",
+            "nameOnPlay": "Imprimerie de G. Olivier",
+            "normalizedName": "Olivier",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 6,
+            "coord": "48.9274390, 2.0428293",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 24,
+            "lang": "fre",
+            "nameOnPlay": "Librairie dramatique",
+            "normalizedName": null,
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": "belongs to Dentu id8",
+            "notes": null
+        },
+        {
+            "publisherId": 25,
+            "lang": "fre",
+            "nameOnPlay": "Tresse",
+            "normalizedName": "Tresse",
+            "wikidataId": null,
+            "publisherType": "\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": "successeur de Barba et Bezou",
+            "notes": null
+        },
+        {
+            "publisherId": 26,
+            "lang": "fre",
+            "nameOnPlay": "impr. de Morris",
+            "normalizedName": "Morris",
+            "wikidataId": null,
+            "publisherType": "imprimeur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 27,
+            "lang": "fre",
+            "nameOnPlay": "H. Simonis Empis",
+            "normalizedName": null,
+            "wikidataId": "Q19962953",
+            "publisherType": "\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 28,
+            "lang": "fre",
+            "nameOnPlay": "Paul Dupont",
+            "normalizedName": null,
+            "wikidataId": "Q618263",
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 29,
+            "lang": "fre",
+            "nameOnPlay": "Imprempta de Salvador Bonav\u00eda",
+            "normalizedName": null,
+            "wikidataId": "Q85434844",
+            "publisherType": null,
+            "placeId": 59,
+            "coord": "41.3828939, 2.1774322",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 30,
+            "lang": "fre",
+            "nameOnPlay": "Chez les Libraires Associ\u00e9s",
+            "normalizedName": null,
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 31,
+            "lang": "fre",
+            "nameOnPlay": "Madame Masson",
+            "normalizedName": "Masson",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": "Anne-Genevi\u00e8ve Masson",
+            "notes": null
+        },
+        {
+            "publisherId": 32,
+            "lang": "fre",
+            "nameOnPlay": "Ad\u00e8le Huet",
+            "normalizedName": "Huet-Masson",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": "fille de Madame Masson; https://fr.wikipedia.org/wiki/Ad%C3%A8le_Huet",
+            "notes": null
+        },
+        {
+            "publisherId": 33,
+            "lang": "fre",
+            "nameOnPlay": "Magasin de Librairie",
+            "normalizedName": null,
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 34,
+            "lang": "fre",
+            "nameOnPlay": "L\u00e9opold Collin",
+            "normalizedName": "Collin",
+            "wikidataId": "Q116025064",
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 35,
+            "lang": "fre",
+            "nameOnPlay": "Mad. Cavanagh",
+            "normalizedName": "Cavanagh",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 36,
+            "lang": "fre",
+            "nameOnPlay": "Henry Tardieu",
+            "normalizedName": "Tardieu",
+            "wikidataId": "Q93386838",
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 37,
+            "lang": "fre",
+            "nameOnPlay": "Aaron Martinet",
+            "normalizedName": "Martinet",
+            "wikidataId": "Q29909060",
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 38,
+            "lang": "fre",
+            "nameOnPlay": "Fages",
+            "normalizedName": "Fages",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 39,
+            "lang": "fre",
+            "nameOnPlay": "Duvernois",
+            "normalizedName": "Duvernois",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 40,
+            "lang": "fre",
+            "nameOnPlay": "Quoy",
+            "normalizedName": "Quoy",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 41,
+            "lang": "fre",
+            "nameOnPlay": "Pollet",
+            "normalizedName": "Pollet",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 42,
+            "lang": "fre",
+            "nameOnPlay": "V. Bezou",
+            "normalizedName": "Bezou",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": "successeur de Fages id 38",
+            "notes": null
+        },
+        {
+            "publisherId": 43,
+            "lang": "fre",
+            "nameOnPlay": "Riga",
+            "normalizedName": "Riga",
+            "wikidataId": null,
+            "publisherType": null,
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 44,
+            "lang": "fre",
+            "nameOnPlay": "Dondey-Dupr\u00e9",
+            "normalizedName": "Dondey",
+            "wikidataId": null,
+            "publisherType": "imprimeur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 45,
+            "lang": "fre",
+            "nameOnPlay": "Famille Didot",
+            "normalizedName": "Didot",
+            "wikidataId": "Q2298285",
+            "publisherType": "imprimeur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 46,
+            "lang": "fre",
+            "nameOnPlay": "J. R. M\u00e9vrel",
+            "normalizedName": "Mevrel",
+            "wikidataId": null,
+            "publisherType": "imprimeur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 47,
+            "lang": "fre",
+            "nameOnPlay": "Eug\u00e8ne Valin",
+            "normalizedName": "Valin",
+            "wikidataId": null,
+            "publisherType": "imprimeur",
+            "placeId": 78,
+            "coord": "49.5739091, 0.4742448",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 48,
+            "lang": "fre",
+            "nameOnPlay": "Achille Appert",
+            "normalizedName": "Appert",
+            "wikidataId": null,
+            "publisherType": "imprimeur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 49,
+            "lang": "fre",
+            "nameOnPlay": "Detroux",
+            "normalizedName": "Detroux",
+            "wikidataId": null,
+            "publisherType": "\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 50,
+            "lang": "fre",
+            "nameOnPlay": "C. Sommer",
+            "normalizedName": "Sommer",
+            "wikidataId": null,
+            "publisherType": "imprimeur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 51,
+            "lang": "fre",
+            "nameOnPlay": "Douladoure-Privat",
+            "normalizedName": "Douladoure",
+            "wikidataId": "Q110243257",
+            "publisherType": "imprimeur",
+            "placeId": 70,
+            "coord": "43.6044622, 1.4442469",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 52,
+            "lang": "fre",
+            "nameOnPlay": "Au M\u00e9nestrel",
+            "normalizedName": "M\u00e9nestrel",
+            "wikidataId": "Q15141465",
+            "publisherType": "\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 53,
+            "lang": "fre",
+            "nameOnPlay": "L\u00e9on Vanier",
+            "normalizedName": "Vanier",
+            "wikidataId": "Q3271387",
+            "publisherType": "libraire-\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 54,
+            "lang": "fre",
+            "nameOnPlay": "C. Joubert",
+            "normalizedName": "Joubert",
+            "wikidataId": null,
+            "publisherType": "\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 55,
+            "lang": "fre",
+            "nameOnPlay": "L. Sauvion",
+            "normalizedName": "Sauvion",
+            "wikidataId": null,
+            "publisherType": "imprimeur",
+            "placeId": 81,
+            "coord": "43.2961743, 5.3699525",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 56,
+            "lang": "fre",
+            "nameOnPlay": "Gu\u00e9t\u00e9ville",
+            "normalizedName": "Gu\u00e9t\u00e9ville",
+            "wikidataId": null,
+            "publisherType": "\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 57,
+            "lang": "fre",
+            "nameOnPlay": "Eug\u00e8ne Joullot",
+            "normalizedName": "Joullot",
+            "wikidataId": "Q17484041",
+            "publisherType": "\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 58,
+            "lang": "fre",
+            "nameOnPlay": "Alphonse Lemerre",
+            "normalizedName": "Lemerre",
+            "wikidataId": "Q17518122",
+            "publisherType": "\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 59,
+            "lang": "fre",
+            "nameOnPlay": "A. Barbr\u00e9",
+            "normalizedName": "Barbr\u00e9",
+            "wikidataId": null,
+            "publisherType": "libraire-\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 60,
+            "lang": "fre",
+            "nameOnPlay": "\u00c9ditions Nilsson",
+            "normalizedName": "Nilsson",
+            "wikidataId": "Q3237903",
+            "publisherType": "\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 61,
+            "lang": "fre",
+            "nameOnPlay": "Georges Krier",
+            "normalizedName": "Krier",
+            "wikidataId": "Q3102979",
+            "publisherType": "\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 62,
+            "lang": "fre",
+            "nameOnPlay": "Georges Ondet",
+            "normalizedName": "Ondet",
+            "wikidataId": null,
+            "publisherType": "libraire-\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": "https://musee.sacem.fr/index.php/Detail/entities/17731",
+            "notes": null
+        },
+        {
+            "publisherId": 63,
+            "lang": "fre",
+            "nameOnPlay": "Au M\u00e9tronome, maison Emile Benoit",
+            "normalizedName": "Benoit",
+            "wikidataId": null,
+            "publisherType": "\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": "https://imslp.org/wiki/%C3%89mile_Beno%C3%AEt",
+            "notes": null
+        },
+        {
+            "publisherId": 64,
+            "lang": "fre",
+            "nameOnPlay": "Henriot & Cie",
+            "normalizedName": "Henriot",
+            "wikidataId": null,
+            "publisherType": "\u00e9diteur",
+            "placeId": 1,
+            "coord": "48.8588897, 2.3200410",
+            "comments": null,
+            "notes": null
+        },
+        {
+            "publisherId": 65,
+            "lang": "fre",
+            "nameOnPlay": "Ode et Wodon",
+            "normalizedName": "Ode & Wodon",
+            "wikidataId": null,
+            "publisherType": "libraire-\u00e9diteur",
+            "placeId": 13,
+            "coord": "50.8550018, 4.3512334",
+            "comments": null,
             "notes": null
         }
     ]
