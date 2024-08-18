@@ -340,7 +340,8 @@ export function setTimeline(dataset) {
 
         if (times.length > maxTotalLabels) {
           times = _.filter(times, function(d, i) {
-            return i % Math.ceil(times.length / maxTotalLabels) === 0;
+            //return i % Math.ceil(times.length / maxTotalLabels) === 0;
+            return i % (Math.round(Math.ceil(times.length / maxTotalLabels)/10) * 10) === 0;
           });
           // replace last time with t1 so that the last label
           // equals the maximum date
