@@ -909,10 +909,14 @@ async function generatePlayTemplate(data: Play[], unique = false): Promise<strin
       const date = play.printed ?? "";
       const authorName = await getPlayInfo(play.authorId, play.lang, "authorName");
       const genre = play.genre;
+      const playUrl = play.url ?? "";
+
+      // if playUrl starts with "bpt6", it is the abbreviation for a numistral url
+      const playUrlFull = playUrl.startsWith("bpt6") ? `https://www.numistral.fr/ark:/12148/${playUrl}` : play.url;
 
       const capitalizedGenre = genre ? genre.charAt(0).toUpperCase() + play.genre.slice(1) : "";
 
-      let titleMainDated = `<span class="play-title">${titleMain.trim()}</span>`
+      let titleMainDated = `<span class="play-title"><a href="${playUrlFull}" target="_blank">${titleMain.trim()}</a></span>`
       if (date) {
         titleMainDated += ` <span class="play-date">(${date})</span>`;
       }

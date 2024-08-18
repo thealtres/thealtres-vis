@@ -17,6 +17,7 @@ interface Play {
     titleSub: string;
     authorId: number | number[];
     publisherId: number;
+    url: string;
     nbActs: string;
     printed: string; // some values such as: "?1824"
     genre: string;
